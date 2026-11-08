@@ -1,0 +1,73 @@
+{
+  "at": "2026-11-08T22:58:34.867Z",
+  "platform": "win32",
+  "arch": "x64",
+  "node": "v22.21.1",
+  "hostReportedResources": {
+    "cpus": 28,
+    "totalMemory": 34088312832,
+    "freeMemory": 16623427584,
+    "diskAvailableBytes": 456465645568
+  },
+  "resourceCaveat": "Host values may not reflect container/cgroup limits. No capacity or cloud lifecycle guarantee.",
+  "checks": [
+    {
+      "name": "Node >=22.13",
+      "status": "pass",
+      "detail": "v22.21.1"
+    },
+    {
+      "name": "SQLite FTS5",
+      "status": "pass",
+      "detail": "Created an in-memory FTS5 table"
+    },
+    {
+      "name": "git",
+      "status": "pass",
+      "detail": "git version 2.43.0.windows.1"
+    },
+    {
+      "name": "tar",
+      "status": "pass",
+      "detail": "bsdtar 3.8.9 - libarchive 3.8.9 zlib/1.2.13.1-motley liblzma/5.8.3 bz2lib/1.0.8 libzstd/1.5.7 cng/2.0 libb2/bundled "
+    },
+    {
+      "name": "native ES platform/user",
+      "status": "pass",
+      "detail": {
+        "platform": "win32",
+        "arch": "x64",
+        "uid": null,
+        "note": "Linux ES must run as a non-root user; no automatic sudo or system changes."
+      }
+    },
+    {
+      "name": "Playwright Chromium binary",
+      "status": "pending",
+      "detail": "Run npx playwright install --with-deps chromium on Linux; Windows can use Edge."
+    },
+    {
+      "name": "loopback port 3000",
+      "status": "pending",
+      "detail": "EADDRINUSE"
+    },
+    {
+      "name": "loopback port 19200",
+      "status": "pass",
+      "detail": "Bind succeeded"
+    },
+    {
+      "name": "loopback port 19300",
+      "status": "pending",
+      "detail": "EADDRINUSE"
+    }
+  ],
+  "passed": true,
+  "stillRequired": [
+    "Actual npm/vendor/browser downloads under cloud network policy",
+    "Linux native ES lifecycle and full restore experiment",
+    "Next.js browser preview behind private access",
+    "Environment publish/resume service restart",
+    "Cloud CPU/RAM/disk quota and usage cost"
+  ]
+}

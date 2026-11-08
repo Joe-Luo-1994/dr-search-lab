@@ -8,6 +8,8 @@ Windows baseline evidence is preserved under `evidence/windows-baseline-2026-11-
 
 Read `docs/HANDOFF.md`, `docs/VERIFICATION_PLAN.md` and `docs/ES_EXPERIMENT.md` before extending the research.
 
+Local preparation was regression-tested on Windows after the portability changes: 33 tests, 13 browser smoke checks with four engines, and full ES experiment `mw8frj44` passed. Bash syntax checking passed; Linux runtime is still unverified. Evidence is in `evidence/portability-windows-2026-11-09/`. The source was pushed to private repository `Joe-Luo-1994/dr-search-lab`, branch `codex/cloud-migration`; local and remote commit `0804c695cd3452102137757c29801ddaeb7322cc` matched. This records source delivery, not a working cloud deployment.
+
 ## Environment configuration
 
 Create a private Codex Cloud environment from the GitHub repository. Keep its network allowlist sufficient for GitHub checkout, npm, the official Elastic artifact host (`artifacts.elastic.co`), and Playwright's browser download endpoints. Allow only the extra destinations actually requested by installation; no blanket internet expansion is necessary. No API keys are needed by the synthetic demo.
