@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 
-const roots = ['app', 'lib', 'scripts', 'tests', 'docs', 'evidence', 'README.md', 'package.json', 'package-lock.json',
+const roots = ['app', 'lib', 'scripts', 'tests', 'docs', 'evidence', 'onboarding', 'README.md', 'package.json', 'package-lock.json',
   'next.config.mjs', 'compose.yaml', '.env.example', '.gitignore', '.gitattributes', '.nvmrc'];
 const run = new Date().toISOString().replace(/[:.]/g, '-');
 const dest = path.resolve('.lab/transfers', run);
