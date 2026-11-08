@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-08T22:40:41.953Z",
+  "passed": true,
+  "engineCount": 4,
+  "elasticsearchVerified": true,
+  "checks": [
+    "real engines render",
+    "Tags AND",
+    "page read",
+    "media download",
+    "wrong-media rejection",
+    "report export",
+    "guest denied",
+    "publish rollback",
+    "v2 publish",
+    "ReBAC fail-closed",
+    "cookie session isolation",
+    "mobile no horizontal overflow",
+    "no page errors"
+  ]
+}

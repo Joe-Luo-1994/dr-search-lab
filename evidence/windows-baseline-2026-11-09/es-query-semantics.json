@@ -1,0 +1,61 @@
+{
+  "at": "2026-11-08T22:43:01.136Z",
+  "index": "drlab-it-mw8ey9hm-v1-body",
+  "scope": "Synthetic v1; title only; ops space; ES standard reference analyzer, NOT company configuration",
+  "cases": [
+    {
+      "text": "disaster recovery",
+      "tokens": [
+        "disaster",
+        "recovery"
+      ],
+      "results": {
+        "match": {
+          "total": 2,
+          "ids": [
+            "p03",
+            "p08"
+          ]
+        },
+        "match_phrase": {
+          "total": 1,
+          "ids": [
+            "p03"
+          ]
+        },
+        "term": {
+          "total": 0,
+          "ids": []
+        }
+      }
+    },
+    {
+      "text": "資料庫備份",
+      "tokens": [
+        "資",
+        "料",
+        "庫",
+        "備",
+        "份"
+      ],
+      "results": {
+        "match": {
+          "total": 1,
+          "ids": [
+            "p07"
+          ]
+        },
+        "match_phrase": {
+          "total": 1,
+          "ids": [
+            "p07"
+          ]
+        },
+        "term": {
+          "total": 0,
+          "ids": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,882 @@
+{
+  "runId": "mw8ey9hm",
+  "startedAt": "2026-11-08T22:38:07.498Z",
+  "node": "v22.21.1",
+  "prefix": "drlab-it-mw8ey9hm-",
+  "synthetic": true,
+  "checks": [
+    {
+      "name": "v1 common contract",
+      "combinations": 36,
+      "passed": true
+    },
+    {
+      "name": "v2 common contract",
+      "combinations": 36,
+      "passed": true
+    },
+    {
+      "name": "v1 common contract",
+      "combinations": 36,
+      "passed": true
+    },
+    {
+      "name": "v2 common contract",
+      "combinations": 36,
+      "passed": true
+    }
+  ],
+  "phases": [
+    {
+      "name": "primary readiness",
+      "ms": 303.3678,
+      "status": "passed",
+      "detail": {
+        "name": "drlab-primary",
+        "cluster_name": "drlab-primary",
+        "cluster_uuid": "PE-AM56vRmOvCWF-ZYKvxg",
+        "version": {
+          "number": "8.17.0",
+          "build_flavor": "default",
+          "build_type": "zip",
+          "build_hash": "2b6a7fed44faa321997703718f07ee0420804b41",
+          "build_date": "2024-12-11T12:08:05.663969764Z",
+          "build_snapshot": false,
+          "lucene_version": "9.12.0",
+          "minimum_wire_compatibility_version": "7.17.0",
+          "minimum_index_compatibility_version": "7.0.0"
+        },
+        "tagline": "You Know, for Search"
+      }
+    },
+    {
+      "name": "provision and seal four reference indices",
+      "ms": 1992.3828,
+      "status": "passed",
+      "detail": [
+        {
+          "index": "drlab-it-mw8ey9hm-v1-body",
+          "count": 100,
+          "digest": "02c74f394edadcc6cdf5dfa1cd81c82cc4520c823350b27e7171dd2ef2f99b76",
+          "writeBlocked": true
+        },
+        {
+          "index": "drlab-it-mw8ey9hm-v1-attachments",
+          "count": 100,
+          "digest": "24d6d5c9b29fe7644184fb5ebffa0d6e438e7f5e7446e00db073d68bf8960ee4",
+          "writeBlocked": true
+        },
+        {
+          "index": "drlab-it-mw8ey9hm-v2-body",
+          "count": 101,
+          "digest": "bb89ec5cffd9c74912172a3474b6f1f98df9e9dba2af040ae564fa4c6ed5405c",
+          "writeBlocked": true
+        },
+        {
+          "index": "drlab-it-mw8ey9hm-v2-attachments",
+          "count": 101,
+          "digest": "cfa4822dc06a0ae5e516d94be7682c9e357daeb14e70a62ca0a951a586202555",
+          "writeBlocked": true
+        }
+      ]
+    },
+    {
+      "name": "primary contract v1",
+      "ms": 251.43049999999994,
+      "status": "passed",
+      "detail": {
+        "combinations": 36
+      }
+    },
+    {
+      "name": "primary contract v2",
+      "ms": 218.6237000000001,
+      "status": "passed",
+      "detail": {
+        "combinations": 36
+      }
+    },
+    {
+      "name": "mixed content rejected despite same document count",
+      "ms": 617.9603999999999,
+      "status": "passed",
+      "detail": {
+        "rejected": true,
+        "oldVersionPreserved": true
+      }
+    },
+    {
+      "name": "create filesystem snapshot",
+      "ms": 491.3292999999999,
+      "status": "passed",
+      "detail": {
+        "snapshot": "daily",
+        "uuid": "e1Ky9gQlQxOJzLciIUjCgA",
+        "repository": "drlab-mw8ey9hm",
+        "version_id": 8521000,
+        "version": "8.17.0",
+        "indices": [
+          "drlab-it-mw8ey9hm-v1-attachments",
+          "drlab-it-mw8ey9hm-v2-body",
+          "drlab-it-mw8ey9hm-v1-body",
+          "drlab-it-mw8ey9hm-v2-attachments"
+        ],
+        "data_streams": [],
+        "include_global_state": false,
+        "state": "SUCCESS",
+        "start_time": "2026-11-08T22:38:10.981Z",
+        "start_time_in_millis": 1794177490981,
+        "end_time": "2026-11-08T22:38:11.183Z",
+        "end_time_in_millis": 1794177491183,
+        "duration_in_millis": 202,
+        "failures": [],
+        "shards": {
+          "total": 4,
+          "failed": 0,
+          "successful": 4
+        },
+        "feature_states": []
+      }
+    },
+    {
+      "name": "stop primary and verify search fails",
+      "ms": 698.9908999999998,
+      "status": "passed",
+      "detail": {
+        "searchFails": true,
+        "localReadRemainsAvailable": true
+      }
+    },
+    {
+      "name": "start independent DR node",
+      "ms": 30345.056699999997,
+      "status": "passed",
+      "detail": {
+        "name": "drlab-dr",
+        "cluster_name": "drlab-dr",
+        "cluster_uuid": "gGQ-uIn_R7uVG1N9juHecA",
+        "version": {
+          "number": "8.17.0",
+          "build_flavor": "default",
+          "build_type": "zip",
+          "build_hash": "2b6a7fed44faa321997703718f07ee0420804b41",
+          "build_date": "2024-12-11T12:08:05.663969764Z",
+          "build_snapshot": false,
+          "lucene_version": "9.12.0",
+          "minimum_wire_compatibility_version": "7.17.0",
+          "minimum_index_compatibility_version": "7.0.0"
+        },
+        "tagline": "You Know, for Search"
+      }
+    },
+    {
+      "name": "restore snapshot with primary offline",
+      "ms": 828.1805000000022,
+      "status": "passed",
+      "detail": {
+        "snapshot": {
+          "snapshot": "daily",
+          "indices": [
+            "drlab-it-mw8ey9hm-v1-body",
+            "drlab-it-mw8ey9hm-v1-attachments",
+            "drlab-it-mw8ey9hm-v2-attachments",
+            "drlab-it-mw8ey9hm-v2-body"
+          ],
+          "shards": {
+            "total": 4,
+            "failed": 0,
+            "successful": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "post-restore IDs and ordering equal original snapshot",
+      "ms": 69.33759999999893,
+      "status": "passed",
+      "detail": {
+        "queries": 4,
+        "searchReadDownload": true
+      }
+    },
+    {
+      "name": "DR contract v1",
+      "ms": 396.8238999999958,
+      "status": "passed",
+      "detail": {
+        "combinations": 36
+      }
+    },
+    {
+      "name": "DR contract v2",
+      "ms": 400.9261999999944,
+      "status": "passed",
+      "detail": {
+        "combinations": 36
+      }
+    },
+    {
+      "name": "DR process restart preserves recovered indices",
+      "ms": 31158.637800000004,
+      "status": "passed",
+      "detail": {
+        "passed": true
+      }
+    }
+  ],
+  "limitations": [
+    "Two native ES nodes on one Windows host, 512MiB Java heap each; not independent clusters/regions for real disaster protection.",
+    "Shared local filesystem snapshot repository; not MinIO or cross-region replication.",
+    "Function-level application flow and mock ReBAC; not formal consumer API compatibility.",
+    "Recovery timing excludes incident detection, DNS, authentication, network transfer and human decisions; NOT RTO.",
+    "A write block plus digest is an integrity guard, not protection against a privileged administrator changing data."
+  ],
+  "manifest": {
+    "generatedAt": "2026-11-08T15:13:48.210Z",
+    "synthetic": true,
+    "count": 100,
+    "storage": "local-files (MinIO not connected)",
+    "files": {
+      "v1-attachments.mini.json": {
+        "bytes": 21008,
+        "sha256": "41ddfc5b07d974f03a906c7bfc507658b6c652200dd3b7297f23c96fbf8facc9"
+      },
+      "v1-attachments.orama.json": {
+        "bytes": 119950,
+        "sha256": "12568d9cf5ebffe8a641f98e5877eaf31bcba0fd94d7b242e0f447b9b4385ed8"
+      },
+      "v1-attachments.sqlite": {
+        "bytes": 86016,
+        "sha256": "8f7f3263585e3f327a0f0ddb381aedcc2beb41232121ec4ec835f7054bce3929"
+      },
+      "v1-body.mini.json": {
+        "bytes": 20899,
+        "sha256": "b100d92029a65644573ce5c4e7654ea7eebc66e955b63af193a409f68bdbca33"
+      },
+      "v1-body.orama.json": {
+        "bytes": 118891,
+        "sha256": "579a5bd461b4e5c04410e00254a2e9a6fc0f6a3730f3a60fbda7c95292aa2584"
+      },
+      "v1-body.sqlite": {
+        "bytes": 81920,
+        "sha256": "a67de3cc74f8652e6e03bce4022771f60d4545b89a5c70e1c983407ec8102dfc"
+      },
+      "v1.json": {
+        "bytes": 32312,
+        "sha256": "2c36179fa46130c66296c5a4c9381b6a98f449dd5352b01a37613a8866501cce"
+      },
+      "v2-attachments.mini.json": {
+        "bytes": 21299,
+        "sha256": "38772639e2ede7fa7506dd5763f48957e5eac166526bce703d68ac5c4d62647c"
+      },
+      "v2-attachments.orama.json": {
+        "bytes": 121166,
+        "sha256": "6db87cd1a7af65eaf0e5a303fc99e0b18d4c638836281d171f588ce745b959c0"
+      },
+      "v2-attachments.sqlite": {
+        "bytes": 86016,
+        "sha256": "3362bc4ce02a9a9becfae55b0c7767f485d4fd28cd16c7b513fadac7896d1212"
+      },
+      "v2-body.mini.json": {
+        "bytes": 21190,
+        "sha256": "8e127aaa634f591d1582fa326f92e6a9db90774adeb7289574291799832f2771"
+      },
+      "v2-body.orama.json": {
+        "bytes": 120090,
+        "sha256": "fb4206a8c33f6c5749032645067ebe6c49a97ae2e27a3ff1cda216e20b142250"
+      },
+      "v2-body.sqlite": {
+        "bytes": 81920,
+        "sha256": "de05e20d5715a52bfc9e824dd40c4bd0ce2b83191a667bf5c69d39bc51fe30ae"
+      },
+      "v2.json": {
+        "bytes": 32511,
+        "sha256": "92dbe61636adbbd54d0f8cffd83bcc952d7694c151fa8ebdf1608406cc71cb93"
+      }
+    },
+    "builds": [
+      {
+        "engine": "sqlite",
+        "version": "v1",
+        "attachments": false,
+        "elapsedMs": 15.43
+      },
+      {
+        "engine": "minisearch",
+        "version": "v1",
+        "attachments": false,
+        "elapsedMs": 5.5
+      },
+      {
+        "engine": "orama",
+        "version": "v1",
+        "attachments": false,
+        "elapsedMs": 13.69
+      },
+      {
+        "engine": "sqlite",
+        "version": "v1",
+        "attachments": true,
+        "elapsedMs": 15.4
+      },
+      {
+        "engine": "minisearch",
+        "version": "v1",
+        "attachments": true,
+        "elapsedMs": 2.64
+      },
+      {
+        "engine": "orama",
+        "version": "v1",
+        "attachments": true,
+        "elapsedMs": 4.65
+      },
+      {
+        "engine": "sqlite",
+        "version": "v2",
+        "attachments": false,
+        "elapsedMs": 15.82
+      },
+      {
+        "engine": "minisearch",
+        "version": "v2",
+        "attachments": false,
+        "elapsedMs": 2.03
+      },
+      {
+        "engine": "orama",
+        "version": "v2",
+        "attachments": false,
+        "elapsedMs": 4.17
+      },
+      {
+        "engine": "sqlite",
+        "version": "v2",
+        "attachments": true,
+        "elapsedMs": 15.46
+      },
+      {
+        "engine": "minisearch",
+        "version": "v2",
+        "attachments": true,
+        "elapsedMs": 2.23
+      },
+      {
+        "engine": "orama",
+        "version": "v2",
+        "attachments": true,
+        "elapsedMs": 3.4
+      }
+    ]
+  },
+  "sourceHashes": {
+    "lib/engines.mjs": "2a9b407ca6ab0df664e20bb506204db35b2a750503a53113259066eff7cbe361",
+    "lib/es-release.mjs": "8915bf8b814926772c52035c2aa098b0021b1efbae749506c66df8ddc0e792d4",
+    "lib/lab.mjs": "eedf027a4f7093f97d297ded2edf7d3751cef10275d8835b8dcc146ecbac789b",
+    "lib/artifacts.mjs": "d2ce051c2f8c58fd2e9fb799ef1569b68f212c015c7a361912cc2d0f8569c703",
+    "scripts/es-experiment.mjs": "6edfe7d1b605eaa9400b3e32801f222db8b78fa25aa1458dc79857c4f0a2502d"
+  },
+  "primary": {
+    "name": "drlab-primary",
+    "cluster_name": "drlab-primary",
+    "cluster_uuid": "PE-AM56vRmOvCWF-ZYKvxg",
+    "version": {
+      "number": "8.17.0",
+      "build_flavor": "default",
+      "build_type": "zip",
+      "build_hash": "2b6a7fed44faa321997703718f07ee0420804b41",
+      "build_date": "2024-12-11T12:08:05.663969764Z",
+      "build_snapshot": false,
+      "lucene_version": "9.12.0",
+      "minimum_wire_compatibility_version": "7.17.0",
+      "minimum_index_compatibility_version": "7.0.0"
+    },
+    "tagline": "You Know, for Search"
+  },
+  "referenceSearch": {
+    "backup": {
+      "total": 34,
+      "ids": [
+        "p01",
+        "p10",
+        "p15",
+        "p18",
+        "p21",
+        "p24",
+        "p27",
+        "p30",
+        "p33",
+        "p36",
+        "p39",
+        "p42",
+        "p45",
+        "p48",
+        "p51",
+        "p54",
+        "p57",
+        "p60",
+        "p63",
+        "p66",
+        "p69",
+        "p72",
+        "p75",
+        "p78",
+        "p81",
+        "p84",
+        "p87",
+        "p90",
+        "p93",
+        "p96",
+        "p99",
+        "p12",
+        "p03",
+        "p02"
+      ]
+    },
+    "disaster recovery": {
+      "total": 33,
+      "ids": [
+        "p03",
+        "p08",
+        "p12",
+        "p01",
+        "p21",
+        "p30",
+        "p39",
+        "p48",
+        "p57",
+        "p66",
+        "p75",
+        "p84",
+        "p93",
+        "p15",
+        "p24",
+        "p33",
+        "p42",
+        "p51",
+        "p60",
+        "p69",
+        "p78",
+        "p87",
+        "p96",
+        "p18",
+        "p27",
+        "p36",
+        "p45",
+        "p54",
+        "p63",
+        "p72",
+        "p81",
+        "p90",
+        "p99"
+      ]
+    },
+    "資料庫備份": {
+      "total": 32,
+      "ids": [
+        "p07",
+        "p02",
+        "p01",
+        "p21",
+        "p30",
+        "p39",
+        "p48",
+        "p57",
+        "p66",
+        "p75",
+        "p84",
+        "p93",
+        "p15",
+        "p24",
+        "p33",
+        "p42",
+        "p51",
+        "p60",
+        "p69",
+        "p78",
+        "p87",
+        "p96",
+        "p18",
+        "p27",
+        "p36",
+        "p45",
+        "p54",
+        "p63",
+        "p72",
+        "p81",
+        "p90",
+        "p99"
+      ]
+    },
+    "ERR_CONN_RESET": {
+      "total": 1,
+      "ids": [
+        "p05"
+      ]
+    }
+  },
+  "resourcesPrimary": {
+    "_nodes": {
+      "total": 1,
+      "successful": 1,
+      "failed": 0
+    },
+    "cluster_name": "drlab-primary",
+    "nodes": {
+      "KNZmwZX0RWSeqebl3Wk23Q": {
+        "timestamp": 1794177491386,
+        "name": "drlab-primary",
+        "transport_address": "127.0.0.1:19201",
+        "host": "127.0.0.1",
+        "ip": "127.0.0.1:19201",
+        "roles": [
+          "data",
+          "data_cold",
+          "data_content",
+          "data_frozen",
+          "data_hot",
+          "data_warm",
+          "ingest",
+          "master",
+          "ml",
+          "remote_cluster_client",
+          "transform"
+        ],
+        "attributes": {
+          "transform.config_version": "10.0.0",
+          "ml.config_version": "12.0.0",
+          "xpack.installed": "true"
+        },
+        "process": {
+          "timestamp": 1794177491413,
+          "open_file_descriptors": -1,
+          "max_file_descriptors": -1,
+          "cpu": {
+            "percent": 0,
+            "total_in_millis": 44093
+          },
+          "mem": {
+            "total_virtual_in_bytes": 1044750336
+          }
+        },
+        "jvm": {
+          "timestamp": 1794177491413,
+          "uptime_in_millis": 63696,
+          "mem": {
+            "heap_used_in_bytes": 257487728,
+            "heap_used_percent": 47,
+            "heap_committed_in_bytes": 536870912,
+            "heap_max_in_bytes": 536870912,
+            "non_heap_used_in_bytes": 211988824,
+            "non_heap_committed_in_bytes": 217841664,
+            "pools": {
+              "CodeHeap 'non-nmethods'": {
+                "used_in_bytes": 4304768,
+                "max_in_bytes": 7602176,
+                "peak_used_in_bytes": 4359040,
+                "peak_max_in_bytes": 7602176
+              },
+              "Metaspace": {
+                "used_in_bytes": 144713760,
+                "max_in_bytes": 0,
+                "peak_used_in_bytes": 144713760,
+                "peak_max_in_bytes": 0
+              },
+              "CodeHeap 'profiled nmethods'": {
+                "used_in_bytes": 30154496,
+                "max_in_bytes": 121962496,
+                "peak_used_in_bytes": 30154496,
+                "peak_max_in_bytes": 121962496
+              },
+              "Compressed Class Space": {
+                "used_in_bytes": 20321848,
+                "max_in_bytes": 1073741824,
+                "peak_used_in_bytes": 20321848,
+                "peak_max_in_bytes": 1073741824
+              },
+              "young": {
+                "used_in_bytes": 159383552,
+                "max_in_bytes": 0,
+                "peak_used_in_bytes": 297795584,
+                "peak_max_in_bytes": 0
+              },
+              "old": {
+                "used_in_bytes": 73640496,
+                "max_in_bytes": 536870912,
+                "peak_used_in_bytes": 73640496,
+                "peak_max_in_bytes": 536870912
+              },
+              "survivor": {
+                "used_in_bytes": 24463680,
+                "max_in_bytes": 0,
+                "peak_used_in_bytes": 38118424,
+                "peak_max_in_bytes": 0
+              },
+              "CodeHeap 'non-profiled nmethods'": {
+                "used_in_bytes": 12493952,
+                "max_in_bytes": 122093568,
+                "peak_used_in_bytes": 12493952,
+                "peak_max_in_bytes": 122093568
+              }
+            }
+          },
+          "threads": {
+            "count": 155,
+            "peak_count": 155
+          },
+          "gc": {
+            "collectors": {
+              "young": {
+                "collection_count": 25,
+                "collection_time_in_millis": 95
+              },
+              "G1 Concurrent GC": {
+                "collection_count": 8,
+                "collection_time_in_millis": 9
+              },
+              "old": {
+                "collection_count": 0,
+                "collection_time_in_millis": 0
+              }
+            }
+          },
+          "buffer_pools": {
+            "mapped": {
+              "count": 32,
+              "used_in_bytes": 342824,
+              "total_capacity_in_bytes": 342824
+            },
+            "direct": {
+              "count": 62,
+              "used_in_bytes": 7275175,
+              "total_capacity_in_bytes": 7275173
+            },
+            "mapped - 'non-volatile memory'": {
+              "count": 0,
+              "used_in_bytes": 0,
+              "total_capacity_in_bytes": 0
+            }
+          },
+          "classes": {
+            "current_loaded_count": 31641,
+            "total_loaded_count": 31659,
+            "total_unloaded_count": 18
+          }
+        },
+        "fs": {
+          "timestamp": 1794177491413,
+          "total": {
+            "total_in_bytes": 998925922304,
+            "free_in_bytes": 456500269056,
+            "available_in_bytes": 456500269056
+          },
+          "data": [
+            {
+              "path": "C:\\Users\\User\\Documents\\ChatGPT\\Search Playground\\.lab\\es-native\\primary\\data",
+              "mount": "(C:)",
+              "type": "NTFS",
+              "total_in_bytes": 998925922304,
+              "free_in_bytes": 456500269056,
+              "available_in_bytes": 456500269056,
+              "low_watermark_free_space_in_bytes": 149838888345,
+              "high_watermark_free_space_in_bytes": 99892592230,
+              "flood_stage_free_space_in_bytes": 49946296115
+            }
+          ]
+        }
+      }
+    }
+  },
+  "dr": {
+    "name": "drlab-dr",
+    "cluster_name": "drlab-dr",
+    "cluster_uuid": "gGQ-uIn_R7uVG1N9juHecA",
+    "version": {
+      "number": "8.17.0",
+      "build_flavor": "default",
+      "build_type": "zip",
+      "build_hash": "2b6a7fed44faa321997703718f07ee0420804b41",
+      "build_date": "2024-12-11T12:08:05.663969764Z",
+      "build_snapshot": false,
+      "lucene_version": "9.12.0",
+      "minimum_wire_compatibility_version": "7.17.0",
+      "minimum_index_compatibility_version": "7.0.0"
+    },
+    "tagline": "You Know, for Search"
+  },
+  "localRecoveryMs": 31242.7845,
+  "resourcesDR": {
+    "_nodes": {
+      "total": 1,
+      "successful": 1,
+      "failed": 0
+    },
+    "cluster_name": "drlab-dr",
+    "nodes": {
+      "V5NNhShCSbGFUq6NgZvzTg": {
+        "timestamp": 1794177555315,
+        "name": "drlab-dr",
+        "transport_address": "127.0.0.1:19301",
+        "host": "127.0.0.1",
+        "ip": "127.0.0.1:19301",
+        "roles": [
+          "data",
+          "data_cold",
+          "data_content",
+          "data_frozen",
+          "data_hot",
+          "data_warm",
+          "ingest",
+          "master",
+          "ml",
+          "remote_cluster_client",
+          "transform"
+        ],
+        "attributes": {
+          "ml.config_version": "12.0.0",
+          "xpack.installed": "true",
+          "transform.config_version": "10.0.0"
+        },
+        "process": {
+          "timestamp": 1794177555339,
+          "open_file_descriptors": -1,
+          "max_file_descriptors": -1,
+          "cpu": {
+            "percent": 0,
+            "total_in_millis": 29343
+          },
+          "mem": {
+            "total_virtual_in_bytes": 980328448
+          }
+        },
+        "jvm": {
+          "timestamp": 1794177555339,
+          "uptime_in_millis": 29206,
+          "mem": {
+            "heap_used_in_bytes": 135083760,
+            "heap_used_percent": 25,
+            "heap_committed_in_bytes": 536870912,
+            "heap_max_in_bytes": 536870912,
+            "non_heap_used_in_bytes": 184033592,
+            "non_heap_committed_in_bytes": 189792256,
+            "pools": {
+              "CodeHeap 'non-nmethods'": {
+                "used_in_bytes": 4231040,
+                "max_in_bytes": 7602176,
+                "peak_used_in_bytes": 4281472,
+                "peak_max_in_bytes": 7602176
+              },
+              "Metaspace": {
+                "used_in_bytes": 136445056,
+                "max_in_bytes": 0,
+                "peak_used_in_bytes": 136445056,
+                "peak_max_in_bytes": 0
+              },
+              "CodeHeap 'profiled nmethods'": {
+                "used_in_bytes": 15698432,
+                "max_in_bytes": 121962496,
+                "peak_used_in_bytes": 15698432,
+                "peak_max_in_bytes": 121962496
+              },
+              "Compressed Class Space": {
+                "used_in_bytes": 19573176,
+                "max_in_bytes": 1073741824,
+                "peak_used_in_bytes": 19573176,
+                "peak_max_in_bytes": 1073741824
+              },
+              "young": {
+                "used_in_bytes": 41943040,
+                "max_in_bytes": 0,
+                "peak_used_in_bytes": 297795584,
+                "peak_max_in_bytes": 0
+              },
+              "old": {
+                "used_in_bytes": 53556544,
+                "max_in_bytes": 536870912,
+                "peak_used_in_bytes": 53556544,
+                "peak_max_in_bytes": 536870912
+              },
+              "survivor": {
+                "used_in_bytes": 39584176,
+                "max_in_bytes": 0,
+                "peak_used_in_bytes": 39584176,
+                "peak_max_in_bytes": 0
+              },
+              "CodeHeap 'non-profiled nmethods'": {
+                "used_in_bytes": 8085888,
+                "max_in_bytes": 122093568,
+                "peak_used_in_bytes": 8085888,
+                "peak_max_in_bytes": 122093568
+              }
+            }
+          },
+          "threads": {
+            "count": 66,
+            "peak_count": 66
+          },
+          "gc": {
+            "collectors": {
+              "young": {
+                "collection_count": 22,
+                "collection_time_in_millis": 74
+              },
+              "G1 Concurrent GC": {
+                "collection_count": 8,
+                "collection_time_in_millis": 9
+              },
+              "old": {
+                "collection_count": 0,
+                "collection_time_in_millis": 0
+              }
+            }
+          },
+          "buffer_pools": {
+            "mapped": {
+              "count": 8,
+              "used_in_bytes": 85706,
+              "total_capacity_in_bytes": 85706
+            },
+            "direct": {
+              "count": 18,
+              "used_in_bytes": 2119283,
+              "total_capacity_in_bytes": 2119281
+            },
+            "mapped - 'non-volatile memory'": {
+              "count": 0,
+              "used_in_bytes": 0,
+              "total_capacity_in_bytes": 0
+            }
+          },
+          "classes": {
+            "current_loaded_count": 30436,
+            "total_loaded_count": 30454,
+            "total_unloaded_count": 18
+          }
+        },
+        "fs": {
+          "timestamp": 1794177555339,
+          "total": {
+            "total_in_bytes": 998925922304,
+            "free_in_bytes": 456507588608,
+            "available_in_bytes": 456507588608
+          },
+          "data": [
+            {
+              "path": "C:\\Users\\User\\Documents\\ChatGPT\\Search Playground\\.lab\\es-native\\dr\\data",
+              "mount": "(C:)",
+              "type": "NTFS",
+              "total_in_bytes": 998925922304,
+              "free_in_bytes": 456507588608,
+              "available_in_bytes": 456507588608,
+              "low_watermark_free_space_in_bytes": 149838888345,
+              "high_watermark_free_space_in_bytes": 99892592230,
+              "flood_stage_free_space_in_bytes": 49946296115
+            }
+          ]
+        }
+      }
+    }
+  },
+  "passed": true,
+  "finishedAt": "2026-11-08T22:39:15.345Z"
+}

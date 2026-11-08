@@ -1,0 +1,372 @@
+{
+  "exportedAt": "2026-11-08T22:40:41.249Z",
+  "query": {
+    "keyword": "backup",
+    "spaceId": "ops",
+    "tagIds": [
+      "database",
+      "runbook"
+    ],
+    "page": 1,
+    "pageSize": 5,
+    "includeAttachments": false,
+    "id": "tags",
+    "title": "Space ＋ Tags AND"
+  },
+  "state": {
+    "user": "alice",
+    "version": "v1",
+    "revoked": [],
+    "rebacDown": false,
+    "rebacLatency": 0,
+    "events": []
+  },
+  "results": {
+    "sqlite": {
+      "engine": "sqlite",
+      "version": "v1",
+      "synthetic": true,
+      "query": {
+        "keyword": "backup",
+        "spaceId": "ops",
+        "tagIds": [
+          "database",
+          "runbook"
+        ],
+        "page": 1,
+        "pageSize": 5,
+        "includeAttachments": false
+      },
+      "hits": [
+        {
+          "id": "p01",
+          "title": "Database backup runbook",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.00000180232813529541,
+          "version": "v1"
+        },
+        {
+          "id": "p10",
+          "title": "Backup compatibility notes",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.00000180232813529541,
+          "version": "v1"
+        },
+        {
+          "id": "p30",
+          "title": "ops backup reference 30",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.0000016402158704777136,
+          "version": "v1"
+        },
+        {
+          "id": "p48",
+          "title": "ops backup reference 48",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.0000016402158704777136,
+          "version": "v1"
+        },
+        {
+          "id": "p66",
+          "title": "ops backup reference 66",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.0000016402158704777136,
+          "version": "v1"
+        }
+      ],
+      "total": 17,
+      "totalRelation": "exact",
+      "metrics": {
+        "authMs": 0.008799999999610009,
+        "loadMs": 0.32410000000163564,
+        "searchMs": 0.8449000000000524,
+        "apiMs": 2.3320000000021537
+      },
+      "warnings": [
+        "合成資料；結果分數不能跨引擎比較",
+        "v1 的 Page 歸屬可能過時；即時 ReBAC 無法修正舊關聯"
+      ]
+    },
+    "minisearch": {
+      "engine": "minisearch",
+      "version": "v1",
+      "synthetic": true,
+      "query": {
+        "keyword": "backup",
+        "spaceId": "ops",
+        "tagIds": [
+          "database",
+          "runbook"
+        ],
+        "page": 1,
+        "pageSize": 5,
+        "includeAttachments": false
+      },
+      "hits": [
+        {
+          "id": "p01",
+          "title": "Database backup runbook",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.3733011684942338,
+          "version": "v1"
+        },
+        {
+          "id": "p10",
+          "title": "Backup compatibility notes",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.3733011684942338,
+          "version": "v1"
+        },
+        {
+          "id": "p18",
+          "title": "ops backup reference 18",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.3436831243558147,
+          "version": "v1"
+        },
+        {
+          "id": "p24",
+          "title": "ops backup reference 24",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.3436831243558147,
+          "version": "v1"
+        },
+        {
+          "id": "p30",
+          "title": "ops backup reference 30",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.3436831243558147,
+          "version": "v1"
+        }
+      ],
+      "total": 17,
+      "totalRelation": "exact",
+      "metrics": {
+        "authMs": 0.0024999999986903276,
+        "loadMs": 1.4569999999985157,
+        "searchMs": 7.275100000002567,
+        "apiMs": 9.121800000000803
+      },
+      "warnings": [
+        "合成資料；結果分數不能跨引擎比較",
+        "v1 的 Page 歸屬可能過時；即時 ReBAC 無法修正舊關聯"
+      ]
+    },
+    "orama": {
+      "engine": "orama",
+      "version": "v1",
+      "synthetic": true,
+      "query": {
+        "keyword": "backup",
+        "spaceId": "ops",
+        "tagIds": [
+          "database",
+          "runbook"
+        ],
+        "page": 1,
+        "pageSize": 5,
+        "includeAttachments": false
+      },
+      "hits": [
+        {
+          "id": "p10",
+          "title": "Backup compatibility notes",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 3.496297906860983,
+          "version": "v1"
+        },
+        {
+          "id": "p01",
+          "title": "Database backup runbook",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.21288499685747744,
+          "version": "v1"
+        },
+        {
+          "id": "p18",
+          "title": "ops backup reference 18",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.15423961059013624,
+          "version": "v1"
+        },
+        {
+          "id": "p24",
+          "title": "ops backup reference 24",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.15423961059013624,
+          "version": "v1"
+        },
+        {
+          "id": "p30",
+          "title": "ops backup reference 30",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.15423961059013624,
+          "version": "v1"
+        }
+      ],
+      "total": 17,
+      "totalRelation": "exact",
+      "metrics": {
+        "authMs": 0.005499999999301508,
+        "loadMs": 3.0153000000027532,
+        "searchMs": 1.5843000000022585,
+        "apiMs": 5.037999999996828
+      },
+      "warnings": [
+        "合成資料；結果分數不能跨引擎比較",
+        "v1 的 Page 歸屬可能過時；即時 ReBAC 無法修正舊關聯"
+      ]
+    },
+    "elasticsearch": {
+      "engine": "elasticsearch",
+      "version": "v1",
+      "synthetic": true,
+      "query": {
+        "keyword": "backup",
+        "spaceId": "ops",
+        "tagIds": [
+          "database",
+          "runbook"
+        ],
+        "page": 1,
+        "pageSize": 5,
+        "includeAttachments": false
+      },
+      "hits": [
+        {
+          "id": "p01",
+          "title": "Database backup runbook",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.19380572,
+          "version": "v1"
+        },
+        {
+          "id": "p10",
+          "title": "Backup compatibility notes",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.19380572,
+          "version": "v1"
+        },
+        {
+          "id": "p18",
+          "title": "ops backup reference 18",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.17362697,
+          "version": "v1"
+        },
+        {
+          "id": "p24",
+          "title": "ops backup reference 24",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.17362697,
+          "version": "v1"
+        },
+        {
+          "id": "p30",
+          "title": "ops backup reference 30",
+          "spaceId": "ops",
+          "tagIds": [
+            "database",
+            "runbook"
+          ],
+          "score": 0.17362697,
+          "version": "v1"
+        }
+      ],
+      "total": 17,
+      "totalRelation": "exact",
+      "metrics": {
+        "authMs": 0.0020000000004074536,
+        "loadMs": 0,
+        "searchMs": 5.938000000001921,
+        "apiMs": 6.361899999999878
+      },
+      "warnings": [
+        "合成資料；結果分數不能跨引擎比較",
+        "v1 的 Page 歸屬可能過時；即時 ReBAC 無法修正舊關聯"
+      ]
+    }
+  },
+  "limitations": [
+    "身分切換與 ReBAC 是本機教學模擬，不是正式登入",
+    "索引／Media 使用本機檔案，尚未接 MinIO",
+    "跨區傳輸、DNS 切換、正式 RTO 尚未演練",
+    "外部 adapter 未連線者不計入測試結果"
+  ]
+}

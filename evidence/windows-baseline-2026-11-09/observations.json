@@ -1,0 +1,426 @@
+{
+  "generatedAt": "2026-11-08T22:40:04.690Z",
+  "manifest": {
+    "generatedAt": "2026-11-08T15:13:48.210Z",
+    "synthetic": true,
+    "count": 100,
+    "storage": "local-files (MinIO not connected)",
+    "files": {
+      "v1-attachments.mini.json": {
+        "bytes": 21008,
+        "sha256": "41ddfc5b07d974f03a906c7bfc507658b6c652200dd3b7297f23c96fbf8facc9"
+      },
+      "v1-attachments.orama.json": {
+        "bytes": 119950,
+        "sha256": "12568d9cf5ebffe8a641f98e5877eaf31bcba0fd94d7b242e0f447b9b4385ed8"
+      },
+      "v1-attachments.sqlite": {
+        "bytes": 86016,
+        "sha256": "8f7f3263585e3f327a0f0ddb381aedcc2beb41232121ec4ec835f7054bce3929"
+      },
+      "v1-body.mini.json": {
+        "bytes": 20899,
+        "sha256": "b100d92029a65644573ce5c4e7654ea7eebc66e955b63af193a409f68bdbca33"
+      },
+      "v1-body.orama.json": {
+        "bytes": 118891,
+        "sha256": "579a5bd461b4e5c04410e00254a2e9a6fc0f6a3730f3a60fbda7c95292aa2584"
+      },
+      "v1-body.sqlite": {
+        "bytes": 81920,
+        "sha256": "a67de3cc74f8652e6e03bce4022771f60d4545b89a5c70e1c983407ec8102dfc"
+      },
+      "v1.json": {
+        "bytes": 32312,
+        "sha256": "2c36179fa46130c66296c5a4c9381b6a98f449dd5352b01a37613a8866501cce"
+      },
+      "v2-attachments.mini.json": {
+        "bytes": 21299,
+        "sha256": "38772639e2ede7fa7506dd5763f48957e5eac166526bce703d68ac5c4d62647c"
+      },
+      "v2-attachments.orama.json": {
+        "bytes": 121166,
+        "sha256": "6db87cd1a7af65eaf0e5a303fc99e0b18d4c638836281d171f588ce745b959c0"
+      },
+      "v2-attachments.sqlite": {
+        "bytes": 86016,
+        "sha256": "3362bc4ce02a9a9becfae55b0c7767f485d4fd28cd16c7b513fadac7896d1212"
+      },
+      "v2-body.mini.json": {
+        "bytes": 21190,
+        "sha256": "8e127aaa634f591d1582fa326f92e6a9db90774adeb7289574291799832f2771"
+      },
+      "v2-body.orama.json": {
+        "bytes": 120090,
+        "sha256": "fb4206a8c33f6c5749032645067ebe6c49a97ae2e27a3ff1cda216e20b142250"
+      },
+      "v2-body.sqlite": {
+        "bytes": 81920,
+        "sha256": "de05e20d5715a52bfc9e824dd40c4bd0ce2b83191a667bf5c69d39bc51fe30ae"
+      },
+      "v2.json": {
+        "bytes": 32511,
+        "sha256": "92dbe61636adbbd54d0f8cffd83bcc952d7694c151fa8ebdf1608406cc71cb93"
+      }
+    },
+    "builds": [
+      {
+        "engine": "sqlite",
+        "version": "v1",
+        "attachments": false,
+        "elapsedMs": 15.43
+      },
+      {
+        "engine": "minisearch",
+        "version": "v1",
+        "attachments": false,
+        "elapsedMs": 5.5
+      },
+      {
+        "engine": "orama",
+        "version": "v1",
+        "attachments": false,
+        "elapsedMs": 13.69
+      },
+      {
+        "engine": "sqlite",
+        "version": "v1",
+        "attachments": true,
+        "elapsedMs": 15.4
+      },
+      {
+        "engine": "minisearch",
+        "version": "v1",
+        "attachments": true,
+        "elapsedMs": 2.64
+      },
+      {
+        "engine": "orama",
+        "version": "v1",
+        "attachments": true,
+        "elapsedMs": 4.65
+      },
+      {
+        "engine": "sqlite",
+        "version": "v2",
+        "attachments": false,
+        "elapsedMs": 15.82
+      },
+      {
+        "engine": "minisearch",
+        "version": "v2",
+        "attachments": false,
+        "elapsedMs": 2.03
+      },
+      {
+        "engine": "orama",
+        "version": "v2",
+        "attachments": false,
+        "elapsedMs": 4.17
+      },
+      {
+        "engine": "sqlite",
+        "version": "v2",
+        "attachments": true,
+        "elapsedMs": 15.46
+      },
+      {
+        "engine": "minisearch",
+        "version": "v2",
+        "attachments": true,
+        "elapsedMs": 2.23
+      },
+      {
+        "engine": "orama",
+        "version": "v2",
+        "attachments": true,
+        "elapsedMs": 3.4
+      }
+    ]
+  },
+  "warning": "Synthetic observations. Different results are not quality rankings. Reference settings, not production Elasticsearch.",
+  "observations": [
+    {
+      "scenario": "英文與排名",
+      "keyword": "disaster recovery",
+      "engines": {
+        "sqlite": {
+          "total": 33,
+          "top5": [
+            "p08",
+            "p03",
+            "p12",
+            "p01",
+            "p21"
+          ]
+        },
+        "minisearch": {
+          "total": 33,
+          "top5": [
+            "p03",
+            "p08",
+            "p12",
+            "p01",
+            "p15"
+          ]
+        },
+        "orama": {
+          "total": 33,
+          "top5": [
+            "p03",
+            "p08",
+            "p01",
+            "p12",
+            "p15"
+          ]
+        },
+        "elasticsearch": {
+          "total": 33,
+          "top5": [
+            "p03",
+            "p08",
+            "p12",
+            "p01",
+            "p21"
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "中文連續字詞",
+      "keyword": "資料庫備份",
+      "engines": {
+        "sqlite": {
+          "total": 1,
+          "top5": [
+            "p07"
+          ]
+        },
+        "minisearch": {
+          "total": 1,
+          "top5": [
+            "p07"
+          ]
+        },
+        "orama": {
+          "total": 0,
+          "top5": []
+        },
+        "elasticsearch": {
+          "total": 32,
+          "top5": [
+            "p07",
+            "p02",
+            "p01",
+            "p21",
+            "p30"
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "Space ＋ Tags AND",
+      "keyword": "backup",
+      "engines": {
+        "sqlite": {
+          "total": 17,
+          "top5": [
+            "p01",
+            "p10",
+            "p30",
+            "p48",
+            "p66"
+          ]
+        },
+        "minisearch": {
+          "total": 17,
+          "top5": [
+            "p01",
+            "p10",
+            "p18",
+            "p24",
+            "p30"
+          ]
+        },
+        "orama": {
+          "total": 17,
+          "top5": [
+            "p10",
+            "p01",
+            "p18",
+            "p24",
+            "p30"
+          ]
+        },
+        "elasticsearch": {
+          "total": 17,
+          "top5": [
+            "p01",
+            "p10",
+            "p18",
+            "p24",
+            "p30"
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "錯字容忍",
+      "keyword": "bakcup",
+      "engines": {
+        "sqlite": {
+          "total": 0,
+          "top5": []
+        },
+        "minisearch": {
+          "total": 0,
+          "top5": []
+        },
+        "orama": {
+          "total": 0,
+          "top5": []
+        },
+        "elasticsearch": {
+          "total": 0,
+          "top5": []
+        }
+      }
+    },
+    {
+      "scenario": "技術代碼",
+      "keyword": "ERR_CONN_RESET",
+      "engines": {
+        "sqlite": {
+          "total": 1,
+          "top5": [
+            "p05"
+          ]
+        },
+        "minisearch": {
+          "total": 1,
+          "top5": [
+            "p05"
+          ]
+        },
+        "orama": {
+          "total": 1,
+          "top5": [
+            "p05"
+          ]
+        },
+        "elasticsearch": {
+          "total": 1,
+          "top5": [
+            "p05"
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "附件文字",
+      "keyword": "quartzfalcon",
+      "engines": {
+        "sqlite": {
+          "total": 1,
+          "top5": [
+            "p06"
+          ]
+        },
+        "minisearch": {
+          "total": 1,
+          "top5": [
+            "p06"
+          ]
+        },
+        "orama": {
+          "total": 1,
+          "top5": [
+            "p06"
+          ]
+        },
+        "elasticsearch": {
+          "total": 1,
+          "top5": [
+            "p06"
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "受限結果與分頁",
+      "keyword": "backup",
+      "engines": {
+        "sqlite": {
+          "total": 34,
+          "top5": [
+            "p01",
+            "p10",
+            "p21",
+            "p30",
+            "p39"
+          ]
+        },
+        "minisearch": {
+          "total": 34,
+          "top5": [
+            "p01",
+            "p10",
+            "p15",
+            "p18",
+            "p21"
+          ]
+        },
+        "orama": {
+          "total": 34,
+          "top5": [
+            "p10",
+            "p01",
+            "p15",
+            "p18",
+            "p21"
+          ]
+        },
+        "elasticsearch": {
+          "total": 34,
+          "top5": [
+            "p01",
+            "p10",
+            "p15",
+            "p18",
+            "p21"
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "舊資料歸屬",
+      "keyword": "transfermarker",
+      "engines": {
+        "sqlite": {
+          "total": 1,
+          "top5": [
+            "p09"
+          ]
+        },
+        "minisearch": {
+          "total": 1,
+          "top5": [
+            "p09"
+          ]
+        },
+        "orama": {
+          "total": 1,
+          "top5": [
+            "p09"
+          ]
+        },
+        "elasticsearch": {
+          "total": 1,
+          "top5": [
+            "p09"
+          ]
+        }
+      }
+    }
+  ]
+}

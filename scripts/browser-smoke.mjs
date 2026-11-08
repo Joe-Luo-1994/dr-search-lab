@@ -1,0 +1,73 @@
+import { chromium } from 'playwright';
+import assert from 'node:assert/strict';
+import { mkdir, writeFile } from 'node:fs/promises';
+
+await mkdir('.lab/reports', { recursive: true });
+const baseURL = process.env.LAB_BASE_URL || 'http://127.0.0.1:3000';
+const channel = process.env.LAB_BROWSER_CHANNEL || (process.platform === 'win32' ? 'msedge' : undefined);
+const browser = await chromium.launch({ ...(channel && channel !== 'chromium' ? { channel } : {}), headless: true });
+try {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1100 }, acceptDownloads: true });
+  const page = await context.newPage();
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  await page.goto(baseURL);
+  await page.getByRole('heading', { name: '相同條件，看見不同取捨。' }).waitFor();
+  const initialStatus = await (await context.request.get(`${baseURL}/api/lab/status`)).json();
+  const hasES = initialStatus.engines.some(e => e.id === 'elasticsearch' && e.ready);
+  if (hasES) await page.getByRole('checkbox', { name: 'Elasticsearch', exact: true }).check();
+  const engineCount = hasES ? 4 : 3;
+  await page.getByRole('button', { name: 'Space ＋ Tags AND', exact: true }).click();
+  await page.getByRole('button', { name: '比較搜尋 →', exact: true }).click();
+  await page.locator('.metrics').nth(engineCount - 1).waitFor();
+  assert.equal(await page.locator('.metrics').count(), engineCount);
+  for (const card of await page.locator('.engine-card').all()) {
+    if (await card.locator('.metrics').count()) assert((await card.locator('.hits').innerText()).includes('Database backup runbook'));
+  }
+  await page.screenshot({ path: '.lab/reports/desktop.png', fullPage: true });
+  await page.getByRole('button', { name: 'Database backup runbook', exact: true }).first().click();
+  await page.getByRole('dialog').waitFor();
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('link', { name: '↓ m-p01.txt' }).click();
+  const download = await downloadPromise;
+  assert.equal(download.suggestedFilename(), 'm-p01.txt');
+  await download.saveAs('.lab/reports/media-download.txt');
+  await page.getByRole('button', { name: '關閉 ×' }).click();
+  const reportPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: '匯出觀測 JSON ↗' }).click();
+  await (await reportPromise).saveAs('.lab/reports/browser-observation.json');
+  // Verify actual HTTP authorization and cookie identity, not only a rendered badge.
+  const api = context.request;
+  let res = await api.get(`${baseURL}/api/lab/pages/p01?mediaId=m-p04`); assert.equal(res.status(), 403);
+  await page.getByLabel('模擬使用者').selectOption('guest');
+  await page.getByRole('button', { name: '比較搜尋 →', exact: true }).waitFor({ state: 'visible' });
+  await page.waitForFunction(() => !document.querySelector('.search-line button').disabled);
+  await page.getByRole('button', { name: '比較搜尋 →', exact: true }).click();
+  await page.locator('.metrics').nth(engineCount - 1).waitFor();
+  assert.deepEqual(await page.locator('.metrics>div:first-child strong').allTextContents(), Array(engineCount).fill('0'));
+  res = await api.get(`${baseURL}/api/lab/pages/p01`); assert.equal(res.status(), 404);
+  await page.getByRole('button', { name: /授權與版本/ }).click();
+  await page.getByRole('button', { name: '重設本會話', exact: true }).click();
+  await page.waitForFunction(() => !document.querySelector('.recovery-grid button').disabled);
+  await page.getByRole('button', { name: '模擬同步失敗 · 保留舊版' }).click();
+  await page.getByRole('alert').waitFor();
+  let status = await (await api.get(`${baseURL}/api/lab/status`)).json(); assert.equal(status.state.version, 'v1');
+  await page.getByRole('button', { name: '切換至 V2' }).click();
+  await page.getByRole('button', { name: '切換至 V1' }).waitFor();
+  status = await (await api.get(`${baseURL}/api/lab/status`)).json(); assert.equal(status.state.version, 'v2');
+  await page.getByRole('button', { name: '模擬 ReBAC 故障' }).click();
+  await page.getByRole('button', { name: '恢復 ReBAC' }).waitFor();
+  res = await api.post(`${baseURL}/api/lab/search/sqlite`, { data: { keyword: 'backup' } }); assert.equal(res.status(), 503);
+  const other = await browser.newContext();
+  const otherStatus = await (await other.request.get(`${baseURL}/api/lab/status`)).json(); assert.equal(otherStatus.state.rebacDown, false);
+  await other.close();
+  await page.getByRole('button', { name: '重設本會話', exact: true }).click();
+  await page.waitForFunction(() => !document.querySelector('.recovery-grid button').disabled);
+  await page.getByRole('button', { name: /搜尋比較/ }).click();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.screenshot({ path: '.lab/reports/mobile.png', fullPage: true });
+  assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth));
+  assert.deepEqual(errors, []);
+  await writeFile('.lab/reports/browser-smoke.json', JSON.stringify({ at: new Date().toISOString(), passed: true, baseURL, browser: channel || 'chromium', platform: process.platform, engineCount, elasticsearchVerified: hasES, checks: ['real engines render', 'Tags AND', 'page read', 'media download', 'wrong-media rejection', 'report export', 'guest denied', 'publish rollback', 'v2 publish', 'ReBAC fail-closed', 'cookie session isolation', 'mobile no horizontal overflow', 'no page errors'] }, null, 2));
+  console.log(`Browser smoke passed (13 checks; ${engineCount} real engines); screenshots in .lab/reports`);
+} finally { await browser.close(); }
