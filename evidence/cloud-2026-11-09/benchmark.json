@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-11-08T23:37:35.386Z",
+  "node": "v22.21.1",
+  "synthetic": true,
+  "disclaimer": "Small fixture microbenchmark, not production sizing. RSS includes shared module imports and EXCLUDES external ES server. ES requests include local HTTP latency. No cross-region transfer, Docker or RTO measured.",
+  "results": [
+    {
+      "engine": "sqlite",
+      "count": 50,
+      "importMs": 21.940317,
+      "coldMetrics": {
+        "authMs": 0.011498000000003117,
+        "loadMs": 0.13302000000000191,
+        "searchMs": 0.6644999999999968,
+        "apiMs": 3.2429520000000025
+      },
+      "p50Ms": 0.5799629999999993,
+      "p95Ms": 1.080337,
+      "rssBytes": 62124032,
+      "maxRssKb": 60668,
+      "scope": "isolated Node worker; imports shared adapters; single client; local metadata read included; not Next.js HTTP or capacity benchmark"
+    },
+    {
+      "engine": "minisearch",
+      "count": 50,
+      "importMs": 23.625933999999997,
+      "coldMetrics": {
+        "authMs": 0.011777999999999622,
+        "loadMs": 3.2658369999999977,
+        "searchMs": 8.223370000000003,
+        "apiMs": 12.562329999999996
+      },
+      "p50Ms": 0.4788810000000012,
+      "p95Ms": 1.3703630000000118,
+      "rssBytes": 64806912,
+      "maxRssKb": 64160,
+      "scope": "isolated Node worker; imports shared adapters; single client; local metadata read included; not Next.js HTTP or capacity benchmark"
+    },
+    {
+      "engine": "orama",
+      "count": 50,
+      "importMs": 22.171864999999997,
+      "coldMetrics": {
+        "authMs": 0.010435999999998558,
+        "loadMs": 5.382702999999999,
+        "searchMs": 2.1804029999999983,
+        "apiMs": 8.509138999999998
+      },
+      "p50Ms": 0.44176500000000374,
+      "p95Ms": 1.170706999999993,
+      "rssBytes": 65056768,
+      "maxRssKb": 64720,
+      "scope": "isolated Node worker; imports shared adapters; single client; local metadata read included; not Next.js HTTP or capacity benchmark"
+    },
+    {
+      "engine": "elasticsearch",
+      "count": 50,
+      "importMs": 23.221885,
+      "coldMetrics": {
+        "authMs": 0.0102149999999952,
+        "loadMs": 0,
+        "searchMs": 37.862504,
+        "apiMs": 39.427268999999995
+      },
+      "p50Ms": 7.0784550000000195,
+      "p95Ms": 10.904184999999984,
+      "rssBytes": 73793536,
+      "maxRssKb": 78880,
+      "scope": "isolated Node worker; imports shared adapters; single client; local metadata read included; not Next.js HTTP or capacity benchmark"
+    }
+  ]
+}

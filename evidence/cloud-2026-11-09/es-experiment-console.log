@@ -1,0 +1,38 @@
+
+> dr-search-lab@0.1.0 experiment:es
+> node scripts/es-experiment.mjs
+
+(node:2319) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+START primary readiness
+PASS primary readiness
+START provision and seal four reference indices
+PASS provision and seal four reference indices
+START primary contract v1
+PASS primary contract v1
+START primary contract v2
+PASS primary contract v2
+START mixed content rejected despite same document count
+PASS mixed content rejected despite same document count
+START create filesystem snapshot
+PASS create filesystem snapshot
+START stop primary and verify search fails
+PASS stop primary and verify search fails
+START start independent DR node
+PASS start independent DR node
+START restore snapshot with primary offline
+PASS restore snapshot with primary offline
+START post-restore IDs and ordering equal original snapshot
+PASS post-restore IDs and ordering equal original snapshot
+START DR contract v1
+PASS DR contract v1
+START DR contract v2
+PASS DR contract v2
+START DR process restart preserves recovered indices
+PASS DR process restart preserves recovered indices
+Evidence: .lab/reports/es-experiment-mw8h0cao.json; passed=true
+npm notice
+npm notice New major version of npm available! 10.9.4 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

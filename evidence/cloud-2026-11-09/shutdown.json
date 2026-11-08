@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-08T23:39:53.947731+00:00",
+  "intent": "Intentional clean shutdown for filesystem snapshot; not a migration failure",
+  "next": {
+    "pid": 3713,
+    "identity": "verified cwd and pinned Node executable before SIGTERM"
+  },
+  "dr": {
+    "pid": 3279,
+    "identity": "repository lifecycle script verified node name, PID, bundled Java and ES_PATH_CONF before TERM"
+  },
+  "checks": [
+    {
+      "host": "127.0.0.1",
+      "port": 3000,
+      "connectionRefused": true
+    },
+    {
+      "host": "127.0.0.1",
+      "port": 19200,
+      "connectionRefused": true
+    },
+    {
+      "host": "127.0.0.1",
+      "port": 19300,
+      "connectionRefused": true
+    }
+  ],
+  "allStopped": true
+}
