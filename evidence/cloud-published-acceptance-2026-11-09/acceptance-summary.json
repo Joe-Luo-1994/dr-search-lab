@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-09T00:02:52.539958+00:00",
+  "acceptanceSourceCommit": "4a7e06b8ec027aa114c831ef1ded5e8d3107df2c",
+  "originalBuildId": "wzRiI8-PQTbmoPXeo4ZDO",
+  "preservedFiles": {
+    ".next/BUILD_ID": true,
+    ".lab/data/manifest.json": true,
+    ".lab/reports/es-experiment-latest.json": true,
+    "package-lock.json": true
+  },
+  "fixturesUnchanged": true,
+  "successfulRunRetained": true,
+  "firstStartPassed": false,
+  "repairedStartupPassed": true,
+  "tests": 33,
+  "elasticReleaseChecks": 4,
+  "browser": {
+    "at": "2026-11-09T00:01:40.684Z",
+    "passed": true,
+    "baseURL": "http://127.0.0.1:3000",
+    "browser": "chromium",
+    "platform": "linux",
+    "engineCount": 4,
+    "elasticsearchVerified": true,
+    "checks": [
+      "real engines render",
+      "Tags AND",
+      "page read",
+      "media download",
+      "wrong-media rejection",
+      "report export",
+      "guest denied",
+      "publish rollback",
+      "v2 publish",
+      "ReBAC fail-closed",
+      "cookie session isolation",
+      "mobile no horizontal overflow",
+      "no page errors"
+    ]
+  },
+  "sharedChrome": {
+    "observed": true,
+    "url": "http://127.0.0.1:3000",
+    "interaction": "Selected Elasticsearch, ran backup comparison, observed ES 34 results, returned to homepage; four available engines.",
+    "desktopPanelOpenedByAgent": false,
+    "limitation": "open_in_codex and private preview/port-forward tools absent. CUA cdp tab creation failed to read requirements; native shared Chromium control worked. User-side viewer operation remains unverified.",
+    "privateEntry": "Current conversation side panel → New tab (+) → Desktop → Take over; shared Chromium is already at Demo homepage."
+  }
+}

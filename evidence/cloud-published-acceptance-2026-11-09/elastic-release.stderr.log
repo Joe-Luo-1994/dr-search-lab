@@ -1,0 +1,23 @@
+(node:1657) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+node:internal/deps/undici/undici:14900
+      Error.captureStackTrace(err);
+            ^
+
+TypeError: fetch failed
+    at node:internal/deps/undici/undici:14900:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async remote (file:///workspace/dr-search-lab/lib/engines.mjs:32:20)
+    at async verifyElasticRelease (file:///workspace/dr-search-lab/lib/es-release.mjs:30:19)
+    at async file:///workspace/dr-search-lab/[eval1]:2:102 {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:19300
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 19300
+  }
+}
+
+Node.js v22.21.1

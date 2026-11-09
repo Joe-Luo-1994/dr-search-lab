@@ -1,0 +1,4 @@
+ERROR: Elasticsearch did not exit normally - check the logs at /workspace/dr-search-lab/.lab/es-native/dr/logs/drlab-dr.log
+
+ERROR: Elasticsearch died while starting up, with exit code 1
+

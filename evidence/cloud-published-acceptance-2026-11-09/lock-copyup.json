@@ -1,0 +1,47 @@
+{
+  "reason": "Snapshot overlay lock creationTime changed from epoch on first write; pre-materialize existing lock files while ES offline. No index content replacement.",
+  "locks": [
+    {
+      "path": ".lab/es-native/dr/data/node.lock",
+      "size": 0,
+      "mtimeNs": 1794180970420662210,
+      "inode": 9223372036855441278
+    },
+    {
+      "path": ".lab/es-native/dr/data/_state/write.lock",
+      "size": 0,
+      "mtimeNs": 1794180976492779075,
+      "inode": 9223372036855442046
+    },
+    {
+      "path": ".lab/es-native/dr/data/snapshot_cache/write.lock",
+      "size": 0,
+      "mtimeNs": 1794180974679469220,
+      "inode": 9223372036855480830
+    },
+    {
+      "path": ".lab/es-native/dr/data/indices/IPb4m6FlRyasnNLAadBotw/0/index/write.lock",
+      "size": 0,
+      "mtimeNs": 1794180980072847824,
+      "inode": 9223372036855460734
+    },
+    {
+      "path": ".lab/es-native/dr/data/indices/cAor8jeDSr6r5eufDK1eQg/0/index/write.lock",
+      "size": 0,
+      "mtimeNs": 1794180979900844523,
+      "inode": 9223372036855471102
+    },
+    {
+      "path": ".lab/es-native/dr/data/indices/qATFbDfFSTG52xOdJoK6og/0/index/write.lock",
+      "size": 0,
+      "mtimeNs": 1794180979904844600,
+      "inode": 9223372036855480702
+    },
+    {
+      "path": ".lab/es-native/dr/data/indices/zFn3zRa7RhOTmCODxfCZSQ/0/index/write.lock",
+      "size": 0,
+      "mtimeNs": 1794180979924844984,
+      "inode": 9223372036855880062
+    }
+  ]
+}

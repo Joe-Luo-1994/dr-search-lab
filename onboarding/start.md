@@ -10,4 +10,4 @@ cd /workspace/dr-search-lab
 在持續執行的終端啟動 npm run start。以 curl -fsS http://127.0.0.1:3000/api/lab/status 驗證，再執行 npm run test:browser；要求 13 checks、engineCount=4、elasticsearchVerified=true。瀏覽器測試也驗證搜尋、閱讀、下載與拒絕授權。
 缺少工具、資料、build 或成功 ES 報告時，先停止本專案 Next.js，執行 bash onboarding/install.sh；依 docs/CLOUD_MIGRATION.md 診斷失敗，不覆寫既有 .env.local、不在 server 運行時重建 fixture、不擅自更換 prefix。
 檔案與依賴可由快照保存；Next.js、ES 程序與 session 不保證保留。僅使用既有 proxy/TLS 信任與官方來源，不公開服務。所需額外網域為 artifacts.elastic.co、cdn.playwright.dev、storage.googleapis.com，另保留 package manager preset。
-目前尚未驗證使用者裝置的 private preview，以及 Publish 後 resume／新任務啟動；本機程序重啟通過不能取代這兩項驗收。
+2026-11-09 新任務驗收：快照檔案保留且修復後啟動通過；第一輪 Lucene lock creationTime／overlay copy-up 失敗已保存於 evidence/cloud-published-acceptance-2026-11-09/。若重現，先保存 log、確認 ES 完全離線，再僅將既有零位元組 lock 檔 touch 實體化後重試；不可對運行中的 ES 操作 lock。詳見 docs/CLOUD_MIGRATION.md。目前仍未驗證下一次快照無介入啟動，以及使用者裝置的 Desktop viewer／private preview。

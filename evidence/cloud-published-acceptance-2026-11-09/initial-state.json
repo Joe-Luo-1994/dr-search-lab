@@ -1,0 +1,32 @@
+{
+  "recordedAt": "2026-11-09T00:00:17.643248+00:00",
+  "sourceCommit": "a1bec7f546ef39e1ae1194aec2315875fa277635",
+  "buildId": "wzRiI8-PQTbmoPXeo4ZDO",
+  "runId": "mw8h0cao",
+  "passed": true,
+  "reportPrefix": "drlab-it-mw8h0cao-",
+  "configuredPrefix": "drlab-it-mw8h0cao-",
+  "elasticsearchURL": "http://127.0.0.1:19300",
+  "hashes": {
+    ".next/BUILD_ID": "487947ca82f2629e9a47ec77aaee2c629a896da956f6bac7cbcaaa4cf4108476",
+    ".lab/data/manifest.json": "c572b5e17697e064fcac5ffc5586c29a81672be8eb74eaa365ddb4f0df6b2b09",
+    ".lab/reports/es-experiment-latest.json": "b6d02fb9d99954cf14ffaca7c5161cb1be72ab991bacae73dd27cb36bac22635",
+    "package-lock.json": "cf721195043bb0c8a93fa7614e0b5d9474d2693a3683411c4bedb9a881778890"
+  },
+  "fixtureChecks": {
+    "v1-attachments.mini.json": true,
+    "v1-attachments.orama.json": true,
+    "v1-attachments.sqlite": true,
+    "v1-body.mini.json": true,
+    "v1-body.orama.json": true,
+    "v1-body.sqlite": true,
+    "v1.json": true,
+    "v2-attachments.mini.json": true,
+    "v2-attachments.orama.json": true,
+    "v2-attachments.sqlite": true,
+    "v2-body.mini.json": true,
+    "v2-body.orama.json": true,
+    "v2-body.sqlite": true,
+    "v2.json": true
+  }
+}

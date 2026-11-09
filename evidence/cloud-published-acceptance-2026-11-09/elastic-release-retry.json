@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "index": "drlab-it-mw8h0cao-v1-body",
+      "count": 100,
+      "digest": "02c74f394edadcc6cdf5dfa1cd81c82cc4520c823350b27e7171dd2ef2f99b76",
+      "writeBlocked": true
+    },
+    {
+      "index": "drlab-it-mw8h0cao-v1-attachments",
+      "count": 100,
+      "digest": "24d6d5c9b29fe7644184fb5ebffa0d6e438e7f5e7446e00db073d68bf8960ee4",
+      "writeBlocked": true
+    },
+    {
+      "index": "drlab-it-mw8h0cao-v2-body",
+      "count": 101,
+      "digest": "bb89ec5cffd9c74912172a3474b6f1f98df9e9dba2af040ae564fa4c6ed5405c",
+      "writeBlocked": true
+    },
+    {
+      "index": "drlab-it-mw8h0cao-v2-attachments",
+      "count": 101,
+      "digest": "cfa4822dc06a0ae5e516d94be7682c9e357daeb14e70a62ca0a951a586202555",
+      "writeBlocked": true
+    }
+  ]
+}
