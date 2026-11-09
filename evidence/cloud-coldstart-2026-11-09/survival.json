@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-09T00:35:30.710826+00:00",
+  "dr": "drlab-dr ready; PID 1007",
+  "clusterUUID": "4wnGrk8jSc6jPCnXiE4r9Q",
+  "nextStatusHTTP": 200,
+  "readyEngines": 4,
+  "drStartedAt": "2026-11-09T00:34:08.175Z",
+  "observedAliveSeconds": 82.535826,
+  "scope": "Finite observed interval only; no permanent process persistence or production RTO claim."
+}

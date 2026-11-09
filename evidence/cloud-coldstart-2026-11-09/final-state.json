@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-09T00:34:55.842504+00:00",
+  "checksumsUnchanged": 133,
+  "changed": [],
+  "archivedDigestsMatch": true,
+  "primaryOffline": true,
+  "cluster": {
+    "name": "drlab-dr",
+    "cluster_name": "drlab-dr",
+    "cluster_uuid": "4wnGrk8jSc6jPCnXiE4r9Q",
+    "version": {
+      "number": "8.17.0",
+      "build_flavor": "default",
+      "build_type": "tar",
+      "build_hash": "2b6a7fed44faa321997703718f07ee0420804b41",
+      "build_date": "2024-12-11T12:08:05.663969764Z",
+      "build_snapshot": false,
+      "lucene_version": "9.12.0",
+      "minimum_wire_compatibility_version": "7.17.0",
+      "minimum_index_compatibility_version": "7.0.0"
+    },
+    "tagline": "You Know, for Search"
+  },
+  "health": {
+    "cluster_name": "drlab-dr",
+    "status": "green",
+    "timed_out": false,
+    "number_of_nodes": 1,
+    "number_of_data_nodes": 1,
+    "active_primary_shards": 4,
+    "active_shards": 4,
+    "relocating_shards": 0,
+    "initializing_shards": 0,
+    "unassigned_shards": 0,
+    "unassigned_primary_shards": 0,
+    "delayed_unassigned_shards": 0,
+    "number_of_pending_tasks": 0,
+    "number_of_in_flight_fetch": 0,
+    "task_max_waiting_in_queue_millis": 0,
+    "active_shards_percent_as_number": 100.0
+  },
+  "drStatus": "drlab-dr ready; PID 1007",
+  "readyEngineCount": 4,
+  "firstAuthorizedStartPassed": true,
+  "materializedLocks": 7,
+  "tests": 33,
+  "linuxGuards": 14,
+  "browserChecks": 13,
+  "viewerAccepted": false,
+  "sessions": {
+    "dr": 70298,
+    "next": 45043
+  }
+}

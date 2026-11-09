@@ -1,0 +1,8 @@
+{
+  "environment_id": "ccarenv_b64_Y2NhcmVudl84ZGQyZTg3MjRiNjg4MTkxYmFkYTRlNDg4OGFkNDI1YQ",
+  "source_config_version_id": "38231f53ba6b7ea097676835de674a7f9ae9cde9b97b5b9671cef36e8f848c0b~cecfgver_6af113d9fd3481978ef40791a59f44eb",
+  "observations_current": true,
+  "network_policy": "enforced",
+  "runtimeSkill": "cloud-environment:cloud-environment-runtime",
+  "uiStartSkillEvidence": "Repository onboarding/start-skill.txt points only to versioned onboarding/start.md; platform status does not expose actual UI start-skill text, so settings-side equality is not independently verified."
+}

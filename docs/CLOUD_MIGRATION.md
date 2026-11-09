@@ -1,5 +1,13 @@
 # Cloud migration — reproducible environment, not a running-machine copy
 
+## 2026-11-09 新版快照冷啟動驗收（最新）
+
+- **新快照啟動通過**：初始 commit `4bdef0f3e41be7de7ea47ac42a9f39fd3c9d1e34`，未 pull、改程式、手動修補 lock、重建 fixture/build/索引或重跑 ES 實驗。沙箱 start 因 `/proc/1/environ` PermissionError 按防護拒絕；依 `onboarding/start.md` 標準升級執行同一 start，首個具備所需權限的正常啟動成功，自動 materialize 7 個既有零位元組 lock。保留兩次 log。
+- 4 組 verifyElasticRelease、33 tests（無 skip）、14 Linux 防護、13 browser checks 全通過；`engineCount=4`、`elasticsearchVerified=true`。133 個已保存檔案 checksum（含 fixture、build、原成功 report）未變；四個封存索引 digest 與原報告相符。build `wzRiI8-PQTbmoPXeo4ZDO`、prefix `drlab-it-mw8h0cao-`、DR cluster UUID `4wnGrk8jSc6jPCnXiE4r9Q` 保留，primary 19200 離線。
+- **有限時間服務存活通過**：全部測試後於 `2026-11-09T00:35:30.710826+00:00` 再查 DR 與 Next.js ready，從 DR ready 起觀察約 83 秒。服務保留於持續執行終端；只證明本輪有限觀察期間，不代表平台永久保存程序，也不是正式 RTO。
+- **使用者 viewer 未驗收**：本輪未探索 viewer、handoff、tunnel 或新 hosting；暫採雲端研究與測試、本機操作 Demo。雲端 localhost 不是使用者裝置入口。未公開服務或新增付費資源。repository 的 UI start skill 範本僅指向版本化 start.md；平台 status 未提供 UI 設定文字，未獨立核對設定端全文。
+- 證據：`evidence/cloud-coldstart-2026-11-09/`。所有歷史失敗保留；舊版手動修復紀錄不被本輪結果覆蓋。正式 RTO、長期程序存活、跨區災難、真實 ReBAC/MinIO 與 consumer 相容性仍未知。
+
 ## 2026-11-09 啟動防護固化（設定草稿）
 
 正常 Linux `node scripts/es-control.mjs start dr` 現在呼叫 `scripts/es-start.py`。Python 3 標準庫 helper 在啟動 guard 下檢查 recorded PID、同使用者同 instance 的 ES_PATH_CONF／Java config argument、HTTP 與 transport port，並對所有候選先取得 POSIX record locks；任一權限不足、程序／port 活躍、held lock、symlink、非零或 hardlink 均拒絕。先驗完整 data tree，再僅對既有 regular zero-byte node.lock/write.lock 以 fd 更新 metadata 並 fsync，無刪除、建立或寫入索引 payload。guard 保持到 daemon launcher 回傳 live PID；重複／並行 start 拒絕。直接啟動 Java 或特權檔案競爭不在此合作式入口的保證內。

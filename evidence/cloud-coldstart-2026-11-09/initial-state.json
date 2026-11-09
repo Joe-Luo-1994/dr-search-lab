@@ -1,0 +1,58 @@
+{
+  "at": "2026-11-09T00:33:43.674187+00:00",
+  "commit": "4bdef0f3e41be7de7ea47ac42a9f39fd3c9d1e34",
+  "branch": "codex/cloud-migration",
+  "gitStatus": "?? work/\n",
+  "buildId": "wzRiI8-PQTbmoPXeo4ZDO",
+  "prefix": "drlab-it-mw8h0cao-",
+  "reportPassed": true,
+  "reportPrefix": "drlab-it-mw8h0cao-",
+  "services": {
+    "3000": {
+      "online": false,
+      "error": "<urlopen error [Errno 111] Connection refused>"
+    },
+    "19200": {
+      "online": false,
+      "error": "<urlopen error [Errno 111] Connection refused>"
+    },
+    "19300": {
+      "online": false,
+      "error": "<urlopen error [Errno 111] Connection refused>"
+    }
+  },
+  "locks": [
+    {
+      "path": ".lab/es-native/dr/data/node.lock",
+      "bytes": 0
+    },
+    {
+      "path": ".lab/es-native/dr/data/_state/write.lock",
+      "bytes": 0
+    },
+    {
+      "path": ".lab/es-native/dr/data/snapshot_cache/write.lock",
+      "bytes": 0
+    },
+    {
+      "path": ".lab/es-native/dr/data/indices/IPb4m6FlRyasnNLAadBotw/0/index/write.lock",
+      "bytes": 0
+    },
+    {
+      "path": ".lab/es-native/dr/data/indices/cAor8jeDSr6r5eufDK1eQg/0/index/write.lock",
+      "bytes": 0
+    },
+    {
+      "path": ".lab/es-native/dr/data/indices/qATFbDfFSTG52xOdJoK6og/0/index/write.lock",
+      "bytes": 0
+    },
+    {
+      "path": ".lab/es-native/dr/data/indices/zFn3zRa7RhOTmCODxfCZSQ/0/index/write.lock",
+      "bytes": 0
+    }
+  ],
+  "pidFiles": {
+    "primary": null,
+    "dr": null
+  }
+}

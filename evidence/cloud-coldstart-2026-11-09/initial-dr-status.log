@@ -1,0 +1,11 @@
+curl: (7) Failed to connect to 127.0.0.1 port 19300 after 0 ms: Could not connect to server
+<anonymous_script>:1
+
+
+SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at file:///workspace/dr-search-lab/[eval1]:3:38
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v22.21.1
+

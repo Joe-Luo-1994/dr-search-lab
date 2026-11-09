@@ -1,0 +1,23 @@
+test_concurrent_start_guard_refused (__main__.OfflineStart.test_concurrent_start_guard_refused) ... ok
+test_confirmed_zombie_pid_requires_other_offline_checks (__main__.OfflineStart.test_confirmed_zombie_pid_requires_other_offline_checks) ... Recorded PID 1376 is a verified zombie; still checking processes, ports and locks
+ok
+test_guard_spans_launcher_and_repeat_start_refused (__main__.OfflineStart.test_guard_spans_launcher_and_repeat_start_refused) ... Offline materialized 2 existing zero-byte locks
+ok
+test_hardlink_refused (__main__.OfflineStart.test_hardlink_refused) ... ok
+test_invalid_pid_file_refused (__main__.OfflineStart.test_invalid_pid_file_refused) ... ok
+test_nonzero_refused_before_any_touch (__main__.OfflineStart.test_nonzero_refused_before_any_touch) ... ok
+test_offline_repeat_preserves_index_and_lock_identity (__main__.OfflineStart.test_offline_repeat_preserves_index_and_lock_identity) ... Offline materialized 2 existing zero-byte locks
+Offline materialized 2 existing zero-byte locks
+ok
+test_posix_held_lock_without_endpoint_refused (__main__.OfflineStart.test_posix_held_lock_without_endpoint_refused) ... ok
+test_recorded_active_pid_refused (__main__.OfflineStart.test_recorded_active_pid_refused) ... ok
+test_same_instance_process_without_pid_or_endpoint_refused (__main__.OfflineStart.test_same_instance_process_without_pid_or_endpoint_refused) ... ok
+test_symlink_ancestor_refused (__main__.OfflineStart.test_symlink_ancestor_refused) ... ok
+test_symlink_file_and_directory_refused (__main__.OfflineStart.test_symlink_file_and_directory_refused) ... ok
+test_unknown_process_permissions_refused (__main__.OfflineStart.test_unknown_process_permissions_refused) ... ok
+test_unresponsive_bound_endpoint_refused (__main__.OfflineStart.test_unresponsive_bound_endpoint_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.068s
+
+OK
