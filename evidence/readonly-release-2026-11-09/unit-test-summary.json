@@ -1,0 +1,18 @@
+{
+  "command": "npm test",
+  "platform": "win32",
+  "node": "v22.21.1",
+  "tests": 36,
+  "pass": 36,
+  "fail": 0,
+  "skipped": 0,
+  "durationMs": 946.3016,
+  "note": "Summary transcribed from observed TAP output; new 3 tests use a stub ES adapter; actual ES integration is in result.json",
+  "sourceHashes": {
+    "tests/artifacts.test.mjs": "75f716c76e6bf3f22fdf378b93fbda779b330c3e1beec2abbeebabd76010b994",
+    "tests/contract.test.mjs": "e6f574d624977183ce66f1325402a7a96df1574af0a7c57de6612011d779b0a3",
+    "tests/coverage.test.mjs": "f158c1de8b5c420ede3a3f46de9ffdbcbc5346815a576a48157522c829ccf85c",
+    "tests/es-response.test.mjs": "b865f088c0248f177e563e1d550a7bb6e7a3ffdf8c64d1576b7741a37abb709b",
+    "tests/readonly-release.test.mjs": "a11d8774ed213e3affa7bad2f9456178f21d0db078e4b52e072556f1007ca14e"
+  }
+}

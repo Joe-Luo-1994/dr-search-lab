@@ -1,6 +1,12 @@
 # DR Search Lab — agent handoff
 
-## 2026-11-09 新版快照冷啟動驗收（最新）
+## 2026-11-09 唯讀資料包研究（最新）
+
+使用者目前無正式 API 範例，已指定先以合成案例驗證、保留正式未知。已完成 `docs/READONLY_RELEASE_EXPERIMENT.md`：本機 Windows 的新 Node consumer 從獨立資料包與真實既有 ES 完成 128 組查詢比對、417 次讀取、425 次 binary 下載及 17 組整合檢查；36 tests 通過。8 種載入故障具體拒絕原因有紀錄；載入後損壞亦拒絕下載。首次 fetch 失敗及兩次通過保存在 `evidence/readonly-release-2026-11-09/`。
+
+這只證明合成資料契約足夠，不代表正式 F03、MinIO、HTTP consumer、發布原子性、公司 ReBAC 或雲端重播已通過。舊 Page 歸屬仍可透過 V1 暴露媒體的反例已重現，未解決。原本運行中 Demo／索引未修改，新 reader 尚未接入 UI。下一關為真實 MinIO 完整版本發布、跨請求版本一致性與失敗保留舊版；正式 API／欄位來源有資料後再核對。
+
+## 2026-11-09 新版快照冷啟動驗收
 
 - **新快照啟動通過**：初始 commit `4bdef0f3e41be7de7ea47ac42a9f39fd3c9d1e34`，未 pull、改程式、手動修補 lock、重建 fixture/build/索引或重跑 ES 實驗。沙箱 start 因 `/proc/1/environ` PermissionError 按防護拒絕；依 `onboarding/start.md` 標準升級執行同一 start，首個具備所需權限的正常啟動成功，自動 materialize 7 個既有零位元組 lock。保留兩次 log。
 - 4 組 verifyElasticRelease、33 tests（無 skip）、14 Linux 防護、13 browser checks 全通過；`engineCount=4`、`elasticsearchVerified=true`。133 個已保存檔案 checksum（含 fixture、build、原成功 report）未變；四個封存索引 digest 與原報告相符。build `wzRiI8-PQTbmoPXeo4ZDO`、prefix `drlab-it-mw8h0cao-`、DR cluster UUID `4wnGrk8jSc6jPCnXiE4r9Q` 保留，primary 19200 離線。
@@ -48,7 +54,7 @@ Help the user learn and propose an evidence-backed DR design for an internal kno
 
 ## Current task
 
-Move the research environment to Dot/Codex Cloud and verify it works without the Windows workstation. Source portability preparation is not migration success. See `docs/CLOUD_MIGRATION.md` for install/start/acceptance instructions and pending cloud checks.
+Continue evidence-backed DR architecture research. Cloud synthetic startup has passed; a usable human cloud viewer remains unverified, so do not resume open-ended viewer investigation. The latest readonly-release experiment ran on Windows, not cloud. See `docs/READONLY_RELEASE_EXPERIMENT.md` for its tested contract, source and next gate; retain formal unknowns until production inputs arrive.
 
 The user authorizes routine setup and wants minimal interruptions. Ask only for actual missing login/access choices or consequential actions. Keep repositories and previews private. Do not create a public website, grant broad account access, purchase infrastructure or send messages to others as a side effect.
 

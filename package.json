@@ -16,6 +16,7 @@
     "observe": "node --env-file-if-exists=.env.local scripts/observe.mjs",
     "test:browser": "node scripts/browser-smoke.mjs",
     "experiment:es": "node scripts/es-experiment.mjs",
+    "experiment:release": "node --env-file-if-exists=.env.local scripts/readonly-release-experiment.mjs",
     "provision": "node --env-file-if-exists=.env.local scripts/provision.mjs",
     "cloud:preflight": "node scripts/cloud-preflight.mjs",
     "transfer:export": "node scripts/export-transfer.mjs",

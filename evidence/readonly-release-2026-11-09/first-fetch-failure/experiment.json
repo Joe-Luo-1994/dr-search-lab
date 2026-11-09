@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-09T01:09:47.885Z",
+  "platform": "win32",
+  "passed": false,
+  "runRoot": "C:\\Users\\User\\Documents\\ChatGPT\\Search Playground\\.lab\\readonly-release\\2026-11-09T01-09-47-883Z",
+  "limitation": "Synthetic filesystem closure only. Original company services are not present or blocked. No MinIO, real ReBAC, production API, HTTP or capacity claim.",
+  "failure": {
+    "message": "fetch failed"
+  }
+}

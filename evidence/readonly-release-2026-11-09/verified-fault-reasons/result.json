@@ -1,0 +1,729 @@
+{
+  "at": "2026-11-09T01:11:23.663Z",
+  "platform": "win32",
+  "node": "v22.21.1",
+  "passed": true,
+  "checks": [
+    "Producer path unavailable before fresh consumer starts",
+    "Both packages validate complete metadata, all media bytes and two sealed ES variants",
+    "Search IDs/order/metadata/scores/totals match captured reference queries",
+    "Every user/page read and every page/media relation matches independent access/byte oracle",
+    "Forged page/media association and traversal-like IDs rejected",
+    "Shared-media fixture allows authorized parent path, denies unauthorized parent path",
+    "Current role revocation, authorization outage and unknown decisions never deliver content",
+    "Stale lineage disclosure reproduced, not solved",
+    "Fault rejected: missing-media",
+    "Fault rejected: corrupt-media",
+    "Fault rejected: missing-pages",
+    "Fault rejected: untrusted-manifest",
+    "Fault rejected: omitted-required-media",
+    "Fault rejected: mixed-page-version",
+    "Fault rejected: duplicate-page-id",
+    "Fault rejected: wrong-es-version",
+    "Media tampering after package load is rejected on download"
+  ],
+  "esRequests": [
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_mapping",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_settings",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_mapping",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_settings",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_mapping",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_settings",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-attachments",
+      "operation": "_mapping",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-attachments",
+      "operation": "_settings",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-attachments",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-attachments",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-attachments",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-attachments",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_mapping",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_settings",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_mapping",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_settings",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "operation": "_search",
+      "method": "POST"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_mapping",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_settings",
+      "method": "GET"
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "operation": "_search",
+      "method": "POST"
+    }
+  ],
+  "scope": "Synthetic filesystem release; mock Space authorization; loopback ES. Not company API/DB isolation, MinIO or production security.",
+  "searchComparisons": 128,
+  "pageReads": 417,
+  "downloads": 425,
+  "counterexample": "V1 still permits p09 and its stored media via old ops lineage; current Space-role checks alone do not fix stale Page ownership.",
+  "rejectedFaults": [
+    {
+      "name": "missing-media",
+      "message": "ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Documents\\ChatGPT\\Search Playground\\.lab\\readonly-release\\2026-11-09T01-11-22-978Z\\faults\\missing-media\\media\\m-p01.bin'",
+      "code": "ENOENT"
+    },
+    {
+      "name": "corrupt-media",
+      "message": "Artifact mismatch: media/m-p01.bin",
+      "status": 503
+    },
+    {
+      "name": "missing-pages",
+      "message": "ENOENT: no such file or directory, lstat 'C:\\Users\\User\\Documents\\ChatGPT\\Search Playground\\.lab\\readonly-release\\2026-11-09T01-11-22-978Z\\faults\\missing-pages\\pages.json'",
+      "code": "ENOENT"
+    },
+    {
+      "name": "untrusted-manifest",
+      "message": "Untrusted or mismatched manifest",
+      "status": 503
+    },
+    {
+      "name": "omitted-required-media",
+      "message": "Media inventory mismatch",
+      "status": 503
+    },
+    {
+      "name": "mixed-page-version",
+      "message": "Invalid, duplicate or mixed-version page",
+      "status": 503
+    },
+    {
+      "name": "duplicate-page-id",
+      "message": "Invalid, duplicate or mixed-version page",
+      "status": 503
+    },
+    {
+      "name": "wrong-es-version",
+      "message": "ES and package differ",
+      "status": 503
+    }
+  ]
+}
