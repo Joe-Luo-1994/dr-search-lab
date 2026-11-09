@@ -8,9 +8,13 @@
 
 33 tests 通過、無 skip；四組 `verifyElasticRelease`（v1/v2 × attachments false/true）通過；13 browser checks 通過，`engineCount=4`、`elasticsearchVerified=true`。primary 19200 維持離線；DR 19300 與 Next.js 3000 保持 loopback 運行。網路為 restricted、enforced，observations_current=true；額外三網域與 package_managers preset 未變更。
 
-共享 Chromium 已實際開啟 Demo，勾選 Elasticsearch 執行 backup 搜尋，觀察 ES 34 筆結果，再停回首頁。私人入口：本對話右側面板「New tab (+) → Desktop → Take over」，使用共享瀏覽器內的 `http://127.0.0.1:3000`；此網址不能當作使用者電腦直連網址。`open_in_codex`、private-preview／port-forward 工具未提供，不能代為展開面板或產生私人轉發 URL；remote_desktop 宣告 enabled=true、state=unknown，原生桌面操作已成功。**使用者端 viewer 操作仍待驗收**。
+共享 Chromium 已由 agent 實際操作，但**目前沒有已驗證的使用者雲端互動入口**。使用者已實際確認網站 UI 沒有「＋ → Desktop」，而「開啟 網頁預覽」只在使用者本機 Edge 開啟 localhost，會誤連 Windows baseline；先前將該 Desktop 路徑當成確切私人入口的說法撤回。雲端 `http://127.0.0.1:3000` 不能作為使用者裝置的入口。
 
-完整證據：`evidence/cloud-published-acceptance-2026-11-09/`。正式 RTO、真實 ReBAC／MinIO、consumer 相容性與獨立區域災難演練均未驗證；不能由這次合成資料測試推論通過。
+已檢查正式瀏覽器 API：`markHandoff()` 僅保留分頁供後續工作，不保證產生接管 UI；`requestUserTakeover("user_requested")` 才是文件中的正式使用者接管動作。`cua.listTabs({browser:"cdp"})` 成功列出 Demo；`cua.getTab("1",{browser:"cdp"})` 失敗，錯誤 `Browser Use could not read requirements.`。改用正式 `agent.browsers.get("1")`、`browser.tabs.get("1")` 成功綁定且 `tab.url()` 回傳雲端 Demo URL，但實際 `tab.requestUserTakeover("user_requested")` 仍以同一 requirements 錯誤失敗，未回傳 `browserHandoff.url` 或接管入口。未使用 `markDeliverable()` 覆蓋可能的交接標記，也未把標記保留等同互動成功。
+
+目前工具清單沒有 `open_in_codex`、私人 preview 或 inbound port-forward 控制。runtime networking 文件明確區分 outbound proxy 與平台獨立的 inbound preview／port-forward，不能用出口網路設定建立入口。沒有猜測平台 URL、修改綁定、公開服務、新增 third-party tunnel、付費資源或讀出憑證。此環境 remote_desktop 回報 enabled=true、state=unknown，表示能力宣告，不能證明網站客戶端存在 viewer。**使用者互動驗收受平台交接工具／網站 UI 限制阻擋**；雲端服務仍運行。
+
+完整證據：`evidence/cloud-published-acceptance-2026-11-09/`；入口更正與正式交接失敗紀錄以其 `handoff-followup/` 為準（取代前輪入口說明）。正式 RTO、真實 ReBAC／MinIO、consumer 相容性與獨立區域災難演練均未驗證；不能由這次合成資料測試推論通過。
 
 
 ## Scope and current evidence

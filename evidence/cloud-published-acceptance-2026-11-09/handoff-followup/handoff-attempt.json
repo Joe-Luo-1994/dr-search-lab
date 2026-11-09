@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-11-09T00:06:56.937800+00:00",
+  "sourceCommit": "12676ece3b64ea1e3f35f2edcc358f403d6aee28",
+  "userReportedUI": {
+    "desktopMenuPresent": false,
+    "previewButton": "opens user local Edge localhost; can hit Windows baseline"
+  },
+  "attempts": [
+    {
+      "api": "cua.listTabs({browser:\"cdp\"})",
+      "result": "success; Demo tab 1, browser 1"
+    },
+    {
+      "api": "cua.getTab(\"1\",{browser:\"cdp\"})",
+      "result": "Browser Use could not read requirements."
+    },
+    {
+      "api": "agent.browsers.get(\"1\"); browser.tabs.get(\"1\"); tab.url()",
+      "result": "success: http://127.0.0.1:3000/"
+    },
+    {
+      "api": "tab.requestUserTakeover(\"user_requested\")",
+      "result": "Browser Use could not read requirements."
+    }
+  ],
+  "returnedHandoffURL": null,
+  "humanInteractionVerified": false,
+  "privatePreviewToolAvailable": false,
+  "openInCodexToolAvailable": false,
+  "servicesKeptRunning": true,
+  "luceneRepairInstructionsSaved": true,
+  "nextSnapshotUnattendedStartupVerified": false
+}
