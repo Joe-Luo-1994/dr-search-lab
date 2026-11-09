@@ -63,8 +63,7 @@ if [[ "$action" == setup ]]; then
 elif [[ "$action" == start ]]; then
   [[ "$(id -u)" != 0 ]] || { echo 'Elasticsearch cannot run as root. Use a non-root cloud workspace; do not disable this guard.' >&2; exit 1; }
   [[ -f "$instance_root/config/elasticsearch.yml" ]] || { echo 'Run setup first' >&2; exit 1; }
-  if [[ -f "$pid_file" ]] && kill -0 "$(cat "$pid_file")" 2>/dev/null; then echo 'Recorded process still exists' >&2; exit 1; fi
-  ES_PATH_CONF="$instance_root/config" "$installation/bin/elasticsearch" -d -p "$pid_file"
+  python3 "$workspace/scripts/es-start.py" "$instance"
   echo "Started $instance; readiness at $uri"
 elif [[ "$action" == status ]]; then
   live="$(live_pid)"

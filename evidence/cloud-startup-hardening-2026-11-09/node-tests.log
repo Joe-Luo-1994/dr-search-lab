@@ -1,0 +1,225 @@
+
+> dr-search-lab@0.1.0 test
+> node --test --test-concurrency=1 tests/*.test.mjs
+
+TAP version 13
+# (node:2779) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: D01: actual corrupt payload rejects publish and preserves v1
+ok 1 - D01: actual corrupt payload rejects publish and preserves v1
+  ---
+  duration_ms: 22.481112
+  type: 'test'
+  ...
+# Subtest: D01: actual missing artifact rejects publish
+ok 2 - D01: actual missing artifact rejects publish
+  ---
+  duration_ms: 3.226518
+  type: 'test'
+  ...
+# Subtest: D01: manifest omitting a required file must not pass vacuously
+ok 3 - D01: manifest omitting a required file must not pass vacuously
+  ---
+  duration_ms: 8.874597
+  type: 'test'
+  ...
+# Subtest: D01: empty manifest must not pass vacuously
+ok 4 - D01: empty manifest must not pass vacuously
+  ---
+  duration_ms: 2.078333
+  type: 'test'
+  ...
+# Subtest: D01: valid staged version remains publishable after injected failures
+ok 5 - D01: valid staged version remains publishable after injected failures
+  ---
+  duration_ms: 8.190574
+  type: 'test'
+  ...
+# (node:2804) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: sqlite: Space + all Tags, and no unauthorized metadata
+ok 6 - sqlite: Space + all Tags, and no unauthorized metadata
+  ---
+  duration_ms: 26.898061
+  type: 'test'
+  ...
+# Subtest: sqlite: authorization precedes paging; no duplicates
+ok 7 - sqlite: authorization precedes paging; no duplicates
+  ---
+  duration_ms: 6.993075
+  type: 'test'
+  ...
+# Subtest: sqlite: guest and revoked space yield zero authorized results
+ok 8 - sqlite: guest and revoked space yield zero authorized results
+  ---
+  duration_ms: 4.211596
+  type: 'test'
+  ...
+# Subtest: sqlite: explicit ReBAC failure, never fall back to allow
+ok 9 - sqlite: explicit ReBAC failure, never fall back to allow
+  ---
+  duration_ms: 3.380119
+  type: 'test'
+  ...
+# Subtest: sqlite: attachment text can be included without conflating parser
+ok 10 - sqlite: attachment text can be included without conflating parser
+  ---
+  duration_ms: 10.445361
+  type: 'test'
+  ...
+# Subtest: sqlite: stale lineage is demonstrated, v2 corrects the relation
+ok 11 - sqlite: stale lineage is demonstrated, v2 corrects the relation
+  ---
+  duration_ms: 48.279638
+  type: 'test'
+  ...
+# Subtest: minisearch: Space + all Tags, and no unauthorized metadata
+ok 12 - minisearch: Space + all Tags, and no unauthorized metadata
+  ---
+  duration_ms: 22.450235
+  type: 'test'
+  ...
+# Subtest: minisearch: authorization precedes paging; no duplicates
+ok 13 - minisearch: authorization precedes paging; no duplicates
+  ---
+  duration_ms: 11.874306
+  type: 'test'
+  ...
+# Subtest: minisearch: guest and revoked space yield zero authorized results
+ok 14 - minisearch: guest and revoked space yield zero authorized results
+  ---
+  duration_ms: 4.851545
+  type: 'test'
+  ...
+# Subtest: minisearch: explicit ReBAC failure, never fall back to allow
+ok 15 - minisearch: explicit ReBAC failure, never fall back to allow
+  ---
+  duration_ms: 0.738653
+  type: 'test'
+  ...
+# Subtest: minisearch: attachment text can be included without conflating parser
+ok 16 - minisearch: attachment text can be included without conflating parser
+  ---
+  duration_ms: 7.371994
+  type: 'test'
+  ...
+# Subtest: minisearch: stale lineage is demonstrated, v2 corrects the relation
+ok 17 - minisearch: stale lineage is demonstrated, v2 corrects the relation
+  ---
+  duration_ms: 25.746944
+  type: 'test'
+  ...
+# Subtest: orama: Space + all Tags, and no unauthorized metadata
+ok 18 - orama: Space + all Tags, and no unauthorized metadata
+  ---
+  duration_ms: 20.395915
+  type: 'test'
+  ...
+# Subtest: orama: authorization precedes paging; no duplicates
+ok 19 - orama: authorization precedes paging; no duplicates
+  ---
+  duration_ms: 5.408119
+  type: 'test'
+  ...
+# Subtest: orama: guest and revoked space yield zero authorized results
+ok 20 - orama: guest and revoked space yield zero authorized results
+  ---
+  duration_ms: 6.108705
+  type: 'test'
+  ...
+# Subtest: orama: explicit ReBAC failure, never fall back to allow
+ok 21 - orama: explicit ReBAC failure, never fall back to allow
+  ---
+  duration_ms: 0.493118
+  type: 'test'
+  ...
+# Subtest: orama: attachment text can be included without conflating parser
+ok 22 - orama: attachment text can be included without conflating parser
+  ---
+  duration_ms: 18.958585
+  type: 'test'
+  ...
+# Subtest: orama: stale lineage is demonstrated, v2 corrects the relation
+ok 23 - orama: stale lineage is demonstrated, v2 corrects the relation
+  ---
+  duration_ms: 15.423349
+  type: 'test'
+  ...
+# Subtest: media requires both page permission and membership; revocation applies on download
+ok 24 - media requires both page permission and membership; revocation applies on download
+  ---
+  duration_ms: 4.736259
+  type: 'test'
+  ...
+# Subtest: failed publish does not advance active version
+ok 25 - failed publish does not advance active version
+  ---
+  duration_ms: 0.260642
+  type: 'test'
+  ...
+# Subtest: untrusted filters and pagination are rejected
+ok 26 - untrusted filters and pagination are rejected
+  ---
+  duration_ms: 0.327347
+  type: 'test'
+  ...
+# Subtest: sessions use independent state objects
+ok 27 - sessions use independent state objects
+  ---
+  duration_ms: 0.267349
+  type: 'test'
+  ...
+# (node:2815) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: F01/A01 sqlite: complete paginated set matches fixture for roles, spaces and tags
+ok 28 - F01/A01 sqlite: complete paginated set matches fixture for roles, spaces and tags
+  ---
+  duration_ms: 190.886172
+  type: 'test'
+  ...
+# Subtest: F01/A01 minisearch: complete paginated set matches fixture for roles, spaces and tags
+ok 29 - F01/A01 minisearch: complete paginated set matches fixture for roles, spaces and tags
+  ---
+  duration_ms: 111.302233
+  type: 'test'
+  ...
+# Subtest: F01/A01 orama: complete paginated set matches fixture for roles, spaces and tags
+ok 30 - F01/A01 orama: complete paginated set matches fixture for roles, spaces and tags
+  ---
+  duration_ms: 77.272854
+  type: 'test'
+  ...
+# Subtest: A02: ReBAC outage fails closed for reading AND media, not only search
+ok 31 - A02: ReBAC outage fails closed for reading AND media, not only search
+  ---
+  duration_ms: 0.769899
+  type: 'test'
+  ...
+# Subtest: A01/A03: known page ID cannot bypass current snapshot ownership
+ok 32 - A01/A03: known page ID cannot bypass current snapshot ownership
+  ---
+  duration_ms: 2.16501
+  type: 'test'
+  ...
+# (node:2826) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: F01: ES timeout/shard failure/approximate count cannot masquerade as exact successful search
+ok 33 - F01: ES timeout/shard failure/approximate count cannot masquerade as exact successful search
+  ---
+  duration_ms: 0.686432
+  type: 'test'
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1612.133837
+npm notice
+npm notice New major version of npm available! 10.9.4 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

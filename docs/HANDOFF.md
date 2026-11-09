@@ -53,3 +53,7 @@ The user authorizes routine setup and wants minimal interruptions. Ask only for 
 5. Keep original ES as a serious baseline: retaining ES need not imply duplicating MariaDB and the entire Backend. Export consistency, authorization freshness, media linkage and switching costs exist on both engine routes.
 
 After cloud acceptance, the next useful research is real API/data dependency mapping, MinIO publication/version consistency, ReBAC interface/limits and realistic load/duration. Obtain real analyzer/query examples before promising identical search semantics.
+
+## 2026-11-09 啟動防護更新
+
+Linux start 已內建離線檢查與既有 zero-byte node.lock/write.lock 實體化；依 `onboarding/start.md` 操作，不再由 agent 手動 touch。狀態不明／權限不足拒絕，必要時標準權限升級後執行同一入口。本草稿驗證不能代替重新發布後新一般對話的免臨場修復驗收；私人 viewer 限制未解決。

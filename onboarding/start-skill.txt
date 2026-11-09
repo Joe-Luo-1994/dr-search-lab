@@ -1,0 +1,1 @@
+請讀取並遵循 /workspace/dr-search-lab/onboarding/start.md；使用現有 checkout，不建立 worktree，不手動修補 lock，不重建資料或重跑 ES 實驗掩蓋啟動問題。

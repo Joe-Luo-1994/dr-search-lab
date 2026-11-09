@@ -1,5 +1,19 @@
 # Cloud migration — reproducible environment, not a running-machine copy
 
+## 2026-11-09 啟動防護固化（設定草稿）
+
+正常 Linux `node scripts/es-control.mjs start dr` 現在呼叫 `scripts/es-start.py`。Python 3 標準庫 helper 在啟動 guard 下檢查 recorded PID、同使用者同 instance 的 ES_PATH_CONF／Java config argument、HTTP 與 transport port，並對所有候選先取得 POSIX record locks；任一權限不足、程序／port 活躍、held lock、symlink、非零或 hardlink 均拒絕。先驗完整 data tree，再僅對既有 regular zero-byte node.lock/write.lock 以 fd 更新 metadata 並 fsync，無刪除、建立或寫入索引 payload。guard 保持到 daemon launcher 回傳 live PID；重複／並行 start 拒絕。直接啟動 Java 或特權檔案競爭不在此合作式入口的保證內。
+
+這將先前手動離線處理納入程式，不是平台 overlay 行為的正式保證。`tests/es-start-linux.py` 驗證真實 Linux fixture／程序／held locks 與內容保留；本草稿的既有 DR、四組封存 release 及 browser 驗收另有實測。**重新發布後，新一般對話免臨時人工修復啟動仍待驗證。** 不重建 fixture、不重跑 ES 實驗掩蓋問題。細節與新證據見 `evidence/cloud-startup-hardening-2026-11-09/`。
+
+版本化啟動說明以 `onboarding/start.md` 為準；環境 UI 的 start skill 只保存以下一行，避免複製過期修復全文：
+
+```text
+請讀取並遵循 /workspace/dr-search-lab/onboarding/start.md；使用現有 checkout，不建立 worktree，不手動修補 lock，不重建資料或重跑 ES 實驗掩蓋啟動問題。
+```
+
+若沙箱因 `/proc` 不可讀而拒絕，使用平台正常權限升級執行相同指令，不降級檢查。私人 viewer 未打通的限制保持不變，本輪不再探索入口或 tunnel。
+
 ## 2026-11-09 發布後新任務目前狀態
 
 使用既有 checkout；初始來源 `a1bec7f546ef39e1ae1194aec2315875fa277635`，ff-only 更新至 `4a7e06b8ec027aa114c831ef1ded5e8d3107df2c`。保留 build `wzRiI8-PQTbmoPXeo4ZDO`、成功 Linux ES run `mw8h0cao`、prefix `drlab-it-mw8h0cao-`；14 個 fixture checksum 均相符。未重建 fixture、build、索引或重跑 ES 實驗。
@@ -91,7 +105,7 @@ Saving a cloud filesystem does not prove that processes, ports or sessions survi
 1. Check the saved `.env.local`, fixture manifest and successful experiment report.
 2. Start DR with `node scripts/es-control.mjs start dr` only if not already ready; then `node scripts/es-control.mjs status dr`.
 3. Run `npm run start` and verify `/api/lab/status` and browser smoke.
-4. If data is missing, rerun the first-verification procedure; do not silently change the prefix or treat an empty index as ready.
+4. If retained data is missing, stop and report it; do not regenerate fixtures, rerun the experiment or change prefix to hide a published-startup failure. Follow `onboarding/start.md`.
 
 New tasks should start from the published prepared filesystem. Preserve reports/source commits separately; saved environment state is not version control. Verify one actual close/resume or new-task start after publishing before declaring the workflow repeatable.
 

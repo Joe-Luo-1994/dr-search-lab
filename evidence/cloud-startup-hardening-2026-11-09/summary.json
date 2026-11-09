@@ -1,0 +1,42 @@
+{
+  "at": "2026-11-09T00:22:26.633470+00:00",
+  "environment": "ccarenv_b64_Y2NhcmVudl9kZTQzMmU5NDU5MDA4MTkxODBjNmE2YWRlZjI4MDIyMg",
+  "baseCommit": "7de737e7f59d5db032a1fc1dee612115c02cf948",
+  "preservedFiles": {
+    ".lab/data/manifest.json": true,
+    ".lab/data/v1-attachments.mini.json": true,
+    ".lab/data/v1-attachments.orama.json": true,
+    ".lab/data/v1-attachments.sqlite": true,
+    ".lab/data/v1-body.mini.json": true,
+    ".lab/data/v1-body.orama.json": true,
+    ".lab/data/v1-body.sqlite": true,
+    ".lab/data/v1.json": true,
+    ".lab/data/v2-attachments.mini.json": true,
+    ".lab/data/v2-attachments.orama.json": true,
+    ".lab/data/v2-attachments.sqlite": true,
+    ".lab/data/v2-body.mini.json": true,
+    ".lab/data/v2-body.orama.json": true,
+    ".lab/data/v2-body.sqlite": true,
+    ".lab/data/v2.json": true,
+    ".env.local": true,
+    ".next/BUILD_ID": true,
+    ".lab/reports/es-experiment-latest.json": true,
+    "package-lock.json": true
+  },
+  "fourReleaseDigestsEqualPublishedAcceptance": true,
+  "clusterUUIDPreserved": true,
+  "linuxTests": 14,
+  "nodeTests": 33,
+  "browserChecks": 13,
+  "browserEngineCount": 4,
+  "fixtureRebuilt": false,
+  "experimentRerun": false,
+  "manualLockRepair": false,
+  "nextPublishedSnapshotAcceptance": "pending",
+  "privateViewer": "still blocked; not investigated this round",
+  "sourceSHA256": {
+    "scripts/es-start.py": "aca88819a26203b3007c5de016c8a8fe02dce6d7571e8c1824bac4ff68f7e54d",
+    "scripts/es-native.sh": "d337fa6ed3afdd91fbebd15fe2db2f7123cb9fec2f07dab4f81c02c1af5df339",
+    "tests/es-start-linux.py": "ad6b7de6bc1547cf102ea613fdfa8a54577a570f9ec811dcaef3660321629365"
+  }
+}

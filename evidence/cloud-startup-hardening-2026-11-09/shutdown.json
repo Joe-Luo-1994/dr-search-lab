@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-09T00:23:00.407995+00:00",
+  "nextPID": 2972,
+  "nextIdentityVerified": true,
+  "drPID": 4097,
+  "drIdentityVerifiedByLifecycle": true,
+  "ESClosed": [
+    "primary",
+    "dr"
+  ],
+  "ports": [
+    {
+      "port": 3000,
+      "connectionRefused": true
+    },
+    {
+      "port": 19200,
+      "connectionRefused": true
+    },
+    {
+      "port": 19300,
+      "connectionRefused": true
+    }
+  ],
+  "helperTerminated": [
+    3626,
+    3971
+  ],
+  "intentionalSnapshotPreparation": true,
+  "dataDeleted": false
+}
