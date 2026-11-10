@@ -1,0 +1,1 @@
+Initial exec launcher specified a not-yet-created validation directory as cwd and was rejected before shell execution: No such file or directory. No preparation or service command ran. Corrected by creating the isolated source copy from repository root first.

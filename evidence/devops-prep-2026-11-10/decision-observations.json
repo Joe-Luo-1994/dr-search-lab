@@ -1,0 +1,23 @@
+{
+  "scope": "Provisional task observation; required Chinese semantics not confirmed by PM/consumer. More hits do not imply higher quality.",
+  "chineseQuery": "資料庫備份",
+  "fixtureP01ContainsPhraseInBody": true,
+  "p01FoundByEngine": {
+    "sqlite": false,
+    "minisearch": false,
+    "orama": false,
+    "elasticsearch": true
+  },
+  "totals": {
+    "sqlite": 1,
+    "minisearch": 1,
+    "orama": 0,
+    "elasticsearch": 32
+  },
+  "adoptionGaps": [
+    "Chinese body phrase task misses p01 in current three embedded configurations",
+    "HTTP route media is generated text, not stored binary",
+    "HTTP demo uses mock default Alice, not real identity",
+    "Operation chains are not pinned across version changes"
+  ]
+}

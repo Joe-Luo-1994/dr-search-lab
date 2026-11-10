@@ -1,0 +1,21 @@
+{
+  "accessedDateTaipei": "2026-11-10",
+  "sources": [
+    {
+      "url": "https://nextjs.org/docs/app/guides/backend-for-frontend",
+      "scope": "opened official API and auth sections"
+    },
+    {
+      "url": "https://nodejs.org/download/release/v22.21.1/docs/api/sqlite.html",
+      "scope": "opened pinned version synchronous API section"
+    },
+    {
+      "url": "https://www.sqlite.org/useovernet.html",
+      "scope": "opened official cautions"
+    },
+    {
+      "url": "https://nextjs.org/docs/app/guides/self-hosting",
+      "scope": "official search excerpt, not complete deployment review"
+    }
+  ]
+}

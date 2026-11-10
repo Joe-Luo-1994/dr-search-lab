@@ -1,0 +1,14 @@
+{
+  "baseCommit": "80a71edbad899fd6fdd8388a8bab885159e1b39e",
+  "uncommitted": true,
+  "applicationMatchesIsolatedBuild": true,
+  "files": {
+    "app/briefing/page.js": "4634f3eef1847835333c8541d3526c4c6fe04a2f2f96163d29acec928d158a0c",
+    "app/briefing/page.module.css": "0be7d5605b2c1f22a16795aa446ea3b86438f6984719499f616fe171f18cce3c",
+    "scripts/briefing-smoke.mjs": "2cb584fa3f1fafc5b5a6637a6387087617064446e10ccc88a26808884a8a4560",
+    "scripts/internal-demo-prepare.sh": "db7c3596418a527a1ea8165dcd58d1613164b5ffaac2457743543c2d9b21cd18",
+    "scripts/internal-demo-start.sh": "273613a042a45001afe88f0d214bafcf6ae3153d300a4b236b52d88ae21a7445",
+    "scripts/runtime-capabilities.mjs": "60413cd35e407ea1fb0fb7d2d8d0314ad16595f199ac8480c937a11f90f87d8e",
+    "scripts/export-transfer.mjs": "5c72c726e92df0d84307ecbb1e53ea6b71dacc4a84c748285750b0aaf3611303"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": 67,
+  "searches": 32,
+  "observations": [
+    {
+      "name": "Lab request without real credentials",
+      "user": "alice",
+      "limitation": "Default mock Alice; not a production authentication implementation."
+    },
+    {
+      "name": "Unpinned cross-request version",
+      "searchVersion": "v1",
+      "pageAfterPublishStatus": 404,
+      "meaning": "Search V1 p09 then publish V2: page read follows current session version, not search release. Existing demo does not implement pinned operation chains."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-09T17:17:25.274958+00:00",
+  "commit": "80a71edbad899fd6fdd8388a8bab885159e1b39e",
+  "build": "wzRiI8-PQTbmoPXeo4ZDO",
+  "prefix": "drlab-it-mw8h0cao-",
+  "services": {
+    "3000": "<urlopen error [Errno 111] Connection refused>",
+    "19200": "<urlopen error [Errno 111] Connection refused>",
+    "19300": "<urlopen error [Errno 111] Connection refused>"
+  },
+  "sourceStatus": " M docs/HANDOFF.md\n M docs/READONLY_RELEASE_EXPERIMENT.md\n M docs/VERIFICATION_PLAN.md\n?? docs/CURRENT_DR_BASELINE.md\n?? docs/MINIO_RELEASE_EXPERIMENT.md\n?? docs/PROPOSAL_ASSUMPTIONS.md\n?? docs/RESEARCH_BASELINES.md\n?? docs/RESEARCH_ROADMAP.md\n?? docs/STAKEHOLDER_CONFIRMATIONS.md\n?? evidence/cloud-readonly-release-2026-11-09/\n?? evidence/devops-prep-2026-11-10/\n?? evidence/public-research-2026-11-10/\n?? work/\n"
+}

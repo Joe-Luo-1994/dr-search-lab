@@ -1,5 +1,67 @@
 # DR Search Lab — agent handoff
 
+## 2026-11-10 使用者授權提交與推送
+
+使用者明確要求先commit並push GitHub。本次交付包含前述未提交研究、Linux合成Demo、Pagefind實驗、四段討論介面、Harbor探索卡與文字證據。推送前fetch確認origin/codex/cloud-migration與本地HEAD同為80a71ed，沒有遠端新增提交。僅提交版本化程式／文件／本輪文字證據（含失敗log）；work/、node_modules、.lab、.next與.env.local保持本地，不納入。過去歷史證據保留。下方「尚未commit/push」為當時紀錄，不代表這次授權後的交付狀態；最終SHA以Git log與遠端分支核對為準。正式內網Harbor、container、需求與使用者驗收仍未完成。 兩份新prepare.log含終端CRLF，已用精確.gitattributes規則保留原始bytes，避免Git換行轉換使SHA256SUMS失效；原始log尾端空白保留。
+
+## 2026-11-10 四段共同討論與Harbor探索（最新）
+
+使用者要求最終GitHub推送前納入內網image供應及設計框架，並確認有內部Harbor、似乎部分API。沒有實際Harbor連線／inventory；新增 `INTERNAL_HARBOR_DISCOVERY.md`：內網agent可用的30–45分鐘只讀H01、明確project scope、最多3候選、tag/digest/platform/owner、npm與Pagefind native依賴，以及停止條件。不要預設Docker Hub可達；container未build/run。`scripts/runtime-capabilities.mjs`僅為本機Node／FTS5能力探針，雲端執行通過，不是內網證據。
+
+參考Impeccable公開designing頁（未安裝skill/plugin），新增 `PRODUCT.md`／`DESIGN.md`，把 `/briefing` 改成四段：對齊現況→一起看證據→收益與負擔→下一步。四任務含Pagefind專門情境、資料／權限／版本反例；三方案不虛構評分。可本地匯出討論草稿，預設全待確認，無儲存API，重整即清除；請勿輸入正式內容／憑證／個資。人員舒適度／理解尚未驗收，提出會前短試看的觀察方法。
+
+最終版本在新隔離/tmp副本36tests／build／13主Lab browser checks（3engine）通過；14討論互動checks通過，desktop/mobile截圖已檢視。第一次標題locator因br空白timeout，失敗及修正後結果均保留，未改app來掩蓋。前輪初版5checks保留為歷史，不累加。新證據 `evidence/discussion-design-2026-11-10/`；127原baseline檔checksum保留，原DR/Next仍ready。最新展示3102為session35773、舊初稿3100為74986，原Next3000／DR19300照常；cloud localhost非使用者入口，不承諾永久存活。
+
+目前HEAD仍80a71ed，所有先前未提交工作保留，**尚未commit/push GitHub**。最終推送前須再次檢查remote，依既有規則ff/rebase不force；本輪交付先提供source archive與checksum，不包含runtime／env／node_modules。下一輪先由內網agent做H01、內部操作者驗證入口與會議體驗，再依結果調整。不將未知擅自改成通過。
+
+## 2026-11-10 內部 Linux Demo 與 Pagefind（最新，日期採 Asia/Taipei）
+
+使用者確認公司內部Linux主機／容器、先用合成案例，另準備真實資料對照表。新增 `docs/INTERNAL_DEMO.md`、`PAGEFIND_ASSESSMENT.md`、`REAL_DATA_MAPPING.md`；`app/briefing/` 會議導覽以四方價值、現況／候選架構及五個scenario組織。新增fresh-only prepare/start腳本，拒絕已有runtime或外部endpoint環境；保留原始未提交工作。
+
+新隔離副本 `work/internal-demo-validation` 安裝／36tests／build成功，13browser checks（3engines，ES=false）＋5briefing檢查＋2啟動保護檢查通過。原生Linux已重播，公司內部／容器／使用者入口未驗收；Next多層lockfile推斷root警告原樣保存。不是從此推論獨立container image已可用。準備記錄在 `evidence/internal-demo-2026-11-10/`；初次launcher用未存在cwd遭拒保留，後續由repo root建立新目錄，沒有在既有runtime修補。
+
+Pagefind1.6.0官方依賴獨立於root package，`scripts/pagefind/` 可重播／啟動。100篇合成、zh、預先解析附件；8查詢／10檢查：中文找到p07,p02,p01；bakcup零筆；同一可讀全量索引移除client space filter取得p11文字。此為共享索引設計的授權反例，不是所有Pagefind部署都有漏洞、也不構成正式採用通過。官方Node API建索引，consumer server查詢介面仍待設計。初次npm cache失敗已記錄，後以明確可寫cache安裝成功。
+
+既有fixture manifest／14資料檔、build ID及原ES report共17檔checksum保留；四封存ES digest/write-block再驗證通過。既有DR PID6138與Next3000仍ready；隔離Demo3100在持續終端session74986（有限存活，不保證後續）。Pagefind測試server已關閉，內部可依文件獨立啟動。沒有公開部署、viewer/tunnel、正式資料、憑證或新增付費資源。HTTP media仍示意文字，獨立binary reader尚未串入HTTP／MinIO。真實資料／正式身份／容量／consumer契約／版本發布未解。
+
+下一步：交付新source archive與manifest供公司核准環境執行；以DevOps現有配置補對照表，再共選v1、帶至FDE與一個核心consumer owner。不要把更多Lab測試代替對口確認。當前HEAD仍80a71ed；這輪修改與先前研究尚未commit/push。
+
+## 2026-11-10 準備11/11–11/12內部討論（最新）
+
+已新增 `DEVOPS_DISCUSSION_2026-11-11.md`（45分鐘議程、決定題、最小資料需求、A/B責任比較）及 `evidence/devops-prep-2026-11-10/`。新實測：Next HTTP 32查詢／67 assertions；三嵌入式在獨立程序禁fetch仍能做基本查詢；browser13checks通過。中文查詢差異與未固定跨請求版本的404反例保留。HTTP下載仍示意文字，與前輪獨立binary reader未接通；mock身份非正式登入。服務初始已離線，依start.md標準升級正常啟動，無手動修補；127檔hash與4索引digest保留，服務本輪ready。未修改應用／重建build或fixture／索引。優先與DevOps盤正式備份內容及部署限制，勿先擴測引擎／宣稱容量或正式consumer完成。原有未提交工作保留，本輪未commit/push。
+
+## 2026-11-10 正式現況修正：已有運作中精簡 DR（最新）
+
+使用者明確說明現行內部 DR 是 Next.js Web Server＋MinIO＋Cronjob 備份＋內部 ReBAC，已運作，但權限驗證不完整、沒有原後端 API／不支援任何 consumer、沒有搜尋。新增 `CURRENT_DR_BASELINE.md` 區分現行非DR、現行DR及synthetic lab。主線修正為沿用既有DR，評估Web增加搜尋／API並平行補授權；A為嵌入式／本地搜尋、B為新增獨立搜尋服務，C為必要時保留後端。不得把lab ES誤當現行DR已有元件。更新章程、roadmap、假設及角色表；現況來源是使用者，尚未正式系統查核。無新測試／部署，既有證據保留。
+
+## 2026-11-10 合作順序澄清：內部 v1 → 挑戰 → v2（最新）
+
+使用者指定先與內部 DevOps 合作；他們熟悉現行非 DR Infra，缺少的是準備者提供「除重建完整 Infra 外，必要 web server 可承接哪些能力」的應用／資料側可行性。避免 ES 入門介紹。先共同形成內部認為可行的 v1，再攜案請 FDE 與一個核心 consumer owner 初步挑戰架構／需求，據此形成較完整 v2。已更新 roadmap 與角色確認表；實際內部認同／會議尚未取得，無新測試或部署。
+
+## 2026-11-10 四個關鍵角色確認（最新）
+
+使用者補充主管期望：一個核心 consumer owner 方案確認（不先瞄準多家）；團隊核心 DevOps 認同現有資源下的架構方向並準備共同對外報告；PM 代表網站 user；FDE 提供公司內平台趨勢、依賴與技術可行性諮詢。PM 已確認 readonly、下載、搜尋方向（依使用者回報），勿再全列未知；其餘角色結論及細節門檻未取得。新增 `STAKEHOLDER_CONFIRMATIONS.md`，更新 roadmap 與假設。FDE 提前到R1，與 consumer 確認可並行；DNS 控制權為待查例子、自動切換非已承諾功能。未實際約會／傳訊，無新測試或部署，保留未提交工作。
+
+## 2026-11-10 探索 roadmap 與可見推進（最新）
+
+使用者要求以 roadmap 約束探索、策略性確認 stakeholder 未知，利用現有資源逐步展示，不等最終才交大方案。已建立 `docs/RESEARCH_ROADMAP.md`：R0–R4、建議探索預算、各輪出口、定向會議輸入／輸出、未知處理及可立即討論的一頁R0初稿。時間皆為建議有效工作預算，未排會議／未承諾他人工期。當前R0準備進R1；優先確認營運任務、授權時效、代表性client與依賴資源，合成工作可並行。採用缺口仍屬整體方案責任，不能用「已交付工具」轉成對consumer的檢討。未執行新服務測試或部署；保留未提交工作。
+
+## 2026-11-10 Reviewer 與跨團隊採用價值（最新）
+
+使用者接受核心假設，並明確指出 Reviewer（可能非技術廠區管理者）是主要推進壓力與待爭取的協調支持。核心價值是各 stakeholder 收益足以支持其成本，ES 一致性僅為必要時的任務／相容性證據。已補資源提供者、其他 DevOps 與實作團隊的負擔、具體合作請求，以及 Reviewer 一頁決策輸入，見 `PROPOSAL_ASSUMPTIONS.md`。不可假定 Reviewer 已有 sponsor 權限、各團隊自然都受益，或把使用者接受研究基線當成全部對口批准。下一步以候選重要任務與有界跨團隊合作需求連結技術證據。
+
+## 2026-11-10 方案準備者的核心假設
+
+使用者同時負責需求釐清、可行性探索與提案採用。已新增 `docs/PROPOSAL_ASSUMPTIONS.md`：八項可反駁核心假設、適用範圍、設計底線／需求選擇／外部前提的區分、局部調整與架構翻盤條件，以及各 audience 的需求談法和投資關卡。不宣稱覆蓋多數系統、不把正式未知改成已確認。接續先聚焦唯讀／時效／授權／consumer 契約四個高影響前提；合成實驗可並行。沒有新增服務實驗或部署，保留未提交工作。
+
+## 2026-11-10 公開基準探索（最新）
+
+目前限制 L01–L11、四對口候選門檻、公開先例與適用前提已記入 `docs/RESEARCH_BASELINES.md`，來源紀錄在 `evidence/public-research-2026-11-10/`。找到 Hollow／Iceberg 的版本發布模式；ES snapshot 非全 cluster 單點，須補 producer 來源一致性；授權新鮮度獨立於 release 一致性。所有門檻仍待對口確認，不能自訂後宣稱滿足。先回答來源邊界、commit 責任、reader/schema 回退、舊版可交付政策，再擴大 M01。未執行 MinIO、新測試、viewer 或部署；保留先前未提交工作。
+
+## 2026-11-09 雲端接續結果
+
+雲端 Linux 重播實測：36 tests（無 skip）、17 組整合檢查、128 組搜尋比對、417 次閱讀、425 次下載通過；本輪無執行失敗，故障注入拒絕理由在 result.json。既有 127 個 fixture/build/report 檔案 hash 未變；.env.local 未修改，DR 已 ready，未重啟／重建索引。來源安全 fast-forward 至 80a71ed，work/ 未提交工作保留。證據：evidence/cloud-readonly-release-2026-11-09/。這是合成資料契約的雲端證據，正式 API、MinIO、HTTP consumer、發布原子性及總成本仍未知。下一輪卡：docs/MINIO_RELEASE_EXPERIMENT.md（待驗證；本輪未執行 MinIO）。
+
 ## 2026-11-09 唯讀資料包研究（最新）
 
 使用者目前無正式 API 範例，已指定先以合成案例驗證、保留正式未知。已完成 `docs/READONLY_RELEASE_EXPERIMENT.md`：本機 Windows 的新 Node consumer 從獨立資料包與真實既有 ES 完成 128 組查詢比對、417 次讀取、425 次 binary 下載及 17 組整合檢查；36 tests 通過。8 種載入故障具體拒絕原因有紀錄；載入後損壞亦拒絕下載。首次 fetch 失敗及兩次通過保存在 `evidence/readonly-release-2026-11-09/`。

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "S01",
+    "url": "https://hollow.how/producer-consumer-apis/",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S02",
+    "url": "https://iceberg.apache.org/docs/1.7.1/reliability/",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S03",
+    "url": "https://aws.amazon.com/builders-library/ensuring-rollback-safety-during-deployments/",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S04",
+    "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-writes.html",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S05",
+    "url": "https://www.min.io/blog/leading-the-way-minios-conditional-write-feature-for-modern-data-workloads",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S06",
+    "url": "https://www.min.io/blog/how-do-i-know-replication-is-up-to-date",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S07",
+    "url": "https://www.elastic.co/docs/deploy-manage/tools/snapshot-and-restore",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S08",
+    "url": "https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "official abstract only; full paper not reviewed",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S09",
+    "url": "https://www.sei.cmu.edu/library/quality-attribute-workshop-collection/",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S10",
+    "url": "https://sre.google/workbook/implementing-slos/",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "opened official page and relevant passage",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S11",
+    "url": "https://sre.google/workbook/eliminating-toil/",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "official search result; preliminary reference",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S12",
+    "url": "https://docs.pact.io/getting_started/how_pact_works",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "official search result; preliminary reference",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S13",
+    "url": "https://www.ifm.eng.cam.ac.uk/research/dmg/tools-and-techniques/kano-model/",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "official search result; preliminary reference",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  },
+  {
+    "id": "S14",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_planning_for_recovery_dr_tested.html",
+    "accessedDateTaipei": "2026-11-10",
+    "readingScope": "official search result; preliminary reference",
+    "claimLocation": "docs/RESEARCH_BASELINES.md"
+  }
+]

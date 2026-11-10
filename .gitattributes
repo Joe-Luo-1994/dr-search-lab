@@ -8,3 +8,6 @@
 *.log text eol=lf
 SHA256SUMS text eol=lf
 *.png binary
+# Preserve captured terminal bytes so recorded evidence hashes survive checkout.
+evidence/discussion-design-2026-11-10/prepare.log -text
+evidence/internal-demo-2026-11-10/prepare.log -text

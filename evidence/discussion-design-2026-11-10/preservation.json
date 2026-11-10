@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-09T17:48:29.987255+00:00",
+  "baseline": "evidence/devops-prep-2026-11-10/before-checksums.json",
+  "checked": 127,
+  "changed": [],
+  "services": {
+    "3000": {
+      "readyEngines": [
+        "sqlite",
+        "minisearch",
+        "orama",
+        "elasticsearch"
+      ]
+    },
+    "3100": {
+      "readyEngines": [
+        "sqlite",
+        "minisearch",
+        "orama"
+      ]
+    },
+    "3102": {
+      "readyEngines": [
+        "sqlite",
+        "minisearch",
+        "orama"
+      ]
+    }
+  }
+}

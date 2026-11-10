@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-09T17:33:04.761Z",
+  "node": "v22.21.1",
+  "synthetic": true,
+  "engines": 3,
+  "es": false,
+  "minio": false,
+  "realReBAC": false,
+  "buildId": "JP-G8jpu3-hLnYnkG0_up",
+  "manifestSha256": "68f26b6e8a9f6226684c90433a45d4264928dd1519d61923ef0fbac981508f68"
+}

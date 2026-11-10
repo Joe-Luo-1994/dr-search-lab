@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-09T17:46:07.214Z",
+  "node": "v22.21.1",
+  "platform": "linux",
+  "architecture": "x64",
+  "validatedBaseline": "v22.21.1",
+  "matchesValidatedNode": true,
+  "checks": [
+    {
+      "name": "in-memory FTS5 query",
+      "passed": true
+    }
+  ],
+  "scope": "Node/SQLite only; not Harbor access or container/application acceptance",
+  "passed": true
+}

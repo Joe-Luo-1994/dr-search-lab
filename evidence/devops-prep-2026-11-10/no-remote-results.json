@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-09T17:18:44.432Z",
+  "scope": "Separate Node process using existing lab searchLab, existing fixtures, mock auth; global fetch rejected, external engine URLs removed. Application dependency probe, not network-isolation or Next HTTP proof.",
+  "results": [
+    {
+      "engine": "sqlite",
+      "total": 17,
+      "p01Found": true
+    },
+    {
+      "engine": "minisearch",
+      "total": 17,
+      "p01Found": true
+    },
+    {
+      "engine": "orama",
+      "total": 17,
+      "p01Found": true
+    }
+  ],
+  "passed": true,
+  "remoteAttempts": 0
+}

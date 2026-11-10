@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-09T17:18:47.591Z",
+  "passed": true,
+  "baseURL": "http://127.0.0.1:3000",
+  "browser": "chromium",
+  "platform": "linux",
+  "engineCount": 4,
+  "elasticsearchVerified": true,
+  "checks": [
+    "real engines render",
+    "Tags AND",
+    "page read",
+    "media download",
+    "wrong-media rejection",
+    "report export",
+    "guest denied",
+    "publish rollback",
+    "v2 publish",
+    "ReBAC fail-closed",
+    "cookie session isolation",
+    "mobile no horizontal overflow",
+    "no page errors"
+  ]
+}

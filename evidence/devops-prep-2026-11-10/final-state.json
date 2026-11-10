@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-09T17:21:10.281884+00:00",
+  "unchangedFiles": 127,
+  "changed": [],
+  "sealedReleaseDigestsMatchHistorical": true,
+  "drClusterUUID": "4wnGrk8jSc6jPCnXiE4r9Q",
+  "readyEngines": 4,
+  "drStatus": "drlab-dr ready; PID 6138",
+  "sessions": {
+    "dr": 54503,
+    "next": 38638
+  },
+  "sourceHashes": {
+    "app/api/lab/[...parts]/route.js": "64053ddbfbd3bec30e916b64993369421c7260bac587c3e91bfa631624cca8c2",
+    "lib/lab.mjs": "62477634ffefa681878d36ae22d3a58a96e2369e57a73108491515228290d71a",
+    "lib/engines.mjs": "e395d1942b4d7afaeb9ae0a7d336c8bb9fd7067fa5566ce9cec0be75214dc3c6",
+    "lib/dataset.mjs": "24ba23538ce907a792bd0ac06e031f213891fee889984341080900e5292f50bc"
+  }
+}

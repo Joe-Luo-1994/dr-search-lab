@@ -2,7 +2,9 @@
 
 這是可操作的研究原型，目的是比較搜尋語意、結構化篩選、授權與部署取捨，不是正式 DR 系統。
 
-雲端移轉與重建步驟見 [CLOUD_MIGRATION](docs/CLOUD_MIGRATION.md)，agent 接手先讀 [HANDOFF](docs/HANDOFF.md)。Linux 原生 ES 啟動腳本已加入，實際雲端驗收仍待完成；保留的 Windows 證據不能當作雲端測試。
+雲端移轉與重建步驟見 [CLOUD_MIGRATION](docs/CLOUD_MIGRATION.md)，agent 接手先讀 [HANDOFF](docs/HANDOFF.md)。新版雲端快照冷啟動已有驗收紀錄；永久程序存活、正式 RTO 與使用者 viewer 仍未驗收。
+
+公司 Linux **新合成副本**請用 [內部 Demo 操作包](docs/INTERNAL_DEMO.md)，含 `/briefing` 會議導覽、架構圖、任務情境、Pagefind 獨立實驗與真實資料對照表。現有雲端 checkout 僅依 [onboarding/start.md](onboarding/start.md) 啟動，不重建既有資料。內部主機／容器尚未實際部署。
 
 ## 執行
 
@@ -25,7 +27,7 @@ npm run start
 | SQLite FTS5、MiniSearch、Orama | 真實建立、序列化、載入、查詢索引；有契約測試 |
 | Elasticsearch | 真實 native 雙 cluster 實驗通過；snapshot 還原、混版檢查、契約與瀏覽器已驗證，見 docs/ES_EXPERIMENT.md |
 | Meilisearch、Typesense | HTTP adapter、provision 腳本、Compose 已提供；尚未在本機服務驗證 |
-| Pagefind | 明確標示未實作，不偽造結果 |
+| Pagefind | 1.6.0 獨立合成實驗：8查詢／10檢查；未整合主Lab、正式ReBAC或consumer，見 docs/PAGEFIND_ASSESSMENT.md |
 | ReBAC | 本機模擬：可見 Space 集合、延遲、撤權、故障；不是公司服務 |
 | Media | 合成文字檔下載；驗證 Page 權限及 Media membership |
 | MinIO | 未接入；以本機 `.lab/data` 表示發布檔來源 |

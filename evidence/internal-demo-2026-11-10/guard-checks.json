@@ -1,0 +1,14 @@
+[
+  {
+    "name": "existing-runtime-preserved",
+    "exitCode": 2,
+    "passed": true,
+    "output": "REFUSED: .lab exists. Preserve this directory; use a new extracted source copy.\n"
+  },
+  {
+    "name": "inherited-external-endpoint-refused",
+    "exitCode": 2,
+    "passed": true,
+    "output": "REFUSED: inherited ELASTICSEARCH_URL.\n"
+  }
+]

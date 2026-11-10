@@ -15,6 +15,7 @@ async function copy(relative) {
   const info = await lstat(relative);
   if (info.isSymbolicLink()) throw new Error(`Symlink refused: ${relative}`);
   if (info.isDirectory()) {
+    if (path.basename(relative) === 'node_modules') return;
     await mkdir(path.join(source, relative), { recursive: true });
     for (const child of (await readdir(relative)).sort()) await copy(path.join(relative, child));
   } else {

@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-09T17:46:17.425Z",
+  "checks": [],
+  "passed": false,
+  "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('heading', { name: '讓 DR 用得上，也維護得起。' }) to be visible\u001b[22m\n\n    at /workspace/dr-search-lab/scripts/briefing-smoke.mjs:15:59"
+}

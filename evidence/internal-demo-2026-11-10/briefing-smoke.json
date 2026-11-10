@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-09T17:36:34.421Z",
+  "checks": [
+    "four audiences and heading rendered",
+    "four audience cards and five scenarios",
+    "interactive Lab link works",
+    "mobile no horizontal overflow",
+    "no browser page errors"
+  ],
+  "passed": true
+}

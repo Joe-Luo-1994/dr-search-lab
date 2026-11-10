@@ -1,0 +1,1157 @@
+{
+  "at": "2026-11-09T17:18:26.767Z",
+  "scope": "Existing Next.js synthetic HTTP API, mock identity/ReBAC, demo media text; not production or binary/MinIO acceptance",
+  "checks": [
+    {
+      "name": "four reference engines ready",
+      "passed": true
+    },
+    {
+      "name": "sqlite: english HTTP",
+      "passed": true
+    },
+    {
+      "name": "sqlite: chinese HTTP",
+      "passed": true
+    },
+    {
+      "name": "sqlite: tags HTTP",
+      "passed": true
+    },
+    {
+      "name": "sqlite: tags task p01 and authorized metadata",
+      "passed": true
+    },
+    {
+      "name": "sqlite: typo HTTP",
+      "passed": true
+    },
+    {
+      "name": "sqlite: code HTTP",
+      "passed": true
+    },
+    {
+      "name": "sqlite: technical code p05 found",
+      "passed": true
+    },
+    {
+      "name": "sqlite: attachment-on HTTP",
+      "passed": true
+    },
+    {
+      "name": "sqlite: extracted attachment p06 found",
+      "passed": true
+    },
+    {
+      "name": "sqlite: attachment-off HTTP",
+      "passed": true
+    },
+    {
+      "name": "sqlite: attachment-off no hits",
+      "passed": true
+    },
+    {
+      "name": "sqlite: forbidden-space HTTP",
+      "passed": true
+    },
+    {
+      "name": "sqlite: forbidden-space no hits",
+      "passed": true
+    },
+    {
+      "name": "minisearch: english HTTP",
+      "passed": true
+    },
+    {
+      "name": "minisearch: chinese HTTP",
+      "passed": true
+    },
+    {
+      "name": "minisearch: tags HTTP",
+      "passed": true
+    },
+    {
+      "name": "minisearch: tags task p01 and authorized metadata",
+      "passed": true
+    },
+    {
+      "name": "minisearch: typo HTTP",
+      "passed": true
+    },
+    {
+      "name": "minisearch: code HTTP",
+      "passed": true
+    },
+    {
+      "name": "minisearch: technical code p05 found",
+      "passed": true
+    },
+    {
+      "name": "minisearch: attachment-on HTTP",
+      "passed": true
+    },
+    {
+      "name": "minisearch: extracted attachment p06 found",
+      "passed": true
+    },
+    {
+      "name": "minisearch: attachment-off HTTP",
+      "passed": true
+    },
+    {
+      "name": "minisearch: attachment-off no hits",
+      "passed": true
+    },
+    {
+      "name": "minisearch: forbidden-space HTTP",
+      "passed": true
+    },
+    {
+      "name": "minisearch: forbidden-space no hits",
+      "passed": true
+    },
+    {
+      "name": "orama: english HTTP",
+      "passed": true
+    },
+    {
+      "name": "orama: chinese HTTP",
+      "passed": true
+    },
+    {
+      "name": "orama: tags HTTP",
+      "passed": true
+    },
+    {
+      "name": "orama: tags task p01 and authorized metadata",
+      "passed": true
+    },
+    {
+      "name": "orama: typo HTTP",
+      "passed": true
+    },
+    {
+      "name": "orama: code HTTP",
+      "passed": true
+    },
+    {
+      "name": "orama: technical code p05 found",
+      "passed": true
+    },
+    {
+      "name": "orama: attachment-on HTTP",
+      "passed": true
+    },
+    {
+      "name": "orama: extracted attachment p06 found",
+      "passed": true
+    },
+    {
+      "name": "orama: attachment-off HTTP",
+      "passed": true
+    },
+    {
+      "name": "orama: attachment-off no hits",
+      "passed": true
+    },
+    {
+      "name": "orama: forbidden-space HTTP",
+      "passed": true
+    },
+    {
+      "name": "orama: forbidden-space no hits",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: english HTTP",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: chinese HTTP",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: tags HTTP",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: tags task p01 and authorized metadata",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: typo HTTP",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: code HTTP",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: technical code p05 found",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: attachment-on HTTP",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: extracted attachment p06 found",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: attachment-off HTTP",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: attachment-off no hits",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: forbidden-space HTTP",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: forbidden-space no hits",
+      "passed": true
+    },
+    {
+      "name": "page JSON via Next",
+      "passed": true
+    },
+    {
+      "name": "demo media HTTP path",
+      "passed": true
+    },
+    {
+      "name": "forged media relation rejected",
+      "passed": true
+    },
+    {
+      "name": "sqlite: guest denied",
+      "passed": true
+    },
+    {
+      "name": "minisearch: guest denied",
+      "passed": true
+    },
+    {
+      "name": "orama: guest denied",
+      "passed": true
+    },
+    {
+      "name": "elasticsearch: guest denied",
+      "passed": true
+    },
+    {
+      "name": "guest pages/p01",
+      "passed": true
+    },
+    {
+      "name": "guest pages/p01?mediaId=m-p01",
+      "passed": true
+    },
+    {
+      "name": "mock ReBAC failure search/sqlite",
+      "passed": true
+    },
+    {
+      "name": "mock ReBAC failure pages/p01",
+      "passed": true
+    },
+    {
+      "name": "mock ReBAC failure pages/p01?mediaId=m-p01",
+      "passed": true
+    },
+    {
+      "name": "stale lineage counterexample present",
+      "passed": true
+    },
+    {
+      "name": "version transition observation reproduced",
+      "passed": true
+    }
+  ],
+  "searches": [
+    {
+      "engine": "sqlite",
+      "name": "english",
+      "total": 33,
+      "ids": [
+        "p08",
+        "p03",
+        "p12",
+        "p01",
+        "p21",
+        "p30",
+        "p39",
+        "p48",
+        "p57",
+        "p66",
+        "p75",
+        "p84",
+        "p93",
+        "p15",
+        "p24",
+        "p33",
+        "p42",
+        "p51",
+        "p60",
+        "p69",
+        "p78",
+        "p87",
+        "p96",
+        "p18",
+        "p27",
+        "p36",
+        "p45",
+        "p54",
+        "p63",
+        "p72",
+        "p81",
+        "p90",
+        "p99"
+      ]
+    },
+    {
+      "engine": "sqlite",
+      "name": "chinese",
+      "total": 1,
+      "ids": [
+        "p07"
+      ]
+    },
+    {
+      "engine": "sqlite",
+      "name": "tags",
+      "total": 17,
+      "ids": [
+        "p01",
+        "p10",
+        "p30",
+        "p48",
+        "p66",
+        "p84",
+        "p24",
+        "p42",
+        "p60",
+        "p78",
+        "p96",
+        "p18",
+        "p36",
+        "p54",
+        "p72",
+        "p90",
+        "p12"
+      ]
+    },
+    {
+      "engine": "sqlite",
+      "name": "typo",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "sqlite",
+      "name": "code",
+      "total": 1,
+      "ids": [
+        "p05"
+      ]
+    },
+    {
+      "engine": "sqlite",
+      "name": "attachment-on",
+      "total": 1,
+      "ids": [
+        "p06"
+      ]
+    },
+    {
+      "engine": "sqlite",
+      "name": "attachment-off",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "sqlite",
+      "name": "forbidden-space",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "minisearch",
+      "name": "english",
+      "total": 33,
+      "ids": [
+        "p03",
+        "p08",
+        "p12",
+        "p01",
+        "p15",
+        "p18",
+        "p21",
+        "p24",
+        "p27",
+        "p30",
+        "p33",
+        "p36",
+        "p39",
+        "p42",
+        "p45",
+        "p48",
+        "p51",
+        "p54",
+        "p57",
+        "p60",
+        "p63",
+        "p66",
+        "p69",
+        "p72",
+        "p75",
+        "p78",
+        "p81",
+        "p84",
+        "p87",
+        "p90",
+        "p93",
+        "p96",
+        "p99"
+      ]
+    },
+    {
+      "engine": "minisearch",
+      "name": "chinese",
+      "total": 1,
+      "ids": [
+        "p07"
+      ]
+    },
+    {
+      "engine": "minisearch",
+      "name": "tags",
+      "total": 17,
+      "ids": [
+        "p01",
+        "p10",
+        "p18",
+        "p24",
+        "p30",
+        "p36",
+        "p42",
+        "p48",
+        "p54",
+        "p60",
+        "p66",
+        "p72",
+        "p78",
+        "p84",
+        "p90",
+        "p96",
+        "p12"
+      ]
+    },
+    {
+      "engine": "minisearch",
+      "name": "typo",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "minisearch",
+      "name": "code",
+      "total": 1,
+      "ids": [
+        "p05"
+      ]
+    },
+    {
+      "engine": "minisearch",
+      "name": "attachment-on",
+      "total": 1,
+      "ids": [
+        "p06"
+      ]
+    },
+    {
+      "engine": "minisearch",
+      "name": "attachment-off",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "minisearch",
+      "name": "forbidden-space",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "orama",
+      "name": "english",
+      "total": 33,
+      "ids": [
+        "p03",
+        "p08",
+        "p01",
+        "p12",
+        "p15",
+        "p18",
+        "p21",
+        "p24",
+        "p27",
+        "p30",
+        "p33",
+        "p36",
+        "p39",
+        "p42",
+        "p45",
+        "p48",
+        "p51",
+        "p54",
+        "p57",
+        "p60",
+        "p63",
+        "p66",
+        "p69",
+        "p72",
+        "p75",
+        "p78",
+        "p81",
+        "p84",
+        "p87",
+        "p90",
+        "p93",
+        "p96",
+        "p99"
+      ]
+    },
+    {
+      "engine": "orama",
+      "name": "chinese",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "orama",
+      "name": "tags",
+      "total": 17,
+      "ids": [
+        "p10",
+        "p01",
+        "p18",
+        "p24",
+        "p30",
+        "p36",
+        "p42",
+        "p48",
+        "p54",
+        "p60",
+        "p66",
+        "p72",
+        "p78",
+        "p84",
+        "p90",
+        "p96",
+        "p12"
+      ]
+    },
+    {
+      "engine": "orama",
+      "name": "typo",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "orama",
+      "name": "code",
+      "total": 1,
+      "ids": [
+        "p05"
+      ]
+    },
+    {
+      "engine": "orama",
+      "name": "attachment-on",
+      "total": 1,
+      "ids": [
+        "p06"
+      ]
+    },
+    {
+      "engine": "orama",
+      "name": "attachment-off",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "orama",
+      "name": "forbidden-space",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "elasticsearch",
+      "name": "english",
+      "total": 33,
+      "ids": [
+        "p03",
+        "p08",
+        "p12",
+        "p01",
+        "p21",
+        "p30",
+        "p39",
+        "p48",
+        "p57",
+        "p66",
+        "p75",
+        "p84",
+        "p93",
+        "p15",
+        "p24",
+        "p33",
+        "p42",
+        "p51",
+        "p60",
+        "p69",
+        "p78",
+        "p87",
+        "p96",
+        "p18",
+        "p27",
+        "p36",
+        "p45",
+        "p54",
+        "p63",
+        "p72",
+        "p81",
+        "p90",
+        "p99"
+      ]
+    },
+    {
+      "engine": "elasticsearch",
+      "name": "chinese",
+      "total": 32,
+      "ids": [
+        "p07",
+        "p02",
+        "p01",
+        "p21",
+        "p30",
+        "p39",
+        "p48",
+        "p57",
+        "p66",
+        "p75",
+        "p84",
+        "p93",
+        "p15",
+        "p24",
+        "p33",
+        "p42",
+        "p51",
+        "p60",
+        "p69",
+        "p78",
+        "p87",
+        "p96",
+        "p18",
+        "p27",
+        "p36",
+        "p45",
+        "p54",
+        "p63",
+        "p72",
+        "p81",
+        "p90",
+        "p99"
+      ]
+    },
+    {
+      "engine": "elasticsearch",
+      "name": "tags",
+      "total": 17,
+      "ids": [
+        "p01",
+        "p10",
+        "p18",
+        "p24",
+        "p30",
+        "p36",
+        "p42",
+        "p48",
+        "p54",
+        "p60",
+        "p66",
+        "p72",
+        "p78",
+        "p84",
+        "p90",
+        "p96",
+        "p12"
+      ]
+    },
+    {
+      "engine": "elasticsearch",
+      "name": "typo",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "elasticsearch",
+      "name": "code",
+      "total": 1,
+      "ids": [
+        "p05"
+      ]
+    },
+    {
+      "engine": "elasticsearch",
+      "name": "attachment-on",
+      "total": 1,
+      "ids": [
+        "p06"
+      ]
+    },
+    {
+      "engine": "elasticsearch",
+      "name": "attachment-off",
+      "total": 0,
+      "ids": []
+    },
+    {
+      "engine": "elasticsearch",
+      "name": "forbidden-space",
+      "total": 0,
+      "ids": []
+    }
+  ],
+  "requests": [
+    {
+      "route": "status",
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "disaster recovery",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "資料庫備份",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "backup",
+        "spaceId": "ops",
+        "tagIds": [
+          "database",
+          "runbook"
+        ],
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "bakcup",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "ERR_CONN_RESET",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "quartzfalcon",
+        "includeAttachments": true,
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "quartzfalcon",
+        "includeAttachments": false,
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "backup",
+        "spaceId": "restricted",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "disaster recovery",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "資料庫備份",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "backup",
+        "spaceId": "ops",
+        "tagIds": [
+          "database",
+          "runbook"
+        ],
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "bakcup",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "ERR_CONN_RESET",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "quartzfalcon",
+        "includeAttachments": true,
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "quartzfalcon",
+        "includeAttachments": false,
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "backup",
+        "spaceId": "restricted",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "disaster recovery",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "資料庫備份",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "backup",
+        "spaceId": "ops",
+        "tagIds": [
+          "database",
+          "runbook"
+        ],
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "bakcup",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "ERR_CONN_RESET",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "quartzfalcon",
+        "includeAttachments": true,
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "quartzfalcon",
+        "includeAttachments": false,
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "backup",
+        "spaceId": "restricted",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "disaster recovery",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "資料庫備份",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "backup",
+        "spaceId": "ops",
+        "tagIds": [
+          "database",
+          "runbook"
+        ],
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "bakcup",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "ERR_CONN_RESET",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "quartzfalcon",
+        "includeAttachments": true,
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "quartzfalcon",
+        "includeAttachments": false,
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "backup",
+        "spaceId": "restricted",
+        "pageSize": 100
+      },
+      "status": 200
+    },
+    {
+      "route": "pages/p01",
+      "status": 200
+    },
+    {
+      "route": "pages/p01?mediaId=m-p01",
+      "status": 200
+    },
+    {
+      "route": "pages/p01?mediaId=m-p04",
+      "status": 403
+    },
+    {
+      "route": "control",
+      "body": {
+        "action": "user",
+        "user": "guest"
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "backup"
+      },
+      "status": 200
+    },
+    {
+      "route": "search/minisearch",
+      "body": {
+        "keyword": "backup"
+      },
+      "status": 200
+    },
+    {
+      "route": "search/orama",
+      "body": {
+        "keyword": "backup"
+      },
+      "status": 200
+    },
+    {
+      "route": "search/elasticsearch",
+      "body": {
+        "keyword": "backup"
+      },
+      "status": 200
+    },
+    {
+      "route": "pages/p01",
+      "status": 404
+    },
+    {
+      "route": "pages/p01?mediaId=m-p01",
+      "status": 404
+    },
+    {
+      "route": "control",
+      "body": {
+        "action": "user",
+        "user": "alice"
+      },
+      "status": 200
+    },
+    {
+      "route": "control",
+      "body": {
+        "action": "rebac",
+        "down": true
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "backup"
+      },
+      "status": 503
+    },
+    {
+      "route": "pages/p01",
+      "status": 503
+    },
+    {
+      "route": "pages/p01?mediaId=m-p01",
+      "status": 503
+    },
+    {
+      "route": "control",
+      "body": {
+        "action": "reset"
+      },
+      "status": 200
+    },
+    {
+      "route": "search/sqlite",
+      "body": {
+        "keyword": "transfermarker"
+      },
+      "status": 200
+    },
+    {
+      "route": "control",
+      "body": {
+        "action": "publish",
+        "version": "v2"
+      },
+      "status": 200
+    },
+    {
+      "route": "pages/p09",
+      "status": 404
+    },
+    {
+      "route": "control",
+      "body": {
+        "action": "reset"
+      },
+      "status": 200
+    }
+  ],
+  "observations": [
+    {
+      "name": "Lab request without real credentials",
+      "user": "alice",
+      "limitation": "Default mock Alice; not a production authentication implementation."
+    },
+    {
+      "name": "Unpinned cross-request version",
+      "searchVersion": "v1",
+      "pageAfterPublishStatus": 404,
+      "meaning": "Search V1 p09 then publish V2: page read follows current session version, not search release. Existing demo does not implement pinned operation chains."
+    }
+  ],
+  "passed": true
+}

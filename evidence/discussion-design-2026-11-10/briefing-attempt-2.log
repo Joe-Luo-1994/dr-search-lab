@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-09T17:47:17.286Z",
+  "checks": [
+    "opening shows existing DR and four stakeholder questions",
+    "keyboard step navigation moves focus to heading",
+    "Lab opens separately so discussion state is retained",
+    "scenario selection retains failure counterexample",
+    "Pagefind boundary stays visible without invented service link",
+    "three candidates include value cost and conditions",
+    "Harbor information remains explicitly unverified",
+    "discussion starts with no implied approvals",
+    "draft survives step changes",
+    "explicit local export preserves draft and pending status",
+    "discussion interaction makes no write requests",
+    "reload clears in-memory notes as described",
+    "all four steps fit narrow viewport",
+    "no browser page errors"
+  ],
+  "passed": true
+}

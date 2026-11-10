@@ -1,0 +1,26 @@
+[
+  {
+    "name": "existing-env-refused",
+    "exitCode": 2,
+    "passed": true,
+    "output": "REFUSED: .env.local found in synthetic demo.\n"
+  },
+  {
+    "name": ".env.test-refused",
+    "exitCode": 2,
+    "passed": true,
+    "output": "REFUSED: .env.test found in synthetic demo.\n"
+  },
+  {
+    "name": "existing-env-refused",
+    "exitCode": 2,
+    "passed": true,
+    "output": "REFUSED: .env.local found in synthetic demo.\n"
+  },
+  {
+    "name": ".env.custom-refused",
+    "exitCode": 2,
+    "passed": true,
+    "output": "REFUSED: .env.custom found in synthetic demo.\n"
+  }
+]

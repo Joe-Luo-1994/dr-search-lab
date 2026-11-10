@@ -1,0 +1,13 @@
+(node:9023) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+> dr-search-lab@0.1.0 start
+> next start --hostname 127.0.0.1 --port 3102
+
+▲ Next.js 16.4.5
+- Local:         http://127.0.0.1:3102
+- Network:       http://127.0.0.1:3102
+✓ Ready in 118ms
+✓ Running next.config.mjs took 13ms
+(node:9046) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -6,7 +6,9 @@
 
 在明確的備援服務承諾下，降低系統團隊與 consumer 的整體維運負擔，並呈現提高備援能力所需的成本。不以成本轉移當成節省。
 
-目前優先驗證：保留 Elasticsearch 時，能將 DR 精簡到什麼程度？完整技術棧是成本與相容性基準；調整常駐方式與替換引擎是備案。未證明有必要之前，不增加更多引擎或改善正常服務搜尋。
+採用主判準：在已界定的營運情境下，各 stakeholder 的價值能支持其投入與責任，且 Reviewer 能據此協調推進。ES 一致性依實際任務及 consumer 契約判斷必要程度，並非提案的最終目的。
+
+現況已釐清：內部已有運行中的 Next.js＋MinIO＋Cronjob＋ReBAC DR，欠缺搜尋、consumer API 與完整權限驗證。主線改為沿用既有 DR 增量補齊能力，詳見 `CURRENT_DR_BASELINE.md`。比較 Web 端嵌入式搜尋與新增獨立搜尋服務的總負擔；不再將 lab 的 ES 視為現行 DR 必須保留的元件。每輪說明支援哪個 stakeholder 決策；未影響任務的完全一致不自動成為必要門檻。
 
 既定範圍：單一 cluster 故障；搜尋／閱讀／下載唯讀；每日同步是工作假設；一小時恢復是討論目標；DR 持續時間未定。不能把討論目標寫成已達成的 SLA。
 
@@ -87,3 +89,20 @@ schema、索引設定、權限語意、部署拓樸、API 或 consumer 使用方
 優先 F03（移除依賴）、O01（總負擔）、F02（既有行為），建立保留 ES 的主案證據。正式資料不足時，可先做清楚標為參考設定的 ES 整合，但不得因此將 F02/F03 標為正式通過。
 
 不以 100% test pass、文件數量或完成所有引擎當成結案條件。結案需要：必要承諾有證據、關鍵反例有處置、剩餘風險有接受者、成本有依據、備案有觸發條件。
+
+## 2026-11-10 提案假設與採用門檻
+
+`PROPOSAL_ASSUMPTIONS.md` 將公開基準轉成八項候選假設及適用範圍。每次驗證標明支援哪個假設、哪一對口的採用門檻，以及不成立時的方案變更；需求接受與技術證據分開記錄。既有正式未知、反例與 owner 待指定狀態不因此改變。
+
+
+## 2026-11-10 內部展示準備的證據分層
+
+- 新Linux合成副本：36 tests、build、13 browser checks（3引擎，ES=false），不是重建雲端既有snapshot。另5 briefing檢查及2拒絕覆寫／外部endpoint檢查；見 `evidence/internal-demo-2026-11-10/`。
+- Pagefind1.6.0獨立：8查詢、10 checks，含共享全量索引移除filter的披露反例；見 `evidence/pagefind-2026-11-10/`。不是主Lab第五引擎或正式權限通過。
+- 既有雲端17關鍵檔hash保留、4封存ES索引再驗證；先前完整127檔驗證保留為前輪證據，不混寫成此次數量。
+- 公司Linux／容器、內部入口／user操作、正式資料、ReBAC、MinIO與consumer契約未驗收。流程與停止條件見 `INTERNAL_DEMO.md`，正式欄位待填 `REAL_DATA_MAPPING.md`。
+
+
+## 2026-11-10 討論互動版與內網供應
+
+最新 `evidence/discussion-design-2026-11-10/`：36tests／build、13主Lab browser checks、14討論頁checks；首個locator timeout與修正證據保留。127既有檔hash保留。新增Harbor H01計畫，未查公司Harbor／未build container；runtime-capabilities不是映像驗收。Impeccable參考已轉成PRODUCT／DESIGN紀錄，真實參與者理解及舒適度尚未驗收。這是後續版本，不能與初版5checks相加做成果數字。

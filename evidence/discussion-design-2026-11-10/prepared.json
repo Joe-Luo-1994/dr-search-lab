@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-09T17:43:32.114Z",
+  "node": "v22.21.1",
+  "synthetic": true,
+  "engines": 3,
+  "es": false,
+  "minio": false,
+  "realReBAC": false,
+  "buildId": "el8XzsYhlGmPfRMnEsBr0",
+  "manifestSha256": "cfc8a5be275f22e05c696fc1f9eefdbe61802cdf5fea7504c82b741c0486f5d9"
+}
