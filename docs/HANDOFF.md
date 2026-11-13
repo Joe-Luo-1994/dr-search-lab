@@ -1,5 +1,15 @@
 # DR Search Lab — agent handoff
 
+## 2026-11-13 Pagefind索引直接放MinIO（最新）
+
+使用者提出要減少stateful維運：索引放既有MinIO，Web pod不持久化。已建立 `PAGEFIND_OBJECT_STORAGE.md` 與 `scripts/pagefind-objectstore/`，在真實原生MinIO＋Node Web＋Chromium合成環境驗證：115物件610,648bytes逐個hash一致；跨origin直接讀取、替換Web程序後新browser、private bucket經Web串流三情境共12查詢／28checks通過。匿名private GET403，proxy同樣可查。Web工作目錄皆空，原local serving path移走；不是Kubernetes或Next route驗收，也不是OS filesystem tracing。attempt-1通過後移除兩個未量測的固定0 filesystem欄位，attempt-2重播通過，兩次保留不累加。
+
+Docker Hub與Quay指定MinIO tag均拉取失敗，log保留；改用官方source tag RELEASE.2025-04-22T22-12-26Z（peeled commit0d7408fc9969caf07de6a8c3a84f9fbb10a6739e），Go1.24.2校驗下載後在300秒上限內build成功。binary顯示DEVELOPMENT.GOGET，以source/binary hash識別，不宣稱為官方已發布映像／公司版本。MinIO與probe Web結束後停止；既有雲端服務未操作。未修改.env.local、fixture、既有build或ES，原127檔hash保留。所有新依賴、Go caches、binary與MinIO data留work／.lab，evidence僅文字。
+
+架構價值：MinIO可作唯一持久化產物來源；Web仍需服務健康、流量與授權管理。SQLite／MiniSearch也可從MinIO取得可丟棄副本，不能直接說檔案在pod就一定有第二套需備份儲存。Pagefind查詢仍在browser，正式ReBAC、全量索引披露、consumer API、CSP/TLS／網路、版本發布／GC／回退、容量及公司MinIO版本保留未知。下一步與DevOps確認client是否可達MinIO、採直接或既有Web轉送，再在公司版本重播及剪裁M01。
+
+Repo已由使用者改public，11/10曾核對。此輪基底cf170076fd12f7420fcfb5193f03fb074a8ec1e2，遠端初始相同；公開證據僅合成內容與去敏環境資訊。證據 `evidence/pagefind-minio-2026-11-13/`。
+
 ## 2026-11-10 使用者授權提交與推送
 
 使用者明確要求先commit並push GitHub。本次交付包含前述未提交研究、Linux合成Demo、Pagefind實驗、四段討論介面、Harbor探索卡與文字證據。推送前fetch確認origin/codex/cloud-migration與本地HEAD同為80a71ed，沒有遠端新增提交。僅提交版本化程式／文件／本輪文字證據（含失敗log）；work/、node_modules、.lab、.next與.env.local保持本地，不納入。過去歷史證據保留。下方「尚未commit/push」為當時紀錄，不代表這次授權後的交付狀態；最終SHA以Git log與遠端分支核對為準。正式內網Harbor、container、需求與使用者驗收仍未完成。 兩份新prepare.log含終端CRLF，已用精確.gitattributes規則保留原始bytes，避免Git換行轉換使SHA256SUMS失效；原始log尾端空白保留。

@@ -1,0 +1,12 @@
+{
+  "baseCommit": "cf170076fd12f7420fcfb5193f03fb074a8ec1e2",
+  "files": {
+    "scripts/pagefind-objectstore/probe.mjs": "fc5a645b9d8a22bd09cb9f134ded1787e652c415e15ced8e8a466f092f9ee93e",
+    "scripts/pagefind-objectstore/web.mjs": "e6dd638877f7c44c895b6c0f5e7b4b0c6dccc108b7a7d6e5fe5959dae19289ac",
+    "scripts/pagefind-objectstore/package.json": "5175ea62b49e2523788e9c309ab7b6b20e1d3209656d1ffc5d4970314f8d26e0",
+    "scripts/pagefind-objectstore/package-lock.json": "fe271f75a03a28b7eee887c760aeb3f51a4e12f0a90c3cd856d8566e389c30fe",
+    "scripts/pagefind/demo.mjs": "9f872c5ba0eed382effe551475c30e07a5693a9411309f0bef0ed3e5aa4f3a18",
+    "scripts/pagefind/package-lock.json": "749aa49df6ccdc87f080835c6d51ee2d848040ab26c41f736db6cb1e7076cba1",
+    "lib/dataset.mjs": "24ba23538ce907a792bd0ac06e031f213891fee889984341080900e5292f50bc"
+  }
+}

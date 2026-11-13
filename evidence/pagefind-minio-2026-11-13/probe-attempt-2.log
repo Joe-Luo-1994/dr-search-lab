@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "checks": 28,
+  "objects": 115,
+  "phases": [
+    {
+      "name": "direct-cross-origin",
+      "queries": [
+        {
+          "name": "chinese",
+          "ok": true,
+          "total": 3
+        },
+        {
+          "name": "tags",
+          "ok": true,
+          "total": 17
+        },
+        {
+          "name": "code",
+          "ok": true,
+          "total": 1
+        },
+        {
+          "name": "attachment",
+          "ok": true,
+          "total": 1
+        }
+      ]
+    },
+    {
+      "name": "after-web-restart-fresh-browser",
+      "queries": [
+        {
+          "name": "chinese",
+          "ok": true,
+          "total": 3
+        },
+        {
+          "name": "tags",
+          "ok": true,
+          "total": 17
+        },
+        {
+          "name": "code",
+          "ok": true,
+          "total": 1
+        },
+        {
+          "name": "attachment",
+          "ok": true,
+          "total": 1
+        }
+      ]
+    },
+    {
+      "name": "private-bucket-streaming-proxy",
+      "queries": [
+        {
+          "name": "chinese",
+          "ok": true,
+          "total": 3
+        },
+        {
+          "name": "tags",
+          "ok": true,
+          "total": 17
+        },
+        {
+          "name": "code",
+          "ok": true,
+          "total": 1
+        },
+        {
+          "name": "attachment",
+          "ok": true,
+          "total": 1
+        }
+      ]
+    }
+  ]
+}

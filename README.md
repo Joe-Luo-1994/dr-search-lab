@@ -30,7 +30,7 @@ npm run start
 | Pagefind | 1.6.0 獨立合成實驗：8查詢／10檢查；未整合主Lab、正式ReBAC或consumer，見 docs/PAGEFIND_ASSESSMENT.md |
 | ReBAC | 本機模擬：可見 Space 集合、延遲、撤權、故障；不是公司服務 |
 | Media | 合成文字檔下載；驗證 Page 權限及 Media membership |
-| MinIO | 未接入；以本機 `.lab/data` 表示發布檔來源 |
+| MinIO | 主Lab仍以本機資料表示；獨立Pagefind遠端bundle／無索引Web重啟已用真實MinIO驗證，見 docs/PAGEFIND_OBJECT_STORAGE.md |
 | 發布 | 必要檔案集合＋checksum；已設定 ES 時還檢查兩份索引的實際內容 digest／write block；失敗保留舊版 |
 | 完整 RTO、DNS、跨區、負載與多副本 | 尚未演練 |
 

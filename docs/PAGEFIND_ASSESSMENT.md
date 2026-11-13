@@ -2,6 +2,10 @@
 
 2026-11-10。目標是讓既有 DR 的搜尋、讀取與下載被採用；不以引擎功能數或與 ES 相同結果作為唯一目標。內部 DevOps 曾提出 Pagefind 值得探索，本輪用官方文件與真正執行結果建立討論依據。
 
+## 2026-11-13 更新：索引可放MinIO，Web不必持久化
+
+新的真實MinIO合成實驗通過28項檢查／12次搜尋：跨origin直接載入115個bundle物件、替換Web並用新browser context、private bucket透過Web串流都成立。這修正了維運成本比較：Pagefind不需要把索引持久保存於Web pod；也不能將其他引擎的可丟棄local cache直接算成第二套需備份的stateful系統。詳見 `PAGEFIND_OBJECT_STORAGE.md`。授權、consumer API、完整發布與公司Kubernetes仍未驗收。映像拉取失敗與官方source-build過程保留；不將研究binary當公司核准image。
+
 ## 為什麼值得認真考慮
 
 Pagefind 把文字製成可靜態交付的索引，由瀏覽器載入與查詢。對共同可見的知識網站，可減少常駐搜尋服務、部署與監控項目。它也提供自訂索引記錄，並非只能爬靜態 HTML；即使來源是 MinIO 備份，仍可能從匯出資料建索引。這是可行路徑，尚未串接公司備份。

@@ -1,0 +1,6 @@
+{
+  "name": "dr-pagefind-objectstore-probe",
+  "private": true,
+  "type": "module",
+  "dependencies": { "minio": "8.0.7" }
+}

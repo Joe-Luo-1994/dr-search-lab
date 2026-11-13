@@ -106,3 +106,8 @@ schema、索引設定、權限語意、部署拓樸、API 或 consumer 使用方
 ## 2026-11-10 討論互動版與內網供應
 
 最新 `evidence/discussion-design-2026-11-10/`：36tests／build、13主Lab browser checks、14討論頁checks；首個locator timeout與修正證據保留。127既有檔hash保留。新增Harbor H01計畫，未查公司Harbor／未build container；runtime-capabilities不是映像驗收。Impeccable參考已轉成PRODUCT／DESIGN紀錄，真實參與者理解及舒適度尚未驗收。這是後續版本，不能與初版5checks相加做成果數字。
+
+
+## 2026-11-13 PF02：MinIO持久化索引，Web可替換
+
+新增真實MinIO／browser整合證據，3情境×4任務＝12查詢、28 checks、115物件hash。直接跨origin、Web重啟冷browser、private bucket經串流均通過；無本地index volume的來源／空目錄／請求證據保留。詳見 `PAGEFIND_OBJECT_STORAGE.md` 及 `evidence/pagefind-minio-2026-11-13/`。Docker Hub／Quay拉取失敗與官方source build保留；版本不是公司已驗證image。未重跑全Lab36tests或舊ES實驗，本輪新增隔離probe不改主Lab功能。MinIO完整發布／故障回退、ReBAC、Next/Kubernetes與consumer仍待驗證。

@@ -1,0 +1,15 @@
+{
+  "sourceTag": "RELEASE.2025-04-22T22-12-26Z",
+  "tagObject": "f19c534b9f457773dcd043d977433e1a71525c3b",
+  "peeledSourceCommit": "0d7408fc9969caf07de6a8c3a84f9fbb10a6739e",
+  "sourceURL": "https://github.com/minio/minio",
+  "compiler": "go1.24.2 linux/amd64",
+  "binarySha256": "aa59c2d7e47e888bc9c71078343a0cf7281cf384dc463d4e524d2b1738a39542",
+  "binaryBytes": 159891958,
+  "binaryNotCommitted": true,
+  "runtimeReportedVersion": "minio version DEVELOPMENT.GOGET (commit-id=DEVELOPMENT.GOGET)\nRuntime: go1.24.2 linux/amd64\nLicense: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html\nCopyright: 2015-0000 MinIO, Inc.",
+  "buildBudgetSeconds": 300,
+  "buildExitCode": 0,
+  "buildCommand": "CGO_ENABLED=0 GOMAXPROCS=4 GOTOOLCHAIN=local go build -o <isolated>/bin/minio .",
+  "note": "Built from official tagged source. Not an official prebuilt image, not company-version validation."
+}
