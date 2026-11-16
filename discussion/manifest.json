@@ -1,0 +1,133 @@
+{
+  "version": "2026-11-16-discussion-v1.1",
+  "scope": "curated discussion only; source hashes identify locally retained evidence, not included raw logs",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 30123,
+      "sha256": "467706370b54fc5fddd983f7785fa7aa8955f07dcc39159e0d97cbc8997d8143"
+    },
+    {
+      "path": "pagefind.html",
+      "bytes": 13113,
+      "sha256": "506e1209a965e181add9c4d2977ddee97baf024770b7979fe587960c145d15bf"
+    },
+    {
+      "path": "evidence.html",
+      "bytes": 9193,
+      "sha256": "e05f7928ad7b5700d39264d81bdcf45fa4032d20bbe2300673b06d48cd187b29"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1543,
+      "sha256": "235814be5a834249b3461f0a25e113f0b542e26fb366cbc7cb94a34ba9f85a1b"
+    }
+  ],
+  "sources": [
+    {
+      "source": "docs/DR_E1_RESULT_20261115.md",
+      "sha256": "89166913a49e5f5e4895c6fcc634d803ec5110bacbe8894bd418d5b9e0d08ee8",
+      "bytes": 9081
+    },
+    {
+      "source": "docs/DR_E1_FOLLOWUP_REVIEW_20261115.md",
+      "sha256": "92b22fb49e0ce5697d30aebc9f2b3ce65e4adae37d0e47b5c9d32706f0873bcc",
+      "bytes": 3893
+    },
+    {
+      "source": "docs/DR_REMOTE_CONTENT_RESULT_20261115.md",
+      "sha256": "405ab7e007b394f6037e32416e791096a6cf68504f556a3d7f9d1cea0ba662af",
+      "bytes": 8100
+    },
+    {
+      "source": "docs/DR_REMOTE_CONTENT_POSTRUN_REVIEW_20261115.md",
+      "sha256": "354daafc9d87decda28152216378c10fe0e6e8e10a357ca5d4339f97c2a54a93",
+      "bytes": 6258
+    },
+    {
+      "source": "docs/C_SCALE_RESULT_20261116.md",
+      "sha256": "6af9989497487cb8e9e577178c0cbc26fbc63751cfd2c606e5ac0cb091ec089a",
+      "bytes": 3752
+    },
+    {
+      "source": "docs/C_SCALE_POSTREVIEW_20261116.md",
+      "sha256": "43a6582f1c06f657f2bf4d68a2d0d1fb490266b03739fd483a352d94edf88dad",
+      "bytes": 9621
+    },
+    {
+      "source": "evidence/c-scale-20261116/analysis.json",
+      "sha256": "25c6858d8a8f2eeeb92932b3c818f6b48e92e183705974a1288e7c99911df16f",
+      "bytes": 64174
+    },
+    {
+      "source": "docs/C_RESTART_RESULT_20261116.md",
+      "sha256": "f6cf05e8309393b610480a35668dc7daf49fbd85f9d211d45c0ffe936a04549f",
+      "bytes": 3546
+    },
+    {
+      "source": "docs/C_RESTART_POSTREVIEW_20261116.md",
+      "sha256": "1dbf33a32fa4262fc73c9c170355ab3238bbdd53030d5276b1379ee33b93d431",
+      "bytes": 5652
+    },
+    {
+      "source": "docs/DR_LANDING_SCOPE_20261116.md",
+      "sha256": "f5ec924f05ab4532d062d71c8059f581ef275093160d5520dd94e33f79b9cd2b",
+      "bytes": 5661
+    },
+    {
+      "source": "docs/DR_SELECTION_DELTA_20261116.md",
+      "sha256": "de157b11e05d3de14a8a26aa0695c95620f9c454519ba13565c6a0e8d6c4f4a2",
+      "bytes": 9223
+    },
+    {
+      "source": "docs/DR_SELECTION_DELTA_REVIEW_20261116.md",
+      "sha256": "4b519f09f106ddc165efbb95acd31689e38dc7a3fae7091467ab151b36a8062c",
+      "bytes": 8395
+    },
+    {
+      "source": "docs/SEARCH_QUALITY_PLAN.md",
+      "sha256": "ae52ab7a542ddc24aadeaea30d0665b60bcde731f9e29a1fdbe5d4433b127795",
+      "bytes": 11690
+    },
+    {
+      "source": "docs/DR_COST_DECISION_REVIEW_20261115.md",
+      "sha256": "63c28327eb197acda149ee5c1ca0cbb43076c778b9898cd9f89dd235aef3772c",
+      "bytes": 10107
+    },
+    {
+      "source": "docs/C_SCALE_OPERATIONS_LEDGER_20261116.md",
+      "sha256": "b412e2fc467d5ef7e032b36d3c2e2f9b3cb5fdad31e5fe9524fabe4869980802",
+      "bytes": 4563
+    },
+    {
+      "source": "docs/PAGEFIND_DECISION_REVIEW_20261115.md",
+      "sha256": "3a8298ae37449edb656c9c946f64878a4224f12cd9d46e5a25958daac47e161a",
+      "bytes": 8925
+    },
+    {
+      "source": "docs/PAGEFIND_TEAM_REVIEW_20261116.md",
+      "sha256": "76a7a10112c3acbeb9ef626dcca3710798f079519cea358296fa16197e47cfc4",
+      "bytes": 4507
+    },
+    {
+      "source": "evidence/decision-review-20261115/history/docs/reviews/ms1-2026-11-14/final-review.md",
+      "sha256": "6cbee305e9b7b4bd6dd086ec90c27074d93b8a2a1238cd76908f071d0d49815c",
+      "bytes": 7969
+    },
+    {
+      "source": "evidence/decision-review-20261115/history/docs/reviews/two-rounds-2026-11-14/round-2-review.md",
+      "sha256": "ebb773a914894bda0bc97b3244dedb930eafcb7b4d06169555789e007c970b2f",
+      "bytes": 5582
+    },
+    {
+      "source": "evidence/decision-review-20261115/history/evidence/ms1-2026-11-14/implementation/pagefind-100000-build.json",
+      "sha256": "178b987e9b4e937bfadada929b7cfcb878d687eacf76c50979337b3e05b189b3",
+      "bytes": 225911
+    },
+    {
+      "source": "docs/DR_TEAM_DECISION_REVIEW_20261116.md",
+      "sha256": "e4cb76da5bf8977048f10898f774ce339178fbf6a70908b0144bbcc3e001d4d5",
+      "bytes": 4813
+    }
+  ]
+}
