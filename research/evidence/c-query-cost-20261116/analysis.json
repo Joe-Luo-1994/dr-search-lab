@@ -1,0 +1,1156 @@
+{
+  "completed": true,
+  "failure": null,
+  "elapsedMs": 27145.238138,
+  "groups": [
+    {
+      "queryId": "common",
+      "total": 1000000,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 769.986358,
+        "median": 777.6618930000004,
+        "max": 782.8313560000006
+      },
+      "count": {
+        "n": 5,
+        "min": 217.8517839999995,
+        "median": 219.20473499999935,
+        "max": 220.07997000000069
+      },
+      "top10": {
+        "n": 5,
+        "min": 550.023146,
+        "median": 558.3173839999981,
+        "max": 562.6541959999995
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.0728949999975157,
+        "median": 0.07551299999977346,
+        "max": 0.12441200000000663
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.014010000002599554,
+        "median": 0.03218700000161334,
+        "max": 0.5544859999999971
+      },
+      "aggregateFraction": {
+        "count": 0.28178827870589296,
+        "top10": 0.7179261388312891,
+        "tags": 0.00011054487724506942,
+        "remainder": 0.00017503758557289504
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ?",
+        "parameters": [
+          "\"disaster\""
+        ],
+        "plan": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 9,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"disaster\""
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 28,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.04349000000001979,
+        "median": 0.04832399999941117,
+        "max": 0.06774700000000067
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.056921999999758555,
+        "median": 0.0650100000002567,
+        "max": 0.0729429999992135
+      }
+    },
+    {
+      "queryId": "rare",
+      "total": 1,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 0.15427700000145705,
+        "median": 0.1585129999984929,
+        "max": 0.21430599999985134
+      },
+      "count": {
+        "n": 5,
+        "min": 0.0776270000023942,
+        "median": 0.08644400000048336,
+        "max": 0.10103700000036042
+      },
+      "top10": {
+        "n": 5,
+        "min": 0.05429000000367523,
+        "median": 0.05521299999998064,
+        "max": 0.08237800000006246
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.008346000002347864,
+        "median": 0.008897999999931017,
+        "max": 0.01501899999948364
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.009432999991986435,
+        "median": 0.01066999999966356,
+        "max": 0.01969900000005964
+      },
+      "aggregateFraction": {
+        "count": 0.5111246354866594,
+        "top10": 0.35444647956807046,
+        "tags": 0.05844739187870012,
+        "remainder": 0.07598149306656998
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ?",
+        "parameters": [
+          "\"uniquep000123\""
+        ],
+        "plan": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 9,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"uniquep000123\""
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 28,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.04126900000119349,
+        "median": 0.042202000000543194,
+        "max": 0.04938300000003437
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.02237999999999829,
+        "median": 0.023092000003089197,
+        "max": 0.03939199999967968
+      }
+    },
+    {
+      "queryId": "chinese",
+      "total": 200000,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 371.64911200000006,
+        "median": 372.116391,
+        "max": 374.867843
+      },
+      "count": {
+        "n": 5,
+        "min": 142.27611400000023,
+        "median": 145.76747299999624,
+        "max": 147.40202399999907
+      },
+      "top10": {
+        "n": 5,
+        "min": 225.47062499999993,
+        "median": 227.34828000000198,
+        "max": 229.36868499999764
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.07055300000001807,
+        "median": 0.0755090000002383,
+        "max": 0.07831200000146055
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.03976400000101421,
+        "median": 0.04840299999978015,
+        "max": 0.7874820000000682
+      },
+      "aggregateFraction": {
+        "count": 0.3888149759617786,
+        "top10": 0.6104595873262996,
+        "tags": 0.0002007801855863811,
+        "remainder": 0.0005246565263353048
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ?",
+        "parameters": [
+          "\"災難\" AND \"復原\""
+        ],
+        "plan": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 9,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"災難\" AND \"復原\""
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 28,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.020085000000108266,
+        "median": 0.02293199999985518,
+        "max": 0.043259000000034575
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.05724900000132038,
+        "median": 0.06478099999912956,
+        "max": 0.07458300000143936
+      }
+    },
+    {
+      "queryId": "space",
+      "total": 5051,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 492.63522700000067,
+        "median": 497.3951390000002,
+        "max": 502.4763779999994
+      },
+      "count": {
+        "n": 5,
+        "min": 237.4473799999996,
+        "median": 238.73832800000037,
+        "max": 243.08303600000363
+      },
+      "top10": {
+        "n": 5,
+        "min": 255.0914049999992,
+        "median": 259.2799120000018,
+        "max": 260.26920799999994
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.08260300000074494,
+        "median": 0.09160099999985505,
+        "max": 0.10149699999965378
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.010747999998784508,
+        "median": 0.014095999991695862,
+        "max": 0.028853000000253815
+      },
+      "aggregateFraction": {
+        "count": 0.4814651094177735,
+        "top10": 0.5183152586703772,
+        "tags": 0.00018453635202276398,
+        "remainder": 0.000035095559826585204
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? AND p.spaceId=?",
+        "parameters": [
+          "\"disaster\"",
+          "space1"
+        ],
+        "plan": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 9,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? AND p.spaceId=? ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"disaster\"",
+          "space1"
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 30,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.019231000000218046,
+        "median": 0.04863900000054855,
+        "max": 0.04894100000092294
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.05926199999885284,
+        "median": 0.07008200000018405,
+        "max": 0.07922599999983504
+      }
+    },
+    {
+      "queryId": "tags",
+      "total": 100000,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 1027.2991040000002,
+        "median": 1040.9629569999997,
+        "max": 1052.7055230000005
+      },
+      "count": {
+        "n": 5,
+        "min": 484.3407010000001,
+        "median": 486.1906770000005,
+        "max": 495.0124419999993
+      },
+      "top10": {
+        "n": 5,
+        "min": 541.8474619999997,
+        "median": 554.6654479999997,
+        "max": 564.203720999998
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.0706930000014836,
+        "median": 0.07887399999981426,
+        "max": 0.08586599999762257
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.013701000001674402,
+        "median": 0.017100999998547195,
+        "max": 0.03265800000076524
+      },
+      "aggregateFraction": {
+        "count": 0.46846979230641717,
+        "top10": 0.5314358283512143,
+        "tags": 0.00007497470526318729,
+        "remainder": 0.00001940463710530996
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? AND EXISTS (SELECT 1 FROM page_tags t WHERE t.pageId=p.pageId AND t.tagId=?) AND EXISTS (SELECT 1 FROM page_tags t WHERE t.pageId=p.pageId AND t.tagId=?)",
+        "parameters": [
+          "\"disaster\"",
+          "t0",
+          "t1"
+        ],
+        "plan": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 9,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 13,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 1"
+          },
+          {
+            "id": 17,
+            "parent": 13,
+            "notused": 39,
+            "detail": "SEARCH t USING COVERING INDEX sqlite_autoindex_page_tags_1 (pageId=? AND tagId=?)"
+          },
+          {
+            "id": 30,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 2"
+          },
+          {
+            "id": 34,
+            "parent": 30,
+            "notused": 39,
+            "detail": "SEARCH t USING COVERING INDEX sqlite_autoindex_page_tags_1 (pageId=? AND tagId=?)"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? AND EXISTS (SELECT 1 FROM page_tags t WHERE t.pageId=p.pageId AND t.tagId=?) AND EXISTS (SELECT 1 FROM page_tags t WHERE t.pageId=p.pageId AND t.tagId=?) ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"disaster\"",
+          "t0",
+          "t1"
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 14,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 1"
+          },
+          {
+            "id": 18,
+            "parent": 14,
+            "notused": 39,
+            "detail": "SEARCH t USING COVERING INDEX sqlite_autoindex_page_tags_1 (pageId=? AND tagId=?)"
+          },
+          {
+            "id": 31,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 2"
+          },
+          {
+            "id": 35,
+            "parent": 31,
+            "notused": 39,
+            "detail": "SEARCH t USING COVERING INDEX sqlite_autoindex_page_tags_1 (pageId=? AND tagId=?)"
+          },
+          {
+            "id": 62,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.05161299999963376,
+        "median": 0.05504000000019005,
+        "max": 0.06181700000001911
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.06782699999985198,
+        "median": 0.07107799999903364,
+        "max": 0.09556599999996251
+      }
+    },
+    {
+      "queryId": "absent",
+      "total": 0,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 0.1193730000013602,
+        "median": 0.12843099999918195,
+        "max": 0.14351999999962572
+      },
+      "count": {
+        "n": 5,
+        "min": 0.07231700000193086,
+        "median": 0.08081700000002456,
+        "max": 0.09123299999737355
+      },
+      "top10": {
+        "n": 5,
+        "min": 0.03577500000028522,
+        "median": 0.03770699999995486,
+        "max": 0.040457000000969856
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.0002720000011322554,
+        "median": 0.0003930000002583256,
+        "max": 0.001055000000178552
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.009709999998449348,
+        "median": 0.011427999996158178,
+        "max": 0.02026099999966391
+      },
+      "aggregateFraction": {
+        "count": 0.6115616895338123,
+        "top10": 0.28832894974164375,
+        "tags": 0.003988000872243884,
+        "remainder": 0.09612135985230003
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ?",
+        "parameters": [
+          "\"thistermdoesnotexist\""
+        ],
+        "plan": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 9,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"thistermdoesnotexist\""
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 28,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.041436999999859836,
+        "median": 0.04527200000029552,
+        "max": 0.05294299999877694
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.022343000000546454,
+        "median": 0.023529000000053202,
+        "max": 0.027780000000348082
+      }
+    },
+    {
+      "queryId": "pdf",
+      "total": 256,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 0.289520000000266,
+        "median": 0.3459560000001147,
+        "max": 0.48969400000169117
+      },
+      "count": {
+        "n": 5,
+        "min": 0.0926980000012918,
+        "median": 0.10909999999967113,
+        "max": 0.12941200000022945
+      },
+      "top10": {
+        "n": 5,
+        "min": 0.1458249999996042,
+        "median": 0.1629649999999856,
+        "max": 0.26966100000026927
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.044831999999587424,
+        "median": 0.05111699999997654,
+        "max": 0.09935199999927136
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.005140000001119915,
+        "median": 0.007221000001663924,
+        "max": 0.022774000000481465
+      },
+      "aggregateFraction": {
+        "count": 0.30208101442690416,
+        "top10": 0.49327407843788945,
+        "tags": 0.17799930159790395,
+        "remainder": 0.026645605537302452
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ?",
+        "parameters": [
+          "\"attachmentknowledge\""
+        ],
+        "plan": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 9,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"attachmentknowledge\""
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 28,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.012642000000596454,
+        "median": 0.020815999999740598,
+        "max": 0.028849000000263914
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.017648000000008324,
+        "median": 0.020757999998750165,
+        "max": 0.027052999999796157
+      }
+    },
+    {
+      "queryId": "restricted",
+      "total": 500000,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 652.1611389999998,
+        "median": 654.8859730000004,
+        "max": 672.2893549999972
+      },
+      "count": {
+        "n": 5,
+        "min": 239.10896100000036,
+        "median": 240.1920850000006,
+        "max": 245.779133
+      },
+      "top10": {
+        "n": 5,
+        "min": 411.87406700000065,
+        "median": 414.6201149999997,
+        "max": 426.8660579999996
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.07767600000079256,
+        "median": 0.09406299999864132,
+        "max": 0.18610999999873457
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.008650999996461906,
+        "median": 0.010375000001658918,
+        "max": 0.025056999999378604
+      },
+      "aggregateFraction": {
+        "count": 0.3674378063746789,
+        "top10": 0.6323775357099414,
+        "tags": 0.00016434952993810492,
+        "remainder": 0.000020308385441607453
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? AND p.spaceId=?",
+        "parameters": [
+          "\"disaster\"",
+          "space0"
+        ],
+        "plan": [
+          {
+            "id": 4,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 9,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? AND p.spaceId=? ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"disaster\"",
+          "space0"
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 30,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.01713699999891105,
+        "median": 0.025037999999767635,
+        "max": 0.027211000000534113
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.06192499999997381,
+        "median": 0.07078499999988708,
+        "max": 0.07288000000062311
+      }
+    },
+    {
+      "queryId": "restricted-tags",
+      "total": 50000,
+      "rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "whole": {
+        "n": 5,
+        "min": 857.6970580000016,
+        "median": 858.006727,
+        "max": 861.5383290000009
+      },
+      "count": {
+        "n": 5,
+        "min": 448.5475180000003,
+        "median": 452.5519150000009,
+        "max": 457.63656999999876
+      },
+      "top10": {
+        "n": 5,
+        "min": 403.79668299999867,
+        "median": 405.4564369999989,
+        "max": 409.0565480000005
+      },
+      "tags": {
+        "n": 5,
+        "min": 0.0823579999996582,
+        "median": 0.08514699999977893,
+        "max": 0.10590299999967101
+      },
+      "remainder": {
+        "n": 5,
+        "min": 0.01491100000203005,
+        "median": 0.018159000004743575,
+        "max": 0.02207499999894935
+      },
+      "aggregateFraction": {
+        "count": 0.5273598947807523,
+        "top10": 0.4725157155366687,
+        "tags": 0.00010306338223695103,
+        "remainder": 0.000021326300342010477
+      },
+      "sameOrderedResults": true,
+      "countPlan": {
+        "sql": "SELECT count(*) AS n FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? AND p.spaceId=? AND EXISTS (SELECT 1 FROM page_tags t WHERE t.pageId=p.pageId AND t.tagId=?) AND EXISTS (SELECT 1 FROM page_tags t WHERE t.pageId=p.pageId AND t.tagId=?)",
+        "parameters": [
+          "\"disaster\"",
+          "space0",
+          "t0",
+          "t1"
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 61,
+            "detail": "SEARCH p USING INDEX pages_space (spaceId=?)"
+          },
+          {
+            "id": 13,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 1"
+          },
+          {
+            "id": 17,
+            "parent": 13,
+            "notused": 39,
+            "detail": "SEARCH t USING COVERING INDEX sqlite_autoindex_page_tags_1 (pageId=? AND tagId=?)"
+          },
+          {
+            "id": 30,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 2"
+          },
+          {
+            "id": 34,
+            "parent": 30,
+            "notused": 39,
+            "detail": "SEARCH t USING COVERING INDEX sqlite_autoindex_page_tags_1 (pageId=? AND tagId=?)"
+          },
+          {
+            "id": 46,
+            "parent": 0,
+            "notused": 99,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:=M2"
+          }
+        ]
+      },
+      "top10Plan": {
+        "sql": "SELECT p.pageId,p.spaceId,p.title,substr(p.content,1,160) AS snippet FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? AND p.spaceId=? AND EXISTS (SELECT 1 FROM page_tags t WHERE t.pageId=p.pageId AND t.tagId=?) AND EXISTS (SELECT 1 FROM page_tags t WHERE t.pageId=p.pageId AND t.tagId=?) ORDER BY bm25(search_index,3.0,1.0),p.pageId LIMIT 10",
+        "parameters": [
+          "\"disaster\"",
+          "space0",
+          "t0",
+          "t1"
+        ],
+        "plan": [
+          {
+            "id": 5,
+            "parent": 0,
+            "notused": 132,
+            "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M2"
+          },
+          {
+            "id": 10,
+            "parent": 0,
+            "notused": 45,
+            "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+          },
+          {
+            "id": 16,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 1"
+          },
+          {
+            "id": 20,
+            "parent": 16,
+            "notused": 39,
+            "detail": "SEARCH t USING COVERING INDEX sqlite_autoindex_page_tags_1 (pageId=? AND tagId=?)"
+          },
+          {
+            "id": 33,
+            "parent": 0,
+            "notused": 0,
+            "detail": "CORRELATED SCALAR SUBQUERY 2"
+          },
+          {
+            "id": 37,
+            "parent": 33,
+            "notused": 39,
+            "detail": "SEARCH t USING COVERING INDEX sqlite_autoindex_page_tags_1 (pageId=? AND tagId=?)"
+          },
+          {
+            "id": 64,
+            "parent": 0,
+            "notused": 0,
+            "detail": "USE TEMP B-TREE FOR ORDER BY"
+          }
+        ]
+      },
+      "countPrepare": {
+        "n": 5,
+        "min": 0.05975699999999051,
+        "median": 0.06541699999979755,
+        "max": 0.07377499999893189
+      },
+      "top10Prepare": {
+        "n": 5,
+        "min": 0.06633599999986473,
+        "median": 0.07742099999995844,
+        "max": 0.07885999999962223
+      }
+    }
+  ],
+  "aggregate": {
+    "count": 0.4246738006051115,
+    "top10": 0.5750791162131895,
+    "tags": 0.0001433862892638449
+  },
+  "pidEvidence": [
+    {
+      "label": "reference-original",
+      "pid": 1448,
+      "seenInCgroup": true,
+      "exit": {
+        "code": null,
+        "signal": "SIGTERM",
+        "ms": 6060.764046
+      }
+    },
+    {
+      "label": "profile",
+      "pid": 1479,
+      "seenInCgroup": true,
+      "exit": {
+        "code": null,
+        "signal": "SIGTERM",
+        "ms": 27144.238316
+      }
+    }
+  ],
+  "resourceSampleCount": 109,
+  "limits": {
+    "cgroup": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/dr-query-cost-20261116.service",
+    "cpu.max": "200000 100000",
+    "memory.max": "4294967296",
+    "memory.swap.max": "0",
+    "cgroup.procs": "1413"
+  },
+  "freeze": {
+    "at": 1794786340.2774158,
+    "checked": 14,
+    "mismatches": []
+  },
+  "completion": {
+    "at": 1794786312.7067814,
+    "elapsedSeconds": 27.436231307000014,
+    "samples": 109,
+    "unitBeforeStop": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\n",
+    "unitAfterStop": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\n"
+  },
+  "profileReady": {
+    "ready": true,
+    "snapshotId": "v1",
+    "pid": 1479,
+    "nodeVersion": "v22.18.0",
+    "sqliteVersion": "3.50.2",
+    "pragmas": {
+      "queryOnly": 1,
+      "cacheSize": -8192,
+      "mmapSize": 0
+    },
+    "startup": {
+      "elapsedMs": 6.391874000000001,
+      "tagsPrepareMs": 0.009644999999999015
+    },
+    "resourceUsage": {
+      "userCPUTime": 20378,
+      "systemCPUTime": 0,
+      "maxRSS": 50664,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 3152,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 14,
+      "involuntaryContextSwitches": 1
+    }
+  },
+  "scope": "Single sequential SQL process, 5 samples per shape, no HTTP/pool or throughput claim. Each component includes its own matching/filtering work. Fractions use sums of five samples; medians are not additive.",
+  "referenceCount": 9,
+  "measurementCount": 45,
+  "explainCount": 9
+}

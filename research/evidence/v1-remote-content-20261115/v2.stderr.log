@@ -1,0 +1,7 @@
+(node:46996) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"remote_content_api_error","code":"AUTHORIZATION_UNKNOWN","detail":"AUTHORIZATION_UNKNOWN"}
+{"event":"remote_content_api_error","code":"AUTHORIZATION_UNKNOWN","detail":"AUTHORIZATION_UNKNOWN"}
+{"event":"remote_content_api_error","code":"CONTENT_UNAVAILABLE","detail":"CONTENT_UNAVAILABLE"}
+{"event":"remote_content_api_error","code":"MEDIA_UNAVAILABLE","detail":"CONTENT_UNAVAILABLE"}
+{"event":"remote_content_api_error","code":"CONTENT_UNAVAILABLE","detail":"CONTENT_UNAVAILABLE"}

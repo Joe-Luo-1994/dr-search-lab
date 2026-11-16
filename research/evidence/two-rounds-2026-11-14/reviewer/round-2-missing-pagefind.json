@@ -1,0 +1,77 @@
+{
+  "mode": "missing-pagefind",
+  "startedAt": "2026-11-14T07:36:48.267Z",
+  "traces": [
+    {
+      "path": "/api/research/search?engine=sqlite&q=backup&page=1&pageSize=10",
+      "status": 200,
+      "elapsedMs": 118.29005599999999,
+      "bytes": 380,
+      "sha256": "a17e44888602e65ff501e56c62c70cdd5b1776224fd329b836b21586f60eac59",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "path": "/api/research/pages/p01?release=review-v1",
+      "status": 200,
+      "elapsedMs": 13.620215000000002,
+      "bytes": 208,
+      "sha256": "ef4f1a89eb3b14f53a990818b2b4edf41d12652b933812daf5de54d447d2ad0c",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "id": "p01",
+        "title": "Database backup runbook",
+        "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+        "attachments": [],
+        "synthetic": true
+      }
+    },
+    {
+      "path": "/api/research/attachments/a05?release=review-v1",
+      "status": 200,
+      "elapsedMs": 22.071289000000007,
+      "bytes": 80,
+      "sha256": "893472abd9f7ff21f36a1e7cdfffc44517cd4f2a4dfb133c07436b75c40a3f80"
+    },
+    {
+      "path": "/api/research/search?engine=pagefind&q=backup&page=1&pageSize=10",
+      "status": 503,
+      "elapsedMs": 5.388261,
+      "bytes": 56,
+      "sha256": "532d1cd08bd84c510419c1bfe78e6751f3e729caaa6199ccb71642ce69b8fab8",
+      "body": {
+        "error": {
+          "code": "SEARCH_UNAVAILABLE",
+          "retryable": true
+        }
+      }
+    }
+  ],
+  "sqliteAvailable": true,
+  "pageAvailable": true,
+  "attachmentAvailable": true,
+  "pagefindExplicitFailure": true,
+  "meetsSupplement": true,
+  "finishedAt": "2026-11-14T07:36:48.429Z"
+}

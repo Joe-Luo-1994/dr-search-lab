@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "checksPerCompleteRun": 28,
+  "queriesPerCompleteRun": 12,
+  "objects": 115,
+  "objectBytes": 610648,
+  "directOriginHeaders": {
+    "status": 200,
+    "contentType": "text/javascript",
+    "allowOrigin": "http://127.0.0.1:34821"
+  },
+  "privateDirectHTTP": 403,
+  "phases": [
+    {
+      "name": "direct-cross-origin",
+      "queries": 4,
+      "webDirectory": [],
+      "metrics": {
+        "assetRequests": 0,
+        "objectsRead": 0
+      }
+    },
+    {
+      "name": "after-web-restart-fresh-browser",
+      "queries": 4,
+      "webDirectory": [],
+      "metrics": {
+        "assetRequests": 0,
+        "objectsRead": 0
+      }
+    },
+    {
+      "name": "private-bucket-streaming-proxy",
+      "queries": 4,
+      "webDirectory": [],
+      "metrics": {
+        "assetRequests": 29,
+        "objectsRead": 29
+      }
+    }
+  ],
+  "productionAcceptance": false
+}

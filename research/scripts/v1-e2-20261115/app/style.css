@@ -1,0 +1,23 @@
+@import "../../v1-e1-20261115/app/style.css";
+
+.release-status {
+  display: flex;
+  align-items: start;
+  gap: .7rem 1.2rem;
+  flex-wrap: wrap;
+  background: var(--surface);
+  margin-bottom: 1.2rem;
+  padding: .75rem;
+  border-radius: 7px;
+}
+.release-status dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: .25rem .8rem;
+  color: var(--subtle);
+  font-size: .9rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.release-status dd { margin: 0; }
+.install-failure { color: #8e261e; }

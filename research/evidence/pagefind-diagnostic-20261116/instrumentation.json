@@ -1,0 +1,82 @@
+{
+  "at": 1794799534.6529088,
+  "inputs": {
+    "core": {
+      "absolutePath": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/pagefind-gate-20261116/src/ms1-api-lab/core.mjs",
+      "bytes": 5813,
+      "sha256": "acdd40957b3d308e60b2a0f1fd313ef7ab7b0a0d5711fe696d4c4c227454b36b"
+    },
+    "text": {
+      "absolutePath": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/pagefind-gate-20261116/src/ms1-api-lab/text.mjs",
+      "bytes": 414,
+      "sha256": "553436c3b6eda6713f45fb00e754d831f52f02f9375027c28541a00c40345e8d"
+    },
+    "corpus": {
+      "absolutePath": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/pagefind-gate-20261116/src/ms1-review/corpus.mjs",
+      "bytes": 2733,
+      "sha256": "790f7818fab462e8d7883d328941777fd6bd67cb32433300b0172e7aca46e2ad"
+    },
+    "serve": {
+      "absolutePath": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/pagefind-gate-20261116/g2/src/serve.mjs",
+      "bytes": 1476,
+      "sha256": "ff7ae1fe7efd5aabcb3a3234c6e28a2c388e925a4e2225200aa664485a126fc5"
+    }
+  },
+  "replacements": [
+    "state-start",
+    "manifest-read",
+    "db-boundaries",
+    "pf-import-start",
+    "pf-options",
+    "search-arrive",
+    "scope",
+    "pf-search",
+    "mapping-start",
+    "mapping-coarse-progress",
+    "mapping-end",
+    "hydration",
+    "response",
+    "failure",
+    "asset-request-finish",
+    "asset-read",
+    "next-prepare",
+    "next-request-response",
+    "server-ready",
+    "shutdown"
+  ],
+  "outputs": {
+    "src/ms1-api-lab/core.mjs": {
+      "sha256": "05ef8d4028b5bd93314d086da3963e51de6d8c8512c3b116ea44c40cf603fb16",
+      "bytes": 6890
+    },
+    "src/ms1-api-lab/text.mjs": {
+      "sha256": "553436c3b6eda6713f45fb00e754d831f52f02f9375027c28541a00c40345e8d",
+      "bytes": 414
+    },
+    "src/ms1-review/corpus.mjs": {
+      "sha256": "790f7818fab462e8d7883d328941777fd6bd67cb32433300b0172e7aca46e2ad",
+      "bytes": 2733
+    },
+    "src/gate/serve.mjs": {
+      "sha256": "41a4d1a2903e07869c5c4766a85b84e66dbb596a3e3de4ed1709217a1abff656",
+      "bytes": 2661
+    },
+    "src/gate/trace.mjs": {
+      "sha256": "c12ea5626a704d056b496b85c369f75bd8f3cd8a00136692490f881ee530f0db",
+      "bytes": 1814
+    },
+    "instrumentation.patch": {
+      "sha256": "a40f96143ff1aac959efa6d22cb6d4167b1fd2bb21d631c7ed3735734c4e9531",
+      "bytes": 12673
+    }
+  },
+  "traceContract": {
+    "environment": "D1_TRACE_DIR",
+    "filename": "trace-<pid>.ndjson",
+    "maxEventsPerProcess": 1000,
+    "maxBytesPerProcess": 1048576,
+    "failure": "exit 70 on trace budget or I/O failure; not a search semantic result",
+    "observerCost": "each row contains completed previous trace costs; last own cost may be unobserved on hard kill"
+  },
+  "scope": "Source-only preparation; no service, Pagefind query, SQL, or build executed."
+}

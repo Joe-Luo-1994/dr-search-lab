@@ -1,0 +1,16 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.goto: net::ERR_CONNECTION_TIMED_OUT at http://127.0.0.1:3157/
+Call log:
+  - navigating to "http://127.0.0.1:3157/", waiting until "networkidle"
+
+    at /PUBLIC/WINDOWS_WORKSPACE\scripts\v1-e1-followup-20261115\inspect-ui.mjs:7:13 {
+  log: [
+    '  - navigating to "http://127.0.0.1:3157/", waiting until "networkidle"'
+  ],
+  name: 'Error'
+}
+
+Node.js v22.21.1

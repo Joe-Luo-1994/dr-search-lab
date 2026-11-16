@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "unknown is not zero",
+    "index estimates independent of reading unknowns",
+    "daily and four-hour distinct transport layers",
+    "pod count does not multiply shared cross-region copy or fixed reads",
+    "oversized body boundary is visible with other unknowns",
+    "one-site financial example",
+    "four-site example and provenance",
+    "zero saving is real zero",
+    "blank saving preserves threshold without invented delta",
+    "candidate change clears unrelated cost assumptions",
+    "invalid site value never produces infinity",
+    "responsive layouts and keyboard access",
+    "no errors or network dependencies"
+  ],
+  "passed": true,
+  "errors": [],
+  "external": [],
+  "scope": "Agent browser review of decision material, not human usability or DR experiment"
+}

@@ -1,0 +1,111 @@
+{
+  "at": "2026-11-15T14:15:21.459Z",
+  "verified": {
+    "evidence/v1-e1-20261115/freeze-r2.json": 120,
+    "evidence/v1-e2-20261115/freeze-r2.json": 132
+  },
+  "role": "baseline",
+  "operatorCopies": [
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt1/failure.txt",
+      "sha256": "1168ed136bf963ab09f85da4f39c285651dcd39e604dc340b048cdd96b96df61"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt1/operator-run.ps1",
+      "sha256": "7713b5488a9b1eeda9238930eb25e951a0c2d6405fbaac226dbf628990d67395"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt1/operator-transcript.txt",
+      "sha256": "b3feb3d4ca6f154225804c865a75a89f79cf58ec22fb3d85d6f5266c48b7ff30"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/commands-and-decisions.log",
+      "sha256": "c2c5a8ed164712f1572c92963700589340754aa405121c8544f36ce34feedc2a"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/http-media-list.json",
+      "sha256": "431446cd7741e846fa2f6d46efdf2fb8eee336667697f031e5c890e166fd7d15"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/http-page.json",
+      "sha256": "f7fda0db412dca0c039df0c457d77971403367911a9a5e5f0355fdc44d13684b"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/http-search.json",
+      "sha256": "5a6245bf88fc69d9dfd0f0334f310594b207fb5cc525862f0e2773884b8a1cd6"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/http-status.json",
+      "sha256": "edd2972bc876267906111401ce82cac1f47b910dddc66a9a92282f5494b69ed5"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/install.stdout-stderr.log",
+      "sha256": "775a6952873eee10956e653538df562054ce7a2d90dbb1b2e2564a00153374f3"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/operator-run.ps1",
+      "sha256": "7cf96866d0e10eecee668ae7960d16415e2e8b8ae55028e7e05d78bb2281b133"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/operator-transcript.txt",
+      "sha256": "101b3802335e4c335c12348cb69d6dce729bccea77b3ccdfaa633ecdef2b2733"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/readback.pdf",
+      "sha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/reader-ready-line.txt",
+      "sha256": "b80ddc87a2cb39efd5a458ed0cc148fc088e1294461e71bbc7c289565a0baeff"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/reader.pid.txt",
+      "sha256": "8c7356b05ca0193951b1450e59936cda59f58ac8c8035e3437d9cf1933737ab2"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/reader.stderr.log",
+      "sha256": "ad4d1b1972f3d7f9c843ba20c97b066ba07904e17bb12eb73db3cc2dfdef3593"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/reader.stdout.log",
+      "sha256": "84c7e3c6b7f2e1fd91b8ab9916b352849e1014b997e8b1e622458b7de84895f9"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/result.json",
+      "sha256": "99d4e044dc95373854d9386bdb5237b37baa620b92f00e0dc37b8b6ce71a9694"
+    },
+    {
+      "path": "evidence/v1-e2-20261115/operator-attempt2/result.stdout.txt",
+      "sha256": "99d4e044dc95373854d9386bdb5237b37baa620b92f00e0dc37b8b6ce71a9694"
+    }
+  ],
+  "freshManifestSha256": "cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7",
+  "freshPayloadBytes": 66896,
+  "directorySizes": {
+    "artifacts/v1": {
+      "files": 4,
+      "logicalBytes": 81076
+    },
+    "artifacts/v2": {
+      "files": 4,
+      "logicalBytes": 81254
+    },
+    "artifacts/mixed-v2": {
+      "files": 4,
+      "logicalBytes": 81254
+    },
+    "caches/main": {
+      "files": 15,
+      "logicalBytes": 229898
+    },
+    "caches/fresh": {
+      "files": 7,
+      "logicalBytes": 81751
+    },
+    "next-build": {
+      "files": 130,
+      "logicalBytes": 67648731
+    }
+  },
+  "limitations": "Logical bytes only; test fixture and retained failure staging, not production per-pod cost or minimum resource sizing"
+}

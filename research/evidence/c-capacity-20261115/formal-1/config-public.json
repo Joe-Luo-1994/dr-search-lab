@@ -1,0 +1,31 @@
+{
+  "endpoint": "http://127.0.0.1:19540",
+  "bucket": "c-capacity-100000",
+  "baseUrl": "http://127.0.0.1:3172/api/capi",
+  "cacheDir": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/formal-1/cache",
+  "eventLog": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/formal-1/events.ndjson",
+  "runtimeDir": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115",
+  "artifactDir": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/fixture-100000-oracle2",
+  "releases": {
+    "v1": {
+      "key": "v1/search.sqlite",
+      "bytes": 333697024,
+      "sha256": "816b5f68f8ef26e667bf469fa3034a54597a3f255143030b81214a5101503dba",
+      "mimeType": "application/vnd.sqlite3",
+      "file": "search.sqlite"
+    },
+    "v2": {
+      "key": "v2/search.sqlite",
+      "bytes": 333807616,
+      "sha256": "1498d9c4e72512d38d7430eef151bab4f90ef570d904c40d7b199f0fba24cf32",
+      "mimeType": "application/vnd.sqlite3",
+      "file": "search.sqlite"
+    }
+  },
+  "testHooks": false,
+  "diskBaselineBytes": 2301191421,
+  "diskGuardFile": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/formal-1/disk-guard.json",
+  "readerCgroup": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/dr-cap-reader-20261115.service",
+  "minioCgroup": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/dr-cap-minio-20261115.service",
+  "privateConfigSha256": "25f05c58f1daef7acaabeb6fbf5555f66bc7accb22c76a34ef3ea1064b035ed7"
+}

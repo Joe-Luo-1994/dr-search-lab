@@ -1,0 +1,76 @@
+{
+  "allMatch": true,
+  "files": [
+    {
+      "path": "docs/DR_SELECTION_DELTA_20261116.md",
+      "sha256": "de157b11e05d3de14a8a26aa0695c95620f9c454519ba13565c6a0e8d6c4f4a2",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_SELECTION_DELTA_20261116.html",
+      "sha256": "19979a86ed60d32b2ddd28abb87e4f69db6c0c5d3457181260de9c19c1a06d5c",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_SELECTION_DELTA_REVIEW_20261116.md",
+      "sha256": "4b519f09f106ddc165efbb95acd31689e38dc7a3fae7091467ab151b36a8062c",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "sha256": "e1f755a0d43ac61f48a87f958dc9c929d229f77841c14694c7c026427da0afee",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "ad884f66c74f39abb9f18603a82f382a69b8abc8b3c1435f928e26a7c85a57e1",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_OPERATIONS_PRIORITY_20261116.md",
+      "sha256": "736033522d07295432292bc361a2049198130988683b49f423bf63e8440d26cd",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "5ec3d31aae2886a7000c5239837af19cbf05ef8772a6bdc5e83b52f0aed44fa7",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/selection-delta-20261116/check-report.mjs",
+      "sha256": "2d34469b482e4dfca62dcf83c9eb5fd3d914487ba19e479ce2252870b92d8370",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/selection-delta-20261116/deliver.py",
+      "sha256": "524a0dc8160d0801a5fb31fc487347ac3ff70576e1dc5a36d50221cb6b4bf496",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/selection-delta-20261116/report.mjs",
+      "sha256": "f82914f9f36122b5e8e5d00daa64dd371f365fea31bbcb7d2ef757ed47e1d9a9",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/selection-delta-20261116/report-browser/comparison-mobile.png",
+      "sha256": "1c7043fa1b72632518d45c461ac2376577499ac3a2f8209c5d3944cb691751df",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/selection-delta-20261116/report-browser/mobile.png",
+      "sha256": "f53b18ff3ac2480ba2dc294a95a869e5fae8b18c367646a657b31aac2e3f68c8",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/selection-delta-20261116/report-browser/next-action-mobile.png",
+      "sha256": "662950fd0d3300655d3ee7ebdc7ebbf2ebd3871636a5147eae73ca4ee9ac7e51",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/selection-delta-20261116/report-browser/result.json",
+      "sha256": "7245ca5e313bb36e0b836fafa83d93ea74295a4ea0b5a56f76a844fede19b002",
+      "readBackMatch": true
+    }
+  ],
+  "scope": "decision materials, scripts, UI evidence and continuation; no experiments/credentials/commit/push"
+}

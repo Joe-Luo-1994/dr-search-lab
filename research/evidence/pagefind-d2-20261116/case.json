@@ -1,0 +1,26 @@
+{
+  "id": "ms1-common-huge-page1",
+  "request": {
+    "url": "http://127.0.0.1:37505/api/research/search?engine=pagefind&q=commonterm&page=1&pageSize=10",
+    "headers": {
+      "x-lab-user": "huge"
+    }
+  },
+  "expected": {
+    "status": 200,
+    "total": 50000,
+    "hitCount": 10
+  },
+  "error": {
+    "name": "TimeoutError",
+    "message": "The operation was aborted due to timeout"
+  },
+  "validator": {
+    "passed": false,
+    "issues": [
+      "TimeoutError",
+      "QUERY_DEADLINE_EXCEEDED"
+    ]
+  },
+  "elapsedMs": 5004.821412999998
+}

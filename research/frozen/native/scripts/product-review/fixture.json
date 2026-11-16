@@ -1,0 +1,19 @@
+{
+  "schemaVersion":"c1-v1",
+  "release":"review-v1",
+  "synthetic":true,
+  "pages":[
+    {"id":"p01","scope":"ops","title":"Database backup runbook","content":"Daily backup and disaster recovery. 資料庫備份流程與還原。","attachments":[]},
+    {"id":"p02","scope":"ops","title":"資料庫維護","content":"資料庫每日執行備份。Maintenance instructions.","attachments":[]},
+    {"id":"p03","scope":"ops","title":"資料庫備份","content":"異地還原與每日備份驗證。","attachments":[]},
+    {"id":"p04","scope":"ops","title":"Network error guide","content":"ERR_CONN_RESET means the connection was reset. Check the proxy before retrying.","attachments":[]},
+    {"id":"p05","scope":"ops","title":"Recovery checklist","content":"Use the attached checklist during recovery. amberchecklist is its lookup code.","attachments":[{"id":"a05","name":"checklist.txt","contentType":"text/plain; charset=utf-8","text":"Synthetic recovery checklist\n1. Verify the recovery site.\n2. Record the result.\n"}]},
+    {"id":"p06","scope":"restricted","title":"Restricted planning","content":"secretcobalt restricted synthetic planning material.","attachments":[]},
+    {"id":"p07","scope":"ops","title":"Application runbook","content":"Application runbook with deployment steps.","attachments":[]},
+    {"id":"p08","scope":"ops","title":"Storage runbook","content":"Storage runbook with capacity checks.","attachments":[]},
+    {"id":"p09","scope":"ops","title":"Networking runbook","content":"Networking runbook with routing checks.","attachments":[]},
+    {"id":"p10","scope":"ops","title":"Identity runbook","content":"Identity runbook with login checks.","attachments":[]},
+    {"id":"p11","scope":"ops","title":"Literal markup example","content":"markertest literal <script>alert(\"synthetic\")</script> & <mark> text; content is plain text, never trusted HTML.","attachments":[]},
+    {"id":"p12","scope":"ops","title":"Evacuation contact directory","content":"Contact the local coordination team for the synthetic drill.","attachments":[]}
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "command": [
+    "/workspace/toolchains/node-v22.21.1-linux-x64/bin/node",
+    "--max-old-space-size=4096",
+    "scripts/ms1-api-lab/serve.mjs",
+    ".lab/ms1/sqlite-100000"
+  ],
+  "pid": 7701,
+  "exitCode": 0,
+  "stopReason": null,
+  "elapsedSeconds": 3.76894573699974,
+  "peakSampledTreeRssBytes": 120258560,
+  "peakSampledTreeCpuSeconds": 3.13,
+  "artifactBytes": 215602670,
+  "peakArtifactBytes": 215602670,
+  "maxRssSampleGapSeconds": 0.252612885000417,
+  "kernelReapedMaxRssKiB": 121152,
+  "limits": {
+    "seconds": 600.0,
+    "treeRssMiB": 6144,
+    "artifactGiB": 10
+  },
+  "cpuAccountedSeconds": 3.282971,
+  "sampling": "RSS/process tree every250ms; directory scan background every5s plus scan duration; sampled soft-stop may overshoot; OS cache excluded RSS, full cgroup memory.current separately; directory walk monitoring overhead not in target RSS",
+  "samples": [
+    {
+      "elapsedSeconds": 0.001,
+      "rssBytes": 3407872,
+      "cpuSeconds": 0.0,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 0,
+      "diskScanSeconds": 0,
+      "freeBytes": 27093340160,
+      "cgroupMemoryCurrent": 694243328,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 3407872,
+          "cpu": 0.0
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.253,
+      "rssBytes": 61829120,
+      "cpuSeconds": 0.28,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 27093336064,
+      "cgroupMemoryCurrent": 733044736,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 61829120,
+          "cpu": 0.28
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.504,
+      "rssBytes": 70103040,
+      "cpuSeconds": 0.37,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 27093336064,
+      "cgroupMemoryCurrent": 748765184,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 70103040,
+          "cpu": 0.37
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.755,
+      "rssBytes": 75345920,
+      "cpuSeconds": 0.41,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 27093327872,
+      "cgroupMemoryCurrent": 763768832,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 75345920,
+          "cpu": 0.41
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.006,
+      "rssBytes": 99463168,
+      "cpuSeconds": 0.65,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 27093233664,
+      "cgroupMemoryCurrent": 799948800,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 99463168,
+          "cpu": 0.65
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.257,
+      "rssBytes": 105316352,
+      "cpuSeconds": 0.89,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 27066253312,
+      "cgroupMemoryCurrent": 836382720,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 105316352,
+          "cpu": 0.89
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.508,
+      "rssBytes": 105316352,
+      "cpuSeconds": 1.15,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 26997170176,
+      "cgroupMemoryCurrent": 907423744,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 105316352,
+          "cpu": 1.15
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.76,
+      "rssBytes": 105316352,
+      "cpuSeconds": 1.39,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 26929627136,
+      "cgroupMemoryCurrent": 977154048,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 105316352,
+          "cpu": 1.39
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.011,
+      "rssBytes": 105316352,
+      "cpuSeconds": 1.65,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 26782089216,
+      "cgroupMemoryCurrent": 1128935424,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 105316352,
+          "cpu": 1.65
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.262,
+      "rssBytes": 105316352,
+      "cpuSeconds": 1.89,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 26631704576,
+      "cgroupMemoryCurrent": 1283862528,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 105316352,
+          "cpu": 1.89
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.513,
+      "rssBytes": 106496000,
+      "cpuSeconds": 2.15,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 26965676032,
+      "cgroupMemoryCurrent": 942460928,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 106496000,
+          "cpu": 2.15
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.764,
+      "rssBytes": 106496000,
+      "cpuSeconds": 2.4,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 26796331008,
+      "cgroupMemoryCurrent": 1117483008,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 106496000,
+          "cpu": 2.4
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 3.015,
+      "rssBytes": 106496000,
+      "cpuSeconds": 2.65,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 26625978368,
+      "cgroupMemoryCurrent": 1292857344,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 106496000,
+          "cpu": 2.65
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 3.266,
+      "rssBytes": 110559232,
+      "cpuSeconds": 2.89,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 27092987904,
+      "cgroupMemoryCurrent": 819089408,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 110559232,
+          "cpu": 2.89
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 3.518,
+      "rssBytes": 120258560,
+      "cpuSeconds": 3.13,
+      "artifactBytesLastSample": 215602670,
+      "allMs1ArtifactBytesLastSample": 265410142,
+      "diskScanSeconds": 0.0302723140011949,
+      "freeBytes": 27092987904,
+      "cgroupMemoryCurrent": 831250432,
+      "processes": {
+        "7701": {
+          "ppid": 7700,
+          "rss": 120258560,
+          "cpu": 3.13
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+--- r1/scripts/v1-e1-20261115/freeze.mjs
++++ r2/scripts/v1-e1-20261115/freeze.mjs
+@@ -5,7 +5,8 @@
+ import assert from 'node:assert/strict';
+ const here=path.dirname(fileURLToPath(import.meta.url)),root=path.resolve(here,'../..');
+ const out=path.join(root,'evidence/v1-e1-20261115'),sha=b=>createHash('sha256').update(b).digest('hex');
+-const freezeFile=path.join(out,'freeze.json');if(fs.existsSync(freezeFile))throw Error('FREEZE_EXISTS');
++const round=process.env.E1_ROUND??'r1';assert(['r1','r2'].includes(round));
++const freezeFile=path.join(out,round==='r1'?'freeze.json':'freeze-r2.json');if(fs.existsSync(freezeFile))throw Error('FREEZE_EXISTS');
+ const oracle=JSON.parse(fs.readFileSync(path.join(here,'review/oracle.json')));
+ assert.equal(oracle.sourceSha256,sha(fs.readFileSync(path.join(here,'fixture/source.json'))));
+ assert.equal(oracle.contractSha256,sha(fs.readFileSync(path.join(here,'CONTRACT.md'))));
+@@ -30,6 +31,6 @@
+ for(const [rel,hash] of Object.entries({...receipt.inputs,...receipt.outputs}))assert.equal(sha(fs.readFileSync(path.resolve(here,rel))),hash,'BUILD_RECEIPT_MISMATCH '+rel);
+ add(receiptPath);
+ walk(path.join(build,'server'),p=>/\.(?:js|json|html|rsc|meta)$/.test(p));walk(path.join(build,'static'));
+-const document={version:'E1-r1',frozenAt:new Date().toISOString(),buildReceiptSha256:sha(fs.readFileSync(receiptPath)),esPid:node[0].process.id,esVersion:info.version.number,node:process.version,oracle:oracle.scope,files,oldIndices:prior,newIndex:target,resourceGuard:'sampled, no hard CPU or memory quotas',review:'See docs/DR_E1_PREFLIGHT_REVIEW_20261115.md'};
++const document={version:'E1-'+round,frozenAt:new Date().toISOString(),buildReceiptSha256:sha(fs.readFileSync(receiptPath)),esPid:node[0].process.id,esVersion:info.version.number,node:process.version,oracle:oracle.scope,files,oldIndices:prior,newIndex:target,resourceGuard:'sampled, no hard CPU or memory quotas',review:'See docs/DR_E1_PREFLIGHT_REVIEW_20261115.md'};
+ fs.writeFileSync(freezeFile,JSON.stringify(document,null,2)+'\n',{flag:'wx'});
+ console.log(JSON.stringify({frozen:true,fileCount:Object.keys(files).length,esPid:document.esPid,oracle:oracle.scope}));
+--- r1/scripts/v1-e1-20261115/run.mjs
++++ r2/scripts/v1-e1-20261115/run.mjs
+@@ -10,10 +10,11 @@
+ import net from 'node:net';
+ 
+ const here=path.dirname(fileURLToPath(import.meta.url));
+-const root=path.resolve(here,'../..'), out=path.join(root,'evidence/v1-e1-20261115/r1');
++const round=process.env.E1_ROUND??'r1';assert(['r1','r2'].includes(round),'INVALID_ROUND');
++const root=path.resolve(here,'../..'), out=path.join(root,'evidence/v1-e1-20261115',round);
+ const runtime=path.join(root,'.lab/v1-e1-20261115'), prepared=path.join(runtime,'prepared');
+ const oracle=JSON.parse(fs.readFileSync(path.join(here,'review/oracle.json')));
+-const freeze=JSON.parse(fs.readFileSync(path.join(root,'evidence/v1-e1-20261115/freeze.json')));
++const freeze=JSON.parse(fs.readFileSync(path.join(root,'evidence/v1-e1-20261115',round==='r1'?'freeze.json':'freeze-r2.json')));
+ const sha=b=>createHash('sha256').update(b).digest('hex');
+ const exec=promisify(execFile), origin='http://127.0.0.1:3157';
+ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+@@ -34,7 +35,7 @@
+ async function sample(){
+  if(monitoring)return;monitoring=true;
+  try{
+-  const {stdout}=await exec('powershell.exe',['-NoProfile','-File',path.join(here,'monitor.ps1')],{windowsHide:true,timeout:10000,maxBuffer:1048576});
++  const {stdout}=await exec('pwsh.exe',['-NoProfile','-File',path.join(here,'monitor.ps1')],{windowsHide:true,timeout:10000,maxBuffer:1048576});
+   const m=JSON.parse(stdout), ids=new Set([process.pid,esPid,...allPids]);
+   for(let i=0;i<10;i++){let changed=false;for(const p of m.processes)if(ids.has(p.ParentProcessId)&&!ids.has(p.ProcessId)){ids.add(p.ProcessId);changed=true;}if(!changed)break;}
+   const selected=m.processes.filter(p=>ids.has(p.ProcessId));
+@@ -126,6 +127,6 @@
+  if(faultDb)await fsp.rename(path.join(prepared,'snapshot/search.sqlite.fault'),path.join(prepared,'snapshot/search.sqlite')).catch(e=>{fatal??=e.message;});
+  await role('baseline').catch(e=>{fatal??=e.message;});await stop().catch(e=>{fatal??=e.message;});
+  while(monitoring)await sleep(100);
+- const summary={startedAt:new Date(started).toISOString(),finishedAt:new Date().toISOString(),durationMs:Date.now()-started,fatal,caseCount:results.length,requestCount:raw.length,results,uiResults,resourceSamples:resources.length,totalRssMax,formalPassed:!fatal&&results.length===2*oracle.scope.total&&results.every(r=>r.passed)&&uiResults.length===2&&uiResults.every(r=>r.passed),scope:'small synthetic Windows function test, no capacity or production acceptance'};
++ const summary={round,startedAt:new Date(started).toISOString(),finishedAt:new Date().toISOString(),durationMs:Date.now()-started,fatal,caseCount:results.length,requestCount:raw.length,results,uiResults,resourceSamples:resources.length,totalRssMax,formalPassed:!fatal&&results.length===2*oracle.scope.total&&results.every(r=>r.passed)&&uiResults.length===2&&uiResults.every(r=>r.passed),scope:'small synthetic Windows function test, no capacity or production acceptance'};
+  save('summary.json',summary);console.log(JSON.stringify(summary));if(fatal||!summary.formalPassed)process.exitCode=1;
+ }
+--- r1/docs/DR_E1_CARD_20261115.md
++++ r2/docs/DR_E1_CARD_20261115.md
+@@ -1,4 +1,8 @@
+ # E1卡：必要搜尋與最小完整任務鏈
++
++## r2：一次儀器修補，2026-11-15
++
++r1於0case／0HTTP中止：Windows PowerShell執行政策拒絕monitor.ps1，原summary與console保留，不能判任何引擎失敗。改用現有pwsh.exe（PowerShell7），同腳本已在不改系統policy下成功採樣。只變更runner監測器呼叫與round輸出、freeze檔名；所有source／oracle／provider／UI與build不變。r2仍用相同門檻，另存freeze-r2.json與r2目錄，拒覆寫r1。這是本卡唯一修補分支，不因r2結果再自動重跑。r1卡原版本雜湊見原freeze.json。
+ 
+ 版本：E1-r1，2026-11-15。主要V1/V2，V6底線，相關E0 H1/H2。使用者已授權開始本計畫；獨立執行前review兩項修正已closed（DR_E1_PREFLIGHT_REVIEW_20261115.md），以freeze.mjs成功產生freeze.json作正式開跑條件。最多一輪正式r1；若未通過保存失敗，不自動調參重跑。
+ 

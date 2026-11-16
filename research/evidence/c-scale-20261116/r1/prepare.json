@@ -1,0 +1,16 @@
+{
+  "at": 1794788429.595406,
+  "attempt": "r1",
+  "changes": [
+    {
+      "file": "pool.mjs",
+      "change": "fixed worker count 2 -> 4"
+    }
+  ],
+  "readerCpu": 400,
+  "readerMemory": 8589934592,
+  "workerCount": 4,
+  "availableBytes": 20099174400,
+  "meminfo": "MemTotal:       20478020 kB\nMemFree:        18179208 kB\nMemAvailable:   19628100 kB\nBuffers:           78224 kB\nCached:          1571960 kB\nSwapCached:            0 kB\nActive:           192276 kB\nInactive:        1684856 kB\nActive(anon):       4012 kB\nInactive(anon):   227628 kB\nActive(file):     188264 kB\nInactive(file):  1457228 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:       5242880 kB\nSwapFree:        5242880 kB\nDirty:                 4 kB\nWriteback:             0 kB\nAnonPages:        227272 kB\nMapped:           281072 kB\nShmem:              4668 kB\nKReclaimable:      38812 kB\nSlab:             127616 kB\nSReclaimable:      38812 kB\nSUnreclaim:        88804 kB\nKernelStack:        9072 kB\nPageTables:         7000 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    15481888 kB\nCommitted_AS:    1895812 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       43324 kB\nVmallocChunk:          0 kB\nPercpu:            13952 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       78848 kB\nDirectMap2M:     9357312 kB\nDirectMap1G:    20971520 kB\n",
+  "note": "same frozen Next build; isolated service copy; only pool width changed"
+}

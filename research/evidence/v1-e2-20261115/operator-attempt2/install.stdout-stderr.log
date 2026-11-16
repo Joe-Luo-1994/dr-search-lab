@@ -1,0 +1,4 @@
+(node:14772) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"e2_staged_hashes_verified","variant":"v2","snapshotId":"v1-e2-20261115-v2","bytes":66896,"manifestSha256":"cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7"}
+{"event":"e2_install_ready","cache":"fresh","version":"v2","snapshotId":"v1-e2-20261115-v2","manifestSha256":"cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7","installedAt":"2026-11-15T14:13:41.157Z","bytes":66896,"elapsedMs":13.659999999999997,"destination":"/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\caches\\fresh\\v2"}

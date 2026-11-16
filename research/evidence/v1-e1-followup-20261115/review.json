@@ -1,0 +1,176 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-11-15",
+  "verdict": "E1_SYNTHETIC_REQUIRED_TASKS_LIMITED_CLOSURE",
+  "verdictScope": "Evidence synthesis at review level; not a retroactive pass of any failed frozen run",
+  "originalVerdictsPreserved": {
+    "r1": "instrumentation failure, zero cases/requests",
+    "r2FormalPassed": false,
+    "followupFirstPassed": false,
+    "uiContinuationPassed": true
+  },
+  "clockAudit": {
+    "sameCount": 100,
+    "sameFailures": 0,
+    "ipcCount": 100,
+    "ipcFailures": 100,
+    "childFailures": 0,
+    "idMismatches": 0,
+    "afterParentEndRangeMs": [
+      5,
+      6
+    ],
+    "node": "v22.21.1"
+  },
+  "clockConclusion": {
+    "supported": "Strict cross-process wall-clock containment is not a valid invariant in the tested original normal-process environment.",
+    "notEstablished": [
+      "underlying OS/Node cause",
+      "exact server Role-read moment",
+      "cross-host clock synchronization",
+      "company revocation SLA"
+    ],
+    "r2FailuresReclassifiedAsPass": false,
+    "toleranceAdded": false
+  },
+  "apiOfflineAudit": [
+    {
+      "id": "baseline-page",
+      "status": 200,
+      "elapsedMs": 21.851900000000114,
+      "faults": []
+    },
+    {
+      "id": "baseline-search",
+      "status": 200,
+      "elapsedMs": 69.89990000000012,
+      "faults": []
+    },
+    {
+      "id": "revoked-b-page",
+      "status": 404,
+      "elapsedMs": 4.213400000000092,
+      "faults": []
+    },
+    {
+      "id": "revoked-b-search",
+      "status": 200,
+      "elapsedMs": 3.7409000000000106,
+      "faults": []
+    },
+    {
+      "id": "restored-page",
+      "status": 200,
+      "elapsedMs": 3.6621000000000095,
+      "faults": []
+    },
+    {
+      "id": "restored-search",
+      "status": 200,
+      "elapsedMs": 62.974500000000035,
+      "faults": []
+    }
+  ],
+  "ui": {
+    "initialFollowupCompleted": [
+      "identity-clears-open-page-and-results",
+      "none-empty"
+    ],
+    "continuationCompleted": [
+      "unknown-not-empty-result",
+      "PUBLIC-HOST",
+      "identity-clears-PUBLIC-HOST",
+      "late-old-identity-response-not-rendered"
+    ],
+    "observedControl": {
+      "axName": "研究身份",
+      "originalExactLabelCount": 0,
+      "semanticRoleMatchCount": 1
+    },
+    "alertEvidence": {
+      "initialOnlyAlert": "empty __next-route-announcer__ in shadow host outside main, clipped 1px",
+      "afterUnknown503": "main error says authorization unknown; no result section",
+      "historicalFailedInstantDOM": "not captured; continuation reproduces the flawed wait mechanism rather than inventing historical DOM"
+    },
+    "delayedResponse": {
+      "serverResponseObtained": true,
+      "routeFulfillCompleted": true,
+      "browserRequestFailure": "net::ERR_ABORTED",
+      "oldResultRendered": false,
+      "scope": "cancellation/clearing path only; not proof of stale response delivered into application JavaScript"
+    },
+    "pageErrors": [],
+    "visualInspection": "Main agent independently inspected unknown-mobile and desktop screenshots; reviewer checked raw DOM/AX/network/assertions. No human usability evidence.",
+    "bProviderNewRun": false
+  },
+  "preservation": {
+    "originalFrozenFilesChecked": 120,
+    "originalMismatches": [],
+    "newFrozenFilesChecked": 7,
+    "newMismatches": [],
+    "priorR1R2EvidenceDigestsChecked": 9,
+    "priorEvidenceMismatches": [],
+    "currentRoleProfile": "baseline",
+    "serviceStopReceipt": "PID 23416 stopped; remainingListeners empty; no service started or live request executed by reviewer"
+  },
+  "unresolved": [
+    "formal ReBAC/identity integration",
+    "real consumer and editor compatibility",
+    "production data/search relevance",
+    "owner acceptance of snapshot authorization drift",
+    "precise authorization timestamp accuracy",
+    "total operational cost and A/B/C cost advantage",
+    "E2 update/install/versioned-link/recovery operations"
+  ],
+  "next": "Propose a small E2 card for actual V1/V2 with Tags/PDF membership closure, user/client old-link recovery and one non-author runbook task; reuse old installer fault proofs, add only changed-boundary fault cases; do not execute E2 now.",
+  "evidenceHashes": [
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\normal-clock\\clock.json",
+      "Hash": "60A7D4AEC03DD9E77BE45CE3B4092CBA6DB8C3BF55500153CFD3EFE914262DCD"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\clock.json",
+      "Hash": "854723168C47BF8EBCC63FEBA6A3382185E00EFC87679C4F5AF01685C150A5FA"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\ui-inspection.json",
+      "Hash": "244D2CC1570B78161717FACDE017A79C6617E808BAAD08C55593B330D5768433"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\api.jsonl",
+      "Hash": "0D097E6586BA8137DFBA4D2EC865EED7A9EED11B76072325BA19CD30642EC44A"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\result.json",
+      "Hash": "8404C058CF39B1188BB14F2BFA4D7AC49B372D9B1D3D0A750A8ACE1039E4909C"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\ui-continuation.json",
+      "Hash": "945B892CF7F372D772F2FA9E95195CC4B9BD5FE9622E0FE17FEDCBB28536AEC1"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\alerts-before.json",
+      "Hash": "76477483CB4D1298659510EC6D893F882F57255F9147C244184B74772C5CE082"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\alerts-after.json",
+      "Hash": "3C9414890F53D928D79FFB7C1CBF7CD0531DF1042B86CE33957BB26BA3588B52"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\delayed-response-continuation.json",
+      "Hash": "1366ED11224BFA2F1E59A41EB45D66F1BAB2C64851F53F6FB1F4371CFCA86606"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\followup-freeze.json",
+      "Hash": "A91870599070247DF7E4C97ADF137D11743E8ED9C0604962BC0F699BD7FF28DD"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\ui-continuation-freeze.json",
+      "Hash": "B454070A1AAE291E4C3432D635FA1D00D8C9A0DCEB694A33B924BECDF710500C"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-followup-20261115\\service-stop.json",
+      "Hash": "AB926C090AA6080E7E21DB64F9D26A065088840358684D17CB404F627BC2DFE8"
+    }
+  ]
+}

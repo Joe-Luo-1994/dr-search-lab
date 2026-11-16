@@ -1,0 +1,2828 @@
+{
+  "schema": "ms1-review-v1",
+  "mode": "capacity",
+  "base": "http://127.0.0.1:43299",
+  "engine": "sqlite",
+  "N": 1000000,
+  "startedAt": "2026-11-14T08:04:39.089Z",
+  "source": "Independent reviewer HTTP; formula oracle computed outside timing",
+  "tasks": [
+    {
+      "id": "B01",
+      "label": "huge/commonterm/page1",
+      "status": "pass",
+      "elapsedMs": 786.007981,
+      "detail": {
+        "N": 1000000,
+        "K": 1,
+        "A": 500000,
+        "H": 500000,
+        "total": 500000,
+        "sampleIds": [
+          "p000000000",
+          "p000000001",
+          "p000000002",
+          "p000000003",
+          "p000000004",
+          "p000000005",
+          "p000000006",
+          "p000000007",
+          "p000000008",
+          "p000000009",
+          "p000000010",
+          "p000000011",
+          "p000000012",
+          "p000000013",
+          "p000000014",
+          "p000000015",
+          "p000000016",
+          "p000000017",
+          "p000000018",
+          "p000000019"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000000002",
+          "p000000005",
+          "p000000093",
+          "p000000104",
+          "p000000132",
+          "p000000144",
+          "p000000146",
+          "p000000163",
+          "p000000167",
+          "p000000181"
+        ]
+      }
+    },
+    {
+      "id": "B02",
+      "label": "small/commonterm/page1",
+      "status": "pass",
+      "elapsedMs": 43.20999600000005,
+      "detail": {
+        "N": 1000000,
+        "K": 1,
+        "A": 501,
+        "H": 501,
+        "total": 501,
+        "sampleIds": [
+          "p000500000",
+          "p000500999",
+          "p000501998",
+          "p000502997",
+          "p000503996",
+          "p000504995",
+          "p000505994",
+          "p000506993",
+          "p000507992",
+          "p000508991",
+          "p000509990",
+          "p000510989",
+          "p000511988",
+          "p000512987",
+          "p000513986",
+          "p000514985",
+          "p000515984",
+          "p000516983",
+          "p000517982",
+          "p000518981"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000505994",
+          "p000506993",
+          "p000516983",
+          "p000523976",
+          "p000535964",
+          "p000556943",
+          "p000575924",
+          "p000582917",
+          "p000585914",
+          "p000629870"
+        ]
+      }
+    },
+    {
+      "id": "B03",
+      "label": "pair/commonterm/page1",
+      "status": "pass",
+      "elapsedMs": 42.24010199999975,
+      "detail": {
+        "N": 1000000,
+        "K": 2,
+        "A": 1002,
+        "H": 1002,
+        "total": 1002,
+        "sampleIds": [
+          "p000500000",
+          "p000500001",
+          "p000500999",
+          "p000501000",
+          "p000501998",
+          "p000501999",
+          "p000502997",
+          "p000502998",
+          "p000503996",
+          "p000503997",
+          "p000504995",
+          "p000504996",
+          "p000505994",
+          "p000505995",
+          "p000506993",
+          "p000506994",
+          "p000507992",
+          "p000507993",
+          "p000508991",
+          "p000508992"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000505994",
+          "p000506993",
+          "p000516983",
+          "p000523976",
+          "p000524976",
+          "p000534966",
+          "p000535964",
+          "p000536964",
+          "p000554946",
+          "p000556943"
+        ]
+      }
+    },
+    {
+      "id": "B04",
+      "label": "multi/commonterm/page1",
+      "status": "pass",
+      "elapsedMs": 48.54506600000013,
+      "detail": {
+        "N": 1000000,
+        "K": 10,
+        "A": 5010,
+        "H": 5010,
+        "total": 5010,
+        "sampleIds": [
+          "p000500000",
+          "p000500001",
+          "p000500002",
+          "p000500003",
+          "p000500004",
+          "p000500005",
+          "p000500006",
+          "p000500007",
+          "p000500008",
+          "p000500009",
+          "p000500999",
+          "p000501000",
+          "p000501001",
+          "p000501002",
+          "p000501003",
+          "p000501004",
+          "p000501005",
+          "p000501006",
+          "p000501007",
+          "p000501008"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000500002",
+          "p000501003",
+          "p000501008",
+          "p000503001",
+          "p000504005",
+          "p000505994",
+          "p000506993",
+          "p000508001",
+          "p000511997",
+          "p000512996"
+        ]
+      }
+    },
+    {
+      "id": "B05",
+      "label": "many/commonterm/page1",
+      "status": "pass",
+      "elapsedMs": 198.36938899999996,
+      "detail": {
+        "N": 1000000,
+        "K": 100,
+        "A": 50100,
+        "H": 50100,
+        "total": 50100,
+        "sampleIds": [
+          "p000500000",
+          "p000500001",
+          "p000500002",
+          "p000500003",
+          "p000500004",
+          "p000500005",
+          "p000500006",
+          "p000500007",
+          "p000500008",
+          "p000500009",
+          "p000500010",
+          "p000500011",
+          "p000500012",
+          "p000500013",
+          "p000500014",
+          "p000500015",
+          "p000500016",
+          "p000500017",
+          "p000500018",
+          "p000500019"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000500002",
+          "p000500047",
+          "p000500073",
+          "p000500074",
+          "p000501003",
+          "p000501008",
+          "p000501012",
+          "p000501023",
+          "p000501027",
+          "p000501028"
+        ]
+      }
+    },
+    {
+      "id": "B06",
+      "label": "all/commonterm/page1",
+      "status": "pass",
+      "elapsedMs": 1157.140958,
+      "detail": {
+        "N": 1000000,
+        "K": 1000,
+        "A": 1000000,
+        "H": 1000000,
+        "total": 1000000,
+        "sampleIds": [
+          "p000000000",
+          "p000000001",
+          "p000000002",
+          "p000000003",
+          "p000000004",
+          "p000000005",
+          "p000000006",
+          "p000000007",
+          "p000000008",
+          "p000000009",
+          "p000000010",
+          "p000000011",
+          "p000000012",
+          "p000000013",
+          "p000000014",
+          "p000000015",
+          "p000000016",
+          "p000000017",
+          "p000000018",
+          "p000000019"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000000002",
+          "p000000005",
+          "p000000093",
+          "p000000104",
+          "p000000132",
+          "p000000144",
+          "p000000146",
+          "p000000163",
+          "p000000167",
+          "p000000181"
+        ]
+      }
+    },
+    {
+      "id": "B07",
+      "label": "small/rarebeacon/page1",
+      "status": "pass",
+      "elapsedMs": 4.8314510000000155,
+      "detail": {
+        "N": 1000000,
+        "K": 1,
+        "A": 501,
+        "H": 1,
+        "total": 1,
+        "sampleIds": [
+          "p000746753"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000746753"
+        ]
+      }
+    },
+    {
+      "id": "B08",
+      "label": "all/rarebeacon/page1",
+      "status": "pass",
+      "elapsedMs": 9.576122999999825,
+      "detail": {
+        "N": 1000000,
+        "K": 1000,
+        "A": 1000000,
+        "H": 1004,
+        "total": 1004,
+        "sampleIds": [
+          "p000000000",
+          "p000000997",
+          "p000001994",
+          "p000002991",
+          "p000003988",
+          "p000004985",
+          "p000005982",
+          "p000006979",
+          "p000007976",
+          "p000008973",
+          "p000009970",
+          "p000010967",
+          "p000011964",
+          "p000012961",
+          "p000013958",
+          "p000014955",
+          "p000015952",
+          "p000016949",
+          "p000017946",
+          "p000018943"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000005982",
+          "p000007976",
+          "p000009970",
+          "p000022931",
+          "p000028913",
+          "p000044865",
+          "p000057826",
+          "p000074775",
+          "p000090727",
+          "p000130607"
+        ]
+      }
+    },
+    {
+      "id": "B09",
+      "label": "huge/備份/page1",
+      "status": "pass",
+      "elapsedMs": 94.0946469999999,
+      "detail": {
+        "N": 1000000,
+        "K": 1,
+        "A": 500000,
+        "H": 26316,
+        "total": 26316,
+        "sampleIds": [
+          "p000000000",
+          "p000000019",
+          "p000000038",
+          "p000000057",
+          "p000000076",
+          "p000000095",
+          "p000000114",
+          "p000000133",
+          "p000000152",
+          "p000000171",
+          "p000000190",
+          "p000000209",
+          "p000000228",
+          "p000000247",
+          "p000000266",
+          "p000000285",
+          "p000000304",
+          "p000000323",
+          "p000000342",
+          "p000000361"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000000152",
+          "p000000190",
+          "p000000209",
+          "p000000703",
+          "p000000760",
+          "p000000798",
+          "p000000817",
+          "p000000950",
+          "p000001235",
+          "p000001254"
+        ]
+      }
+    },
+    {
+      "id": "B10",
+      "label": "all/備份/page1",
+      "status": "pass",
+      "elapsedMs": 130.44065500000033,
+      "detail": {
+        "N": 1000000,
+        "K": 1000,
+        "A": 1000000,
+        "H": 52632,
+        "total": 52632,
+        "sampleIds": [
+          "p000000000",
+          "p000000019",
+          "p000000038",
+          "p000000057",
+          "p000000076",
+          "p000000095",
+          "p000000114",
+          "p000000133",
+          "p000000152",
+          "p000000171",
+          "p000000190",
+          "p000000209",
+          "p000000228",
+          "p000000247",
+          "p000000266",
+          "p000000285",
+          "p000000304",
+          "p000000323",
+          "p000000342",
+          "p000000361"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000000152",
+          "p000000190",
+          "p000000209",
+          "p000000703",
+          "p000000760",
+          "p000000798",
+          "p000000817",
+          "p000000950",
+          "p000001235",
+          "p000001254"
+        ]
+      }
+    },
+    {
+      "id": "B11",
+      "label": "small/ERR_CONN_RESET/page1",
+      "status": "pass",
+      "elapsedMs": 13.385583999999653,
+      "detail": {
+        "N": 1000000,
+        "K": 1,
+        "A": 501,
+        "H": 29,
+        "total": 29,
+        "sampleIds": [
+          "p000515984",
+          "p000532967",
+          "p000549950",
+          "p000566933",
+          "p000583916",
+          "p000600899",
+          "p000617882",
+          "p000634865",
+          "p000651848",
+          "p000668831",
+          "p000685814",
+          "p000702797",
+          "p000719780",
+          "p000736763",
+          "p000753746",
+          "p000770729",
+          "p000787712",
+          "p000804695",
+          "p000821678",
+          "p000838661"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000515984",
+          "p000549950",
+          "p000566933",
+          "p000617882",
+          "p000634865",
+          "p000651848",
+          "p000668831",
+          "p000685814",
+          "p000702797",
+          "p000770729"
+        ]
+      }
+    },
+    {
+      "id": "B12",
+      "label": "all/ERR_CONN_RESET/page1",
+      "status": "pass",
+      "elapsedMs": 154.50793299999987,
+      "detail": {
+        "N": 1000000,
+        "K": 1000,
+        "A": 1000000,
+        "H": 58824,
+        "total": 58824,
+        "sampleIds": [
+          "p000000000",
+          "p000000017",
+          "p000000034",
+          "p000000051",
+          "p000000068",
+          "p000000085",
+          "p000000102",
+          "p000000119",
+          "p000000136",
+          "p000000153",
+          "p000000170",
+          "p000000187",
+          "p000000204",
+          "p000000221",
+          "p000000238",
+          "p000000255",
+          "p000000272",
+          "p000000289",
+          "p000000306",
+          "p000000323"
+        ],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": [
+          "p000349282",
+          "p000377842",
+          "p000492235",
+          "p000494632",
+          "p000506957",
+          "p000904247",
+          "p000926432",
+          "p000000068",
+          "p000000085",
+          "p000000119"
+        ]
+      }
+    },
+    {
+      "id": "B13",
+      "label": "all/absentquartz/page1",
+      "status": "pass",
+      "elapsedMs": 2.9471260000000257,
+      "detail": {
+        "N": 1000000,
+        "K": 1000,
+        "A": 1000000,
+        "H": 0,
+        "total": 0,
+        "sampleIds": [],
+        "page": 1,
+        "pageSize": 10,
+        "returnedIds": []
+      }
+    },
+    {
+      "id": "B14",
+      "label": "all/commonterm/page100000",
+      "status": "fail",
+      "elapsedMs": 5009.093908,
+      "error": "TimeoutError: The operation was aborted due to timeout\n    at node:internal/deps/undici/undici:14900:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async request (file:///workspace/dr-search-lab/scripts/ms1-review/review.mjs:23:21)\n    at async search (file:///workspace/dr-search-lab/scripts/ms1-review/review.mjs:29:80)\n    at async task.stopOnFail (file:///workspace/dr-search-lab/scripts/ms1-review/review.mjs:57:153)\n    at async task (file:///workspace/dr-search-lab/scripts/ms1-review/review.mjs:33:99)\n    at async file:///workspace/dr-search-lab/scripts/ms1-review/review.mjs:57:68"
+    }
+  ],
+  "requests": [
+    {
+      "path": "/api/research/search?engine=sqlite&q=commonterm&page=1&pageSize=10",
+      "user": "huge",
+      "elapsedMs": 784.01242,
+      "status": 200,
+      "bytes": 12002,
+      "sha256": "92480118c2968ecb063ade478bf1d428be077d8009bddebb4d677a969e547e02",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 500000,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000000002",
+            "title": "Synthetic document p000000002 topic2",
+            "content": "commonterm vocab4623 vocab63517 vocab41618 vocab19624 vocab22754 vocab26484 vocab15487 vocab1248 vocab22360 vocab62386 vocab24030 vocab62355 vocab58890 vocab62365 vocab42504 vocab28968 vocab14900 vocab36904 vocab23031 vocab43219 vocab45508 vocab37141 vocab32024 vocab12700 vocab6773 vocab38105 vocab19113 vocab24389 vocab3825 vocab53327 vocab60162 vocab3461 vocab45353 vocab49578 vocab33201 vocab58416 vocab50177 vocab64569 vocab58649 vocab61690 vocab49814 vocab22663 vocab22978 vocab39907 vocab21527 vocab16816 vocab23000 vocab17093 vocab25533 vocab43721 vocab29526 vocab44327 vocab49662 vocab49175 vocab33525 vocab21770 vocab26545 vocab30520 vocab25146 vocab1504 vocab11688 vocab46264 vocab44204 vocab22417 vocab22742 vocab64514 vocab52468 vocab30903 vocab14401 vocab23773 vocab5628 vocab45263 vocab46089 vocab60825 vocab36566 vocab9323 vocab52001 vocab47966 vocab1843 vocab15437 vocab27163 vocab40273 vocab61335 vocab19887 vocab34797 vocab44586 vocab5717 vocab59416 vocab10121 vocab45872 vocab42605 vocab50111 vocab36150",
+            "url": "/api/research/pages/p000000002?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000005",
+            "title": "Synthetic document p000000005 topic5",
+            "content": "commonterm vocab57607 vocab18650 vocab28885 vocab24453 vocab47337 vocab28250 vocab29263 vocab45053 vocab52094 vocab41053 vocab51196 vocab27775 vocab52174 vocab1684 vocab47943 vocab24043 vocab27274 vocab39599 vocab34149 vocab40529 vocab43133 vocab55112 vocab22383 vocab58516 vocab25546 vocab18513 vocab57846 vocab56299 vocab25465 vocab61505 vocab65052 vocab24794 vocab54550 vocab28754 vocab61253 vocab37731 vocab18063 vocab62519 vocab11385 vocab47126 vocab58907 vocab59400 vocab16732 vocab21394 vocab138 vocab24532 vocab40672 vocab41417 vocab56352 vocab41746 vocab47655 vocab17565 vocab22442 vocab7173 vocab19193 vocab31350 vocab33456 vocab19524 vocab15521 vocab60104 vocab23884 vocab13759 vocab61535 vocab28453 vocab64535 vocab6166 vocab29459 vocab61812 vocab22683 vocab41361 vocab14820 vocab40242 vocab32887 vocab35106 vocab60867 vocab33436 vocab30416 vocab37003 vocab14488 vocab11274 vocab48298 vocab50691 vocab53990 vocab35021 vocab30120 vocab54133 vocab34822 vocab11759 vocab35304 vocab51275 vocab47373 vocab8857 vocab1749",
+            "url": "/api/research/pages/p000000005?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000093",
+            "title": "Synthetic document p000000093 topic93",
+            "content": "commonterm vocab61674 vocab25342 vocab57087 vocab18615 vocab19545 vocab21663 vocab53050 vocab36833 vocab34208 vocab54531 vocab13042 vocab49476 vocab63085 vocab12067 vocab28876 vocab17941 vocab25040 vocab19232 vocab18330 vocab32983 vocab30049 vocab24551 vocab21863 vocab46613 vocab56077 vocab18968 vocab27298 vocab57843 vocab22232 vocab37808 vocab45266 vocab36034 vocab4824 vocab11233 vocab39535 vocab8333 vocab12955 vocab53873 vocab48631 vocab23781 vocab22537 vocab32835 vocab45080 vocab6748 vocab64264 vocab48803 vocab22735 vocab60806 vocab52204 vocab36299 vocab22970 vocab26041 vocab7414 vocab60875 vocab31817 vocab8337 vocab1407 vocab10676 vocab31640 vocab15808 vocab44861 vocab21443 vocab59462 vocab63228 vocab13469 vocab63934 vocab49590 vocab26455 vocab24543 vocab33412 vocab40931 vocab15648 vocab46557 vocab8214 vocab30118 vocab34531 vocab47873 vocab44593 vocab26711 vocab18170 vocab27066 vocab45370 vocab18247 vocab63208 vocab14855 vocab17329 vocab14726 vocab10067 vocab12451 vocab46092 vocab51723 vocab59925 vocab37059",
+            "url": "/api/research/pages/p000000093?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000104",
+            "title": "Synthetic document p000000104 topic7",
+            "content": "commonterm vocab45054 vocab35206 vocab34606 vocab57672 vocab12244 vocab22315 vocab46613 vocab29067 vocab11628 vocab11175 vocab16875 vocab19927 vocab11308 vocab1997 vocab25569 vocab37185 vocab44437 vocab18533 vocab58288 vocab24838 vocab16652 vocab64089 vocab34138 vocab44890 vocab51225 vocab47746 vocab14239 vocab37498 vocab50528 vocab47751 vocab1840 vocab31905 vocab61352 vocab41152 vocab56719 vocab17202 vocab23183 vocab12580 vocab38338 vocab61126 vocab31653 vocab4748 vocab47075 vocab62589 vocab5491 vocab26108 vocab45165 vocab41865 vocab47206 vocab62760 vocab10989 vocab27421 vocab8139 vocab41420 vocab54870 vocab38291 vocab17418 vocab13214 vocab25651 vocab2059 vocab41751 vocab56480 vocab55718 vocab4512 vocab6067 vocab61079 vocab61713 vocab18687 vocab59829 vocab27351 vocab64042 vocab47479 vocab14974 vocab19576 vocab22963 vocab49568 vocab1137 vocab22041 vocab35975 vocab43153 vocab8911 vocab42806 vocab47287 vocab30638 vocab58754 vocab53090 vocab62855 vocab34538 vocab27332 vocab43341 vocab48610 vocab48280 vocab41422",
+            "url": "/api/research/pages/p000000104?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000132",
+            "title": "Synthetic document p000000132 topic35",
+            "content": "commonterm vocab41555 vocab46397 vocab64287 vocab23629 vocab64035 vocab46924 vocab53320 vocab33408 vocab56465 vocab45780 vocab17264 vocab22621 vocab9785 vocab58146 vocab26558 vocab30497 vocab30284 vocab21064 vocab38721 vocab62138 vocab61831 vocab37189 vocab6148 vocab30323 vocab36507 vocab13628 vocab22035 vocab50042 vocab39996 vocab65042 vocab51004 vocab22261 vocab10796 vocab25221 vocab5129 vocab60636 vocab35575 vocab58859 vocab61306 vocab64325 vocab52072 vocab49922 vocab36019 vocab13758 vocab62850 vocab52545 vocab1196 vocab12033 vocab33452 vocab52423 vocab39436 vocab43639 vocab11912 vocab7993 vocab18483 vocab53374 vocab50761 vocab26642 vocab36640 vocab1500 vocab27069 vocab28156 vocab40516 vocab9978 vocab6804 vocab30580 vocab25741 vocab31886 vocab18083 vocab47313 vocab51572 vocab22433 vocab54189 vocab60943 vocab63202 vocab22132 vocab7801 vocab47173 vocab1056 vocab27024 vocab19065 vocab31575 vocab39083 vocab53771 vocab12264 vocab60356 vocab22678 vocab12235 vocab32795 vocab11978 vocab31126 vocab21685 vocab24959",
+            "url": "/api/research/pages/p000000132?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000144",
+            "title": "Synthetic document p000000144 topic47",
+            "content": "commonterm vocab23408 vocab64716 vocab13824 vocab29639 vocab64616 vocab48510 vocab40856 vocab3290 vocab26403 vocab37900 vocab57211 vocab55821 vocab32104 vocab49532 vocab27329 vocab36716 vocab18605 vocab48927 vocab61621 vocab61155 vocab40384 vocab10869 vocab14767 vocab1284 vocab30780 vocab20978 vocab22002 vocab52612 vocab52086 vocab52400 vocab19020 vocab61042 vocab21210 vocab15988 vocab13256 vocab22449 vocab15537 vocab10213 vocab37831 vocab60438 vocab22253 vocab21583 vocab49848 vocab5644 vocab15908 vocab12661 vocab50761 vocab5223 vocab40479 vocab52986 vocab11791 vocab13323 vocab31274 vocab11139 vocab58908 vocab23506 vocab54210 vocab13099 vocab29271 vocab22847 vocab36680 vocab11564 vocab55840 vocab1360 vocab4199 vocab39188 vocab8936 vocab13201 vocab34327 vocab16876 vocab57820 vocab41197 vocab42915 vocab37520 vocab45960 vocab27285 vocab24451 vocab46089 vocab27024 vocab8143 vocab11632 vocab59643 vocab31627 vocab55577 vocab10722 vocab20696 vocab44954 vocab63564 vocab35308 vocab10406 vocab4310 vocab5522 vocab39517",
+            "url": "/api/research/pages/p000000144?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000146",
+            "title": "Synthetic document p000000146 topic49",
+            "content": "commonterm vocab47702 vocab55974 vocab48858 vocab50140 vocab32341 vocab31617 vocab59428 vocab16024 vocab42178 vocab11080 vocab49533 vocab37154 vocab64811 vocab19096 vocab154 vocab17089 vocab8574 vocab26115 vocab45604 vocab25599 vocab53152 vocab23185 vocab20522 vocab61274 vocab25698 vocab61049 vocab53776 vocab2978 vocab18676 vocab63244 vocab38528 vocab2746 vocab52826 vocab42693 vocab41541 vocab7398 vocab18726 vocab49122 vocab46055 vocab30345 vocab38339 vocab21986 vocab16316 vocab14245 vocab21755 vocab29144 vocab19084 vocab49381 vocab105 vocab24196 vocab59296 vocab28913 vocab22288 vocab26951 vocab58967 vocab27996 vocab42392 vocab19980 vocab29316 vocab14621 vocab17015 vocab8672 vocab31580 vocab60763 vocab60851 vocab48138 vocab28631 vocab26384 vocab28980 vocab65516 vocab45668 vocab5008 vocab28138 vocab14867 vocab35951 vocab62741 vocab24972 vocab55102 vocab58834 vocab18187 vocab18296 vocab55532 vocab52234 vocab42180 vocab42812 vocab60511 vocab12173 vocab45089 vocab35474 vocab25994 vocab56797 vocab13099 vocab39017",
+            "url": "/api/research/pages/p000000146?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000163",
+            "title": "Synthetic document p000000163 topic66",
+            "content": "commonterm vocab12836 vocab38781 vocab50151 vocab36816 vocab60442 vocab58242 vocab31448 vocab10447 vocab28717 vocab45566 vocab45978 vocab18562 vocab6841 vocab56345 vocab65250 vocab56926 vocab17122 vocab56721 vocab38014 vocab45096 vocab889 vocab20013 vocab21281 vocab4469 vocab49726 vocab43676 vocab7768 vocab4763 vocab29348 vocab37908 vocab3734 vocab31271 vocab65384 vocab19565 vocab38910 vocab17209 vocab58641 vocab35537 vocab45645 vocab61878 vocab61155 vocab60251 vocab17637 vocab61802 vocab53817 vocab15142 vocab45207 vocab2205 vocab47875 vocab42969 vocab18262 vocab62201 vocab3289 vocab42827 vocab45371 vocab20106 vocab37417 vocab38075 vocab20015 vocab59023 vocab40319 vocab13765 vocab39810 vocab49723 vocab11577 vocab37348 vocab10835 vocab65027 vocab23493 vocab58377 vocab26554 vocab65058 vocab24573 vocab45890 vocab51020 vocab44900 vocab53129 vocab31999 vocab63136 vocab29307 vocab63142 vocab36300 vocab35234 vocab17647 vocab29202 vocab19667 vocab38282 vocab47980 vocab63263 vocab47871 vocab22187 vocab28188 vocab63903",
+            "url": "/api/research/pages/p000000163?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000167",
+            "title": "Synthetic document p000000167 topic70",
+            "content": "commonterm vocab7672 vocab32056 vocab6182 vocab51222 vocab3661 vocab47766 vocab11000 vocab63359 vocab7898 vocab40955 vocab29176 vocab11970 vocab60006 vocab31052 vocab60680 vocab30393 vocab22235 vocab58897 vocab51790 vocab26633 vocab22083 vocab37514 vocab47644 vocab38457 vocab8522 vocab25536 vocab17504 vocab27708 vocab35223 vocab12252 vocab34844 vocab17844 vocab13652 vocab46505 vocab40251 vocab43276 vocab261 vocab54596 vocab30024 vocab17652 vocab13402 vocab22662 vocab33621 vocab31405 vocab10094 vocab58257 vocab45446 vocab20282 vocab29821 vocab32532 vocab56664 vocab2276 vocab46534 vocab18146 vocab61855 vocab39614 vocab59434 vocab55979 vocab33758 vocab63818 vocab51583 vocab63432 vocab11441 vocab65384 vocab19108 vocab15739 vocab11435 vocab11887 vocab20352 vocab32847 vocab16576 vocab65305 vocab25632 vocab10192 vocab24159 vocab18748 vocab35700 vocab4262 vocab35164 vocab12566 vocab53191 vocab42357 vocab33659 vocab61937 vocab38754 vocab31254 vocab64859 vocab33879 vocab60862 vocab16548 vocab21093 vocab17497 vocab46975",
+            "url": "/api/research/pages/p000000167?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000181",
+            "title": "Synthetic document p000000181 topic84",
+            "content": "commonterm vocab22986 vocab29236 vocab39863 vocab60258 vocab26167 vocab46064 vocab35674 vocab28365 vocab47346 vocab33490 vocab40621 vocab42735 vocab33279 vocab25557 vocab36073 vocab46095 vocab46872 vocab54072 vocab26790 vocab51172 vocab36372 vocab13987 vocab35949 vocab26978 vocab60969 vocab32878 vocab33783 vocab37756 vocab29342 vocab26672 vocab21558 vocab54914 vocab25842 vocab31537 vocab30500 vocab1775 vocab746 vocab7337 vocab42654 vocab54440 vocab35172 vocab16624 vocab60627 vocab7973 vocab57306 vocab45486 vocab37945 vocab58911 vocab10262 vocab21388 vocab15205 vocab13922 vocab42595 vocab31406 vocab9427 vocab20903 vocab48040 vocab26084 vocab21301 vocab31753 vocab39470 vocab57350 vocab47277 vocab11765 vocab23100 vocab25250 vocab65399 vocab24215 vocab4735 vocab16923 vocab49638 vocab44750 vocab50136 vocab25611 vocab64471 vocab20945 vocab6706 vocab36152 vocab41433 vocab12075 vocab14870 vocab29288 vocab16957 vocab55464 vocab52756 vocab61078 vocab3283 vocab19461 vocab31762 vocab1176 vocab56716 vocab32247 vocab31154",
+            "url": "/api/research/pages/p000000181?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 39.33765799999992,
+          "pageMs": 671.608174
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=commonterm&page=1&pageSize=10",
+      "user": "small",
+      "elapsedMs": 42.59679299999971,
+      "status": 200,
+      "bytes": 12018,
+      "sha256": "0bd48520ec70949490cac55cc02052999e700c0658e19204601487f6fad0871a",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 501,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000505994",
+            "title": "Synthetic document p000505994 topic42",
+            "content": "commonterm vocab47008 vocab23098 vocab29536 vocab36630 vocab21805 vocab36194 vocab39853 vocab52197 vocab60569 vocab53944 vocab20368 vocab18064 vocab33521 vocab2644 vocab20659 vocab48340 vocab33050 vocab38794 vocab25203 vocab54895 vocab10860 vocab40780 vocab47244 vocab62176 vocab24107 vocab14469 vocab26498 vocab55752 vocab48852 vocab58431 vocab53259 vocab58271 vocab11307 vocab9339 vocab33663 vocab34355 vocab14848 vocab4999 vocab18355 vocab62486 vocab12573 vocab42916 vocab12814 vocab35088 vocab65240 vocab24942 vocab24045 vocab11540 vocab19117 vocab20656 vocab26103 vocab48891 vocab63545 vocab18485 vocab11617 vocab32108 vocab51671 vocab60605 vocab42850 vocab55486 vocab6638 vocab5451 vocab44197 vocab65494 vocab61028 vocab49923 vocab33477 vocab65043 vocab64920 vocab26187 vocab42177 vocab29162 vocab56447 vocab22438 vocab54978 vocab6704 vocab19944 vocab35023 vocab57142 vocab3773 vocab63362 vocab31233 vocab59889 vocab15845 vocab4856 vocab45346 vocab7160 vocab27081 vocab50802 vocab5555 vocab41678 vocab46590 vocab31535",
+            "url": "/api/research/pages/p000505994?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000506993",
+            "title": "Synthetic document p000506993 topic71",
+            "content": "commonterm vocab10108 vocab60413 vocab58267 vocab28074 vocab36690 vocab22681 vocab35227 vocab63694 vocab44107 vocab12561 vocab25485 vocab29444 vocab39035 vocab61437 vocab10875 vocab12216 vocab45870 vocab24908 vocab56801 vocab51898 vocab33842 vocab55851 vocab15276 vocab3881 vocab23791 vocab34197 vocab1282 vocab37684 vocab38830 vocab2717 vocab24056 vocab16967 vocab40096 vocab16962 vocab62484 vocab4742 vocab33540 vocab48459 vocab43313 vocab44273 vocab10239 vocab31939 vocab43437 vocab54602 vocab32886 vocab17253 vocab25106 vocab13995 vocab40879 vocab21760 vocab55382 vocab36517 vocab42690 vocab61324 vocab61164 vocab11158 vocab39959 vocab19132 vocab29852 vocab32973 vocab30429 vocab16589 vocab34831 vocab41986 vocab16247 vocab37024 vocab54348 vocab63393 vocab12910 vocab62538 vocab12299 vocab10575 vocab15863 vocab17184 vocab60073 vocab13320 vocab16941 vocab18840 vocab54782 vocab888 vocab13948 vocab21148 vocab57974 vocab40129 vocab28057 vocab44803 vocab19415 vocab28128 vocab17836 vocab41016 vocab23009 vocab36686 vocab37639",
+            "url": "/api/research/pages/p000506993?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000516983",
+            "title": "Synthetic document p000516983 topic70",
+            "content": "commonterm vocab6305 vocab21671 vocab38165 vocab21006 vocab60731 vocab29345 vocab26164 vocab10508 vocab5240 vocab28907 vocab27654 vocab25953 vocab34455 vocab35022 vocab4079 vocab29749 vocab61916 vocab34863 vocab1124 vocab47264 vocab34313 vocab40632 vocab62024 vocab39454 vocab41081 vocab5800 vocab17985 vocab62910 vocab52615 vocab53185 vocab40759 vocab40176 vocab4945 vocab18619 vocab26565 vocab46674 vocab16559 vocab31753 vocab43395 vocab10564 vocab56963 vocab53070 vocab13256 vocab32991 vocab9171 vocab2338 vocab40807 vocab26534 vocab43522 vocab15694 vocab39609 vocab41515 vocab39477 vocab25115 vocab42326 vocab60262 vocab40760 vocab31893 vocab47853 vocab51317 vocab61774 vocab32889 vocab36280 vocab27385 vocab55976 vocab64229 vocab14677 vocab32603 vocab28901 vocab23585 vocab17732 vocab17944 vocab13516 vocab14539 vocab53883 vocab34235 vocab50922 vocab27232 vocab1816 vocab60716 vocab36627 vocab30335 vocab12883 vocab18496 vocab17248 vocab24745 vocab60789 vocab52122 vocab34808 vocab22305 vocab33536 vocab37640 vocab30041",
+            "url": "/api/research/pages/p000516983?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000523976",
+            "title": "Synthetic document p000523976 topic79",
+            "content": "commonterm vocab22301 vocab40358 vocab17974 vocab36422 vocab22919 vocab45411 vocab24357 vocab56356 vocab43781 vocab60892 vocab52290 vocab42384 vocab33783 vocab33968 vocab30224 vocab37597 vocab52002 vocab204 vocab55106 vocab5838 vocab23179 vocab2542 vocab11629 vocab43455 vocab52490 vocab16134 vocab51846 vocab31334 vocab17382 vocab57191 vocab6761 vocab47537 vocab64039 vocab30704 vocab27338 vocab15624 vocab27223 vocab29682 vocab18232 vocab40541 vocab53493 vocab23233 vocab62930 vocab43924 vocab59020 vocab52970 vocab62382 vocab60620 vocab60594 vocab39947 vocab5933 vocab16561 vocab37795 vocab55503 vocab21930 vocab27204 vocab44766 vocab31177 vocab28943 vocab37185 vocab50960 vocab51028 vocab53134 vocab36834 vocab8202 vocab3174 vocab47422 vocab63065 vocab57648 vocab38562 vocab30208 vocab64855 vocab37851 vocab52483 vocab17206 vocab24547 vocab57950 vocab34853 vocab43148 vocab36973 vocab57438 vocab58140 vocab60873 vocab36207 vocab52513 vocab51899 vocab14222 vocab46211 vocab55318 vocab32156 vocab45360 vocab53915 vocab59680",
+            "url": "/api/research/pages/p000523976?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000535964",
+            "title": "Synthetic document p000535964 topic39",
+            "content": "commonterm vocab29847 vocab26135 vocab5126 vocab30345 vocab18868 vocab43103 vocab19571 vocab47843 vocab44344 vocab42107 vocab19996 vocab36791 vocab18358 vocab47268 vocab40759 vocab18182 vocab14538 vocab53735 vocab40466 vocab26897 vocab12040 vocab65445 vocab41091 vocab38559 vocab42522 vocab36226 vocab25425 vocab19015 vocab33740 vocab31018 vocab54180 vocab52306 vocab12004 vocab31199 vocab37391 vocab30386 vocab63336 vocab45010 vocab48335 vocab12216 vocab59027 vocab15319 vocab60169 vocab63341 vocab11052 vocab38109 vocab46108 vocab12760 vocab55739 vocab37423 vocab15688 vocab35960 vocab20383 vocab4822 vocab23137 vocab62236 vocab19955 vocab25810 vocab22764 vocab1807 vocab33383 vocab58119 vocab54176 vocab35003 vocab2444 vocab27943 vocab12168 vocab57780 vocab8840 vocab38396 vocab53910 vocab16028 vocab10628 vocab29010 vocab39307 vocab10298 vocab39207 vocab49186 vocab39530 vocab55460 vocab38616 vocab36004 vocab24612 vocab54156 vocab21186 vocab57133 vocab14325 vocab15234 vocab3804 vocab47531 vocab32211 vocab59591 vocab35528",
+            "url": "/api/research/pages/p000535964?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000556943",
+            "title": "Synthetic document p000556943 topic66",
+            "content": "commonterm vocab43534 vocab33659 vocab29885 vocab43581 vocab47495 vocab7661 vocab41038 vocab50631 vocab63656 vocab55751 vocab52886 vocab53565 vocab18952 vocab24437 vocab12643 vocab51761 vocab42725 vocab40836 vocab26892 vocab31619 vocab52606 vocab35293 vocab53178 vocab32713 vocab19200 vocab8204 vocab43334 vocab9834 vocab64601 vocab48815 vocab48823 vocab32728 vocab37213 vocab64760 vocab40344 vocab56095 vocab35738 vocab19052 vocab3569 vocab17106 vocab14659 vocab34409 vocab20714 vocab25063 vocab42823 vocab43664 vocab19318 vocab21834 vocab52795 vocab11528 vocab55040 vocab47967 vocab35646 vocab59679 vocab63568 vocab40557 vocab61009 vocab51171 vocab26969 vocab57167 vocab37361 vocab44706 vocab17416 vocab4519 vocab34129 vocab28589 vocab25927 vocab31367 vocab37647 vocab22354 vocab35176 vocab20711 vocab11818 vocab42148 vocab43474 vocab44304 vocab45856 vocab11915 vocab33682 vocab16245 vocab58069 vocab25605 vocab30600 vocab54830 vocab32618 vocab42184 vocab17085 vocab26093 vocab13542 vocab26709 vocab19157 vocab32104 vocab3212",
+            "url": "/api/research/pages/p000556943?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000575924",
+            "title": "Synthetic document p000575924 topic35",
+            "content": "commonterm vocab52579 vocab43232 vocab54461 vocab10786 vocab27151 vocab35964 vocab20540 vocab29603 vocab16995 vocab13176 vocab37726 vocab53350 vocab5772 vocab47355 vocab23656 vocab7014 vocab33222 vocab24649 vocab56046 vocab37882 vocab4264 vocab45686 vocab5996 vocab19840 vocab53937 vocab45256 vocab57229 vocab15264 vocab10733 vocab64770 vocab27611 vocab52528 vocab60962 vocab59802 vocab15281 vocab34206 vocab765 vocab29441 vocab32781 vocab2054 vocab28675 vocab13287 vocab44678 vocab7547 vocab51111 vocab63145 vocab23058 vocab12570 vocab53085 vocab60169 vocab34760 vocab39109 vocab59141 vocab9347 vocab36550 vocab56445 vocab34132 vocab29066 vocab32927 vocab15926 vocab52178 vocab21476 vocab24537 vocab1537 vocab20503 vocab37249 vocab36879 vocab32480 vocab48477 vocab38282 vocab35027 vocab10839 vocab43004 vocab52342 vocab41341 vocab56182 vocab46450 vocab14994 vocab44903 vocab19894 vocab56663 vocab45205 vocab46037 vocab37974 vocab32116 vocab48065 vocab64293 vocab49409 vocab37220 vocab34307 vocab15785 vocab59390 vocab35433",
+            "url": "/api/research/pages/p000575924?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000582917",
+            "title": "Synthetic document p000582917 topic44",
+            "content": "commonterm vocab7908 vocab17932 vocab50814 vocab59925 vocab37837 vocab33426 vocab44620 vocab2240 vocab27447 vocab53756 vocab61425 vocab33076 vocab35548 vocab22082 vocab47228 vocab56752 vocab10407 vocab52581 vocab51668 vocab11735 vocab63151 vocab31569 vocab51388 vocab51306 vocab60954 vocab557 vocab36386 vocab27438 vocab38626 vocab34466 vocab50699 vocab44984 vocab60680 vocab48610 vocab51625 vocab62188 vocab40022 vocab59333 vocab37553 vocab19489 vocab15146 vocab57221 vocab26521 vocab52456 vocab57982 vocab49368 vocab9835 vocab53300 vocab10658 vocab42242 vocab22008 vocab58833 vocab23743 vocab58047 vocab13441 vocab21259 vocab8987 vocab31713 vocab38233 vocab13850 vocab19654 vocab1759 vocab47252 vocab37892 vocab20336 vocab10677 vocab41361 vocab5431 vocab57627 vocab44829 vocab11971 vocab4083 vocab38263 vocab61937 vocab47864 vocab36459 vocab18492 vocab47373 vocab54244 vocab47408 vocab60900 vocab29001 vocab7787 vocab16959 vocab28693 vocab60429 vocab53678 vocab55966 vocab38290 vocab42112 vocab22880 vocab55314 vocab49992",
+            "url": "/api/research/pages/p000582917?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000585914",
+            "title": "Synthetic document p000585914 topic34",
+            "content": "commonterm vocab45656 vocab55940 vocab51207 vocab8536 vocab40214 vocab42957 vocab57363 vocab45558 vocab13948 vocab47331 vocab53301 vocab31978 vocab37798 vocab23865 vocab44882 vocab15866 vocab54968 vocab63405 vocab10216 vocab32084 vocab24861 vocab26813 vocab21566 vocab18604 vocab35319 vocab44743 vocab19750 vocab23506 vocab13165 vocab32573 vocab59381 vocab10688 vocab53182 vocab58370 vocab19137 vocab18592 vocab51803 vocab35169 vocab29411 vocab6668 vocab52397 vocab52925 vocab28115 vocab45580 vocab19134 vocab21737 vocab60632 vocab60111 vocab58823 vocab51673 vocab65304 vocab47087 vocab49592 vocab64554 vocab64257 vocab3871 vocab62124 vocab16090 vocab39897 vocab35600 vocab48151 vocab55610 vocab48813 vocab3630 vocab60474 vocab5198 vocab33847 vocab53828 vocab22261 vocab15695 vocab442 vocab54774 vocab55870 vocab45410 vocab61680 vocab8045 vocab58762 vocab27353 vocab46862 vocab36863 vocab37470 vocab28626 vocab16328 vocab12804 vocab26424 vocab46631 vocab47907 vocab40539 vocab13240 vocab19162 vocab34718 vocab31866 vocab44844",
+            "url": "/api/research/pages/p000585914?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000629870",
+            "title": "Synthetic document p000629870 topic49",
+            "content": "commonterm vocab13373 vocab42457 vocab17417 vocab21472 vocab15640 vocab6713 vocab37681 vocab37254 vocab23841 vocab20676 vocab14600 vocab45486 vocab807 vocab16157 vocab55379 vocab16230 vocab23026 vocab20615 vocab50361 vocab62185 vocab40831 vocab28169 vocab56468 vocab35088 vocab25003 vocab11506 vocab52758 vocab45710 vocab64830 vocab12287 vocab46686 vocab64392 vocab21111 vocab23081 vocab28916 vocab6446 vocab49682 vocab7733 vocab52049 vocab33773 vocab56877 vocab40405 vocab51832 vocab53769 vocab24993 vocab44515 vocab63600 vocab64734 vocab1876 vocab19491 vocab64548 vocab59882 vocab23333 vocab43122 vocab52452 vocab25038 vocab60931 vocab48701 vocab39263 vocab17276 vocab52983 vocab50435 vocab38264 vocab33051 vocab35483 vocab17960 vocab20797 vocab15922 vocab20838 vocab19500 vocab60594 vocab59890 vocab6574 vocab20893 vocab30392 vocab8646 vocab39039 vocab14984 vocab64575 vocab17920 vocab24758 vocab44368 vocab28890 vocab21973 vocab12726 vocab63802 vocab42470 vocab34823 vocab1111 vocab51898 vocab63760 vocab56677 vocab6186",
+            "url": "/api/research/pages/p000629870?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 2.151872999999796,
+          "pageMs": 35.26838499999985
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=commonterm&page=1&pageSize=10",
+      "user": "pair",
+      "elapsedMs": 41.76121899999998,
+      "status": 200,
+      "bytes": 12023,
+      "sha256": "502cb0839b972f0226c82079a1e04d0915cd3ab569600ea369bf41b013e15541",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1002,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000505994",
+            "title": "Synthetic document p000505994 topic42",
+            "content": "commonterm vocab47008 vocab23098 vocab29536 vocab36630 vocab21805 vocab36194 vocab39853 vocab52197 vocab60569 vocab53944 vocab20368 vocab18064 vocab33521 vocab2644 vocab20659 vocab48340 vocab33050 vocab38794 vocab25203 vocab54895 vocab10860 vocab40780 vocab47244 vocab62176 vocab24107 vocab14469 vocab26498 vocab55752 vocab48852 vocab58431 vocab53259 vocab58271 vocab11307 vocab9339 vocab33663 vocab34355 vocab14848 vocab4999 vocab18355 vocab62486 vocab12573 vocab42916 vocab12814 vocab35088 vocab65240 vocab24942 vocab24045 vocab11540 vocab19117 vocab20656 vocab26103 vocab48891 vocab63545 vocab18485 vocab11617 vocab32108 vocab51671 vocab60605 vocab42850 vocab55486 vocab6638 vocab5451 vocab44197 vocab65494 vocab61028 vocab49923 vocab33477 vocab65043 vocab64920 vocab26187 vocab42177 vocab29162 vocab56447 vocab22438 vocab54978 vocab6704 vocab19944 vocab35023 vocab57142 vocab3773 vocab63362 vocab31233 vocab59889 vocab15845 vocab4856 vocab45346 vocab7160 vocab27081 vocab50802 vocab5555 vocab41678 vocab46590 vocab31535",
+            "url": "/api/research/pages/p000505994?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000506993",
+            "title": "Synthetic document p000506993 topic71",
+            "content": "commonterm vocab10108 vocab60413 vocab58267 vocab28074 vocab36690 vocab22681 vocab35227 vocab63694 vocab44107 vocab12561 vocab25485 vocab29444 vocab39035 vocab61437 vocab10875 vocab12216 vocab45870 vocab24908 vocab56801 vocab51898 vocab33842 vocab55851 vocab15276 vocab3881 vocab23791 vocab34197 vocab1282 vocab37684 vocab38830 vocab2717 vocab24056 vocab16967 vocab40096 vocab16962 vocab62484 vocab4742 vocab33540 vocab48459 vocab43313 vocab44273 vocab10239 vocab31939 vocab43437 vocab54602 vocab32886 vocab17253 vocab25106 vocab13995 vocab40879 vocab21760 vocab55382 vocab36517 vocab42690 vocab61324 vocab61164 vocab11158 vocab39959 vocab19132 vocab29852 vocab32973 vocab30429 vocab16589 vocab34831 vocab41986 vocab16247 vocab37024 vocab54348 vocab63393 vocab12910 vocab62538 vocab12299 vocab10575 vocab15863 vocab17184 vocab60073 vocab13320 vocab16941 vocab18840 vocab54782 vocab888 vocab13948 vocab21148 vocab57974 vocab40129 vocab28057 vocab44803 vocab19415 vocab28128 vocab17836 vocab41016 vocab23009 vocab36686 vocab37639",
+            "url": "/api/research/pages/p000506993?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000516983",
+            "title": "Synthetic document p000516983 topic70",
+            "content": "commonterm vocab6305 vocab21671 vocab38165 vocab21006 vocab60731 vocab29345 vocab26164 vocab10508 vocab5240 vocab28907 vocab27654 vocab25953 vocab34455 vocab35022 vocab4079 vocab29749 vocab61916 vocab34863 vocab1124 vocab47264 vocab34313 vocab40632 vocab62024 vocab39454 vocab41081 vocab5800 vocab17985 vocab62910 vocab52615 vocab53185 vocab40759 vocab40176 vocab4945 vocab18619 vocab26565 vocab46674 vocab16559 vocab31753 vocab43395 vocab10564 vocab56963 vocab53070 vocab13256 vocab32991 vocab9171 vocab2338 vocab40807 vocab26534 vocab43522 vocab15694 vocab39609 vocab41515 vocab39477 vocab25115 vocab42326 vocab60262 vocab40760 vocab31893 vocab47853 vocab51317 vocab61774 vocab32889 vocab36280 vocab27385 vocab55976 vocab64229 vocab14677 vocab32603 vocab28901 vocab23585 vocab17732 vocab17944 vocab13516 vocab14539 vocab53883 vocab34235 vocab50922 vocab27232 vocab1816 vocab60716 vocab36627 vocab30335 vocab12883 vocab18496 vocab17248 vocab24745 vocab60789 vocab52122 vocab34808 vocab22305 vocab33536 vocab37640 vocab30041",
+            "url": "/api/research/pages/p000516983?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000523976",
+            "title": "Synthetic document p000523976 topic79",
+            "content": "commonterm vocab22301 vocab40358 vocab17974 vocab36422 vocab22919 vocab45411 vocab24357 vocab56356 vocab43781 vocab60892 vocab52290 vocab42384 vocab33783 vocab33968 vocab30224 vocab37597 vocab52002 vocab204 vocab55106 vocab5838 vocab23179 vocab2542 vocab11629 vocab43455 vocab52490 vocab16134 vocab51846 vocab31334 vocab17382 vocab57191 vocab6761 vocab47537 vocab64039 vocab30704 vocab27338 vocab15624 vocab27223 vocab29682 vocab18232 vocab40541 vocab53493 vocab23233 vocab62930 vocab43924 vocab59020 vocab52970 vocab62382 vocab60620 vocab60594 vocab39947 vocab5933 vocab16561 vocab37795 vocab55503 vocab21930 vocab27204 vocab44766 vocab31177 vocab28943 vocab37185 vocab50960 vocab51028 vocab53134 vocab36834 vocab8202 vocab3174 vocab47422 vocab63065 vocab57648 vocab38562 vocab30208 vocab64855 vocab37851 vocab52483 vocab17206 vocab24547 vocab57950 vocab34853 vocab43148 vocab36973 vocab57438 vocab58140 vocab60873 vocab36207 vocab52513 vocab51899 vocab14222 vocab46211 vocab55318 vocab32156 vocab45360 vocab53915 vocab59680",
+            "url": "/api/research/pages/p000523976?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000524976",
+            "title": "Synthetic document p000524976 topic12",
+            "content": "commonterm vocab62193 vocab59618 vocab16183 vocab22601 vocab49696 vocab10058 vocab17955 vocab51066 vocab21950 vocab16545 vocab36400 vocab31221 vocab30912 vocab60411 vocab57375 vocab35472 vocab53081 vocab14167 vocab54645 vocab10940 vocab43242 vocab40202 vocab4325 vocab30982 vocab64496 vocab38879 vocab40852 vocab43374 vocab17551 vocab63239 vocab36217 vocab23164 vocab6525 vocab13628 vocab20191 vocab62655 vocab19096 vocab63168 vocab4990 vocab54405 vocab64326 vocab3109 vocab15446 vocab45886 vocab65312 vocab8322 vocab43465 vocab18806 vocab52374 vocab14626 vocab31393 vocab48262 vocab13821 vocab22539 vocab26083 vocab16079 vocab41839 vocab41570 vocab38056 vocab52486 vocab50537 vocab37099 vocab32576 vocab36819 vocab7376 vocab14198 vocab58528 vocab18210 vocab62963 vocab63584 vocab47637 vocab40503 vocab45358 vocab39560 vocab15645 vocab5932 vocab38505 vocab52699 vocab9414 vocab27351 vocab47221 vocab44978 vocab30284 vocab22034 vocab27780 vocab7615 vocab26062 vocab58320 vocab21582 vocab17843 vocab53964 vocab53241 vocab42984",
+            "url": "/api/research/pages/p000524976?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000534966",
+            "title": "Synthetic document p000534966 topic11",
+            "content": "commonterm vocab59337 vocab7003 vocab11534 vocab34534 vocab1518 vocab43979 vocab62309 vocab5208 vocab51257 vocab2978 vocab30218 vocab60143 vocab62091 vocab61410 vocab8495 vocab33421 vocab43976 vocab20497 vocab41726 vocab1021 vocab29191 vocab32038 vocab46928 vocab31857 vocab10076 vocab38943 vocab26809 vocab41445 vocab20181 vocab44525 vocab23399 vocab37817 vocab29035 vocab58633 vocab49871 vocab25458 vocab35934 vocab35967 vocab63756 vocab46382 vocab49062 vocab27461 vocab7737 vocab20134 vocab18426 vocab53746 vocab46341 vocab22108 vocab63086 vocab39478 vocab57431 vocab39990 vocab37396 vocab15453 vocab29721 vocab31193 vocab15913 vocab25088 vocab33884 vocab51021 vocab63760 vocab11100 vocab49757 vocab56021 vocab40732 vocab61923 vocab2150 vocab30114 vocab32145 vocab26464 vocab54339 vocab25943 vocab11444 vocab20888 vocab33382 vocab63719 vocab29028 vocab14715 vocab49939 vocab15114 vocab41497 vocab34341 vocab49024 vocab58167 vocab60554 vocab49144 vocab18089 vocab57450 vocab48108 vocab15552 vocab5966 vocab46219 vocab57535",
+            "url": "/api/research/pages/p000534966?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000535964",
+            "title": "Synthetic document p000535964 topic39",
+            "content": "commonterm vocab29847 vocab26135 vocab5126 vocab30345 vocab18868 vocab43103 vocab19571 vocab47843 vocab44344 vocab42107 vocab19996 vocab36791 vocab18358 vocab47268 vocab40759 vocab18182 vocab14538 vocab53735 vocab40466 vocab26897 vocab12040 vocab65445 vocab41091 vocab38559 vocab42522 vocab36226 vocab25425 vocab19015 vocab33740 vocab31018 vocab54180 vocab52306 vocab12004 vocab31199 vocab37391 vocab30386 vocab63336 vocab45010 vocab48335 vocab12216 vocab59027 vocab15319 vocab60169 vocab63341 vocab11052 vocab38109 vocab46108 vocab12760 vocab55739 vocab37423 vocab15688 vocab35960 vocab20383 vocab4822 vocab23137 vocab62236 vocab19955 vocab25810 vocab22764 vocab1807 vocab33383 vocab58119 vocab54176 vocab35003 vocab2444 vocab27943 vocab12168 vocab57780 vocab8840 vocab38396 vocab53910 vocab16028 vocab10628 vocab29010 vocab39307 vocab10298 vocab39207 vocab49186 vocab39530 vocab55460 vocab38616 vocab36004 vocab24612 vocab54156 vocab21186 vocab57133 vocab14325 vocab15234 vocab3804 vocab47531 vocab32211 vocab59591 vocab35528",
+            "url": "/api/research/pages/p000535964?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000536964",
+            "title": "Synthetic document p000536964 topic69",
+            "content": "commonterm vocab11296 vocab11347 vocab59798 vocab34956 vocab63654 vocab12458 vocab30660 vocab12068 vocab14284 vocab62000 vocab61756 vocab41676 vocab45055 vocab31497 vocab24695 vocab21412 vocab34207 vocab64860 vocab54550 vocab59926 vocab15645 vocab27643 vocab36147 vocab63168 vocab14447 vocab42139 vocab64977 vocab60840 vocab64752 vocab58691 vocab33328 vocab8957 vocab52672 vocab15874 vocab16105 vocab64895 vocab45435 vocab22170 vocab18066 vocab59450 vocab58394 vocab129 vocab23801 vocab54927 vocab36744 vocab56531 vocab5667 vocab34725 vocab59692 vocab32593 vocab21801 vocab3748 vocab21988 vocab12994 vocab54542 vocab22338 vocab27386 vocab16602 vocab38898 vocab57651 vocab51541 vocab63377 vocab16686 vocab45951 vocab34897 vocab15776 vocab31641 vocab24182 vocab52776 vocab26381 vocab5637 vocab21052 vocab53811 vocab40800 vocab44270 vocab51913 vocab41310 vocab8661 vocab20923 vocab60125 vocab47518 vocab56319 vocab57256 vocab29595 vocab53689 vocab48071 vocab35061 vocab40756 vocab18003 vocab40394 vocab65164 vocab49843 vocab39828",
+            "url": "/api/research/pages/p000536964?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000554946",
+            "title": "Synthetic document p000554946 topic9",
+            "content": "commonterm vocab40206 vocab35912 vocab4213 vocab48523 vocab54434 vocab63560 vocab25518 vocab23461 vocab11633 vocab20519 vocab22576 vocab17430 vocab20148 vocab40051 vocab12357 vocab26360 vocab12016 vocab50245 vocab38566 vocab65097 vocab44036 vocab54206 vocab14395 vocab11813 vocab7321 vocab49667 vocab13433 vocab42103 vocab58006 vocab54275 vocab18318 vocab58831 vocab41489 vocab63113 vocab3910 vocab33652 vocab18328 vocab43443 vocab21210 vocab7609 vocab63485 vocab50840 vocab61034 vocab36760 vocab7892 vocab50353 vocab35269 vocab62680 vocab60565 vocab49870 vocab42737 vocab28670 vocab40719 vocab32715 vocab12899 vocab40694 vocab46478 vocab30441 vocab13748 vocab11573 vocab33538 vocab39061 vocab5861 vocab36522 vocab21826 vocab15396 vocab53761 vocab63598 vocab18664 vocab39463 vocab24912 vocab20375 vocab64793 vocab5123 vocab40000 vocab45549 vocab27719 vocab37585 vocab1104 vocab43286 vocab52504 vocab38125 vocab46690 vocab16626 vocab15667 vocab35162 vocab10321 vocab3829 vocab13019 vocab11055 vocab55634 vocab19325 vocab57610",
+            "url": "/api/research/pages/p000554946?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000556943",
+            "title": "Synthetic document p000556943 topic66",
+            "content": "commonterm vocab43534 vocab33659 vocab29885 vocab43581 vocab47495 vocab7661 vocab41038 vocab50631 vocab63656 vocab55751 vocab52886 vocab53565 vocab18952 vocab24437 vocab12643 vocab51761 vocab42725 vocab40836 vocab26892 vocab31619 vocab52606 vocab35293 vocab53178 vocab32713 vocab19200 vocab8204 vocab43334 vocab9834 vocab64601 vocab48815 vocab48823 vocab32728 vocab37213 vocab64760 vocab40344 vocab56095 vocab35738 vocab19052 vocab3569 vocab17106 vocab14659 vocab34409 vocab20714 vocab25063 vocab42823 vocab43664 vocab19318 vocab21834 vocab52795 vocab11528 vocab55040 vocab47967 vocab35646 vocab59679 vocab63568 vocab40557 vocab61009 vocab51171 vocab26969 vocab57167 vocab37361 vocab44706 vocab17416 vocab4519 vocab34129 vocab28589 vocab25927 vocab31367 vocab37647 vocab22354 vocab35176 vocab20711 vocab11818 vocab42148 vocab43474 vocab44304 vocab45856 vocab11915 vocab33682 vocab16245 vocab58069 vocab25605 vocab30600 vocab54830 vocab32618 vocab42184 vocab17085 vocab26093 vocab13542 vocab26709 vocab19157 vocab32104 vocab3212",
+            "url": "/api/research/pages/p000556943?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 1.6139720000001034,
+          "pageMs": 35.17565799999966
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=commonterm&page=1&pageSize=10",
+      "user": "multi",
+      "elapsedMs": 48.110419999999976,
+      "status": 200,
+      "bytes": 12015,
+      "sha256": "e337d679cf3c14d02c79b130ab02d07503208ab55edbc89ef7f2d3d43ef26fe3",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 5010,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000500002",
+            "title": "Synthetic document p000500002 topic64",
+            "content": "commonterm vocab5195 vocab29909 vocab3189 vocab59902 vocab40511 vocab32758 vocab37684 vocab32850 vocab44463 vocab59315 vocab36911 vocab64665 vocab49878 vocab52385 vocab62727 vocab22805 vocab36393 vocab60833 vocab3639 vocab54702 vocab49877 vocab18069 vocab46179 vocab19064 vocab38451 vocab53917 vocab59562 vocab55748 vocab8418 vocab54484 vocab44691 vocab35696 vocab39375 vocab46476 vocab57897 vocab40878 vocab54137 vocab27950 vocab65198 vocab39128 vocab36723 vocab32763 vocab19002 vocab56228 vocab24220 vocab35092 vocab38185 vocab64973 vocab6335 vocab12514 vocab33903 vocab5562 vocab51678 vocab14861 vocab46135 vocab37052 vocab44118 vocab11838 vocab32996 vocab8813 vocab22729 vocab42170 vocab43786 vocab51716 vocab34103 vocab42618 vocab18256 vocab16501 vocab16351 vocab36772 vocab2246 vocab43820 vocab59054 vocab17093 vocab44088 vocab61828 vocab36516 vocab36246 vocab62190 vocab45094 vocab7687 vocab14800 vocab39295 vocab57689 vocab11940 vocab60091 vocab48845 vocab64634 vocab9394 vocab47988 vocab64819 vocab44219 vocab33637",
+            "url": "/api/research/pages/p000500002?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000501003",
+            "title": "Synthetic document p000501003 topic95",
+            "content": "commonterm vocab24178 vocab42185 vocab11681 vocab29558 vocab62991 vocab53771 vocab60385 vocab13417 vocab38829 vocab43574 vocab46267 vocab55004 vocab31406 vocab42873 vocab7801 vocab35143 vocab49019 vocab16656 vocab7690 vocab4846 vocab61606 vocab61510 vocab52034 vocab10670 vocab13515 vocab60411 vocab64874 vocab61985 vocab41880 vocab35794 vocab26172 vocab36464 vocab23635 vocab50702 vocab45884 vocab60393 vocab2114 vocab51051 vocab39104 vocab54071 vocab42333 vocab56113 vocab61160 vocab7975 vocab2577 vocab33222 vocab1562 vocab33460 vocab15506 vocab22119 vocab28502 vocab60292 vocab51353 vocab24611 vocab47564 vocab12604 vocab49070 vocab36907 vocab16702 vocab32168 vocab21220 vocab23778 vocab22683 vocab49697 vocab16825 vocab23922 vocab23015 vocab47632 vocab5405 vocab55092 vocab10780 vocab20251 vocab42864 vocab17662 vocab21299 vocab17687 vocab17414 vocab55392 vocab51275 vocab14836 vocab45354 vocab941 vocab56529 vocab41791 vocab49269 vocab49812 vocab47415 vocab56591 vocab16611 vocab24117 vocab20792 vocab35135 vocab55748",
+            "url": "/api/research/pages/p000501003?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000501008",
+            "title": "Synthetic document p000501008 topic3",
+            "content": "commonterm vocab29785 vocab46207 vocab803 vocab38746 vocab64459 vocab63274 vocab64963 vocab24128 vocab16926 vocab59283 vocab34426 vocab29782 vocab53593 vocab34213 vocab32470 vocab16214 vocab20987 vocab48966 vocab59111 vocab21292 vocab18335 vocab3122 vocab26474 vocab59630 vocab32238 vocab37003 vocab51199 vocab49090 vocab55807 vocab12927 vocab47059 vocab25388 vocab14994 vocab40865 vocab57118 vocab52740 vocab36149 vocab53082 vocab18383 vocab54044 vocab24756 vocab29393 vocab17901 vocab63519 vocab63639 vocab9760 vocab23956 vocab41697 vocab10145 vocab55390 vocab42376 vocab31146 vocab65454 vocab8486 vocab52796 vocab61369 vocab30419 vocab41822 vocab41855 vocab32652 vocab28041 vocab44028 vocab63165 vocab38431 vocab54886 vocab13068 vocab13049 vocab42343 vocab40171 vocab55333 vocab7021 vocab9386 vocab35999 vocab59765 vocab18469 vocab10379 vocab46795 vocab14349 vocab4642 vocab18507 vocab45452 vocab57418 vocab15723 vocab25706 vocab56835 vocab35683 vocab7292 vocab41518 vocab39066 vocab28485 vocab27236 vocab50681 vocab15187",
+            "url": "/api/research/pages/p000501008?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000503001",
+            "title": "Synthetic document p000503001 topic56",
+            "content": "commonterm vocab51038 vocab24019 vocab34197 vocab48001 vocab63892 vocab60197 vocab1307 vocab50989 vocab167 vocab54606 vocab56958 vocab59699 vocab43743 vocab59257 vocab51794 vocab61786 vocab63700 vocab12587 vocab21145 vocab46818 vocab47464 vocab36791 vocab14992 vocab34792 vocab57379 vocab61373 vocab23343 vocab49817 vocab12242 vocab37757 vocab14283 vocab51307 vocab36903 vocab17955 vocab4979 vocab55734 vocab60844 vocab45895 vocab57647 vocab20132 vocab14762 vocab21328 vocab15786 vocab56280 vocab62535 vocab55721 vocab59956 vocab12915 vocab39426 vocab63771 vocab41916 vocab31543 vocab30828 vocab58682 vocab40636 vocab32878 vocab25679 vocab22944 vocab36466 vocab49953 vocab28874 vocab62507 vocab43180 vocab49297 vocab6280 vocab59824 vocab43140 vocab17289 vocab42248 vocab20123 vocab60901 vocab64776 vocab24624 vocab24682 vocab23693 vocab10411 vocab41243 vocab47791 vocab53753 vocab10328 vocab43666 vocab63609 vocab5739 vocab55910 vocab2100 vocab42619 vocab11786 vocab49057 vocab36094 vocab22388 vocab45354 vocab52676 vocab53227",
+            "url": "/api/research/pages/p000503001?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000504005",
+            "title": "Synthetic document p000504005 topic90",
+            "content": "commonterm vocab44357 vocab43104 vocab64789 vocab53521 vocab64057 vocab39099 vocab65266 vocab51927 vocab23958 vocab14945 vocab62975 vocab62194 vocab35543 vocab42753 vocab30709 vocab21597 vocab24059 vocab58566 vocab45467 vocab10523 vocab47229 vocab58144 vocab9298 vocab5984 vocab54586 vocab39052 vocab46928 vocab63153 vocab12746 vocab3919 vocab25141 vocab24385 vocab62170 vocab51931 vocab19655 vocab59808 vocab60567 vocab30301 vocab38835 vocab28035 vocab11077 vocab10356 vocab55891 vocab48546 vocab44632 vocab16060 vocab10405 vocab63995 vocab46377 vocab55386 vocab2279 vocab52170 vocab41968 vocab27451 vocab4138 vocab9563 vocab46980 vocab14330 vocab37266 vocab12355 vocab46032 vocab49362 vocab48068 vocab32179 vocab8253 vocab27954 vocab33304 vocab7826 vocab13574 vocab56753 vocab27877 vocab27734 vocab29155 vocab10494 vocab6557 vocab31265 vocab47765 vocab10246 vocab18170 vocab60242 vocab59095 vocab40485 vocab60480 vocab10901 vocab20994 vocab10703 vocab44880 vocab58094 vocab21692 vocab26321 vocab34200 vocab39895 vocab45495",
+            "url": "/api/research/pages/p000504005?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000505994",
+            "title": "Synthetic document p000505994 topic42",
+            "content": "commonterm vocab47008 vocab23098 vocab29536 vocab36630 vocab21805 vocab36194 vocab39853 vocab52197 vocab60569 vocab53944 vocab20368 vocab18064 vocab33521 vocab2644 vocab20659 vocab48340 vocab33050 vocab38794 vocab25203 vocab54895 vocab10860 vocab40780 vocab47244 vocab62176 vocab24107 vocab14469 vocab26498 vocab55752 vocab48852 vocab58431 vocab53259 vocab58271 vocab11307 vocab9339 vocab33663 vocab34355 vocab14848 vocab4999 vocab18355 vocab62486 vocab12573 vocab42916 vocab12814 vocab35088 vocab65240 vocab24942 vocab24045 vocab11540 vocab19117 vocab20656 vocab26103 vocab48891 vocab63545 vocab18485 vocab11617 vocab32108 vocab51671 vocab60605 vocab42850 vocab55486 vocab6638 vocab5451 vocab44197 vocab65494 vocab61028 vocab49923 vocab33477 vocab65043 vocab64920 vocab26187 vocab42177 vocab29162 vocab56447 vocab22438 vocab54978 vocab6704 vocab19944 vocab35023 vocab57142 vocab3773 vocab63362 vocab31233 vocab59889 vocab15845 vocab4856 vocab45346 vocab7160 vocab27081 vocab50802 vocab5555 vocab41678 vocab46590 vocab31535",
+            "url": "/api/research/pages/p000505994?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000506993",
+            "title": "Synthetic document p000506993 topic71",
+            "content": "commonterm vocab10108 vocab60413 vocab58267 vocab28074 vocab36690 vocab22681 vocab35227 vocab63694 vocab44107 vocab12561 vocab25485 vocab29444 vocab39035 vocab61437 vocab10875 vocab12216 vocab45870 vocab24908 vocab56801 vocab51898 vocab33842 vocab55851 vocab15276 vocab3881 vocab23791 vocab34197 vocab1282 vocab37684 vocab38830 vocab2717 vocab24056 vocab16967 vocab40096 vocab16962 vocab62484 vocab4742 vocab33540 vocab48459 vocab43313 vocab44273 vocab10239 vocab31939 vocab43437 vocab54602 vocab32886 vocab17253 vocab25106 vocab13995 vocab40879 vocab21760 vocab55382 vocab36517 vocab42690 vocab61324 vocab61164 vocab11158 vocab39959 vocab19132 vocab29852 vocab32973 vocab30429 vocab16589 vocab34831 vocab41986 vocab16247 vocab37024 vocab54348 vocab63393 vocab12910 vocab62538 vocab12299 vocab10575 vocab15863 vocab17184 vocab60073 vocab13320 vocab16941 vocab18840 vocab54782 vocab888 vocab13948 vocab21148 vocab57974 vocab40129 vocab28057 vocab44803 vocab19415 vocab28128 vocab17836 vocab41016 vocab23009 vocab36686 vocab37639",
+            "url": "/api/research/pages/p000506993?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000508001",
+            "title": "Synthetic document p000508001 topic12",
+            "content": "commonterm vocab28258 vocab43767 vocab37334 vocab43544 vocab54981 vocab26019 vocab41292 vocab45349 vocab46804 vocab55841 vocab56383 vocab57931 vocab28769 vocab37825 vocab55504 vocab43804 vocab45646 vocab61031 vocab35484 vocab22320 vocab28760 vocab46718 vocab27308 vocab30180 vocab19432 vocab34981 vocab17091 vocab43596 vocab64272 vocab54320 vocab33812 vocab43514 vocab54741 vocab36331 vocab14421 vocab7460 vocab45911 vocab24678 vocab2767 vocab45679 vocab11294 vocab15057 vocab65439 vocab29857 vocab65411 vocab5021 vocab12352 vocab19092 vocab39686 vocab45827 vocab28247 vocab12907 vocab10516 vocab60950 vocab19497 vocab5283 vocab29245 vocab22358 vocab21962 vocab20646 vocab45215 vocab44705 vocab30202 vocab5164 vocab13326 vocab44426 vocab3186 vocab9008 vocab49775 vocab13229 vocab57482 vocab21868 vocab58220 vocab13137 vocab10018 vocab2744 vocab5359 vocab48119 vocab50767 vocab57855 vocab14035 vocab65047 vocab57043 vocab65227 vocab64705 vocab11261 vocab23640 vocab62568 vocab11667 vocab35616 vocab26163 vocab41005 vocab35276",
+            "url": "/api/research/pages/p000508001?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000511997",
+            "title": "Synthetic document p000511997 topic31",
+            "content": "commonterm vocab28366 vocab34944 vocab29237 vocab48186 vocab28860 vocab16633 vocab60338 vocab34290 vocab25280 vocab53192 vocab10467 vocab42230 vocab61173 vocab56818 vocab25646 vocab59476 vocab48931 vocab1992 vocab58793 vocab62532 vocab49190 vocab55652 vocab44418 vocab12829 vocab58504 vocab35114 vocab54084 vocab44851 vocab41204 vocab54768 vocab532 vocab37846 vocab27510 vocab41531 vocab61335 vocab15667 vocab33261 vocab27031 vocab38376 vocab50089 vocab47581 vocab44747 vocab62792 vocab56739 vocab26351 vocab5783 vocab22418 vocab62170 vocab16049 vocab17058 vocab49402 vocab42169 vocab7078 vocab61255 vocab53882 vocab18821 vocab7891 vocab5877 vocab26346 vocab40105 vocab43468 vocab1614 vocab40342 vocab18632 vocab14883 vocab33075 vocab40523 vocab43280 vocab49496 vocab36113 vocab62507 vocab37840 vocab11011 vocab41079 vocab20114 vocab45177 vocab62650 vocab54389 vocab40816 vocab15259 vocab45037 vocab53122 vocab38834 vocab37405 vocab25612 vocab50914 vocab46427 vocab42062 vocab54147 vocab61571 vocab7315 vocab32519 vocab33623",
+            "url": "/api/research/pages/p000511997?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000512996",
+            "title": "Synthetic document p000512996 topic60",
+            "content": "commonterm vocab12448 vocab62511 vocab63340 vocab27612 vocab58259 vocab14745 vocab56107 vocab39940 vocab18656 vocab25549 vocab45313 vocab52095 vocab52687 vocab16948 vocab27391 vocab40368 vocab49025 vocab21023 vocab33006 vocab34807 vocab53758 vocab18231 vocab37728 vocab40546 vocab27636 vocab43467 vocab20697 vocab20839 vocab4977 vocab29386 vocab18125 vocab12158 vocab31302 vocab41565 vocab24807 vocab310 vocab3772 vocab61121 vocab5364 vocab54733 vocab20256 vocab51236 vocab10477 vocab7904 vocab36707 vocab13086 vocab25106 vocab61197 vocab45964 vocab32515 vocab57384 vocab16965 vocab51857 vocab18270 vocab49720 vocab6016 vocab48931 vocab34410 vocab60832 vocab51317 vocab60452 vocab42494 vocab28778 vocab62998 vocab41983 vocab15747 vocab27931 vocab39873 vocab46861 vocab27891 vocab60471 vocab25155 vocab63115 vocab11842 vocab13301 vocab55330 vocab36131 vocab21685 vocab42037 vocab21823 vocab33503 vocab27097 vocab1073 vocab65281 vocab20309 vocab17317 vocab34631 vocab53933 vocab61562 vocab14590 vocab22960 vocab24800 vocab35269",
+            "url": "/api/research/pages/p000512996?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 2.318930999999793,
+          "pageMs": 41.172333999999864
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=commonterm&page=1&pageSize=10",
+      "user": "many",
+      "elapsedMs": 197.8500750000003,
+      "status": 200,
+      "bytes": 12007,
+      "sha256": "136f1c106db08fd48485f8d7a87aac515dc31b999c68b7a773943e90105dc28f",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 50100,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000500002",
+            "title": "Synthetic document p000500002 topic64",
+            "content": "commonterm vocab5195 vocab29909 vocab3189 vocab59902 vocab40511 vocab32758 vocab37684 vocab32850 vocab44463 vocab59315 vocab36911 vocab64665 vocab49878 vocab52385 vocab62727 vocab22805 vocab36393 vocab60833 vocab3639 vocab54702 vocab49877 vocab18069 vocab46179 vocab19064 vocab38451 vocab53917 vocab59562 vocab55748 vocab8418 vocab54484 vocab44691 vocab35696 vocab39375 vocab46476 vocab57897 vocab40878 vocab54137 vocab27950 vocab65198 vocab39128 vocab36723 vocab32763 vocab19002 vocab56228 vocab24220 vocab35092 vocab38185 vocab64973 vocab6335 vocab12514 vocab33903 vocab5562 vocab51678 vocab14861 vocab46135 vocab37052 vocab44118 vocab11838 vocab32996 vocab8813 vocab22729 vocab42170 vocab43786 vocab51716 vocab34103 vocab42618 vocab18256 vocab16501 vocab16351 vocab36772 vocab2246 vocab43820 vocab59054 vocab17093 vocab44088 vocab61828 vocab36516 vocab36246 vocab62190 vocab45094 vocab7687 vocab14800 vocab39295 vocab57689 vocab11940 vocab60091 vocab48845 vocab64634 vocab9394 vocab47988 vocab64819 vocab44219 vocab33637",
+            "url": "/api/research/pages/p000500002?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000500047",
+            "title": "Synthetic document p000500047 topic12",
+            "content": "commonterm vocab20764 vocab48340 vocab59674 vocab51778 vocab15435 vocab48078 vocab45479 vocab64827 vocab55867 vocab42187 vocab49730 vocab32856 vocab29101 vocab28870 vocab36741 vocab65414 vocab49667 vocab54841 vocab43107 vocab40648 vocab18517 vocab64641 vocab28350 vocab12329 vocab60699 vocab4158 vocab53826 vocab59981 vocab4077 vocab23880 vocab40280 vocab50370 vocab50437 vocab29352 vocab51195 vocab31656 vocab42007 vocab37934 vocab48060 vocab28102 vocab9859 vocab3285 vocab34704 vocab32802 vocab19407 vocab11041 vocab52504 vocab38081 vocab12177 vocab37976 vocab10370 vocab31052 vocab37929 vocab52219 vocab42341 vocab18778 vocab28665 vocab58316 vocab58552 vocab65483 vocab8987 vocab47218 vocab47291 vocab13620 vocab20230 vocab57318 vocab9037 vocab62256 vocab59247 vocab50261 vocab31074 vocab34625 vocab46862 vocab18168 vocab56221 vocab5687 vocab57655 vocab52639 vocab45244 vocab50427 vocab32839 vocab18423 vocab17700 vocab57066 vocab60941 vocab60779 vocab20337 vocab40833 vocab36371 vocab7404 vocab50014 vocab60199 vocab28451",
+            "url": "/api/research/pages/p000500047?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000500073",
+            "title": "Synthetic document p000500073 topic38",
+            "content": "commonterm vocab10457 vocab10762 vocab14186 vocab58237 vocab15571 vocab28780 vocab26335 vocab11809 vocab16326 vocab47397 vocab6034 vocab5982 vocab6273 vocab1132 vocab58210 vocab1153 vocab27672 vocab21281 vocab62311 vocab1168 vocab31735 vocab61915 vocab4895 vocab50584 vocab54507 vocab43172 vocab36036 vocab44881 vocab16839 vocab27925 vocab19182 vocab20635 vocab47540 vocab44680 vocab25348 vocab32616 vocab46578 vocab10637 vocab18044 vocab43400 vocab14600 vocab50635 vocab19886 vocab64887 vocab45066 vocab24959 vocab31854 vocab55850 vocab65116 vocab64058 vocab48331 vocab29506 vocab16503 vocab44618 vocab9628 vocab59373 vocab43544 vocab65439 vocab23200 vocab37039 vocab33870 vocab22849 vocab21567 vocab40293 vocab36922 vocab61354 vocab52878 vocab38715 vocab57633 vocab62818 vocab61357 vocab11832 vocab35171 vocab9017 vocab60859 vocab62469 vocab4142 vocab38627 vocab19772 vocab64623 vocab42238 vocab40687 vocab34922 vocab16878 vocab37452 vocab33924 vocab20889 vocab63691 vocab39753 vocab60493 vocab37258 vocab37129 vocab39332",
+            "url": "/api/research/pages/p000500073?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000500074",
+            "title": "Synthetic document p000500074 topic39",
+            "content": "commonterm vocab41173 vocab1784 vocab37465 vocab52425 vocab35233 vocab27766 vocab14605 vocab51947 vocab44496 vocab24875 vocab44156 vocab16820 vocab28148 vocab12842 vocab38005 vocab12525 vocab25457 vocab37554 vocab6348 vocab39494 vocab23029 vocab54714 vocab49597 vocab4176 vocab31340 vocab11223 vocab38016 vocab57210 vocab42628 vocab40920 vocab17054 vocab34079 vocab27198 vocab38963 vocab5444 vocab18069 vocab32478 vocab50645 vocab22278 vocab33524 vocab35944 vocab28318 vocab29066 vocab41288 vocab46630 vocab5434 vocab54324 vocab19585 vocab52376 vocab60848 vocab63787 vocab20148 vocab17440 vocab2258 vocab42679 vocab57802 vocab15567 vocab35129 vocab31619 vocab6727 vocab30622 vocab63792 vocab60998 vocab20870 vocab21301 vocab55598 vocab17232 vocab54159 vocab19710 vocab31935 vocab25945 vocab733 vocab13088 vocab24792 vocab17855 vocab58254 vocab14190 vocab7220 vocab54257 vocab18251 vocab64010 vocab47676 vocab29423 vocab29304 vocab34513 vocab19128 vocab16346 vocab18382 vocab62933 vocab39664 vocab42449 vocab65077 vocab39897",
+            "url": "/api/research/pages/p000500074?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000501003",
+            "title": "Synthetic document p000501003 topic95",
+            "content": "commonterm vocab24178 vocab42185 vocab11681 vocab29558 vocab62991 vocab53771 vocab60385 vocab13417 vocab38829 vocab43574 vocab46267 vocab55004 vocab31406 vocab42873 vocab7801 vocab35143 vocab49019 vocab16656 vocab7690 vocab4846 vocab61606 vocab61510 vocab52034 vocab10670 vocab13515 vocab60411 vocab64874 vocab61985 vocab41880 vocab35794 vocab26172 vocab36464 vocab23635 vocab50702 vocab45884 vocab60393 vocab2114 vocab51051 vocab39104 vocab54071 vocab42333 vocab56113 vocab61160 vocab7975 vocab2577 vocab33222 vocab1562 vocab33460 vocab15506 vocab22119 vocab28502 vocab60292 vocab51353 vocab24611 vocab47564 vocab12604 vocab49070 vocab36907 vocab16702 vocab32168 vocab21220 vocab23778 vocab22683 vocab49697 vocab16825 vocab23922 vocab23015 vocab47632 vocab5405 vocab55092 vocab10780 vocab20251 vocab42864 vocab17662 vocab21299 vocab17687 vocab17414 vocab55392 vocab51275 vocab14836 vocab45354 vocab941 vocab56529 vocab41791 vocab49269 vocab49812 vocab47415 vocab56591 vocab16611 vocab24117 vocab20792 vocab35135 vocab55748",
+            "url": "/api/research/pages/p000501003?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000501008",
+            "title": "Synthetic document p000501008 topic3",
+            "content": "commonterm vocab29785 vocab46207 vocab803 vocab38746 vocab64459 vocab63274 vocab64963 vocab24128 vocab16926 vocab59283 vocab34426 vocab29782 vocab53593 vocab34213 vocab32470 vocab16214 vocab20987 vocab48966 vocab59111 vocab21292 vocab18335 vocab3122 vocab26474 vocab59630 vocab32238 vocab37003 vocab51199 vocab49090 vocab55807 vocab12927 vocab47059 vocab25388 vocab14994 vocab40865 vocab57118 vocab52740 vocab36149 vocab53082 vocab18383 vocab54044 vocab24756 vocab29393 vocab17901 vocab63519 vocab63639 vocab9760 vocab23956 vocab41697 vocab10145 vocab55390 vocab42376 vocab31146 vocab65454 vocab8486 vocab52796 vocab61369 vocab30419 vocab41822 vocab41855 vocab32652 vocab28041 vocab44028 vocab63165 vocab38431 vocab54886 vocab13068 vocab13049 vocab42343 vocab40171 vocab55333 vocab7021 vocab9386 vocab35999 vocab59765 vocab18469 vocab10379 vocab46795 vocab14349 vocab4642 vocab18507 vocab45452 vocab57418 vocab15723 vocab25706 vocab56835 vocab35683 vocab7292 vocab41518 vocab39066 vocab28485 vocab27236 vocab50681 vocab15187",
+            "url": "/api/research/pages/p000501008?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000501012",
+            "title": "Synthetic document p000501012 topic7",
+            "content": "commonterm vocab36245 vocab2991 vocab16966 vocab11292 vocab18167 vocab60401 vocab43038 vocab29110 vocab53706 vocab44221 vocab56506 vocab61502 vocab50655 vocab9149 vocab44728 vocab52102 vocab39141 vocab34751 vocab14611 vocab17603 vocab3365 vocab13408 vocab49292 vocab35794 vocab29519 vocab55064 vocab60031 vocab13780 vocab1402 vocab16789 vocab13161 vocab37624 vocab26352 vocab47705 vocab39807 vocab60105 vocab43080 vocab21979 vocab11532 vocab13593 vocab59602 vocab54863 vocab21299 vocab44405 vocab43098 vocab23966 vocab8392 vocab29150 vocab10260 vocab18831 vocab55775 vocab52743 vocab53500 vocab49674 vocab38899 vocab52880 vocab62601 vocab341 vocab22481 vocab36785 vocab37727 vocab43512 vocab48046 vocab37106 vocab52720 vocab61259 vocab49096 vocab5409 vocab19597 vocab60848 vocab4038 vocab20369 vocab18258 vocab52680 vocab36643 vocab38572 vocab31547 vocab12268 vocab32273 vocab20150 vocab11108 vocab25320 vocab53205 vocab42100 vocab35426 vocab15891 vocab35418 vocab57763 vocab57002 vocab36870 vocab32866 vocab25214 vocab41956",
+            "url": "/api/research/pages/p000501012?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000501023",
+            "title": "Synthetic document p000501023 topic18",
+            "content": "commonterm vocab58974 vocab33045 vocab18849 vocab63708 vocab23905 vocab58289 vocab16951 vocab23432 vocab27388 vocab61770 vocab54854 vocab54660 vocab22763 vocab10659 vocab55308 vocab59931 vocab65047 vocab56315 vocab59 vocab56018 vocab13051 vocab61543 vocab2308 vocab53027 vocab44981 vocab25238 vocab39159 vocab50031 vocab22576 vocab21774 vocab37045 vocab47773 vocab41802 vocab59577 vocab15755 vocab46943 vocab12350 vocab39328 vocab559 vocab32518 vocab42955 vocab25432 vocab61733 vocab54696 vocab10094 vocab39604 vocab46139 vocab16968 vocab21514 vocab47834 vocab27314 vocab35834 vocab14586 vocab11106 vocab58652 vocab28701 vocab19005 vocab21029 vocab42478 vocab37500 vocab6855 vocab10378 vocab19354 vocab39685 vocab55047 vocab15278 vocab603 vocab51543 vocab29439 vocab29343 vocab37382 vocab31896 vocab11708 vocab52375 vocab54242 vocab34753 vocab34723 vocab16893 vocab24924 vocab50354 vocab30370 vocab13585 vocab45167 vocab30683 vocab28974 vocab33223 vocab10456 vocab16469 vocab59474 vocab2475 vocab25716 vocab28729 vocab53784",
+            "url": "/api/research/pages/p000501023?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000501027",
+            "title": "Synthetic document p000501027 topic22",
+            "content": "commonterm vocab52569 vocab19002 vocab17124 vocab59280 vocab15937 vocab12209 vocab41631 vocab35603 vocab13360 vocab25565 vocab24213 vocab63282 vocab23320 vocab41582 vocab4077 vocab16970 vocab13720 vocab43229 vocab21905 vocab25828 vocab34321 vocab26765 vocab8767 vocab39010 vocab61904 vocab2233 vocab24714 vocab64199 vocab44650 vocab24199 vocab48522 vocab28555 vocab17110 vocab17917 vocab50039 vocab30507 vocab37254 vocab36021 vocab27782 vocab16578 vocab21946 vocab38875 vocab14573 vocab65209 vocab51211 vocab5402 vocab34704 vocab48585 vocab65156 vocab12193 vocab60015 vocab63702 vocab33358 vocab21618 vocab24298 vocab52365 vocab38312 vocab7320 vocab51533 vocab31548 vocab9009 vocab52216 vocab60151 vocab20966 vocab25617 vocab23516 vocab63748 vocab24292 vocab45588 vocab43779 vocab1504 vocab39588 vocab38677 vocab28094 vocab54627 vocab55284 vocab62429 vocab12559 vocab26325 vocab59722 vocab52733 vocab58548 vocab39705 vocab63032 vocab59949 vocab56176 vocab18579 vocab1599 vocab59946 vocab37350 vocab38000 vocab62764 vocab902",
+            "url": "/api/research/pages/p000501027?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000501028",
+            "title": "Synthetic document p000501028 topic23",
+            "content": "commonterm vocab56393 vocab43683 vocab65021 vocab34218 vocab11886 vocab20242 vocab10265 vocab7073 vocab19639 vocab38704 vocab18598 vocab35331 vocab14356 vocab11908 vocab30557 vocab7878 vocab41678 vocab44609 vocab30526 vocab34723 vocab55838 vocab43649 vocab31012 vocab12124 vocab33928 vocab34210 vocab10173 vocab32035 vocab56515 vocab46633 vocab54951 vocab49916 vocab57264 vocab8810 vocab19091 vocab30299 vocab53137 vocab5874 vocab32322 vocab9773 vocab29371 vocab18149 vocab37574 vocab57676 vocab49158 vocab5804 vocab3183 vocab49716 vocab12130 vocab25907 vocab49440 vocab51248 vocab36327 vocab37022 vocab28606 vocab35229 vocab37900 vocab29437 vocab39796 vocab24327 vocab40848 vocab56991 vocab19709 vocab52406 vocab56109 vocab19191 vocab25847 vocab60306 vocab44998 vocab5587 vocab21177 vocab11931 vocab42684 vocab7461 vocab42011 vocab25267 vocab54358 vocab59325 vocab41072 vocab42317 vocab35619 vocab6871 vocab40679 vocab24868 vocab45185 vocab45368 vocab12708 vocab48240 vocab44062 vocab10970 vocab52722 vocab21203 vocab25244",
+            "url": "/api/research/pages/p000501028?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 21.824274999999943,
+          "pageMs": 170.25353499999983
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=commonterm&page=1&pageSize=10",
+      "user": "all",
+      "elapsedMs": 1156.4821470000002,
+      "status": 200,
+      "bytes": 12011,
+      "sha256": "74e4cf780a8cfc222bcbcda99c1c59cc31a4ff44c67c70a8abe5b8b93ea506ad",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1000000,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000000002",
+            "title": "Synthetic document p000000002 topic2",
+            "content": "commonterm vocab4623 vocab63517 vocab41618 vocab19624 vocab22754 vocab26484 vocab15487 vocab1248 vocab22360 vocab62386 vocab24030 vocab62355 vocab58890 vocab62365 vocab42504 vocab28968 vocab14900 vocab36904 vocab23031 vocab43219 vocab45508 vocab37141 vocab32024 vocab12700 vocab6773 vocab38105 vocab19113 vocab24389 vocab3825 vocab53327 vocab60162 vocab3461 vocab45353 vocab49578 vocab33201 vocab58416 vocab50177 vocab64569 vocab58649 vocab61690 vocab49814 vocab22663 vocab22978 vocab39907 vocab21527 vocab16816 vocab23000 vocab17093 vocab25533 vocab43721 vocab29526 vocab44327 vocab49662 vocab49175 vocab33525 vocab21770 vocab26545 vocab30520 vocab25146 vocab1504 vocab11688 vocab46264 vocab44204 vocab22417 vocab22742 vocab64514 vocab52468 vocab30903 vocab14401 vocab23773 vocab5628 vocab45263 vocab46089 vocab60825 vocab36566 vocab9323 vocab52001 vocab47966 vocab1843 vocab15437 vocab27163 vocab40273 vocab61335 vocab19887 vocab34797 vocab44586 vocab5717 vocab59416 vocab10121 vocab45872 vocab42605 vocab50111 vocab36150",
+            "url": "/api/research/pages/p000000002?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000005",
+            "title": "Synthetic document p000000005 topic5",
+            "content": "commonterm vocab57607 vocab18650 vocab28885 vocab24453 vocab47337 vocab28250 vocab29263 vocab45053 vocab52094 vocab41053 vocab51196 vocab27775 vocab52174 vocab1684 vocab47943 vocab24043 vocab27274 vocab39599 vocab34149 vocab40529 vocab43133 vocab55112 vocab22383 vocab58516 vocab25546 vocab18513 vocab57846 vocab56299 vocab25465 vocab61505 vocab65052 vocab24794 vocab54550 vocab28754 vocab61253 vocab37731 vocab18063 vocab62519 vocab11385 vocab47126 vocab58907 vocab59400 vocab16732 vocab21394 vocab138 vocab24532 vocab40672 vocab41417 vocab56352 vocab41746 vocab47655 vocab17565 vocab22442 vocab7173 vocab19193 vocab31350 vocab33456 vocab19524 vocab15521 vocab60104 vocab23884 vocab13759 vocab61535 vocab28453 vocab64535 vocab6166 vocab29459 vocab61812 vocab22683 vocab41361 vocab14820 vocab40242 vocab32887 vocab35106 vocab60867 vocab33436 vocab30416 vocab37003 vocab14488 vocab11274 vocab48298 vocab50691 vocab53990 vocab35021 vocab30120 vocab54133 vocab34822 vocab11759 vocab35304 vocab51275 vocab47373 vocab8857 vocab1749",
+            "url": "/api/research/pages/p000000005?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000093",
+            "title": "Synthetic document p000000093 topic93",
+            "content": "commonterm vocab61674 vocab25342 vocab57087 vocab18615 vocab19545 vocab21663 vocab53050 vocab36833 vocab34208 vocab54531 vocab13042 vocab49476 vocab63085 vocab12067 vocab28876 vocab17941 vocab25040 vocab19232 vocab18330 vocab32983 vocab30049 vocab24551 vocab21863 vocab46613 vocab56077 vocab18968 vocab27298 vocab57843 vocab22232 vocab37808 vocab45266 vocab36034 vocab4824 vocab11233 vocab39535 vocab8333 vocab12955 vocab53873 vocab48631 vocab23781 vocab22537 vocab32835 vocab45080 vocab6748 vocab64264 vocab48803 vocab22735 vocab60806 vocab52204 vocab36299 vocab22970 vocab26041 vocab7414 vocab60875 vocab31817 vocab8337 vocab1407 vocab10676 vocab31640 vocab15808 vocab44861 vocab21443 vocab59462 vocab63228 vocab13469 vocab63934 vocab49590 vocab26455 vocab24543 vocab33412 vocab40931 vocab15648 vocab46557 vocab8214 vocab30118 vocab34531 vocab47873 vocab44593 vocab26711 vocab18170 vocab27066 vocab45370 vocab18247 vocab63208 vocab14855 vocab17329 vocab14726 vocab10067 vocab12451 vocab46092 vocab51723 vocab59925 vocab37059",
+            "url": "/api/research/pages/p000000093?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000104",
+            "title": "Synthetic document p000000104 topic7",
+            "content": "commonterm vocab45054 vocab35206 vocab34606 vocab57672 vocab12244 vocab22315 vocab46613 vocab29067 vocab11628 vocab11175 vocab16875 vocab19927 vocab11308 vocab1997 vocab25569 vocab37185 vocab44437 vocab18533 vocab58288 vocab24838 vocab16652 vocab64089 vocab34138 vocab44890 vocab51225 vocab47746 vocab14239 vocab37498 vocab50528 vocab47751 vocab1840 vocab31905 vocab61352 vocab41152 vocab56719 vocab17202 vocab23183 vocab12580 vocab38338 vocab61126 vocab31653 vocab4748 vocab47075 vocab62589 vocab5491 vocab26108 vocab45165 vocab41865 vocab47206 vocab62760 vocab10989 vocab27421 vocab8139 vocab41420 vocab54870 vocab38291 vocab17418 vocab13214 vocab25651 vocab2059 vocab41751 vocab56480 vocab55718 vocab4512 vocab6067 vocab61079 vocab61713 vocab18687 vocab59829 vocab27351 vocab64042 vocab47479 vocab14974 vocab19576 vocab22963 vocab49568 vocab1137 vocab22041 vocab35975 vocab43153 vocab8911 vocab42806 vocab47287 vocab30638 vocab58754 vocab53090 vocab62855 vocab34538 vocab27332 vocab43341 vocab48610 vocab48280 vocab41422",
+            "url": "/api/research/pages/p000000104?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000132",
+            "title": "Synthetic document p000000132 topic35",
+            "content": "commonterm vocab41555 vocab46397 vocab64287 vocab23629 vocab64035 vocab46924 vocab53320 vocab33408 vocab56465 vocab45780 vocab17264 vocab22621 vocab9785 vocab58146 vocab26558 vocab30497 vocab30284 vocab21064 vocab38721 vocab62138 vocab61831 vocab37189 vocab6148 vocab30323 vocab36507 vocab13628 vocab22035 vocab50042 vocab39996 vocab65042 vocab51004 vocab22261 vocab10796 vocab25221 vocab5129 vocab60636 vocab35575 vocab58859 vocab61306 vocab64325 vocab52072 vocab49922 vocab36019 vocab13758 vocab62850 vocab52545 vocab1196 vocab12033 vocab33452 vocab52423 vocab39436 vocab43639 vocab11912 vocab7993 vocab18483 vocab53374 vocab50761 vocab26642 vocab36640 vocab1500 vocab27069 vocab28156 vocab40516 vocab9978 vocab6804 vocab30580 vocab25741 vocab31886 vocab18083 vocab47313 vocab51572 vocab22433 vocab54189 vocab60943 vocab63202 vocab22132 vocab7801 vocab47173 vocab1056 vocab27024 vocab19065 vocab31575 vocab39083 vocab53771 vocab12264 vocab60356 vocab22678 vocab12235 vocab32795 vocab11978 vocab31126 vocab21685 vocab24959",
+            "url": "/api/research/pages/p000000132?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000144",
+            "title": "Synthetic document p000000144 topic47",
+            "content": "commonterm vocab23408 vocab64716 vocab13824 vocab29639 vocab64616 vocab48510 vocab40856 vocab3290 vocab26403 vocab37900 vocab57211 vocab55821 vocab32104 vocab49532 vocab27329 vocab36716 vocab18605 vocab48927 vocab61621 vocab61155 vocab40384 vocab10869 vocab14767 vocab1284 vocab30780 vocab20978 vocab22002 vocab52612 vocab52086 vocab52400 vocab19020 vocab61042 vocab21210 vocab15988 vocab13256 vocab22449 vocab15537 vocab10213 vocab37831 vocab60438 vocab22253 vocab21583 vocab49848 vocab5644 vocab15908 vocab12661 vocab50761 vocab5223 vocab40479 vocab52986 vocab11791 vocab13323 vocab31274 vocab11139 vocab58908 vocab23506 vocab54210 vocab13099 vocab29271 vocab22847 vocab36680 vocab11564 vocab55840 vocab1360 vocab4199 vocab39188 vocab8936 vocab13201 vocab34327 vocab16876 vocab57820 vocab41197 vocab42915 vocab37520 vocab45960 vocab27285 vocab24451 vocab46089 vocab27024 vocab8143 vocab11632 vocab59643 vocab31627 vocab55577 vocab10722 vocab20696 vocab44954 vocab63564 vocab35308 vocab10406 vocab4310 vocab5522 vocab39517",
+            "url": "/api/research/pages/p000000144?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000146",
+            "title": "Synthetic document p000000146 topic49",
+            "content": "commonterm vocab47702 vocab55974 vocab48858 vocab50140 vocab32341 vocab31617 vocab59428 vocab16024 vocab42178 vocab11080 vocab49533 vocab37154 vocab64811 vocab19096 vocab154 vocab17089 vocab8574 vocab26115 vocab45604 vocab25599 vocab53152 vocab23185 vocab20522 vocab61274 vocab25698 vocab61049 vocab53776 vocab2978 vocab18676 vocab63244 vocab38528 vocab2746 vocab52826 vocab42693 vocab41541 vocab7398 vocab18726 vocab49122 vocab46055 vocab30345 vocab38339 vocab21986 vocab16316 vocab14245 vocab21755 vocab29144 vocab19084 vocab49381 vocab105 vocab24196 vocab59296 vocab28913 vocab22288 vocab26951 vocab58967 vocab27996 vocab42392 vocab19980 vocab29316 vocab14621 vocab17015 vocab8672 vocab31580 vocab60763 vocab60851 vocab48138 vocab28631 vocab26384 vocab28980 vocab65516 vocab45668 vocab5008 vocab28138 vocab14867 vocab35951 vocab62741 vocab24972 vocab55102 vocab58834 vocab18187 vocab18296 vocab55532 vocab52234 vocab42180 vocab42812 vocab60511 vocab12173 vocab45089 vocab35474 vocab25994 vocab56797 vocab13099 vocab39017",
+            "url": "/api/research/pages/p000000146?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000163",
+            "title": "Synthetic document p000000163 topic66",
+            "content": "commonterm vocab12836 vocab38781 vocab50151 vocab36816 vocab60442 vocab58242 vocab31448 vocab10447 vocab28717 vocab45566 vocab45978 vocab18562 vocab6841 vocab56345 vocab65250 vocab56926 vocab17122 vocab56721 vocab38014 vocab45096 vocab889 vocab20013 vocab21281 vocab4469 vocab49726 vocab43676 vocab7768 vocab4763 vocab29348 vocab37908 vocab3734 vocab31271 vocab65384 vocab19565 vocab38910 vocab17209 vocab58641 vocab35537 vocab45645 vocab61878 vocab61155 vocab60251 vocab17637 vocab61802 vocab53817 vocab15142 vocab45207 vocab2205 vocab47875 vocab42969 vocab18262 vocab62201 vocab3289 vocab42827 vocab45371 vocab20106 vocab37417 vocab38075 vocab20015 vocab59023 vocab40319 vocab13765 vocab39810 vocab49723 vocab11577 vocab37348 vocab10835 vocab65027 vocab23493 vocab58377 vocab26554 vocab65058 vocab24573 vocab45890 vocab51020 vocab44900 vocab53129 vocab31999 vocab63136 vocab29307 vocab63142 vocab36300 vocab35234 vocab17647 vocab29202 vocab19667 vocab38282 vocab47980 vocab63263 vocab47871 vocab22187 vocab28188 vocab63903",
+            "url": "/api/research/pages/p000000163?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000167",
+            "title": "Synthetic document p000000167 topic70",
+            "content": "commonterm vocab7672 vocab32056 vocab6182 vocab51222 vocab3661 vocab47766 vocab11000 vocab63359 vocab7898 vocab40955 vocab29176 vocab11970 vocab60006 vocab31052 vocab60680 vocab30393 vocab22235 vocab58897 vocab51790 vocab26633 vocab22083 vocab37514 vocab47644 vocab38457 vocab8522 vocab25536 vocab17504 vocab27708 vocab35223 vocab12252 vocab34844 vocab17844 vocab13652 vocab46505 vocab40251 vocab43276 vocab261 vocab54596 vocab30024 vocab17652 vocab13402 vocab22662 vocab33621 vocab31405 vocab10094 vocab58257 vocab45446 vocab20282 vocab29821 vocab32532 vocab56664 vocab2276 vocab46534 vocab18146 vocab61855 vocab39614 vocab59434 vocab55979 vocab33758 vocab63818 vocab51583 vocab63432 vocab11441 vocab65384 vocab19108 vocab15739 vocab11435 vocab11887 vocab20352 vocab32847 vocab16576 vocab65305 vocab25632 vocab10192 vocab24159 vocab18748 vocab35700 vocab4262 vocab35164 vocab12566 vocab53191 vocab42357 vocab33659 vocab61937 vocab38754 vocab31254 vocab64859 vocab33879 vocab60862 vocab16548 vocab21093 vocab17497 vocab46975",
+            "url": "/api/research/pages/p000000167?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000181",
+            "title": "Synthetic document p000000181 topic84",
+            "content": "commonterm vocab22986 vocab29236 vocab39863 vocab60258 vocab26167 vocab46064 vocab35674 vocab28365 vocab47346 vocab33490 vocab40621 vocab42735 vocab33279 vocab25557 vocab36073 vocab46095 vocab46872 vocab54072 vocab26790 vocab51172 vocab36372 vocab13987 vocab35949 vocab26978 vocab60969 vocab32878 vocab33783 vocab37756 vocab29342 vocab26672 vocab21558 vocab54914 vocab25842 vocab31537 vocab30500 vocab1775 vocab746 vocab7337 vocab42654 vocab54440 vocab35172 vocab16624 vocab60627 vocab7973 vocab57306 vocab45486 vocab37945 vocab58911 vocab10262 vocab21388 vocab15205 vocab13922 vocab42595 vocab31406 vocab9427 vocab20903 vocab48040 vocab26084 vocab21301 vocab31753 vocab39470 vocab57350 vocab47277 vocab11765 vocab23100 vocab25250 vocab65399 vocab24215 vocab4735 vocab16923 vocab49638 vocab44750 vocab50136 vocab25611 vocab64471 vocab20945 vocab6706 vocab36152 vocab41433 vocab12075 vocab14870 vocab29288 vocab16957 vocab55464 vocab52756 vocab61078 vocab3283 vocab19461 vocab31762 vocab1176 vocab56716 vocab32247 vocab31154",
+            "url": "/api/research/pages/p000000181?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 40.53081799999973,
+          "pageMs": 1111.1510679999997
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=rarebeacon&page=1&pageSize=10",
+      "user": "small",
+      "elapsedMs": 4.686435999999958,
+      "status": 200,
+      "bytes": 1430,
+      "sha256": "b9cd3b0db87513332fa0fd95e53f28d0b793868234d1d2f7369d4d33029a3304",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000746753",
+            "title": "Synthetic document p000746753 topic47",
+            "content": "commonterm rarebeacon vocab206 vocab30329 vocab5481 vocab31338 vocab47508 vocab47609 vocab54538 vocab54809 vocab35757 vocab34316 vocab36591 vocab34393 vocab4502 vocab60404 vocab58856 vocab58848 vocab35408 vocab39438 vocab26693 vocab28680 vocab22572 vocab14476 vocab33198 vocab26537 vocab44100 vocab5555 vocab15155 vocab4261 vocab41831 vocab59283 vocab57776 vocab58241 vocab23354 vocab53481 vocab50268 vocab28950 vocab43226 vocab63650 vocab19992 vocab17356 vocab53720 vocab60514 vocab6460 vocab18592 vocab3434 vocab6899 vocab53499 vocab3618 vocab5374 vocab62132 vocab59620 vocab9817 vocab64258 vocab18685 vocab36282 vocab3855 vocab15554 vocab52221 vocab54720 vocab43126 vocab50735 vocab21614 vocab4054 vocab40470 vocab9721 vocab18010 vocab7430 vocab53119 vocab4077 vocab40462 vocab61661 vocab46977 vocab53424 vocab30804 vocab49893 vocab52576 vocab6477 vocab55392 vocab57726 vocab14388 vocab48426 vocab14277 vocab36993 vocab46802 vocab46721 vocab46841 vocab61436 vocab58300 vocab55396 vocab52858 vocab12684 vocab61896 vocab34605",
+            "url": "/api/research/pages/p000746753?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 0.2699720000000525,
+          "pageMs": 0.25864499999988766
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=rarebeacon&page=1&pageSize=10",
+      "user": "all",
+      "elapsedMs": 9.068618000000242,
+      "status": 200,
+      "bytes": 12005,
+      "sha256": "74fc503f341012ae7d56d24dc61dd87578690c2f2afc2032e3215392505e7832",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1004,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000005982",
+            "title": "Synthetic document p000005982 topic65",
+            "content": "commonterm rarebeacon vocab65261 vocab41252 vocab46276 vocab50989 vocab45486 vocab1573 vocab23875 vocab18861 vocab56880 vocab18860 vocab25037 vocab14710 vocab51710 vocab47832 vocab42892 vocab46087 vocab64221 vocab48003 vocab9663 vocab4416 vocab29901 vocab31302 vocab61783 vocab62038 vocab44863 vocab50920 vocab27070 vocab29409 vocab10503 vocab60644 vocab4969 vocab6458 vocab23065 vocab33914 vocab16017 vocab35338 vocab37142 vocab23791 vocab23383 vocab33382 vocab63508 vocab16845 vocab12282 vocab30708 vocab20728 vocab35677 vocab36567 vocab1218 vocab4560 vocab15188 vocab18590 vocab55101 vocab50760 vocab25456 vocab42388 vocab12951 vocab56313 vocab22708 vocab21064 vocab46815 vocab16362 vocab58201 vocab19420 vocab61514 vocab42617 vocab44207 vocab42237 vocab27227 vocab31190 vocab38060 vocab14625 vocab25286 vocab24246 vocab30182 vocab60002 vocab48557 vocab3840 vocab60958 vocab4601 vocab23116 vocab28411 vocab31696 vocab36361 vocab17818 vocab49918 vocab59742 vocab4915 vocab44679 vocab27035 vocab58272 vocab13713 vocab54002",
+            "url": "/api/research/pages/p000005982?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000007976",
+            "title": "Synthetic document p000007976 topic22",
+            "content": "commonterm rarebeacon vocab64738 vocab39315 vocab21249 vocab34157 vocab44067 vocab7622 vocab23842 vocab62928 vocab44681 vocab41564 vocab57753 vocab8370 vocab50616 vocab21506 vocab55620 vocab23969 vocab51912 vocab7847 vocab22342 vocab46139 vocab38867 vocab52475 vocab60736 vocab55279 vocab35029 vocab63124 vocab51820 vocab33737 vocab19649 vocab49021 vocab33399 vocab28828 vocab63550 vocab5223 vocab14463 vocab37006 vocab44405 vocab31846 vocab23773 vocab16500 vocab36612 vocab46555 vocab28281 vocab19213 vocab38441 vocab61708 vocab56986 vocab21386 vocab12949 vocab22735 vocab60106 vocab14491 vocab41441 vocab57374 vocab7976 vocab42717 vocab47228 vocab21076 vocab56372 vocab44122 vocab21764 vocab53332 vocab63894 vocab64308 vocab15386 vocab33827 vocab28457 vocab18800 vocab47184 vocab49780 vocab41139 vocab41712 vocab52213 vocab3126 vocab43995 vocab27931 vocab37526 vocab58954 vocab8248 vocab34308 vocab63632 vocab45751 vocab3836 vocab29510 vocab57630 vocab60285 vocab45962 vocab453 vocab28535 vocab12575 vocab10277 vocab41849",
+            "url": "/api/research/pages/p000007976?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000009970",
+            "title": "Synthetic document p000009970 topic76",
+            "content": "commonterm rarebeacon vocab53472 vocab31506 vocab47916 vocab48173 vocab4959 vocab23275 vocab28843 vocab31015 vocab42727 vocab51334 vocab40869 vocab33478 vocab50498 vocab26109 vocab8271 vocab20473 vocab36737 vocab15676 vocab57736 vocab60225 vocab33135 vocab21219 vocab35207 vocab60549 vocab32596 vocab48131 vocab33537 vocab43162 vocab30407 vocab50306 vocab41198 vocab28686 vocab52184 vocab50504 vocab54234 vocab35391 vocab24829 vocab48562 vocab10542 vocab19786 vocab64964 vocab48441 vocab29382 vocab27461 vocab59419 vocab21719 vocab14788 vocab52919 vocab25803 vocab27518 vocab49330 vocab39621 vocab39526 vocab9350 vocab28581 vocab26373 vocab7928 vocab5599 vocab49887 vocab15444 vocab55622 vocab28359 vocab62660 vocab54900 vocab20959 vocab41931 vocab22114 vocab28547 vocab45511 vocab39158 vocab45193 vocab39123 vocab3159 vocab7685 vocab43295 vocab1026 vocab22537 vocab30820 vocab44092 vocab48853 vocab25611 vocab38183 vocab6779 vocab16453 vocab65043 vocab62208 vocab62151 vocab26939 vocab42510 vocab7787 vocab63624 vocab56941",
+            "url": "/api/research/pages/p000009970?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000022931",
+            "title": "Synthetic document p000022931 topic39",
+            "content": "commonterm rarebeacon vocab39770 vocab15892 vocab35888 vocab63174 vocab13080 vocab62103 vocab29972 vocab15432 vocab51015 vocab11547 vocab19894 vocab63961 vocab31596 vocab6013 vocab63629 vocab35982 vocab51413 vocab2883 vocab22692 vocab33699 vocab24620 vocab31970 vocab12746 vocab36970 vocab31599 vocab40044 vocab29997 vocab12104 vocab22739 vocab56947 vocab11650 vocab7030 vocab48862 vocab41889 vocab32065 vocab14665 vocab1573 vocab19488 vocab21038 vocab30556 vocab32039 vocab27341 vocab6948 vocab40296 vocab33649 vocab8037 vocab51959 vocab41531 vocab32499 vocab10040 vocab17666 vocab25250 vocab15429 vocab29857 vocab54586 vocab4234 vocab54165 vocab39942 vocab28958 vocab15942 vocab37951 vocab18385 vocab28436 vocab62564 vocab17795 vocab37007 vocab41151 vocab63509 vocab14505 vocab47161 vocab35913 vocab12789 vocab1671 vocab29243 vocab62659 vocab47307 vocab11837 vocab52840 vocab21634 vocab50970 vocab19574 vocab64782 vocab4231 vocab50969 vocab11348 vocab48180 vocab44592 vocab7614 vocab55682 vocab33874 vocab38205 vocab33349",
+            "url": "/api/research/pages/p000022931?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000028913",
+            "title": "Synthetic document p000028913 topic7",
+            "content": "commonterm rarebeacon vocab5183 vocab23292 vocab54625 vocab37647 vocab20173 vocab12809 vocab47023 vocab62449 vocab44699 vocab63665 vocab42738 vocab30814 vocab25071 vocab58914 vocab32678 vocab34734 vocab54587 vocab32206 vocab22822 vocab59212 vocab26126 vocab55784 vocab26901 vocab19038 vocab3991 vocab3293 vocab55442 vocab49741 vocab38000 vocab44757 vocab50117 vocab45632 vocab24082 vocab29754 vocab8091 vocab45678 vocab47498 vocab62732 vocab8868 vocab35798 vocab62073 vocab14798 vocab9726 vocab8960 vocab45985 vocab23493 vocab39404 vocab47461 vocab8479 vocab51166 vocab59614 vocab62321 vocab46676 vocab37187 vocab42157 vocab16171 vocab49224 vocab30489 vocab21385 vocab21765 vocab35877 vocab58215 vocab23014 vocab49625 vocab8605 vocab12452 vocab51518 vocab14288 vocab53094 vocab30848 vocab47999 vocab52646 vocab33834 vocab56747 vocab36532 vocab13182 vocab60764 vocab60261 vocab54004 vocab54750 vocab29816 vocab14213 vocab19641 vocab51611 vocab21718 vocab34587 vocab40912 vocab16926 vocab18952 vocab10850 vocab58107 vocab15251",
+            "url": "/api/research/pages/p000028913?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000044865",
+            "title": "Synthetic document p000044865 topic51",
+            "content": "commonterm rarebeacon vocab33188 vocab54444 vocab30515 vocab10261 vocab57414 vocab11015 vocab5306 vocab12481 vocab27100 vocab17809 vocab9582 vocab37038 vocab56348 vocab62538 vocab54085 vocab54700 vocab35641 vocab10384 vocab36737 vocab38584 vocab64718 vocab51957 vocab14320 vocab6112 vocab47975 vocab45651 vocab16319 vocab50138 vocab60600 vocab28257 vocab63439 vocab36398 vocab18858 vocab43614 vocab17676 vocab64488 vocab15138 vocab45766 vocab3522 vocab16228 vocab57119 vocab11970 vocab15678 vocab18506 vocab20377 vocab22206 vocab12452 vocab16205 vocab11394 vocab39853 vocab50802 vocab31528 vocab43838 vocab15553 vocab8556 vocab28064 vocab62783 vocab1153 vocab29428 vocab3133 vocab37681 vocab14444 vocab23184 vocab41433 vocab2041 vocab34540 vocab11516 vocab17234 vocab19608 vocab22433 vocab8200 vocab40480 vocab24053 vocab21613 vocab33908 vocab56130 vocab18605 vocab49818 vocab57398 vocab36511 vocab13682 vocab22579 vocab56375 vocab63188 vocab51820 vocab16483 vocab28438 vocab56442 vocab5204 vocab13130 vocab40334 vocab48288",
+            "url": "/api/research/pages/p000044865?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000057826",
+            "title": "Synthetic document p000057826 topic14",
+            "content": "commonterm rarebeacon vocab46767 vocab65395 vocab24312 vocab14503 vocab19250 vocab18328 vocab61103 vocab15753 vocab23159 vocab34437 vocab44106 vocab50902 vocab49666 vocab46393 vocab14315 vocab16239 vocab27023 vocab43148 vocab51231 vocab27604 vocab54792 vocab6225 vocab54527 vocab38969 vocab39873 vocab35935 vocab19263 vocab45032 vocab22263 vocab12273 vocab59081 vocab15376 vocab19204 vocab20687 vocab18160 vocab28005 vocab22419 vocab56070 vocab14801 vocab13190 vocab7506 vocab18644 vocab55859 vocab39187 vocab22831 vocab55604 vocab14316 vocab31237 vocab10118 vocab21014 vocab62188 vocab38917 vocab40841 vocab64395 vocab11111 vocab60257 vocab51975 vocab38164 vocab1906 vocab2021 vocab44274 vocab33176 vocab62377 vocab30796 vocab35363 vocab31804 vocab6436 vocab9182 vocab2519 vocab44574 vocab15446 vocab16783 vocab47265 vocab55588 vocab55951 vocab43149 vocab5458 vocab58375 vocab33484 vocab2702 vocab10423 vocab25607 vocab23502 vocab43755 vocab2394 vocab13786 vocab56530 vocab49431 vocab39049 vocab37421 vocab20560 vocab53332",
+            "url": "/api/research/pages/p000057826?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000074775",
+            "title": "Synthetic document p000074775 topic85",
+            "content": "commonterm rarebeacon vocab26788 vocab64578 vocab16056 vocab63582 vocab12673 vocab57425 vocab41849 vocab60668 vocab54323 vocab32583 vocab60491 vocab7662 vocab24331 vocab51290 vocab32311 vocab61047 vocab44351 vocab15473 vocab24317 vocab13233 vocab4660 vocab36703 vocab54839 vocab25277 vocab40123 vocab12825 vocab38648 vocab57528 vocab20516 vocab42409 vocab64378 vocab29899 vocab27519 vocab63215 vocab41026 vocab6939 vocab26100 vocab46680 vocab23467 vocab6636 vocab36754 vocab48994 vocab37931 vocab19163 vocab47496 vocab52360 vocab46008 vocab54419 vocab40388 vocab50805 vocab28145 vocab51605 vocab18135 vocab57156 vocab15145 vocab18324 vocab5858 vocab55973 vocab59502 vocab19104 vocab24910 vocab9913 vocab33940 vocab21755 vocab51639 vocab65414 vocab1023 vocab38242 vocab52448 vocab47897 vocab25367 vocab11858 vocab23328 vocab65304 vocab5611 vocab12830 vocab38075 vocab20296 vocab32252 vocab59119 vocab36833 vocab62310 vocab43026 vocab29068 vocab40210 vocab26173 vocab43308 vocab57718 vocab50457 vocab61044 vocab55932 vocab58864",
+            "url": "/api/research/pages/p000074775?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000090727",
+            "title": "Synthetic document p000090727 topic32",
+            "content": "commonterm rarebeacon vocab15993 vocab6958 vocab26659 vocab1815 vocab11702 vocab43409 vocab28012 vocab27278 vocab18479 vocab50014 vocab54723 vocab29526 vocab36821 vocab44596 vocab53886 vocab24747 vocab35123 vocab63337 vocab49655 vocab41723 vocab16139 vocab28893 vocab40781 vocab19655 vocab35606 vocab35304 vocab26101 vocab28241 vocab12852 vocab39045 vocab43997 vocab55295 vocab22267 vocab29226 vocab11764 vocab62373 vocab21264 vocab11890 vocab65464 vocab34250 vocab50108 vocab8937 vocab38128 vocab6178 vocab5505 vocab27075 vocab52057 vocab12791 vocab64398 vocab41099 vocab8683 vocab15485 vocab64185 vocab18732 vocab22796 vocab34935 vocab1771 vocab12817 vocab39709 vocab45128 vocab19223 vocab18806 vocab8133 vocab13662 vocab45905 vocab54209 vocab39809 vocab11675 vocab43342 vocab46994 vocab39783 vocab18225 vocab20919 vocab30223 vocab21943 vocab15062 vocab16755 vocab10251 vocab24569 vocab47054 vocab2027 vocab11716 vocab17134 vocab58046 vocab21367 vocab19937 vocab60316 vocab5710 vocab37099 vocab45943 vocab17605 vocab30760",
+            "url": "/api/research/pages/p000090727?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000130607",
+            "title": "Synthetic document p000130607 topic45",
+            "content": "commonterm rarebeacon vocab16660 vocab15932 vocab46786 vocab22261 vocab19581 vocab32690 vocab59693 vocab15044 vocab55922 vocab13999 vocab57535 vocab1759 vocab2533 vocab24173 vocab40446 vocab62840 vocab21218 vocab27618 vocab57199 vocab43976 vocab64311 vocab61589 vocab57854 vocab328 vocab57777 vocab58542 vocab14925 vocab49094 vocab41116 vocab36832 vocab54240 vocab42835 vocab16382 vocab55956 vocab2534 vocab45573 vocab13018 vocab30728 vocab33910 vocab22546 vocab35121 vocab54014 vocab18327 vocab44130 vocab25758 vocab9827 vocab57452 vocab31927 vocab11243 vocab54117 vocab54713 vocab14574 vocab61551 vocab9521 vocab43862 vocab19865 vocab57225 vocab30827 vocab63509 vocab63844 vocab59091 vocab17465 vocab38008 vocab56495 vocab31695 vocab11014 vocab4295 vocab38043 vocab29533 vocab44920 vocab61710 vocab24210 vocab18672 vocab60271 vocab25325 vocab15079 vocab58148 vocab32676 vocab23876 vocab10830 vocab16512 vocab64800 vocab54597 vocab18990 vocab64371 vocab11595 vocab20741 vocab46882 vocab53571 vocab9189 vocab6926 vocab35741",
+            "url": "/api/research/pages/p000130607?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 0.1297130000002653,
+          "pageMs": 5.787705000000642
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=%E5%82%99%E4%BB%BD&page=1&pageSize=10",
+      "user": "huge",
+      "elapsedMs": 93.56656000000021,
+      "status": 200,
+      "bytes": 12012,
+      "sha256": "62153d9e9c4701bef9e693827714b86c339a488b27ba63daa3c765a675f2a4ea",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 26316,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000000152",
+            "title": "Synthetic document p000000152 topic55",
+            "content": "commonterm 資料庫備份流程與還原。 vocab16599 vocab54345 vocab63609 vocab53188 vocab45606 vocab12194 vocab21070 vocab49354 vocab33151 vocab63495 vocab935 vocab64706 vocab43783 vocab9045 vocab14030 vocab62626 vocab46749 vocab20265 vocab4537 vocab28835 vocab44266 vocab64097 vocab1202 vocab49188 vocab35786 vocab47589 vocab56234 vocab22283 vocab46855 vocab45247 vocab57205 vocab25960 vocab57768 vocab51819 vocab34240 vocab27223 vocab32968 vocab48250 vocab1319 vocab27796 vocab38096 vocab61311 vocab25895 vocab46487 vocab30403 vocab44518 vocab38104 vocab46252 vocab52669 vocab42566 vocab53267 vocab25238 vocab24245 vocab41970 vocab11821 vocab51982 vocab62644 vocab42104 vocab65081 vocab2710 vocab6079 vocab22085 vocab27365 vocab15451 vocab15944 vocab35090 vocab55684 vocab23484 vocab19110 vocab59606 vocab3556 vocab36742 vocab44697 vocab56222 vocab48652 vocab59974 vocab34933 vocab33648 vocab48893 vocab38400 vocab34102 vocab46247 vocab49187 vocab16411 vocab59299 vocab31351 vocab38060 vocab59194 vocab19537 vocab57326",
+            "url": "/api/research/pages/p000000152?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000190",
+            "title": "Synthetic document p000000190 topic93",
+            "content": "commonterm 資料庫備份流程與還原。 vocab7373 vocab56348 vocab26624 vocab10217 vocab61402 vocab28586 vocab59555 vocab42327 vocab35458 vocab55420 vocab25630 vocab31982 vocab42130 vocab55685 vocab20109 vocab11529 vocab16655 vocab19753 vocab17874 vocab14814 vocab50044 vocab48587 vocab36220 vocab38800 vocab22665 vocab29775 vocab13126 vocab18855 vocab28026 vocab5882 vocab3888 vocab5216 vocab50126 vocab20102 vocab51882 vocab18445 vocab38420 vocab59406 vocab24213 vocab64845 vocab39555 vocab54754 vocab49467 vocab54615 vocab13341 vocab1096 vocab12036 vocab20825 vocab57301 vocab18949 vocab61643 vocab58700 vocab28194 vocab45498 vocab30974 vocab27031 vocab15213 vocab630 vocab52636 vocab40136 vocab55607 vocab38695 vocab17052 vocab22818 vocab10325 vocab45208 vocab48155 vocab30297 vocab42680 vocab53361 vocab22535 vocab777 vocab27450 vocab59795 vocab19668 vocab24212 vocab2674 vocab17042 vocab22986 vocab13939 vocab57722 vocab27310 vocab11553 vocab20033 vocab61041 vocab9978 vocab16088 vocab61380 vocab60200 vocab59177",
+            "url": "/api/research/pages/p000000190?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000209",
+            "title": "Synthetic document p000000209 topic15",
+            "content": "commonterm 資料庫備份流程與還原。 vocab1682 vocab1190 vocab54757 vocab37030 vocab2156 vocab19478 vocab39869 vocab9162 vocab36180 vocab40816 vocab29296 vocab14365 vocab26772 vocab20313 vocab56276 vocab21544 vocab65000 vocab32358 vocab52760 vocab44097 vocab18588 vocab17506 vocab28521 vocab33820 vocab24068 vocab28786 vocab45594 vocab20424 vocab3866 vocab59923 vocab26522 vocab47246 vocab23672 vocab575 vocab41025 vocab64197 vocab50228 vocab17224 vocab57427 vocab48128 vocab25019 vocab51138 vocab61238 vocab8149 vocab42960 vocab33666 vocab19950 vocab32360 vocab54250 vocab45875 vocab3849 vocab14183 vocab10972 vocab17136 vocab14402 vocab61759 vocab55261 vocab22377 vocab28216 vocab45629 vocab29223 vocab39105 vocab21433 vocab41055 vocab33837 vocab51908 vocab16849 vocab49333 vocab46338 vocab14441 vocab33741 vocab19115 vocab61369 vocab15783 vocab12637 vocab8867 vocab6742 vocab25073 vocab24558 vocab43262 vocab48442 vocab60570 vocab37003 vocab27361 vocab30936 vocab55518 vocab63676 vocab53859 vocab22933 vocab42170",
+            "url": "/api/research/pages/p000000209?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000703",
+            "title": "Synthetic document p000000703 topic24",
+            "content": "commonterm 資料庫備份流程與還原。 vocab31364 vocab16237 vocab22937 vocab60822 vocab25539 vocab57917 vocab40639 vocab43954 vocab14949 vocab19086 vocab9546 vocab45910 vocab3001 vocab49504 vocab6966 vocab52876 vocab11161 vocab17979 vocab2586 vocab58749 vocab63881 vocab14897 vocab18913 vocab18390 vocab28876 vocab4179 vocab51205 vocab37896 vocab21607 vocab5289 vocab28231 vocab53811 vocab34802 vocab12263 vocab12938 vocab20010 vocab39494 vocab42539 vocab59739 vocab33492 vocab54128 vocab44375 vocab19268 vocab11079 vocab3877 vocab10219 vocab6357 vocab26765 vocab59925 vocab60129 vocab21414 vocab21361 vocab53439 vocab44915 vocab2625 vocab34990 vocab59947 vocab13350 vocab37220 vocab48110 vocab36022 vocab36351 vocab35861 vocab56554 vocab29222 vocab29499 vocab3366 vocab59471 vocab21463 vocab51378 vocab16885 vocab53053 vocab6474 vocab56744 vocab16969 vocab45370 vocab20147 vocab39649 vocab27310 vocab59952 vocab53938 vocab27080 vocab64291 vocab28418 vocab10485 vocab57068 vocab14417 vocab61553 vocab59717 vocab45288",
+            "url": "/api/research/pages/p000000703?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000760",
+            "title": "Synthetic document p000000760 topic81",
+            "content": "commonterm 資料庫備份流程與還原。 vocab61350 vocab24947 vocab12299 vocab27315 vocab27773 vocab16899 vocab17957 vocab39360 vocab28122 vocab12074 vocab20193 vocab40708 vocab26243 vocab59347 vocab8645 vocab42543 vocab57753 vocab5081 vocab9409 vocab11223 vocab28838 vocab16340 vocab8798 vocab37678 vocab27268 vocab16980 vocab34489 vocab21766 vocab17564 vocab40065 vocab63459 vocab20482 vocab53214 vocab56078 vocab41597 vocab23483 vocab13538 vocab18444 vocab30152 vocab61423 vocab24488 vocab53411 vocab45503 vocab63577 vocab25576 vocab61551 vocab27417 vocab60982 vocab33161 vocab55474 vocab13531 vocab36047 vocab11285 vocab18277 vocab34757 vocab57409 vocab6422 vocab59536 vocab35184 vocab7180 vocab28466 vocab29508 vocab57482 vocab55352 vocab58685 vocab57058 vocab44125 vocab44850 vocab2152 vocab49623 vocab11025 vocab31987 vocab7525 vocab30076 vocab24765 vocab782 vocab14118 vocab44815 vocab30074 vocab37378 vocab58554 vocab6915 vocab43025 vocab35868 vocab34729 vocab50594 vocab38291 vocab48562 vocab49714 vocab56296",
+            "url": "/api/research/pages/p000000760?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000798",
+            "title": "Synthetic document p000000798 topic22",
+            "content": "commonterm 資料庫備份流程與還原。 vocab55936 vocab58607 vocab19136 vocab4762 vocab65100 vocab45512 vocab6282 vocab54476 vocab16734 vocab1738 vocab23140 vocab21341 vocab26172 vocab5960 vocab49458 vocab29720 vocab12452 vocab42214 vocab21259 vocab16512 vocab28297 vocab46880 vocab40338 vocab11437 vocab32701 vocab29540 vocab44390 vocab57245 vocab56 vocab12910 vocab34581 vocab55310 vocab50392 vocab44631 vocab20930 vocab40414 vocab1055 vocab13847 vocab1797 vocab42596 vocab28755 vocab21393 vocab3652 vocab39918 vocab12462 vocab23316 vocab17401 vocab58880 vocab49316 vocab19484 vocab25865 vocab50471 vocab47589 vocab45476 vocab45301 vocab29319 vocab31918 vocab61154 vocab27807 vocab52148 vocab32257 vocab52154 vocab21438 vocab28211 vocab11048 vocab37261 vocab22022 vocab28041 vocab32027 vocab39222 vocab19678 vocab45651 vocab59401 vocab62116 vocab15811 vocab14658 vocab61177 vocab32261 vocab46174 vocab65095 vocab16273 vocab52143 vocab32595 vocab4043 vocab62336 vocab24968 vocab27617 vocab27189 vocab19508 vocab56159",
+            "url": "/api/research/pages/p000000798?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000817",
+            "title": "Synthetic document p000000817 topic41",
+            "content": "commonterm 資料庫備份流程與還原。 vocab18315 vocab56746 vocab16108 vocab37636 vocab47463 vocab30253 vocab20944 vocab51359 vocab28549 vocab19986 vocab18201 vocab30813 vocab47738 vocab29214 vocab21407 vocab27801 vocab27181 vocab23052 vocab51998 vocab51839 vocab25108 vocab2937 vocab17188 vocab53985 vocab20627 vocab42092 vocab13401 vocab61663 vocab25014 vocab3199 vocab48379 vocab61346 vocab54206 vocab50827 vocab45677 vocab38998 vocab61487 vocab2233 vocab26766 vocab5382 vocab59834 vocab37820 vocab36266 vocab13429 vocab36473 vocab28258 vocab2155 vocab16005 vocab8848 vocab40317 vocab7566 vocab60136 vocab56305 vocab31540 vocab44173 vocab36298 vocab1287 vocab27459 vocab63941 vocab22486 vocab46072 vocab32766 vocab47297 vocab51518 vocab52400 vocab38738 vocab56947 vocab8612 vocab48345 vocab57831 vocab33913 vocab46360 vocab59454 vocab63310 vocab49560 vocab20026 vocab25930 vocab34462 vocab27038 vocab42753 vocab58486 vocab30179 vocab49893 vocab23717 vocab56480 vocab35879 vocab49874 vocab3785 vocab47753 vocab59074",
+            "url": "/api/research/pages/p000000817?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000950",
+            "title": "Synthetic document p000000950 topic77",
+            "content": "commonterm 資料庫備份流程與還原。 vocab48431 vocab9458 vocab36348 vocab54940 vocab19213 vocab56552 vocab13708 vocab23195 vocab43481 vocab16747 vocab49565 vocab37232 vocab15278 vocab42865 vocab38725 vocab46220 vocab44226 vocab33974 vocab14468 vocab51736 vocab50294 vocab63474 vocab22921 vocab16083 vocab7317 vocab54161 vocab26235 vocab42347 vocab44313 vocab63085 vocab32784 vocab4814 vocab38973 vocab37931 vocab39268 vocab31344 vocab14407 vocab65246 vocab45911 vocab13255 vocab63743 vocab21808 vocab30490 vocab50154 vocab12400 vocab3020 vocab7823 vocab13930 vocab31516 vocab20289 vocab60605 vocab43730 vocab8032 vocab34215 vocab50330 vocab30715 vocab38640 vocab62833 vocab40329 vocab15090 vocab48724 vocab33219 vocab56279 vocab41016 vocab5702 vocab41607 vocab28668 vocab41485 vocab54324 vocab2737 vocab56175 vocab41702 vocab15377 vocab63792 vocab54687 vocab34884 vocab1730 vocab42508 vocab40551 vocab3931 vocab42670 vocab18725 vocab39310 vocab30133 vocab26740 vocab18444 vocab50857 vocab45357 vocab60956 vocab23292",
+            "url": "/api/research/pages/p000000950?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000001235",
+            "title": "Synthetic document p000001235 topic71",
+            "content": "commonterm 資料庫備份流程與還原。 vocab56500 vocab64446 vocab36075 vocab44397 vocab54860 vocab35751 vocab19123 vocab13481 vocab52140 vocab16761 vocab44081 vocab65514 vocab5271 vocab43177 vocab54673 vocab11348 vocab21364 vocab15014 vocab8592 vocab60522 vocab64769 vocab22869 vocab6698 vocab5190 vocab44667 vocab7819 vocab45169 vocab45409 vocab37531 vocab38157 vocab40995 vocab38822 vocab11632 vocab14204 vocab24405 vocab9885 vocab21982 vocab54104 vocab33063 vocab54332 vocab34727 vocab41162 vocab52339 vocab14825 vocab32444 vocab8102 vocab25802 vocab42676 vocab14399 vocab22663 vocab24261 vocab54922 vocab7661 vocab27848 vocab30292 vocab36093 vocab30115 vocab15807 vocab59752 vocab59507 vocab33016 vocab19320 vocab47005 vocab48388 vocab50477 vocab47101 vocab28571 vocab41038 vocab20921 vocab21889 vocab43956 vocab58039 vocab51983 vocab35722 vocab44896 vocab40502 vocab27437 vocab61682 vocab18122 vocab44091 vocab21058 vocab43956 vocab36784 vocab58571 vocab5440 vocab21574 vocab57406 vocab38921 vocab31553 vocab17961",
+            "url": "/api/research/pages/p000001235?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000001254",
+            "title": "Synthetic document p000001254 topic90",
+            "content": "commonterm 資料庫備份流程與還原。 vocab15740 vocab22489 vocab43692 vocab55932 vocab6160 vocab58337 vocab863 vocab61160 vocab32796 vocab29795 vocab62304 vocab16829 vocab2674 vocab49967 vocab32424 vocab31265 vocab34264 vocab41546 vocab12046 vocab27202 vocab59613 vocab49846 vocab17775 vocab25577 vocab15185 vocab27004 vocab64175 vocab50784 vocab47230 vocab16079 vocab63118 vocab20233 vocab17060 vocab35482 vocab31149 vocab51581 vocab3927 vocab58414 vocab64433 vocab2762 vocab12617 vocab16216 vocab54260 vocab40190 vocab25698 vocab43695 vocab42876 vocab54239 vocab25737 vocab53256 vocab37237 vocab19116 vocab30854 vocab27246 vocab42983 vocab21389 vocab28869 vocab14999 vocab45464 vocab19232 vocab23353 vocab20263 vocab25153 vocab41039 vocab57166 vocab49235 vocab16862 vocab30433 vocab55835 vocab33323 vocab45151 vocab971 vocab36410 vocab38453 vocab51997 vocab31259 vocab21381 vocab37982 vocab65240 vocab34878 vocab19133 vocab45014 vocab22289 vocab22827 vocab45268 vocab40102 vocab18586 vocab57931 vocab33877 vocab20383",
+            "url": "/api/research/pages/p000001254?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 4.969457000000148,
+          "pageMs": 81.05144099999961
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=%E5%82%99%E4%BB%BD&page=1&pageSize=10",
+      "user": "all",
+      "elapsedMs": 129.76083299999982,
+      "status": 200,
+      "bytes": 12014,
+      "sha256": "8d55a3631fcc4f92af798317dc25032cb25f8a102dad89ebf0835f659533a74a",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 52632,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000000152",
+            "title": "Synthetic document p000000152 topic55",
+            "content": "commonterm 資料庫備份流程與還原。 vocab16599 vocab54345 vocab63609 vocab53188 vocab45606 vocab12194 vocab21070 vocab49354 vocab33151 vocab63495 vocab935 vocab64706 vocab43783 vocab9045 vocab14030 vocab62626 vocab46749 vocab20265 vocab4537 vocab28835 vocab44266 vocab64097 vocab1202 vocab49188 vocab35786 vocab47589 vocab56234 vocab22283 vocab46855 vocab45247 vocab57205 vocab25960 vocab57768 vocab51819 vocab34240 vocab27223 vocab32968 vocab48250 vocab1319 vocab27796 vocab38096 vocab61311 vocab25895 vocab46487 vocab30403 vocab44518 vocab38104 vocab46252 vocab52669 vocab42566 vocab53267 vocab25238 vocab24245 vocab41970 vocab11821 vocab51982 vocab62644 vocab42104 vocab65081 vocab2710 vocab6079 vocab22085 vocab27365 vocab15451 vocab15944 vocab35090 vocab55684 vocab23484 vocab19110 vocab59606 vocab3556 vocab36742 vocab44697 vocab56222 vocab48652 vocab59974 vocab34933 vocab33648 vocab48893 vocab38400 vocab34102 vocab46247 vocab49187 vocab16411 vocab59299 vocab31351 vocab38060 vocab59194 vocab19537 vocab57326",
+            "url": "/api/research/pages/p000000152?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000190",
+            "title": "Synthetic document p000000190 topic93",
+            "content": "commonterm 資料庫備份流程與還原。 vocab7373 vocab56348 vocab26624 vocab10217 vocab61402 vocab28586 vocab59555 vocab42327 vocab35458 vocab55420 vocab25630 vocab31982 vocab42130 vocab55685 vocab20109 vocab11529 vocab16655 vocab19753 vocab17874 vocab14814 vocab50044 vocab48587 vocab36220 vocab38800 vocab22665 vocab29775 vocab13126 vocab18855 vocab28026 vocab5882 vocab3888 vocab5216 vocab50126 vocab20102 vocab51882 vocab18445 vocab38420 vocab59406 vocab24213 vocab64845 vocab39555 vocab54754 vocab49467 vocab54615 vocab13341 vocab1096 vocab12036 vocab20825 vocab57301 vocab18949 vocab61643 vocab58700 vocab28194 vocab45498 vocab30974 vocab27031 vocab15213 vocab630 vocab52636 vocab40136 vocab55607 vocab38695 vocab17052 vocab22818 vocab10325 vocab45208 vocab48155 vocab30297 vocab42680 vocab53361 vocab22535 vocab777 vocab27450 vocab59795 vocab19668 vocab24212 vocab2674 vocab17042 vocab22986 vocab13939 vocab57722 vocab27310 vocab11553 vocab20033 vocab61041 vocab9978 vocab16088 vocab61380 vocab60200 vocab59177",
+            "url": "/api/research/pages/p000000190?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000209",
+            "title": "Synthetic document p000000209 topic15",
+            "content": "commonterm 資料庫備份流程與還原。 vocab1682 vocab1190 vocab54757 vocab37030 vocab2156 vocab19478 vocab39869 vocab9162 vocab36180 vocab40816 vocab29296 vocab14365 vocab26772 vocab20313 vocab56276 vocab21544 vocab65000 vocab32358 vocab52760 vocab44097 vocab18588 vocab17506 vocab28521 vocab33820 vocab24068 vocab28786 vocab45594 vocab20424 vocab3866 vocab59923 vocab26522 vocab47246 vocab23672 vocab575 vocab41025 vocab64197 vocab50228 vocab17224 vocab57427 vocab48128 vocab25019 vocab51138 vocab61238 vocab8149 vocab42960 vocab33666 vocab19950 vocab32360 vocab54250 vocab45875 vocab3849 vocab14183 vocab10972 vocab17136 vocab14402 vocab61759 vocab55261 vocab22377 vocab28216 vocab45629 vocab29223 vocab39105 vocab21433 vocab41055 vocab33837 vocab51908 vocab16849 vocab49333 vocab46338 vocab14441 vocab33741 vocab19115 vocab61369 vocab15783 vocab12637 vocab8867 vocab6742 vocab25073 vocab24558 vocab43262 vocab48442 vocab60570 vocab37003 vocab27361 vocab30936 vocab55518 vocab63676 vocab53859 vocab22933 vocab42170",
+            "url": "/api/research/pages/p000000209?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000703",
+            "title": "Synthetic document p000000703 topic24",
+            "content": "commonterm 資料庫備份流程與還原。 vocab31364 vocab16237 vocab22937 vocab60822 vocab25539 vocab57917 vocab40639 vocab43954 vocab14949 vocab19086 vocab9546 vocab45910 vocab3001 vocab49504 vocab6966 vocab52876 vocab11161 vocab17979 vocab2586 vocab58749 vocab63881 vocab14897 vocab18913 vocab18390 vocab28876 vocab4179 vocab51205 vocab37896 vocab21607 vocab5289 vocab28231 vocab53811 vocab34802 vocab12263 vocab12938 vocab20010 vocab39494 vocab42539 vocab59739 vocab33492 vocab54128 vocab44375 vocab19268 vocab11079 vocab3877 vocab10219 vocab6357 vocab26765 vocab59925 vocab60129 vocab21414 vocab21361 vocab53439 vocab44915 vocab2625 vocab34990 vocab59947 vocab13350 vocab37220 vocab48110 vocab36022 vocab36351 vocab35861 vocab56554 vocab29222 vocab29499 vocab3366 vocab59471 vocab21463 vocab51378 vocab16885 vocab53053 vocab6474 vocab56744 vocab16969 vocab45370 vocab20147 vocab39649 vocab27310 vocab59952 vocab53938 vocab27080 vocab64291 vocab28418 vocab10485 vocab57068 vocab14417 vocab61553 vocab59717 vocab45288",
+            "url": "/api/research/pages/p000000703?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000760",
+            "title": "Synthetic document p000000760 topic81",
+            "content": "commonterm 資料庫備份流程與還原。 vocab61350 vocab24947 vocab12299 vocab27315 vocab27773 vocab16899 vocab17957 vocab39360 vocab28122 vocab12074 vocab20193 vocab40708 vocab26243 vocab59347 vocab8645 vocab42543 vocab57753 vocab5081 vocab9409 vocab11223 vocab28838 vocab16340 vocab8798 vocab37678 vocab27268 vocab16980 vocab34489 vocab21766 vocab17564 vocab40065 vocab63459 vocab20482 vocab53214 vocab56078 vocab41597 vocab23483 vocab13538 vocab18444 vocab30152 vocab61423 vocab24488 vocab53411 vocab45503 vocab63577 vocab25576 vocab61551 vocab27417 vocab60982 vocab33161 vocab55474 vocab13531 vocab36047 vocab11285 vocab18277 vocab34757 vocab57409 vocab6422 vocab59536 vocab35184 vocab7180 vocab28466 vocab29508 vocab57482 vocab55352 vocab58685 vocab57058 vocab44125 vocab44850 vocab2152 vocab49623 vocab11025 vocab31987 vocab7525 vocab30076 vocab24765 vocab782 vocab14118 vocab44815 vocab30074 vocab37378 vocab58554 vocab6915 vocab43025 vocab35868 vocab34729 vocab50594 vocab38291 vocab48562 vocab49714 vocab56296",
+            "url": "/api/research/pages/p000000760?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000798",
+            "title": "Synthetic document p000000798 topic22",
+            "content": "commonterm 資料庫備份流程與還原。 vocab55936 vocab58607 vocab19136 vocab4762 vocab65100 vocab45512 vocab6282 vocab54476 vocab16734 vocab1738 vocab23140 vocab21341 vocab26172 vocab5960 vocab49458 vocab29720 vocab12452 vocab42214 vocab21259 vocab16512 vocab28297 vocab46880 vocab40338 vocab11437 vocab32701 vocab29540 vocab44390 vocab57245 vocab56 vocab12910 vocab34581 vocab55310 vocab50392 vocab44631 vocab20930 vocab40414 vocab1055 vocab13847 vocab1797 vocab42596 vocab28755 vocab21393 vocab3652 vocab39918 vocab12462 vocab23316 vocab17401 vocab58880 vocab49316 vocab19484 vocab25865 vocab50471 vocab47589 vocab45476 vocab45301 vocab29319 vocab31918 vocab61154 vocab27807 vocab52148 vocab32257 vocab52154 vocab21438 vocab28211 vocab11048 vocab37261 vocab22022 vocab28041 vocab32027 vocab39222 vocab19678 vocab45651 vocab59401 vocab62116 vocab15811 vocab14658 vocab61177 vocab32261 vocab46174 vocab65095 vocab16273 vocab52143 vocab32595 vocab4043 vocab62336 vocab24968 vocab27617 vocab27189 vocab19508 vocab56159",
+            "url": "/api/research/pages/p000000798?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000817",
+            "title": "Synthetic document p000000817 topic41",
+            "content": "commonterm 資料庫備份流程與還原。 vocab18315 vocab56746 vocab16108 vocab37636 vocab47463 vocab30253 vocab20944 vocab51359 vocab28549 vocab19986 vocab18201 vocab30813 vocab47738 vocab29214 vocab21407 vocab27801 vocab27181 vocab23052 vocab51998 vocab51839 vocab25108 vocab2937 vocab17188 vocab53985 vocab20627 vocab42092 vocab13401 vocab61663 vocab25014 vocab3199 vocab48379 vocab61346 vocab54206 vocab50827 vocab45677 vocab38998 vocab61487 vocab2233 vocab26766 vocab5382 vocab59834 vocab37820 vocab36266 vocab13429 vocab36473 vocab28258 vocab2155 vocab16005 vocab8848 vocab40317 vocab7566 vocab60136 vocab56305 vocab31540 vocab44173 vocab36298 vocab1287 vocab27459 vocab63941 vocab22486 vocab46072 vocab32766 vocab47297 vocab51518 vocab52400 vocab38738 vocab56947 vocab8612 vocab48345 vocab57831 vocab33913 vocab46360 vocab59454 vocab63310 vocab49560 vocab20026 vocab25930 vocab34462 vocab27038 vocab42753 vocab58486 vocab30179 vocab49893 vocab23717 vocab56480 vocab35879 vocab49874 vocab3785 vocab47753 vocab59074",
+            "url": "/api/research/pages/p000000817?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000950",
+            "title": "Synthetic document p000000950 topic77",
+            "content": "commonterm 資料庫備份流程與還原。 vocab48431 vocab9458 vocab36348 vocab54940 vocab19213 vocab56552 vocab13708 vocab23195 vocab43481 vocab16747 vocab49565 vocab37232 vocab15278 vocab42865 vocab38725 vocab46220 vocab44226 vocab33974 vocab14468 vocab51736 vocab50294 vocab63474 vocab22921 vocab16083 vocab7317 vocab54161 vocab26235 vocab42347 vocab44313 vocab63085 vocab32784 vocab4814 vocab38973 vocab37931 vocab39268 vocab31344 vocab14407 vocab65246 vocab45911 vocab13255 vocab63743 vocab21808 vocab30490 vocab50154 vocab12400 vocab3020 vocab7823 vocab13930 vocab31516 vocab20289 vocab60605 vocab43730 vocab8032 vocab34215 vocab50330 vocab30715 vocab38640 vocab62833 vocab40329 vocab15090 vocab48724 vocab33219 vocab56279 vocab41016 vocab5702 vocab41607 vocab28668 vocab41485 vocab54324 vocab2737 vocab56175 vocab41702 vocab15377 vocab63792 vocab54687 vocab34884 vocab1730 vocab42508 vocab40551 vocab3931 vocab42670 vocab18725 vocab39310 vocab30133 vocab26740 vocab18444 vocab50857 vocab45357 vocab60956 vocab23292",
+            "url": "/api/research/pages/p000000950?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000001235",
+            "title": "Synthetic document p000001235 topic71",
+            "content": "commonterm 資料庫備份流程與還原。 vocab56500 vocab64446 vocab36075 vocab44397 vocab54860 vocab35751 vocab19123 vocab13481 vocab52140 vocab16761 vocab44081 vocab65514 vocab5271 vocab43177 vocab54673 vocab11348 vocab21364 vocab15014 vocab8592 vocab60522 vocab64769 vocab22869 vocab6698 vocab5190 vocab44667 vocab7819 vocab45169 vocab45409 vocab37531 vocab38157 vocab40995 vocab38822 vocab11632 vocab14204 vocab24405 vocab9885 vocab21982 vocab54104 vocab33063 vocab54332 vocab34727 vocab41162 vocab52339 vocab14825 vocab32444 vocab8102 vocab25802 vocab42676 vocab14399 vocab22663 vocab24261 vocab54922 vocab7661 vocab27848 vocab30292 vocab36093 vocab30115 vocab15807 vocab59752 vocab59507 vocab33016 vocab19320 vocab47005 vocab48388 vocab50477 vocab47101 vocab28571 vocab41038 vocab20921 vocab21889 vocab43956 vocab58039 vocab51983 vocab35722 vocab44896 vocab40502 vocab27437 vocab61682 vocab18122 vocab44091 vocab21058 vocab43956 vocab36784 vocab58571 vocab5440 vocab21574 vocab57406 vocab38921 vocab31553 vocab17961",
+            "url": "/api/research/pages/p000001235?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000001254",
+            "title": "Synthetic document p000001254 topic90",
+            "content": "commonterm 資料庫備份流程與還原。 vocab15740 vocab22489 vocab43692 vocab55932 vocab6160 vocab58337 vocab863 vocab61160 vocab32796 vocab29795 vocab62304 vocab16829 vocab2674 vocab49967 vocab32424 vocab31265 vocab34264 vocab41546 vocab12046 vocab27202 vocab59613 vocab49846 vocab17775 vocab25577 vocab15185 vocab27004 vocab64175 vocab50784 vocab47230 vocab16079 vocab63118 vocab20233 vocab17060 vocab35482 vocab31149 vocab51581 vocab3927 vocab58414 vocab64433 vocab2762 vocab12617 vocab16216 vocab54260 vocab40190 vocab25698 vocab43695 vocab42876 vocab54239 vocab25737 vocab53256 vocab37237 vocab19116 vocab30854 vocab27246 vocab42983 vocab21389 vocab28869 vocab14999 vocab45464 vocab19232 vocab23353 vocab20263 vocab25153 vocab41039 vocab57166 vocab49235 vocab16862 vocab30433 vocab55835 vocab33323 vocab45151 vocab971 vocab36410 vocab38453 vocab51997 vocab31259 vocab21381 vocab37982 vocab65240 vocab34878 vocab19133 vocab45014 vocab22289 vocab22827 vocab45268 vocab40102 vocab18586 vocab57931 vocab33877 vocab20383",
+            "url": "/api/research/pages/p000001254?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 2.3509490000005826,
+          "pageMs": 122.26802099999986
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=ERR_CONN_RESET&page=1&pageSize=10",
+      "user": "small",
+      "elapsedMs": 12.896975999999995,
+      "status": 200,
+      "bytes": 12034,
+      "sha256": "00a2ddc5445e2a96f634c51e27cb7f5236d639d29f1ad4730bf7e3f7b6608d6b",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 29,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000515984",
+            "title": "Synthetic document p000515984 topic41",
+            "content": "commonterm ERR_CONN_RESET vocab47384 vocab53267 vocab10681 vocab49130 vocab54847 vocab26460 vocab43107 vocab48481 vocab13954 vocab54368 vocab8994 vocab11129 vocab45830 vocab52095 vocab61811 vocab23959 vocab7593 vocab20462 vocab28026 vocab30003 vocab16255 vocab21862 vocab14307 vocab19358 vocab16103 vocab65249 vocab4231 vocab33341 vocab64589 vocab38419 vocab9257 vocab6728 vocab26109 vocab4769 vocab30864 vocab41206 vocab59585 vocab21236 vocab28488 vocab8517 vocab48875 vocab42184 vocab27127 vocab8855 vocab25268 vocab65126 vocab30317 vocab3589 vocab30207 vocab19544 vocab42569 vocab40091 vocab57354 vocab62839 vocab12777 vocab31594 vocab52313 vocab43690 vocab59660 vocab42071 vocab52614 vocab52565 vocab30105 vocab13667 vocab16128 vocab16013 vocab17660 vocab40945 vocab13086 vocab24470 vocab38190 vocab21917 vocab58419 vocab62669 vocab24797 vocab21552 vocab22498 vocab6913 vocab58497 vocab63726 vocab64620 vocab8439 vocab10748 vocab62942 vocab33101 vocab51968 vocab7137 vocab30128 vocab6072 vocab6067 vocab53044 vocab49995",
+            "url": "/api/research/pages/p000515984?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000549950",
+            "title": "Synthetic document p000549950 topic57",
+            "content": "commonterm ERR_CONN_RESET vocab6064 vocab19958 vocab43239 vocab61305 vocab63308 vocab62081 vocab61273 vocab15604 vocab49636 vocab52938 vocab29299 vocab58322 vocab19909 vocab11140 vocab48005 vocab44566 vocab53657 vocab43965 vocab48571 vocab27948 vocab57009 vocab7327 vocab24665 vocab50227 vocab14757 vocab37128 vocab22264 vocab18062 vocab48776 vocab49353 vocab55585 vocab64287 vocab2253 vocab34165 vocab14382 vocab24957 vocab31696 vocab12508 vocab37421 vocab52395 vocab4529 vocab38212 vocab20255 vocab21672 vocab16692 vocab36553 vocab61048 vocab45070 vocab13491 vocab53753 vocab51119 vocab49602 vocab14221 vocab30735 vocab26115 vocab55666 vocab35905 vocab27305 vocab17851 vocab42249 vocab31916 vocab15728 vocab5896 vocab47036 vocab61374 vocab53519 vocab30014 vocab41467 vocab52238 vocab42233 vocab19266 vocab33973 vocab26283 vocab39635 vocab21346 vocab7976 vocab3516 vocab54414 vocab64308 vocab57630 vocab18470 vocab55948 vocab42538 vocab16843 vocab51693 vocab17330 vocab45505 vocab59296 vocab64075 vocab60129 vocab6503 vocab2094",
+            "url": "/api/research/pages/p000549950?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000566933",
+            "title": "Synthetic document p000566933 topic65",
+            "content": "commonterm ERR_CONN_RESET vocab6671 vocab54003 vocab5065 vocab44030 vocab43493 vocab50969 vocab10103 vocab4332 vocab34986 vocab24313 vocab29181 vocab62572 vocab32197 vocab9089 vocab62297 vocab54754 vocab11504 vocab64691 vocab25938 vocab65345 vocab64818 vocab56160 vocab41506 vocab64971 vocab29144 vocab16642 vocab55054 vocab5559 vocab31286 vocab39031 vocab49270 vocab15192 vocab51822 vocab60321 vocab49576 vocab56235 vocab43011 vocab10976 vocab17990 vocab16987 vocab55856 vocab14025 vocab57244 vocab50604 vocab39297 vocab28891 vocab61788 vocab48132 vocab6286 vocab14612 vocab30328 vocab63880 vocab26975 vocab4413 vocab50388 vocab32956 vocab16500 vocab64818 vocab4348 vocab20479 vocab63482 vocab38531 vocab34407 vocab33454 vocab4067 vocab12870 vocab48910 vocab44765 vocab8814 vocab64262 vocab52098 vocab60648 vocab7843 vocab11239 vocab9546 vocab52993 vocab36712 vocab38539 vocab25147 vocab26900 vocab60405 vocab16996 vocab40965 vocab56639 vocab34344 vocab30692 vocab5769 vocab45101 vocab62726 vocab62702 vocab16813 vocab3252",
+            "url": "/api/research/pages/p000566933?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000617882",
+            "title": "Synthetic document p000617882 topic89",
+            "content": "commonterm ERR_CONN_RESET vocab15509 vocab51850 vocab10567 vocab11452 vocab50606 vocab20387 vocab17823 vocab17713 vocab35427 vocab54929 vocab8617 vocab48316 vocab8082 vocab42075 vocab61027 vocab20231 vocab13116 vocab30051 vocab27813 vocab47155 vocab29254 vocab12410 vocab34749 vocab6884 vocab59130 vocab49211 vocab36809 vocab64882 vocab49339 vocab33324 vocab41469 vocab49760 vocab51714 vocab58443 vocab23403 vocab36000 vocab33719 vocab7158 vocab35690 vocab22011 vocab48906 vocab55562 vocab13635 vocab46284 vocab11052 vocab10681 vocab3887 vocab57975 vocab13489 vocab24911 vocab46919 vocab42414 vocab35236 vocab45722 vocab46927 vocab7619 vocab54947 vocab44503 vocab63961 vocab21788 vocab45358 vocab26444 vocab51853 vocab27777 vocab547 vocab62842 vocab40448 vocab64579 vocab57794 vocab21618 vocab30781 vocab53012 vocab16628 vocab11026 vocab42125 vocab36289 vocab53006 vocab45700 vocab44410 vocab2949 vocab44877 vocab20581 vocab9399 vocab21404 vocab36930 vocab47249 vocab49580 vocab25106 vocab21202 vocab39187 vocab20001 vocab59336",
+            "url": "/api/research/pages/p000617882?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000634865",
+            "title": "Synthetic document p000634865 topic0",
+            "content": "commonterm ERR_CONN_RESET vocab16197 vocab2524 vocab37441 vocab64885 vocab58347 vocab24648 vocab44521 vocab50274 vocab11656 vocab26810 vocab50172 vocab40509 vocab12533 vocab3825 vocab14858 vocab28925 vocab57643 vocab1666 vocab42986 vocab32515 vocab36614 vocab34246 vocab12164 vocab2823 vocab15425 vocab48444 vocab45130 vocab63688 vocab10712 vocab49682 vocab24904 vocab44458 vocab49066 vocab31113 vocab53420 vocab25202 vocab62762 vocab9753 vocab8415 vocab61999 vocab36676 vocab12886 vocab13754 vocab32367 vocab34962 vocab26728 vocab22410 vocab11921 vocab28329 vocab17945 vocab27039 vocab39121 vocab25136 vocab58492 vocab22592 vocab46242 vocab14217 vocab62270 vocab48683 vocab23267 vocab55298 vocab56233 vocab60053 vocab52383 vocab20270 vocab62253 vocab1562 vocab64733 vocab19622 vocab49544 vocab65425 vocab35243 vocab18273 vocab64468 vocab32105 vocab45065 vocab59395 vocab1539 vocab23481 vocab21098 vocab64430 vocab25508 vocab18867 vocab40138 vocab61998 vocab30314 vocab54610 vocab22786 vocab57033 vocab7623 vocab26618 vocab5927",
+            "url": "/api/research/pages/p000634865?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000651848",
+            "title": "Synthetic document p000651848 topic8",
+            "content": "commonterm ERR_CONN_RESET vocab64512 vocab33992 vocab47014 vocab26414 vocab63221 vocab45559 vocab62745 vocab32267 vocab50367 vocab53323 vocab51875 vocab40305 vocab17756 vocab26033 vocab61174 vocab30354 vocab271 vocab21084 vocab21175 vocab59891 vocab26166 vocab41797 vocab32154 vocab33920 vocab16895 vocab54769 vocab13411 vocab35028 vocab42419 vocab5743 vocab38371 vocab40864 vocab31642 vocab22755 vocab24914 vocab54479 vocab14919 vocab24836 vocab40189 vocab27549 vocab59469 vocab21363 vocab56694 vocab49270 vocab26523 vocab47640 vocab29154 vocab50859 vocab35050 vocab19674 vocab59740 vocab52212 vocab45726 vocab4704 vocab48044 vocab16926 vocab53167 vocab12925 vocab25406 vocab21716 vocab56746 vocab1004 vocab13973 vocab56441 vocab13661 vocab41971 vocab20752 vocab33722 vocab49189 vocab11278 vocab61360 vocab13676 vocab10454 vocab1441 vocab34574 vocab65016 vocab25412 vocab46203 vocab24707 vocab56607 vocab64273 vocab24312 vocab12896 vocab62481 vocab31003 vocab24147 vocab37727 vocab10900 vocab45733 vocab48839 vocab61324 vocab17785",
+            "url": "/api/research/pages/p000651848?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000668831",
+            "title": "Synthetic document p000668831 topic16",
+            "content": "commonterm ERR_CONN_RESET vocab63331 vocab38939 vocab30158 vocab378 vocab35077 vocab32063 vocab12357 vocab15298 vocab60560 vocab59099 vocab7147 vocab36258 vocab61512 vocab4670 vocab56255 vocab36735 vocab42004 vocab19991 vocab41056 vocab62195 vocab14550 vocab36447 vocab10894 vocab17183 vocab8396 vocab27436 vocab3684 vocab19287 vocab9781 vocab37462 vocab29602 vocab32746 vocab45328 vocab46866 vocab28126 vocab28812 vocab57942 vocab62294 vocab49315 vocab29412 vocab3115 vocab30152 vocab27801 vocab31445 vocab39978 vocab27051 vocab33129 vocab9577 vocab36037 vocab11630 vocab26969 vocab36899 vocab40243 vocab64798 vocab46714 vocab56230 vocab33082 vocab46972 vocab39341 vocab21203 vocab18633 vocab49680 vocab59255 vocab61813 vocab53501 vocab38789 vocab60215 vocab26813 vocab51862 vocab38550 vocab53930 vocab22798 vocab1084 vocab32419 vocab62019 vocab10945 vocab25168 vocab33289 vocab50579 vocab32969 vocab24893 vocab18125 vocab22041 vocab9895 vocab26030 vocab48475 vocab15885 vocab33604 vocab4860 vocab38561 vocab46092 vocab3509",
+            "url": "/api/research/pages/p000668831?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000685814",
+            "title": "Synthetic document p000685814 topic24",
+            "content": "commonterm ERR_CONN_RESET vocab259 vocab1967 vocab36874 vocab64416 vocab10324 vocab47457 vocab44113 vocab25975 vocab3996 vocab37563 vocab19706 vocab63480 vocab10393 vocab24004 vocab54833 vocab21146 vocab53752 vocab22017 vocab28832 vocab27645 vocab21947 vocab52957 vocab46954 vocab2673 vocab11915 vocab18358 vocab13285 vocab9392 vocab46366 vocab27247 vocab57506 vocab25665 vocab32059 vocab10112 vocab53658 vocab34716 vocab53260 vocab30129 vocab22908 vocab64715 vocab29064 vocab32915 vocab35880 vocab8464 vocab10806 vocab35443 vocab12571 vocab5360 vocab46482 vocab23055 vocab36376 vocab61237 vocab61265 vocab45603 vocab31030 vocab59424 vocab40459 vocab40676 vocab41912 vocab10276 vocab23356 vocab22156 vocab14537 vocab16184 vocab8633 vocab40913 vocab49537 vocab49124 vocab16205 vocab44952 vocab63498 vocab2420 vocab59415 vocab32183 vocab62398 vocab32044 vocab28840 vocab28018 vocab16264 vocab26452 vocab49330 vocab62578 vocab9772 vocab21037 vocab37492 vocab1892 vocab27612 vocab45616 vocab56112 vocab55440 vocab24443 vocab17893",
+            "url": "/api/research/pages/p000685814?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000702797",
+            "title": "Synthetic document p000702797 topic32",
+            "content": "commonterm ERR_CONN_RESET vocab8842 vocab13328 vocab44714 vocab29275 vocab20958 vocab19202 vocab48744 vocab54857 vocab61122 vocab21105 vocab58685 vocab61610 vocab63592 vocab28398 vocab45867 vocab2776 vocab18451 vocab34467 vocab59994 vocab26891 vocab21566 vocab22278 vocab65516 vocab47640 vocab25053 vocab15922 vocab30523 vocab14051 vocab44345 vocab14018 vocab34058 vocab40076 vocab47975 vocab15529 vocab24583 vocab50518 vocab25104 vocab20759 vocab55756 vocab46027 vocab63313 vocab29991 vocab16775 vocab9424 vocab10366 vocab60255 vocab45096 vocab47896 vocab6251 vocab23479 vocab8018 vocab33315 vocab41877 vocab1438 vocab46472 vocab21599 vocab33705 vocab22545 vocab31174 vocab50999 vocab37984 vocab52251 vocab57048 vocab16913 vocab38829 vocab17891 vocab35070 vocab2143 vocab23972 vocab49169 vocab63249 vocab38791 vocab5533 vocab55827 vocab37498 vocab60807 vocab62553 vocab25286 vocab48378 vocab1120 vocab29092 vocab60129 vocab20227 vocab40911 vocab27686 vocab44568 vocab49346 vocab36133 vocab30249 vocab48007 vocab28119 vocab19616",
+            "url": "/api/research/pages/p000702797?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000770729",
+            "title": "Synthetic document p000770729 topic64",
+            "content": "commonterm ERR_CONN_RESET vocab58204 vocab64237 vocab21233 vocab29278 vocab24991 vocab47063 vocab36457 vocab32020 vocab14634 vocab8530 vocab37486 vocab16274 vocab23224 vocab38865 vocab30122 vocab25468 vocab28296 vocab63428 vocab30458 vocab11638 vocab53605 vocab61293 vocab61081 vocab11328 vocab24365 vocab37898 vocab62300 vocab31525 vocab38974 vocab30236 vocab53912 vocab47334 vocab4067 vocab17418 vocab41249 vocab11401 vocab16363 vocab43875 vocab35157 vocab21542 vocab11458 vocab42704 vocab25803 vocab64823 vocab32706 vocab24629 vocab43140 vocab19448 vocab65186 vocab11619 vocab26609 vocab21985 vocab37285 vocab64156 vocab24853 vocab15741 vocab43118 vocab3370 vocab41648 vocab43426 vocab11844 vocab34859 vocab1784 vocab42402 vocab20271 vocab11964 vocab19292 vocab43954 vocab9828 vocab60734 vocab10591 vocab60812 vocab24452 vocab14026 vocab64807 vocab9723 vocab12047 vocab40155 vocab37298 vocab36224 vocab56016 vocab20069 vocab26979 vocab33156 vocab31717 vocab39620 vocab8877 vocab8032 vocab23632 vocab22712 vocab47546 vocab49589",
+            "url": "/api/research/pages/p000770729?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 1.3580810000003112,
+          "pageMs": 8.409848000000238
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=ERR_CONN_RESET&page=1&pageSize=10",
+      "user": "all",
+      "elapsedMs": 153.9253960000001,
+      "status": 200,
+      "bytes": 12012,
+      "sha256": "28e90aa7c5e693abc2e80d367dbd9a999e0bb10d6829e86e47138fe7f73cbbec",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 58824,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p000349282",
+            "title": "Synthetic document p000349282 topic82",
+            "content": "commonterm ERR_CONN_RESET vocab22094 vocab47007 vocab49139 vocab62444 vocab32141 vocab17757 vocab60103 vocab60794 vocab30243 vocab23671 vocab13178 vocab33495 vocab20242 vocab27792 vocab49441 vocab31540 vocab57279 vocab21672 vocab49275 vocab57277 vocab18789 vocab60622 vocab43471 vocab40963 vocab40085 vocab54829 vocab57773 vocab55995 vocab62771 vocab43734 vocab20123 vocab43888 vocab43286 vocab5321 vocab47078 vocab11393 vocab36834 vocab32682 vocab35441 vocab43544 vocab57277 vocab45239 vocab49188 vocab18400 vocab24628 vocab28942 vocab38615 vocab16754 vocab13724 vocab22130 vocab28565 vocab63984 vocab30977 vocab3314 vocab61434 vocab34331 vocab38819 vocab36605 vocab42900 vocab44897 vocab19232 vocab12033 vocab62667 vocab56266 vocab61671 vocab46048 vocab10148 vocab39188 vocab49245 vocab13544 vocab61342 vocab39557 vocab34923 vocab8142 vocab13469 vocab10726 vocab34841 vocab15608 vocab35103 vocab20507 vocab46122 vocab12590 vocab47163 vocab22087 vocab60383 vocab43622 vocab17574 vocab49284 vocab52198 vocab49105 vocab20178",
+            "url": "/api/research/pages/p000349282?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000377842",
+            "title": "Synthetic document p000377842 topic27",
+            "content": "commonterm ERR_CONN_RESET vocab22454 vocab46047 vocab58599 vocab51836 vocab50241 vocab29770 vocab5801 vocab59918 vocab60565 vocab59266 vocab29045 vocab35350 vocab44494 vocab42310 vocab13035 vocab58792 vocab21281 vocab6731 vocab62309 vocab46110 vocab38309 vocab65498 vocab36705 vocab58659 vocab37485 vocab62344 vocab12879 vocab13213 vocab22678 vocab14295 vocab57150 vocab17141 vocab19185 vocab11083 vocab46628 vocab47427 vocab22813 vocab52842 vocab63805 vocab12487 vocab26616 vocab35830 vocab11189 vocab29196 vocab38434 vocab17875 vocab64777 vocab29319 vocab28269 vocab47135 vocab36988 vocab65209 vocab28644 vocab43714 vocab46640 vocab34485 vocab57260 vocab51066 vocab10258 vocab46642 vocab44271 vocab30536 vocab57934 vocab17055 vocab36336 vocab18726 vocab46728 vocab18953 vocab56803 vocab11879 vocab37634 vocab18000 vocab19515 vocab20992 vocab49920 vocab62449 vocab15851 vocab12084 vocab35977 vocab22467 vocab15355 vocab35517 vocab38368 vocab10219 vocab8694 vocab52325 vocab30548 vocab45762 vocab28911 vocab25974 vocab46528",
+            "url": "/api/research/pages/p000377842?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000492235",
+            "title": "Synthetic document p000492235 topic57",
+            "content": "commonterm ERR_CONN_RESET vocab20968 vocab13803 vocab29138 vocab44925 vocab16545 vocab8713 vocab57534 vocab41279 vocab28204 vocab11344 vocab39625 vocab47208 vocab35628 vocab63302 vocab13669 vocab44417 vocab28807 vocab43885 vocab12412 vocab38846 vocab63407 vocab40910 vocab31968 vocab58548 vocab52172 vocab19912 vocab48080 vocab58490 vocab20177 vocab53155 vocab62889 vocab55626 vocab18266 vocab60811 vocab17462 vocab27264 vocab29770 vocab42085 vocab63406 vocab46161 vocab37692 vocab20153 vocab26384 vocab42465 vocab9458 vocab37911 vocab18097 vocab58627 vocab14057 vocab12700 vocab34850 vocab15572 vocab37140 vocab34144 vocab40345 vocab33944 vocab19546 vocab33217 vocab27325 vocab18462 vocab21139 vocab17620 vocab50480 vocab12100 vocab44799 vocab20103 vocab13100 vocab14227 vocab32582 vocab13464 vocab55470 vocab45085 vocab19641 vocab63314 vocab32252 vocab51509 vocab54623 vocab30445 vocab32191 vocab21811 vocab20156 vocab46110 vocab35725 vocab23013 vocab42393 vocab3135 vocab43302 vocab36873 vocab22488 vocab13397 vocab27340",
+            "url": "/api/research/pages/p000492235?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000494632",
+            "title": "Synthetic document p000494632 topic29",
+            "content": "commonterm ERR_CONN_RESET vocab20762 vocab52470 vocab45776 vocab21970 vocab38231 vocab16800 vocab38855 vocab31056 vocab24622 vocab41656 vocab45166 vocab37242 vocab19694 vocab48804 vocab61762 vocab38778 vocab58933 vocab41194 vocab10112 vocab20551 vocab33318 vocab42065 vocab59999 vocab41021 vocab63493 vocab47993 vocab38010 vocab11910 vocab49904 vocab17685 vocab10495 vocab47812 vocab51842 vocab63702 vocab47761 vocab11890 vocab29855 vocab16866 vocab39341 vocab50594 vocab60662 vocab18185 vocab10726 vocab40755 vocab17620 vocab60996 vocab53470 vocab37110 vocab25205 vocab39881 vocab14039 vocab16398 vocab27655 vocab49581 vocab28602 vocab5684 vocab36574 vocab27546 vocab19530 vocab40746 vocab41201 vocab50100 vocab7532 vocab10618 vocab52046 vocab15894 vocab40801 vocab26766 vocab55261 vocab2283 vocab44234 vocab14857 vocab57100 vocab16228 vocab14560 vocab62611 vocab18962 vocab47818 vocab57433 vocab52984 vocab46351 vocab50340 vocab56441 vocab59959 vocab11250 vocab35332 vocab59146 vocab44634 vocab14042 vocab53501 vocab43008",
+            "url": "/api/research/pages/p000494632?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000506957",
+            "title": "Synthetic document p000506957 topic35",
+            "content": "commonterm ERR_CONN_RESET vocab61922 vocab30582 vocab25247 vocab63717 vocab26928 vocab57022 vocab19350 vocab37282 vocab45254 vocab4452 vocab14795 vocab15055 vocab33268 vocab42874 vocab27535 vocab18752 vocab59684 vocab27731 vocab17620 vocab25634 vocab20284 vocab53066 vocab50995 vocab64986 vocab65379 vocab30203 vocab32376 vocab7084 vocab58099 vocab15837 vocab29151 vocab32522 vocab24761 vocab41734 vocab17160 vocab26902 vocab17796 vocab26788 vocab14865 vocab48369 vocab52118 vocab19656 vocab47193 vocab49755 vocab45002 vocab21526 vocab15902 vocab61640 vocab16182 vocab24723 vocab50174 vocab24665 vocab54426 vocab12074 vocab20784 vocab29959 vocab56931 vocab18029 vocab13143 vocab41953 vocab48375 vocab42743 vocab49790 vocab45853 vocab32646 vocab47028 vocab39410 vocab48217 vocab62093 vocab9419 vocab33907 vocab55544 vocab37886 vocab47077 vocab56505 vocab19551 vocab29329 vocab51797 vocab44802 vocab33461 vocab45822 vocab23487 vocab42469 vocab50295 vocab52999 vocab35060 vocab44939 vocab16521 vocab46771 vocab52779 vocab22026",
+            "url": "/api/research/pages/p000506957?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000904247",
+            "title": "Synthetic document p000904247 topic13",
+            "content": "commonterm ERR_CONN_RESET vocab57704 vocab62383 vocab10645 vocab20608 vocab26616 vocab15767 vocab35043 vocab21778 vocab40917 vocab51415 vocab25348 vocab35658 vocab42142 vocab26636 vocab11193 vocab17613 vocab14350 vocab22554 vocab11910 vocab39126 vocab65262 vocab43232 vocab27816 vocab45612 vocab36210 vocab44715 vocab60684 vocab54717 vocab55697 vocab43960 vocab38656 vocab45275 vocab30267 vocab4694 vocab35150 vocab17960 vocab38138 vocab30803 vocab54749 vocab65070 vocab33005 vocab40225 vocab10576 vocab2738 vocab12625 vocab19971 vocab64881 vocab23699 vocab21618 vocab29798 vocab30902 vocab36367 vocab43617 vocab38571 vocab32821 vocab39781 vocab41836 vocab10700 vocab12136 vocab12159 vocab41422 vocab20298 vocab29649 vocab29753 vocab28521 vocab13331 vocab53996 vocab59740 vocab51557 vocab40673 vocab39966 vocab26859 vocab40418 vocab25022 vocab29181 vocab49849 vocab3004 vocab47995 vocab42780 vocab49833 vocab32673 vocab27556 vocab42923 vocab55772 vocab63351 vocab51642 vocab38506 vocab55919 vocab30520 vocab15372 vocab14426",
+            "url": "/api/research/pages/p000904247?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000926432",
+            "title": "Synthetic document p000926432 topic82",
+            "content": "commonterm ERR_CONN_RESET vocab14813 vocab34599 vocab23555 vocab15656 vocab58530 vocab37777 vocab46026 vocab17258 vocab52244 vocab11133 vocab35952 vocab35327 vocab42599 vocab11260 vocab39022 vocab50350 vocab39359 vocab31798 vocab13298 vocab52674 vocab28471 vocab56655 vocab51919 vocab42621 vocab39542 vocab30071 vocab17097 vocab23661 vocab2354 vocab14169 vocab49799 vocab42267 vocab17144 vocab29670 vocab26326 vocab62293 vocab23730 vocab37629 vocab54117 vocab36134 vocab22312 vocab33347 vocab41279 vocab48727 vocab51689 vocab58840 vocab28933 vocab20661 vocab29086 vocab36144 vocab27879 vocab21843 vocab35060 vocab35899 vocab48475 vocab22178 vocab36992 vocab52767 vocab22914 vocab3725 vocab28733 vocab15887 vocab31023 vocab25653 vocab64274 vocab55081 vocab57209 vocab49692 vocab15170 vocab16744 vocab30176 vocab56022 vocab24425 vocab43738 vocab14867 vocab10705 vocab44347 vocab35474 vocab60693 vocab62641 vocab58150 vocab7268 vocab50939 vocab22419 vocab50489 vocab30643 vocab45737 vocab43870 vocab59335 vocab46649 vocab53854",
+            "url": "/api/research/pages/p000926432?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000068",
+            "title": "Synthetic document p000000068 topic68",
+            "content": "commonterm ERR_CONN_RESET vocab57878 vocab24263 vocab61661 vocab1768 vocab49792 vocab563 vocab60221 vocab32926 vocab44474 vocab18728 vocab1729 vocab33908 vocab44841 vocab51905 vocab57624 vocab29400 vocab32722 vocab39913 vocab35193 vocab57523 vocab54561 vocab49396 vocab26382 vocab34470 vocab45392 vocab64175 vocab24952 vocab41781 vocab37753 vocab49237 vocab34558 vocab15229 vocab65474 vocab41151 vocab53911 vocab62907 vocab39840 vocab42775 vocab34241 vocab6371 vocab49214 vocab6267 vocab8146 vocab21640 vocab19060 vocab9651 vocab6793 vocab52368 vocab8874 vocab52881 vocab52716 vocab44236 vocab24859 vocab15108 vocab62386 vocab32772 vocab41537 vocab32694 vocab33914 vocab40727 vocab59760 vocab55632 vocab12307 vocab12658 vocab5923 vocab54182 vocab17115 vocab62942 vocab34315 vocab56844 vocab22929 vocab38227 vocab45420 vocab19300 vocab58223 vocab3999 vocab32634 vocab26842 vocab30977 vocab34386 vocab57483 vocab6475 vocab47330 vocab45587 vocab1633 vocab61697 vocab63067 vocab21124 vocab50648 vocab12997 vocab38753 vocab65066",
+            "url": "/api/research/pages/p000000068?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000085",
+            "title": "Synthetic document p000000085 topic85",
+            "content": "commonterm ERR_CONN_RESET vocab20722 vocab59117 vocab39812 vocab52366 vocab34784 vocab22286 vocab29022 vocab31167 vocab32621 vocab33282 vocab39813 vocab13257 vocab18744 vocab34304 vocab10823 vocab34261 vocab27821 vocab25430 vocab60408 vocab37813 vocab33529 vocab19449 vocab41287 vocab4501 vocab31331 vocab57435 vocab22693 vocab61467 vocab43581 vocab5323 vocab427 vocab41246 vocab16384 vocab41342 vocab53369 vocab15289 vocab32232 vocab13415 vocab34654 vocab21691 vocab15753 vocab458 vocab56134 vocab27252 vocab41654 vocab55907 vocab23813 vocab39573 vocab30729 vocab49630 vocab55711 vocab48147 vocab47377 vocab20053 vocab10008 vocab25043 vocab28378 vocab17543 vocab60760 vocab4685 vocab60476 vocab33758 vocab63819 vocab53674 vocab3228 vocab22341 vocab16793 vocab40988 vocab40755 vocab43615 vocab42356 vocab43947 vocab14955 vocab21876 vocab50075 vocab12661 vocab28459 vocab40728 vocab37529 vocab26244 vocab52832 vocab54393 vocab8568 vocab62750 vocab32485 vocab45482 vocab61606 vocab4073 vocab59370 vocab60790 vocab59484 vocab35804",
+            "url": "/api/research/pages/p000000085?release=ms1-v1",
+            "highlight": null
+          },
+          {
+            "id": "p000000119",
+            "title": "Synthetic document p000000119 topic22",
+            "content": "commonterm ERR_CONN_RESET vocab34075 vocab39827 vocab63664 vocab65246 vocab21577 vocab14936 vocab29397 vocab38865 vocab20315 vocab24230 vocab59120 vocab51853 vocab43067 vocab31570 vocab36232 vocab11007 vocab21308 vocab42286 vocab45856 vocab46965 vocab41414 vocab12678 vocab58680 vocab63583 vocab12652 vocab58852 vocab50506 vocab26443 vocab44074 vocab34700 vocab30044 vocab34969 vocab30863 vocab46842 vocab15818 vocab18260 vocab39378 vocab54363 vocab35837 vocab2198 vocab61832 vocab32447 vocab30219 vocab33943 vocab63927 vocab477 vocab35009 vocab16034 vocab25727 vocab61396 vocab30586 vocab1272 vocab32615 vocab17090 vocab20589 vocab35191 vocab43928 vocab47171 vocab18921 vocab20214 vocab44030 vocab61084 vocab52574 vocab54159 vocab2671 vocab38095 vocab51121 vocab25140 vocab21231 vocab5809 vocab32000 vocab29126 vocab7045 vocab49885 vocab22621 vocab30931 vocab55810 vocab29445 vocab1500 vocab27026 vocab21385 vocab27111 vocab7807 vocab52214 vocab13052 vocab20211 vocab60586 vocab40251 vocab3542 vocab35710 vocab53403 vocab58696",
+            "url": "/api/research/pages/p000000119?release=ms1-v1",
+            "highlight": null
+          }
+        ],
+        "metrics": {
+          "countMs": 8.017463999999563,
+          "pageMs": 142.68268699999953
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=absentquartz&page=1&pageSize=10",
+      "user": "all",
+      "elapsedMs": 2.715712000000167,
+      "status": 200,
+      "bytes": 253,
+      "sha256": "3ca03cc9f75e08e1fbcd143259f8b6c137b3284bcfaa0e68638ee93e36ef42b4",
+      "body": {
+        "schemaVersion": "ms1-v1",
+        "release": "ms1-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 0,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [],
+        "metrics": {
+          "countMs": 0.1934080000000904,
+          "pageMs": 0.09582299999965471
+        }
+      }
+    },
+    {
+      "path": "/api/research/search?engine=sqlite&q=commonterm&page=100000&pageSize=10",
+      "user": "all",
+      "elapsedMs": 5008.905086,
+      "error": "The operation was aborted due to timeout",
+      "timeout": true
+    }
+  ],
+  "oraclePreparationMs": 1452.4869889999998,
+  "oracleCache": {
+    "[\"huge\",\"commonterm\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 500000,
+      "H": 500000,
+      "total": 500000,
+      "sampleIds": [
+        "p000000000",
+        "p000000001",
+        "p000000002",
+        "p000000003",
+        "p000000004",
+        "p000000005",
+        "p000000006",
+        "p000000007",
+        "p000000008",
+        "p000000009",
+        "p000000010",
+        "p000000011",
+        "p000000012",
+        "p000000013",
+        "p000000014",
+        "p000000015",
+        "p000000016",
+        "p000000017",
+        "p000000018",
+        "p000000019"
+      ]
+    },
+    "[\"huge\",\"rarebeacon\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 500000,
+      "H": 502,
+      "total": 502,
+      "sampleIds": [
+        "p000000000",
+        "p000000997",
+        "p000001994",
+        "p000002991",
+        "p000003988",
+        "p000004985",
+        "p000005982",
+        "p000006979",
+        "p000007976",
+        "p000008973",
+        "p000009970",
+        "p000010967",
+        "p000011964",
+        "p000012961",
+        "p000013958",
+        "p000014955",
+        "p000015952",
+        "p000016949",
+        "p000017946",
+        "p000018943"
+      ]
+    },
+    "[\"huge\",\"備份\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 500000,
+      "H": 26316,
+      "total": 26316,
+      "sampleIds": [
+        "p000000000",
+        "p000000019",
+        "p000000038",
+        "p000000057",
+        "p000000076",
+        "p000000095",
+        "p000000114",
+        "p000000133",
+        "p000000152",
+        "p000000171",
+        "p000000190",
+        "p000000209",
+        "p000000228",
+        "p000000247",
+        "p000000266",
+        "p000000285",
+        "p000000304",
+        "p000000323",
+        "p000000342",
+        "p000000361"
+      ]
+    },
+    "[\"huge\",\"資料庫備份\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 500000,
+      "H": 26316,
+      "total": 26316,
+      "sampleIds": [
+        "p000000000",
+        "p000000019",
+        "p000000038",
+        "p000000057",
+        "p000000076",
+        "p000000095",
+        "p000000114",
+        "p000000133",
+        "p000000152",
+        "p000000171",
+        "p000000190",
+        "p000000209",
+        "p000000228",
+        "p000000247",
+        "p000000266",
+        "p000000285",
+        "p000000304",
+        "p000000323",
+        "p000000342",
+        "p000000361"
+      ]
+    },
+    "[\"huge\",\"ERR_CONN_RESET\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 500000,
+      "H": 29412,
+      "total": 29412,
+      "sampleIds": [
+        "p000000000",
+        "p000000017",
+        "p000000034",
+        "p000000051",
+        "p000000068",
+        "p000000085",
+        "p000000102",
+        "p000000119",
+        "p000000136",
+        "p000000153",
+        "p000000170",
+        "p000000187",
+        "p000000204",
+        "p000000221",
+        "p000000238",
+        "p000000255",
+        "p000000272",
+        "p000000289",
+        "p000000306",
+        "p000000323"
+      ]
+    },
+    "[\"huge\",\"absentquartz\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 500000,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"small\",\"commonterm\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 501,
+      "H": 501,
+      "total": 501,
+      "sampleIds": [
+        "p000500000",
+        "p000500999",
+        "p000501998",
+        "p000502997",
+        "p000503996",
+        "p000504995",
+        "p000505994",
+        "p000506993",
+        "p000507992",
+        "p000508991",
+        "p000509990",
+        "p000510989",
+        "p000511988",
+        "p000512987",
+        "p000513986",
+        "p000514985",
+        "p000515984",
+        "p000516983",
+        "p000517982",
+        "p000518981"
+      ]
+    },
+    "[\"small\",\"rarebeacon\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 501,
+      "H": 1,
+      "total": 1,
+      "sampleIds": [
+        "p000746753"
+      ]
+    },
+    "[\"small\",\"備份\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 501,
+      "H": 26,
+      "total": 26,
+      "sampleIds": [
+        "p000508991",
+        "p000527972",
+        "p000546953",
+        "p000565934",
+        "p000584915",
+        "p000603896",
+        "p000622877",
+        "p000641858",
+        "p000660839",
+        "p000679820",
+        "p000698801",
+        "p000717782",
+        "p000736763",
+        "p000755744",
+        "p000774725",
+        "p000793706",
+        "p000812687",
+        "p000831668",
+        "p000850649",
+        "p000869630"
+      ]
+    },
+    "[\"small\",\"資料庫備份\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 501,
+      "H": 26,
+      "total": 26,
+      "sampleIds": [
+        "p000508991",
+        "p000527972",
+        "p000546953",
+        "p000565934",
+        "p000584915",
+        "p000603896",
+        "p000622877",
+        "p000641858",
+        "p000660839",
+        "p000679820",
+        "p000698801",
+        "p000717782",
+        "p000736763",
+        "p000755744",
+        "p000774725",
+        "p000793706",
+        "p000812687",
+        "p000831668",
+        "p000850649",
+        "p000869630"
+      ]
+    },
+    "[\"small\",\"ERR_CONN_RESET\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 501,
+      "H": 29,
+      "total": 29,
+      "sampleIds": [
+        "p000515984",
+        "p000532967",
+        "p000549950",
+        "p000566933",
+        "p000583916",
+        "p000600899",
+        "p000617882",
+        "p000634865",
+        "p000651848",
+        "p000668831",
+        "p000685814",
+        "p000702797",
+        "p000719780",
+        "p000736763",
+        "p000753746",
+        "p000770729",
+        "p000787712",
+        "p000804695",
+        "p000821678",
+        "p000838661"
+      ]
+    },
+    "[\"small\",\"absentquartz\",null]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 501,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"pair\",\"commonterm\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 1002,
+      "H": 1002,
+      "total": 1002,
+      "sampleIds": [
+        "p000500000",
+        "p000500001",
+        "p000500999",
+        "p000501000",
+        "p000501998",
+        "p000501999",
+        "p000502997",
+        "p000502998",
+        "p000503996",
+        "p000503997",
+        "p000504995",
+        "p000504996",
+        "p000505994",
+        "p000505995",
+        "p000506993",
+        "p000506994",
+        "p000507992",
+        "p000507993",
+        "p000508991",
+        "p000508992"
+      ]
+    },
+    "[\"pair\",\"rarebeacon\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 1002,
+      "H": 1,
+      "total": 1,
+      "sampleIds": [
+        "p000746753"
+      ]
+    },
+    "[\"pair\",\"備份\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 1002,
+      "H": 53,
+      "total": 53,
+      "sampleIds": [
+        "p000501999",
+        "p000508991",
+        "p000520980",
+        "p000527972",
+        "p000539961",
+        "p000546953",
+        "p000558942",
+        "p000565934",
+        "p000577923",
+        "p000584915",
+        "p000596904",
+        "p000603896",
+        "p000615885",
+        "p000622877",
+        "p000634866",
+        "p000641858",
+        "p000653847",
+        "p000660839",
+        "p000672828",
+        "p000679820"
+      ]
+    },
+    "[\"pair\",\"資料庫備份\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 1002,
+      "H": 53,
+      "total": 53,
+      "sampleIds": [
+        "p000501999",
+        "p000508991",
+        "p000520980",
+        "p000527972",
+        "p000539961",
+        "p000546953",
+        "p000558942",
+        "p000565934",
+        "p000577923",
+        "p000584915",
+        "p000596904",
+        "p000603896",
+        "p000615885",
+        "p000622877",
+        "p000634866",
+        "p000641858",
+        "p000653847",
+        "p000660839",
+        "p000672828",
+        "p000679820"
+      ]
+    },
+    "[\"pair\",\"ERR_CONN_RESET\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 1002,
+      "H": 58,
+      "total": 58,
+      "sampleIds": [
+        "p000511989",
+        "p000515984",
+        "p000528972",
+        "p000532967",
+        "p000545955",
+        "p000549950",
+        "p000562938",
+        "p000566933",
+        "p000579921",
+        "p000583916",
+        "p000596904",
+        "p000600899",
+        "p000613887",
+        "p000617882",
+        "p000630870",
+        "p000634865",
+        "p000647853",
+        "p000651848",
+        "p000664836",
+        "p000668831"
+      ]
+    },
+    "[\"pair\",\"absentquartz\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 1002,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"multi\",\"commonterm\",null]": {
+      "N": 1000000,
+      "K": 10,
+      "A": 5010,
+      "H": 5010,
+      "total": 5010,
+      "sampleIds": [
+        "p000500000",
+        "p000500001",
+        "p000500002",
+        "p000500003",
+        "p000500004",
+        "p000500005",
+        "p000500006",
+        "p000500007",
+        "p000500008",
+        "p000500009",
+        "p000500999",
+        "p000501000",
+        "p000501001",
+        "p000501002",
+        "p000501003",
+        "p000501004",
+        "p000501005",
+        "p000501006",
+        "p000501007",
+        "p000501008"
+      ]
+    },
+    "[\"multi\",\"rarebeacon\",null]": {
+      "N": 1000000,
+      "K": 10,
+      "A": 5010,
+      "H": 5,
+      "total": 5,
+      "sampleIds": [
+        "p000742765",
+        "p000743762",
+        "p000744759",
+        "p000745756",
+        "p000746753"
+      ]
+    },
+    "[\"multi\",\"備份\",null]": {
+      "N": 1000000,
+      "K": 10,
+      "A": 5010,
+      "H": 264,
+      "total": 264,
+      "sampleIds": [
+        "p000500004",
+        "p000501999",
+        "p000503006",
+        "p000505001",
+        "p000506996",
+        "p000508991",
+        "p000509998",
+        "p000511993",
+        "p000513988",
+        "p000516990",
+        "p000518985",
+        "p000520980",
+        "p000521987",
+        "p000523982",
+        "p000525977",
+        "p000527972",
+        "p000528979",
+        "p000530974",
+        "p000532969",
+        "p000535971"
+      ]
+    },
+    "[\"multi\",\"資料庫備份\",null]": {
+      "N": 1000000,
+      "K": 10,
+      "A": 5010,
+      "H": 264,
+      "total": 264,
+      "sampleIds": [
+        "p000500004",
+        "p000501999",
+        "p000503006",
+        "p000505001",
+        "p000506996",
+        "p000508991",
+        "p000509998",
+        "p000511993",
+        "p000513988",
+        "p000516990",
+        "p000518985",
+        "p000520980",
+        "p000521987",
+        "p000523982",
+        "p000525977",
+        "p000527972",
+        "p000528979",
+        "p000530974",
+        "p000532969",
+        "p000535971"
+      ]
+    },
+    "[\"multi\",\"ERR_CONN_RESET\",null]": {
+      "N": 1000000,
+      "K": 10,
+      "A": 5010,
+      "H": 294,
+      "total": 294,
+      "sampleIds": [
+        "p000500004",
+        "p000501007",
+        "p000503999",
+        "p000505002",
+        "p000507994",
+        "p000508997",
+        "p000511989",
+        "p000512992",
+        "p000513995",
+        "p000515984",
+        "p000516987",
+        "p000517990",
+        "p000520982",
+        "p000521985",
+        "p000524977",
+        "p000525980",
+        "p000528972",
+        "p000529975",
+        "p000530978",
+        "p000532967"
+      ]
+    },
+    "[\"multi\",\"absentquartz\",null]": {
+      "N": 1000000,
+      "K": 10,
+      "A": 5010,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"many\",\"commonterm\",null]": {
+      "N": 1000000,
+      "K": 100,
+      "A": 50100,
+      "H": 50100,
+      "total": 50100,
+      "sampleIds": [
+        "p000500000",
+        "p000500001",
+        "p000500002",
+        "p000500003",
+        "p000500004",
+        "p000500005",
+        "p000500006",
+        "p000500007",
+        "p000500008",
+        "p000500009",
+        "p000500010",
+        "p000500011",
+        "p000500012",
+        "p000500013",
+        "p000500014",
+        "p000500015",
+        "p000500016",
+        "p000500017",
+        "p000500018",
+        "p000500019"
+      ]
+    },
+    "[\"many\",\"rarebeacon\",null]": {
+      "N": 1000000,
+      "K": 100,
+      "A": 50100,
+      "H": 50,
+      "total": 50,
+      "sampleIds": [
+        "p000697900",
+        "p000698897",
+        "p000699894",
+        "p000700891",
+        "p000701888",
+        "p000702885",
+        "p000703882",
+        "p000704879",
+        "p000705876",
+        "p000706873",
+        "p000707870",
+        "p000708867",
+        "p000709864",
+        "p000710861",
+        "p000711858",
+        "p000712855",
+        "p000713852",
+        "p000714849",
+        "p000715846",
+        "p000716843"
+      ]
+    },
+    "[\"many\",\"備份\",null]": {
+      "N": 1000000,
+      "K": 100,
+      "A": 50100,
+      "H": 2637,
+      "total": 2637,
+      "sampleIds": [
+        "p000500004",
+        "p000500023",
+        "p000500042",
+        "p000500061",
+        "p000500080",
+        "p000500099",
+        "p000501011",
+        "p000501030",
+        "p000501049",
+        "p000501068",
+        "p000501087",
+        "p000501999",
+        "p000502018",
+        "p000502037",
+        "p000502056",
+        "p000502075",
+        "p000502094",
+        "p000503006",
+        "p000503025",
+        "p000503044"
+      ]
+    },
+    "[\"many\",\"資料庫備份\",null]": {
+      "N": 1000000,
+      "K": 100,
+      "A": 50100,
+      "H": 2637,
+      "total": 2637,
+      "sampleIds": [
+        "p000500004",
+        "p000500023",
+        "p000500042",
+        "p000500061",
+        "p000500080",
+        "p000500099",
+        "p000501011",
+        "p000501030",
+        "p000501049",
+        "p000501068",
+        "p000501087",
+        "p000501999",
+        "p000502018",
+        "p000502037",
+        "p000502056",
+        "p000502075",
+        "p000502094",
+        "p000503006",
+        "p000503025",
+        "p000503044"
+      ]
+    },
+    "[\"many\",\"ERR_CONN_RESET\",null]": {
+      "N": 1000000,
+      "K": 100,
+      "A": 50100,
+      "H": 2946,
+      "total": 2946,
+      "sampleIds": [
+        "p000500004",
+        "p000500021",
+        "p000500038",
+        "p000500055",
+        "p000500072",
+        "p000500089",
+        "p000501007",
+        "p000501024",
+        "p000501041",
+        "p000501058",
+        "p000501075",
+        "p000501092",
+        "p000502010",
+        "p000502027",
+        "p000502044",
+        "p000502061",
+        "p000502078",
+        "p000502095",
+        "p000503013",
+        "p000503030"
+      ]
+    },
+    "[\"many\",\"absentquartz\",null]": {
+      "N": 1000000,
+      "K": 100,
+      "A": 50100,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"all\",\"commonterm\",null]": {
+      "N": 1000000,
+      "K": 1000,
+      "A": 1000000,
+      "H": 1000000,
+      "total": 1000000,
+      "sampleIds": [
+        "p000000000",
+        "p000000001",
+        "p000000002",
+        "p000000003",
+        "p000000004",
+        "p000000005",
+        "p000000006",
+        "p000000007",
+        "p000000008",
+        "p000000009",
+        "p000000010",
+        "p000000011",
+        "p000000012",
+        "p000000013",
+        "p000000014",
+        "p000000015",
+        "p000000016",
+        "p000000017",
+        "p000000018",
+        "p000000019"
+      ]
+    },
+    "[\"all\",\"rarebeacon\",null]": {
+      "N": 1000000,
+      "K": 1000,
+      "A": 1000000,
+      "H": 1004,
+      "total": 1004,
+      "sampleIds": [
+        "p000000000",
+        "p000000997",
+        "p000001994",
+        "p000002991",
+        "p000003988",
+        "p000004985",
+        "p000005982",
+        "p000006979",
+        "p000007976",
+        "p000008973",
+        "p000009970",
+        "p000010967",
+        "p000011964",
+        "p000012961",
+        "p000013958",
+        "p000014955",
+        "p000015952",
+        "p000016949",
+        "p000017946",
+        "p000018943"
+      ]
+    },
+    "[\"all\",\"備份\",null]": {
+      "N": 1000000,
+      "K": 1000,
+      "A": 1000000,
+      "H": 52632,
+      "total": 52632,
+      "sampleIds": [
+        "p000000000",
+        "p000000019",
+        "p000000038",
+        "p000000057",
+        "p000000076",
+        "p000000095",
+        "p000000114",
+        "p000000133",
+        "p000000152",
+        "p000000171",
+        "p000000190",
+        "p000000209",
+        "p000000228",
+        "p000000247",
+        "p000000266",
+        "p000000285",
+        "p000000304",
+        "p000000323",
+        "p000000342",
+        "p000000361"
+      ]
+    },
+    "[\"all\",\"資料庫備份\",null]": {
+      "N": 1000000,
+      "K": 1000,
+      "A": 1000000,
+      "H": 52632,
+      "total": 52632,
+      "sampleIds": [
+        "p000000000",
+        "p000000019",
+        "p000000038",
+        "p000000057",
+        "p000000076",
+        "p000000095",
+        "p000000114",
+        "p000000133",
+        "p000000152",
+        "p000000171",
+        "p000000190",
+        "p000000209",
+        "p000000228",
+        "p000000247",
+        "p000000266",
+        "p000000285",
+        "p000000304",
+        "p000000323",
+        "p000000342",
+        "p000000361"
+      ]
+    },
+    "[\"all\",\"ERR_CONN_RESET\",null]": {
+      "N": 1000000,
+      "K": 1000,
+      "A": 1000000,
+      "H": 58824,
+      "total": 58824,
+      "sampleIds": [
+        "p000000000",
+        "p000000017",
+        "p000000034",
+        "p000000051",
+        "p000000068",
+        "p000000085",
+        "p000000102",
+        "p000000119",
+        "p000000136",
+        "p000000153",
+        "p000000170",
+        "p000000187",
+        "p000000204",
+        "p000000221",
+        "p000000238",
+        "p000000255",
+        "p000000272",
+        "p000000289",
+        "p000000306",
+        "p000000323"
+      ]
+    },
+    "[\"all\",\"absentquartz\",null]": {
+      "N": 1000000,
+      "K": 1000,
+      "A": 1000000,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"dup\",\"commonterm\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 501,
+      "H": 501,
+      "total": 501,
+      "sampleIds": [
+        "p000500000",
+        "p000500999",
+        "p000501998",
+        "p000502997",
+        "p000503996",
+        "p000504995",
+        "p000505994",
+        "p000506993",
+        "p000507992",
+        "p000508991",
+        "p000509990",
+        "p000510989",
+        "p000511988",
+        "p000512987",
+        "p000513986",
+        "p000514985",
+        "p000515984",
+        "p000516983",
+        "p000517982",
+        "p000518981"
+      ]
+    },
+    "[\"dup\",\"rarebeacon\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 501,
+      "H": 1,
+      "total": 1,
+      "sampleIds": [
+        "p000746753"
+      ]
+    },
+    "[\"dup\",\"備份\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 501,
+      "H": 26,
+      "total": 26,
+      "sampleIds": [
+        "p000508991",
+        "p000527972",
+        "p000546953",
+        "p000565934",
+        "p000584915",
+        "p000603896",
+        "p000622877",
+        "p000641858",
+        "p000660839",
+        "p000679820",
+        "p000698801",
+        "p000717782",
+        "p000736763",
+        "p000755744",
+        "p000774725",
+        "p000793706",
+        "p000812687",
+        "p000831668",
+        "p000850649",
+        "p000869630"
+      ]
+    },
+    "[\"dup\",\"資料庫備份\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 501,
+      "H": 26,
+      "total": 26,
+      "sampleIds": [
+        "p000508991",
+        "p000527972",
+        "p000546953",
+        "p000565934",
+        "p000584915",
+        "p000603896",
+        "p000622877",
+        "p000641858",
+        "p000660839",
+        "p000679820",
+        "p000698801",
+        "p000717782",
+        "p000736763",
+        "p000755744",
+        "p000774725",
+        "p000793706",
+        "p000812687",
+        "p000831668",
+        "p000850649",
+        "p000869630"
+      ]
+    },
+    "[\"dup\",\"ERR_CONN_RESET\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 501,
+      "H": 29,
+      "total": 29,
+      "sampleIds": [
+        "p000515984",
+        "p000532967",
+        "p000549950",
+        "p000566933",
+        "p000583916",
+        "p000600899",
+        "p000617882",
+        "p000634865",
+        "p000651848",
+        "p000668831",
+        "p000685814",
+        "p000702797",
+        "p000719780",
+        "p000736763",
+        "p000753746",
+        "p000770729",
+        "p000787712",
+        "p000804695",
+        "p000821678",
+        "p000838661"
+      ]
+    },
+    "[\"dup\",\"absentquartz\",null]": {
+      "N": 1000000,
+      "K": 2,
+      "A": 501,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"none\",\"commonterm\",null]": {
+      "N": 1000000,
+      "K": 0,
+      "A": 0,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"none\",\"rarebeacon\",null]": {
+      "N": 1000000,
+      "K": 0,
+      "A": 0,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"none\",\"備份\",null]": {
+      "N": 1000000,
+      "K": 0,
+      "A": 0,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"none\",\"資料庫備份\",null]": {
+      "N": 1000000,
+      "K": 0,
+      "A": 0,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"none\",\"ERR_CONN_RESET\",null]": {
+      "N": 1000000,
+      "K": 0,
+      "A": 0,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"none\",\"absentquartz\",null]": {
+      "N": 1000000,
+      "K": 0,
+      "A": 0,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    },
+    "[\"pair\",\"commonterm\",[\"s0002\"]]": {
+      "N": 1000000,
+      "K": 1,
+      "A": 501,
+      "H": 501,
+      "total": 501,
+      "sampleIds": [
+        "p000500001",
+        "p000501000",
+        "p000501999",
+        "p000502998",
+        "p000503997",
+        "p000504996",
+        "p000505995",
+        "p000506994",
+        "p000507993",
+        "p000508992",
+        "p000509991",
+        "p000510990",
+        "p000511989",
+        "p000512988",
+        "p000513987",
+        "p000514986",
+        "p000515985",
+        "p000516984",
+        "p000517983",
+        "p000518982"
+      ]
+    },
+    "[\"small\",\"commonterm\",[\"s0000\"]]": {
+      "N": 1000000,
+      "K": 0,
+      "A": 0,
+      "H": 0,
+      "total": 0,
+      "sampleIds": []
+    }
+  },
+  "limitations": [
+    "Synthetic identities only",
+    "Local artifact reader; not MinIO",
+    "Short closed-loop window, not production SLO or full RP0"
+  ],
+  "finishedAt": "2026-11-14T08:04:48.264Z",
+  "requestsCount": 14,
+  "sequentialPassed": false,
+  "capacityStagePassed": false,
+  "stopped": true
+}

@@ -1,0 +1,77 @@
+{
+  "complete": true,
+  "cell": {
+    "label": "L-full",
+    "mode": "L",
+    "state": "validated",
+    "readerPid": 1445,
+    "publishMs": 6912.5351200000005,
+    "downloadAndHashMs": 107517.342882,
+    "reader": {
+      "type": "ready",
+      "sqlite": "3.54.1",
+      "cacheSize": -16384,
+      "node": "v26.13.1",
+      "icu": "78.3"
+    },
+    "readyMs": 107544.21386,
+    "firstChainMs": 107570.45625100001,
+    "firstChainWithin120s": true,
+    "backgroundTransfer": {
+      "state": "complete",
+      "startedWallMs": 1794735282935,
+      "expectedBytes": 2133065728,
+      "getRequestId": 4,
+      "getStartWallMs": 1794735282936,
+      "finishedWallMs": 1794735390093,
+      "elapsedMs": 107158.191426,
+      "bytes": 2133065728,
+      "sha256": "25b77b24c3b54d752b246091d3f8d034cc0a8179f849bc313cada17ee2f694f1"
+    },
+    "overlapRequests": 60,
+    "fullyOverlappedRequests": 60,
+    "overlapCoverageComplete": true,
+    "replacementReaderPid": 1986,
+    "replacementReader": {
+      "type": "ready",
+      "sqlite": "3.54.1",
+      "cacheSize": -16384,
+      "node": "v26.13.1",
+      "icu": "78.3"
+    },
+    "replacementSwitchToFirstChainMs": 44.20749400000204
+  },
+  "requests": 105,
+  "auditErrors": [],
+  "peakRss": 684228608,
+  "peakBytes": 6401593344,
+  "minFree": 958035316736,
+  "remainingChildren": [],
+  "lifecycle": [
+    {
+      "name": "reader",
+      "pid": 1445,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794735391414,
+      "monoNs": "340363722684"
+    },
+    {
+      "name": "replacement-reader",
+      "pid": 1986,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794735393573,
+      "monoNs": "342522966007"
+    },
+    {
+      "name": "minio",
+      "pid": 1344,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794735395162,
+      "monoNs": "344111751750"
+    }
+  ],
+  "elapsedMs": 242777.050502
+}

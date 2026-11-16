@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "checks": [
+    "width-320",
+    "width-390",
+    "width-768",
+    "width-1280",
+    "expand-all",
+    "expanded-widths",
+    "collapse-all",
+    "keyboard-details",
+    "navigation-targets",
+    "work-scope-reachable",
+    "print-events-expand-and-restore"
+  ],
+  "errors": [],
+  "remote": [],
+  "failure": {
+    "message": "DR_TEAM_DECISION_REVIEW_20261116.md",
+    "stack": "AssertionError [ERR_ASSERTION]: DR_TEAM_DECISION_REVIEW_20261116.md\n    at file:////PUBLIC/WINDOWS_HOME/Documents/ChatGPT/Search%20Playground/scripts/team-decision-20261116/check-report.mjs:17:199"
+  },
+  "scope": "agent browser inspection; print events only, no physical print/PDF or human usability claim"
+}

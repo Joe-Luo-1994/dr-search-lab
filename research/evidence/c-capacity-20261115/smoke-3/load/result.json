@@ -1,0 +1,1056 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-11-15T16:12:33.723Z",
+  "endedAt": "2026-11-15T16:12:43.251Z",
+  "elapsedMs": 9527.077772,
+  "mode": "smoke",
+  "oracleSha256": "750ba4dcfe29598cd20950a4be0109f121a861761817b5eea4bbdb34464ae61a",
+  "seed": "c-capacity-20261115-deterministic-v1",
+  "sourceCount": 10000,
+  "bodyCoverage": "256-page hot working set; not full corpus content availability or cold-object capacity",
+  "rankingScope": "Exact total; unique eligible Top10; BM25 ordering equivalence not asserted",
+  "resourceLimits": [
+    {
+      "name": "reader",
+      "cpu": "200000 100000",
+      "memory": 1073741824,
+      "swap": 0
+    },
+    {
+      "name": "minio",
+      "cpu": "100000 100000",
+      "memory": 536870912,
+      "swap": 0
+    }
+  ],
+  "workload": {
+    "searchRates": [
+      1,
+      4,
+      8,
+      16,
+      32
+    ],
+    "contentRates": [
+      2,
+      8,
+      16,
+      32
+    ],
+    "mixedRates": [
+      2,
+      8,
+      16,
+      32
+    ],
+    "stageSeconds": 20,
+    "mixedRatio": "6 search : 3 page : 1 media",
+    "maxInflight": 64,
+    "deadlineMs": 5000,
+    "generatorLagLimitMs": 250,
+    "researchP95LimitMs": 2000,
+    "researchFailureFraction": 0.01,
+    "note": "Short bounded observations, not a production SLO or A/B comparison"
+  },
+  "fatal": null,
+  "samplingError": null,
+  "correctnessPassed": true,
+  "checks": [
+    {
+      "url": "/status",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 554,
+      "passed": true,
+      "json": {
+        "snapshotId": "v1",
+        "pid": 1597,
+        "workers": [
+          1616,
+          1617
+        ],
+        "queue": 0,
+        "contentInFlight": 0,
+        "updating": false,
+        "testHooks": true,
+        "fatal": null,
+        "events": [
+          {
+            "type": "download-start",
+            "at": 1794759134045,
+            "version": "v1",
+            "badHash": false
+          },
+          {
+            "type": "download-end",
+            "at": 1794759134134,
+            "version": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "ready",
+            "at": 1794759134208,
+            "snapshotId": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          }
+        ]
+      },
+      "elapsedMs": 22.609350999999997
+    },
+    {
+      "url": "/search?q=disaster",
+      "identity": "unknown",
+      "expected": 503,
+      "status": 503,
+      "bytes": 42,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "AUTHORIZATION_UNKNOWN"
+        }
+      },
+      "elapsedMs": 3.352251999999993
+    },
+    {
+      "url": "/search?q=disaster",
+      "identity": "none",
+      "expected": 200,
+      "status": 200,
+      "bytes": 39,
+      "passed": true,
+      "json": {
+        "snapshotId": "v1",
+        "total": 0,
+        "hits": []
+      },
+      "elapsedMs": 2.9803890000000024
+    },
+    {
+      "url": "/page?pageId=p000001&version=v1",
+      "identity": "none",
+      "expected": 404,
+      "status": 404,
+      "bytes": 30,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "NOT_FOUND"
+        }
+      },
+      "elapsedMs": 2.182698000000002
+    },
+    {
+      "url": "/media?pageId=p000001&mediaId=m0&version=v1",
+      "identity": "none",
+      "expected": 404,
+      "status": 404,
+      "bytes": 30,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "NOT_FOUND"
+        }
+      },
+      "elapsedMs": 2.143025999999992
+    },
+    {
+      "url": "/media?pageId=p000001&mediaId=m1&version=v1",
+      "identity": "all",
+      "expected": 404,
+      "status": 404,
+      "bytes": 30,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "NOT_FOUND"
+        }
+      },
+      "elapsedMs": 2.109689000000003
+    },
+    {
+      "url": "/page?pageId=p000001&version=v0",
+      "identity": "all",
+      "expected": 409,
+      "status": 409,
+      "bytes": 37,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "VERSION_MISMATCH"
+        }
+      },
+      "elapsedMs": 1.6382399999999961
+    },
+    {
+      "url": "/page?pageId=p000257&version=v1",
+      "identity": "all",
+      "expected": 503,
+      "status": 503,
+      "bytes": 39,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "BODY_NOT_PUBLISHED"
+        }
+      },
+      "elapsedMs": 2.6411640000000034
+    },
+    {
+      "url": "/update",
+      "identity": "all",
+      "expected": 503,
+      "status": 503,
+      "bytes": 34,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "ARTIFACT_HASH"
+        }
+      },
+      "elapsedMs": 2019.2808479999999
+    },
+    {
+      "url": "/status",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 629,
+      "passed": true,
+      "json": {
+        "snapshotId": "v1",
+        "pid": 1597,
+        "workers": [
+          1616,
+          1617
+        ],
+        "queue": 0,
+        "contentInFlight": 0,
+        "updating": false,
+        "testHooks": true,
+        "fatal": null,
+        "events": [
+          {
+            "type": "download-start",
+            "at": 1794759134045,
+            "version": "v1",
+            "badHash": false
+          },
+          {
+            "type": "download-end",
+            "at": 1794759134134,
+            "version": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "ready",
+            "at": 1794759134208,
+            "snapshotId": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "download-start",
+            "at": 1794759153775,
+            "version": "v2",
+            "badHash": true
+          }
+        ]
+      },
+      "elapsedMs": 2.6806729999998424
+    },
+    {
+      "url": "/status",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 629,
+      "passed": true,
+      "json": {
+        "snapshotId": "v1",
+        "pid": 1597,
+        "workers": [
+          1616,
+          1617
+        ],
+        "queue": 0,
+        "contentInFlight": 0,
+        "updating": false,
+        "testHooks": true,
+        "fatal": null,
+        "events": [
+          {
+            "type": "download-start",
+            "at": 1794759134045,
+            "version": "v1",
+            "badHash": false
+          },
+          {
+            "type": "download-end",
+            "at": 1794759134134,
+            "version": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "ready",
+            "at": 1794759134208,
+            "snapshotId": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "download-start",
+            "at": 1794759153775,
+            "version": "v2",
+            "badHash": true
+          }
+        ]
+      },
+      "elapsedMs": 4.810714000000189
+    },
+    {
+      "url": "/status",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 683,
+      "passed": true,
+      "json": {
+        "snapshotId": "v1",
+        "pid": 1597,
+        "workers": [
+          1616,
+          1617
+        ],
+        "queue": 0,
+        "contentInFlight": 0,
+        "updating": false,
+        "testHooks": true,
+        "fatal": null,
+        "events": [
+          {
+            "type": "download-start",
+            "at": 1794759134045,
+            "version": "v1",
+            "badHash": false
+          },
+          {
+            "type": "download-end",
+            "at": 1794759134134,
+            "version": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "ready",
+            "at": 1794759134208,
+            "snapshotId": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "download-start",
+            "at": 1794759153775,
+            "version": "v2",
+            "badHash": true
+          },
+          {
+            "type": "held-pin",
+            "at": 1794759160978,
+            "version": "v1"
+          }
+        ]
+      },
+      "elapsedMs": 3.393710000000283
+    },
+    {
+      "url": "/update",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 184,
+      "passed": true,
+      "json": {
+        "previousVersion": "v1",
+        "snapshotId": "v2",
+        "downloadStartedMs": 1794759160983,
+        "downloadEndedMs": 1794759162991,
+        "bytes": 33550336,
+        "elapsedMs": 2007.5578760000026,
+        "activatedMs": 1794759163063
+      },
+      "elapsedMs": 2084.6232999999993
+    },
+    {
+      "kind": "smoke-held-version-pin",
+      "passed": true,
+      "observedPin": true,
+      "activation": {
+        "previousVersion": "v1",
+        "snapshotId": "v2",
+        "downloadStartedMs": 1794759160983,
+        "downloadEndedMs": 1794759162991,
+        "bytes": 33550336,
+        "elapsedMs": 2007.5578760000026,
+        "activatedMs": 1794759163063
+      },
+      "heldResult": {
+        "phase": "smoke-held-v1",
+        "type": "page",
+        "query": null,
+        "version": "v1",
+        "pageId": "p000001",
+        "mediaId": null,
+        "scheduledMs": 7252.076578,
+        "sentMs": 7252.124958,
+        "sentEpochMs": 1794759160976,
+        "queueLagMs": 0.04838000000017928,
+        "status": 200,
+        "bytes": 1073,
+        "check": "ok",
+        "responseComplete": true,
+        "responseVersion": "v1",
+        "doneMs": 9343.406555,
+        "doneEpochMs": 1794759163067,
+        "serviceMs": 2091.2815969999992,
+        "scheduledToDoneMs": 2091.3299769999994
+      },
+      "scope": "admin-gated deliberate hold; excluded from formal capacity"
+    },
+    {
+      "url": "/status",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 1040,
+      "passed": true,
+      "json": {
+        "snapshotId": "v2",
+        "pid": 1597,
+        "workers": [
+          1663,
+          1664
+        ],
+        "queue": 0,
+        "contentInFlight": 0,
+        "updating": false,
+        "testHooks": true,
+        "fatal": null,
+        "events": [
+          {
+            "type": "download-start",
+            "at": 1794759134045,
+            "version": "v1",
+            "badHash": false
+          },
+          {
+            "type": "download-end",
+            "at": 1794759134134,
+            "version": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "ready",
+            "at": 1794759134208,
+            "snapshotId": "v1",
+            "downloadStartedMs": 1794759134054,
+            "downloadEndedMs": 1794759134134,
+            "bytes": 33538048,
+            "elapsedMs": 79.75955299999987
+          },
+          {
+            "type": "download-start",
+            "at": 1794759153775,
+            "version": "v2",
+            "badHash": true
+          },
+          {
+            "type": "held-pin",
+            "at": 1794759160978,
+            "version": "v1"
+          },
+          {
+            "type": "download-start",
+            "at": 1794759160981,
+            "version": "v2",
+            "badHash": false
+          },
+          {
+            "type": "download-end",
+            "at": 1794759162991,
+            "version": "v2",
+            "downloadStartedMs": 1794759160983,
+            "downloadEndedMs": 1794759162991,
+            "bytes": 33550336,
+            "elapsedMs": 2007.5578760000026
+          },
+          {
+            "type": "activated",
+            "at": 1794759163063,
+            "previousVersion": "v1",
+            "snapshotId": "v2",
+            "activatedMs": 1794759163063
+          }
+        ]
+      },
+      "elapsedMs": 2.8132340000011027
+    },
+    {
+      "url": "/page?pageId=p000001&version=v1",
+      "identity": "all",
+      "expected": 409,
+      "status": 409,
+      "bytes": 37,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "VERSION_MISMATCH"
+        }
+      },
+      "elapsedMs": 2.0398429999986547
+    },
+    {
+      "url": "/page?pageId=p000001&version=v2",
+      "identity": "a",
+      "expected": 404,
+      "status": 404,
+      "bytes": 30,
+      "passed": true,
+      "json": {
+        "error": {
+          "code": "NOT_FOUND"
+        }
+      },
+      "elapsedMs": 2.849208000001454
+    }
+  ],
+  "stages": [
+    {
+      "name": "smoke-mixed",
+      "kind": "mixed",
+      "rate": 2,
+      "seconds": 5,
+      "scheduled": 10,
+      "startedMs": 2245.4807589999996,
+      "endedMs": 7251.502479000001,
+      "elapsedIncludingDrainMs": 5005.998388,
+      "generatorValid": true,
+      "qualifies": true,
+      "fatal": null,
+      "offered": 10,
+      "sent": 10,
+      "completed": 10,
+      "successful": 10,
+      "refused": 0,
+      "timeouts": 0,
+      "expectedStale": 0,
+      "generatorMissed": 0,
+      "generatorLate": 0,
+      "abortedAfterFatal": 0,
+      "abortedInflight": 0,
+      "correctnessOrTransportFailures": 0,
+      "sentPerSecond": 2,
+      "successfulPerSecond": 2,
+      "bytes": 82271,
+      "sampleCount": 10,
+      "successfulP95Ms": 23.18996100000004,
+      "allSentP95Ms": 23.18996100000004,
+      "scheduledToDoneP95Ms": 24.115718000000015,
+      "offeredFailureFraction": 0,
+      "statuses": {
+        "200": 10
+      },
+      "elapsedSentPerSecond": 1.9976035198036104,
+      "elapsedSuccessfulPerSecond": 1.9976035198036104,
+      "byType": {
+        "search": {
+          "offered": 6,
+          "sent": 6,
+          "completed": 6,
+          "successful": 6,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "abortedAfterFatal": 0,
+          "abortedInflight": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 1.2,
+          "successfulPerSecond": 1.2,
+          "bytes": 13516,
+          "sampleCount": 6,
+          "successfulP95Ms": 23.18996100000004,
+          "allSentP95Ms": 23.18996100000004,
+          "scheduledToDoneP95Ms": 24.115718000000015,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 6
+          }
+        },
+        "page": {
+          "offered": 3,
+          "sent": 3,
+          "completed": 3,
+          "successful": 3,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "abortedAfterFatal": 0,
+          "abortedInflight": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 0.6,
+          "successfulPerSecond": 0.6,
+          "bytes": 3219,
+          "sampleCount": 3,
+          "successfulP95Ms": 12.372934999999416,
+          "allSentP95Ms": 12.372934999999416,
+          "scheduledToDoneP95Ms": 12.752438999999868,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 3
+          }
+        },
+        "media": {
+          "offered": 1,
+          "sent": 1,
+          "completed": 1,
+          "successful": 1,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "abortedAfterFatal": 0,
+          "abortedInflight": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 0.2,
+          "successfulPerSecond": 0.2,
+          "bytes": 65536,
+          "sampleCount": 1,
+          "successfulP95Ms": 12.92480500000056,
+          "allSentP95Ms": 12.92480500000056,
+          "scheduledToDoneP95Ms": 13.670246000000589,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 1
+          }
+        }
+      }
+    }
+  ],
+  "updates": [],
+  "firstSample": {
+    "at": "2026-11-15T16:12:33.732Z",
+    "ms": 8.265591,
+    "groups": {
+      "reader": {
+        "cpuMax": "200000 100000",
+        "memoryMax": 1073741824,
+        "swapMax": 0,
+        "current": 133312512,
+        "peak": 143712256,
+        "cpu": {
+          "usage_usec": 609513,
+          "user_usec": 497234,
+          "system_usec": 112278,
+          "nice_usec": 0,
+          "nr_periods": 15,
+          "nr_throttled": 0,
+          "throttled_usec": 0,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "memory": {
+          "anon": 93044736,
+          "file": 33542144,
+          "kernel": 4689920,
+          "kernel_stack": 393216,
+          "pagetables": 2588672,
+          "sec_pagetables": 0,
+          "percpu": 1440,
+          "sock": 0,
+          "vmalloc": 0,
+          "shmem": 0,
+          "file_mapped": 258048,
+          "file_dirty": 4096,
+          "file_writeback": 0,
+          "swapcached": 0,
+          "anon_thp": 0,
+          "file_thp": 0,
+          "shmem_thp": 0,
+          "inactive_anon": 92884992,
+          "active_anon": 12288,
+          "inactive_file": 1515520,
+          "active_file": 32026624,
+          "unevictable": 0,
+          "slab_reclaimable": 1032928,
+          "slab_unreclaimable": 342704,
+          "slab": 1375632,
+          "workingset_refault_anon": 0,
+          "workingset_refault_file": 0,
+          "workingset_activate_anon": 0,
+          "workingset_activate_file": 0,
+          "workingset_restore_anon": 0,
+          "workingset_restore_file": 0,
+          "workingset_nodereclaim": 0,
+          "pgdemote_kswapd": 0,
+          "pgdemote_direct": 0,
+          "pgdemote_khugepaged": 0,
+          "pgdemote_proactive": 0,
+          "pgscan": 0,
+          "pgsteal": 0,
+          "pswpin": 0,
+          "pswpout": 0,
+          "pgscan_kswapd": 0,
+          "pgscan_direct": 0,
+          "pgscan_khugepaged": 0,
+          "pgscan_proactive": 0,
+          "pgsteal_kswapd": 0,
+          "pgsteal_direct": 0,
+          "pgsteal_khugepaged": 0,
+          "pgsteal_proactive": 0,
+          "pgfault": 34294,
+          "pgmajfault": 0,
+          "pgrefill": 0,
+          "pgactivate": 7819,
+          "pgdeactivate": 0,
+          "pglazyfree": 0,
+          "pglazyfreed": 0,
+          "swpin_zero": 0,
+          "swpout_zero": 0,
+          "thp_fault_alloc": 0,
+          "thp_collapse_alloc": 0,
+          "thp_swpout": 0,
+          "thp_swpout_fallback": 0
+        },
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        },
+        "processes": [
+          1597,
+          1616,
+          1617
+        ],
+        "io": null
+      },
+      "minio": {
+        "cpuMax": "100000 100000",
+        "memoryMax": 536870912,
+        "swapMax": 0,
+        "current": 384126976,
+        "peak": 392601600,
+        "cpu": {
+          "usage_usec": 1559691,
+          "user_usec": 762839,
+          "system_usec": 796851,
+          "nice_usec": 0,
+          "nr_periods": 405,
+          "nr_throttled": 1,
+          "throttled_usec": 12643,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "memory": {
+          "anon": 236285952,
+          "file": 141963264,
+          "kernel": 3907584,
+          "kernel_stack": 376832,
+          "pagetables": 753664,
+          "sec_pagetables": 0,
+          "percpu": 480,
+          "sock": 0,
+          "vmalloc": 0,
+          "shmem": 0,
+          "file_mapped": 37613568,
+          "file_dirty": 0,
+          "file_writeback": 0,
+          "swapcached": 0,
+          "anon_thp": 0,
+          "file_thp": 60817408,
+          "shmem_thp": 0,
+          "inactive_anon": 236224512,
+          "active_anon": 4096,
+          "inactive_file": 66007040,
+          "active_file": 75960320,
+          "unevictable": 0,
+          "slab_reclaimable": 2630224,
+          "slab_unreclaimable": 140792,
+          "slab": 2771016,
+          "workingset_refault_anon": 0,
+          "workingset_refault_file": 0,
+          "workingset_activate_anon": 0,
+          "workingset_activate_file": 0,
+          "workingset_restore_anon": 0,
+          "workingset_restore_file": 0,
+          "workingset_nodereclaim": 0,
+          "pgdemote_kswapd": 0,
+          "pgdemote_direct": 0,
+          "pgdemote_khugepaged": 0,
+          "pgdemote_proactive": 0,
+          "pgscan": 0,
+          "pgsteal": 0,
+          "pswpin": 0,
+          "pswpout": 0,
+          "pgscan_kswapd": 0,
+          "pgscan_direct": 0,
+          "pgscan_khugepaged": 0,
+          "pgscan_proactive": 0,
+          "pgsteal_kswapd": 0,
+          "pgsteal_direct": 0,
+          "pgsteal_khugepaged": 0,
+          "pgsteal_proactive": 0,
+          "pgfault": 60080,
+          "pgmajfault": 15,
+          "pgrefill": 0,
+          "pgactivate": 24987,
+          "pgdeactivate": 0,
+          "pglazyfree": 0,
+          "pglazyfreed": 0,
+          "swpin_zero": 0,
+          "swpout_zero": 0,
+          "thp_fault_alloc": 0,
+          "thp_collapse_alloc": 0,
+          "thp_swpout": 0,
+          "thp_swpout_fallback": 0
+        },
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        },
+        "processes": [
+          1370
+        ],
+        "io": null
+      }
+    }
+  },
+  "lastSample": {
+    "at": "2026-11-15T16:12:43.251Z",
+    "ms": 9527.02175,
+    "groups": {
+      "reader": {
+        "cpuMax": "200000 100000",
+        "memoryMax": 1073741824,
+        "swapMax": 0,
+        "current": 213090304,
+        "peak": 239738880,
+        "cpu": {
+          "usage_usec": 2195112,
+          "user_usec": 1737139,
+          "system_usec": 457973,
+          "nice_usec": 0,
+          "nr_periods": 83,
+          "nr_throttled": 0,
+          "throttled_usec": 0,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "memory": {
+          "anon": 103043072,
+          "file": 100655104,
+          "kernel": 6926336,
+          "kernel_stack": 393216,
+          "pagetables": 2744320,
+          "sec_pagetables": 0,
+          "percpu": 2400,
+          "sock": 0,
+          "vmalloc": 0,
+          "shmem": 0,
+          "file_mapped": 258048,
+          "file_dirty": 8192,
+          "file_writeback": 0,
+          "swapcached": 0,
+          "anon_thp": 0,
+          "file_thp": 0,
+          "shmem_thp": 0,
+          "inactive_anon": 102535168,
+          "active_anon": 12288,
+          "inactive_file": 36634624,
+          "active_file": 64020480,
+          "unevictable": 0,
+          "slab_reclaimable": 3022328,
+          "slab_unreclaimable": 418744,
+          "slab": 3441072,
+          "workingset_refault_anon": 0,
+          "workingset_refault_file": 0,
+          "workingset_activate_anon": 0,
+          "workingset_activate_file": 0,
+          "workingset_restore_anon": 0,
+          "workingset_restore_file": 0,
+          "workingset_nodereclaim": 0,
+          "pgdemote_kswapd": 0,
+          "pgdemote_direct": 0,
+          "pgdemote_khugepaged": 0,
+          "pgdemote_proactive": 0,
+          "pgscan": 0,
+          "pgsteal": 0,
+          "pswpin": 0,
+          "pswpout": 0,
+          "pgscan_kswapd": 0,
+          "pgscan_direct": 0,
+          "pgscan_khugepaged": 0,
+          "pgscan_proactive": 0,
+          "pgsteal_kswapd": 0,
+          "pgsteal_direct": 0,
+          "pgsteal_khugepaged": 0,
+          "pgsteal_proactive": 0,
+          "pgfault": 61611,
+          "pgmajfault": 0,
+          "pgrefill": 0,
+          "pgactivate": 15629,
+          "pgdeactivate": 0,
+          "pglazyfree": 0,
+          "pglazyfreed": 0,
+          "swpin_zero": 0,
+          "swpout_zero": 0,
+          "thp_fault_alloc": 0,
+          "thp_collapse_alloc": 0,
+          "thp_swpout": 0,
+          "thp_swpout_fallback": 0
+        },
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        },
+        "processes": [
+          1597,
+          1663,
+          1664
+        ],
+        "io": null
+      },
+      "minio": {
+        "cpuMax": "100000 100000",
+        "memoryMax": 536870912,
+        "swapMax": 0,
+        "current": 402751488,
+        "peak": 406929408,
+        "cpu": {
+          "usage_usec": 1670175,
+          "user_usec": 825146,
+          "system_usec": 845029,
+          "nice_usec": 0,
+          "nr_periods": 454,
+          "nr_throttled": 1,
+          "throttled_usec": 12643,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "memory": {
+          "anon": 240214016,
+          "file": 156872704,
+          "kernel": 3928064,
+          "kernel_stack": 376832,
+          "pagetables": 757760,
+          "sec_pagetables": 0,
+          "percpu": 480,
+          "sock": 0,
+          "vmalloc": 0,
+          "shmem": 0,
+          "file_mapped": 37609472,
+          "file_dirty": 36864,
+          "file_writeback": 0,
+          "swapcached": 0,
+          "anon_thp": 0,
+          "file_thp": 65011712,
+          "shmem_thp": 0,
+          "inactive_anon": 239972352,
+          "active_anon": 4096,
+          "inactive_file": 32460800,
+          "active_file": 124403712,
+          "unevictable": 0,
+          "slab_reclaimable": 2635408,
+          "slab_unreclaimable": 143600,
+          "slab": 2779008,
+          "workingset_refault_anon": 0,
+          "workingset_refault_file": 0,
+          "workingset_activate_anon": 0,
+          "workingset_activate_file": 0,
+          "workingset_restore_anon": 0,
+          "workingset_restore_file": 0,
+          "workingset_nodereclaim": 0,
+          "pgdemote_kswapd": 0,
+          "pgdemote_direct": 0,
+          "pgdemote_khugepaged": 0,
+          "pgdemote_proactive": 0,
+          "pgscan": 0,
+          "pgsteal": 0,
+          "pswpin": 0,
+          "pswpout": 0,
+          "pgscan_kswapd": 0,
+          "pgscan_direct": 0,
+          "pgscan_khugepaged": 0,
+          "pgscan_proactive": 0,
+          "pgsteal_kswapd": 0,
+          "pgsteal_direct": 0,
+          "pgsteal_khugepaged": 0,
+          "pgsteal_proactive": 0,
+          "pgfault": 61875,
+          "pgmajfault": 15,
+          "pgrefill": 0,
+          "pgactivate": 36814,
+          "pgdeactivate": 0,
+          "pglazyfree": 0,
+          "pglazyfreed": 0,
+          "swpin_zero": 0,
+          "swpout_zero": 0,
+          "thp_fault_alloc": 0,
+          "thp_collapse_alloc": 0,
+          "thp_swpout": 0,
+          "thp_swpout_fallback": 0
+        },
+        "events": {
+          "low": 0,
+          "high": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_kill": 0,
+          "oom_group_kill": 0
+        },
+        "processes": [
+          1370
+        ],
+        "io": null
+      }
+    }
+  }
+}

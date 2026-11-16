@@ -1,0 +1,1385 @@
+{
+  "schemaVersion": 1,
+  "oracleRevision": 2,
+  "revisionReason": "Pre-execution main-agent source audit found R09 incorrectly treated a negative sentence as lacking certificate. Keyword AND matches both words. R04 identity changed to all so a visible partial-term b-relay is an actual AND counterexample. No engine result consulted; source unchanged. Contract hash refreshed only for C per-query child cost disclosure.",
+  "previousOracleSha256": "b2e1da0ff08b666223833749a54552e01f996f8d93e33e936da017bd2b6d81c4",
+  "sourceSha256": "0c70c490dd2798054063f56685f83c1783a030ea312cae4656894b977484cada",
+  "contractSha256": "a096971b78a33ae1c69f7e9536ce69729053e257ea340378cc3f908ba2de55f2",
+  "status": "independent-source-oracle; execution-card-review-pending",
+  "scope": {
+    "required": 12,
+    "negative": 7,
+    "diagnostic": 4,
+    "total": 23,
+    "engineOutputsConsulted": false
+  },
+  "identityProfiles": {
+    "baseline": {
+      "a": [
+        "space-a"
+      ],
+      "b": [
+        "space-b"
+      ],
+      "all": [
+        "space-a",
+        "space-b"
+      ],
+      "none": []
+    },
+    "revoked-b": {
+      "a": [
+        "space-a"
+      ],
+      "b": [],
+      "all": [
+        "space-a",
+        "space-b"
+      ],
+      "none": []
+    }
+  },
+  "snapshot": {
+    "snapshotId": "v1-e1-20261115-snapshot1",
+    "snapshotCapturedAt": "2026-11-15T08:00:00.000Z"
+  },
+  "responseInvariants": {
+    "successfulJson": {
+      "status": 200,
+      "cacheControl": "no-store",
+      "snapshotFields": "must equal oracle.snapshot",
+      "authorizationCheckedAt": "ISO timestamp within actual request observation bounds; NOT simulatedNow"
+    },
+    "errorJson": {
+      "exactShape": "{\"error\":{\"code\":\"expected errorCode\"}}",
+      "noAdditionalFields": true
+    },
+    "search": {
+      "maxHits": 10,
+      "totalType": "nonnegative integer",
+      "uniquePageIds": true,
+      "requiredIdsMustBeInReturnedFirstPage": true,
+      "allHitsMustBeAuthorizedAtRequest": true,
+      "allHitsMustSatisfySelectedSpaceAndAllMetadataTags": true,
+      "hitFields": "exact source projection of pageId,spaceId,title,tagIds",
+      "snippet": "first body paragraph then associated PDF line containing any case-insensitive whitespace-split original query word; else first body paragraph; slice to 160 Unicode code points",
+      "noCrossEngineRankEquality": true,
+      "totalOnlyAssertedWhenExplicitInCase": true,
+      "tagIdsComparison": "unordered set; duplicate tagIds are not accepted"
+    },
+    "page": {
+      "exactFields": "pageId,spaceId,title,tagIds,body from expectedPages; body=paragraphs joined by LF"
+    },
+    "mediaList": {
+      "exactMembership": true,
+      "fields": "mediaId,fileName,mimeType,sha256,bytes from expectedMedia; url=/api/pages/{pageId}/media/{mediaId}",
+      "order": "not required; membership must be exact and duplicate-free"
+    },
+    "download": {
+      "bodySha256MustMatch": true,
+      "byteLengthMustMatch": true,
+      "contentType": "application/pdf",
+      "contentDisposition": "inline with source fileName"
+    },
+    "baselineForbiddenPageIds": {
+      "a": [
+        "b-export",
+        "b-relay",
+        "b-roles",
+        "b-tag-both",
+        "b-confidential",
+        "b-noise-15",
+        "b-noise-16",
+        "b-noise-17",
+        "b-noise-18"
+      ],
+      "b": [
+        "a-relay",
+        "a-restore",
+        "a-contact",
+        "a-mixed",
+        "a-code",
+        "a-code-near",
+        "a-pdf",
+        "a-pdf-near",
+        "a-tag-runbook",
+        "a-tag-validated",
+        "a-tag-words",
+        "a-tag-both",
+        "a-move",
+        "a-sync",
+        "a-noise-01",
+        "a-noise-02",
+        "a-noise-03",
+        "a-noise-04",
+        "a-noise-05",
+        "a-noise-06",
+        "a-noise-07",
+        "a-noise-08",
+        "a-noise-09",
+        "a-noise-10",
+        "a-noise-11",
+        "a-noise-12",
+        "a-noise-13",
+        "a-noise-14"
+      ],
+      "none": [
+        "a-relay",
+        "a-restore",
+        "a-contact",
+        "a-mixed",
+        "a-code",
+        "a-code-near",
+        "a-pdf",
+        "a-pdf-near",
+        "a-tag-runbook",
+        "a-tag-validated",
+        "a-tag-words",
+        "a-tag-both",
+        "a-move",
+        "a-sync",
+        "b-export",
+        "b-relay",
+        "b-roles",
+        "b-tag-both",
+        "b-confidential",
+        "a-noise-01",
+        "a-noise-02",
+        "a-noise-03",
+        "a-noise-04",
+        "a-noise-05",
+        "a-noise-06",
+        "a-noise-07",
+        "a-noise-08",
+        "a-noise-09",
+        "a-noise-10",
+        "a-noise-11",
+        "a-noise-12",
+        "a-noise-13",
+        "a-noise-14",
+        "b-noise-15",
+        "b-noise-16",
+        "b-noise-17",
+        "b-noise-18"
+      ]
+    },
+    "recordActualRequestStartEnd": true
+  },
+  "expectedPages": {
+    "a-relay": {
+      "spaceId": "space-a",
+      "title": "Relay Relay Relay Fault Desk",
+      "tagIds": [
+        "runbook",
+        "validated"
+      ],
+      "body": "故障復原手冊包含現場處理順序。\nUse zephyr to verify the primary relay circuit.",
+      "paragraphs": [
+        "故障復原手冊包含現場處理順序。",
+        "Use zephyr to verify the primary relay circuit."
+      ],
+      "mediaIds": []
+    },
+    "a-restore": {
+      "spaceId": "space-a",
+      "title": "Control Plane Guide",
+      "tagIds": [
+        "runbook"
+      ],
+      "body": "按下還原後，確認備援備份已更新。\nThe disaster recovery sequence ends with an owner signoff.",
+      "paragraphs": [
+        "按下還原後，確認備援備份已更新。",
+        "The disaster recovery sequence ends with an owner signoff."
+      ],
+      "mediaIds": []
+    },
+    "a-contact": {
+      "spaceId": "space-a",
+      "title": "夜間聯絡清冊",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "橋接問題請通知值班人員。\nTo restore access, use the secondary help desk.",
+      "paragraphs": [
+        "橋接問題請通知值班人員。",
+        "To restore access, use the secondary help desk."
+      ],
+      "mediaIds": []
+    },
+    "a-mixed": {
+      "spaceId": "space-a",
+      "title": "雲端 Edge Gateway",
+      "tagIds": [
+        "validated"
+      ],
+      "body": "備援閘道狀態可以用 Edge Verify 查核。\nRecord the outcome in incident notes.",
+      "paragraphs": [
+        "備援閘道狀態可以用 Edge Verify 查核。",
+        "Record the outcome in incident notes."
+      ],
+      "mediaIds": []
+    },
+    "a-code": {
+      "spaceId": "space-a",
+      "title": "設備事件表",
+      "tagIds": [
+        "validated"
+      ],
+      "body": "巡檢遇到 GTX-412 時，讀取備用控制器。\nEscalate actuator errors to the site lead.",
+      "paragraphs": [
+        "巡檢遇到 GTX-412 時，讀取備用控制器。",
+        "Escalate actuator errors to the site lead."
+      ],
+      "mediaIds": []
+    },
+    "a-code-near": {
+      "spaceId": "space-a",
+      "title": "設備領用表",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "GTX-413 是調度用編號。\nDevice 412 belongs to the legacy pool.",
+      "paragraphs": [
+        "GTX-413 是調度用編號。",
+        "Device 412 belongs to the legacy pool."
+      ],
+      "mediaIds": []
+    },
+    "a-pdf": {
+      "spaceId": "space-a",
+      "title": "異地部署檢查表",
+      "tagIds": [
+        "runbook",
+        "validated"
+      ],
+      "body": "部署前應對照檢查表附件的校驗程序。\n簽核流程請回到控制平面指南。",
+      "paragraphs": [
+        "部署前應對照檢查表附件的校驗程序。",
+        "簽核流程請回到控制平面指南。"
+      ],
+      "mediaIds": [
+        "pdf-checklist"
+      ]
+    },
+    "a-pdf-near": {
+      "spaceId": "space-a",
+      "title": "異地部署附件索引",
+      "tagIds": [
+        "runbook"
+      ],
+      "body": "校驗程序在另一個頁面。\nThis page mentions silverline but does not contain the certificate.",
+      "paragraphs": [
+        "校驗程序在另一個頁面。",
+        "This page mentions silverline but does not contain the certificate."
+      ],
+      "mediaIds": []
+    },
+    "a-tag-runbook": {
+      "spaceId": "space-a",
+      "title": "Dispatch Procedure",
+      "tagIds": [
+        "runbook"
+      ],
+      "body": "Check the dispatch roster before each shift.",
+      "paragraphs": [
+        "Check the dispatch roster before each shift."
+      ],
+      "mediaIds": []
+    },
+    "a-tag-validated": {
+      "spaceId": "space-a",
+      "title": "Dispatch Shift Check",
+      "tagIds": [
+        "validated"
+      ],
+      "body": "Confirm the dispatch coverage at opening.",
+      "paragraphs": [
+        "Confirm the dispatch coverage at opening."
+      ],
+      "mediaIds": []
+    },
+    "a-tag-words": {
+      "spaceId": "space-a",
+      "title": "Dispatch Notes",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "The old dispatch note says runbook and validated in the text.",
+      "paragraphs": [
+        "The old dispatch note says runbook and validated in the text."
+      ],
+      "mediaIds": []
+    },
+    "a-tag-both": {
+      "spaceId": "space-a",
+      "title": "Dispatch Handbook",
+      "tagIds": [
+        "runbook",
+        "validated"
+      ],
+      "body": "Create one dispatch record per interruption.",
+      "paragraphs": [
+        "Create one dispatch record per interruption."
+      ],
+      "mediaIds": []
+    },
+    "a-move": {
+      "spaceId": "space-a",
+      "title": "Migration Timeline",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Orchid waiver for the cutover remains in review.",
+      "paragraphs": [
+        "Orchid waiver for the cutover remains in review."
+      ],
+      "mediaIds": []
+    },
+    "a-sync": {
+      "spaceId": "space-a",
+      "title": "Sync Status Note",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Mariner status records the morning decision.",
+      "paragraphs": [
+        "Mariner status records the morning decision."
+      ],
+      "mediaIds": []
+    },
+    "b-export": {
+      "spaceId": "space-b",
+      "title": "部門報告匯出",
+      "tagIds": [
+        "runbook",
+        "validated"
+      ],
+      "body": "黃金備份由另一個團隊保管。\nFalcon export replaces the duplicate ledger.",
+      "paragraphs": [
+        "黃金備份由另一個團隊保管。",
+        "Falcon export replaces the duplicate ledger."
+      ],
+      "mediaIds": [
+        "pdf-ledger"
+      ]
+    },
+    "b-relay": {
+      "spaceId": "space-b",
+      "title": "Control Relay Routing",
+      "tagIds": [
+        "runbook"
+      ],
+      "body": "The partner relay uses zephyr only in the remote enclosure.",
+      "paragraphs": [
+        "The partner relay uses zephyr only in the remote enclosure."
+      ],
+      "mediaIds": []
+    },
+    "b-roles": {
+      "spaceId": "space-b",
+      "title": "Partner Role Ledger",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Quartz approval covers the external mailbox.",
+      "paragraphs": [
+        "Quartz approval covers the external mailbox."
+      ],
+      "mediaIds": []
+    },
+    "b-tag-both": {
+      "spaceId": "space-b",
+      "title": "Dispatch Interlock",
+      "tagIds": [
+        "runbook",
+        "validated"
+      ],
+      "body": "The partner dispatch needs a separate signoff.",
+      "paragraphs": [
+        "The partner dispatch needs a separate signoff."
+      ],
+      "mediaIds": []
+    },
+    "b-confidential": {
+      "spaceId": "space-b",
+      "title": "保密事故紀錄",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "主站隔離由聯防班執行。\nConfidential bluefolder belongs in the restricted filing room.",
+      "paragraphs": [
+        "主站隔離由聯防班執行。",
+        "Confidential bluefolder belongs in the restricted filing room."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-01": {
+      "spaceId": "space-a",
+      "title": "Adhesive storage",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to catalog inventory and expiration dates before resealing the shelf.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to catalog inventory and expiration dates before resealing the shelf."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-02": {
+      "spaceId": "space-a",
+      "title": "Spare cable register",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to review which replacement bundles are in each locker before requesting maintenance.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to review which replacement bundles are in each locker before requesting maintenance."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-03": {
+      "spaceId": "space-a",
+      "title": "Connector inspection",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to check the seal condition and record the batch identifier before disposal.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to check the seal condition and record the batch identifier before disposal."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-04": {
+      "spaceId": "space-a",
+      "title": "Archived training plan",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to reserve the classroom and notify instructors about attendance deadlines.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to reserve the classroom and notify instructors about attendance deadlines."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-05": {
+      "spaceId": "space-a",
+      "title": "Intake checklist",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to mark which cartons arrived and examine the receiving slip for discrepancies.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to mark which cartons arrived and examine the receiving slip for discrepancies."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-06": {
+      "spaceId": "space-a",
+      "title": "Door access notes",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to list visitor escort changes and confirm the shift handover procedure.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to list visitor escort changes and confirm the shift handover procedure."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-07": {
+      "spaceId": "space-a",
+      "title": "Seasonal room setup",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to move the unused chairs to the service entrance beyond the loading bay.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to move the unused chairs to the service entrance beyond the loading bay."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-08": {
+      "spaceId": "space-a",
+      "title": "Instrument battery schedule",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to charge the inspection tools after use and enter the service date.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to charge the inspection tools after use and enter the service date."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-09": {
+      "spaceId": "space-a",
+      "title": "Lock replacement log",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to verify which supplier carries the cylinder and confirm the request number.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to verify which supplier carries the cylinder and confirm the request number."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-10": {
+      "spaceId": "space-a",
+      "title": "Workshop reading list",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to read chapters for the January session and keep notes in the archive.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to read chapters for the January session and keep notes in the archive."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-11": {
+      "spaceId": "space-a",
+      "title": "Printer service history",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to clear the queue before swapping the toner and call the maintenance desk.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to clear the queue before swapping the toner and call the maintenance desk."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-12": {
+      "spaceId": "space-a",
+      "title": "Retired sensor inventory",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to check the old carts and remove damaged labels before handing them over.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to check the old carts and remove damaged labels before handing them over."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-13": {
+      "spaceId": "space-a",
+      "title": "Safety poster drafts",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to replace the printed safety posters at the beginning of the next shift.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to replace the printed safety posters at the beginning of the next shift."
+      ],
+      "mediaIds": []
+    },
+    "a-noise-14": {
+      "spaceId": "space-a",
+      "title": "Handheld serial register",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to request the assigned cases and compare serial labels against the index.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to request the assigned cases and compare serial labels against the index."
+      ],
+      "mediaIds": []
+    },
+    "b-noise-15": {
+      "spaceId": "space-b",
+      "title": "Courier scheduling note",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to include the destination postcode and hand the parcel to the correct counter.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to include the destination postcode and hand the parcel to the correct counter."
+      ],
+      "mediaIds": []
+    },
+    "b-noise-16": {
+      "spaceId": "space-b",
+      "title": "Packing instruction review",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to replace boxes with visible dents and set aside the spare cushioning.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to replace boxes with visible dents and set aside the spare cushioning."
+      ],
+      "mediaIds": []
+    },
+    "b-noise-17": {
+      "spaceId": "space-b",
+      "title": "Regional access notes",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to return all borrowed keys and attach the receipt to the current roster.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to return all borrowed keys and attach the receipt to the current roster."
+      ],
+      "mediaIds": []
+    },
+    "b-noise-18": {
+      "spaceId": "space-b",
+      "title": "Partner stock notebook",
+      "tagIds": [
+        "contact"
+      ],
+      "body": "Earlier versions mention relay hardware. The current job is to check the stock on each shelf and report damaged crates promptly.",
+      "paragraphs": [
+        "Earlier versions mention relay hardware. The current job is to check the stock on each shelf and report damaged crates promptly."
+      ],
+      "mediaIds": []
+    }
+  },
+  "expectedMedia": {
+    "pdf-checklist": {
+      "mediaId": "pdf-checklist",
+      "fileName": "deployment-checklist.pdf",
+      "mimeType": "application/pdf",
+      "extractedText": "silverline certificate check the cold cabinet\nMatch seal number 7324 before signing.",
+      "bytes": 677,
+      "sha256": "f396877a93e9980d03a314270f6d566ced0784e0661e9517abacc89d9f41a6ef"
+    },
+    "pdf-ledger": {
+      "mediaId": "pdf-ledger",
+      "fileName": "partner-ledger.pdf",
+      "mimeType": "application/pdf",
+      "extractedText": "Ledger verification for the partner site\nCompare seal number 8415 and confirm the export.",
+      "bytes": 682,
+      "sha256": "7b496dcb7e4d53d1f7291aaa612afad44d6ff7575d16637c512656cda7133406"
+    }
+  },
+  "cases": [
+    {
+      "id": "R01",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=%E9%82%84%E5%8E%9F",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-restore"
+        ]
+      },
+      "rationale": "中文短詞存在於a-restore正文；找得到該頁即可，不要求跨引擎全命中集合一致。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/a-restore",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 200,
+            "pageId": "a-restore"
+          }
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=%E6%95%85%E9%9A%9C%E5%BE%A9%E5%8E%9F%E6%89%8B%E5%86%8A",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-relay"
+        ]
+      },
+      "rationale": "中文長詞原文位於a-relay第一段，是故障復原任務的直接頁面。"
+    },
+    {
+      "id": "R03",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=zephyr",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-relay"
+        ],
+        "total": 1
+      },
+      "rationale": "英文詞位於a-relay；b-relay雖同詞但身份a無權，total不能包含它。"
+    },
+    {
+      "id": "R04",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=zephyr%20primary",
+        "identity": "all"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-relay"
+        ],
+        "total": 1,
+        "forbiddenPageIds": ["b-relay"]
+      },
+      "rationale": "身份all可讀兩Space；兩詞同在a-relay正文，b-relay僅有zephyr且缺primary，必須因AND而非授權被排除。"
+    },
+    {
+      "id": "R05",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=%E5%82%99%E6%8F%B4%20Edge",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-mixed"
+        ]
+      },
+      "rationale": "中英混合查詢可由a-mixed第一段同時滿足。"
+    },
+    {
+      "id": "R06",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=GTX-412",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-code"
+        ]
+      },
+      "rationale": "a-code含使用者查詢技術碼；近似a-code-near的納入與排名只記差異，完整碼嚴格性尚未確認。",
+      "observations": {
+        "recordHitAndRankOf": [
+          "a-code",
+          "a-code-near"
+        ],
+        "strictWholeCodeMatching": "unknown-not-an-acceptance-gate"
+      }
+    },
+    {
+      "id": "R07",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=Control%20Plane",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-restore"
+        ],
+        "total": 1
+      },
+      "rationale": "Control Plane在a-restore標題，證明標題查詢接縫；正文須取回完整來源。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/a-restore",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 200,
+            "pageId": "a-restore"
+          }
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=disaster%20recovery",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-restore"
+        ],
+        "total": 1
+      },
+      "rationale": "兩英文詞只在a-restore正文，不依賴標題。"
+    },
+    {
+      "id": "R09",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=silverline%20certificate",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-pdf"
+        ],
+        "total": 2
+      },
+      "rationale": "a-pdf自身title/body沒有查詢詞，只由其PDF抽取文字命中；a-pdf-near的否定句也有兩詞，屬合法詞面命中。必要頁仍是a-pdf，near只觀察體驗差異。此題為完整合成consumer鏈。",
+      "observations": {"recordHitAndRankOf": ["a-pdf", "a-pdf-near"], "nearPageInterpretation": "lexically valid AND match despite semantically irrelevant negative sentence"},
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/a-pdf",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 200,
+            "pageId": "a-pdf"
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/a-pdf/media",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 200,
+            "pageId": "a-pdf",
+            "mediaIds": [
+              "pdf-checklist"
+            ]
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/a-pdf/media/pdf-checklist",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 200,
+            "mediaSha256": "f396877a93e9980d03a314270f6d566ced0784e0661e9517abacc89d9f41a6ef",
+            "mediaBytes": 677,
+            "contentType": "application/pdf",
+            "fileName": "deployment-checklist.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=zephyr&spaceId=space-b",
+        "identity": "all"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "b-relay"
+        ],
+        "total": 1,
+        "forbiddenPageIds": [
+          "a-relay"
+        ]
+      },
+      "rationale": "身份all有兩Space，但明選space-b必須排除space-a。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/b-relay",
+            "identity": "all"
+          },
+          "expect": {
+            "status": 200,
+            "pageId": "b-relay"
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/b-relay/media",
+            "identity": "all"
+          },
+          "expect": {
+            "status": 200,
+            "pageId": "b-relay",
+            "mediaIds": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=dispatch&tagId=runbook&tagId=validated",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-tag-both"
+        ],
+        "total": 1,
+        "forbiddenPageIds": [
+          "a-tag-runbook",
+          "a-tag-validated",
+          "a-tag-words",
+          "b-tag-both"
+        ]
+      },
+      "rationale": "只接受兩個metadata tags皆具備的a-tag-both；單tag、正文假tag及無權Space分別排除。"
+    },
+    {
+      "id": "R12",
+      "kind": "required",
+      "request": {
+        "path": "/api/search?q=relay",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-relay"
+        ],
+        "total": 15
+      },
+      "rationale": "可見集合有a-relay及14個含relay的干擾頁；a-relay標題及正文直接處理relay故障，其他頁工作是庫存/排課等。只要求a-relay在前10且可辨識，不要求rank=1或全排序。",
+      "observations": {
+        "recordRankOf": [
+          "a-relay"
+        ],
+        "minimumVisibleMatchingPages": 15
+      }
+    },
+    {
+      "id": "N01",
+      "kind": "negative",
+      "request": {
+        "path": "/api/pages/a-relay/media/pdf-checklist",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 404,
+        "errorCode": "NOT_FOUND"
+      },
+      "rationale": "身份a可讀兩頁、PDF存在，但a-relay沒有此membership；不能只憑Space或media存在交付。"
+    },
+    {
+      "id": "N02",
+      "kind": "negative",
+      "request": {
+        "path": "/api/search?q=Falcon&spaceId=space-b",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [],
+        "total": 0
+      },
+      "rationale": "已知但無權的Space應成功零結果；直接page/media各路徑也必須拒絕。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/b-export",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 404,
+            "errorCode": "NOT_FOUND"
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/b-export/media",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 404,
+            "errorCode": "NOT_FOUND"
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/b-export/media/pdf-ledger",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 404,
+            "errorCode": "NOT_FOUND"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N03",
+      "kind": "negative",
+      "request": {
+        "path": "/api/search?q=relay",
+        "identity": "none"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [],
+        "total": 0
+      },
+      "rationale": "可信空角色集合不是unknown：搜尋為零，直接正文拒絕。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/a-relay",
+            "identity": "none"
+          },
+          "expect": {
+            "status": 404,
+            "errorCode": "NOT_FOUND"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "kind": "negative",
+      "request": {
+        "path": "/api/search?q=relay",
+        "identity": "unknown"
+      },
+      "expect": {
+        "status": 503,
+        "errorCode": "AUTHORIZATION_UNKNOWN"
+      },
+      "rationale": "未知身份不允許退回公開/全部權限，搜尋、正文與附件路徑均明確503。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/a-pdf",
+            "identity": "unknown"
+          },
+          "expect": {
+            "status": 503,
+            "errorCode": "AUTHORIZATION_UNKNOWN"
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/a-pdf/media",
+            "identity": "unknown"
+          },
+          "expect": {
+            "status": 503,
+            "errorCode": "AUTHORIZATION_UNKNOWN"
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/a-pdf/media/pdf-checklist",
+            "identity": "unknown"
+          },
+          "expect": {
+            "status": 503,
+            "errorCode": "AUTHORIZATION_UNKNOWN"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "kind": "negative",
+      "request": {
+        "path": "/api/search?q=azimuthunlisted",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [],
+        "total": 0
+      },
+      "rationale": "來源title/正文/PDF均沒有此字詞；與服務錯誤分開。"
+    },
+    {
+      "id": "N06",
+      "kind": "negative",
+      "request": {
+        "path": "/api/search?q=dispatch&tagId=unregistered",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 400,
+        "errorCode": "INVALID_REQUEST"
+      },
+      "rationale": "未知metadata tag應400，不忽略條件或回成功零命中。"
+    },
+    {
+      "id": "N07",
+      "kind": "negative",
+      "request": {
+        "path": "/api/search?q=zephyr",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 503,
+        "errorCode": "SEARCH_UNAVAILABLE"
+      },
+      "rationale": "隔離搜尋依賴真的不可用時回503；獨立本地正文路徑仍應可用。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/a-relay",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 200,
+            "pageId": "a-relay"
+          }
+        }
+      ],
+      "setup": {
+        "fault": "provider-unavailable",
+        "requireRealDependencyFailure": true,
+        "method": "B: restart only this experiment Next with ES_URL targeting verified unlistened loopback port 19390; C: temporarily rename only new isolated runtime search.sqlite; restore in finally",
+        "restoreBeforeNextCase": true
+      }
+    }
+  ],
+  "driftCases": [
+    {
+      "id": "D01",
+      "kind": "diagnostic",
+      "request": {
+        "path": "/api/search?q=Orchid",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [
+          "a-move"
+        ],
+        "total": 1
+      },
+      "rationale": "固定快照仍把a-move授權給Space a；目前來源已移至b，需如實標記相對目前關係的暴露。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/a-move",
+            "identity": "a"
+          },
+          "expect": {
+            "status": 200,
+            "pageId": "a-move"
+          }
+        }
+      ],
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "setup": {
+        "roleProfile": "baseline",
+        "snapshotUnchanged": true
+      },
+      "policyExpected": {
+        "pageSpaceId": "space-a",
+        "identity": "a",
+        "allowed": true
+      },
+      "currentRelations": {
+        "pageId": "a-move",
+        "spaceId": "space-b",
+        "identity": "a",
+        "allowed": false
+      },
+      "exposure": {
+        "fields": [
+          "title",
+          "spaceId",
+          "tagIds",
+          "snippet",
+          "body"
+        ],
+        "expectedAtObservation": true,
+        "realDurationSeconds": null,
+        "simulatedElapsedSeconds": 97200,
+        "claim": "僅固定時間模型及本輪請求觀察，不是27小時實際持續暴露證據"
+      }
+    },
+    {
+      "id": "D02",
+      "kind": "diagnostic",
+      "request": {
+        "path": "/api/search?q=Quartz",
+        "identity": "b"
+      },
+      "expect": {
+        "status": 200,
+        "requiredPageIds": [],
+        "total": 0
+      },
+      "rationale": "Role profile即時撤除b的權限，雖metadata快照不變，b不可再搜尋/讀取/下載Space b。",
+      "chain": [
+        {
+          "request": {
+            "path": "/api/pages/b-roles",
+            "identity": "b"
+          },
+          "expect": {
+            "status": 404,
+            "errorCode": "NOT_FOUND"
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/b-export/media",
+            "identity": "b"
+          },
+          "expect": {
+            "status": 404,
+            "errorCode": "NOT_FOUND"
+          }
+        },
+        {
+          "request": {
+            "path": "/api/pages/b-export/media/pdf-ledger",
+            "identity": "b"
+          },
+          "expect": {
+            "status": 404,
+            "errorCode": "NOT_FOUND"
+          }
+        }
+      ],
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "baseline": {
+        "request": {
+          "path": "/api/search?q=Quartz",
+          "identity": "b"
+        },
+        "expect": {
+          "status": 200,
+          "requiredPageIds": [
+            "b-roles"
+          ],
+          "total": 1
+        }
+      },
+      "setup": {
+        "roleProfile": "revoked-b",
+        "snapshotUnchanged": true,
+        "restoreRoleProfile": "baseline"
+      },
+      "policyExpected": {
+        "identity": "b",
+        "allowedSpaceIds": []
+      },
+      "currentRelations": {
+        "identity": "b",
+        "allowedSpaceIds": []
+      },
+      "exposure": {
+        "expectedAtObservation": false,
+        "realRevocationLatencySeconds": null,
+        "claim": "只驗profile切換後受測請求；不是公司ReBAC撤權時限"
+      }
+    },
+    {
+      "id": "D03",
+      "kind": "diagnostic",
+      "request": {
+        "path": "/api/pages/a-pdf/media/pdf-checklist",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "mediaSha256": "f396877a93e9980d03a314270f6d566ced0784e0661e9517abacc89d9f41a6ef",
+        "mediaBytes": 677,
+        "contentType": "application/pdf",
+        "fileName": "deployment-checklist.pdf"
+      },
+      "rationale": "快照仍保留membership，下載符合合成快照政策，但不符合模擬目前來源已解除關聯的狀態。",
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "setup": {
+        "roleProfile": "baseline",
+        "snapshotUnchanged": true
+      },
+      "policyExpected": {
+        "pageId": "a-pdf",
+        "mediaIds": [
+          "pdf-checklist"
+        ],
+        "allowed": true
+      },
+      "currentRelations": {
+        "pageId": "a-pdf",
+        "mediaIds": [],
+        "allowed": false
+      },
+      "exposure": {
+        "fields": [
+          "mediaBytes"
+        ],
+        "expectedAtObservation": true,
+        "realDurationSeconds": null,
+        "simulatedElapsedSeconds": 97200,
+        "claim": "合成27小時時差；實際只驗本輪交付，未作長時演練"
+      }
+    },
+    {
+      "id": "D04",
+      "kind": "diagnostic",
+      "request": {
+        "path": "/api/pages/a-sync",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "pageId": "a-sync"
+      },
+      "rationale": "沒有取得新版時維持原來源時間及正文；snapshot age已超24h，daily/4h不是上限。",
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "setup": {
+        "roleProfile": "baseline",
+        "snapshotUnchanged": true,
+        "newSnapshotObtained": false
+      },
+      "policyExpected": {
+        "serveCapturedSnapshot": true,
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z"
+      },
+      "currentRelations": {
+        "sourceContent": "unknown",
+        "newSnapshotObtained": false
+      },
+      "exposure": {
+        "snapshotAgeSeconds": 100800,
+        "actualContentDifference": "unknown",
+        "realOutageDurationSeconds": null,
+        "claim": "28小時為固定時間標籤的計算；無真同步故障或28小時連續運行證據"
+      }
+    }
+  ],
+  "executionFreezeGaps": [
+    "fault injection/restore method and safe isolation",
+    "freeze drafted request-through-full-body 5s (including PDF), API chain 15s, browser task 30s",
+    "freeze drafted resource safeguards and full-run 900s watchdog",
+    "actual request timing and PDF source-byte format inspection",
+    "runner/schema coverage review by main agent"
+  ]
+}

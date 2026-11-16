@@ -1,0 +1,13 @@
+{
+  "mode": "capacity",
+  "N": 10000,
+  "engine": "pagefind",
+  "capacityStagePassed": true,
+  "requests": 102,
+  "failedTasks": [],
+  "mixed": {
+    "p95Ms": 120.72819499999991,
+    "failedOperations": 0,
+    "timeouts": 0
+  }
+}

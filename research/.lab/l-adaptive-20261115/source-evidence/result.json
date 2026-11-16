@@ -1,0 +1,11 @@
+{
+  "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/l-adaptive-source-20261115/data.sqlite",
+  "sha256": "25b77b24c3b54d752b246091d3f8d034cc0a8179f849bc313cada17ee2f694f1",
+  "bytes": 2133065728,
+  "N": 1000000,
+  "sourceBuilder": "Node22/SQLite3.50.4 cloud artifact",
+  "recoveryReader": "Node26.13.1/SQLite3.54.1",
+  "walMergedOnCopyOnly": true,
+  "originalTripletUnchanged": true,
+  "elapsedSeconds": 10.409273568000003
+}

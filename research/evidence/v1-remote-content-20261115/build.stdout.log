@@ -1,0 +1,28 @@
+▲ Next.js 16.4.5 (webpack)
+✓ Running next.config.mjs took 20ms
+- Experiments (use with caution):
+  · cpus: 1
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 5.9s
+  Running TypeScript ...
+  Finished TypeScript in 2ms ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/3) ...
+✓ Generating static pages using 1 worker (3/3) in 310ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/pages/[pageId]
+├ ƒ /api/pages/[pageId]/media
+├ ƒ /api/pages/[pageId]/media/[mediaId]
+├ ƒ /api/search
+└ ƒ /api/status
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

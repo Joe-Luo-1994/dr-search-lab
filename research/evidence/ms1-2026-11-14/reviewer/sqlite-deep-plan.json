@@ -1,0 +1,481 @@
+{
+  "kind": "static-query-plan-only-no-query-execution",
+  "sql": "SELECT p.id,p.spaceId,p.title,p.content FROM search_index JOIN pages p ON p.rowid=search_index.rowid WHERE search_index MATCH ? ORDER BY bm25(search_index,0,2,1),p.id LIMIT ? OFFSET ?",
+  "params": [
+    "{title content}:(\"commonterm\")",
+    10,
+    999990
+  ],
+  "queryPlan": [
+    {
+      "id": 10,
+      "parent": 0,
+      "notused": 132,
+      "detail": "SCAN search_index VIRTUAL TABLE INDEX 0:M3"
+    },
+    {
+      "id": 15,
+      "parent": 0,
+      "notused": 45,
+      "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+    },
+    {
+      "id": 32,
+      "parent": 0,
+      "notused": 0,
+      "detail": "USE TEMP B-TREE FOR ORDER BY"
+    }
+  ],
+  "bytecode": [
+    {
+      "addr": 0,
+      "opcode": "Init",
+      "p1": 0,
+      "p2": 40,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 1,
+      "opcode": "OpenEphemeral",
+      "p1": 2,
+      "p2": 7,
+      "p3": 0,
+      "p4": "k(2,B,B)",
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 2,
+      "opcode": "Variable",
+      "p1": 2,
+      "p2": 1,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 3,
+      "opcode": "MustBeInt",
+      "p1": 1,
+      "p2": 0,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 4,
+      "opcode": "IfNot",
+      "p1": 1,
+      "p2": 39,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 5,
+      "opcode": "Variable",
+      "p1": 3,
+      "p2": 2,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 6,
+      "opcode": "MustBeInt",
+      "p1": 2,
+      "p2": 0,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 7,
+      "opcode": "OffsetLimit",
+      "p1": 1,
+      "p2": 3,
+      "p3": 2,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 8,
+      "opcode": "VOpen",
+      "p1": 0,
+      "p2": 0,
+      "p3": 0,
+      "p4": "vtab:2A403868",
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 9,
+      "opcode": "OpenRead",
+      "p1": 1,
+      "p2": 2,
+      "p3": 0,
+      "p4": "4",
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 10,
+      "opcode": "Variable",
+      "p1": 1,
+      "p2": 6,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 11,
+      "opcode": "Integer",
+      "p1": 0,
+      "p2": 4,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 12,
+      "opcode": "Integer",
+      "p1": 1,
+      "p2": 5,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 13,
+      "opcode": "VFilter",
+      "p1": 0,
+      "p2": 30,
+      "p3": 4,
+      "p4": "M3",
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 14,
+      "opcode": "Rowid",
+      "p1": 0,
+      "p2": 7,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 15,
+      "opcode": "SeekRowid",
+      "p1": 1,
+      "p2": 29,
+      "p3": 7,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 16,
+      "opcode": "VColumn",
+      "p1": 0,
+      "p2": 3,
+      "p3": 15,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 17,
+      "opcode": "Function",
+      "p1": 14,
+      "p2": 15,
+      "p3": 8,
+      "p4": "bm25(-1)",
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 18,
+      "opcode": "Column",
+      "p1": 1,
+      "p2": 0,
+      "p3": 9,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 19,
+      "opcode": "Sequence",
+      "p1": 2,
+      "p2": 10,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 20,
+      "opcode": "IfNotZero",
+      "p1": 3,
+      "p2": 24,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 21,
+      "opcode": "Last",
+      "p1": 2,
+      "p2": 0,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 22,
+      "opcode": "IdxLE",
+      "p1": 2,
+      "p2": 29,
+      "p3": 8,
+      "p4": "2",
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 23,
+      "opcode": "Delete",
+      "p1": 2,
+      "p2": 0,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 24,
+      "opcode": "Column",
+      "p1": 1,
+      "p2": 1,
+      "p3": 11,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 25,
+      "opcode": "Column",
+      "p1": 1,
+      "p2": 2,
+      "p3": 12,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 26,
+      "opcode": "Column",
+      "p1": 1,
+      "p2": 3,
+      "p3": 13,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 27,
+      "opcode": "MakeRecord",
+      "p1": 8,
+      "p2": 6,
+      "p3": 19,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 28,
+      "opcode": "IdxInsert",
+      "p1": 2,
+      "p2": 19,
+      "p3": 8,
+      "p4": "6",
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 29,
+      "opcode": "VNext",
+      "p1": 0,
+      "p2": 14,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 30,
+      "opcode": "Sort",
+      "p1": 2,
+      "p2": 39,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 31,
+      "opcode": "IfPos",
+      "p1": 2,
+      "p2": 38,
+      "p3": 1,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 32,
+      "opcode": "AddImm",
+      "p1": 1,
+      "p2": -1,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 33,
+      "opcode": "Column",
+      "p1": 2,
+      "p2": 5,
+      "p3": 14,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 34,
+      "opcode": "Column",
+      "p1": 2,
+      "p2": 4,
+      "p3": 13,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 35,
+      "opcode": "Column",
+      "p1": 2,
+      "p2": 3,
+      "p3": 12,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 36,
+      "opcode": "Column",
+      "p1": 2,
+      "p2": 1,
+      "p3": 11,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 37,
+      "opcode": "ResultRow",
+      "p1": 11,
+      "p2": 4,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 38,
+      "opcode": "Next",
+      "p1": 2,
+      "p2": 31,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 39,
+      "opcode": "Halt",
+      "p1": 0,
+      "p2": 0,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 40,
+      "opcode": "Transaction",
+      "p1": 0,
+      "p2": 0,
+      "p3": 9,
+      "p4": "0",
+      "p5": 1,
+      "comment": null
+    },
+    {
+      "addr": 41,
+      "opcode": "Integer",
+      "p1": 0,
+      "p2": 16,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 42,
+      "opcode": "Integer",
+      "p1": 2,
+      "p2": 17,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 43,
+      "opcode": "Integer",
+      "p1": 1,
+      "p2": 18,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    },
+    {
+      "addr": 44,
+      "opcode": "Goto",
+      "p1": 0,
+      "p2": 1,
+      "p3": 0,
+      "p4": null,
+      "p5": 0,
+      "comment": null
+    }
+  ]
+}

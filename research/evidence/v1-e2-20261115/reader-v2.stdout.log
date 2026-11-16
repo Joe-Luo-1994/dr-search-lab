@@ -1,0 +1,2 @@
+✓ Running next.config.mjs took 24ms
+{"event":"e2_ready","cache":"main","pid":43004,"url":"http://127.0.0.1:3159","snapshotId":"v1-e2-20261115-v2","sourceSha256":"e1ceee4695c81b0741915f5f29c17a83d874729682fab85ea9d587fea7788d51","manifestSha256":"cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7","installedAt":"2026-11-15T14:07:06.562Z","directory":"/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\caches\\main\\v2"}

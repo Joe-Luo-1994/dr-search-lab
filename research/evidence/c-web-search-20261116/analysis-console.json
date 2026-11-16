@@ -1,0 +1,142 @@
+{
+  "stages": [
+    {
+      "name": "reading-only-baseline",
+      "recalc": {
+        "reading": {
+          "planned": 30,
+          "sent": 30,
+          "ok": 30,
+          "canceled": 0,
+          "p95Ms": 11.854255000002013
+        }
+      },
+      "telemetry": {
+        "reader": {
+          "samples": 59,
+          "peakBytes": 3641077760,
+          "averageCores": 0.013651776485657163,
+          "maxEvents": 0,
+          "oom": 0
+        },
+        "minio": {
+          "samples": 14,
+          "peakBytes": 3700387840,
+          "averageCores": 0.012788882156122392,
+          "maxEvents": 0,
+          "oom": 0
+        }
+      },
+      "maxQueue": 0
+    },
+    {
+      "name": "general-search-1",
+      "recalc": {
+        "reading": {
+          "planned": 30,
+          "sent": 30,
+          "ok": 30,
+          "canceled": 0,
+          "p95Ms": 15.662024999997811
+        },
+        "search": {
+          "planned": 30,
+          "sent": 30,
+          "ok": 30,
+          "canceled": 0,
+          "p95Ms": 1074.4679649999962
+        }
+      },
+      "telemetry": {
+        "reader": {
+          "samples": 60,
+          "peakBytes": 3304435712,
+          "averageCores": 0.5103052825341744,
+          "maxEvents": 0,
+          "oom": 0
+        },
+        "minio": {
+          "samples": 15,
+          "peakBytes": 300642304,
+          "averageCores": 0.0024014288979393944,
+          "maxEvents": 0,
+          "oom": 0
+        }
+      },
+      "maxQueue": 0
+    },
+    {
+      "name": "general-search-2",
+      "recalc": {
+        "reading": {
+          "planned": 30,
+          "sent": 30,
+          "ok": 30,
+          "canceled": 0,
+          "p95Ms": 13.318164999996952
+        },
+        "search": {
+          "planned": 60,
+          "sent": 60,
+          "ok": 60,
+          "canceled": 0,
+          "p95Ms": 1045.9537729999865
+        }
+      },
+      "telemetry": {
+        "reader": {
+          "samples": 61,
+          "peakBytes": 3316846592,
+          "averageCores": 0.9638785687774101,
+          "maxEvents": 0,
+          "oom": 0
+        },
+        "minio": {
+          "samples": 16,
+          "peakBytes": 309747712,
+          "averageCores": 0.003570231322155064,
+          "maxEvents": 0,
+          "oom": 0
+        }
+      },
+      "maxQueue": 0
+    },
+    {
+      "name": "general-search-4",
+      "recalc": {
+        "reading": {
+          "planned": 30,
+          "sent": 30,
+          "ok": 30,
+          "canceled": 0,
+          "p95Ms": 818.3372430000018
+        },
+        "search": {
+          "planned": 120,
+          "sent": 120,
+          "ok": 120,
+          "canceled": 0,
+          "p95Ms": 1475.3014300000068
+        }
+      },
+      "telemetry": {
+        "reader": {
+          "samples": 61,
+          "peakBytes": 3331293184,
+          "averageCores": 1.924125290400805,
+          "maxEvents": 0,
+          "oom": 0
+        },
+        "minio": {
+          "samples": 15,
+          "peakBytes": 324923392,
+          "averageCores": 0.003506597040492862,
+          "maxEvents": 0,
+          "oom": 0
+        }
+      },
+      "maxQueue": 3
+    }
+  ],
+  "stop": null
+}

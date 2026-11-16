@@ -1,0 +1,253 @@
+{
+  "at": 1794759345.4465196,
+  "files": {
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/environment.py": {
+      "sha256": "57b05531da22850f633804cb8625807bd976dd65527c47d54383bcbd4aec3bd3",
+      "bytes": 11854
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/fixture-contract.md": {
+      "sha256": "eeca2e872da3ec91bce9c06757e340b6c28bcb4076c1a005ad9855eda872a613",
+      "bytes": 4618
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/fixture.mjs": {
+      "sha256": "b7ee387c6ebe8070fbfad38824f64eba6bbb2a5c4a982c1d9255959944ccbb3f",
+      "bytes": 11594
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/load.mjs": {
+      "sha256": "d32af9cb2e7e54fa129a00cd82d8cf7fc47b0476aa69a36aab97c4a8a2076a68",
+      "bytes": 28196
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/next.config.mjs": {
+      "sha256": "d70d7aa9ded02aeda7e122376442562ababb0b7a0c37a22b04fec5a2fed3ce18",
+      "bytes": 62
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/pool.mjs": {
+      "sha256": "31f717d48e9f8d63469abd3b047dda3e2163a1582a96f98319c714cc091c79a4",
+      "bytes": 2998
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/publish.mjs": {
+      "sha256": "45d8d2b2a00f0c3f05c5d054966883f43db091b11265c0e4abfb9f590aa719e8",
+      "bytes": 1559
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/service.mjs": {
+      "sha256": "acf8b5d2aa468c64bef6f0f0a81ce3aa2ab23a94149423f248a6427412108ad0",
+      "bytes": 6355
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/storage.mjs": {
+      "sha256": "150133c6cf7488c878864357dc86674c01771415514d8d9385ee417957b0a549",
+      "bytes": 3432
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/worker.mjs": {
+      "sha256": "02f0353973390e384c00cfedc34ab3b701c0020060764aedd6bca1e4b3236be3",
+      "bytes": 2325
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/pages/index.js": {
+      "sha256": "ce5586497d878efbde87dd8fa704ccd8e7e7b7f479c440b4a3797bb75d80e84c",
+      "bytes": 150
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-capacity-20261115/pages/api/capi/[op].js": {
+      "sha256": "51444c4a49d4bebdbe54e939a9d94c00c13e7f24404896eca11a17f54bd55dfa",
+      "bytes": 248
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/environment.py": {
+      "sha256": "57b05531da22850f633804cb8625807bd976dd65527c47d54383bcbd4aec3bd3",
+      "bytes": 11854
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/fixture-contract.md": {
+      "sha256": "eeca2e872da3ec91bce9c06757e340b6c28bcb4076c1a005ad9855eda872a613",
+      "bytes": 4618
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/fixture.mjs": {
+      "sha256": "b7ee387c6ebe8070fbfad38824f64eba6bbb2a5c4a982c1d9255959944ccbb3f",
+      "bytes": 11594
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/load.mjs": {
+      "sha256": "d32af9cb2e7e54fa129a00cd82d8cf7fc47b0476aa69a36aab97c4a8a2076a68",
+      "bytes": 28196
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/next.config.mjs": {
+      "sha256": "d70d7aa9ded02aeda7e122376442562ababb0b7a0c37a22b04fec5a2fed3ce18",
+      "bytes": 62
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/pool.mjs": {
+      "sha256": "31f717d48e9f8d63469abd3b047dda3e2163a1582a96f98319c714cc091c79a4",
+      "bytes": 2998
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/publish.mjs": {
+      "sha256": "45d8d2b2a00f0c3f05c5d054966883f43db091b11265c0e4abfb9f590aa719e8",
+      "bytes": 1559
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/service.mjs": {
+      "sha256": "acf8b5d2aa468c64bef6f0f0a81ce3aa2ab23a94149423f248a6427412108ad0",
+      "bytes": 6355
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/storage.mjs": {
+      "sha256": "150133c6cf7488c878864357dc86674c01771415514d8d9385ee417957b0a549",
+      "bytes": 3432
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/worker.mjs": {
+      "sha256": "02f0353973390e384c00cfedc34ab3b701c0020060764aedd6bca1e4b3236be3",
+      "bytes": 2325
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/pages/index.js": {
+      "sha256": "ce5586497d878efbde87dd8fa704ccd8e7e7b7f479c440b4a3797bb75d80e84c",
+      "bytes": 150
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/pages/api/capi/[op].js": {
+      "sha256": "51444c4a49d4bebdbe54e939a9d94c00c13e7f24404896eca11a17f54bd55dfa",
+      "bytes": 248
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/formal-1/config-public.json": {
+      "sha256": "4b56759c3f433679f691e1558240cc353d7b42f106c45202cc28f396d3d33e8a",
+      "bytes": 1539
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/formal-1/limits.json": {
+      "sha256": "1d9efc520074244c49c35dc8aedd0d20224f8753859b875f3efd7fdfd5c7b27e",
+      "bytes": 455
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/docs/C_CAPACITY_PLAN_20261115.md": {
+      "sha256": "5acfeef82f131649e2649ad491288e4506f885d120eb769964a0c954301f88ed",
+      "bytes": 6950
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/package-lock.json": {
+      "sha256": "4c801956b808122c4a0610b98881bede76853f4f69f30d479470fdce8e8a3ca8",
+      "bytes": 30875
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/node_modules/next/package.json": {
+      "sha256": "76f5b7ef447577c2855eee017ae8a47aeefc1e4c95e71387b66c2671283682c8",
+      "bytes": 3188
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/node_modules/react/package.json": {
+      "sha256": "9cc9c3de5441a2eea7f41f52f3f2a15a4fc51f90c0b72741f0d7638643a85e67",
+      "bytes": 1242
+    },
+    "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node": {
+      "sha256": "ccacb2d6d87ba6d118b2bffc1ae33747a05cc5fc6b1f1ec4fc1d420b687e952d",
+      "bytes": 121613584
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/interception-route-rewrite-manifest.js": {
+      "sha256": "fc5133e40acf09e6517b073ddd7b5c0c218d09938848902210f2cc13f08e1c81",
+      "bytes": 48
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/webpack-api-runtime.js": {
+      "sha256": "94dd0db09ffcb086c43b80e82cafed2bedea169614fef4f52fcaa1b703a6fb71",
+      "bytes": 927
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages-manifest.json": {
+      "sha256": "24f02e479a4d07a9a8064bb7d3f98a7e4962a4bf6b16537753e59fcd5cdde9a5",
+      "bytes": 201
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/dynamic-css-manifest.js": {
+      "sha256": "552e8e00b2a9b3bb878bf5706a310b912dd0943c8841663006a94933ea6c10fb",
+      "bytes": 33
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/middleware-react-loadable-manifest.js": {
+      "sha256": "ad2e79ec91e2a5440840da3d8bd222c279b3b4c47e89a968327a66f6cb12eb82",
+      "bytes": 36
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/preview-props.json": {
+      "sha256": "8357c7e08b875100b9d9d7d1326bb00a04aca575b46d35751908ceb25bbccc9c",
+      "bytes": 250
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/next-font-manifest.json": {
+      "sha256": "926e772d34a53f2a4d9b16071dd6ea77b051b2b7acc49d9165723debe3fbbe0f",
+      "bytes": 77
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/webpack-runtime.js": {
+      "sha256": "ff0d3c0d490ef6cf8cd012615507b9934e9d5dcce54a5b9fd01b08e796185c28",
+      "bytes": 1008
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/middleware-build-manifest.js": {
+      "sha256": "f400e37bce314f4c7c8a9174be4659e9834011deb89815340add37242e5f9ef9",
+      "bytes": 830
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/next-font-manifest.js": {
+      "sha256": "2c0f5bbb79d07dfea405146a62d7e15a7a9e890d29e38b7db2631fcf6e480da8",
+      "bytes": 106
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/middleware-manifest.json": {
+      "sha256": "0a8520bc7e076f7ae717c2d62713990c83e8a3d74626f327a3844bc0504e210c",
+      "bytes": 83
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/functions-config-manifest.json": {
+      "sha256": "e7d9c7de4b1a0e8ed521c8ca071261fb4a0de053afc0040538c0a50e5e4c1ee4",
+      "bytes": 37
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/index.js.nft.json": {
+      "sha256": "0b9c62959ed6f10bbf2d45ad30e4485eed0190bbff867fe288b588ada36d804d",
+      "bytes": 8394
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/_document.js": {
+      "sha256": "d366232c8de61901e03634b3edd8ccd24d6857720c4d54f3af5830919538ed3a",
+      "bytes": 368
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/index.html": {
+      "sha256": "f8e4830a4c1af541417a4656da5bcd8519b86419f4b0a4cbd8c7466261824455",
+      "bytes": 1224
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/_app.js.nft.json": {
+      "sha256": "bf3b375b314df770902acc0895b6731c728c1f266d7dbac4c22040a05d119ce2",
+      "bytes": 542
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/404.html": {
+      "sha256": "c7ca1645aac4478d026a41e9b82963b981045efa29d15031ad55a02425ec54d2",
+      "bytes": 2021
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/_app.js": {
+      "sha256": "17b2ac47f08d713147d1e5cd7d08d7e3b29453735478d5c52717d9e50870ca56",
+      "bytes": 3245
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/_error.js": {
+      "sha256": "fe21e73fce48c75e247dde0f2cd238e2b6313ffb456f67601c548755f906bb11",
+      "bytes": 6159
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/_document.js.nft.json": {
+      "sha256": "8dd8da967c767acbda8707e7ab8d2b96c46da0f243ce00f76e8f5a4a059839b1",
+      "bytes": 8353
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/_error.js.nft.json": {
+      "sha256": "96992b9fcfa9b4395ecd30cf9e6fe56f79771c4f5fec2f9ffffbed026017266d",
+      "bytes": 8337
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/500.html": {
+      "sha256": "ea5203fdef36c64970d046242281ffbbeb6585295d05aa690803d508ffe588c6",
+      "bytes": 2007
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/chunks/662.js": {
+      "sha256": "5e56f5b008ab866588b0f9537d05c9e45794b505106b4faae80e9e89011ab6da",
+      "bytes": 70865
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/chunks/206.js": {
+      "sha256": "68a5030bd6d5346850cbadd67dd836d1706fc60d988f4df7301acc3fa7161cb1",
+      "bytes": 82489
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/api/capi/[op].js.nft.json": {
+      "sha256": "467e7b3eed0a25bb964e2016a5ad73c007220b5f9d96cf22144feece15a37e6e",
+      "bytes": 7709
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/.next/server/pages/api/capi/[op].js": {
+      "sha256": "dce8cca28c94d82a3ea6c4802c943295000a47c0578a73f1ded3589482914197",
+      "bytes": 54155
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/fixture-100000-oracle2/v1/search.sqlite": {
+      "sha256": "816b5f68f8ef26e667bf469fa3034a54597a3f255143030b81214a5101503dba",
+      "bytes": 333697024
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/fixture-100000-oracle2/v1/manifest.json": {
+      "sha256": "36d384599bac2ea6c0a5ea7cd39db0d3c002d94f3ae7948b6b8d36ad4c863de0",
+      "bytes": 68306
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/fixture-100000-oracle2/v2/search.sqlite": {
+      "sha256": "1498d9c4e72512d38d7430eef151bab4f90ef570d904c40d7b199f0fba24cf32",
+      "bytes": 333807616
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/fixture-100000-oracle2/v2/manifest.json": {
+      "sha256": "716bb7fc52b1ef498530661d653b7a08f4791155a9cafc9be01dc7e82e459ab5",
+      "bytes": 68562
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/fixture-100000-oracle2/oracle.json": {
+      "sha256": "825a2e0eddcd7cd065f4ab423fbbd401edcc8898c76f8d1ceff3fddad92a8c75",
+      "bytes": 58006641
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-15T08:50:12.407863+00:00",
+  "passed": true,
+  "jobs": 48,
+  "proxyStartEndPairs": 11441,
+  "allPrefixesValidated": true,
+  "sourceAndReleaseUnchanged": true,
+  "sourceSha256": "70905a85dc7bfd5499eebd1253fb2e889b81aff1d5223d220f1bb8ec881d0cfa",
+  "portsFree": [
+    19440,
+    19441,
+    19442
+  ],
+  "reviewType": "Parent post-run raw-record audit; not completed independent outcome review",
+  "checks": "6 prescribed cells, exact 7-step prefixes, target phase sequence, proxy pair completeness, no trace overflow, source/release hashes, no owned listeners"
+}

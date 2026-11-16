@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-11-15T13:16:24.741Z",
+  "finishedAt": "2026-11-15T13:16:25.017Z",
+  "durationMs": 276,
+  "fatal": "Command failed: powershell.exe -NoProfile -File /PUBLIC/WINDOWS_WORKSPACE\\scripts\\v1-e1-20261115\\monitor.ps1\n�]���o�Өt�ΤW�w���Ϋ��O�X����A�ҥH�L�k���J /PUBLIC/WINDOWS_WORKSPACE\\scripts\\v1-e1-20261115\\m\r\nonitor.ps1 �ɮסC�p�ݸԲӸ�T�A�аѾ\\ about_Execution_Policies�A���}�� https:/go.microsoft.com/fwlink/?LinkID=135170�C\r\n    + CategoryInfo          : SecurityError: (:) [], ParentContainsErrorRecordException\r\n    + FullyQualifiedErrorId : UnauthorizedAccess\r\n",
+  "caseCount": 0,
+  "requestCount": 0,
+  "results": [],
+  "uiResults": [],
+  "resourceSamples": 0,
+  "totalRssMax": 0,
+  "formalPassed": false,
+  "scope": "small synthetic Windows function test, no capacity or production acceptance"
+}

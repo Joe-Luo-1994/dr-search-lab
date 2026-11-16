@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "width-320",
+    "width-390",
+    "width-768",
+    "width-1280",
+    "expand-all",
+    "expanded-widths",
+    "collapse-all",
+    "keyboard-details",
+    "navigation-targets",
+    "work-scope-reachable",
+    "print-events-expand-and-restore",
+    "local-evidence-links",
+    "no-script-errors-or-remote-requests"
+  ],
+  "errors": [],
+  "remote": [],
+  "scope": "agent browser inspection; print events only, no physical print/PDF or human usability claim"
+}

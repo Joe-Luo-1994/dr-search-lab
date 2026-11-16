@@ -1,0 +1,5 @@
+✓ Running next.config.mjs took 20ms
+{"ready":true,"mode":"reviewer-launched actual Next production app","pid":5257,"url":"http://127.0.0.1:39899","metrics":"http://127.0.0.1:40399/__review_stats","root":"/workspace/dr-search-lab/.lab/product-review/round-2-no-pagefind"}
+(node:5257) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"closed":true,"requests":[]}

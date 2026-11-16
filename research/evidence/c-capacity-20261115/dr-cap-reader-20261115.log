@@ -1,0 +1,68 @@
+▲ Next.js 16.4.5
+- Local:         http://127.0.0.1:3172
+- Network:       http://127.0.0.1:3172
+✓ Ready in 107ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/package-lock.json
+
+✓ Running next.config.mjs took 8ms
+▲ Next.js 16.4.5
+- Local:         http://127.0.0.1:3172
+- Network:       http://127.0.0.1:3172
+✓ Ready in 104ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/package-lock.json
+
+✓ Running next.config.mjs took 10ms
+(node:1445) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1446) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▲ Next.js 16.4.5
+- Local:         http://127.0.0.1:3172
+- Network:       http://127.0.0.1:3172
+✓ Ready in 77ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/package-lock.json
+
+✓ Running next.config.mjs took 9ms
+(node:1616) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1617) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1663) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1664) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▲ Next.js 16.4.5
+- Local:         http://127.0.0.1:3172
+- Network:       http://127.0.0.1:3172
+✓ Ready in 69ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-capacity-20261115/project/package-lock.json
+
+✓ Running next.config.mjs took 8ms
+(node:1769) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1770) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1870) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1871) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

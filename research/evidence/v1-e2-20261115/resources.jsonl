@@ -1,0 +1,4 @@
+{"stage":"before","at":"2026-11-15T14:07:01.796Z","freeMemoryBytes":19958923264,"freeDiskBytes":420139270144,"rss":199987200,"logicalBytes":68032019}
+{"stage":"G1","at":"2026-11-15T14:07:05.304Z","freeMemoryBytes":19502018560,"freeDiskBytes":420123844608,"rss":912576512,"logicalBytes":68143270}
+{"stage":"G2","at":"2026-11-15T14:07:06.488Z","freeMemoryBytes":19421143040,"freeDiskBytes":420120604672,"rss":915845120,"logicalBytes":68217679}
+{"stage":"G3","at":"2026-11-15T14:07:09.521Z","freeMemoryBytes":19106807808,"freeDiskBytes":420120375296,"rss":1286852608,"logicalBytes":68400224}

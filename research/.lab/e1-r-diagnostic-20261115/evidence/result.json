@@ -1,0 +1,319 @@
+{
+  "diagnosticComplete": true,
+  "cells": [
+    {
+      "label": "L-full",
+      "mode": "L",
+      "stage": "full",
+      "state": "validated",
+      "started": {
+        "wallMs": 1794732305456,
+        "monoNs": "418575464996"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "prefixValidated": true,
+      "target": {
+        "rawCount": 6,
+        "rankRows": [
+          {
+            "rowid": 6000,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 6999,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 7998,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 8997,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 9996,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 5001,
+            "score": -2.8465471576675365e-7
+          }
+        ],
+        "hits": [
+          "p000005999",
+          "p000006998",
+          "p000007997",
+          "p000008996",
+          "p000009995",
+          "p000005000"
+        ],
+        "workerMs": 10.959268000000002
+      },
+      "elapsedMs": 116.4591539999999
+    },
+    {
+      "label": "R-full",
+      "mode": "R",
+      "stage": "full",
+      "state": "deadline",
+      "started": {
+        "wallMs": 1794732305575,
+        "monoNs": "418693581263"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "prefixValidated": true,
+      "lastObservedPhase": {
+        "name": "rank",
+        "edge": "start",
+        "rightCensored": true
+      },
+      "error": "WORKER_4800MS_DEADLINE",
+      "elapsedMs": 5060.202329
+    },
+    {
+      "label": "L-count-only",
+      "mode": "L",
+      "stage": "count-only",
+      "state": "validated",
+      "started": {
+        "wallMs": 1794732310648,
+        "monoNs": "423767089557"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "prefixValidated": true,
+      "target": {
+        "rawCount": 6,
+        "workerMs": 6.125172999999997
+      },
+      "elapsedMs": 103.23587399999997
+    },
+    {
+      "label": "R-count-only",
+      "mode": "R",
+      "stage": "count-only",
+      "state": "validated",
+      "started": {
+        "wallMs": 1794732310752,
+        "monoNs": "423871113009"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "prefixValidated": true,
+      "target": {
+        "rawCount": 6,
+        "workerMs": 3387.82278
+      },
+      "elapsedMs": 3615.0427370000007
+    },
+    {
+      "label": "L-rank-only",
+      "mode": "L",
+      "stage": "rank-only",
+      "state": "validated",
+      "started": {
+        "wallMs": 1794732314375,
+        "monoNs": "427494541615"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "prefixValidated": true,
+      "target": {
+        "rankRows": [
+          {
+            "rowid": 6000,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 6999,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 7998,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 8997,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 9996,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 5001,
+            "score": -2.8465471576675365e-7
+          }
+        ],
+        "workerMs": 6.381049000000004
+      },
+      "elapsedMs": 93.6673780000001
+    },
+    {
+      "label": "R-rank-only",
+      "mode": "R",
+      "stage": "rank-only",
+      "state": "validated",
+      "started": {
+        "wallMs": 1794732314470,
+        "monoNs": "427589046113"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "prefixValidated": true,
+      "target": {
+        "rankRows": [
+          {
+            "rowid": 6000,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 6999,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 7998,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 8997,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 9996,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 5001,
+            "score": -2.8465471576675365e-7
+          }
+        ],
+        "workerMs": 3335.663322
+      },
+      "elapsedMs": 3562.5628000000015
+    }
+  ],
+  "auditErrors": [],
+  "peakRss": 1082736640,
+  "peakBytes": 193998848,
+  "minFree": 975184080896,
+  "remainingChildren": [],
+  "lifecycle": [
+    {
+      "name": "enable-wal",
+      "pid": 1324,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794732304663,
+      "monoNs": "417781940033"
+    },
+    {
+      "name": "query-plan",
+      "pid": 1331,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794732304697,
+      "monoNs": "417816387826"
+    },
+    {
+      "name": "replicate-once",
+      "pid": 1366,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794732305267,
+      "monoNs": "418386531053"
+    },
+    {
+      "name": "L-full",
+      "pid": 1383,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794732305573,
+      "monoNs": "418691892714"
+    },
+    {
+      "name": "R-full",
+      "pid": 1390,
+      "code": null,
+      "signal": "SIGKILL",
+      "wallMs": 1794732310635,
+      "monoNs": "423753748355"
+    },
+    {
+      "name": "L-count-only",
+      "pid": 1419,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794732310751,
+      "monoNs": "423870312298"
+    },
+    {
+      "name": "R-count-only",
+      "pid": 1426,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794732314367,
+      "monoNs": "427486131182"
+    },
+    {
+      "name": "L-rank-only",
+      "pid": 1450,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794732314469,
+      "monoNs": "427588191144"
+    },
+    {
+      "name": "R-rank-only",
+      "pid": 1457,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794732318033,
+      "monoNs": "431151591595"
+    },
+    {
+      "name": "minio",
+      "pid": 1338,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794732318114,
+      "monoNs": "431233334716"
+    }
+  ],
+  "elapsedMs": 14039.414271,
+  "wallMs": 1794732318129,
+  "monoNs": "431247724858"
+}

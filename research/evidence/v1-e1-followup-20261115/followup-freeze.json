@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-15T13:39:01.551Z",
+  "originalFilesVerified": 120,
+  "files": {
+    "docs/DR_E1_FOLLOWUP_CARD_20261115.md": "656c2d75cbbccb82fb2debc7c9d5ed1e9d86d688482672b1a874a803063c00a8",
+    "scripts/v1-e1-followup-20261115/clock-normal.mjs": "d136c396ef074e70c70b195dd3162ff01260042a85e5c767b41cb4aae5362418",
+    "scripts/v1-e1-followup-20261115/clock.mjs": "cb1bd34ae8723681e5092034b3d1c0e2c050f327fa66527311c9029602c19ac3",
+    "scripts/v1-e1-followup-20261115/inspect-ui.mjs": "e8eae3a33be268d3b8db761d3a4d1e117fc48b2527feeb63884276fe801dfcbc",
+    "scripts/v1-e1-followup-20261115/run.mjs": "8a61ebfb69b965dc3ec306115f16bbedac5276cdc54dbd99f86ab7cccc511f18"
+  }
+}

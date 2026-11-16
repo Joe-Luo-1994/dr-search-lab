@@ -1,0 +1,161 @@
+[
+  {
+    "stage": "pagefind-10000",
+    "engine": "pagefind",
+    "N": 10000,
+    "hasSuccessfulManifest": true,
+    "actualPageCount": 10000,
+    "actualMappingCount": 10000,
+    "sampledIds": [
+      "p000000000",
+      "p000000001",
+      "p000000017",
+      "p000000019",
+      "p000004999",
+      "p000005000",
+      "p000005001",
+      "p000000997",
+      "p000009999"
+    ],
+    "pagefindLanguageCounts": {
+      "zh": 10000
+    },
+    "passed": true,
+    "logicalBytes": 26069408,
+    "allocatedBytes": 61480960,
+    "files": 10175
+  },
+  {
+    "stage": "pagefind-100000",
+    "engine": "pagefind",
+    "N": 100000,
+    "hasSuccessfulManifest": false,
+    "actualPageCount": 100000,
+    "actualMappingCount": 0,
+    "passed": null,
+    "note": "Incomplete build preserved; row count is not a successful release or reader acceptance.",
+    "logicalBytes": 147398656,
+    "allocatedBytes": 147398656,
+    "files": 1
+  },
+  {
+    "stage": "pagefind-60",
+    "engine": "pagefind",
+    "N": 60,
+    "hasSuccessfulManifest": true,
+    "actualPageCount": 60,
+    "actualMappingCount": 60,
+    "sampledIds": [
+      "p000000000",
+      "p000000001",
+      "p000000017",
+      "p000000019",
+      "p000000029",
+      "p000000030",
+      "p000000031",
+      "p000000059"
+    ],
+    "pagefindLanguageCounts": {
+      "zh": 60
+    },
+    "passed": true,
+    "logicalBytes": 782172,
+    "allocatedBytes": 1024000,
+    "files": 77
+  },
+  {
+    "stage": "sqlite-10000",
+    "engine": "sqlite",
+    "N": 10000,
+    "hasSuccessfulManifest": true,
+    "actualPageCount": 10000,
+    "actualMappingCount": 0,
+    "sampledIds": [
+      "p000000000",
+      "p000000001",
+      "p000000017",
+      "p000000019",
+      "p000004999",
+      "p000005000",
+      "p000005001",
+      "p000000997",
+      "p000009999"
+    ],
+    "actualFtsCount": 10000,
+    "passed": true,
+    "logicalBytes": 22741504,
+    "allocatedBytes": 22745088,
+    "files": 2
+  },
+  {
+    "stage": "sqlite-100000",
+    "engine": "sqlite",
+    "N": 100000,
+    "hasSuccessfulManifest": true,
+    "actualPageCount": 100000,
+    "actualMappingCount": 0,
+    "sampledIds": [
+      "p000000000",
+      "p000000001",
+      "p000000017",
+      "p000000019",
+      "p000049999",
+      "p000050000",
+      "p000050001",
+      "p000000997",
+      "p000099999"
+    ],
+    "actualFtsCount": 100000,
+    "passed": true,
+    "logicalBytes": 215602670,
+    "allocatedBytes": 215605248,
+    "files": 2
+  },
+  {
+    "stage": "sqlite-1000000",
+    "engine": "sqlite",
+    "N": 1000000,
+    "hasSuccessfulManifest": true,
+    "actualPageCount": 1000000,
+    "actualMappingCount": 0,
+    "sampledIds": [
+      "p000000000",
+      "p000000001",
+      "p000000017",
+      "p000000019",
+      "p000499999",
+      "p000500000",
+      "p000500001",
+      "p000000997",
+      "p000999999"
+    ],
+    "actualFtsCount": 1000000,
+    "passed": true,
+    "logicalBytes": 2133084634,
+    "allocatedBytes": 2133028864,
+    "files": 2
+  },
+  {
+    "stage": "sqlite-60",
+    "engine": "sqlite",
+    "N": 60,
+    "hasSuccessfulManifest": true,
+    "actualPageCount": 60,
+    "actualMappingCount": 0,
+    "sampledIds": [
+      "p000000000",
+      "p000000001",
+      "p000000017",
+      "p000000019",
+      "p000000029",
+      "p000000030",
+      "p000000031",
+      "p000000059"
+    ],
+    "actualFtsCount": 60,
+    "passed": true,
+    "logicalBytes": 214388,
+    "allocatedBytes": 217088,
+    "files": 2
+  }
+]

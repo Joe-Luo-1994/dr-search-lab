@@ -1,0 +1,30 @@
+{
+  "elapsedMs": 26062.289545,
+  "resourceUsage": {
+    "userCPUTime": 6171393,
+    "systemCPUTime": 3122577,
+    "maxRSS": 120696,
+    "sharedMemorySize": 0,
+    "unsharedDataSize": 0,
+    "unsharedStackSize": 0,
+    "minorPageFault": 253531,
+    "majorPageFault": 0,
+    "swappedOut": 0,
+    "fsRead": 0,
+    "fsWrite": 0,
+    "ipcSent": 0,
+    "ipcReceived": 0,
+    "signalsCount": 0,
+    "voluntaryContextSwitches": 24962,
+    "involuntaryContextSwitches": 55
+  },
+  "requests": 1065,
+  "putBytes": 6657211909,
+  "getBytes": 6657074738,
+  "bucket": "c-capacity-1000000",
+  "published": [
+    "v1",
+    "v2"
+  ],
+  "trust": "local pinned receipt; not production release discovery/IAM"
+}

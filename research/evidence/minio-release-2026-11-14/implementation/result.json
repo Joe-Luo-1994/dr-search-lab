@@ -1,0 +1,844 @@
+{
+  "startedAt": "2026-11-14T10:01:53.147Z",
+  "synthetic": true,
+  "stages": [
+    {
+      "prefix": "v1",
+      "fault": null,
+      "pid": 16544,
+      "code": 0,
+      "signal": null,
+      "before": null,
+      "after": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "elapsedMs": 176.168185,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16544,
+          "at": "2026-11-14T10:01:53.927Z",
+          "release": "minio-small-v1",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-small/staging/minio-small-v1-16544-cf64ee6c"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16544,
+          "at": "2026-11-14T10:01:53.934Z",
+          "release": "minio-small-v1",
+          "path": "data.sqlite",
+          "bytes": 49152,
+          "sha256": "97ac3da0389f6cdef03f7f359259dafcf1b1a3af587ca3a794aba4b3d25de3d6",
+          "expectedBytes": 49152
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16544,
+          "at": "2026-11-14T10:01:53.939Z",
+          "release": "minio-small-v1",
+          "path": "media/a000000000.txt",
+          "bytes": 88,
+          "sha256": "64fe9f4f52e8e3bc52ac86187989fbb8a427fb28b944c6791a443030aae99bf6",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16544,
+          "at": "2026-11-14T10:01:53.942Z",
+          "release": "minio-small-v1",
+          "path": "media/a000000001.txt",
+          "bytes": 88,
+          "sha256": "0d675cd2bd4131201d28a28fdbb64a3d791acbba3d1bdaf3d681e7ca0db5f78b",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16544,
+          "at": "2026-11-14T10:01:53.945Z",
+          "release": "minio-small-v1",
+          "path": "media/a000000002.txt",
+          "bytes": 88,
+          "sha256": "5f39fcf51841cc5fe75776f7a6ed71b7708e7aeb74badb299f481c0e69c4db92",
+          "expectedBytes": 88
+        },
+        {
+          "event": "activated",
+          "pid": 16544,
+          "at": "2026-11-14T10:01:53.949Z",
+          "release": "minio-small-v1",
+          "manifestSha256": "a509bc5f46a4b723df33689e0c3c02f5b203ae04486429616d5a365e3e1b2bc2",
+          "bytes": 49416,
+          "elapsedMs": 38.812207,
+          "root": "/workspace/dr-search-lab/.lab/minio-release/cache-small/releases/minio-small-v1"
+        }
+      ]
+    },
+    {
+      "prefix": "v2",
+      "fault": "truncate",
+      "pid": 16591,
+      "code": 1,
+      "signal": null,
+      "before": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "after": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "elapsedMs": 158.62839299999996,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16591,
+          "at": "2026-11-14T10:01:54.839Z",
+          "release": "minio-small-v2",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-small/staging/minio-small-v2-16591-2a6f7c36"
+        },
+        {
+          "event": "install_failed",
+          "pid": 16591,
+          "at": "2026-11-14T10:01:54.846Z",
+          "code": "TRANSFER_INTERRUPTED",
+          "elapsedMs": 23.609523999999993
+        }
+      ]
+    },
+    {
+      "case": "truncate",
+      "elapsedMs": 280.4856359999999,
+      "passed": true
+    },
+    {
+      "prefix": "missing",
+      "fault": null,
+      "pid": 16613,
+      "code": 1,
+      "signal": null,
+      "before": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "after": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "elapsedMs": 138.61489800000004,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16613,
+          "at": "2026-11-14T10:01:55.088Z",
+          "release": "minio-small-v2",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-small/staging/minio-small-v2-16613-ccf07f78"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16613,
+          "at": "2026-11-14T10:01:55.094Z",
+          "release": "minio-small-v2",
+          "path": "data.sqlite",
+          "bytes": 49152,
+          "sha256": "7d9f13437fe5b2b802afebf739955b8bb734bfc84cb3d505f187d734a943f264",
+          "expectedBytes": 49152
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16613,
+          "at": "2026-11-14T10:01:55.099Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000000.txt",
+          "bytes": 88,
+          "sha256": "3dd9c142a40ea5c19190c972f7de8d4e674f40d319e6b67a0755157f33261c7a",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16613,
+          "at": "2026-11-14T10:01:55.102Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000001.txt",
+          "bytes": 88,
+          "sha256": "7489064fb9d68b796302aba2413937a1488a36c04aad4f3766aaf7c2f892dca1",
+          "expectedBytes": 88
+        },
+        {
+          "event": "install_failed",
+          "pid": 16613,
+          "at": "2026-11-14T10:01:55.106Z",
+          "code": "NoSuchKey",
+          "elapsedMs": 34.380525000000006
+        }
+      ]
+    },
+    {
+      "case": "missing",
+      "elapsedMs": 269.4946010000001,
+      "passed": true
+    },
+    {
+      "prefix": "corrupt",
+      "fault": null,
+      "pid": 16635,
+      "code": 1,
+      "signal": null,
+      "before": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "after": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "elapsedMs": 150.37651000000005,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16635,
+          "at": "2026-11-14T10:01:55.371Z",
+          "release": "minio-small-v2",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-small/staging/minio-small-v2-16635-42c23038"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16635,
+          "at": "2026-11-14T10:01:55.377Z",
+          "release": "minio-small-v2",
+          "path": "data.sqlite",
+          "bytes": 49152,
+          "sha256": "7d9f13437fe5b2b802afebf739955b8bb734bfc84cb3d505f187d734a943f264",
+          "expectedBytes": 49152
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16635,
+          "at": "2026-11-14T10:01:55.382Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000000.txt",
+          "bytes": 88,
+          "sha256": "3dd9c142a40ea5c19190c972f7de8d4e674f40d319e6b67a0755157f33261c7a",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16635,
+          "at": "2026-11-14T10:01:55.385Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000001.txt",
+          "bytes": 88,
+          "sha256": "7489064fb9d68b796302aba2413937a1488a36c04aad4f3766aaf7c2f892dca1",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16635,
+          "at": "2026-11-14T10:01:55.388Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000002.txt",
+          "bytes": 88,
+          "sha256": "87a8776fea21fce8e81129bde31500afaed4723a6055d55a5de2db57687cb67f",
+          "expectedBytes": 88
+        },
+        {
+          "event": "install_failed",
+          "pid": 16635,
+          "at": "2026-11-14T10:01:55.388Z",
+          "code": "SHA256_MISMATCH",
+          "elapsedMs": 33.027327
+        }
+      ]
+    },
+    {
+      "case": "corrupt",
+      "elapsedMs": 268.043717,
+      "passed": true
+    },
+    {
+      "prefix": "missing",
+      "fault": "pause-after-db",
+      "pid": 16657,
+      "code": null,
+      "signal": "SIGKILL",
+      "before": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "after": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "elapsedMs": 108.07377199999974,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16657,
+          "at": "2026-11-14T10:01:55.608Z",
+          "release": "minio-small-v2",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-small/staging/minio-small-v2-16657-f56f9887"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16657,
+          "at": "2026-11-14T10:01:55.614Z",
+          "release": "minio-small-v2",
+          "path": "data.sqlite",
+          "bytes": 49152,
+          "sha256": "7d9f13437fe5b2b802afebf739955b8bb734bfc84cb3d505f187d734a943f264",
+          "expectedBytes": 49152
+        },
+        {
+          "event": "partial_barrier",
+          "pid": 16657,
+          "at": "2026-11-14T10:01:55.615Z",
+          "release": "minio-small-v2",
+          "bytes": 49152,
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-small/staging/minio-small-v2-16657-f56f9887"
+        }
+      ]
+    },
+    {
+      "prefix": "missing",
+      "fault": null,
+      "pid": 16668,
+      "code": 1,
+      "signal": null,
+      "before": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "after": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "elapsedMs": 132.92762400000038,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16668,
+          "at": "2026-11-14T10:01:55.732Z",
+          "release": "minio-small-v2",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-small/staging/minio-small-v2-16668-8622cc12"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16668,
+          "at": "2026-11-14T10:01:55.737Z",
+          "release": "minio-small-v2",
+          "path": "data.sqlite",
+          "bytes": 49152,
+          "sha256": "7d9f13437fe5b2b802afebf739955b8bb734bfc84cb3d505f187d734a943f264",
+          "expectedBytes": 49152
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16668,
+          "at": "2026-11-14T10:01:55.741Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000000.txt",
+          "bytes": 88,
+          "sha256": "3dd9c142a40ea5c19190c972f7de8d4e674f40d319e6b67a0755157f33261c7a",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16668,
+          "at": "2026-11-14T10:01:55.744Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000001.txt",
+          "bytes": 88,
+          "sha256": "7489064fb9d68b796302aba2413937a1488a36c04aad4f3766aaf7c2f892dca1",
+          "expectedBytes": 88
+        },
+        {
+          "event": "install_failed",
+          "pid": 16668,
+          "at": "2026-11-14T10:01:55.747Z",
+          "code": "NoSuchKey",
+          "elapsedMs": 28.095975999999993
+        }
+      ]
+    },
+    {
+      "case": "restart",
+      "elapsedMs": 354.01749599999994,
+      "passed": true
+    },
+    {
+      "prefix": "missing",
+      "fault": null,
+      "pid": 16690,
+      "code": 1,
+      "signal": null,
+      "before": null,
+      "after": null,
+      "elapsedMs": 110.82372499999974,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16690,
+          "at": "2026-11-14T10:01:55.955Z",
+          "release": "minio-small-v2",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-empty-invalid/staging/minio-small-v2-16690-268377f8"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16690,
+          "at": "2026-11-14T10:01:55.960Z",
+          "release": "minio-small-v2",
+          "path": "data.sqlite",
+          "bytes": 49152,
+          "sha256": "7d9f13437fe5b2b802afebf739955b8bb734bfc84cb3d505f187d734a943f264",
+          "expectedBytes": 49152
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16690,
+          "at": "2026-11-14T10:01:55.964Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000000.txt",
+          "bytes": 88,
+          "sha256": "3dd9c142a40ea5c19190c972f7de8d4e674f40d319e6b67a0755157f33261c7a",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16690,
+          "at": "2026-11-14T10:01:55.967Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000001.txt",
+          "bytes": 88,
+          "sha256": "7489064fb9d68b796302aba2413937a1488a36c04aad4f3766aaf7c2f892dca1",
+          "expectedBytes": 88
+        },
+        {
+          "event": "install_failed",
+          "pid": 16690,
+          "at": "2026-11-14T10:01:55.970Z",
+          "code": "NoSuchKey",
+          "elapsedMs": 29.073216000000002
+        }
+      ]
+    },
+    {
+      "prefix": "v2",
+      "fault": null,
+      "pid": 16723,
+      "code": 0,
+      "signal": null,
+      "before": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "after": "6f73804ab363dce26c7f9943671619bef6f59340736cf7c4732b465ac253ed90",
+      "elapsedMs": 115.23719900000015,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16723,
+          "at": "2026-11-14T10:01:56.523Z",
+          "release": "minio-small-v2",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-small/staging/minio-small-v2-16723-9166a3b9"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16723,
+          "at": "2026-11-14T10:01:56.528Z",
+          "release": "minio-small-v2",
+          "path": "data.sqlite",
+          "bytes": 49152,
+          "sha256": "7d9f13437fe5b2b802afebf739955b8bb734bfc84cb3d505f187d734a943f264",
+          "expectedBytes": 49152
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16723,
+          "at": "2026-11-14T10:01:56.532Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000000.txt",
+          "bytes": 88,
+          "sha256": "3dd9c142a40ea5c19190c972f7de8d4e674f40d319e6b67a0755157f33261c7a",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16723,
+          "at": "2026-11-14T10:01:56.535Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000001.txt",
+          "bytes": 88,
+          "sha256": "7489064fb9d68b796302aba2413937a1488a36c04aad4f3766aaf7c2f892dca1",
+          "expectedBytes": 88
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16723,
+          "at": "2026-11-14T10:01:56.537Z",
+          "release": "minio-small-v2",
+          "path": "media/a000000002.txt",
+          "bytes": 88,
+          "sha256": "85751a7035e8971bcfc58642d0ce29bbcbb1c2faf7f6edc8b66ffc24187de985",
+          "expectedBytes": 88
+        },
+        {
+          "event": "activated",
+          "pid": 16723,
+          "at": "2026-11-14T10:01:56.541Z",
+          "release": "minio-small-v2",
+          "manifestSha256": "204a4a74df527f12b0e7ab2e64ce97d1e9fdbcfdb52a057ee18fbf0a3afcccda",
+          "bytes": 49416,
+          "elapsedMs": 31.878151000000003,
+          "root": "/workspace/dr-search-lab/.lab/minio-release/cache-small/releases/minio-small-v2"
+        }
+      ]
+    },
+    {
+      "prefix": "large",
+      "fault": null,
+      "pid": 16789,
+      "code": 0,
+      "signal": null,
+      "before": null,
+      "after": "ca41c621916a4867ebedfed0d6ec743ef621e3348594669657b478a648987467",
+      "elapsedMs": 9145.150847,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16789,
+          "at": "2026-11-14T10:02:09.674Z",
+          "release": "minio-large-v1",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-cold-1/staging/minio-large-v1-16789-0b666769"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16789,
+          "at": "2026-11-14T10:02:18.216Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2133065728,
+          "sha256": "bdd4a22ca136ee7112540c6a6a4c670d2871b55517ae5cdf811c0f713d21eaa0",
+          "expectedBytes": 2133065728
+        },
+        {
+          "event": "activated",
+          "pid": 16789,
+          "at": "2026-11-14T10:02:18.710Z",
+          "release": "minio-large-v1",
+          "manifestSha256": "46bf04c8a1f297fe21c9fe75b9d4b1356412ea77abdfce64a239537999fddee6",
+          "bytes": 2133065728,
+          "elapsedMs": 9050.520264,
+          "root": "/workspace/dr-search-lab/.lab/minio-release/cache-cold-1/releases/minio-large-v1"
+        }
+      ]
+    },
+    {
+      "label": "cold-1",
+      "cache": "/workspace/dr-search-lab/.lab/minio-release/cache-cold-1",
+      "coldThroughTaskMs": 12671.653907,
+      "reference120s": true,
+      "probe": {
+        "schema": "MR1-million-recovery-v1",
+        "passed": true,
+        "requests": 8,
+        "expectedRequests": 8,
+        "failure": null,
+        "rows": [
+          {
+            "task": "million:small:search",
+            "url": "/api/search?q=commonterm&pageSize=10",
+            "identity": "small",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 4427,
+            "sha256": "9722d9571dc590dc4e8f69b763bd3472c44317e1534e6e55d3046de3ef325a54",
+            "elapsedMs": 996.5088979999999
+          },
+          {
+            "task": "million:small:body",
+            "url": "/api/pages/p000505994?release=minio-large-v1",
+            "identity": "small",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 1154,
+            "sha256": "828597646a3df20af48ad78b4b7bbb28afbee6f71526a5d5283c66f860eed890",
+            "elapsedMs": 10.68871799999988
+          },
+          {
+            "task": "million:huge:search",
+            "url": "/api/search?q=commonterm&pageSize=10",
+            "identity": "huge",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 4426,
+            "sha256": "b60376de1620a990bedd3ddb055de1d1d782c17b9dd7cf33ff36e8b652544e58",
+            "elapsedMs": 675.833259
+          },
+          {
+            "task": "million:huge:body",
+            "url": "/api/pages/p000000002?release=minio-large-v1",
+            "identity": "huge",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 1153,
+            "sha256": "e1efaedea56fae2a6ea561b5ab0346b26cd183aeb20f29918bdc3ae4922f6e26",
+            "elapsedMs": 10.250946999999996
+          },
+          {
+            "task": "million:all:search",
+            "url": "/api/search?q=commonterm&pageSize=10",
+            "identity": "all",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 4426,
+            "sha256": "b60376de1620a990bedd3ddb055de1d1d782c17b9dd7cf33ff36e8b652544e58",
+            "elapsedMs": 1146.1907330000001
+          },
+          {
+            "task": "million:all:body",
+            "url": "/api/pages/p000000002?release=minio-large-v1",
+            "identity": "all",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 1153,
+            "sha256": "e1efaedea56fae2a6ea561b5ab0346b26cd183aeb20f29918bdc3ae4922f6e26",
+            "elapsedMs": 6.404630999999881
+          },
+          {
+            "task": "million:unknown-auth",
+            "url": "/api/search?q=commonterm",
+            "identity": null,
+            "expectedStatus": 503,
+            "status": 503,
+            "bytes": 37,
+            "sha256": "0a458be9b2d8a9d618278bd097a330bdb3adba5d57a240b1fa8e97ad0a635d3e",
+            "elapsedMs": 4.145050999999967
+          },
+          {
+            "task": "million:page-size-bound",
+            "url": "/api/search?q=commonterm&pageSize=51",
+            "identity": "all",
+            "expectedStatus": 400,
+            "status": 400,
+            "bytes": 36,
+            "sha256": "ded8b3ba906c7629bdcc395c5a9775093ea3045137cb262b8b27ca8afa1195ab",
+            "elapsedMs": 6.679235999999946
+          }
+        ]
+      }
+    },
+    {
+      "prefix": "large",
+      "fault": null,
+      "pid": 16863,
+      "code": 0,
+      "signal": null,
+      "before": null,
+      "after": "ca41c621916a4867ebedfed0d6ec743ef621e3348594669657b478a648987467",
+      "elapsedMs": 9411.616792000004,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 16863,
+          "at": "2026-11-14T10:02:22.345Z",
+          "release": "minio-large-v1",
+          "staging": "/workspace/dr-search-lab/.lab/minio-release/cache-cold-2/staging/minio-large-v1-16863-5cbc5efe"
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 16863,
+          "at": "2026-11-14T10:02:31.606Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2133065728,
+          "sha256": "bdd4a22ca136ee7112540c6a6a4c670d2871b55517ae5cdf811c0f713d21eaa0",
+          "expectedBytes": 2133065728
+        },
+        {
+          "event": "activated",
+          "pid": 16863,
+          "at": "2026-11-14T10:02:31.654Z",
+          "release": "minio-large-v1",
+          "manifestSha256": "46bf04c8a1f297fe21c9fe75b9d4b1356412ea77abdfce64a239537999fddee6",
+          "bytes": 2133065728,
+          "elapsedMs": 9322.758936999999,
+          "root": "/workspace/dr-search-lab/.lab/minio-release/cache-cold-2/releases/minio-large-v1"
+        }
+      ]
+    },
+    {
+      "label": "cold-2",
+      "cache": "/workspace/dr-search-lab/.lab/minio-release/cache-cold-2",
+      "coldThroughTaskMs": 13080.861520000002,
+      "reference120s": true,
+      "probe": {
+        "schema": "MR1-million-recovery-v1",
+        "passed": true,
+        "requests": 8,
+        "expectedRequests": 8,
+        "failure": null,
+        "rows": [
+          {
+            "task": "million:small:search",
+            "url": "/api/search?q=commonterm&pageSize=10",
+            "identity": "small",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 4427,
+            "sha256": "9722d9571dc590dc4e8f69b763bd3472c44317e1534e6e55d3046de3ef325a54",
+            "elapsedMs": 974.27448
+          },
+          {
+            "task": "million:small:body",
+            "url": "/api/pages/p000505994?release=minio-large-v1",
+            "identity": "small",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 1154,
+            "sha256": "828597646a3df20af48ad78b4b7bbb28afbee6f71526a5d5283c66f860eed890",
+            "elapsedMs": 11.029320000000098
+          },
+          {
+            "task": "million:huge:search",
+            "url": "/api/search?q=commonterm&pageSize=10",
+            "identity": "huge",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 4426,
+            "sha256": "b60376de1620a990bedd3ddb055de1d1d782c17b9dd7cf33ff36e8b652544e58",
+            "elapsedMs": 743.6738399999999
+          },
+          {
+            "task": "million:huge:body",
+            "url": "/api/pages/p000000002?release=minio-large-v1",
+            "identity": "huge",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 1153,
+            "sha256": "e1efaedea56fae2a6ea561b5ab0346b26cd183aeb20f29918bdc3ae4922f6e26",
+            "elapsedMs": 17.845670000000155
+          },
+          {
+            "task": "million:all:search",
+            "url": "/api/search?q=commonterm&pageSize=10",
+            "identity": "all",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 4426,
+            "sha256": "b60376de1620a990bedd3ddb055de1d1d782c17b9dd7cf33ff36e8b652544e58",
+            "elapsedMs": 1187.1097800000002
+          },
+          {
+            "task": "million:all:body",
+            "url": "/api/pages/p000000002?release=minio-large-v1",
+            "identity": "all",
+            "expectedStatus": 200,
+            "status": 200,
+            "bytes": 1153,
+            "sha256": "e1efaedea56fae2a6ea561b5ab0346b26cd183aeb20f29918bdc3ae4922f6e26",
+            "elapsedMs": 5.865216000000146
+          },
+          {
+            "task": "million:unknown-auth",
+            "url": "/api/search?q=commonterm",
+            "identity": null,
+            "expectedStatus": 503,
+            "status": 503,
+            "bytes": 37,
+            "sha256": "0a458be9b2d8a9d618278bd097a330bdb3adba5d57a240b1fa8e97ad0a635d3e",
+            "elapsedMs": 9.817900000000009
+          },
+          {
+            "task": "million:page-size-bound",
+            "url": "/api/search?q=commonterm&pageSize=51",
+            "identity": "all",
+            "expectedStatus": 400,
+            "status": 400,
+            "bytes": 36,
+            "sha256": "ded8b3ba906c7629bdcc395c5a9775093ea3045137cb262b8b27ca8afa1195ab",
+            "elapsedMs": 4.66633499999989
+          }
+        ]
+      }
+    }
+  ],
+  "uploads": [
+    {
+      "key": "v1/data.sqlite",
+      "bytes": 49152,
+      "elapsedMs": 8.415876000000026
+    },
+    {
+      "key": "v1/media/a000000000.txt",
+      "bytes": 88,
+      "elapsedMs": 3.060173000000077
+    },
+    {
+      "key": "v1/media/a000000001.txt",
+      "bytes": 88,
+      "elapsedMs": 2.4423459999999295
+    },
+    {
+      "key": "v1/media/a000000002.txt",
+      "bytes": 88,
+      "elapsedMs": 2.7020919999999933
+    },
+    {
+      "key": "v1/manifest.json",
+      "bytes": 729,
+      "elapsedMs": 2.773207999999954
+    },
+    {
+      "key": "v2/data.sqlite",
+      "bytes": 49152,
+      "elapsedMs": 5.197217000000023
+    },
+    {
+      "key": "v2/media/a000000000.txt",
+      "bytes": 88,
+      "elapsedMs": 3.4778239999999414
+    },
+    {
+      "key": "v2/media/a000000001.txt",
+      "bytes": 88,
+      "elapsedMs": 3.0980389999999716
+    },
+    {
+      "key": "v2/media/a000000002.txt",
+      "bytes": 88,
+      "elapsedMs": 2.683785000000057
+    },
+    {
+      "key": "v2/manifest.json",
+      "bytes": 729,
+      "elapsedMs": 2.6211319999999887
+    },
+    {
+      "key": "missing/data.sqlite",
+      "bytes": 49152,
+      "elapsedMs": 3.0409049999999525
+    },
+    {
+      "key": "missing/media/a000000000.txt",
+      "bytes": 88,
+      "elapsedMs": 2.2539859999999408
+    },
+    {
+      "key": "missing/media/a000000001.txt",
+      "bytes": 88,
+      "elapsedMs": 2.4482049999999163
+    },
+    {
+      "key": "missing/manifest.json",
+      "bytes": 729,
+      "elapsedMs": 2.2897800000000643
+    },
+    {
+      "key": "corrupt/data.sqlite",
+      "bytes": 49152,
+      "elapsedMs": 3.98132099999998
+    },
+    {
+      "key": "corrupt/media/a000000000.txt",
+      "bytes": 88,
+      "elapsedMs": 1.744019000000094
+    },
+    {
+      "key": "corrupt/media/a000000001.txt",
+      "bytes": 88,
+      "elapsedMs": 1.8171279999999115
+    },
+    {
+      "key": "corrupt/manifest.json",
+      "bytes": 729,
+      "elapsedMs": 2.11409900000001
+    },
+    {
+      "key": "large/data.sqlite",
+      "bytes": 2133065728,
+      "elapsedMs": 10135.05341
+    },
+    {
+      "key": "large/manifest.json",
+      "bytes": 194,
+      "elapsedMs": 2.3504100000027393
+    }
+  ],
+  "limitations": [
+    "Loopback MinIO native build; not company Harbor deployment",
+    "Original producer files visible on host; no namespace isolation",
+    "Single writer, process-pinned snapshots; no automatic load balancer rollout",
+    "Mock Space auth; not GM; no formal RTO"
+  ],
+  "passed": true,
+  "largeSource": {
+    "path": "/workspace/dr-search-lab/.lab/ms1/sqlite-1000000/data.sqlite",
+    "bytes": 2133065728,
+    "sha256": "bdd4a22ca136ee7112540c6a6a4c670d2871b55517ae5cdf811c0f713d21eaa0"
+  },
+  "finishedAt": "2026-11-14T10:02:35.351Z"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "html": "<p role=\"alert\" class=\"error\">目前無法確認存取權限。請檢查研究身份或稍後再試。</p>",
+    "text": "目前無法確認存取權限。請檢查研究身份或稍後再試。",
+    "inMain": true,
+    "visible": true,
+    "bounds": {
+      "x": 16,
+      "y": 445.109375,
+      "width": 343,
+      "height": 73.5625,
+      "top": 445.109375,
+      "right": 359,
+      "bottom": 518.671875,
+      "left": 16
+    }
+  },
+  {
+    "html": "<div aria-live=\"assertive\" id=\"__next-route-announcer__\" role=\"alert\" style=\"position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;\"></div>",
+    "text": "",
+    "inMain": false,
+    "visible": true,
+    "bounds": {
+      "x": -1,
+      "y": 811,
+      "width": 1,
+      "height": 1,
+      "top": 811,
+      "right": 0,
+      "bottom": 812,
+      "left": -1
+    },
+    "rootHost": "<next-route-announcer style=\"position: absolute;\"></next-route-announcer>"
+  }
+]

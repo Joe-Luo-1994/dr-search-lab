@@ -1,0 +1,52 @@
+{
+  "verified": [
+    {
+      "path": "docs/DR_E2_CARD_20261115.md",
+      "sha256": "7a4d3b72239f26b0fb56b8d053fe63db72095b63903a413dfc39cfd868ee6674"
+    },
+    {
+      "path": "docs/DR_E2_DESIGN_REVIEW_20261115.md",
+      "sha256": "3563fb2c657db8e13ad5bc3a66e5554519d4a488d6338e3823f2626b86c0bbc2"
+    },
+    {
+      "path": "docs/DR_E2_RUNBOOK_20261115.md",
+      "sha256": "b7c1c8bf7a62151df5d4a4117bf6bf7abd7b1f4200e48645b5547134bfa0357a"
+    },
+    {
+      "path": "docs/DR_E2_PREFLIGHT_REVIEW_20261115.md",
+      "sha256": "d0d8a82b7b0f6e7c975e368d57d5e0386f3cddcef1f0ddf06d068f5dfbc27faf"
+    },
+    {
+      "path": "docs/DR_E2_RESULT_20261115.md",
+      "sha256": "0a0b794922632c437fbb7e4035f28c7c928fd8c0596c2d247d03d8b65bbe6ee9"
+    },
+    {
+      "path": "docs/DR_E2_POSTRUN_REVIEW_20261115.md",
+      "sha256": "dfce52232a3649eecc481540db669170a858e7c4a483273ff07598aa77b6502a"
+    },
+    {
+      "path": "docs/DR_EXPERIMENT_PLAN_V1.md",
+      "sha256": "f3ed6dc5dccb405e15b7937674977c2f93c4d2a8ec34aa240bc9fbf3e2a12225"
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "424ecd7ae728ce7c0845c461aeeef6053ae4da081a2947402e6792162d040375"
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "9da2ac1d7f19efd3090288197a65cf61940da7786393747edf135120ca98a565"
+    },
+    {
+      "path": "scripts/v1-e2-20261115",
+      "files": 24,
+      "hashReadback": true
+    },
+    {
+      "path": "evidence/v1-e2-20261115",
+      "files": 59,
+      "hashReadback": true
+    }
+  ],
+  "runtimeRemains": "Windows",
+  "newExecutions": 0
+}

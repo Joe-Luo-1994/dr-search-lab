@@ -1,0 +1,6 @@
+{
+  "remainingListeners": [],
+  "stoppedPid": 23416,
+  "at": "2026-11-15T13:41:21.0782972Z",
+  "command": "\"C:\\Program Files\\nodejs\\node.exe\" scripts/v1-e1-20261115/serve.mjs c"
+}

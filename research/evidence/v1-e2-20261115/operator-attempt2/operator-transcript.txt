@@ -1,0 +1,46 @@
+**********************
+PowerShell transcript start
+Start time: 20261115221341
+Username: PUBLIC-HOST\User
+RunAs User: PUBLIC-HOST\User
+Configuration Name: 
+Machine: PUBLIC-HOST (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1112-611-0_26.1112.611.0_x64__3k8sg7r9htsxt\dependencies\native\powershell\pwsh.dll -NoLogo -NoProfile -ExecutionPolicy Bypass -File .lab/v1-e2-20261115/operator-attempt2/operator-run.ps1
+Process ID: 28544
+PSVersion: 7.6.9
+PSEdition: Core
+GitCommitId: 7.6.9
+OS: Microsoft Windows 10.0.26300
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+(node:14772) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"e2_staged_hashes_verified","variant":"v2","snapshotId":"v1-e2-20261115-v2","bytes":66896,"manifestSha256":"cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7"}
+{"event":"e2_install_ready","cache":"fresh","version":"v2","snapshotId":"v1-e2-20261115-v2","manifestSha256":"cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7","installedAt":"2026-11-15T14:13:41.157Z","bytes":66896,"elapsedMs":13.659999999999997,"destination":"/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\caches\\fresh\\v2"}
+{
+  "startedAt": "2026-11-15T22:13:40.9563616+08:00",
+  "endedAt": "2026-11-15T22:13:42.5042929+08:00",
+  "pid": 43300,
+  "snapshotId": "v1-e2-20261115-v2",
+  "pageId": "a-pdf",
+  "mediaId": "pdf-checklist-v2",
+  "pdfSha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae",
+  "pdfBytes": 678,
+  "output": ".lab/v1-e2-20261115/operator-attempt2",
+  "elapsedMs": 1545,
+  "firstAttemptFailed": true,
+  "interventionCount": 1,
+  "helpRequested": true,
+  "manualDecisions": [
+    "Used an operator-curated execution script based only on runbook section 4.",
+    "Recorder correction supplied by parent agent after attempt 1 failed; no product or manual changes."
+  ]
+}
+**********************
+PowerShell transcript end
+End time: 20261115221342
+**********************

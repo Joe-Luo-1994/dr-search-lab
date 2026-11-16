@@ -1,0 +1,13 @@
+{
+  "action": "publish",
+  "approved": null,
+  "elapsedMs": 2527.0214579999997,
+  "requests": 1600,
+  "putBytes": 37125621,
+  "getBytes": 37399364,
+  "assumptions": [
+    "single trusted publisher",
+    "research credentials shared; production IAM not verified",
+    "approved object read once per bootstrap; no distributed transaction"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "changes": [
+    {
+      "path": "scripts/v1-e2-20261115/run.mjs",
+      "before": "9887e444bc29099977cedad59c4534af262cade4c1e2f4f20daa537d3d8b0d98",
+      "after": "f97d9d2175c62f4d0d894a7f5355bd3cffd73b4e8c708e9b57790038b6370813"
+    },
+    {
+      "path": "docs/DR_E2_RUNBOOK_20261115.md",
+      "before": "5b1f7b16992bf47f73c6cccfbac1c43c8d5b3b4cec572b7332f797d64d50c6d2",
+      "after": "b7c1c8bf7a62151df5d4a4117bf6bf7abd7b1f4200e48645b5547134bfa0357a"
+    }
+  ],
+  "unchangedFiles": 130,
+  "formalExecutions": 0,
+  "reason": "Independent preflight findings: cancellation must stop later actions; version-dependent metadata/body assertions; rollback excluded from operator task",
+  "buildReceiptUnchanged": "484e5f9848e6f6963a2f800172c546b6997b08183a2a6df5b1bd5d4f7ecc1056"
+}

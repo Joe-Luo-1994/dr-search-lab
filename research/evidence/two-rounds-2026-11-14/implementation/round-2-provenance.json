@@ -1,0 +1,28 @@
+{
+  "round": 2,
+  "pid": 5163,
+  "url": "http://127.0.0.1:32955",
+  "sourceSha256": {
+    "scripts/product-api-lab/next.config.mjs": "83b6a87c6a8a9f0993f47b0e6e4ef599d008565e8b9bc90cf29f4adcb3cbdb57",
+    "scripts/product-api-lab/core.mjs": "ff0aee707313fefcaa3ed75791e4be5a77c8bf7cef4449c64eed1b326f35f63c",
+    "scripts/product-api-lab/prepare.mjs": "c89caf5ad3449e922317f5bbd3dc57486f4658f5d2568e312e2a8ac9cf291240",
+    "scripts/product-api-lab/.gitignore": "995a93aeb3d153ea8cd40ebf611f0bbe44fb1fd2e733015ade2feb272e639064",
+    "scripts/product-api-lab/serve.mjs": "279205ab224a756b0e718fffa94fcb4f9cd308e09a20367d384dc4b5e7a056a4",
+    "scripts/product-api-lab/package.json": "9e5d22db180cc99c0b7c9b643b049b6f98d6773e6979afda52c76f687d402c68",
+    "scripts/product-api-lab/text.mjs": "553436c3b6eda6713f45fb00e754d831f52f02f9375027c28541a00c40345e8d",
+    "scripts/product-api-lab/app/layout.js": "550c726098e2232520204b66410fd8c6ea46b9f700b7d5bcc1f288bdb118c267",
+    "scripts/product-api-lab/app/page.js": "f209e1fca4349444ec2d582d8baf72813582bfd671e61fe4eafb7ebb3625cc5b",
+    "scripts/product-api-lab/app/api/research/search/route.js": "50b647e01c78e473fdaacf822782279676a92d4eecc15cd1433c8f5c7b7b40a6",
+    "scripts/product-api-lab/app/api/research/attachments/[id]/route.js": "e29523ca25c79f2fe06e1b349220d6fa4e77822f0a78cc0cf407c910aaeaff46",
+    "scripts/product-api-lab/app/api/research/pages/[id]/route.js": "e31079b7154f1b41cb6467807af42c74ff64bc0fbbf46cc0d1bc1e40440bd67b"
+  },
+  "inputsSha256": {
+    "scripts/product-review/fixture.json": "03c5f859e7fe87c8ac1951158cd1dfae3843f84e930de5b620eb5de2af251dde",
+    "docs/reviews/two-rounds-2026-11-14/standard-v1.md": "0c8b76267c1e4f8fe79a7128e0f6aa0737f7529e05048fbab0b8ee51eef7c5b0",
+    "docs/reviews/two-rounds-2026-11-14/supplement-cost-v1.md": "46f776d38ba48481aa9dca20148e63e874856029071fa793f9d91636af78add6",
+    ".lab/product-api-lab/round-2/manifest.json": "30657b94477d7eaed9caff4c42985815c16d5f6989aa00ef546a8717f5c716ba",
+    "scripts/product-api-lab/.next-review/BUILD_ID": "cb45052e3ea953fd7b99a02f93aca41ff4704c3a792cfeb5d4a240b253b0010e"
+  },
+  "sourceSnapshot": "evidence/two-rounds-2026-11-14/implementation/round-2-source",
+  "scope": "B-level synthetic Next HTTP + frozen dependency/cost supplement; reviewer result pending"
+}

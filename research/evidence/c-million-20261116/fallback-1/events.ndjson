@@ -1,0 +1,5 @@
+{"type":"download-start","at":1794761985501,"version":"v1","badHash":false}
+{"type":"download-end","at":1794761994512,"version":"v1","downloadStartedMs":1794761985511,"downloadEndedMs":1794761994512,"bytes":3312799744,"elapsedMs":9000.445988}
+{"type":"ready","at":1794761999572,"snapshotId":"v1","downloadStartedMs":1794761985511,"downloadEndedMs":1794761994512,"bytes":3312799744,"elapsedMs":9000.445988}
+{"type":"download-start","at":1794762181903,"version":"v2","badHash":false}
+{"type":"download-end","at":1794762231310,"version":"v2","downloadStartedMs":1794762181913,"downloadEndedMs":1794762231310,"bytes":3313811456,"elapsedMs":49397.023361}

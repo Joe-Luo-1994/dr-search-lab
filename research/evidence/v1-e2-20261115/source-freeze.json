@@ -1,0 +1,37 @@
+{
+  "at": "2026-11-15T14:03:06.364Z",
+  "node": "v22.21.1",
+  "files": {
+    "scripts/v1-e2-20261115/api.mjs": "38af595a9835897d77b4a835d5653feb0ff656ff64200a3f797661f9910e05e7",
+    "scripts/v1-e2-20261115/app/api/pages/[pageId]/media/route.js": "9254e70a9becb5e4940e85d8fe3d097fd48cc33228631282d8752a2a57a7da5f",
+    "scripts/v1-e2-20261115/app/api/pages/[pageId]/media/[mediaId]/route.js": "8137b0cb073bde433d23c0eba06f44f5dcf770af73b55d0281b8cbbdc04685e8",
+    "scripts/v1-e2-20261115/app/api/pages/[pageId]/route.js": "fc4cad879137a6a50548e682325981fe3fc7fbd49739a91efc1a0f16ea9796a1",
+    "scripts/v1-e2-20261115/app/api/search/route.js": "f5218755d3794324a0d77dabab19cc538e24cb344f6ca83837b79071ff1e468c",
+    "scripts/v1-e2-20261115/app/api/status/route.js": "de687d3654d98834bfb7ed7e5b2c735285394c6f58b372baea6fe63da478fef5",
+    "scripts/v1-e2-20261115/app/layout.js": "beb81b337bd48060ea1393e904b5c49809ae4f7e8896094d3289e4aac6a0107f",
+    "scripts/v1-e2-20261115/app/page.js": "3edb96ff8b263b5cef72dce7f31d9a7c7e3324ac4f3e671a8d12911712cb4537",
+    "scripts/v1-e2-20261115/app/style.css": "9a412d4df87619354f83196117e4702e2bcb376743ed99b90f8c840ab137c826",
+    "scripts/v1-e2-20261115/build.mjs": "ed5b2ce77c5169bafc19540910daf3ab3c8185bc2b6d79371fbbe81fd9e826aa",
+    "scripts/v1-e2-20261115/bundle.mjs": "aaee3c7ae87dfa09f876866166a7c1481c1d89adb31bc3b257113ffda211cb3d",
+    "scripts/v1-e2-20261115/CONTRACT.md": "4fe7f3f336ecb2deb9b8ea84b7591bace7dae5d4c93a4790dcb09a3d5b660c9e",
+    "scripts/v1-e2-20261115/export.mjs": "09dc695ac25b83f25d40b517cd334cc8dcdf1621524ede970e1d620500f6424d",
+    "scripts/v1-e2-20261115/fixture/release-sources.mjs": "5b6761cd2104f571a91ce5183d7ed98b38bdd79e1dab4ccc83947735589a36e3",
+    "scripts/v1-e2-20261115/install.mjs": "5eecc88ba81e252b584868813b278ab19402a31b6a5e222f2a2f5315b91a3ff9",
+    "scripts/v1-e2-20261115/next.config.mjs": "3eb5b48cd38db68c7a81e7e9e91be75b705d5998a31ec47dbe2e3293cccb20b0",
+    "scripts/v1-e2-20261115/prepare-run.mjs": "3483061c35e706d002d2604edfdeb0754e141c58c9285eab703389b2709eb243",
+    "scripts/v1-e2-20261115/prepare.mjs": "10d1e009ec731929feca62d4e8bf2593c3e208d7e7874fe50be3b3393b79d4ca",
+    "scripts/v1-e2-20261115/review/oracle.json": "f4421dc329bf956ac74c637c4c647ac77004f78bf2b1790c48e928eace5f2ee5",
+    "scripts/v1-e2-20261115/run.mjs": "9887e444bc29099977cedad59c4534af262cade4c1e2f4f20daa537d3d8b0d98",
+    "scripts/v1-e2-20261115/serve.mjs": "46968d1f046d81e598910a9a790d5fd6b48d98a1776e7aab0c23dd4d780a34e4",
+    "scripts/v1-e2-20261115/settings.mjs": "e77533a46c15174c295787865bb8ab1f03e1796e758adc101c2921f9cf9a3a97",
+    "scripts/v1-e2-20261115/sqlite-search.mjs": "90bc4e34bec98b880514750f041359eaf8a3fa4fa9aec6dbc5eb856940db9399",
+    "scripts/v1-e2-20261115/traffic.mjs": "ac99d671601786ebe8ca6e7e248940cd7b14d7f69d1fc80bbda6ff8b10f7454e",
+    "docs/DR_E2_CARD_20261115.md": "7a4d3b72239f26b0fb56b8d053fe63db72095b63903a413dfc39cfd868ee6674",
+    "docs/DR_E2_RUNBOOK_20261115.md": "5b1f7b16992bf47f73c6cccfbac1c43c8d5b3b4cec572b7332f797d64d50c6d2"
+  },
+  "originalFilesVerified": 120,
+  "recipeAudit": {
+    "v1": true,
+    "v2": true
+  }
+}

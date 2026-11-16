@@ -1,0 +1,7 @@
+✓ Running next.config.mjs took 18ms
+{"event":"e1_ready","mode":"c","pid":30100,"url":"http://127.0.0.1:3157","node":"v22.21.1","snapshotId":"v1-e1-20261115-snapshot1","sourceSha256":"0c70c490dd2798054063f56685f83c1783a030ea312cae4656894b977484cada","faultEs":false}
+{"event":"e1_api_error","code":"AUTHORIZATION_UNKNOWN","detail":"AUTHORIZATION_UNKNOWN"}
+{"event":"e1_api_error","code":"AUTHORIZATION_UNKNOWN","detail":"AUTHORIZATION_UNKNOWN"}
+{"event":"e1_api_error","code":"AUTHORIZATION_UNKNOWN","detail":"AUTHORIZATION_UNKNOWN"}
+{"event":"e1_api_error","code":"AUTHORIZATION_UNKNOWN","detail":"AUTHORIZATION_UNKNOWN"}
+{"event":"e1_api_error","code":"SEARCH_UNAVAILABLE","detail":1}

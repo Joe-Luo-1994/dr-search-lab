@@ -1,0 +1,9 @@
+{
+  "endpoint": "http://127.0.0.1:19700",
+  "bucket": "c-restart-20261116",
+  "approvedKey": "control/approved.json",
+  "cacheDir": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/main",
+  "eventLog": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/cases/initial-v1/events.ndjson",
+  "testHooks": false,
+  "privateConfigSha256": "e7c1c058d6f0a134fe5b94f436257cd67688dfed9df7053863864a1ab43b2dab"
+}

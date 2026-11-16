@@ -1,0 +1,39 @@
+{
+  "verified": [
+    {
+      "path": "docs/DR_COST_DECISION_20261115.html",
+      "sha256": "ec5c74f137b30645b228d861906a54ff72d6e86eaa80e79a9d9b2b4e7f62591e"
+    },
+    {
+      "path": "docs/DR_COST_DECISION_REVIEW_20261115.md",
+      "sha256": "63c28327eb197acda149ee5c1ca0cbb43076c778b9898cd9f89dd235aef3772c"
+    },
+    {
+      "path": "docs/DR_E0_BASELINE_20261115.md",
+      "sha256": "81383214e752ff86df8efd081d4d12a4368e024eb46cb0711b39da1eaa9e2de8"
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "47dd33610ed468cd1dbf525af6057c947c24c7b0159661004f9b96c353506859"
+    },
+    {
+      "path": "docs/DR_EXPERIMENT_PLAN_V1.md",
+      "sha256": "c334b664f3c37329cc1019daed35cf87a1b566e21b089fe6ed219e410e9525e8"
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "d3f83b049da734e432f51d9a2368ef82e1cb2db03c738c3249490f2b9e86203c"
+    },
+    {
+      "path": "scripts/cost-review-20261115",
+      "files": 5,
+      "hashReadback": true
+    },
+    {
+      "path": "evidence/cost-review-20261115",
+      "files": 6,
+      "hashReadback": true
+    }
+  ],
+  "newDrExperiments": 0
+}

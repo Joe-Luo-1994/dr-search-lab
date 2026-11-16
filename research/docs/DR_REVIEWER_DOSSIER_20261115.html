@@ -1,0 +1,3039 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/charts/; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Dr Review Dossier</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Dr Review Dossier" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/charts/; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Dr Review Dossier&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 16px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans:
+    -apple-system-body, ui-sans-serif, -apple-system, system-ui, &quot;Segoe UI&quot;,
+    Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;,
+    &quot;Segoe UI Symbol&quot;;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 8px);
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * 1.625);
+  font-weight: var(--font-weight-normal);
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+  text-underline-offset: 2px;
+  font-weight: inherit;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+.table {
+  font-family: var(--font-sans);
+}
+
+h1 {
+  font-size: calc(var(--font-size-base) * 1.5);
+  line-height: 1.3333333333;
+}
+
+h2 {
+  font-size: calc(var(--font-size-base) * 1.25);
+  line-height: 1.4;
+}
+h3 {
+  font-size: calc(var(--font-size-base) * 1.125);
+  line-height: 1.5555555556;
+}
+h4 {
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+h5,
+h6 {
+  font-size: var(--font-size-base);
+  line-height: calc(var(--font-size-base) * 1.625);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+th {
+  font-weight: 600;
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+pre,
+pre code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: calc(var(--font-size-base) * 0.875);
+  line-height: calc(var(--font-size-base) * 1.625);
+  font-family: var(--font-sans);
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 5%, transparent);
+}
+.table :is(th, td):not(:last-child) {
+  padding-inline-end: calc(var(--font-size-base) * 1.5);
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead :is(th, td) {
+  border-bottom-color: var(--border-strong, var(--input));
+  padding-block: calc(var(--font-size-base) / 2);
+  line-height: var(--font-size-base);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+.table tbody :is(th, td) {
+  padding-block: calc(var(--font-size-base) * 0.625);
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 8px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+.widget {
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  box-shadow: 0 0 0 0.5px var(--border-strong, var(--border));
+  color: var(--foreground);
+  background: var(--background);
+}
+
+#widget &gt; :not(.card, .widget, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  border: 1px solid var(--border);
+  corner-shape: var(--corner-shape);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-sans);
+  padding: 5px 12px;
+  border-color: color-mix(
+    in oklab,
+    light-dark(var(--primary-foreground), var(--foreground)) 5%,
+    transparent
+  );
+  border-radius: var(--radius-2xl);
+  color: light-dark(var(--primary-foreground), var(--foreground));
+  background: light-dark(var(--foreground), var(--popover));
+  box-shadow: 0 8px 18px rgb(15 23 42 / 20%);
+  letter-spacing: -0.15px;
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: color-mix(in srgb, var(--foreground) 40%, var(--muted-foreground));
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  font-family: var(--font-sans);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 1;
+}
+
+small,
+.text-small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+/* Match inline alignment without overriding a containing flex or grid layout. */
+.btn,
+.nav-link,
+.form-control,
+.form-select,
+.form-range,
+.form-check {
+  vertical-align: middle;
+}
+
+.btn,
+.nav-link {
+  --btn-size: calc(12px + 2 * var(--control-spacing, 12px));
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  corner-shape: var(--corner-shape);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: inherit;
+  font-family: var(--font-sans);
+  height: fit-content;
+  min-height: var(--btn-size);
+  padding-inline: var(--control-spacing, 12px);
+  border-color: transparent;
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+}
+
+.btn {
+  border-color: var(--border);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+}
+
+/* Codex Button size=&quot;compact&quot;; appearance stays with the button variant. */
+.btn-sm {
+  --btn-size: 24px;
+  padding-inline: 8px;
+  font-size: calc(var(--font-size-base) * 12 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 12 / 16), 1px);
+  line-height: 16px;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 10%, transparent);
+}
+
+.btn-primary {
+  border-color: var(--border);
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: border-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: border-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--muted-foreground);
+  background: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+/* Shared preview chrome; product styles stay inside each variant. */
+.viz-dotted-background {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--foreground) 14%, transparent) 0.8px,
+    transparent 0.8px
+  );
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.viz-carousel {
+  position: relative;
+  min-width: 0;
+}
+
+.viz-carousel:has(&gt; .viz-carousel-controls) {
+  min-height: calc(60px + var(--viz-carousel-picker-height, 0px));
+  padding-bottom: 60px;
+}
+
+.viz-carousel &gt; [data-variant][hidden] {
+  display: none !important;
+}
+
+.viz-carousel &gt; [data-variant] {
+  isolation: isolate;
+}
+
+.viz-carousel-controls {
+  --viz-carousel-hover: light-dark(
+    color-mix(in srgb, var(--foreground) 5.4%, transparent),
+    color-mix(in srgb, var(--foreground) 7.8%, transparent)
+  );
+  position: absolute;
+  z-index: 2;
+  bottom: 8px;
+  left: 50%;
+  display: flex;
+  width: max-content;
+  /* Leave room for the host&#x27;s design-controls launcher at the trailing edge. */
+  max-width: calc(100% - 96px);
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  /* Match the settings dropdown chrome independently of the content font size. */
+  font-size: 13px;
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+  transform: translateX(-50%);
+  user-select: none;
+}
+
+/* Keep authored mockup button styles out of the shared carousel chrome. */
+.viz-carousel-controls button,
+.viz-carousel-picker &gt; summary {
+  display: flex !important;
+  height: auto !important;
+  min-height: 30px;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px;
+  padding: 0 6px !important;
+  -webkit-app-region: no-drag;
+  border: 0 !important;
+  border-radius: 14px !important;
+  color: inherit !important;
+  background: transparent !important;
+  font: inherit !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-picker &gt; summary {
+  position: relative;
+  isolation: isolate;
+}
+
+.viz-carousel-controls &gt; button {
+  --icon-size: 16px;
+  width: 30px !important;
+  padding: 0 !important;
+}
+
+.viz-carousel-picker &gt; summary {
+  padding-inline: 12px !important;
+}
+
+.viz-carousel-controls .viz-carousel-caret {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin: 0;
+  color: inherit;
+  transform: rotate(180deg);
+}
+
+.viz-carousel-controls &gt; button &gt; svg,
+.viz-carousel-controls .viz-carousel-caret,
+.viz-carousel-count {
+  opacity: 0.5;
+}
+
+.viz-carousel-controls &gt; button::before,
+.viz-carousel-picker &gt; summary::before {
+  position: absolute;
+  z-index: -1;
+  inset: 3px;
+  border-radius: 12px;
+  content: &quot;&quot;;
+  pointer-events: none;
+}
+
+.viz-carousel-controls &gt; button:hover::before,
+.viz-carousel-picker &gt; summary:hover::before {
+  background: var(--viz-carousel-hover);
+}
+
+.viz-carousel-controls &gt; button,
+.viz-carousel-controls [data-lucide],
+.viz-carousel-controls .lucide {
+  flex-shrink: 0;
+}
+
+.viz-carousel-picker {
+  min-width: 0;
+}
+
+.viz-carousel-picker &gt; summary {
+  min-width: 0;
+  list-style: none;
+}
+
+.viz-carousel-picker &gt; summary::-webkit-details-marker {
+  display: none;
+}
+
+.viz-carousel-count {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.viz-carousel-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viz-carousel-options {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 4px);
+  left: 0;
+  display: flex;
+  max-height: 240px;
+  flex-direction: column;
+  gap: 2px;
+  overflow: auto;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--background);
+  box-shadow: 0 4px 12px light-dark(rgb(0 0 0 / 6%), rgb(0 0 0 / 25%));
+}
+
+.viz-carousel-options &gt; button {
+  border-radius: max(0px, calc(var(--radius-lg) - 5px)) !important;
+  width: 100% !important;
+  min-height: 28px;
+  justify-content: flex-start !important;
+  padding: 4px 8px !important;
+  font-size: var(--font-size-small) !important;
+  text-align: start;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.viz-carousel-options &gt; [aria-current=&quot;true&quot;],
+.viz-carousel-options &gt; button:hover {
+  background: var(--viz-carousel-hover) !important;
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding-inline: calc(4px + var(--control-spacing, 12px) / 2);
+  border-color: var(--input);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--popover) 96%, transparent);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.4285714286;
+}
+.form-control:is(
+  [type=&quot;file&quot;],
+  [type=&quot;date&quot;],
+  [type=&quot;datetime-local&quot;],
+  [type=&quot;month&quot;],
+  [type=&quot;week&quot;],
+  [type=&quot;color&quot;]
+) {
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  line-height: 18px;
+}
+.form-control:is(
+  [type=&quot;date&quot;],
+  [type=&quot;datetime-local&quot;],
+  [type=&quot;month&quot;],
+  [type=&quot;week&quot;]
+) {
+  padding-inline: var(--control-spacing, 12px);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+  padding: 0;
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+  min-height: calc(10px + 2 * var(--control-spacing, 12px));
+  padding-inline: var(--control-spacing, 12px);
+  margin-inline-end: var(--control-spacing, 12px);
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  resize: vertical;
+  min-height: 96px;
+  padding: 8px 10px;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: none;
+}
+.form-control:disabled {
+  color: var(--muted-foreground);
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+  opacity: 1;
+}
+.form-control[aria-invalid=&quot;true&quot;] {
+  border-color: var(--red);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: fit-content;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  margin: 0;
+  /* The secondary icon role is 14px at compact density and 16px at web density. */
+  --icon-size: calc(10px + var(--control-spacing, 12px) / 2);
+  /* Settings dropdowns retain a 12px inset and a 4px text-to-chevron gap. */
+  padding: 0 calc(16px + var(--icon-size)) 0 12px;
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent calc(50% - 0.6px),
+      var(--muted-foreground) calc(50% - 0.6px) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    ),
+    linear-gradient(
+      135deg,
+      transparent calc(50% - 0.6px),
+      var(--muted-foreground) calc(50% - 0.6px) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    );
+  background-position:
+    calc(100% - 12px - var(--icon-size) / 2) 50%,
+    calc(100% - 12px - var(--icon-size) * 0.18) 50%;
+  background-repeat: no-repeat;
+  background-size: calc(var(--icon-size) * 0.32) calc(var(--icon-size) * 0.32);
+  cursor: var(--cursor-interaction, default);
+  font-size: calc(var(--font-size-base) * 14 / 16);
+  font-size: round(nearest, calc(var(--font-size-base) * 14 / 16), 1px);
+  font-weight: var(--font-weight-normal);
+  line-height: 18px;
+}
+
+.form-select :is(option, optgroup) {
+  color: var(--popover-foreground);
+  background-color: var(--popover);
+}
+
+.form-select :is(option, optgroup):disabled {
+  color: var(--muted-foreground);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: light-dark(
+    color-mix(in srgb, var(--foreground) 5.5%, transparent),
+    color-mix(in srgb, var(--foreground) 8%, transparent)
+  );
+}
+
+.form-select:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+.form-select:disabled {
+  opacity: 0.4;
+}
+
+.form-check {
+  display: flex;
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  corner-shape: round;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  width: calc(10px + var(--control-spacing, 12px) / 2);
+  height: calc(10px + var(--control-spacing, 12px) / 2);
+  border-color: var(--border-strong, var(--input));
+  border-radius: calc(var(--radius-sm) / 2);
+  background-color: transparent;
+  color: var(--foreground);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:is(:checked, :indeterminate) {
+  border-color: var(--border-strong, var(--input));
+  background-color: color-mix(in srgb, var(--popover) 96%, transparent);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+  background-color: var(--foreground);
+}
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:indeterminate::before {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 65%;
+  height: 6.65%;
+  margin: auto;
+  border-radius: var(--radius-full);
+  background: var(--foreground);
+  mask: none;
+  content: &quot;&quot;;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  border-radius: var(--radius-full);
+  width: 16px;
+  height: 16px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--input);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 0;
+  background: radial-gradient(
+    circle,
+    var(--primary-foreground) 0 3px,
+    var(--foreground) 3px
+  );
+  box-shadow: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:focus-visible {
+  border-color: var(--ring);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+.form-check:not(.form-switch) .form-check-input[type=&quot;radio&quot;]:disabled,
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;radio&quot;]:disabled
+  + .form-check-label {
+  opacity: 0.5;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+  border-color: #fff;
+  background: #fff;
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--blue);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+  outline: none;
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  accent-color: var(--primary);
+  height: calc(12px + 2 * var(--control-spacing, 12px));
+  min-height: calc(12px + 2 * var(--control-spacing, 12px));
+  outline: none;
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  background: transparent;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  background: var(--form-range-track, var(--border));
+  height: 2px;
+  border-radius: var(--radius-full);
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  margin-top: -9px;
+  border-color: transparent;
+  background: currentColor;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Outline the native track and thumb, preserving the larger input hit area. */
+.form-range:focus-visible::-webkit-slider-runnable-track {
+  outline: 2px auto Highlight;
+  outline-color: -webkit-focus-ring-color;
+}
+
+.form-range::-moz-range-track {
+  background: var(--form-range-track, var(--border));
+  height: 2px;
+  border-radius: var(--radius-full);
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  border-color: transparent;
+  background: currentColor;
+  box-shadow: var(--shadow-sm);
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+.form-range:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--blue);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.viz-carousel-controls :is(button, summary):focus-visible {
+  outline: 2px solid var(--ring) !important;
+  outline-offset: 2px !important;
+}
+
+/* Web recipes are the default, including on renderers without inline style queries. */
+@supports (border-radius: if(style(--corner-shape: round): 1px; else: 2px)) {
+  /* Match the host&#x27;s proportional text-sm scale at every text preference. */
+  .tooltip,
+  .viz-badge,
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    font-size: if(
+      style(--corner-shape: round): round(
+          nearest,
+          calc(var(--font-size-base) * 14 / 16),
+          1px
+        );
+        else: round(nearest, calc(var(--font-size-base) * 13 / 14), 1px)
+    );
+  }
+
+  .btn-sm {
+    font-size: if(
+      style(--corner-shape: round): round(
+          nearest,
+          calc(var(--font-size-base) * 12 / 16),
+          1px
+        );
+        else: round(nearest, calc(var(--font-size-base) * 12 / 14), 1px)
+    );
+  }
+
+  .btn,
+  .nav-link,
+  .form-select {
+    border-radius: if(
+      style(--corner-shape: round): var(--radius-full); else: var(--radius-lg)
+    );
+  }
+
+  .form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+    border-radius: if(
+      style(--corner-shape: round): calc(var(--radius-sm) / 2);
+        else: calc(var(--radius-lg) * 0.4)
+    );
+  }
+
+  .tooltip {
+    font-weight: if(
+      style(--corner-shape: round): 600; else: var(--font-weight-normal)
+    );
+  }
+}
+
+@media (pointer: coarse) {
+  .viz-carousel:has(&gt; .viz-carousel-controls) {
+    min-height: calc(76px + var(--viz-carousel-picker-height, 0px));
+    padding-bottom: 76px;
+  }
+
+  .btn,
+  .nav-link,
+  .viz-carousel-controls button,
+  .viz-carousel-picker &gt; summary,
+  .form-control,
+  .form-select {
+    --btn-size: 44px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, calc(var(--font-size-base) * 14 / 16));
+    font-size: max(
+      16px,
+      round(nearest, calc(var(--font-size-base) * 14 / 16), 1px)
+    );
+  }
+  .form-control:is(
+    [type=&quot;file&quot;],
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;week&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;color&quot;]
+  ) {
+    height: 44px;
+    min-height: 44px;
+    font-size: max(16px, calc(var(--font-size-base) * 14 / 16));
+    font-size: max(
+      16px,
+      round(nearest, calc(var(--font-size-base) * 14 / 16), 1px)
+    );
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const bindingElement = document.getElementById(&quot;codex-visualization-bindings&quot;);
+  const mockElement = document.getElementById(&quot;codex-connector-mocks&quot;);
+  const fileElement = document.getElementById(&quot;codex-preview-files&quot;);
+  const connectorGlobals = {};
+  if (bindingElement != null || mockElement != null || fileElement != null) {
+    const bindings = parse(bindingElement?.textContent ?? &quot;{}&quot;);
+    bindingElement?.remove();
+    const values = new Map();
+    for (const [name, binding] of Object.entries(bindings)) {
+      if (binding.type === &quot;json&quot;) values.set(name, structuredClone(binding.value));
+    }
+    const pending = [bindings];
+    while (pending.length) {
+      const object = pending.pop();
+      Object.freeze(object);
+      for (const child of Object.values(object)) {
+        if (child !== null &amp;&amp; typeof child === &quot;object&quot;) pending.push(child);
+      }
+    }
+    const updates = [];
+    if (mockElement != null) {
+      const mocks = Object.entries(parse(mockElement.textContent));
+      mockElement.remove();
+      for (const [name, value] of mocks) {
+        values.set(name, value);
+        updates.push({ name, revision: 1, state: &quot;ready&quot;, value: { type: &quot;json&quot;, value } });
+      }
+    }
+    if (fileElement != null) {
+      const files = parse(fileElement.textContent);
+      fileElement.remove();
+      const blobs = new Map();
+      const urls = [];
+      for (const [name, binding] of Object.entries(bindings)) {
+        if (binding.type !== &quot;file&quot; || !hasOwn(files, binding.path)) continue;
+        const file = files[binding.path];
+        let blob = blobs.get(binding.path);
+        if (blob == null) {
+          const bytes = Uint8Array.fromBase64?.(file.base64) ??
+            Uint8Array.from(atob(file.base64), (char) =&gt; char.charCodeAt(0));
+          blob = new Blob([bytes], { type: file.mimeType });
+          blobs.set(binding.path, blob);
+        }
+        const url = URL.createObjectURL(blob);
+        urls.push(url);
+        values.set(name, { name: file.name, blob, url });
+        updates.push({ name, revision: 1, state: &quot;ready&quot;, value: { type: &quot;file&quot;, ...file } });
+      }
+      globalThis.addEventListener(&quot;pagehide&quot;, (event) =&gt; {
+        // A persisted pagehide can restore this same document and its subscriptions.
+        if (event.persisted) return;
+        for (const url of urls) URL.revokeObjectURL(url);
+        urls.length = 0;
+      });
+    }
+    if (mockElement != null || fileElement != null) connectorGlobals.visualizationData = { updates };
+    connectorGlobals.visualization = {
+      get bindings() {
+        return bindings;
+      },
+      /** @param {string} name @param {(value: unknown) =&gt; void} callback */
+      onData(name, callback) {
+        if (typeof callback !== &quot;function&quot;) {
+          throw new TypeError(&quot;onData requires a callback&quot;);
+        }
+        try {
+          callback(values.get(name));
+        } catch (error) {
+          // oxlint-disable-next-line no-console -- Keep authored callback failures local.
+          console.error(&quot;Live visualization data callback failed&quot;, error);
+        }
+        // A static preview delivers the current value once per subscription.
+        return () =&gt; {};
+      },
+    };
+  }
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      ...connectorGlobals,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;style&gt;
+#dr-dossier {font-family:system-ui,&quot;Microsoft JhengHei&quot;,sans-serif;overflow-wrap:anywhere;color:var(--foreground)}
+#dr-dossier header,#dr-dossier section,#dr-dossier .body,#dr-dossier .stack {display:grid;gap:calc(var(--font-size-base)*1)}
+#dr-dossier section {margin-top:calc(var(--font-size-base)*2.5)}
+#dr-dossier h1,#dr-dossier h2,#dr-dossier h3 {text-wrap:balance}
+#dr-dossier header h1 {padding-right:90px}
+#dr-dossier p,#dr-dossier dl,#dr-dossier figure {margin:0}
+#dr-dossier dt {font-weight:500;margin-top:calc(var(--font-size-base)*.75)}
+#dr-dossier dd {margin:calc(var(--font-size-base)*.25) 0 0}
+#dr-dossier summary {padding-block:calc(var(--font-size-base)*1);font-weight:500}
+#dr-dossier details[open]&gt;.body {padding-bottom:calc(var(--font-size-base)*1)}
+#dr-dossier .flow {display:grid;gap:calc(var(--font-size-base)*.75);margin:0;padding:0;list-style:none}
+#dr-dossier .flow&gt;li {display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:calc(var(--font-size-base)*.7)}
+#dr-dossier .rail {display:flex;align-items:center;flex-direction:column;color:var(--muted-foreground)}
+#dr-dossier .rail svg {width:24px;height:42px;flex:none;stroke:currentColor;fill:none;stroke-width:1.5}
+#dr-dossier .node:not(.card) {padding-bottom:calc(var(--font-size-base)*1)}
+#dr-dossier .node strong {display:block;font-weight:500}
+#dr-dossier .node .fields {display:block;margin-top:calc(var(--font-size-base)*.25)}
+#dr-dossier .node .boundary {display:block;margin-top:calc(var(--font-size-base)*.5)}
+#dr-dossier .decision {border-left:3px solid var(--foreground);padding-left:calc(var(--font-size-base)*.75)}
+#dr-dossier .two {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(var(--font-size-base)*1.25)}
+#dr-dossier .split {border-left:1px solid var(--border);padding-left:calc(var(--font-size-base)*1);display:grid;gap:calc(var(--font-size-base)*.75)}
+#dr-dossier .evidence {font-family:ui-monospace,monospace;overflow-wrap:anywhere}
+#dr-dossier code {white-space:normal;overflow-wrap:anywhere}
+#dr-dossier .mini {display:grid;gap:calc(var(--font-size-base)*.5)}
+#dr-dossier nav {display:flex;flex-wrap:wrap;gap:calc(var(--font-size-base)*.5)}
+#dr-dossier .table {width:100%;table-layout:fixed}
+#dr-dossier .table th,#dr-dossier .table td {overflow-wrap:anywhere}
+#dr-dossier .case {padding-block:calc(var(--font-size-base)*.5)}
+@media(max-width:560px){#dr-dossier .two{grid-template-columns:1fr}}
+&lt;/style&gt;
+&lt;article id=&quot;dr-dossier&quot; aria-label=&quot;DR 方案分層評審材料&quot;&gt;
+&lt;header&gt;
+&lt;span&gt;DR 搜尋方案 · 2026/11/15 · 證據版&lt;/span&gt;
+&lt;h1&gt;先確認能用，再判斷值得不值得&lt;/h1&gt;
+&lt;p&gt;主案候選：Next.js ＋本地 SQLite ＋異地 MinIO ＋公司 ReBAC。目標是降低總開發與維運負擔；保留原 Backend＋ES 是有效備案。&lt;/p&gt;
+&lt;div class=&quot;decision&quot;&gt;目前可支持繼續整合，還不能支持正式採用或「比沿用 ES 更省」。既有閱讀 UI 沿用；搜尋品質、更新自動化、正式授權與總成本仍有關鍵缺口。&lt;/div&gt;
+&lt;nav aria-label=&quot;評審問題&quot;&gt;&lt;a class=&quot;btn&quot; href=&quot;#dr-copy&quot;&gt;1 同步&lt;/a&gt;&lt;a class=&quot;btn&quot; href=&quot;#dr-search&quot;&gt;2 搜尋&lt;/a&gt;&lt;a class=&quot;btn&quot; href=&quot;#dr-read&quot;&gt;3 閱讀&lt;/a&gt;&lt;a class=&quot;btn&quot; href=&quot;#dr-update&quot;&gt;4 更新&lt;/a&gt;&lt;a class=&quot;btn&quot; href=&quot;#dr-cost&quot;&gt;5 選型&lt;/a&gt;&lt;/nav&gt;
+&lt;p&gt;每節依序看：直接回答 → 運作圖 → 證據與差距 → 決策。細節留在該節展開，無須切換獨立分頁。&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;先確認範圍與證據標記&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p&gt;唯讀搜尋、閱讀、下載；指定台灣 cluster 故障，其他 cluster 可到達；ReBAC 有備援是工作假設。每日同步是初始方向，約一小時恢復是討論起點，DR 服務時間不限一小時。&lt;/p&gt;
+&lt;dl&gt;&lt;dt&gt;現況｜使用者確認&lt;/dt&gt;&lt;dd&gt;現有產品能力；不是本次 agent 已在正式環境驗收。&lt;/dd&gt;&lt;dt&gt;已測｜固定合成案例&lt;/dt&gt;&lt;dd&gt;指定配置、資料及環境的實際結果；不等於正式相容性。&lt;/dd&gt;&lt;dt&gt;設計｜下一版候選&lt;/dt&gt;&lt;dd&gt;可具體討論的責任與流程，尚未完成產品化或驗收。&lt;/dd&gt;&lt;dt&gt;未知｜會影響選型&lt;/dt&gt;&lt;dd&gt;缺資料或缺實驗，不自行當成可接受的降級。&lt;/dd&gt;&lt;/dl&gt;
+&lt;p&gt;2 秒搜尋、120 秒 reader 準備、15 分鐘整體恢復曾用於研究，均不是對口已接受的正式 SLO／RTO。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;/header&gt;
+
+&lt;section id=&quot;dr-copy&quot; aria-labelledby=&quot;dr-copy-title&quot;&gt;
+&lt;h2 id=&quot;dr-copy-title&quot;&gt;1｜MinIO 已同步，為什麼還會有「空副本」？&lt;/h2&gt;
+&lt;p&gt;你理解得對：Pod 必須有取得資料的機制。先前把兩份不同用途的資料都稱作「副本」，沒有說清楚。&lt;/p&gt;
+&lt;figure aria-label=&quot;兩層同步架構：主站發布至異地 MinIO，再安裝到 DR Pod 本地磁碟&quot;&gt;
+&lt;figcaption&gt;兩層同步，兩個不同的生命週期&lt;/figcaption&gt;
+&lt;ol class=&quot;flow&quot;&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;A&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;主站：MariaDB／MinIO&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;pageId、Space、Tags、正文、page→media 關係、附件&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;原站故障時不可依賴這條來源&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;↓&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;產製與發布工作【設計】&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;每日觸發 → 一致抽取 → SQLite 搜尋／內容檔＋版本清單＋附件物件 → 完整後發布版本&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;責任：產品 exporter／發布工作；不是 Pod 自動具有的能力&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;B&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;異地 MinIO：跨區保存的已發布版本&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;release／manifest／data.sqlite／media objects&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;【已測】合成檔案放入真 MinIO；【未驗】正式來源每日端到端發布&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;↓&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;Pod 同步元件：下載 → 校驗 → 啟用&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;起始取得版本；平時發現新版後背景下載&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;【已測】下載／hash／reader 開啟；【設計】自動偵測、重試與 readiness 管理&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;C&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;DR Pod 本地磁碟：可重建的 SQLite 檔&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;唯讀 reader 使用本地檔案；Next API 呼叫 reader&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;MinIO 有 B，不代表每個新 Pod 已有 C。附件可仍從 MinIO 取得。&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/figure&gt;
+&lt;div class=&quot;decision&quot;&gt;107.52 秒測的是「B 已完整存在、C 從空磁碟開始」到首條合成鏈。它不代表每次每日更新都停機，也不代表已 ready 的 DR Pod 要再等 107 秒。&lt;/div&gt;
+&lt;details&gt;&lt;summary&gt;三種起點：事故、擴容與更新怎麼區分？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;① DR Pod 已 ready&lt;/dt&gt;&lt;dd&gt;可用本地版本已在服務。事故後還需入口／身份／切流驗收；不必把完整下載放在切流之後。這是建議第一版優先評估的常態預熱方式，尚未驗證正式部署。&lt;/dd&gt;
+&lt;dt&gt;② 新 Pod＋空磁碟&lt;/dt&gt;&lt;dd&gt;首次部署、擴容，或使用暫存磁碟的 Pod 被重建，才需完整安裝。若採持久磁碟且檔案完整，可重用；儲存類型與跨節點重掛能力尚未決定。Pod 重新啟動不一定等於磁碟必空。&lt;/dd&gt;
+&lt;dt&gt;③ 已有舊版，正在下載新版&lt;/dt&gt;&lt;dd&gt;舊 reader 繼續服務；新檔通過驗證後才切換。下載失敗不應覆蓋舊檔。最新實驗只測同一版本的第二份檔案，詳第 4 節。&lt;/dd&gt;&lt;/dl&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;同步機制應放哪裡？第一版的具體提案&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p&gt;候選部署：每個 DR Pod 內一個同步 sidecar 負責輪詢版本、下載到共享 volume 的 staging 路徑、驗 hash 與 manifest；Next／reader supervisor 負責開啟、驗證及切換 reader。初始無可用檔時 readiness 為否，有舊版時維持服務並回報資料時間。&lt;/p&gt;
+&lt;p&gt;單用 initContainer 能做初始安裝，不能替常駐 Pod 持續更新；可搭配每次發布 rolling restart，但會增加 Pod 生命週期與下載耦合。直接放進 Next supervisor 可少一個容器，卻使下載、故障重試與 Web 程序更緊密耦合。sidecar 方案增加一個管理元件，並非免費減少維運。&lt;/p&gt;
+&lt;p&gt;以上是部署提案，尚未實作 Kubernetes 自動同步。團隊若已有成熟同步元件，應優先沿用並核對責任，避免重造。&lt;/p&gt;
+&lt;p&gt;每天一次只說「排程頻率」。真正資料 age 還包含抽取、發布、跨區完成、Pod 安裝時間，以及失敗是否被發現；資料過期的告警／繼續服務政策待定。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;&lt;a href=&quot;#evidence-e1&quot;&gt;查看 E1：恢復實測紀錄&lt;/a&gt;&lt;/p&gt;
+&lt;details id=&quot;evidence-e1&quot;&gt;&lt;summary&gt;證據 E1：107 秒包含什麼、沒包含什麼？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;已量&lt;/dt&gt;&lt;dd&gt;1M 合成頁，SQLite 2,133,065,728 bytes；20 MiB/s 應用回應節流。下載＋hash 107.47 秒；第一個搜尋→正文→68-byte 附件鏈 107.52 秒。&lt;/dd&gt;&lt;dt&gt;未包含&lt;/dt&gt;&lt;dd&gt;正式抽取、每日排程、跨區同步、DNS／登入／切流。是同機 loopback 節流，不是 WAN 延遲／丟包模型；OS cache 未清。&lt;/dd&gt;&lt;/dl&gt;
+&lt;p class=&quot;evidence&quot;&gt;E1 · round-2-evidence/result.json · cell.downloadAndHashMs=107466.52 · cell.firstChainMs=107516.53&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;dr-search&quot; aria-labelledby=&quot;dr-search-title&quot;&gt;
+&lt;h2 id=&quot;dr-search-title&quot;&gt;2｜搜尋能跑，但找得到我要的文件嗎？&lt;/h2&gt;
+&lt;p&gt;目前有「受控案例可找對」的證據，也有中文漏找的歷史反例。沒有證據支持目前 SQLite 與公司 ES 找到相同文件；前一版只展示延遲，確實漏掉了這個選型關鍵。&lt;/p&gt;
+&lt;figure aria-label=&quot;搜尋 API 架構及權限篩選位置&quot;&gt;
+&lt;figcaption&gt;候選搜尋架構｜正式 Next／ReBAC 整合待驗&lt;/figcaption&gt;
+&lt;ol class=&quot;flow&quot;&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;1&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;Web 或 API consumer → Next 搜尋 API&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;keyword、指定 Spaces、Tags、分頁＋使用者身份&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;查詢欄位不等於授權來源&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;2&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;Next 授權 adapter ↔ ReBAC&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;取得／驗證可信 Space 範圍 ∩ 使用者指定範圍&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;集合取得方式、撤權與快取契約待接；最新測試用固定可信集合&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;3&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;歸屬時效 gate → 隔離 reader → 本地 SQLite&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;keyword MATCH＋Space filter → count／排序 → pageId、title、release&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;Space 同時進 count 與 rank；Tags AND 尚未在百萬 harness 實作驗收。正式 gate 待設計：即時 role 套舊 page→Space 歸屬不一定安全，title／total／snippet 也受影響。&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;API adapter → 結果列表／consumer&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;hits、total.value／relation、可讀取的 pageId；按契約提供 excerpt&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;API 形狀相同，不代表命中、排名、分頁語意相同&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/figure&gt;
+&lt;h3&gt;搜尋效果：三組已存在的證據&lt;/h3&gt;
+&lt;div class=&quot;case&quot;&gt;&lt;strong&gt;A．最新 L 百萬頁：精確識別字&lt;/strong&gt;&lt;p&gt;查詢 &lt;code&gt;p000000000&lt;/code&gt; → 命中 1 頁，pageId 同為 &lt;code&gt;p000000000&lt;/code&gt;，title 為「Synthetic document p000000000 topic0」。標記命中在 title，接著取回同頁正文與附件。這證明固定 ID／內容鏈，沒有證明一般自然語言相關性。&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;case&quot;&gt;&lt;strong&gt;B．歷史 10k 控制組：同一批文件的漏找差異&lt;/strong&gt;
+&lt;table class=&quot;table&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;查詢／期望命中&lt;/th&gt;&lt;th&gt;SQLite unicode61&lt;/th&gt;&lt;th&gt;SQLite trigram&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;backup／7,500&lt;/td&gt;&lt;td&gt;7,500&lt;/td&gt;&lt;td&gt;7,500&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ERR_CONN_RESET／7,500&lt;/td&gt;&lt;td&gt;7,500&lt;/td&gt;&lt;td&gt;7,500&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;資料庫備份／7,500&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;7,500&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;備份／7,500&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;同來源／ops scope 的歷史配置結果。trigram 改善這組長中文，但短詞仍漏找；artifact 從 15.73 MiB 增至 35.53 MiB。不能把這組結果當作目前 L 或公司中文搜尋的實測結果。&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;case&quot;&gt;&lt;strong&gt;C．ES-reference：小型 Lexical fixture&lt;/strong&gt;&lt;p&gt;ES 8.17.0，standard analyzer：「資料庫」→ &lt;code&gt;chinese&lt;/code&gt; 1 頁；「ERR_CONN_RESET」→ &lt;code&gt;chinese&lt;/code&gt;、&lt;code&gt;structure&lt;/code&gt; 2 頁。來源頁含「資料庫備份流程與還原 ERR_CONN_RESET manualbeacon」。另有 AND、大頁文末命中與受控 Space 驗證。&lt;/p&gt;&lt;p&gt;這是另一份 1,107 頁 fixture，不能拿 1／2 筆與上表 7,500 筆作勝負比較。公司 ES-production 的版本、mapping、analyzer 與 query 尚未取得。&lt;/p&gt;&lt;/div&gt;
+&lt;div class=&quot;decision&quot;&gt;已知風險是「換斷詞／查詢規則會漏找」，不是只有排名稍變。下一個效果門檻應包含中文長詞、短詞、技術碼與多關鍵字的逐頁命中對照，再談是否可接受。&lt;/div&gt;
+&lt;details&gt;&lt;summary&gt;跟 ES 的差異逐項看：哪些是引擎，哪些是我們的 API？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;文字分析／空格&lt;/dt&gt;&lt;dd&gt;實驗 ES-reference 明確使用 standard，將空格分開的詞放入 must，詞內用 cross_fields／AND 查 title 和 searchText。最新 L 沿用 MS1 建立的 FTS5 索引；建表沒有自訂 tokenizer 宣告。尚未對最新 L 補同題中文對照。公司 ES 的行為未知；不能從「a b 搜不到」直接斷定根因是空格或 ES 預設。&lt;/dd&gt;
+&lt;dt&gt;排名&lt;/dt&gt;&lt;dd&gt;ES-reference 用 score 降冪＋pageId；SQLite scope 版用 bm25 欄位權重 0／2／1＋rowid。穩定排序已有局部測試，但沒有證據顯示排名相同或人工認為哪個更相關。&lt;/dd&gt;
+&lt;dt&gt;Space／Tags AND&lt;/dt&gt;&lt;dd&gt;Space 在 SQLite 的 count 與 rank 都有 predicate，避免只過濾畫面卻洩露 total。Tags AND 是必要需求；本輪百萬資料／harness 未涵蓋。可設 page-tag 關係並要求全部 tag 匹配是實作方向，還不能列為已交付。&lt;/dd&gt;
+&lt;dt&gt;頁面移動／撤權與快照&lt;/dt&gt;&lt;dd&gt;Space filter 只證明快照中的關係被套用，不證明該關係仍有效。例如頁面已由公開 Space 移入受限 Space，舊快照仍可能把 title、內容片段與命中數透露給原 Space 成員。需要一致版本的角色／歸屬契約，或較新的歸屬／撤權資訊與拒絕過期資料的機制。這是必要授權缺口，不能靠後續開頁時拒絕來補救搜尋洩露。&lt;/dd&gt;
+&lt;dt&gt;total／分頁&lt;/dt&gt;&lt;dd&gt;S1 研究契約上限 1,000 結果、每頁最多 50，total 帶 eq／gte；不是引擎只能做這些，也不是 consumer 已同意。最新 L 只測前兩頁，不能沿用歷史契約就聲稱完整窗口都驗過。&lt;/dd&gt;
+&lt;dt&gt;highlight／全文內容&lt;/dt&gt;&lt;dd&gt;ES 小型參照驗過有界 excerpt 與 HTML escaping；超過 100k code points 明示不給 highlight，但仍搜尋全文。SQLite 有 highlight 輸出子證據，最新 L 沒驗相同長文與安全顯示邊界。完整正文由閱讀路徑取得，是否符合正式 response 契約仍未知。&lt;/dd&gt;
+&lt;dt&gt;進階語法／容錯&lt;/dt&gt;&lt;dd&gt;研究 API 對 wildcard 等語法明確拒絕；錯字容錯、同義詞、語言分析等正式需求未知。不能把 ES 原生能力都算成公司已使用，也不能默默移除 consumer 確實依賴的能力。&lt;/dd&gt;&lt;/dl&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;&lt;a href=&quot;#evidence-e2&quot;&gt;查看 E2／E3：搜尋效果與測試來源&lt;/a&gt;&lt;/p&gt;
+&lt;details id=&quot;evidence-e2&quot;&gt;&lt;summary&gt;效果證據的原始入口與其他候選&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p class=&quot;evidence&quot;&gt;E2 · semantic-observations.json · count=10000／term／expectedTotal／observedTotal。SEARCH_API_OPTIONS.md 記載各設定及資料範圍。&lt;/p&gt;
+&lt;p&gt;同一 10k 控制組，MiniSearch default：「資料庫備份」與「備份」皆 0；Pagefind Node 新 fixture 兩者皆 7,500。另在舊 100 頁同一 bundle，「資料庫備份」Node 只有 p07，browser 有 p07／p02／p01。新 fixture 成功不抵銷舊反例；Pagefind server 行為仍有適配風險。&lt;/p&gt;
+&lt;p class=&quot;evidence&quot;&gt;E3 · S1-ES-v1／http-attempt-1.json：tasks 08 Chinese、09 technical code、10 AND terms 均 passed；http-review.mjs 固定預期 IDs。core.mjs／prepare.mjs 保存 query 與 mapping。&lt;/p&gt;
+&lt;p class=&quot;evidence&quot;&gt;E1 · round-1-evidence/http.jsonl：task=exact／iteration=first-chain／kind=search；payload.result.hits[0] 為上述 pageId 與 title。&lt;/p&gt;
+&lt;p&gt;這些資料證明受控命中，不是正式 recall／precision 或 relevance 分數。完整同語料 ES↔最新 L 的中文命中集合與排名差異表仍缺；本次未重跑或編造這張表。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;效能另外回答：查詢夠不夠快？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p&gt;最新 L 第 1 回合 37 次搜尋，樣本 P95 755.93 ms、最慢 761.31 ms。第 3 回合背景下載期間 60 次搜尋，最慢 780.10 ms；一次一個請求，完成後等 1 秒。&lt;/p&gt;
+&lt;p&gt;這是 WSL／Node HTTP harness／1M 合成頁；不是真 Next、持續多人負載或正式 SLO。歷史雲端 ES 與 SQLite 有共同契約容量對照，但不能與本機最新 L 放成同機速度排行。低延遲也不能抵銷中文漏找或 Tags 缺口。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;dr-read&quot; aria-labelledby=&quot;dr-read-title&quot;&gt;
+&lt;h2 id=&quot;dr-read-title&quot;&gt;3｜既然頁面本來就能開，新增挑戰在哪裡？&lt;/h2&gt;
+&lt;p&gt;不是重做閱讀功能。你已確認現有 page list → pageId → 取 content → editor 顯示可用。一般頁的首要整合點，確實是讓搜尋結果以同一 pageId 接回既有流程。&lt;/p&gt;
+&lt;figure aria-label=&quot;既有閱讀路徑與 PDF 特例分支&quot;&gt;
+&lt;figcaption&gt;沿用入口，只審查變動的接縫&lt;/figcaption&gt;
+&lt;ol class=&quot;flow&quot;&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;1&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;既有 page list【現況】／新 search results【增量】&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;兩個入口傳入同一個 pageId&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;2&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;既有頁面載入流程 → DR content adapter&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;canonical page metadata → Space 授權 → 回傳既有 UI 所需內容&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;換的是資料來源與授權接縫；不是宣稱 editor 尚未存在&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;node two&quot;&gt;
+&lt;div&gt;&lt;strong&gt;普通頁&lt;/strong&gt;&lt;span class=&quot;fields&quot;&gt;page content／Lexical → 既有 editor&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;需核對 DR 回傳格式、ID 與版本一致&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;split&quot;&gt;&lt;strong&gt;PDF／media-based page&lt;/strong&gt;&lt;span&gt;pageId → metadata 的 mediaId／media list&lt;/span&gt;&lt;span&gt;校驗 page→media membership ＋該 Space 存取權&lt;/span&gt;&lt;span&gt;→ MinIO 私有物件 → 檔案顯示／下載路徑&lt;/span&gt;&lt;span class=&quot;boundary&quot;&gt;具體 PDF viewer 與 DR 供檔整合尚未驗證&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/figure&gt;
+&lt;div class=&quot;decision&quot;&gt;閱讀節改為整合檢查，不把整個既有流程算成新工程。PDF「可搜尋」、「可開啟」、「可下載且有權限」是三件事，應分別提出證據。&lt;/div&gt;
+&lt;details&gt;&lt;summary&gt;PDF：找到頁面、找到檔內文字、開檔有何不同？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;搜尋 page title／描述&lt;/dt&gt;&lt;dd&gt;索引 pageId、title、Space、Tags 與已抽取正文即可走一般結果路徑。是否取到正確 media 頁仍要具體案例核對。&lt;/dd&gt;
+&lt;dt&gt;搜尋 PDF 裡面的文字&lt;/dt&gt;&lt;dd&gt;需要保留既有抽取結果或建立抽取步驟，並把 searchText 綁回 pageId 與版本。不代表每個 DR Pod 都要重跑 PDF parser。哪些附件目前會解析、抽取覆蓋與更新方式未知；本輪未測真 PDF。&lt;/dd&gt;
+&lt;dt&gt;開啟／下載 PDF&lt;/dt&gt;&lt;dd&gt;從 page metadata 得到 mediaId，授權後供檔。是否需要 Range、Content-Type／Disposition、短效連結或檔案代理，依既有 viewer／consumer 契約核對；尚無大 PDF 或 Range 驗證。&lt;/dd&gt;&lt;/dl&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;ReBAC tuple 不含 media，授權實際放哪裡？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p&gt;候選責任在 Next 的檔案授權入口：接收 pageId／mediaId → 讀取可信 page metadata → 確認 mediaId 在該 page 的 media list → 從 page 解析 Space → 向 ReBAC 驗該 Space 權限 → 才供檔。使用者傳來的 Space 或 mediaId 都不能單獨當授權依據。&lt;/p&gt;
+&lt;p&gt;不必為每個 media 新建 ReBAC tuple。代價是備份需保留 page→media 關係，下載入口不得讓公開 bucket URL 繞過檢查。若採簽名 URL，撤權與 URL 到期的窗口需另定。&lt;/p&gt;
+&lt;p&gt;每日快照下頁面可能已移 Space 或移除附件；用舊 membership 加上目前 Space role，不一定代表目前仍應允許。需要決定可接受的權限時效，或取得可用的較新關係／撤權資訊。此問題與是否用 SQLite／ES 分開，不能只畫 ReBAC 就算完成。&lt;/p&gt;
+&lt;p&gt;ReBAC 不可判定時，建議回明確不可用，不能讓 UNKNOWN 變成 ALLOW。真實服務呼叫、故障與撤權測試尚未完成。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;目前究竟驗過哪一小段？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p&gt;E1 首鏈驗過合成 pageId → 純文字正文 → 68-byte checklist 附件及內容 hash。它支持資料串接方法，沒有測正式 Lexical renderer、PDF、Range、大附件或真 ReBAC。&lt;/p&gt;
+&lt;p&gt;下一個最小整合驗收：使用既有 UI 的普通頁和 media-based 頁，各從搜尋結果點入；核對內容／檔案、身份與版本。這是候選 DR adapter 的驗收，不是重新開發整套 editor。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;dr-update&quot; aria-labelledby=&quot;dr-update-title&quot;&gt;
+&lt;h2 id=&quot;dr-update-title&quot;&gt;4｜服務正在使用，資料怎麼更新？&lt;/h2&gt;
+&lt;p&gt;建議以完整新版本安裝，再切換 reader；不要覆寫正在被讀取的檔。最新實驗證明「舊 reader 可在第二份檔案下載時繼續查詢」，還沒有證明正式新版本的完整切換。&lt;/p&gt;
+&lt;figure aria-label=&quot;舊版服務與新版準備兩條路徑及切換位置&quot;&gt;
+&lt;figcaption&gt;部署提案｜V1／V2 是圖示版本，非最新實驗真的產生兩版&lt;/figcaption&gt;
+&lt;div class=&quot;two&quot;&gt;
+&lt;div class=&quot;mini&quot;&gt;&lt;h3&gt;現在的服務路徑&lt;/h3&gt;&lt;ol class=&quot;flow&quot;&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;↓&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;使用者／consumer → Next&lt;/strong&gt;&lt;span&gt;查詢與既有頁面請求&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;↓&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;active → reader V1&lt;/strong&gt;&lt;span&gt;本地 releases/V1/data.sqlite&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;✓&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;繼續服務 V1&lt;/strong&gt;&lt;span&gt;V2 未 ready 前不移除 V1&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;
+&lt;div class=&quot;mini&quot;&gt;&lt;h3&gt;背景準備路徑&lt;/h3&gt;&lt;ol class=&quot;flow&quot;&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;↓&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;MinIO 已發布 V2&lt;/strong&gt;&lt;span&gt;同步元件 GET → staging/V2&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;↓&lt;svg aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M12 1V35m-6-6 6 6 6-6&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;hash／manifest／開啟檢查&lt;/strong&gt;&lt;span&gt;啟動新 reader V2 → probe → ready&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;rail&quot;&gt;↓&lt;/div&gt;&lt;div class=&quot;node&quot;&gt;&lt;strong&gt;才允許切 active 至 V2&lt;/strong&gt;&lt;span&gt;V1 保留供在途／舊連結或回滾；策略待定&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;圖中的背景下載與舊 reader 共存有局部實驗。自動發現 V2、雙 reader 就緒後路由切換、在途請求排空、舊版本路由與 GC 是待實作／待驗設計。&lt;/p&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;#evidence-update&quot;&gt;查看 E1：下載共存與替換紀錄&lt;/a&gt; · &lt;a href=&quot;#evidence-e4&quot;&gt;查看 E4：歷史失敗與版本反例&lt;/a&gt;&lt;/p&gt;
+&lt;details id=&quot;evidence-update&quot;&gt;&lt;summary&gt;實驗做了什麼？圖上哪些箭頭還沒驗？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;已測：下載共存&lt;/dt&gt;&lt;dd&gt;1M 頁舊 reader 運作；第二份相同 bytes／相同 release 的檔以 20 MiB/s 下載。60 次循序搜尋全部落在實際 GET 窗口內，結果符合固定預期，最慢 0.780 秒。第二份下載＋hash 107.16 秒。&lt;/dd&gt;
+&lt;dt&gt;已測：換檔／換程序&lt;/dt&gt;&lt;dd&gt;之後先停舊 worker，再啟新 PID 讀新路徑。首條新鏈觀察 44.21 ms；切換當下沒有在途請求。這不是圖上先啟新再切的完整部署方案，也不是零停機證據。&lt;/dd&gt;
+&lt;dt&gt;未測：內容真的改版&lt;/dt&gt;&lt;dd&gt;V1→V2 新增／刪除／移動頁面、Tag 變動、附件關係變動、授權時效與舊連結續讀，不能用相同 release 複製替代。&lt;/dd&gt;&lt;/dl&gt;
+&lt;p class=&quot;evidence&quot;&gt;E1 · round-3-evidence／SUMMARY.json、result.json、http.jsonl、proxy 與 phase logs；新舊檔 hash 保持一致。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;下載壞了、切換壞了、舊連結怎麼辦？&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;下載或校驗失敗&lt;/dt&gt;&lt;dd&gt;設計：staging 不啟用，保留 active 舊版並告警資料 age。歷史小型 MinIO release 實驗有失敗安裝保留舊版子證據；不等於正式排程和新版長期運作已驗。&lt;/dd&gt;
+&lt;dt&gt;新 reader 無法 ready&lt;/dt&gt;&lt;dd&gt;設計：不切 active；診斷後重試或重新發布。若已切換才發現問題，能否回滾必須連同流量路由、健康判斷及舊檔保留驗證。最新三輪沒有完成故障回滾。&lt;/dd&gt;
+&lt;dt&gt;使用者拿 V1 結果，下一個請求落在 V2&lt;/dt&gt;&lt;dd&gt;歷史原型已出現 409 的反例。可選「請求帶版本＋保留／路由到舊版」，代價是多版本；或「明確提示重新搜尋」，代價由使用者／consumer 承擔，必須取得接受。版本一致不能覆蓋撤權政策。&lt;/dd&gt;
+&lt;dt&gt;清理舊版&lt;/dt&gt;&lt;dd&gt;設計：達保留期、無使用者引用或已超過允許續讀窗口後才 GC；實際引用追蹤與保留窗口尚未決定。不能僅看到新版 ready 就刪舊版。&lt;/dd&gt;&lt;/dl&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;div class=&quot;decision&quot;&gt;若選 C，就得承擔版本同步與 reader 生命週期的自有工程。若現有 Backend／ES 已有成熟流程，沿用它可能更省；這是第 5 節的比較入口。&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&quot;dr-cost&quot; aria-labelledby=&quot;dr-cost-title&quot;&gt;
+&lt;h2 id=&quot;dr-cost-title&quot;&gt;5｜什麼條件下，應該直接保留 ES？&lt;/h2&gt;
+&lt;p&gt;目前不應核准「SQLite 更省」。現在可以決定的是：是否值得補 C 的基本功能，以及 A 是否已能用很少的增量成本交付同一旅程。&lt;/p&gt;
+&lt;details open&gt;&lt;summary&gt;A／B／C：不是同一個方案少幾個 Pod&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;A｜整套沿用&lt;/dt&gt;&lt;dd&gt;Next → 原 Backend → 必要 MariaDB／ES／MinIO，加既有授權整合。希望沿用 API、商業邏輯、部署與告警。是否每項依賴都必要，須盤點實際讀取路徑。成本是多種服務的異地部署／資料恢復；尚無同範圍實測總成本。&lt;/dd&gt;
+&lt;dt&gt;B｜保留 ES，重做周邊&lt;/dt&gt;&lt;dd&gt;Next 新 adapter → ES ＋版本化內容／MinIO ＋ReBAC。保留搜尋語意的工具，仍要做 API、內容、授權、版本銜接，並維運 ES。不是 A 的零改動精簡版。&lt;/dd&gt;
+&lt;dt&gt;C｜本地 SQLite&lt;/dt&gt;&lt;dd&gt;Next 新 adapter → 本地 reader／SQLite ＋MinIO ＋ReBAC。省去 DR ES 服務，新增索引產製、斷詞適配、每 Pod 安裝、reader 切換與版本維護。目前有限容量證據較多，但正式搜尋效果與整合尚未閉合。&lt;/dd&gt;&lt;/dl&gt;
+&lt;p&gt;三者都要做的工作：資料時效、一致發布、入口切換、身份／權限、監控、備份／恢復與演練。不能全算在 C 身上，也不能宣稱 A 不需要這些。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;h3&gt;可直接帶去 review 的四個改選條件&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;① 既有語意與 client 行為不能變&lt;/dt&gt;&lt;dd&gt;&lt;strong&gt;優先 A；A 依賴過重才評 B。&lt;/strong&gt;目前缺公司 mapping／query／API 範例；已知替換引擎有中文漏找風險。最小補證：固定一批必要查詢與 response，逐項核對；不是先優化 C 的速度。&lt;/dd&gt;
+&lt;dt&gt;② A 已有可沿用的部署／備份／告警／runbook&lt;/dt&gt;&lt;dd&gt;&lt;strong&gt;若可直接滿足同一 DR 旅程，A 可能是主案。&lt;/strong&gt;請 Infra／Backend owner 對照一張相同故障卡，指出哪些能直接用、哪些要新建。記接手操作步驟與人工介入；目前沒有這份盤點，不能假設 A 很貴。&lt;/dd&gt;
+&lt;dt&gt;③ 允許具體搜尋差異，且 C 的自有維護可承擔&lt;/dt&gt;&lt;dd&gt;&lt;strong&gt;C 才有成為主案的依據。&lt;/strong&gt;先閉合 Tags AND、中文查詢與既有 UI／consumer 接縫，再比較同服務承諾的常態／更新資源及操作。沒有對口接受前，不把漏找或回傳差異當省成本手段。&lt;/dd&gt;
+&lt;dt&gt;④ 每個 Pod 全量下載／保留兩份不能接受&lt;/dt&gt;&lt;dd&gt;&lt;strong&gt;先評估預熱或持久 volume；仍不符再比較 A/B。&lt;/strong&gt;目前 C 的 2.13GB 檔、20MiB/s 約107秒提供量級。純遠端 VFS 先前小型測試超時，不是現成備案；不能直接承諾移除本地磁碟。&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;details&gt;&lt;summary&gt;成本怎麼算？已有數字與缺少輸入放一起&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p&gt;以下只用合成檔做算術示例，不是正式容量／費用預估。D＝2.133GB，R＝站點數，P＝每站 reader 數。&lt;/p&gt;
+&lt;dl&gt;&lt;dt&gt;每個 reader&lt;/dt&gt;&lt;dd&gt;平時一份約 D；新舊並存約 2D＝4.266GB。尚未含暫存失敗檔、日誌、真實附件與 OS cache。&lt;/dd&gt;
+&lt;dt&gt;所有站點本地磁碟&lt;/dt&gt;&lt;dd&gt;若每 Pod 只留一舊一新，更新時約 R×P×2D。例：美、歐兩站，每站兩 reader，約 17.06GB；這是條件算式，不是建議副本數或完整峰值。若為舊連結保留更多版本，應改為 R×P×K×D，K 包含每 Pod 的保留版與準備版；另計失敗 staging、版本大小差異與安全餘裕。&lt;/dd&gt;
+&lt;dt&gt;下載流量&lt;/dt&gt;&lt;dd&gt;若每天每個 reader 各完整下載一次，約 R×P×D／日；同例約 8.53GB／日。這是 MinIO→reader 流量，是否跨區取決於 MinIO 所在；主站→異地發布的流量另算。未驗差分同步。&lt;/dd&gt;
+&lt;dt&gt;MinIO 與正文&lt;/dt&gt;&lt;dd&gt;各站保留多少版本再乘 D，另加附件物件。SQLite 的 D 已含合成正文；比 ES 必須同時計入 ES index、共同原文、備份與版本，不能只拿 ES 索引 bytes 比。&lt;/dd&gt;
+&lt;dt&gt;RAM／CPU&lt;/dt&gt;&lt;dd&gt;最新 reader 採樣 RSS 約83–117MiB；測試環境約19.53GiB RAM、28 logical CPU，未設 cgroup limit，RSS 不含 OS cache。不能據此配置128MiB Pod。兩個 reader 同時存活的切換峰值未量；A/B 同條件資源與長時併發仍未量。&lt;/dd&gt;
+&lt;dt&gt;一次性與持續工程&lt;/dt&gt;&lt;dd&gt;A 可沿用程度未知；B/C 的 adapter、授權、版本維護需具體 owner。實際工時、維護頻率、硬體單價與故障成本皆未知，所以目前不填虛構的 TCO 金額或節省百分比。&lt;/dd&gt;&lt;/dl&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;誰多做什麼？把維運負擔落到工作上&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;產品／Backend owner&lt;/dt&gt;&lt;dd&gt;A：確認唯讀與異地依賴。B：新 Next adapter＋ES／內容版本協調。C：另加索引產製、中文策略、同步元件／reader 協調與診斷。三者都要維持頁面與附件授權正確。&lt;/dd&gt;
+&lt;dt&gt;Infra／值班 owner&lt;/dt&gt;&lt;dd&gt;A：多種既有服務的容量／備援。B：ES 與內容存放。C：每 Pod 磁碟、下載峰值、ready、過期版本／GC。三者都要入口、監控及事故演練；現有自動化可沿用多少是關鍵輸入。&lt;/dd&gt;
+&lt;dt&gt;API consumer／前端 owner&lt;/dt&gt;&lt;dd&gt;A：確認 DR endpoint／唯讀行為。B/C：另核對結果欄位、語意、total／分頁、錯誤重試與舊版本鏈。一般閱讀 UI 已有；不要重算整套 editor 成本。&lt;/dd&gt;&lt;/dl&gt;
+&lt;p&gt;接手比較方法：非作者按同一故障卡／runbook 操作，記步驟、主動操作時間、等待與求助；這份資料目前尚無。agent 實作時間不能充當團隊長期值班工時。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;div class=&quot;decision&quot;&gt;本次建議：保留 C 作候選，優先補「搜尋效果＋既有 UI 銜接」；同時取得 A 可沿用工作的盤點。這兩項最可能改變選型，繼續單邊追低延遲的決策價值較低。&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section aria-label=&quot;證據與審查狀態&quot;&gt;
+&lt;h2&gt;深入核對，不必從 log 拼回結論&lt;/h2&gt;
+&lt;details id=&quot;evidence-e4&quot;&gt;&lt;summary&gt;E4｜失敗安裝保舊與 409 反例&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;dl&gt;&lt;dt&gt;MR1 已記錄的行為&lt;/dt&gt;&lt;dd&gt;真 MinIO GET 與 hash gate；失敗安裝保留舊版；沒有舊版時回不可用；新程序可讀下載檔。小型故障／版本情境和百萬空 cache 恢復分開驗證，不能合成真實資料發布的完整承諾。&lt;/dd&gt;&lt;dt&gt;明確反例&lt;/dt&gt;&lt;dd&gt;V1 產生的鏈送到固定 V2 的 reader，回 409。這維護了版本檢查，卻沒有讓使用者透明續讀；不是已可接受的產品行為。&lt;/dd&gt;&lt;dt&gt;不能套用到最新 L 的證據&lt;/dt&gt;&lt;dd&gt;MR2 曾用完整本地正文／附件 bundle 在 MinIO 失聯時繼續服務；最新 L 附件仍取 MinIO，不能宣稱同樣離線可用。&lt;/dd&gt;&lt;/dl&gt;
+&lt;p class=&quot;evidence&quot;&gt;原件：docs/reviews/minio-release-2026-11-14/final-review.md；docs/reviews/minio-dependency-2026-11-14/final-review.md。此次本機鏡像：dossier-source/E4-mr1.md、E4-mr2.md。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;資料來源與證據邊界&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p&gt;E1：L_FIRST_VERSION_20261115.md 與三輪 CARD／SUMMARY／result／HTTP／resource 原始紀錄。2026/11/15 本機 WSL。最新三輪為作者自評；本次 reviewer 審的是材料是否支持論述，不是重跑實驗。&lt;/p&gt;
+&lt;p&gt;E2：SEARCH_API_OPTIONS.md、semantic-observations.json。2026/11/14 的10k／100頁歷史 probe。不同 corpus 的數字分開呈現。&lt;/p&gt;
+&lt;p&gt;E3：S1-ES-v1 小型 Lexical 獨立審查、http-attempt-1.json、http-review.mjs、fixture.mjs、core.mjs、prepare.mjs。24任務／56HTTP通過只對該固定契約成立。&lt;/p&gt;
+&lt;p&gt;E4：歷史 MinIO release／dependency 審查；版本不匹配409、失敗安裝保留舊檔等反例與限制不因新版材料重寫而消失。&lt;/p&gt;
+&lt;p&gt;本頁沒有執行新的 DR 實驗。正式 ES／consumer、真 ReBAC、真實附件、部署與整體恢復承諾仍保留未知；沒有把測試數換算成目標完成率。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Reviewer 的檢查問題&lt;/summary&gt;&lt;div class=&quot;body&quot;&gt;
+&lt;p&gt;能否指出兩層同步、107秒的起點？能否用實際命中案例說出搜尋差異？能否區分既有閱讀與 PDF 增量？能否沿圖指出下載、校驗、切換失敗各保留什麼？能否說出何種條件改選 A／B／C？&lt;/p&gt;
+&lt;p id=&quot;dossier-review-status&quot;&gt;獨立 reviewer 已核對原五組問題，複審後未發現剩餘必改。審查過程補入搜尋歸屬時效、多版本成本與可操作證據入口；未重跑 DR 實驗，不是正式架構批准。手機實際理解程度仍需使用者回饋。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;/section&gt;
+&lt;/article&gt;
+&lt;script&gt;
+(()=&gt;{const root=document.getElementById(&#x27;dr-dossier&#x27;);root.querySelectorAll(&#x27;.node&#x27;).forEach(el=&gt;el.classList.add(&#x27;card&#x27;));root.addEventListener(&#x27;click&#x27;,e=&gt;{const a=e.target.closest(&#x27;a[href^=&quot;#&quot;]&#x27;);if(!a)return;const target=root.querySelector(a.getAttribute(&#x27;href&#x27;));if(!target)return;e.preventDefault();if(target.tagName===&#x27;DETAILS&#x27;)target.open=true;let parent=target.parentElement;while(parent&amp;&amp;parent!==root){if(parent.tagName===&#x27;DETAILS&#x27;)parent.open=true;parent=parent.parentElement;}target.scrollIntoView({behavior:&#x27;auto&#x27;,block:&#x27;start&#x27;});root.dataset.activeTarget=target.id;});})();
+&lt;/script&gt;
+
+&lt;script&gt;
+(() =&gt; {
+  let positioningReady = window.FloatingUIDOM
+    ? Promise.resolve(window.FloatingUIDOM)
+    : null;
+  const loadScript = (src) =&gt; new Promise((resolve, reject) =&gt; {
+    const script = document.createElement(&quot;script&quot;);
+    script.src = src;
+    script.onload = resolve;
+    script.onerror = () =&gt; {
+      script.remove();
+      reject(new Error(&quot;Could not load tooltip positioning&quot;));
+    };
+    document.head.appendChild(script);
+  });
+  const loadPositioning = async () =&gt; {
+    const domUrl = &quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;;
+    const preload = document.createElement(&quot;link&quot;);
+    preload.rel = &quot;preload&quot;;
+    preload.as = &quot;script&quot;;
+    preload.href = domUrl;
+    document.head.appendChild(preload);
+    try {
+      if (window.FloatingUICore == null) {
+        await loadScript(&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;);
+      }
+      await loadScript(domUrl);
+      return window.FloatingUIDOM;
+    } finally {
+      preload.remove();
+    }
+  };
+  const getPositioning = () =&gt; positioningReady ??= loadPositioning().catch((error) =&gt; {
+    positioningReady = null;
+    throw error;
+  });
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (event) =&gt; {
+    for (const target of event.composedPath()) {
+      if (target?.nodeType === Node.ELEMENT_NODE) {
+        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        if (trigger) return trigger;
+      }
+    }
+    return null;
+  };
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating, { computePosition, flip, offset, shift, size }) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    const request = positionRequest;
+    void getPositioning().then((positioning) =&gt; {
+      if (request !== positionRequest || !trigger.isConnected) return;
+      autoUpdateCleanup = positioning.autoUpdate(trigger, floating, () =&gt; {
+        updatePosition(trigger, floating, positioning);
+      });
+    }).catch(() =&gt; {
+      if (request === positionRequest) closeTooltip(false);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handlers = {
+    pointerover: handlePointerOpen,
+    pointerdown: handlePointer,
+    pointercancel: handlePointer,
+    click: handleTouchClick,
+    pointerout: handleLeave,
+    focusin: handleFocusIn,
+    focusout: handleLeave,
+    keydown: handleKeyDown,
+    contextmenu: handleContextMenu,
+  };
+  const roots = new Map();
+  const handledEvents = new WeakSet();
+  const handleEvent = (event) =&gt; {
+    if (handledEvents.has(event)) return;
+    handledEvents.add(event);
+    handlers[event.type](event);
+  };
+  const discoverRoots = (node) =&gt; {
+    if (node.shadowRoot) listen(node.shadowRoot);
+    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+      if (element.shadowRoot) listen(element.shadowRoot);
+    }
+  };
+  const listen = (root) =&gt; {
+    if (roots.has(root)) return;
+    for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
+    const observer = new window.MutationObserver((records) =&gt; {
+      for (const { addedNodes } of records) {
+        for (const node of addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
+        }
+      }
+      for (const [root, cleanup] of roots) {
+        if (root.host &amp;&amp; !root.host.isConnected) {
+          cleanup();
+          roots.delete(root);
+        }
+      }
+      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    roots.set(root, () =&gt; {
+      observer.disconnect();
+      for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
+    });
+    discoverRoots(root);
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    for (const cleanup of roots.values()) cleanup();
+    roots.clear();
+    tooltip = null;
+  };
+
+  // Events between children of one shadow root never reach the document.
+  listen(document);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-carousel&quot;&gt;
+  (() =&gt; {
+    for (const root of document.querySelectorAll(&quot;.viz-carousel&quot;)) {
+      const panels = Array.from(
+        root.querySelectorAll(&quot;:scope &gt; [data-variant]&quot;),
+      );
+      if (panels.length === 0) {
+        continue;
+      }
+      root.setAttribute(&quot;role&quot;, &quot;group&quot;);
+      panels.forEach((panel, index) =&gt; {
+        panel.hidden = index !== 0;
+        panel.setAttribute(&quot;role&quot;, &quot;group&quot;);
+        if (!panel.hasAttribute(&quot;aria-label&quot;)) {
+          panel.setAttribute(&quot;aria-label&quot;, panel.dataset.variant);
+        }
+      });
+      root.dataset.activeVariant = panels[0].dataset.variant;
+      if (panels.length === 1) {
+        continue;
+      }
+
+      const controls = document.createElement(&quot;div&quot;);
+      controls.className = &quot;viz-carousel-controls&quot;;
+      // Portable copy of the settings dropdown&#x27;s legacy glyph; no 14px icon-package preset matches it.
+      // https://github.com/openai/openai/blob/master/codex/codex-apps/webview/src/icons/chevron.svg
+      controls.innerHTML = `
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-previous cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+      &lt;details class=&quot;viz-carousel-picker&quot;&gt;
+        &lt;summary class=&quot;cursor-interaction&quot;&gt;
+          &lt;span class=&quot;viz-carousel-count tabular-nums&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;viz-carousel-name&quot;&gt;&lt;/span&gt;
+          &lt;svg class=&quot;viz-carousel-caret&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 20 21&quot; fill=&quot;none&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
+            &lt;path d=&quot;M15.2793 7.71101C15.539 7.45131 15.961 7.45131 16.2207 7.71101C16.4804 7.97071 16.4804 8.39272 16.2207 8.65242L10.4707 14.4024C10.211 14.6621 9.78902 14.6621 9.52932 14.4024L3.77932 8.65242L3.69436 8.54792C3.52385 8.28979 3.55205 7.93828 3.77932 7.71101C4.00659 7.48374 4.3581 7.45554 4.61623 7.62605L4.72073 7.71101L10 12.9903L15.2793 7.71101Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;0.6&quot; /&gt;
+          &lt;/svg&gt;
+        &lt;/summary&gt;
+        &lt;div class=&quot;viz-carousel-options&quot;&gt;&lt;/div&gt;
+      &lt;/details&gt;
+      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-next cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;`;
+      const previous = controls.querySelector(&quot;.viz-carousel-previous&quot;);
+      const next = controls.querySelector(&quot;.viz-carousel-next&quot;);
+      const picker = controls.querySelector(&quot;.viz-carousel-picker&quot;);
+      const summary = picker.querySelector(&quot;summary&quot;);
+      const count = controls.querySelector(&quot;.viz-carousel-count&quot;);
+      const name = controls.querySelector(&quot;.viz-carousel-name&quot;);
+      const options = controls.querySelector(&quot;.viz-carousel-options&quot;);
+      const status = document.createElement(&quot;span&quot;);
+      status.className = &quot;sr-only&quot;;
+      status.setAttribute(&quot;role&quot;, &quot;status&quot;);
+      status.setAttribute(&quot;aria-live&quot;, &quot;polite&quot;);
+      status.setAttribute(&quot;aria-atomic&quot;, &quot;true&quot;);
+      previous.setAttribute(
+        &quot;aria-label&quot;,
+        root.dataset.previousLabel ?? &quot;Previous variant&quot;,
+      );
+      next.setAttribute(&quot;aria-label&quot;, root.dataset.nextLabel ?? &quot;Next variant&quot;);
+
+      let active = 0;
+      let mousePointerId = null;
+      let summaryPointerHandled = false;
+      summary.addEventListener(&quot;pointerdown&quot;, (event) =&gt; {
+        summaryPointerHandled =
+          event.pointerType === &quot;mouse&quot; &amp;&amp; event.button === 0 &amp;&amp; !event.ctrlKey;
+        if (!summaryPointerHandled) {
+          return;
+        }
+        event.preventDefault();
+        summary.focus({ preventScroll: true });
+        picker.open = !picker.open;
+        mousePointerId = picker.open ? event.pointerId : null;
+      });
+      summary.addEventListener(&quot;click&quot;, (event) =&gt; {
+        if (summaryPointerHandled &amp;&amp; event.detail &gt; 0) {
+          event.preventDefault();
+        }
+      });
+      const choices = panels.map((panel, index) =&gt; {
+        const choice = document.createElement(&quot;button&quot;);
+        choice.type = &quot;button&quot;;
+        choice.className = &quot;cursor-interaction&quot;;
+        choice.textContent = panel.dataset.variant;
+        choice.addEventListener(&quot;click&quot;, () =&gt; {
+          select(index);
+          summary.focus();
+        });
+        choice.addEventListener(&quot;pointerup&quot;, (event) =&gt; {
+          if (
+            picker.open &amp;&amp;
+            event.pointerType === &quot;mouse&quot; &amp;&amp;
+            event.button === 0 &amp;&amp;
+            event.pointerId === mousePointerId
+          ) {
+            choice.click();
+          }
+        });
+        options.appendChild(choice);
+        return choice;
+      });
+      const select = (index) =&gt; {
+        const changed = active !== index;
+        active = index;
+        panels.forEach((panel, position) =&gt; {
+          panel.hidden = position !== active;
+          choices[position].setAttribute(
+            &quot;aria-current&quot;,
+            String(position === active),
+          );
+        });
+        root.dataset.activeVariant = panels[active].dataset.variant;
+        count.textContent = `${active + 1} / ${panels.length}`;
+        name.textContent = panels[active].dataset.variant;
+        picker.open = false;
+        mousePointerId = null;
+        if (changed) {
+          status.textContent = `${count.textContent}: ${name.textContent}`;
+        }
+      };
+      previous.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + panels.length - 1) % panels.length),
+      );
+      next.addEventListener(&quot;click&quot;, () =&gt;
+        select((active + 1) % panels.length),
+      );
+      picker.addEventListener(&quot;keydown&quot;, (event) =&gt; {
+        if (event.key === &quot;Escape&quot; &amp;&amp; picker.open) {
+          event.preventDefault();
+          picker.open = false;
+          mousePointerId = null;
+          summary.focus();
+          return;
+        }
+        if (event.altKey || event.ctrlKey || event.metaKey) {
+          return;
+        }
+        const index = choices.indexOf(document.activeElement);
+        let nextIndex;
+        if (event.key === &quot;ArrowDown&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + 1) % choices.length;
+        } else if (event.key === &quot;ArrowUp&quot;) {
+          nextIndex = index &lt; 0 ? active : (index + choices.length - 1) % choices.length;
+        } else if (picker.open &amp;&amp; event.key === &quot;Home&quot;) {
+          nextIndex = 0;
+        } else if (picker.open &amp;&amp; event.key === &quot;End&quot;) {
+          nextIndex = choices.length - 1;
+        } else {
+          return;
+        }
+        event.preventDefault();
+        picker.open = true;
+        choices[nextIndex].focus();
+      });
+      picker.addEventListener(&quot;focusout&quot;, (event) =&gt; {
+        if (!picker.contains(event.relatedTarget)) {
+          picker.open = false;
+          mousePointerId = null;
+        }
+      });
+      const dismiss = (event) =&gt; {
+        if (!summary.contains(event.target)) {
+          mousePointerId = null;
+        }
+        if (!picker.contains(event.target)) {
+          picker.open = false;
+        }
+      };
+      const endPointerSelection = () =&gt; {
+        mousePointerId = null;
+      };
+      const sizePicker = () =&gt; {
+        root.style.setProperty(
+          &quot;--viz-carousel-picker-height&quot;,
+          `${picker.open ? options.offsetHeight : 0}px`,
+        );
+      };
+      picker.addEventListener(&quot;toggle&quot;, sizePicker);
+      window.addEventListener(&quot;resize&quot;, sizePicker);
+      document.addEventListener(&quot;pointerdown&quot;, dismiss);
+      document.addEventListener(&quot;pointerup&quot;, endPointerSelection);
+      document.addEventListener(&quot;pointercancel&quot;, endPointerSelection);
+      window.addEventListener(&quot;blur&quot;, endPointerSelection);
+      window.addEventListener(
+        &quot;pagehide&quot;,
+        () =&gt; {
+          document.removeEventListener(&quot;pointerdown&quot;, dismiss);
+          document.removeEventListener(&quot;pointerup&quot;, endPointerSelection);
+          document.removeEventListener(&quot;pointercancel&quot;, endPointerSelection);
+          window.removeEventListener(&quot;blur&quot;, endPointerSelection);
+          window.removeEventListener(&quot;resize&quot;, sizePicker);
+        },
+        { once: true },
+      );
+      root.append(controls, status);
+      select(0);
+    }
+  })();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  const isShare = document.documentElement.classList.contains(
+    "visualization-share-root",
+  );
+  let viewportHeight = globalThis.innerHeight;
+  let sizeFingerprint = null;
+  let sizeWriteTimeout;
+  let lastSize = null;
+  let pendingSize = null;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const sizeStorageKey = `${storageKey}:share-size-v1`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const persistSize = () => {
+    globalThis.clearTimeout(sizeWriteTimeout);
+    if (pendingSize == null) {
+      return;
+    }
+    try {
+      storage?.setItem(sizeStorageKey, pendingSize);
+    } catch {
+      // A denied or full cache must not affect the visualization.
+    }
+    pendingSize = null;
+  };
+  if (isShare) {
+    globalThis.addEventListener("pagehide", persistSize);
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height !== "number" ||
+        !Number.isFinite(height) ||
+        height < 0
+      ) {
+        return;
+      }
+      if (height <= 10_000) {
+        const width = isShare && storage != null ? frame.clientWidth : null;
+        frame.style.height = Math.ceil(height) + "px";
+        if (isShare && storage != null) {
+          const size = JSON.stringify({
+            fingerprint: sizeFingerprint,
+            width,
+            viewportHeight: globalThis.innerHeight,
+            dark: globalThis.matchMedia("(prefers-color-scheme: dark)").matches,
+            scale: globalThis.devicePixelRatio,
+            height: Math.ceil(height),
+          });
+          if (size !== lastSize) {
+            lastSize = size;
+            pendingSize = size;
+            globalThis.clearTimeout(sizeWriteTimeout);
+            sizeWriteTimeout = globalThis.setTimeout(persistSize, 100);
+          }
+        }
+      }
+      if (isShare) {
+        // Keep unusually tall content accessible without accepting an unbounded height.
+        if (height > 10_000 && Number.parseFloat(frame.style.height) === 0) {
+          frame.style.removeProperty("height");
+        }
+        frame.scrolling = height > 10_000 ? "auto" : "no";
+        document.documentElement.classList.add("visualization-share-ready");
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!isShare && (!Number.isFinite(height) || height <= viewportHeight)) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  const frameHtml = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  if (isShare && storage != null) {
+    // Fingerprint the rendered document, including restored widget state, without
+    // storing its content. This is a layout cache, not a security identity.
+    let hash = 5381;
+    for (let index = 0; index < frameHtml.length; index += 1) {
+      hash = (hash * 33 + frameHtml.charCodeAt(index)) % 4_294_967_296;
+    }
+    sizeFingerprint = hash.toString(36);
+    try {
+      const size = JSON.parse(storage.getItem(sizeStorageKey) ?? "null");
+      if (
+        size?.fingerprint === sizeFingerprint &&
+        size.width === frame.clientWidth &&
+        size.viewportHeight === globalThis.innerHeight &&
+        size.dark ===
+          globalThis.matchMedia("(prefers-color-scheme: dark)").matches &&
+        size.scale === globalThis.devicePixelRatio &&
+        typeof size.height === "number" &&
+        Number.isFinite(size.height) &&
+        size.height >= 0 &&
+        size.height <= 10_000
+      ) {
+        frame.style.height = size.height + "px";
+      }
+    } catch {
+      // Ignore missing or invalid cache entries and measure the live frame.
+    }
+  }
+  frame.srcdoc = frameHtml;
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>

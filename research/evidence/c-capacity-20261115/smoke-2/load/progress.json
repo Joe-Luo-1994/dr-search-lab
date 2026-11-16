@@ -1,0 +1,111 @@
+{
+  "fatal": null,
+  "stages": [
+    {
+      "name": "smoke-mixed",
+      "kind": "mixed",
+      "rate": 2,
+      "seconds": 5,
+      "scheduled": 10,
+      "startedMs": 2246.50356,
+      "endedMs": 7253.804190999999,
+      "elapsedIncludingDrainMs": 5007.262304,
+      "generatorValid": true,
+      "qualifies": true,
+      "fatal": null,
+      "offered": 10,
+      "sent": 10,
+      "completed": 10,
+      "successful": 10,
+      "refused": 0,
+      "timeouts": 0,
+      "expectedStale": 0,
+      "generatorMissed": 0,
+      "generatorLate": 0,
+      "correctnessOrTransportFailures": 0,
+      "sentPerSecond": 2,
+      "successfulPerSecond": 2,
+      "bytes": 82271,
+      "sampleCount": 10,
+      "successfulP95Ms": 22.633840999999848,
+      "allSentP95Ms": 22.633840999999848,
+      "scheduledToDoneP95Ms": 22.65512199999921,
+      "offeredFailureFraction": 0,
+      "statuses": {
+        "200": 10
+      },
+      "byType": {
+        "search": {
+          "offered": 6,
+          "sent": 6,
+          "completed": 6,
+          "successful": 6,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 1.2,
+          "successfulPerSecond": 1.2,
+          "bytes": 13516,
+          "sampleCount": 6,
+          "successfulP95Ms": 22.633840999999848,
+          "allSentP95Ms": 22.633840999999848,
+          "scheduledToDoneP95Ms": 22.65512199999921,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 6
+          }
+        },
+        "page": {
+          "offered": 3,
+          "sent": 3,
+          "completed": 3,
+          "successful": 3,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 0.6,
+          "successfulPerSecond": 0.6,
+          "bytes": 3219,
+          "sampleCount": 3,
+          "successfulP95Ms": 14.154211000000032,
+          "allSentP95Ms": 14.154211000000032,
+          "scheduledToDoneP95Ms": 14.244614999999612,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 3
+          }
+        },
+        "media": {
+          "offered": 1,
+          "sent": 1,
+          "completed": 1,
+          "successful": 1,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 0.2,
+          "successfulPerSecond": 0.2,
+          "bytes": 65536,
+          "sampleCount": 1,
+          "successfulP95Ms": 8.009603999999854,
+          "allSentP95Ms": 8.009603999999854,
+          "scheduledToDoneP95Ms": 8.29354499999954,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 1
+          }
+        }
+      }
+    }
+  ],
+  "updates": []
+}

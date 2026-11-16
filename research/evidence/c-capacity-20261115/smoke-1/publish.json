@@ -1,0 +1,12 @@
+{
+  "elapsedMs": 3400.165516,
+  "requests": 1065,
+  "putBytes": 97688785,
+  "getBytes": 97551921,
+  "bucket": "c-capacity-10000",
+  "published": [
+    "v1",
+    "v2"
+  ],
+  "trust": "local pinned receipt; not production release discovery/IAM"
+}

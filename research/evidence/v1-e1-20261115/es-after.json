@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-15T13:21:33.562Z",
+  "comparisons": [
+    {
+      "index": "drlab-it-mw8ey9hm-v1-body",
+      "unchanged": true
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v1-attachments",
+      "unchanged": true
+    },
+    {
+      "index": "drlab-it-mw8frj44-v1-attachments",
+      "unchanged": true
+    },
+    {
+      "index": "drlab-it-mw8frj44-v1-body",
+      "unchanged": true
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-attachments",
+      "unchanged": true
+    },
+    {
+      "index": "drlab-it-mw8frj44-v2-body",
+      "unchanged": true
+    },
+    {
+      "index": "drlab-it-mw8frj44-v2-attachments",
+      "unchanged": true
+    },
+    {
+      "index": "drlab-it-mw8ey9hm-v2-body",
+      "unchanged": true
+    }
+  ],
+  "passed": true,
+  "newIndex": {
+    "index": "drlab-v1-e1-20261115-r1",
+    "uuid": "kOoWL80TRAWbjq-ADA73MA",
+    "docs.count": "37"
+  }
+}

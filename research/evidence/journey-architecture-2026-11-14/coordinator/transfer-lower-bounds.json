@@ -1,0 +1,36 @@
+{
+  "scope": "arithmetic sensitivity only, not a measurement or company network assumption",
+  "formula": "payloadBytes * 8 / linkBitsPerSecond",
+  "limitations": [
+    "omits protocol overhead, auth, RTT, competing traffic, fsync, validation, render and process startup",
+    "100Mbps belongs to a proposed attachment test; applying it to MinIO-to-reader transfer is an explicit alternate assumption",
+    "current2.133GB artifact includes synthetic source plus FTS; not production pure-index size",
+    "a lower bound can disprove a deadline under its assumptions; it cannot prove feasibility"
+  ],
+  "cases": [
+    {
+      "payload": "current_synthetic_bundle",
+      "bytes": 2133065728,
+      "hypotheticalLinkBitsPerSecond": 100000000,
+      "payloadOnlyMinimumSeconds": 170.64525824
+    },
+    {
+      "payload": "proposed_attachment_max",
+      "bytes": 20971520,
+      "hypotheticalLinkBitsPerSecond": 100000000,
+      "payloadOnlyMinimumSeconds": 1.6777216
+    },
+    {
+      "payload": "changed_attachment_max",
+      "bytes": 1073741824,
+      "hypotheticalLinkBitsPerSecond": 100000000,
+      "payloadOnlyMinimumSeconds": 85.89934592
+    }
+  ],
+  "counterexample": {
+    "assumptions": "same full2133065728-byte artifact,100Mbps bottleneck,no retained usable copy",
+    "readerDeadlineSeconds": 120,
+    "payloadOnlyMinimumSeconds": 170.64525824,
+    "deadlinePossibleWithoutChangingAssumptions": false
+  }
+}

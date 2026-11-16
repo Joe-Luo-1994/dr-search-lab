@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "v1-e1-20261115-snapshot1",
+  "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+  "spaces": [
+    {"spaceId":"space-a","label":"設備維運"},
+    {"spaceId":"space-b","label":"合作站點"}
+  ],
+  "tags": [
+    {"tagId":"runbook","label":"手冊"},
+    {"tagId":"validated","label":"已驗證"},
+    {"tagId":"contact","label":"交接資料"}
+  ],
+  "pages": [
+    {"pageId":"a-relay","spaceId":"space-a","title":"Relay Relay Relay Fault Desk","tagIds":["runbook","validated"],"paragraphs":["故障復原手冊包含現場處理順序。","Use zephyr to verify the primary relay circuit."],"mediaIds":[]},
+    {"pageId":"a-restore","spaceId":"space-a","title":"Control Plane Guide","tagIds":["runbook"],"paragraphs":["按下還原後，確認備援備份已更新。","The disaster recovery sequence ends with an owner signoff."],"mediaIds":[]},
+    {"pageId":"a-contact","spaceId":"space-a","title":"夜間聯絡清冊","tagIds":["contact"],"paragraphs":["橋接問題請通知值班人員。","To restore access, use the secondary help desk."],"mediaIds":[]},
+    {"pageId":"a-mixed","spaceId":"space-a","title":"雲端 Edge Gateway","tagIds":["validated"],"paragraphs":["備援閘道狀態可以用 Edge Verify 查核。","Record the outcome in incident notes."],"mediaIds":[]},
+    {"pageId":"a-code","spaceId":"space-a","title":"設備事件表","tagIds":["validated"],"paragraphs":["巡檢遇到 GTX-412 時，讀取備用控制器。","Escalate actuator errors to the site lead."],"mediaIds":[]},
+    {"pageId":"a-code-near","spaceId":"space-a","title":"設備領用表","tagIds":["contact"],"paragraphs":["GTX-413 是調度用編號。","Device 412 belongs to the legacy pool."],"mediaIds":[]},
+    {"pageId":"a-pdf","spaceId":"space-a","title":"異地部署檢查表","tagIds":["runbook","validated"],"paragraphs":["部署前應對照檢查表附件的校驗程序。","簽核流程請回到控制平面指南。"],"mediaIds":["pdf-checklist"]},
+    {"pageId":"a-pdf-near","spaceId":"space-a","title":"異地部署附件索引","tagIds":["runbook"],"paragraphs":["校驗程序在另一個頁面。","This page mentions silverline but does not contain the certificate."],"mediaIds":[]},
+    {"pageId":"a-tag-runbook","spaceId":"space-a","title":"Dispatch Procedure","tagIds":["runbook"],"paragraphs":["Check the dispatch roster before each shift."],"mediaIds":[]},
+    {"pageId":"a-tag-validated","spaceId":"space-a","title":"Dispatch Shift Check","tagIds":["validated"],"paragraphs":["Confirm the dispatch coverage at opening."],"mediaIds":[]},
+    {"pageId":"a-tag-words","spaceId":"space-a","title":"Dispatch Notes","tagIds":["contact"],"paragraphs":["The old dispatch note says runbook and validated in the text."],"mediaIds":[]},
+    {"pageId":"a-tag-both","spaceId":"space-a","title":"Dispatch Handbook","tagIds":["runbook","validated"],"paragraphs":["Create one dispatch record per interruption."],"mediaIds":[]},
+    {"pageId":"a-move","spaceId":"space-a","title":"Migration Timeline","tagIds":["contact"],"paragraphs":["Orchid waiver for the cutover remains in review."],"mediaIds":[]},
+    {"pageId":"a-sync","spaceId":"space-a","title":"Sync Status Note","tagIds":["contact"],"paragraphs":["Mariner status records the morning decision."],"mediaIds":[]},
+    {"pageId":"b-export","spaceId":"space-b","title":"部門報告匯出","tagIds":["runbook","validated"],"paragraphs":["黃金備份由另一個團隊保管。","Falcon export replaces the duplicate ledger."],"mediaIds":["pdf-ledger"]},
+    {"pageId":"b-relay","spaceId":"space-b","title":"Control Relay Routing","tagIds":["runbook"],"paragraphs":["The partner relay uses zephyr only in the remote enclosure."],"mediaIds":[]},
+    {"pageId":"b-roles","spaceId":"space-b","title":"Partner Role Ledger","tagIds":["contact"],"paragraphs":["Quartz approval covers the external mailbox."],"mediaIds":[]},
+    {"pageId":"b-tag-both","spaceId":"space-b","title":"Dispatch Interlock","tagIds":["runbook","validated"],"paragraphs":["The partner dispatch needs a separate signoff."],"mediaIds":[]},
+    {"pageId":"b-confidential","spaceId":"space-b","title":"保密事故紀錄","tagIds":["contact"],"paragraphs":["主站隔離由聯防班執行。","Confidential bluefolder belongs in the restricted filing room."],"mediaIds":[]},
+    {"pageId":"a-noise-01","spaceId":"space-a","title":"Adhesive storage","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to catalog inventory and expiration dates before resealing the shelf."],"mediaIds":[]},
+    {"pageId":"a-noise-02","spaceId":"space-a","title":"Spare cable register","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to review which replacement bundles are in each locker before requesting maintenance."],"mediaIds":[]},
+    {"pageId":"a-noise-03","spaceId":"space-a","title":"Connector inspection","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to check the seal condition and record the batch identifier before disposal."],"mediaIds":[]},
+    {"pageId":"a-noise-04","spaceId":"space-a","title":"Archived training plan","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to reserve the classroom and notify instructors about attendance deadlines."],"mediaIds":[]},
+    {"pageId":"a-noise-05","spaceId":"space-a","title":"Intake checklist","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to mark which cartons arrived and examine the receiving slip for discrepancies."],"mediaIds":[]},
+    {"pageId":"a-noise-06","spaceId":"space-a","title":"Door access notes","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to list visitor escort changes and confirm the shift handover procedure."],"mediaIds":[]},
+    {"pageId":"a-noise-07","spaceId":"space-a","title":"Seasonal room setup","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to move the unused chairs to the service entrance beyond the loading bay."],"mediaIds":[]},
+    {"pageId":"a-noise-08","spaceId":"space-a","title":"Instrument battery schedule","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to charge the inspection tools after use and enter the service date."],"mediaIds":[]},
+    {"pageId":"a-noise-09","spaceId":"space-a","title":"Lock replacement log","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to verify which supplier carries the cylinder and confirm the request number."],"mediaIds":[]},
+    {"pageId":"a-noise-10","spaceId":"space-a","title":"Workshop reading list","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to read chapters for the January session and keep notes in the archive."],"mediaIds":[]},
+    {"pageId":"a-noise-11","spaceId":"space-a","title":"Printer service history","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to clear the queue before swapping the toner and call the maintenance desk."],"mediaIds":[]},
+    {"pageId":"a-noise-12","spaceId":"space-a","title":"Retired sensor inventory","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to check the old carts and remove damaged labels before handing them over."],"mediaIds":[]},
+    {"pageId":"a-noise-13","spaceId":"space-a","title":"Safety poster drafts","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to replace the printed safety posters at the beginning of the next shift."],"mediaIds":[]},
+    {"pageId":"a-noise-14","spaceId":"space-a","title":"Handheld serial register","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to request the assigned cases and compare serial labels against the index."],"mediaIds":[]},
+    {"pageId":"b-noise-15","spaceId":"space-b","title":"Courier scheduling note","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to include the destination postcode and hand the parcel to the correct counter."],"mediaIds":[]},
+    {"pageId":"b-noise-16","spaceId":"space-b","title":"Packing instruction review","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to replace boxes with visible dents and set aside the spare cushioning."],"mediaIds":[]},
+    {"pageId":"b-noise-17","spaceId":"space-b","title":"Regional access notes","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to return all borrowed keys and attach the receipt to the current roster."],"mediaIds":[]},
+    {"pageId":"b-noise-18","spaceId":"space-b","title":"Partner stock notebook","tagIds":["contact"],"paragraphs":["Earlier versions mention relay hardware. The current job is to check the stock on each shelf and report damaged crates promptly."],"mediaIds":[]}
+  ],
+  "media": [
+    {"mediaId":"pdf-checklist","fileName":"deployment-checklist.pdf","mimeType":"application/pdf","extractedText":"silverline certificate check the cold cabinet\nMatch seal number 7324 before signing.","bytes":677,"sha256":"f396877a93e9980d03a314270f6d566ced0784e0661e9517abacc89d9f41a6ef"},
+    {"mediaId":"pdf-ledger","fileName":"partner-ledger.pdf","mimeType":"application/pdf","extractedText":"Ledger verification for the partner site\nCompare seal number 8415 and confirm the export.","bytes":682,"sha256":"7b496dcb7e4d53d1f7291aaa612afad44d6ff7575d16637c512656cda7133406"}
+  ]
+}

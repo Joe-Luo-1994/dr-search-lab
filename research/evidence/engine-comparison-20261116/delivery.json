@@ -1,0 +1,56 @@
+{
+  "allMatch": true,
+  "files": [
+    {
+      "path": "docs/DR_ENGINE_COMPARISON_20261116.html",
+      "sha256": "aef7321baed7c21fca88f2aecdabcc36195cee1324c625c8d09dbaedbf5752c7",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_ENGINE_COMPARISON_REVIEW_20261116.md",
+      "sha256": "70efd16c651582bc8a73f321ba70966428f952d6db540b1a281e21bec0e21706",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "sha256": "986701b603209a52514f51731afbbafc163fa227de60712eef535aab74f04493",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "f6ee7f22fccd53c3b7ebc172e70121c338f34b34aa35048b671d15caafc7bc1d",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "c9f791d4d5e08c041f1fa73cb9768702d492cf2ab467acb53774c4b177c3196d",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/engine-comparison-20261116/check-report.mjs",
+      "sha256": "1b714ca68023882e4729cdd7aab735dac5a6391d23356d0be3a55f09d0ab24e6",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/engine-comparison-20261116/deliver.py",
+      "sha256": "15be3f6b8806f824b204a965f56c1a9a85ca337ceee90a3eae6368f5d432833c",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/engine-comparison-20261116/report.mjs",
+      "sha256": "094e8a83247662d237b84203c8276ac01adf25c2c5cd346b040e0bb57124ec5d",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/engine-comparison-20261116/mobile.png",
+      "sha256": "1271dafb4981e2ced752fb46e93f869d920bb3fa1919667df1996626447093fb",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/engine-comparison-20261116/report-check.json",
+      "sha256": "9a8023ee86b9e1ba84a74bccb2448c6b6449ec3098e0b65663fd64536f7dab7b",
+      "readBackMatch": true
+    }
+  ],
+  "scope": "plan, reviewer, handoff and report QA only; no benchmark or database changes"
+}

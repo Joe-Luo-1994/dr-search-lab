@@ -1,0 +1,26 @@
+{
+  "case": "bad-cached",
+  "cacheWasEmpty": false,
+  "versionExpected": "v2",
+  "negative": true,
+  "beforeActiveSha256": "9cf85635486b50c54498a862d40d4aa2c3251eabfc2bf14c387e78d961050167",
+  "beforeFiles": {
+    "active.json": "9cf85635486b50c54498a862d40d4aa2c3251eabfc2bf14c387e78d961050167",
+    "releases/v2/identity.json": "bb5b6020aaa6103edebbf8200f43c24663b269b0db3a72de74121a42ed1b1d13",
+    "releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/manifest.json": "5850503cd7da2b0be66d0cffdd51f8fec383552f2c70c4d49e927f41fe3de643",
+    "releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite": "055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736"
+  },
+  "status": 503,
+  "payload": {
+    "error": {
+      "code": "MANIFEST_PIN_MISMATCH"
+    }
+  },
+  "startedToResponseSeconds": 0.2705567250000058,
+  "activeUnchanged": true,
+  "cacheUnchanged": true,
+  "ready": false,
+  "qualified": true,
+  "unitAfterStop": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+  "completedAt": 1794791079.338639
+}

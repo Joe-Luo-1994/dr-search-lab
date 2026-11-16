@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "attempt": "r1",
+      "verifiedPhaseLaneCountsAndP95": true,
+      "taskTotal": 2550,
+      "httpRows": 3857,
+      "rawRows": 5117,
+      "freezeChecked": 80,
+      "cleanupVerified": true,
+      "allTargetPhasesQualified": false
+    },
+    {
+      "attempt": "r2",
+      "verifiedPhaseLaneCountsAndP95": true,
+      "taskTotal": 2550,
+      "httpRows": 3859,
+      "rawRows": 5119,
+      "freezeChecked": 80,
+      "cleanupVerified": true,
+      "allTargetPhasesQualified": true
+    }
+  ],
+  "scope": "independent recomputation from preserved raw task rows plus cleanup receipts; no new load"
+}

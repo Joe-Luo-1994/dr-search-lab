@@ -1,0 +1,45 @@
+{
+  "frozenFilesVerified": 460,
+  "publication": {
+    "requests": 183,
+    "status": {
+      "200": 183
+    },
+    "getBytes": 279607
+  },
+  "formal": {
+    "requests": 32,
+    "status": {
+      "200": 26,
+      "403": 2,
+      "TypeError": 4
+    },
+    "artifactGets": 10,
+    "contentSuccessfulGets": 17,
+    "contentSuccessfulBytes": 7257
+  },
+  "costs": [
+    {
+      "version": "v1",
+      "e2CompleteLocal": 81076,
+      "newLocal": 86815
+    },
+    {
+      "version": "v2",
+      "e2CompleteLocal": 81254,
+      "newLocal": 87265
+    }
+  ],
+  "peakSampledWindowsWorkingSet": 1417400320,
+  "peakSampledMinioRSS": 300290048,
+  "peakSampledCombined": 1717690368,
+  "role": "baseline",
+  "notes": [
+    "Costs are tiny synthetic bytes; not same production data distribution or operating effort.",
+    "Combined memory is Windows process working sets plus MinIO RSS, not VM or OS cache total."
+  ],
+  "correction": {
+    "prior": "postrun-audit.json",
+    "reason": "Prior e2CompleteLocal counted only root files and omitted nested PDFs; corrected using recursive logical byte inventory. No experiment rerun or original evidence modification."
+  }
+}

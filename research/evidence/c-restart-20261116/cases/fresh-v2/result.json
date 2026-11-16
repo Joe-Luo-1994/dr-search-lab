@@ -1,0 +1,207 @@
+{
+  "case": "fresh-v2",
+  "cacheWasEmpty": true,
+  "versionExpected": "v2",
+  "negative": false,
+  "beforeActiveSha256": null,
+  "beforeFiles": {},
+  "status": 200,
+  "payload": {
+    "snapshotId": "v2",
+    "pid": 1575,
+    "workers": [
+      1587,
+      1588,
+      1589,
+      1595,
+      1605,
+      1607,
+      1609,
+      1619
+    ],
+    "queue": 0,
+    "contentInFlight": 0,
+    "updating": false,
+    "testHooks": false,
+    "fatal": null,
+    "metrics": {
+      "eventLoop": {
+        "p95Ms": 22.380543,
+        "maxMs": 22.380543,
+        "meanMs": 20.673877333333333,
+        "utilization": 0.4671225285469877
+      },
+      "pool": {
+        "jobs": 1,
+        "queued": 0,
+        "busy": 0,
+        "timings": [
+          {
+            "op": "check",
+            "lane": "internal",
+            "queueMs": 0.03944200000000819,
+            "workerMs": 4.510047,
+            "totalMs": 5.707408999999984
+          }
+        ]
+      }
+    },
+    "events": [
+      {
+        "type": "boot-prepared",
+        "at": 1794791078468,
+        "version": "v2",
+        "releaseId": "v2",
+        "dbPath": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite",
+        "source": "download",
+        "approvedKey": "control/approved.json",
+        "approvedSha256": "7dff1d637274e7648c7988d4f4551d2531d4d9d01d4680bba497917e88c9fd58",
+        "manifestKey": "v2/manifest.json",
+        "manifestSha256": "5850503cd7da2b0be66d0cffdd51f8fec383552f2c70c4d49e927f41fe3de643",
+        "dbSha256": "055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736",
+        "dbBytes": 3268608,
+        "preparedAt": "2026-11-16T01:04:38.468Z",
+        "candidateInstalledAt": "2026-11-16T01:04:38.465Z",
+        "metrics": {
+          "elapsedMs": 36.93563200000003,
+          "approved": {
+            "bytes": 165,
+            "elapsedMs": 10.080595000000017
+          },
+          "manifest": {
+            "bytes": 68706,
+            "elapsedMs": 2.2689550000000054
+          },
+          "transfer": {
+            "downloadStartedMs": 1794791078449,
+            "downloadEndedMs": 1794791078463,
+            "bytes": 3268608,
+            "elapsedMs": 14.272255000000001
+          },
+          "cacheVerification": null
+        },
+        "staging": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/.staging-2b287ae6-7429-4ec9-b8a3-5c91808e9e4e",
+        "databaseValidation": "Pool.start must verify SQLite snapshot identity and quick_check before commitActive"
+      },
+      {
+        "type": "ready",
+        "at": 1794791078507,
+        "snapshotId": "v2",
+        "schemaVersion": 1,
+        "releaseId": "v2",
+        "manifestSha256": "5850503cd7da2b0be66d0cffdd51f8fec383552f2c70c4d49e927f41fe3de643",
+        "dbSha256": "055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736",
+        "dbBytes": 3268608,
+        "approvedSha256": "7dff1d637274e7648c7988d4f4551d2531d4d9d01d4680bba497917e88c9fd58",
+        "installedAt": "2026-11-16T01:04:38.503Z",
+        "database": "releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite"
+      }
+    ]
+  },
+  "startedToResponseSeconds": 0.33300156200002107,
+  "workers": {
+    "1587": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-restart-fresh-v2-20261116.service\n"
+    },
+    "1588": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-restart-fresh-v2-20261116.service\n"
+    },
+    "1589": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-restart-fresh-v2-20261116.service\n"
+    },
+    "1595": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-restart-fresh-v2-20261116.service\n"
+    },
+    "1605": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-restart-fresh-v2-20261116.service\n"
+    },
+    "1607": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-restart-fresh-v2-20261116.service\n"
+    },
+    "1609": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-restart-fresh-v2-20261116.service\n"
+    },
+    "1619": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-restart-fresh-v2-20261116.service\n"
+    }
+  },
+  "active": {
+    "schemaVersion": 1,
+    "releaseId": "v2",
+    "manifestSha256": "5850503cd7da2b0be66d0cffdd51f8fec383552f2c70c4d49e927f41fe3de643",
+    "dbSha256": "055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736",
+    "dbBytes": 3268608,
+    "approvedSha256": "7dff1d637274e7648c7988d4f4551d2531d4d9d01d4680bba497917e88c9fd58",
+    "installedAt": "2026-11-16T01:04:38.503Z",
+    "database": "releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite"
+  },
+  "prepared": {
+    "type": "boot-prepared",
+    "at": 1794791078468,
+    "version": "v2",
+    "releaseId": "v2",
+    "dbPath": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/releases/v2/055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736/search.sqlite",
+    "source": "download",
+    "approvedKey": "control/approved.json",
+    "approvedSha256": "7dff1d637274e7648c7988d4f4551d2531d4d9d01d4680bba497917e88c9fd58",
+    "manifestKey": "v2/manifest.json",
+    "manifestSha256": "5850503cd7da2b0be66d0cffdd51f8fec383552f2c70c4d49e927f41fe3de643",
+    "dbSha256": "055f0a157f3f8ccf8e44c8c85ac4fd830a8af0ef9cf39f91eb5e1fedfc580736",
+    "dbBytes": 3268608,
+    "preparedAt": "2026-11-16T01:04:38.468Z",
+    "candidateInstalledAt": "2026-11-16T01:04:38.465Z",
+    "metrics": {
+      "elapsedMs": 36.93563200000003,
+      "approved": {
+        "bytes": 165,
+        "elapsedMs": 10.080595000000017
+      },
+      "manifest": {
+        "bytes": 68706,
+        "elapsedMs": 2.2689550000000054
+      },
+      "transfer": {
+        "downloadStartedMs": 1794791078449,
+        "downloadEndedMs": 1794791078463,
+        "bytes": 3268608,
+        "elapsedMs": 14.272255000000001
+      },
+      "cacheVerification": null
+    },
+    "staging": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-restart-20261116/caches/fresh/.staging-2b287ae6-7429-4ec9-b8a3-5c91808e9e4e",
+    "databaseValidation": "Pool.start must verify SQLite snapshot identity and quick_check before commitActive"
+  },
+  "startupStorageRequests": [
+    {
+      "type": "storage-request",
+      "at": 1794791078433,
+      "method": "GET",
+      "key": "control/approved.json"
+    },
+    {
+      "type": "storage-request",
+      "at": 1794791078443,
+      "method": "GET",
+      "key": "v2/manifest.json"
+    },
+    {
+      "type": "storage-request",
+      "at": 1794791078446,
+      "method": "GET",
+      "key": "v2/search.sqlite"
+    }
+  ],
+  "ready": true,
+  "qualified": true,
+  "afterActiveSha256": "d76974946969e7dac662cbaad655442cff0f147ae5c6f87a11b25e4b805574a5",
+  "unitAfterStop": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+  "completedAt": 1794791078.5561352
+}

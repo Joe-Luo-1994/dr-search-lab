@@ -1,0 +1,3 @@
+(node:43004) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"e2_api_error","code":"AUTHORIZATION_UNKNOWN","detail":"AUTHORIZATION_UNKNOWN"}

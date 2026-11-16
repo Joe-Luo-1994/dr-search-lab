@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/pagefind-gate-20261116/controller.py",
+    "_fixture",
+    "timeout"
+  ],
+  "cwd": "/PUBLIC/WINDOWS_WORKSPACE"
+}

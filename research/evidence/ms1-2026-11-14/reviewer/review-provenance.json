@@ -1,0 +1,23 @@
+{
+  "kind": "independent-ms1-review",
+  "claim": "No candidate passed the entire million-page MS1 workset under this fixed budget. SQLite actual million rows verified; Pagefind reader beyond10k not tested due100k build RSS stop.",
+  "files_sha256": {
+    "evidence/ms1-2026-11-14/reviewer/artifact-audit.log": "b00a03d6c81cf6dd56f0925886149d6ad71649411c1547b7310181a18ee6a3e8",
+    "evidence/ms1-2026-11-14/reviewer/sqlite-60-a.log": "18c7480848b47e6a9b0589672fcea6a461c994b114b0ccfe1a33f593d24b3b45",
+    "evidence/ms1-2026-11-14/reviewer/pagefind-60-a.log": "bfa487e39ef0f17d09d925ac9f31f843ef9406652ad350159c9c1bc4cad72959",
+    "evidence/ms1-2026-11-14/reviewer/sqlite-deep-plan.json": "6a6649119ce96bd3b72651db116dd062417cff0e07ea338bc95f74da5f894d40",
+    "evidence/ms1-2026-11-14/reviewer/artifact-audit.json": "1333d6c628e63290160ea4dd076e53665d267f0f5de6ae53f4deb515fe32cb2c",
+    "evidence/ms1-2026-11-14/reviewer/frozen-harness.sha256": "1c4401720ca5de2d04b5966311e111b18d2d55253b8ef561776e2ab7afd563fe",
+    "evidence/ms1-2026-11-14/reviewer/artifact-audit.stderr.log": "a71171006496f1f5d707dd032b3d6b5ab85cddc7c76c92f58c4cdcab732f9632",
+    "evidence/ms1-2026-11-14/reviewer/frozen-inputs.sha256": "b8fa3f39a6a04d72f242d1f6c862ccdbc13e0477b8fd8570113882645f1b6579",
+    "evidence/ms1-2026-11-14/reviewer/sqlite-60-a/result.json": "90e2ef38002e49610d377bb062745cd35c05ab7bf2954cba8f3aa4794c0d8d36",
+    "evidence/ms1-2026-11-14/reviewer/pagefind-60-a/result.json": "f27c87a47726d15ba0d475e2516bb515050707d23c62489fc28b55a4bf673035",
+    "docs/reviews/ms1-2026-11-14/standard-v1.md": "b937e286e8e2a087cb817a821313797c80cabc7fc3f763e622818b11b486e067",
+    "docs/reviews/ms1-2026-11-14/measurement-notes-v1.md": "3c889461c8cd08718952dcbcc0d987a3c0fa70b545a9d49c4de89ac8f6ea424e",
+    "docs/reviews/ms1-2026-11-14/final-review.md": "6cbee305e9b7b4bd6dd086ec90c27074d93b8a2a1238cd76908f071d0d49815c",
+    "docs/reviews/ms1-2026-11-14/semantic-review.md": "0ec23c4078851c587dcee99ac62fe2c4d7106ccbd1a9ed78b4a83177700fbcc4",
+    "scripts/ms1-review/corpus.mjs": "790f7818fab462e8d7883d328941777fd6bd67cb32433300b0172e7aca46e2ad",
+    "scripts/ms1-review/review.mjs": "e04a388c7f2f33f5f3c71cfc0a3736e0cddc49b8cf2abd3c89e142fea9fdb8e2",
+    "scripts/ms1-review/audit-artifacts.mjs": "342fb5ff5176ee54be8d1c948c7c1c66bb88e36d51c1af76fa04516bce6c02df"
+  }
+}

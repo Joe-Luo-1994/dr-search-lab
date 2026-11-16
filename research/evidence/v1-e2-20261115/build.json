@@ -1,0 +1,6 @@
+{
+  "args": [],
+  "stdout": "▲ Next.js 16.4.5 (webpack)\n✓ Running next.config.mjs took 20ms\n- Experiments (use with caution):\n  · cpus: 1\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 2.9s\n  Running TypeScript ...\n  Finished TypeScript in 2ms ...\n  Collecting page data using 1 worker ...\n  Generating static pages using 1 worker (0/3) ...\n✓ Generating static pages using 1 worker (3/3) in 271ms\n  Finalizing page optimization ...\n  Collecting build traces ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n├ ƒ /api/pages/[pageId]\n├ ƒ /api/pages/[pageId]/media\n├ ƒ /api/pages/[pageId]/media/[mediaId]\n├ ƒ /api/search\n└ ƒ /api/status\n\n\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand\n\n",
+  "stderr": "",
+  "elapsedMs": 10822.7757
+}

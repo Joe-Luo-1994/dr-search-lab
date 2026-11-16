@@ -1,0 +1,29 @@
+{
+  "versions": [
+    {
+      "version": "v1",
+      "sourceSha256": "9ff1fd75af006e540fcf4b774538eb3c184ef04750a1cd49627f11e14b44eb99",
+      "pageCount": 37,
+      "local": {
+        "manifest.json": 15560,
+        "search-text.json": 5719,
+        "search.sqlite": 65536
+      },
+      "remoteBodyBytes": 7380,
+      "remotePdfBytes": 1359
+    },
+    {
+      "version": "v2",
+      "sourceSha256": "a7cf45397f43cfdd4ccf917d525266433ee9d1aa83a287c121325f7340112f43",
+      "pageCount": 38,
+      "local": {
+        "manifest.json": 15951,
+        "search-text.json": 5778,
+        "search.sqlite": 65536
+      },
+      "remoteBodyBytes": 7491,
+      "remotePdfBytes": 1360
+    }
+  ],
+  "scope": "Offline fixture/descriptor/source audit before HTTP; not functional pass"
+}

@@ -1,0 +1,21 @@
+{
+  "events": [
+    "old-a-server-response-obtained",
+    "identity-none-selected",
+    "route-fulfill-completed",
+    "none-still-clear-after-route-completion"
+  ],
+  "status": 200,
+  "pageIds": [
+    "a-relay",
+    "a-noise-01",
+    "a-noise-04",
+    "a-noise-03",
+    "a-noise-05",
+    "a-noise-06",
+    "a-noise-02",
+    "a-noise-08",
+    "a-noise-09",
+    "a-noise-14"
+  ]
+}

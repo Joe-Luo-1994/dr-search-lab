@@ -1,0 +1,14 @@
+{
+  "at": 1794790893.2109957,
+  "memAvailable": 19899428864,
+  "source": "K5 R2 runtime, unchanged pool/worker; service init+import+explicit unsupported hot update; storage only adds method/key request evidence without credentials",
+  "fixture": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000",
+  "readerBudget": {
+    "cpu": 8,
+    "memoryGiB": 12
+  },
+  "minioBudget": {
+    "cpu": 4,
+    "memoryGiB": 4
+  }
+}

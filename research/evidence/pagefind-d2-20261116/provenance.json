@@ -1,0 +1,16 @@
+{
+  "originalInventorySha256": "331255222df4f500291bda334df1d821b01ac2e30d1db88318a86d0e4c571183",
+  "modifiedInventorySha256": "bae483680eb7fdac990305e52099cb8c3c9ad895dd48af0388a7651dfdc68f25",
+  "changes": [
+    {
+      "path": "pagefind/pagefind.js",
+      "oldSha256": "02746cc529f88f853275720dcb1c2b6a18b0c7a92b73fae82ca2738e64500bcd",
+      "newSha256": "3f640a92e7563294bf360bf77462a5ce237c5770c552cb92e3bce07905db9d9c",
+      "oldBytes": 47228,
+      "newBytes": 49540
+    }
+  ],
+  "unchangedFiles": 101570,
+  "fileCount": 101571,
+  "scope": "Diagnostic-only JS trace edit; not byte-identical original bundle"
+}

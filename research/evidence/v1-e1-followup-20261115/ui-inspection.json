@@ -1,0 +1,220 @@
+{
+  "at": "2026-11-15T13:36:24.493Z",
+  "browser": "157.0.4341.46",
+  "exactLabelCount": 0,
+  "prefixRoleCount": 1,
+  "controls": [
+    {
+      "html": "<select><option value=\"a\" selected=\"\">a · 設備維運</option><option value=\"b\">b · 合作站點</option><option value=\"all\">all · 兩個 Space</option><option value=\"none\">none · 無授權</option><option value=\"unknown\">unknown · 權限未知</option></select>",
+      "labels": [
+        "研究身份a · 設備維運b · 合作站點all · 兩個 Spacenone · 無授權unknown · 權限未知"
+      ]
+    },
+    {
+      "html": "<select><option value=\"\" selected=\"\">所有可存取 Space</option><option value=\"space-a\">設備維運</option><option value=\"space-b\">合作站點</option></select>",
+      "labels": [
+        "Space所有可存取 Space設備維運合作站點"
+      ]
+    }
+  ],
+  "axComboboxes": [
+    {
+      "nodeId": "5",
+      "ignored": false,
+      "role": {
+        "type": "role",
+        "value": "combobox"
+      },
+      "chromeRole": {
+        "type": "internalRole",
+        "value": 209
+      },
+      "name": {
+        "type": "computedString",
+        "value": "研究身份",
+        "sources": [
+          {
+            "type": "relatedElement",
+            "attribute": "aria-labelledby"
+          },
+          {
+            "type": "attribute",
+            "attribute": "aria-label"
+          },
+          {
+            "type": "relatedElement",
+            "value": {
+              "type": "computedString",
+              "value": "研究身份"
+            },
+            "nativeSource": "labelwrapped",
+            "nativeSourceValue": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 32,
+                  "text": "研究身份"
+                }
+              ]
+            }
+          },
+          {
+            "type": "attribute",
+            "attribute": "title",
+            "superseded": true
+          }
+        ]
+      },
+      "value": {
+        "type": "string",
+        "value": "a · 設備維運"
+      },
+      "properties": [
+        {
+          "name": "invalid",
+          "value": {
+            "type": "token",
+            "value": "false"
+          }
+        },
+        {
+          "name": "focusable",
+          "value": {
+            "type": "booleanOrUndefined",
+            "value": true
+          }
+        },
+        {
+          "name": "hasPopup",
+          "value": {
+            "type": "token",
+            "value": "menu"
+          }
+        },
+        {
+          "name": "expanded",
+          "value": {
+            "type": "booleanOrUndefined",
+            "value": false
+          }
+        },
+        {
+          "name": "labelledby",
+          "value": {
+            "type": "nodeList",
+            "relatedNodes": [
+              {
+                "backendDOMNodeId": 32,
+                "text": "研究身份"
+              }
+            ]
+          }
+        }
+      ],
+      "parentId": "32",
+      "childIds": [
+        "35"
+      ],
+      "backendDOMNodeId": 5
+    },
+    {
+      "nodeId": "4",
+      "ignored": false,
+      "role": {
+        "type": "role",
+        "value": "combobox"
+      },
+      "chromeRole": {
+        "type": "internalRole",
+        "value": 209
+      },
+      "name": {
+        "type": "computedString",
+        "value": "Space",
+        "sources": [
+          {
+            "type": "relatedElement",
+            "attribute": "aria-labelledby"
+          },
+          {
+            "type": "attribute",
+            "attribute": "aria-label"
+          },
+          {
+            "type": "relatedElement",
+            "value": {
+              "type": "computedString",
+              "value": "Space"
+            },
+            "nativeSource": "labelwrapped",
+            "nativeSourceValue": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 62,
+                  "text": "Space"
+                }
+              ]
+            }
+          },
+          {
+            "type": "attribute",
+            "attribute": "title",
+            "superseded": true
+          }
+        ]
+      },
+      "value": {
+        "type": "string",
+        "value": "所有可存取 Space"
+      },
+      "properties": [
+        {
+          "name": "invalid",
+          "value": {
+            "type": "token",
+            "value": "false"
+          }
+        },
+        {
+          "name": "focusable",
+          "value": {
+            "type": "booleanOrUndefined",
+            "value": true
+          }
+        },
+        {
+          "name": "hasPopup",
+          "value": {
+            "type": "token",
+            "value": "menu"
+          }
+        },
+        {
+          "name": "expanded",
+          "value": {
+            "type": "booleanOrUndefined",
+            "value": false
+          }
+        },
+        {
+          "name": "labelledby",
+          "value": {
+            "type": "nodeList",
+            "relatedNodes": [
+              {
+                "backendDOMNodeId": 62,
+                "text": "Space"
+              }
+            ]
+          }
+        }
+      ],
+      "parentId": "62",
+      "childIds": [
+        "65"
+      ],
+      "backendDOMNodeId": 4
+    }
+  ]
+}

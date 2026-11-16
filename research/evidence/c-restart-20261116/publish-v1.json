@@ -1,0 +1,21 @@
+{
+  "action": "v1",
+  "approved": {
+    "schemaVersion": 1,
+    "releaseId": "v1",
+    "manifest": {
+      "key": "v1/manifest.json",
+      "bytes": 68450,
+      "sha256": "d7db2dffc43ea1d62bf87f93d5d9083a5d5c77edf2e1a478353406b24608d53d"
+    }
+  },
+  "elapsedMs": 24.701305,
+  "requests": 3,
+  "putBytes": 165,
+  "getBytes": 68615,
+  "assumptions": [
+    "single trusted publisher",
+    "research credentials shared; production IAM not verified",
+    "approved object read once per bootstrap; no distributed transaction"
+  ]
+}

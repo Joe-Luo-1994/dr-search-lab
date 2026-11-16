@@ -1,0 +1,898 @@
+{
+  "schemaVersion": 1,
+  "status": "DESIGN_FIXED_EXPECTATIONS_ENVIRONMENT_AND_IMPLEMENTATION_FREEZE_PENDING",
+  "purpose": "R1-R3 remote content seams, not engine comparison or production acceptance",
+  "sourceReferences": {
+    "e2Oracle": {
+      "path": "scripts/v1-e2-20261115/review/oracle.json",
+      "sha256": "f4421dc329bf956ac74c637c4c647ac77004f78bf2b1790c48e928eace5f2ee5"
+    },
+    "v1": {
+      "path": ".lab/v1-e2-20261115/producer/fz1/v1.json",
+      "sha256": "13bbdd13ec09090fc8f18168084e90367aeedd68b997bade6f0a519baadc84a2"
+    },
+    "v2": {
+      "path": ".lab/v1-e2-20261115/producer/fz1/v2.json",
+      "sha256": "e1ceee4695c81b0741915f5f29c17a83d874729682fab85ea9d587fea7788d51"
+    }
+  },
+  "sourcePolicy": "Derive new isolated sources from E2 originals by replacing snapshotId only; capture labels/content unchanged. Keep schemaVersion 2 for source; remote manifest format is separately versioned. UTF-8 JSON.stringify(source,null,2)+LF. Never modify E2.",
+  "snapshotIds": {
+    "v1": "v1-remote-content-20261115-v1",
+    "v2": "v1-remote-content-20261115-v2"
+  },
+  "snapshotCapturedAt": {
+    "v1": "2026-11-15T08:00:00.000Z",
+    "v2": "2026-11-15T12:00:00.000Z"
+  },
+  "remoteBodyEncoding": {
+    "objectKeyOrder": [
+      "schemaVersion",
+      "snapshotId",
+      "pageId",
+      "body"
+    ],
+    "schemaVersion": 1,
+    "body": "source paragraphs joined by LF",
+    "serialization": "UTF-8(JSON.stringify(object) + LF), no BOM",
+    "authorization": "canonical local page metadata, not remote object claims"
+  },
+  "referenceContent": {
+    "v1": {
+      "path": "scripts/v1-remote-content-20261115/fixture/v1.json",
+      "sourceSha256": "9ff1fd75af006e540fcf4b774538eb3c184ef04750a1cd49627f11e14b44eb99",
+      "snapshotId": "v1-remote-content-20261115-v1",
+      "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+      "pageCount": 37,
+      "pages": [
+        {
+          "pageId": "a-pdf",
+          "spaceId": "space-a",
+          "title": "異地部署檢查表",
+          "tagIds": [
+            "runbook",
+            "validated"
+          ],
+          "paragraphs": [
+            "部署前應對照檢查表附件的校驗程序。",
+            "簽核流程請回到控制平面指南。",
+            "e2packet identifies this deployment attachment."
+          ],
+          "mediaIds": [
+            "pdf-checklist"
+          ],
+          "body": "部署前應對照檢查表附件的校驗程序。\n簽核流程請回到控制平面指南。\ne2packet identifies this deployment attachment.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v1",
+            "pageId": "a-pdf",
+            "body": "部署前應對照檢查表附件的校驗程序。\n簽核流程請回到控制平面指南。\ne2packet identifies this deployment attachment."
+          },
+          "objectBytes": 236,
+          "objectSha256": "aeb4f04fae1bbe12347b8c14bdc84802342f66bebe1779e114399b6bcba7be98"
+        },
+        {
+          "pageId": "a-tag-both",
+          "spaceId": "space-a",
+          "title": "Dispatch Handbook",
+          "tagIds": [
+            "runbook",
+            "validated"
+          ],
+          "paragraphs": [
+            "Create one dispatch record per interruption."
+          ],
+          "mediaIds": [],
+          "body": "Create one dispatch record per interruption.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v1",
+            "pageId": "a-tag-both",
+            "body": "Create one dispatch record per interruption."
+          },
+          "objectBytes": 141,
+          "objectSha256": "7e5a0d02500ff28ca12537d7258fc597cc69b321f9555b7414e2ff8f6ea9c2da"
+        },
+        {
+          "pageId": "a-move",
+          "spaceId": "space-a",
+          "title": "Migration Timeline",
+          "tagIds": [
+            "contact"
+          ],
+          "paragraphs": [
+            "Orchid waiver for the cutover remains in review."
+          ],
+          "mediaIds": [],
+          "body": "Orchid waiver for the cutover remains in review.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v1",
+            "pageId": "a-move",
+            "body": "Orchid waiver for the cutover remains in review."
+          },
+          "objectBytes": 141,
+          "objectSha256": "88c0f92eccf50d1788af703682b32b9fce3889d6aace956617e99aaba6441a86"
+        },
+        {
+          "pageId": "b-export",
+          "spaceId": "space-b",
+          "title": "部門報告匯出",
+          "tagIds": [
+            "runbook",
+            "validated"
+          ],
+          "paragraphs": [
+            "黃金備份由另一個團隊保管。",
+            "Falcon export replaces the duplicate ledger."
+          ],
+          "mediaIds": [
+            "pdf-ledger"
+          ],
+          "body": "黃金備份由另一個團隊保管。\nFalcon export replaces the duplicate ledger.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v1",
+            "pageId": "b-export",
+            "body": "黃金備份由另一個團隊保管。\nFalcon export replaces the duplicate ledger."
+          },
+          "objectBytes": 180,
+          "objectSha256": "b3aa6ac6647b1c3e1e262d656d8bb5294bdb985a424e63c8b505f7832c94f4bb"
+        }
+      ],
+      "media": [
+        {
+          "mediaId": "pdf-checklist",
+          "fileName": "deployment-checklist.pdf",
+          "mimeType": "application/pdf",
+          "extractedText": "silverline certificate check the cold cabinet\nMatch seal number 7324 before signing.",
+          "bytes": 677,
+          "sha256": "f396877a93e9980d03a314270f6d566ced0784e0661e9517abacc89d9f41a6ef"
+        },
+        {
+          "mediaId": "pdf-ledger",
+          "fileName": "partner-ledger.pdf",
+          "mimeType": "application/pdf",
+          "extractedText": "Ledger verification for the partner site\nCompare seal number 8415 and confirm the export.",
+          "bytes": 682,
+          "sha256": "7b496dcb7e4d53d1f7291aaa612afad44d6ff7575d16637c512656cda7133406"
+        }
+      ]
+    },
+    "v2": {
+      "path": "scripts/v1-remote-content-20261115/fixture/v2.json",
+      "sourceSha256": "a7cf45397f43cfdd4ccf917d525266433ee9d1aa83a287c121325f7340112f43",
+      "snapshotId": "v1-remote-content-20261115-v2",
+      "snapshotCapturedAt": "2026-11-15T12:00:00.000Z",
+      "pageCount": 38,
+      "pages": [
+        {
+          "pageId": "a-pdf",
+          "spaceId": "space-a",
+          "title": "異地部署檢查表",
+          "tagIds": [
+            "runbook",
+            "validated"
+          ],
+          "paragraphs": [
+            "部署前請依新版檢查表完成校驗程序。",
+            "e2packet identifies the revised deployment attachment."
+          ],
+          "mediaIds": [
+            "pdf-checklist-v2"
+          ],
+          "body": "部署前請依新版檢查表完成校驗程序。\ne2packet identifies the revised deployment attachment.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v2",
+            "pageId": "a-pdf",
+            "body": "部署前請依新版檢查表完成校驗程序。\ne2packet identifies the revised deployment attachment."
+          },
+          "objectBytes": 199,
+          "objectSha256": "91c30df6aac39ae5b694b7eb7a227fe9eaef82dc4f2cd90e857735caa6ed0a1d"
+        },
+        {
+          "pageId": "a-tag-both",
+          "spaceId": "space-a",
+          "title": "Dispatch Handbook",
+          "tagIds": [
+            "runbook",
+            "contact"
+          ],
+          "paragraphs": [
+            "Create one dispatch record per interruption."
+          ],
+          "mediaIds": [],
+          "body": "Create one dispatch record per interruption.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v2",
+            "pageId": "a-tag-both",
+            "body": "Create one dispatch record per interruption."
+          },
+          "objectBytes": 141,
+          "objectSha256": "652d62d8e8f427745f0054b081523a956fcdf6642071a8c991e7833b81f1998e"
+        },
+        {
+          "pageId": "a-move",
+          "spaceId": "space-b",
+          "title": "Migration Timeline",
+          "tagIds": [
+            "contact"
+          ],
+          "paragraphs": [
+            "Orchid waiver for the cutover remains in review."
+          ],
+          "mediaIds": [],
+          "body": "Orchid waiver for the cutover remains in review.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v2",
+            "pageId": "a-move",
+            "body": "Orchid waiver for the cutover remains in review."
+          },
+          "objectBytes": 141,
+          "objectSha256": "1791fed0b07870e3e84d1092ef291b32bce2410ad1a21440e7b872352214dad4"
+        },
+        {
+          "pageId": "b-export",
+          "spaceId": "space-b",
+          "title": "部門報告匯出",
+          "tagIds": [
+            "runbook",
+            "validated"
+          ],
+          "paragraphs": [
+            "黃金備份由另一個團隊保管。",
+            "Falcon export replaces the duplicate ledger."
+          ],
+          "mediaIds": [
+            "pdf-ledger"
+          ],
+          "body": "黃金備份由另一個團隊保管。\nFalcon export replaces the duplicate ledger.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v2",
+            "pageId": "b-export",
+            "body": "黃金備份由另一個團隊保管。\nFalcon export replaces the duplicate ledger."
+          },
+          "objectBytes": 180,
+          "objectSha256": "94b2822a0089d1e94e07c5bd7d9544775285efaf184330dd0465eb445e08f7b4"
+        },
+        {
+          "pageId": "a-pdf-near",
+          "spaceId": "space-a",
+          "title": "異地部署附件索引",
+          "tagIds": [
+            "runbook"
+          ],
+          "paragraphs": [
+            "校驗程序在另一個頁面。",
+            "This page mentions silverline but does not contain the certificate."
+          ],
+          "mediaIds": [],
+          "body": "校驗程序在另一個頁面。\nThis page mentions silverline but does not contain the certificate.",
+          "object": {
+            "schemaVersion": 1,
+            "snapshotId": "v1-remote-content-20261115-v2",
+            "pageId": "a-pdf-near",
+            "body": "校驗程序在另一個頁面。\nThis page mentions silverline but does not contain the certificate."
+          },
+          "objectBytes": 199,
+          "objectSha256": "73ced4e9b81046e0b695b078ffda39af792e5ae92d893adf2d2713c6f74a1eac"
+        }
+      ],
+      "media": [
+        {
+          "mediaId": "pdf-checklist-v2",
+          "fileName": "deployment-checklist-v2.pdf",
+          "mimeType": "application/pdf",
+          "extractedText": "saffron attestation verify the remote cabinet\nMatch seal number 9652 before approval.",
+          "bytes": 678,
+          "sha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae"
+        },
+        {
+          "mediaId": "pdf-ledger",
+          "fileName": "partner-ledger.pdf",
+          "mimeType": "application/pdf",
+          "extractedText": "Ledger verification for the partner site\nCompare seal number 8415 and confirm the export.",
+          "bytes": 682,
+          "sha256": "7b496dcb7e4d53d1f7291aaa612afad44d6ff7575d16637c512656cda7133406"
+        }
+      ]
+    }
+  },
+  "api": {
+    "identityHeader": "x-e1-identity",
+    "versionParameter": "version",
+    "versionRequiredOn": [
+      "page",
+      "media-list",
+      "download"
+    ],
+    "responseMetadata": [
+      "snapshotId",
+      "snapshotCapturedAt",
+      "authorizationCheckedAt"
+    ],
+    "authorizationCheckedAt": "valid ISO string only; no cross-process wall-clock containment assertion",
+    "responseCacheControl": "no-store",
+    "searchHitFields": [
+      "pageId",
+      "spaceId",
+      "title",
+      "tagIds",
+      "snippet",
+      "url"
+    ],
+    "pageFields": [
+      "pageId",
+      "spaceId",
+      "title",
+      "tagIds",
+      "body",
+      "mediaUrl"
+    ],
+    "mediaFields": [
+      "mediaId",
+      "fileName",
+      "mimeType",
+      "sha256",
+      "bytes",
+      "url"
+    ],
+    "pdfSnapshotHeader": "x-e2-snapshot-id",
+    "maxRemoteObjectBytes": 1048576,
+    "completeBodyBeforeDelivery": true,
+    "noRangeOrStreaming": true,
+    "errors": {
+      "unknown": {
+        "status": 503,
+        "errorCode": "AUTHORIZATION_UNKNOWN",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      },
+      "denied": {
+        "status": 404,
+        "errorCode": "NOT_FOUND",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      },
+      "missingVersion": {
+        "status": 400,
+        "errorCode": "VERSION_REQUIRED",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      },
+      "staleVersion": {
+        "status": 409,
+        "errorCode": "VERSION_MISMATCH",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      },
+      "remoteUnavailable": {
+        "page": {
+          "status": 503,
+          "errorCode": "CONTENT_UNAVAILABLE",
+          "bodyKeys": [
+            "error"
+          ],
+          "noContent": true
+        },
+        "pdf": {
+          "status": 503,
+          "errorCode": "MEDIA_UNAVAILABLE",
+          "bodyKeys": [
+            "error"
+          ],
+          "noContent": true
+        }
+      },
+      "remoteIntegrity": {
+        "status": 503,
+        "errorCode": "CONTENT_INTEGRITY_MISMATCH",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      },
+      "schemaMismatch": {
+        "status": 503,
+        "errorCode": "CONTENT_INTEGRITY_MISMATCH",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      }
+    }
+  },
+  "chainRule": "Resolve search hit URL, page.mediaUrl and media[].url from real responses; assert canonical page identity/Space/Tags/title, exact body, membership, media metadata, PDF bytes/hash and common snapshot. Do not manufacture links for success chains.",
+  "cases": [
+    {
+      "id": "R1-01",
+      "kind": "required",
+      "target": "v1",
+      "action": "search-page-media-download",
+      "request": {
+        "path": "/api/search?q=e2packet",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "total": 1,
+        "requiredPageIds": [
+          "a-pdf"
+        ],
+        "contentRef": "referenceContent.v1 a-pdf/pdf-checklist",
+        "recordReturnedLinks": true,
+        "remoteGetEvidence": [
+          "body",
+          "pdf"
+        ]
+      }
+    },
+    {
+      "id": "R1-02",
+      "kind": "negative",
+      "target": "wrong-v2-reader",
+      "fault": "separate wrong-v2 manifest with V2 snapshot ID: a-pdf bodyObject.key points to actual same-V2 a-pdf-near body object (199 bytes), while a-pdf expected bytes/hash stay unchanged; successful full GET must reach SHA mismatch",
+      "request": {
+        "path": "/api/pages/a-pdf?version=v1-remote-content-20261115-v2",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 503,
+        "errorCode": "CONTENT_INTEGRITY_MISMATCH",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true,
+        "remoteGetStatus": 200
+      },
+      "normalObjectsUntouched": true,
+      "negativeObjectRef": "referenceContent.v2 a-pdf-near"
+    },
+    {
+      "id": "R1-04",
+      "kind": "required",
+      "target": "v2",
+      "action": "install verified local index/metadata, start pinned reader, explicitly change routing; complete search-page-media-download",
+      "request": {
+        "path": "/api/search?q=e2packet",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "total": 1,
+        "requiredPageIds": [
+          "a-pdf"
+        ],
+        "contentRef": "referenceContent.v2 a-pdf/pdf-checklist-v2",
+        "remoteGetEvidence": [
+          "body",
+          "pdf"
+        ]
+      }
+    },
+    {
+      "id": "R1-05",
+      "kind": "negative",
+      "target": "v2",
+      "action": "replay the three actual R1-01 returned URLs",
+      "request": {
+        "identity": "a",
+        "linkRefs": [
+          "R1-01.pageUrl",
+          "R1-01.mediaUrl",
+          "R1-01.downloadUrl"
+        ]
+      },
+      "expect": {
+        "status": 409,
+        "errorCode": "VERSION_MISMATCH",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      }
+    },
+    {
+      "id": "R1-06",
+      "kind": "required",
+      "target": "pinned-v1",
+      "action": "after V2 routing, read actual R1-01 links directly through retained V1 reader",
+      "expect": {
+        "status": 200,
+        "contentRef": "referenceContent.v1 a-pdf/pdf-checklist",
+        "remoteGetEvidence": [
+          "body",
+          "pdf"
+        ]
+      }
+    },
+    {
+      "id": "R1-07",
+      "kind": "ui",
+      "target": "v1-browser-now-routed-v2",
+      "action": "same browser keeps V1 hit, sees explicit stale-version error, chooses re-search e2packet, opens V2 body and downloads PDF",
+      "expect": {
+        "clearOldContent": true,
+        "explicitResearch": true,
+        "bodyRef": "referenceContent.v2 a-pdf",
+        "pdfSha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae",
+        "noPageErrors": true,
+        "maxTaskMs": 30000
+      },
+      "claim": "read/download UI; iframe rendering not required by this card",
+      "executionOrder": "after R1-04 activation and before R2"
+    },
+    {
+      "id": "R2-01",
+      "kind": "required",
+      "target": "v2",
+      "profile": "baseline",
+      "action": "search-page-media-download",
+      "request": {
+        "path": "/api/search?q=Falcon",
+        "identity": "b"
+      },
+      "expect": {
+        "status": 200,
+        "total": 1,
+        "requiredPageIds": [
+          "b-export"
+        ],
+        "contentRef": "referenceContent.v2 b-export/pdf-ledger",
+        "recordReturnedLinks": true
+      }
+    },
+    {
+      "id": "R2-02",
+      "kind": "negative",
+      "target": "v2",
+      "request": {
+        "path": "/api/pages/a-pdf/media/pdf-ledger?version=v1-remote-content-20261115-v2",
+        "identity": "all"
+      },
+      "expect": {
+        "status": 404,
+        "errorCode": "NOT_FOUND",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      },
+      "reason": "identity can access both spaces and object exists; rejection must be page membership"
+    },
+    {
+      "id": "R2-03",
+      "kind": "negative",
+      "target": "v2",
+      "requests": [
+        {
+          "path": "/api/pages/b-export?version=v1-remote-content-20261115-v2",
+          "identity": "a"
+        },
+        {
+          "path": "/api/pages/b-export/media/pdf-ledger?version=v1-remote-content-20261115-v2",
+          "identity": "a"
+        }
+      ],
+      "expect": {
+        "status": 404,
+        "errorCode": "NOT_FOUND",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      }
+    },
+    {
+      "id": "R2-04",
+      "kind": "negative",
+      "target": "v2",
+      "profile": "revoked-b",
+      "action": "reuse genuine links from R2-01 after profile change",
+      "requests": [
+        {
+          "path": "/api/pages/b-export?version=v1-remote-content-20261115-v2",
+          "identity": "b"
+        },
+        {
+          "path": "/api/pages/b-export/media?version=v1-remote-content-20261115-v2",
+          "identity": "b"
+        },
+        {
+          "path": "/api/pages/b-export/media/pdf-ledger?version=v1-remote-content-20261115-v2",
+          "identity": "b"
+        }
+      ],
+      "expect": {
+        "status": 404,
+        "errorCode": "NOT_FOUND",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      },
+      "finally": "restore baseline; perform one exact b-export page/PDF successful recovery"
+    },
+    {
+      "id": "R2-05",
+      "kind": "negative",
+      "target": "v2",
+      "requests": [
+        {
+          "path": "/api/pages/a-pdf?version=v1-remote-content-20261115-v2",
+          "identity": "unknown"
+        },
+        {
+          "path": "/api/pages/a-pdf/media/pdf-checklist-v2?version=v1-remote-content-20261115-v2",
+          "identity": "unknown"
+        }
+      ],
+      "expect": {
+        "status": 503,
+        "errorCode": "AUTHORIZATION_UNKNOWN",
+        "bodyKeys": [
+          "error"
+        ],
+        "noContent": true
+      }
+    },
+    {
+      "id": "R2-06",
+      "kind": "negative",
+      "target": "MinIO-direct",
+      "action": "anonymous raw GET for known valid V2 body and PDF keys; no signature or credentials",
+      "expect": {
+        "status": 403,
+        "s3Code": "AccessDenied",
+        "noSourceContent": true
+      },
+      "precondition": "signed Next reads of both exact objects succeeded in R1"
+    },
+    {
+      "id": "R3-01",
+      "kind": "required",
+      "target": "v2",
+      "fault": "single verified MinIO process/endpoint unavailable window",
+      "requests": [
+        {
+          "path": "/api/search?q=e2packet",
+          "identity": "a",
+          "expect": {
+            "status": 200,
+            "total": 1,
+            "requiredPageIds": [
+              "a-pdf"
+            ]
+          }
+        },
+        {
+          "path": "/api/search?q=dispatch&tagId=runbook&tagId=contact",
+          "identity": "a",
+          "expect": {
+            "status": 200,
+            "total": 1,
+            "requiredPageIds": [
+              "a-tag-both"
+            ]
+          }
+        },
+        {
+          "path": "/api/pages/a-pdf/media?version=v1-remote-content-20261115-v2",
+          "identity": "a",
+          "expect": {
+            "status": 200,
+            "mediaIds": [
+              "pdf-checklist-v2"
+            ]
+          }
+        }
+      ],
+      "expect": {
+        "noRemoteContentNeededForTheseLocalOperations": true
+      }
+    },
+    {
+      "id": "R3-02",
+      "kind": "negative",
+      "target": "v2",
+      "during": "same R3-01 outage",
+      "requests": [
+        {
+          "path": "/api/pages/a-pdf?version=v1-remote-content-20261115-v2",
+          "identity": "a",
+          "expect": {
+            "status": 503,
+            "errorCode": "CONTENT_UNAVAILABLE",
+            "bodyKeys": [
+              "error"
+            ],
+            "noContent": true
+          }
+        },
+        {
+          "path": "/api/pages/a-pdf/media/pdf-checklist-v2?version=v1-remote-content-20261115-v2",
+          "identity": "a",
+          "expect": {
+            "status": 503,
+            "errorCode": "MEDIA_UNAVAILABLE",
+            "bodyKeys": [
+              "error"
+            ],
+            "noContent": true
+          }
+        }
+      ],
+      "require": "no local paragraphs/FTS/PDF fallback and no stale browser body treated as successful new read"
+    },
+    {
+      "id": "R3-03",
+      "kind": "negative",
+      "target": "new-empty-cache",
+      "during": "same R3-01 outage",
+      "action": "one install attempt fetching index artifact from unavailable MinIO",
+      "expect": {
+        "installerExit": "nonzero",
+        "errorCode": "ARTIFACT_UNAVAILABLE",
+        "releaseCommitted": false,
+        "lastSuccessCreated": false,
+        "ready": false,
+        "port": 3166
+      },
+      "readinessProof": "run valid serve arguments v2 3166 fresh after failed install; no installed receipt/release => nonzero exit, no e2_ready or remote-ready event, no listener; argument rejection or port conflict cannot satisfy this case"
+    },
+    {
+      "id": "R3-04",
+      "kind": "ui",
+      "target": "v2",
+      "action": "during same outage fresh Web read shows content unavailable and a usable retry path; after MinIO restoration retry same version/body and download exact PDF without rebuild",
+      "expect": {
+        "duringOutage": "explicit content unavailable, not no-results/NOT_FOUND",
+        "afterRestoreStatus": 200,
+        "bodyRef": "referenceContent.v2 a-pdf",
+        "pdfSha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae",
+        "noRebuildOrSourceMutation": true,
+        "noPageErrors": true,
+        "maxTaskMs": 30000
+      },
+      "timeBoundary": "30 seconds per failure-display task and per recovery task; deliberate outage duration belongs to formal overall deadline"
+    },
+    {
+      "id": "R3-05",
+      "kind": "required",
+      "target": "v2",
+      "after": "restore same MinIO store and exact object hashes",
+      "action": "one API search-page-media-download chain",
+      "request": {
+        "path": "/api/search?q=e2packet",
+        "identity": "a"
+      },
+      "expect": {
+        "status": 200,
+        "total": 1,
+        "requiredPageIds": [
+          "a-pdf"
+        ],
+        "contentRef": "referenceContent.v2 a-pdf/pdf-checklist-v2",
+        "localIndexAndMetadataHashesUnchanged": true
+      }
+    }
+  ],
+  "faultPolicy": {
+    "oneOutage": true,
+    "knownWrongHashIsExpectedRejection": true,
+    "unexpectedProductAuthorizationOrVersionFailure": "stop immediately; preserve all evidence; do not repair product or change scope to pass",
+    "instrumentationRepair": "at most one, independent review first, preserve original attempt, separate evidence and new freeze if harness changes",
+    "allFaultMutationRestrictedToNewNamespace": true
+  },
+  "limits": {
+    "buildAttempts": 1,
+    "buildDeadlineMs": 300000,
+    "httpCompleteBodyMs": 5000,
+    "uiTaskMs": 30000,
+    "formalDeadlineMs": 300000,
+    "maxObjectBytes": 1048576,
+    "singleWriter": true,
+    "engineMatrix": false
+  },
+  "evidence": {
+    "rawHttp": "method/url/identity/status/headers/raw JSON or exact PDF bytes, one-observer monotonic duration, case ID",
+    "remoteReads": "phase/object descriptor/key/GET status/bytes/hash/error; exclude Authorization/credentials/signatures",
+    "publication": "object closure/hash inventory and publication-vs-install status distinguished; no immutable-lock claim unless verified",
+    "localCache": "no page.body or PDF bytes; paragraphs/extractedText/FTS counted as search data only",
+    "preservation": [
+      "E1 frozen120",
+      "E2 frozen132",
+      "new freeze",
+      "source copies",
+      "fault restoration",
+      "own PID stop receipt",
+      "Role baseline"
+    ],
+    "cost": "local search metadata/FTS/fulltext copies, remote bytes/GET counts, retained remote versions, startup/credential/diagnosis and interventions; not production TCO"
+  },
+  "freezePending": [
+    "exact script/build/runtime/store paths and preserved MinIO binary SHA/version",
+    "loopback ports/bucket/namespace and controlled PID ownership",
+    "remote release schema/descriptor fields and all startup/installer error bindings",
+    "resource measurement host/WSL scope and guard limits",
+    "preparation/build receipts, object inventory/source/contract/oracle hashes",
+    "runbook and runner preflight; R3-03 valid fresh arguments and specific missing-receipt/release exit evidence"
+  ],
+  "notClaims": [
+    "production ReBAC",
+    "cross-region failure isolation",
+    "formal consumer acceptance",
+    "SLO/RTO/RPO",
+    "arbitrary object sizes/ranges/streaming",
+    "Pagefind or ES engine qualification",
+    "SQLite net cost winner",
+    "full local content offline availability"
+  ],
+  "executionOrder": [
+    "R1-01",
+    "R1-02",
+    "R1-04",
+    "R1-05",
+    "R1-06",
+    "R1-07",
+    "R2-01",
+    "R2-02",
+    "R2-03",
+    "R2-04",
+    "R2-05",
+    "R2-06",
+    "R3-01",
+    "R3-02",
+    "R3-03",
+    "R3-04",
+    "R3-05"
+  ],
+  "preflightRequired": [
+    "Reject unsupported remote manifest schema before install/ready",
+    "Shared remote-body/PDF helper checks observed byte bound, expected size and SHA before any response content is delivered",
+    "Parsed body must have schemaVersion 1 and exact snapshotId/pageId/string body; schema/identity mismatches map CONTENT_INTEGRITY_MISMATCH",
+    "No readPage/download branch reconstructs from local search paragraphs/FTS/extractedText or local PDF file",
+    "Wrong-v2 descriptor uses real V2 a-pdf-near key with unchanged a-pdf expected size/hash; normal releases and objects unchanged",
+    "serve v2 3166 fresh is accepted by argument validation; missing receipt/release is the actual startup failure; no existing listener on 3166"
+  ],
+  "deployment": {
+    "minioBinary": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/work/minio-official-build/bin/minio",
+    "minioStore": ".lab/v1-remote-content-20261115/minio-data",
+    "minioAccess": "WSL process serving Windows new store via /mnt/c; loopback only",
+    "ports": {
+      "minioApi": 19440,
+      "minioConsole": 19441,
+      "v1": 3162,
+      "v2": 3163,
+      "proxy": 3164,
+      "wrongV2": 3165,
+      "fresh": 3166
+    },
+    "authentication": "ephemeral private credentials; SigV4 signed fetch; no credentials/signatures in evidence",
+    "objectKeys": {
+      "body": "<snapshotId>/pages/<pageId>/<sha256>.json",
+      "pdf": "<snapshotId>/media/<mediaId>/<sha256>.pdf"
+    },
+    "publisher": "PUT then authenticated GET/hash every declared remote object, manifest/commit last; small fixture only; no Object Lock or production immutability claim"
+  },
+  "uiRetryLabels": {
+    "page": "重試載入頁面",
+    "pdf": "重試載入 PDF"
+  },
+  "uiErrorText": {
+    "page": "目前無法讀取頁面正文。你仍可搜尋。",
+    "pdf": "目前無法載入這份 PDF。"
+  }
+}

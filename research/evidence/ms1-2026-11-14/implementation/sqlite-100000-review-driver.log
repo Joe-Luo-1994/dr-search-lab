@@ -1,0 +1,13 @@
+{
+  "mode": "capacity",
+  "N": 100000,
+  "engine": "sqlite",
+  "capacityStagePassed": true,
+  "requests": 102,
+  "failedTasks": [],
+  "mixed": {
+    "p95Ms": 46.7155759999996,
+    "failedOperations": 0,
+    "timeouts": 0
+  }
+}

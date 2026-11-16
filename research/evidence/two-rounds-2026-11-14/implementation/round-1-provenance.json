@@ -1,0 +1,27 @@
+{
+  "round": 1,
+  "pid": 4619,
+  "url": "http://127.0.0.1:43149",
+  "sourceSha256": {
+    "scripts/product-api-lab/next.config.mjs": "83b6a87c6a8a9f0993f47b0e6e4ef599d008565e8b9bc90cf29f4adcb3cbdb57",
+    "scripts/product-api-lab/core.mjs": "348761527bf2a27aefc1646f8d95daca1123c6bace089cf1b0442b4ad5df9469",
+    "scripts/product-api-lab/prepare.mjs": "f4ed112a71f04ff55d31d1e7d34ac4beae76f35199bce355b7d93e56ed9c06a3",
+    "scripts/product-api-lab/.gitignore": "995a93aeb3d153ea8cd40ebf611f0bbe44fb1fd2e733015ade2feb272e639064",
+    "scripts/product-api-lab/serve.mjs": "279205ab224a756b0e718fffa94fcb4f9cd308e09a20367d384dc4b5e7a056a4",
+    "scripts/product-api-lab/package.json": "9e5d22db180cc99c0b7c9b643b049b6f98d6773e6979afda52c76f687d402c68",
+    "scripts/product-api-lab/text.mjs": "553436c3b6eda6713f45fb00e754d831f52f02f9375027c28541a00c40345e8d",
+    "scripts/product-api-lab/app/layout.js": "550c726098e2232520204b66410fd8c6ea46b9f700b7d5bcc1f288bdb118c267",
+    "scripts/product-api-lab/app/page.js": "f209e1fca4349444ec2d582d8baf72813582bfd671e61fe4eafb7ebb3625cc5b",
+    "scripts/product-api-lab/app/api/research/search/route.js": "50b647e01c78e473fdaacf822782279676a92d4eecc15cd1433c8f5c7b7b40a6",
+    "scripts/product-api-lab/app/api/research/attachments/[id]/route.js": "e29523ca25c79f2fe06e1b349220d6fa4e77822f0a78cc0cf407c910aaeaff46",
+    "scripts/product-api-lab/app/api/research/pages/[id]/route.js": "e31079b7154f1b41cb6467807af42c74ff64bc0fbbf46cc0d1bc1e40440bd67b"
+  },
+  "inputsSha256": {
+    "scripts/product-review/fixture.json": "03c5f859e7fe87c8ac1951158cd1dfae3843f84e930de5b620eb5de2af251dde",
+    "docs/reviews/two-rounds-2026-11-14/standard-v1.md": "0c8b76267c1e4f8fe79a7128e0f6aa0737f7529e05048fbab0b8ee51eef7c5b0",
+    ".lab/product-api-lab/round-1/manifest.json": "f7631c4c370aab3f19da8773df72eab72ec1999ebcb4bb790501908c650db131",
+    "scripts/product-api-lab/.next-review/BUILD_ID": "56d3a526b3b4cf8c998d8c280a558b8d6f167806e8a7cfe14378292db7290545"
+  },
+  "sourceSnapshot": "evidence/two-rounds-2026-11-14/implementation/round-1-source",
+  "scope": "B-level synthetic Next HTTP; reviewer result pending"
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "independent offline postrun review",
+  "verdict": "E2_SYNTHETIC_VERSION_INSTALL_AND_ASSISTED_HANDOFF_LIMITED_CLOSURE",
+  "scope": "Small Windows C local full-bundle configuration; not production or A/B/C cost comparison",
+  "gates": {
+    "G1": "accepted",
+    "G2": "accepted: individually hash-valid mixed candidate rejected by SQLITE_IDENTITY_MISMATCH; V1 retained",
+    "G3": "accepted: version-specific data and explicit client/Web recovery",
+    "G4": "accepted after one recorder repair; assisted non-author agent; first attempt failed before install"
+  },
+  "independentChecks": {
+    "g1g3RawRequests": 37,
+    "versionQueryChecks": 16,
+    "rawDownloadFiles": 3,
+    "g4JsonBodies": 4,
+    "g4PdfBytes": 678,
+    "g4PdfSha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae",
+    "e1FrozenFiles": 120,
+    "e2FrozenFiles": 132,
+    "operatorEvidenceCopies": 18,
+    "freshPayloadFiles": 3,
+    "mismatches": 0,
+    "role": "baseline"
+  },
+  "operator": {
+    "firstAttemptFailed": true,
+    "firstFailure": "operator recorder wrote to active transcript file before node install",
+    "interventionCount": 1,
+    "helpRequested": true,
+    "secondAttemptExecutionMs": 1545,
+    "executionTimeExcludes": [
+      "runbook reading",
+      "script preparation",
+      "debugging and assistance",
+      "evidence organization"
+    ],
+    "humanAcceptance": false
+  },
+  "cleanup": {
+    "source": "cleanup.json receipt",
+    "freshPid": 43300,
+    "producerAbsentBeforeStop": true,
+    "producerRestored": true,
+    "remainingListenersInReceipt": [],
+    "reviewerDidNotProbePortsOrStartServices": true
+  },
+  "limitations": [
+    "Single local producer-role path isolation, not actual two-fz failure isolation",
+    "Local file transport, not new MinIO integration",
+    "Full local body/PDF bundle is experimental configuration, not chosen production media placement",
+    "PDF download bytes verified; V2 iframe visual preview not accepted",
+    "No arbitrary rollback, all-crash-point or continuous availability claim",
+    "No formal consumer or ReBAC acceptance",
+    "No A/B operating cost comparator or production RTO"
+  ],
+  "costJudgment": "Candidate C retained; no demonstrated net cost winner. Record installer/version/consumer recovery, multi-version storage and assisted operator work; do not equate 1545ms with labor or RTO.",
+  "nextDecision": "Before choosing E3, fix required offline scope and compare local index+metadata with remote DR media versus a complete local bundle; obtain media amount/change/copy requirements. No further experiment authorized by this review."
+}

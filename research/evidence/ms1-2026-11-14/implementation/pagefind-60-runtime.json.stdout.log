@@ -1,0 +1,2 @@
+✓ Running next.config.mjs took 11ms
+{"ready":true,"pid":6929,"next":"16.4.5","node":"v22.21.1","mode":"production custom Next server","url":"http://127.0.0.1:33909","assetOrigin":"http://127.0.0.1:44317","dataRoot":"/workspace/dr-search-lab/.lab/ms1/pagefind-60"}

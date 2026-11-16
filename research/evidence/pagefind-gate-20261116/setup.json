@@ -1,0 +1,104 @@
+{
+  "at": 1794797674.5069425,
+  "originals": {
+    "ms1-experiment/prepare.mjs": {
+      "sha256": "cec05ed1be325c9479c2c1f15e209d38892a1df6330253b1eb647f259578e9c2",
+      "originSha256": "cec05ed1be325c9479c2c1f15e209d38892a1df6330253b1eb647f259578e9c2"
+    },
+    "ms1-experiment/monitor.py": {
+      "sha256": "0e8f10ee005c85c84ec805f932670d9d514b5fe4a3538c478157943dd556277a",
+      "originSha256": "0e8f10ee005c85c84ec805f932670d9d514b5fe4a3538c478157943dd556277a"
+    },
+    "ms1-experiment/stage.py": {
+      "sha256": "b4076e83f2e8319d40f0297486dfae09abcdbe81e93ec9daad842ac7bc69717e",
+      "originSha256": "b4076e83f2e8319d40f0297486dfae09abcdbe81e93ec9daad842ac7bc69717e"
+    },
+    "ms1-review/review.mjs": {
+      "sha256": "e04a388c7f2f33f5f3c71cfc0a3736e0cddc49b8cf2abd3c89e142fea9fdb8e2",
+      "originSha256": "e04a388c7f2f33f5f3c71cfc0a3736e0cddc49b8cf2abd3c89e142fea9fdb8e2"
+    },
+    "ms1-review/corpus.mjs": {
+      "sha256": "790f7818fab462e8d7883d328941777fd6bd67cb32433300b0172e7aca46e2ad",
+      "originSha256": "790f7818fab462e8d7883d328941777fd6bd67cb32433300b0172e7aca46e2ad"
+    },
+    "ms1-review/audit-artifacts.mjs": {
+      "sha256": "342fb5ff5176ee54be8d1c948c7c1c66bb88e36d51c1af76fa04516bce6c02df",
+      "originSha256": "342fb5ff5176ee54be8d1c948c7c1c66bb88e36d51c1af76fa04516bce6c02df"
+    },
+    "ms1-api-lab/serve.mjs": {
+      "sha256": "279205ab224a756b0e718fffa94fcb4f9cd308e09a20367d384dc4b5e7a056a4",
+      "originSha256": "279205ab224a756b0e718fffa94fcb4f9cd308e09a20367d384dc4b5e7a056a4"
+    },
+    "ms1-api-lab/package.json": {
+      "sha256": "9e5d22db180cc99c0b7c9b643b049b6f98d6773e6979afda52c76f687d402c68",
+      "originSha256": "9e5d22db180cc99c0b7c9b643b049b6f98d6773e6979afda52c76f687d402c68"
+    },
+    "ms1-api-lab/core.mjs": {
+      "sha256": "acdd40957b3d308e60b2a0f1fd313ef7ab7b0a0d5711fe696d4c4c227454b36b",
+      "originSha256": "acdd40957b3d308e60b2a0f1fd313ef7ab7b0a0d5711fe696d4c4c227454b36b"
+    },
+    "ms1-api-lab/next.config.mjs": {
+      "sha256": "83b6a87c6a8a9f0993f47b0e6e4ef599d008565e8b9bc90cf29f4adcb3cbdb57",
+      "originSha256": "83b6a87c6a8a9f0993f47b0e6e4ef599d008565e8b9bc90cf29f4adcb3cbdb57"
+    },
+    "ms1-api-lab/.gitignore": {
+      "sha256": "995a93aeb3d153ea8cd40ebf611f0bbe44fb1fd2e733015ade2feb272e639064",
+      "originSha256": "995a93aeb3d153ea8cd40ebf611f0bbe44fb1fd2e733015ade2feb272e639064"
+    },
+    "ms1-api-lab/text.mjs": {
+      "sha256": "553436c3b6eda6713f45fb00e754d831f52f02f9375027c28541a00c40345e8d",
+      "originSha256": "553436c3b6eda6713f45fb00e754d831f52f02f9375027c28541a00c40345e8d"
+    },
+    "ms1-api-lab/app/layout.js": {
+      "sha256": "550c726098e2232520204b66410fd8c6ea46b9f700b7d5bcc1f288bdb118c267",
+      "originSha256": "550c726098e2232520204b66410fd8c6ea46b9f700b7d5bcc1f288bdb118c267"
+    },
+    "ms1-api-lab/app/page.js": {
+      "sha256": "f209e1fca4349444ec2d582d8baf72813582bfd671e61fe4eafb7ebb3625cc5b",
+      "originSha256": "f209e1fca4349444ec2d582d8baf72813582bfd671e61fe4eafb7ebb3625cc5b"
+    },
+    "ms1-api-lab/app/api/research/search/route.js": {
+      "sha256": "50b647e01c78e473fdaacf822782279676a92d4eecc15cd1433c8f5c7b7b40a6",
+      "originSha256": "50b647e01c78e473fdaacf822782279676a92d4eecc15cd1433c8f5c7b7b40a6"
+    },
+    "ms1-api-lab/app/api/research/attachments/[id]/route.js": {
+      "sha256": "e29523ca25c79f2fe06e1b349220d6fa4e77822f0a78cc0cf407c910aaeaff46",
+      "originSha256": "e29523ca25c79f2fe06e1b349220d6fa4e77822f0a78cc0cf407c910aaeaff46"
+    },
+    "ms1-api-lab/app/api/research/pages/[id]/route.js": {
+      "sha256": "e31079b7154f1b41cb6467807af42c74ff64bc0fbbf46cc0d1bc1e40440bd67b",
+      "originSha256": "e31079b7154f1b41cb6467807af42c74ff64bc0fbbf46cc0d1bc1e40440bd67b"
+    }
+  },
+  "node": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node",
+  "versions": {
+    "node": "22.18.0",
+    "acorn": "8.15.0",
+    "ada": "2.9.2",
+    "amaro": "1.1.0",
+    "ares": "1.34.5",
+    "brotli": "1.1.0",
+    "cjs_module_lexer": "2.1.0",
+    "cldr": "47.0",
+    "icu": "77.1",
+    "llhttp": "9.3.0",
+    "modules": "127",
+    "napi": "10",
+    "nbytes": "0.1.1",
+    "ncrypto": "0.0.1",
+    "nghttp2": "1.64.0",
+    "openssl": "3.0.16",
+    "simdjson": "3.13.0",
+    "simdutf": "6.4.2",
+    "sqlite": "3.50.2",
+    "tz": "2025b",
+    "undici": "6.21.2",
+    "unicode": "16.0",
+    "uv": "1.51.0",
+    "uvwasi": "0.0.21",
+    "v8": "12.4.254.21-node.27",
+    "zlib": "1.3.1-470d3a2",
+    "zstd": "1.5.7"
+  },
+  "note": "Historical MS1 used Node22.21.1; this isolated run uses22.18.0, ICU77.1. No parity attribution to RAM alone."
+}

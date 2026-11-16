@@ -1,0 +1,18 @@
+{
+  "at": 1794788949.4782677,
+  "listeners": [],
+  "units": {
+    "dr-scale-r1-reader-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+    "dr-scale-r1-minio-20261116": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\n"
+  },
+  "installed": {
+    "v1": {
+      "sha256": "0b1a4379e317ef59289df3c1218c291d6047d5b3a3b9196600e8c182d8bd9147",
+      "matches": true
+    },
+    "v2": {
+      "sha256": "431c3d7f06fb52fbc6e60ee1ce29af3290cd27f71f57afc95693a71cc7619bc6",
+      "matches": true
+    }
+  }
+}

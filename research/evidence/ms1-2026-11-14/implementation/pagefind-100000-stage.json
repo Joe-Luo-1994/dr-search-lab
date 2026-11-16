@@ -1,0 +1,10 @@
+{
+  "engine": "pagefind",
+  "N": 100000,
+  "startedAt": 1794643210.2202966,
+  "stages": {
+    "buildExitCode": 1
+  },
+  "completed": false,
+  "stop": "BUILD_FAILED_OR_LIMIT"
+}

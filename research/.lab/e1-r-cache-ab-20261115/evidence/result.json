@@ -1,0 +1,338 @@
+{
+  "diagnosticComplete": true,
+  "cells": [
+    {
+      "label": "control-L-16384",
+      "mode": "L",
+      "stage": "full",
+      "cacheKiB": 16384,
+      "pairLabel": "control",
+      "state": "validated",
+      "started": {
+        "wallMs": 1794733943935,
+        "monoNs": "132081254644"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "cacheSize": -16384,
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "readerPid": 1401,
+      "prefixValidated": true,
+      "target": {
+        "rawCount": 6,
+        "rankRows": [
+          {
+            "rowid": 6000,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 6999,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 7998,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 8997,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 9996,
+            "score": -0.0000010268135165833166
+          },
+          {
+            "rowid": 5001,
+            "score": -2.8465471576675365e-7
+          }
+        ],
+        "hits": [
+          "p000005999",
+          "p000006998",
+          "p000007997",
+          "p000008996",
+          "p000009995",
+          "p000005000"
+        ],
+        "workerMs": 10.218078000000006
+      },
+      "elapsedMs": 114.5846019999999
+    },
+    {
+      "label": "p1-A-R-16384",
+      "mode": "R",
+      "stage": "full",
+      "cacheKiB": 16384,
+      "pairLabel": "p1-A",
+      "state": "deadline",
+      "started": {
+        "wallMs": 1794733944050,
+        "monoNs": "132196976578"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "cacheSize": -16384,
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "readerPid": 1408,
+      "prefixValidated": true,
+      "lastObservedPhase": {
+        "name": "rank",
+        "edge": "start",
+        "rightCensored": true
+      },
+      "error": "WORKER_4800MS_DEADLINE",
+      "elapsedMs": 5061.652714
+    },
+    {
+      "label": "p1-B-R-65536",
+      "mode": "R",
+      "stage": "full",
+      "cacheKiB": 65536,
+      "pairLabel": "p1-B",
+      "state": "deadline",
+      "started": {
+        "wallMs": 1794733949124,
+        "monoNs": "137270143950"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "cacheSize": -65536,
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "readerPid": 1436,
+      "prefixValidated": true,
+      "lastObservedPhase": {
+        "name": "rank",
+        "edge": "start",
+        "rightCensored": true
+      },
+      "error": "WORKER_4800MS_DEADLINE",
+      "elapsedMs": 5022.9112620000005
+    },
+    {
+      "label": "p2-B-R-65536",
+      "mode": "R",
+      "stage": "full",
+      "cacheKiB": 65536,
+      "pairLabel": "p2-B",
+      "state": "deadline",
+      "started": {
+        "wallMs": 1794733954160,
+        "monoNs": "142306176575"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "cacheSize": -65536,
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "readerPid": 1462,
+      "prefixValidated": true,
+      "lastObservedPhase": {
+        "name": "rank",
+        "edge": "start",
+        "rightCensored": true
+      },
+      "error": "WORKER_4800MS_DEADLINE",
+      "elapsedMs": 5019.1020720000015
+    },
+    {
+      "label": "p2-A-R-16384",
+      "mode": "R",
+      "stage": "full",
+      "cacheKiB": 16384,
+      "pairLabel": "p2-A",
+      "state": "deadline",
+      "started": {
+        "wallMs": 1794733959193,
+        "monoNs": "147339401886"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "cacheSize": -16384,
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "readerPid": 1490,
+      "prefixValidated": true,
+      "lastObservedPhase": {
+        "name": "rank",
+        "edge": "start",
+        "rightCensored": true
+      },
+      "error": "WORKER_4800MS_DEADLINE",
+      "elapsedMs": 5025.035594000001
+    },
+    {
+      "label": "p3-A-R-16384",
+      "mode": "R",
+      "stage": "full",
+      "cacheKiB": 16384,
+      "pairLabel": "p3-A",
+      "state": "deadline",
+      "started": {
+        "wallMs": 1794733964229,
+        "monoNs": "152375984169"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "cacheSize": -16384,
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "readerPid": 1518,
+      "prefixValidated": true,
+      "lastObservedPhase": {
+        "name": "rank",
+        "edge": "start",
+        "rightCensored": true
+      },
+      "error": "WORKER_4800MS_DEADLINE",
+      "elapsedMs": 5029.403404000001
+    },
+    {
+      "label": "p3-B-R-65536",
+      "mode": "R",
+      "stage": "full",
+      "cacheKiB": 65536,
+      "pairLabel": "p3-B",
+      "state": "deadline",
+      "started": {
+        "wallMs": 1794733969272,
+        "monoNs": "157418280146"
+      },
+      "lastTask": "common-small",
+      "reader": {
+        "type": "ready",
+        "sqlite": "3.54.1",
+        "cacheSize": -65536,
+        "node": "v26.13.1",
+        "icu": "78.3"
+      },
+      "readerPid": 1544,
+      "prefixValidated": true,
+      "lastObservedPhase": {
+        "name": "rank",
+        "edge": "start",
+        "rightCensored": true
+      },
+      "error": "WORKER_4800MS_DEADLINE",
+      "elapsedMs": 5021.108731
+    }
+  ],
+  "auditErrors": [],
+  "peakRss": 1240289280,
+  "peakBytes": 162381824,
+  "minFree": 975000240128,
+  "remainingChildren": [],
+  "lifecycle": [
+    {
+      "name": "enable-wal",
+      "pid": 1342,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794733943156,
+      "monoNs": "131302531841"
+    },
+    {
+      "name": "query-plan",
+      "pid": 1349,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794733943189,
+      "monoNs": "131336064538"
+    },
+    {
+      "name": "replicate-once",
+      "pid": 1382,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794733943754,
+      "monoNs": "131900763924"
+    },
+    {
+      "name": "control-L-16384",
+      "pid": 1401,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794733944049,
+      "monoNs": "132195812454"
+    },
+    {
+      "name": "p1-A-R-16384",
+      "pid": 1408,
+      "code": null,
+      "signal": "SIGKILL",
+      "wallMs": 1794733949112,
+      "monoNs": "137258608173"
+    },
+    {
+      "name": "p1-B-R-65536",
+      "pid": 1436,
+      "code": null,
+      "signal": "SIGKILL",
+      "wallMs": 1794733954146,
+      "monoNs": "142293041557"
+    },
+    {
+      "name": "p2-B-R-65536",
+      "pid": 1462,
+      "code": null,
+      "signal": "SIGKILL",
+      "wallMs": 1794733959179,
+      "monoNs": "147325261111"
+    },
+    {
+      "name": "p2-A-R-16384",
+      "pid": 1490,
+      "code": null,
+      "signal": "SIGKILL",
+      "wallMs": 1794733964218,
+      "monoNs": "152364421162"
+    },
+    {
+      "name": "p3-A-R-16384",
+      "pid": 1518,
+      "code": null,
+      "signal": "SIGKILL",
+      "wallMs": 1794733969259,
+      "monoNs": "157405364387"
+    },
+    {
+      "name": "p3-B-R-65536",
+      "pid": 1544,
+      "code": null,
+      "signal": "SIGKILL",
+      "wallMs": 1794733974293,
+      "monoNs": "162439373372"
+    },
+    {
+      "name": "minio",
+      "pid": 1356,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794733974371,
+      "monoNs": "162517216667"
+    }
+  ],
+  "elapsedMs": 31702.369236,
+  "wallMs": 1794733974385,
+  "monoNs": "162531912441"
+}

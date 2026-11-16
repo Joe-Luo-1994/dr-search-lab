@@ -1,0 +1,9 @@
+{
+  "args": [
+    "v2",
+    "fz2"
+  ],
+  "stdout": "{\"event\":\"e2_artifact_exported\",\"variant\":\"v2\",\"sourceSite\":\"fz2\",\"directory\":\"/PUBLIC/WINDOWS_HOME\\\\Documents\\\\ChatGPT\\\\Search Playground\\\\.lab\\\\v1-e2-20261115\\\\artifacts\\\\v2\",\"snapshotId\":\"v1-e2-20261115-v2\",\"sourceSha256\":\"e1ceee4695c81b0741915f5f29c17a83d874729682fab85ea9d587fea7788d51\",\"manifestSha256\":\"cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7\",\"pages\":38,\"files\":[{\"path\":\"search.sqlite\",\"bytes\":65536,\"sha256\":\"96efa5a1788d9cd690c007e0bdc08483673e41e865b697e8e60639a58174485c\"},{\"path\":\"media/pdf-checklist-v2.pdf\",\"bytes\":678,\"sha256\":\"22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae\"},{\"path\":\"media/pdf-ledger.pdf\",\"bytes\":682,\"sha256\":\"7b496dcb7e4d53d1f7291aaa612afad44d6ff7575d16637c512656cda7133406\"}]}\n",
+  "stderr": "(node:44552) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "elapsedMs": 89.45839999999998
+}

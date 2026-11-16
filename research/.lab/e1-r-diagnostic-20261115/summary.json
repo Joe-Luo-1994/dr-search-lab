@@ -1,0 +1,234 @@
+{
+  "at": "2026-11-15T08:48:43.509443+00:00",
+  "diagnosticComplete": true,
+  "cells": [
+    {
+      "cell": "L-full",
+      "state": "validated",
+      "prefixValidated": true,
+      "error": null,
+      "lastObservedPhase": null,
+      "targetElapsedMs": 11.115671999999904,
+      "phases": {
+        "body-fetch": {
+          "starts": 6,
+          "ends": 6,
+          "completedMs": 0.040791000000005795,
+          "completedCPUus": 44,
+          "rightCensored": false
+        },
+        "count": {
+          "starts": 1,
+          "ends": 1,
+          "completedMs": 8.210113,
+          "completedCPUus": 8210,
+          "rightCensored": false
+        },
+        "highlight": {
+          "starts": 6,
+          "ends": 6,
+          "completedMs": 1.1667110000000065,
+          "completedCPUus": 1341,
+          "rightCensored": false
+        },
+        "rank": {
+          "starts": 1,
+          "ends": 1,
+          "completedMs": 1.152622000000001,
+          "completedCPUus": 1153,
+          "rightCensored": false
+        }
+      },
+      "proxyRequestStarts": 0,
+      "proxyRequestEnds": 0,
+      "proxyBytes": 0,
+      "rangedRequests": 0,
+      "uniquePathRanges": 0,
+      "repeatedPathRanges": 0,
+      "samePathRangeInCountAndRank": 0,
+      "statusCounts": {},
+      "incompleteRequests": 0,
+      "errorRequests": 0,
+      "requestStartPhaseCounts": {}
+    },
+    {
+      "cell": "R-full",
+      "state": "deadline",
+      "prefixValidated": true,
+      "error": "WORKER_4800MS_DEADLINE",
+      "lastObservedPhase": {
+        "name": "rank",
+        "edge": "start",
+        "rightCensored": true
+      },
+      "targetElapsedMs": 4800.318944,
+      "phases": {
+        "count": {
+          "starts": 1,
+          "ends": 1,
+          "completedMs": 3488.813616,
+          "completedCPUus": 1221790,
+          "rightCensored": false
+        },
+        "rank": {
+          "starts": 1,
+          "ends": 0,
+          "completedMs": null,
+          "completedCPUus": null,
+          "rightCensored": true
+        }
+      },
+      "proxyRequestStarts": 4586,
+      "proxyRequestEnds": 4586,
+      "proxyBytes": 10790352,
+      "rangedRequests": 4578,
+      "uniquePathRanges": 3329,
+      "repeatedPathRanges": 1249,
+      "samePathRangeInCountAndRank": 1249,
+      "statusCounts": {
+        "206": 4578,
+        "200": 8
+      },
+      "incompleteRequests": 0,
+      "errorRequests": 0,
+      "requestStartPhaseCounts": {
+        "count": 3313,
+        "rank": 1273
+      }
+    },
+    {
+      "cell": "L-count-only",
+      "state": "validated",
+      "prefixValidated": true,
+      "error": null,
+      "lastObservedPhase": null,
+      "targetElapsedMs": 6.284179000000222,
+      "phases": {
+        "count": {
+          "starts": 1,
+          "ends": 1,
+          "completedMs": 6.0227900000000005,
+          "completedCPUus": 6027,
+          "rightCensored": false
+        }
+      },
+      "proxyRequestStarts": 0,
+      "proxyRequestEnds": 0,
+      "proxyBytes": 0,
+      "rangedRequests": 0,
+      "uniquePathRanges": 0,
+      "repeatedPathRanges": 0,
+      "samePathRangeInCountAndRank": 0,
+      "statusCounts": {},
+      "incompleteRequests": 0,
+      "errorRequests": 0,
+      "requestStartPhaseCounts": {}
+    },
+    {
+      "cell": "R-count-only",
+      "state": "validated",
+      "prefixValidated": true,
+      "error": null,
+      "lastObservedPhase": null,
+      "targetElapsedMs": 3387.9498490000005,
+      "phases": {
+        "count": {
+          "starts": 1,
+          "ends": 1,
+          "completedMs": 3387.706257,
+          "completedCPUus": 1217308,
+          "rightCensored": false
+        }
+      },
+      "proxyRequestStarts": 3313,
+      "proxyRequestEnds": 3313,
+      "proxyBytes": 7836267,
+      "rangedRequests": 3307,
+      "uniquePathRanges": 3307,
+      "repeatedPathRanges": 0,
+      "samePathRangeInCountAndRank": 0,
+      "statusCounts": {
+        "206": 3307,
+        "200": 6
+      },
+      "incompleteRequests": 0,
+      "errorRequests": 0,
+      "requestStartPhaseCounts": {
+        "count": 3313
+      }
+    },
+    {
+      "cell": "L-rank-only",
+      "state": "validated",
+      "prefixValidated": true,
+      "error": null,
+      "lastObservedPhase": null,
+      "targetElapsedMs": 6.537373999999545,
+      "phases": {
+        "rank": {
+          "starts": 1,
+          "ends": 1,
+          "completedMs": 6.284905999999999,
+          "completedCPUus": 6290,
+          "rightCensored": false
+        }
+      },
+      "proxyRequestStarts": 0,
+      "proxyRequestEnds": 0,
+      "proxyBytes": 0,
+      "rangedRequests": 0,
+      "uniquePathRanges": 0,
+      "repeatedPathRanges": 0,
+      "samePathRangeInCountAndRank": 0,
+      "statusCounts": {},
+      "incompleteRequests": 0,
+      "errorRequests": 0,
+      "requestStartPhaseCounts": {}
+    },
+    {
+      "cell": "R-rank-only",
+      "state": "validated",
+      "prefixValidated": true,
+      "error": null,
+      "lastObservedPhase": null,
+      "targetElapsedMs": 3335.8229900000006,
+      "phases": {
+        "rank": {
+          "starts": 1,
+          "ends": 1,
+          "completedMs": 3335.562218,
+          "completedCPUus": 1194855,
+          "rightCensored": false
+        }
+      },
+      "proxyRequestStarts": 3316,
+      "proxyRequestEnds": 3316,
+      "proxyBytes": 7843770,
+      "rangedRequests": 3310,
+      "uniquePathRanges": 3310,
+      "repeatedPathRanges": 0,
+      "samePathRangeInCountAndRank": 0,
+      "statusCounts": {
+        "206": 3310,
+        "200": 6
+      },
+      "incompleteRequests": 0,
+      "errorRequests": 0,
+      "requestStartPhaseCounts": {
+        "rank": 3316
+      }
+    }
+  ],
+  "elapsedMs": 14039.414271,
+  "peakRss": 1082736640,
+  "peakBytes": 193998848,
+  "remainingChildren": [],
+  "failure": null,
+  "fatal": null,
+  "auditErrors": [],
+  "notes": [
+    "Proxy attribution uses phase observed by parent at request start; approximate IPC delivery, not exact SQLite page causality.",
+    "Incomplete phase elapsed is censored; do not substitute zero or add isolated phase times to predict full search.",
+    "One observation per cell; direct IPC worker diagnostic, not HTTP latency distribution or production capacity."
+  ]
+}

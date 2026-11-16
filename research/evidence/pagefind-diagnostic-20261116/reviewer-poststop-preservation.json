@@ -1,0 +1,40 @@
+{
+  "scope": "independent offline post-stop preservation and raw trace audit; not D1/G2 pass",
+  "atEpoch": 1794799829.5726724,
+  "freezeFiles": 10586,
+  "freezeMismatches": [],
+  "inventoryPinMatches": true,
+  "artifactFiles": 101571,
+  "artifactMismatches": [],
+  "extraFiles": [],
+  "missingFiles": [],
+  "specialFiles": [],
+  "runnerResultExists": false,
+  "traceAudit": {
+    "events": 40,
+    "contiguousSequence": true,
+    "tracePids": [
+      1461
+    ],
+    "searchStartAfterRequestMs": 46.694727,
+    "lastAssetFinishAfterRequestMs": 145.777629,
+    "assetCount": 5,
+    "assetBytes": 843740,
+    "assetStatuses": [
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "hasSearchEnd": false,
+    "hasMappingStart": false,
+    "lastObserver": {
+      "completedEvents": 39,
+      "cumulativeSyncIoMs": 58.74586999999983,
+      "lastSyncIoMs": 2.193606999999986,
+      "cumulativeTraceMs": 59.53729399999986,
+      "accounting": "completed previous events; current/final event cost appears only in a later row"
+    }
+  }
+}

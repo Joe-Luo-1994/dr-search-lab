@@ -1,0 +1,11 @@
+{
+  "stage": "inspect-ui.mjs browser launch before page/HTTP navigation",
+  "node": "v22.21.1",
+  "exitCode": 1,
+  "error": "browserType.launch: Target page, context or browser has been closed",
+  "browserPid": 31512,
+  "browserLog": "CoCreateInstance of Elevator failed; hr =80070005; TransactNamedPipe: pipe ended (0x6D)",
+  "profileLocation": "Codex sandbox Temp/playwright_chromiumdev_profile-aq0T7R",
+  "source": "exec session 35767 output; concise transcription, not complete raw stderr",
+  "classification": "sandbox launch blocked, no UI assertion executed; retry same observation script with normal process permissions, not a product retest"
+}

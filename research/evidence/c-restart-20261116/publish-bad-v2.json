@@ -1,0 +1,21 @@
+{
+  "action": "bad-v2",
+  "approved": {
+    "schemaVersion": 1,
+    "releaseId": "v2",
+    "manifest": {
+      "key": "v2/manifest.json",
+      "bytes": 68706,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "elapsedMs": 25.980728000000003,
+  "requests": 3,
+  "putBytes": 165,
+  "getBytes": 68871,
+  "assumptions": [
+    "single trusted publisher",
+    "research credentials shared; production IAM not verified",
+    "approved object read once per bootstrap; no distributed transaction"
+  ]
+}

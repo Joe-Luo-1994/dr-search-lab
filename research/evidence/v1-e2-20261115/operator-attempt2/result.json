@@ -1,0 +1,19 @@
+{
+  "startedAt": "2026-11-15T22:13:40.9563616+08:00",
+  "endedAt": "2026-11-15T22:13:42.5042929+08:00",
+  "pid": 43300,
+  "snapshotId": "v1-e2-20261115-v2",
+  "pageId": "a-pdf",
+  "mediaId": "pdf-checklist-v2",
+  "pdfSha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae",
+  "pdfBytes": 678,
+  "output": ".lab/v1-e2-20261115/operator-attempt2",
+  "elapsedMs": 1545,
+  "firstAttemptFailed": true,
+  "interventionCount": 1,
+  "helpRequested": true,
+  "manualDecisions": [
+    "Used an operator-curated execution script based only on runbook section 4.",
+    "Recorder correction supplied by parent agent after attempt 1 failed; no product or manual changes."
+  ]
+}

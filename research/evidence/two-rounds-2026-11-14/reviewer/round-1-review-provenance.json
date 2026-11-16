@@ -1,0 +1,30 @@
+{
+  "reviewRound": 1,
+  "role": "independent review agent, not a formal stakeholder approval",
+  "basicResult": {
+    "sqlite": "18/18",
+    "pagefind": "18/18",
+    "httpRequests": 52
+  },
+  "supplementBaseline": {
+    "missingPagefind": "SQLite/page/attachment 503",
+    "pagefindFragmentGets": 5,
+    "fragmentBytes": 1043
+  },
+  "sha256": {
+    "docs/reviews/two-rounds-2026-11-14/round-1-review.md": "f9e1953daa0f04dd9efdfd2a67447873e2f8d242e34fee9b7bbab7c9aa78e5bc",
+    "docs/reviews/two-rounds-2026-11-14/standard-v1.md": "0c8b76267c1e4f8fe79a7128e0f6aa0737f7529e05048fbab0b8ee51eef7c5b0",
+    "docs/reviews/two-rounds-2026-11-14/supplement-cost-v1.md": "46f776d38ba48481aa9dca20148e63e874856029071fa793f9d91636af78add6",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1/result.json": "fb536cfef8ac9ccd9f0b559e08b9cf35b0bdd4b9f664280c86215cad57043841",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1-assets-start.log": "77bffd600c64f086aa28dec063153b8ae757e7f2c044d78eb3dd2c4347f132ef",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1-assets.json": "f5d874125cb71e5eea140c937120fa56b15a842deb017b76613a9d2a0e2f024c",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1-isolation-start.log": "5ef744c541a3d141fd395a138dca136bdc3ea97f3f39459ab28d0458cd9709ce",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1-missing-pagefind.json": "d9609fb8714806b883020b19608c5bcb9ba088014c5981b91f01742be95fe382",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1.log": "67e2c320e06f2abaf8bbb07e4a5f4ac9fd4bf2290d7e79b5279b60b8dce8ad1c",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/product-review/fixture.json": "03c5f859e7fe87c8ac1951158cd1dfae3843f84e930de5b620eb5de2af251dde",
+    "scripts/product-review/isolated-next.mjs": "127146074c80b0c0b50a74692d7c8d42ca891ac6748325362f6f6f48e0b505b9",
+    "scripts/product-review/review.mjs": "e0490649b87561fb2f7b1bc87983c7bc5fc85cf253b6bc31dab5e918203952ae",
+    "scripts/product-review/supplement.mjs": "da3d7bb20864c592c2544e7b2bf0285aa9ccc814f20dcb3472b7696bf8e55f76"
+  }
+}

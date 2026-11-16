@@ -1,0 +1,35 @@
+▲ Next.js 16.4.5
+- Local:         http://127.0.0.1:3174
+- Network:       http://127.0.0.1:3174
+✓ Ready in 111ms
+✓ Running next.config.mjs took 10ms
+(node:1933) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1932) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1980) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1981) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▲ Next.js 16.4.5
+- Local:         http://127.0.0.1:3174
+- Network:       http://127.0.0.1:3174
+✓ Ready in 74ms
+✓ Running next.config.mjs took 8ms
+(node:2121) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2122) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▲ Next.js 16.4.5
+- Local:         http://127.0.0.1:3174
+- Network:       http://127.0.0.1:3174
+✓ Ready in 110ms
+✓ Running next.config.mjs took 9ms
+(node:2257) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2258) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2349) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2350) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

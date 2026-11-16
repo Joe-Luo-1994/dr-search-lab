@@ -1,0 +1,29 @@
+firstAttemptFailed=true
+interventionCount=1
+Started: 2026-11-15T22:13:40.9563616+08:00
+
+Command: node "scripts/v1-e2-20261115/install.mjs" v2 fresh cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7
+ExitCode: 0
+
+Command: node scripts/v1-e2-20261115/serve.mjs v2 3161 fresh (hidden background)
+PID: 43300
+
+Command: GET /api/status
+URI: http://127.0.0.1:3161/api/status
+Headers: x-e1-identity=a
+
+Command: GET /api/search?q=e2packet
+URI: http://127.0.0.1:3161/api/search?q=e2packet
+Headers: x-e1-identity=a
+
+Command: GET <search hit URL>
+URI: http://127.0.0.1:3161/api/pages/a-pdf?version=v1-e2-20261115-v2
+Headers: x-e1-identity=a
+
+Command: GET <page.page.mediaUrl>
+URI: http://127.0.0.1:3161/api/pages/a-pdf/media?version=v1-e2-20261115-v2
+Headers: x-e1-identity=a
+
+Command: GET <media URL> -OutFile readback.pdf
+URI: http://127.0.0.1:3161/api/pages/a-pdf/media/pdf-checklist-v2?version=v1-e2-20261115-v2
+Headers: x-e1-identity=a

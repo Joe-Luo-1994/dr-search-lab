@@ -1,0 +1,198 @@
+{
+  "stages": [
+    {
+      "N": 10000,
+      "prepareElapsedSeconds": 4.305048942565918,
+      "prepareExitCode": 0,
+      "prepareStopReason": null,
+      "prepareResources": {
+        "samples": 17,
+        "sampledCombinedRssPeakBytes": 1152311296,
+        "cgroupMemoryPeakBytes": 3846316032,
+        "sampledNewArtifactPeakBytes": 92091105,
+        "processIds": [
+          "10143",
+          "10167",
+          "12136"
+        ]
+      },
+      "canonicalSourceBytes": 12316819,
+      "contentBytes": 10997694,
+      "highlightTextInputBytes": 10997694,
+      "bulkBatches": 20,
+      "maxBulkBytes": 1198474,
+      "maxBufferedDocuments": 500,
+      "existingSourceDatabaseBytesIncludingOldFts": 22724608,
+      "esStoreBytesAtPrepare": 14370153,
+      "esTranslogBytesAtPrepare": 24204504,
+      "passed": true,
+      "sequentialTasks": 20,
+      "httpRequests": 105,
+      "httpWindowMs": 946.9090839999999,
+      "mixed": {
+        "clients": 4,
+        "plannedOperations": 80,
+        "completedOperations": 80,
+        "failedOperations": 0,
+        "notStartedOperations": 0,
+        "requests": 80,
+        "windowMs": 466.15195199999994,
+        "p50Ms": 22.458449000000087,
+        "p95Ms": 44.59250399999996,
+        "maxMs": 55.247915000000035,
+        "provisional2sP95Met": true,
+        "latencyIncludesFailures": true
+      },
+      "httpResources": {
+        "samples": 3,
+        "sampledCombinedRssPeakBytes": 1095868416,
+        "cgroupMemoryPeakBytes": 3776057344,
+        "sampledNewArtifactPeakBytes": 102230513,
+        "processIds": [
+          "10143",
+          "10167",
+          "12185"
+        ]
+      }
+    },
+    {
+      "N": 100000,
+      "prepareElapsedSeconds": 19.54006600379944,
+      "prepareExitCode": 0,
+      "prepareStopReason": null,
+      "prepareResources": {
+        "samples": 77,
+        "sampledCombinedRssPeakBytes": 1206259712,
+        "cgroupMemoryPeakBytes": 4222828544,
+        "sampledNewArtifactPeakBytes": 404865515,
+        "processIds": [
+          "10143",
+          "10167",
+          "12260"
+        ]
+      },
+      "canonicalSourceBytes": 123165140,
+      "contentBytes": 109975286,
+      "highlightTextInputBytes": 109975286,
+      "bulkBatches": 200,
+      "maxBulkBytes": 1198490,
+      "maxBufferedDocuments": 500,
+      "existingSourceDatabaseBytesIncludingOldFts": 215584768,
+      "esStoreBytesAtPrepare": 138069067,
+      "esTranslogBytesAtPrepare": 242041482,
+      "passed": true,
+      "sequentialTasks": 20,
+      "httpRequests": 105,
+      "httpWindowMs": 938.843872,
+      "mixed": {
+        "clients": 4,
+        "plannedOperations": 80,
+        "completedOperations": 80,
+        "failedOperations": 0,
+        "notStartedOperations": 0,
+        "requests": 80,
+        "windowMs": 446.5397670000001,
+        "p50Ms": 21.81067700000017,
+        "p95Ms": 36.51907500000004,
+        "maxMs": 56.27521200000001,
+        "provisional2sP95Met": true,
+        "latencyIncludesFailures": true
+      },
+      "httpResources": {
+        "samples": 4,
+        "sampledCombinedRssPeakBytes": 1176457216,
+        "cgroupMemoryPeakBytes": 3861401600,
+        "sampledNewArtifactPeakBytes": 482342967,
+        "processIds": [
+          "10143",
+          "10167",
+          "12310"
+        ]
+      }
+    },
+    {
+      "N": 1000000,
+      "prepareElapsedSeconds": 186.41236114501953,
+      "prepareExitCode": 0,
+      "prepareStopReason": null,
+      "prepareResources": {
+        "samples": 734,
+        "sampledCombinedRssPeakBytes": 1733095424,
+        "cgroupMemoryPeakBytes": 6112215040,
+        "sampledNewArtifactPeakBytes": 2259179403,
+        "processIds": [
+          "10143",
+          "10167",
+          "12393"
+        ]
+      },
+      "canonicalSourceBytes": 1231646188,
+      "contentBytes": 1099749124,
+      "highlightTextInputBytes": 1099749124,
+      "bulkBatches": 2000,
+      "maxBulkBytes": 1198716,
+      "maxBufferedDocuments": 500,
+      "existingSourceDatabaseBytesIncludingOldFts": 2133065728,
+      "esStoreBytesAtPrepare": 1287239865,
+      "esTranslogBytesAtPrepare": 48407692,
+      "passed": true,
+      "sequentialTasks": 20,
+      "httpRequests": 105,
+      "httpWindowMs": 2040.478568,
+      "mixed": {
+        "clients": 4,
+        "plannedOperations": 80,
+        "completedOperations": 80,
+        "failedOperations": 0,
+        "notStartedOperations": 0,
+        "requests": 80,
+        "windowMs": 980.1407299999998,
+        "p50Ms": 41.415198000000146,
+        "p95Ms": 111.0754260000001,
+        "maxMs": 126.52622699999984,
+        "provisional2sP95Met": true,
+        "latencyIncludesFailures": true
+      },
+      "httpResources": {
+        "samples": 8,
+        "sampledCombinedRssPeakBytes": 1724116992,
+        "cgroupMemoryPeakBytes": 5922267136,
+        "sampledNewArtifactPeakBytes": 2227963229,
+        "processIds": [
+          "10143",
+          "10167",
+          "12598"
+        ]
+      }
+    }
+  ],
+  "buildElapsedSeconds": 12.081065654754639,
+  "buildResources": {
+    "samples": 48,
+    "sampledCombinedRssPeakBytes": 1577693184,
+    "cgroupMemoryPeakBytes": 4234862592,
+    "sampledNewArtifactPeakBytes": 63531667,
+    "processIds": [
+      "10143",
+      "10167",
+      "12022",
+      "12037",
+      "12052",
+      "12067",
+      "12082"
+    ]
+  },
+  "allSampledCombinedRssPeakBytes": 1784725504,
+  "allSampledNewArtifactPeakBytes": 2259179403,
+  "minimumFreeBytesObserved": 22331342848,
+  "limitations": [
+    "sampled RSS sum includes ES retained indexes, excludes OS filesystem cache and may double count shared memory",
+    "cgroup includes unrelated programs and cache; not attributable to this service alone",
+    "source audit warmed cache; reused ES; not cold-start or minimum hardware sizing",
+    "each mixed workload only 80 requests/short window; no steady-state throughput or formal SLO",
+    "store/translog bytes at prepare completion; merges and flushes can change later observations",
+    "highlight input bytes are not measured incremental disk cost",
+    "existing SQLite has old FTS and is shared test content source, not a new ES architecture dependency",
+    "build actual completion meets 180s but wrapper used 600s; frozen watchdog configuration deviation preserved"
+  ]
+}

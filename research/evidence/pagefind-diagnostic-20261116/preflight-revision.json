@@ -1,0 +1,13 @@
+{
+  "at": 1794799593.371497,
+  "reason": "Reviewer: verify actual artifact file set and reject extra/special files before the single query",
+  "priorFreezeSha256": "3e5dbf0549450aeeb28d8106a112fdf5af5a2d1ac8fb23eda8968c61906cb850",
+  "changes": [
+    {
+      "file": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/pagefind-gate-20261116/d1/src/gate/runner.mjs",
+      "old": "db3d7489788e0bbca073f56715857d42b857ed339ccae3e4001fb0999e978dcb",
+      "new": "8317e6a309af8c5eb3ff037577fef2562f126bd44afbd5afb4cf8a495a84cce0"
+    }
+  ],
+  "noQueryExecuted": true
+}

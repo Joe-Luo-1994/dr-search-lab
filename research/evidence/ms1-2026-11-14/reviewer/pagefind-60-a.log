@@ -1,0 +1,8 @@
+{
+  "mode": "small",
+  "N": 60,
+  "engine": "pagefind",
+  "basicPassed": true,
+  "requests": 32,
+  "failedTasks": []
+}

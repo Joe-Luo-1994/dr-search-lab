@@ -1,0 +1,79 @@
+{
+  "purpose": "Historical evidence copied without rerunning experiments",
+  "date": "2026-11-15",
+  "newExperiments": 0,
+  "files": [
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/DR_ARCHITECTURE_OPTIONS.md",
+      "archived": "docs/DR_ARCHITECTURE_OPTIONS.md",
+      "bytes": 35237,
+      "sha256": "9f1cafb534d90c93f163e550f3e23a710530545aaf835f68029e9f2efcd1e7dd"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/PAGEFIND_ASSESSMENT.md",
+      "archived": "docs/PAGEFIND_ASSESSMENT.md",
+      "bytes": 7925,
+      "sha256": "0c6f17d1ba7bc5cbbcf6849512a35e23b7344a801fae8b3224d488353d3665a0"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/PAGEFIND_OBJECT_STORAGE.md",
+      "archived": "docs/PAGEFIND_OBJECT_STORAGE.md",
+      "bytes": 8850,
+      "sha256": "96e3f9b8fcfdfee9a41043f1897ec8aef200399e33823e8aab8e0317553ab2e9"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/SEARCH_API_OPTIONS.md",
+      "archived": "docs/SEARCH_API_OPTIONS.md",
+      "bytes": 16133,
+      "sha256": "3773050b441772aa35797b4371092a7f9ef6123f8260db760f22c95bcaf5210f"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/reviews/two-rounds-2026-11-14/round-1-review.md",
+      "archived": "docs/reviews/two-rounds-2026-11-14/round-1-review.md",
+      "bytes": 3368,
+      "sha256": "f9e1953daa0f04dd9efdfd2a67447873e2f8d242e34fee9b7bbab7c9aa78e5bc"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/reviews/two-rounds-2026-11-14/round-2-review.md",
+      "archived": "docs/reviews/two-rounds-2026-11-14/round-2-review.md",
+      "bytes": 5582,
+      "sha256": "ebb773a914894bda0bc97b3244dedb930eafcb7b4d06169555789e007c970b2f"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/reviews/ms1-2026-11-14/final-review.md",
+      "archived": "docs/reviews/ms1-2026-11-14/final-review.md",
+      "bytes": 7969,
+      "sha256": "6cbee305e9b7b4bd6dd086ec90c27074d93b8a2a1238cd76908f071d0d49815c"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/reviews/minio-release-2026-11-14/final-review.md",
+      "archived": "docs/reviews/minio-release-2026-11-14/final-review.md",
+      "bytes": 7387,
+      "sha256": "047056eb39efb39c90441611f9adbe036ad32f7591f028ca78da730db4e5d92c"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/docs/reviews/minio-dependency-2026-11-14/final-review.md",
+      "archived": "docs/reviews/minio-dependency-2026-11-14/final-review.md",
+      "bytes": 8099,
+      "sha256": "7348fa265510427e3dbdbd98ee9b92eb744563260c7d26226ab9aaf7ebebb724"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/evidence/search-api-options-2026-11-14/pagefind-node-result.json",
+      "archived": "evidence/search-api-options-2026-11-14/pagefind-node-result.json",
+      "bytes": 3646,
+      "sha256": "c87c494907d6ec2b99a0ad0396b190e50b4d22fc36f7b0104049b9cb8e6b030d"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/evidence/search-api-options-2026-11-14/pagefind-browser-result.json",
+      "archived": "evidence/search-api-options-2026-11-14/pagefind-browser-result.json",
+      "bytes": 2580,
+      "sha256": "9765776a53868d283439f4c74e0dc500d3187bd97b9aedd0f4dd8a53792109e5"
+    },
+    {
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/evidence/ms1-2026-11-14/implementation/pagefind-100000-build.json",
+      "archived": "evidence/ms1-2026-11-14/implementation/pagefind-100000-build.json",
+      "bytes": 225911,
+      "sha256": "178b987e9b4e937bfadada929b7cfcb878d687eacf76c50979337b3e05b189b3"
+    }
+  ]
+}

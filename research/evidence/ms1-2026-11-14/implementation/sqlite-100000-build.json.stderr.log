@@ -1,0 +1,12 @@
+(node:7688) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"event":"progress","engine":"sqlite","documents":10000,"elapsedMs":995.578985}
+{"event":"progress","engine":"sqlite","documents":20000,"elapsedMs":1963.41588}
+{"event":"progress","engine":"sqlite","documents":30000,"elapsedMs":2861.475851}
+{"event":"progress","engine":"sqlite","documents":40000,"elapsedMs":3772.992017}
+{"event":"progress","engine":"sqlite","documents":50000,"elapsedMs":4774.292963999999}
+{"event":"progress","engine":"sqlite","documents":60000,"elapsedMs":5863.694323}
+{"event":"progress","engine":"sqlite","documents":70000,"elapsedMs":6794.990454}
+{"event":"progress","engine":"sqlite","documents":80000,"elapsedMs":7701.483265}
+{"event":"progress","engine":"sqlite","documents":90000,"elapsedMs":8579.9578}
+{"event":"progress","engine":"sqlite","documents":100000,"elapsedMs":9707.866148000001}

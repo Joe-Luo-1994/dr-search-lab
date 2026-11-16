@@ -1,0 +1,33 @@
+{
+  "engine": "c",
+  "passed": false,
+  "checks": [
+    {
+      "id": "pdf-search-read-download",
+      "passed": true,
+      "durationMs": 1614
+    },
+    {
+      "id": "tags-and",
+      "passed": true,
+      "durationMs": 206
+    },
+    {
+      "id": "empty-and-unknown",
+      "passed": false,
+      "error": "locator.selectOption: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('研究身份', { exact: true })\u001b[22m\n",
+      "durationMs": 10161
+    },
+    {
+      "id": "PUBLIC-HOST-and-identity-clear",
+      "passed": false,
+      "error": "locator.selectOption: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('研究身份', { exact: true })\u001b[22m\n",
+      "durationMs": 10016
+    }
+  ],
+  "pageErrors": [],
+  "httpErrors": [],
+  "browser": "157.0.4341.46",
+  "durationMs": 22940,
+  "pdfViewer": "iframe and blob popup observed; screenshot visual inspection required; not company editor acceptance"
+}

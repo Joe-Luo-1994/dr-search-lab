@@ -1,0 +1,6 @@
+{
+  "args": [],
+  "stdout": "{\"event\":\"e2_producer_ready\",\"producerDir\":\"/PUBLIC/WINDOWS_HOME\\\\Documents\\\\ChatGPT\\\\Search Playground\\\\.lab\\\\v1-e2-20261115\\\\producer\",\"sites\":[\"fz1\",\"fz2\"],\"releases\":[{\"version\":\"v1\",\"snapshotId\":\"v1-e2-20261115-v1\",\"pages\":37,\"sourceSha256\":\"13bbdd13ec09090fc8f18168084e90367aeedd68b997bade6f0a519baadc84a2\"},{\"version\":\"v2\",\"snapshotId\":\"v1-e2-20261115-v2\",\"pages\":38,\"sourceSha256\":\"e1ceee4695c81b0741915f5f29c17a83d874729682fab85ea9d587fea7788d51\"}]}\n",
+  "stderr": "(node:40776) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "elapsedMs": 68.5067
+}

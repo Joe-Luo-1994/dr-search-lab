@@ -1,0 +1,21 @@
+{
+  "mode": "corrupt-map",
+  "startedAt": "2026-11-14T07:36:48.303Z",
+  "traces": [
+    {
+      "path": "/api/research/search?engine=pagefind&q=runbook&page=1&pageSize=2",
+      "status": 503,
+      "elapsedMs": 99.117751,
+      "bytes": 56,
+      "sha256": "532d1cd08bd84c510419c1bfe78e6751f3e729caaa6199ccb71642ce69b8fab8",
+      "body": {
+        "error": {
+          "code": "SEARCH_UNAVAILABLE",
+          "retryable": true
+        }
+      }
+    }
+  ],
+  "explicitFailure": true,
+  "finishedAt": "2026-11-14T07:36:48.404Z"
+}

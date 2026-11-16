@@ -1,0 +1,19 @@
+{
+  "scope": "post-run readonly disk content check, outside formal timing; not a functional replay",
+  "files": [
+    {
+      "path": "/workspace/dr-search-lab/.lab/minio-dependency/cache-small/releases/minio-large-v1/data.sqlite",
+      "bytes": 2133065728,
+      "sha256": "bdd4a22ca136ee7112540c6a6a4c670d2871b55517ae5cdf811c0f713d21eaa0",
+      "matches": true,
+      "seconds": 1.9911675580005976
+    },
+    {
+      "path": "/workspace/dr-search-lab/.lab/minio-dependency/cache-small/releases/minio-large-v1/media/a000000000.txt",
+      "bytes": 68,
+      "sha256": "01a16802c89b38533692532b207dbefa75f187346eac5dedfda06cc9fe658256",
+      "matches": true,
+      "seconds": 0.000395597999158781
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{"stage":"preflight","at":"2026-11-15T15:08:01.750Z","windowsWorkingSetBytes":199729152,"minioRss":300224512,"logicalBytes":72752059,"freeMemoryBytes":17562734592,"freeDiskBytes":419666444288}
+{"stage":"R1","at":"2026-11-15T15:08:07.116Z","windowsWorkingSetBytes":1369042944,"minioRss":300281856,"logicalBytes":73143721,"freeMemoryBytes":16788197376,"freeDiskBytes":419650134016}
+{"stage":"R2","at":"2026-11-15T15:08:08.619Z","windowsWorkingSetBytes":1417400320,"minioRss":300290048,"logicalBytes":73161903,"freeMemoryBytes":16690917376,"freeDiskBytes":419647979520}
+{"stage":"R3","at":"2026-11-15T15:08:12.128Z","windowsWorkingSetBytes":1411444736,"minioRss":280141824,"logicalBytes":73272612,"freeMemoryBytes":16498450432,"freeDiskBytes":419646550016}

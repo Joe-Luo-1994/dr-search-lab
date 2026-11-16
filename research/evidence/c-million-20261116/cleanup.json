@@ -1,0 +1,38 @@
+{
+  "at": 1794762381.3188784,
+  "installed": [
+    {
+      "version": "v1",
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/v1/search.sqlite",
+      "installed": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fallback-1/cache/v1/search.sqlite",
+      "bytes": 3312799744,
+      "sourceSha256": "0b1a4379e317ef59289df3c1218c291d6047d5b3a3b9196600e8c182d8bd9147",
+      "installedSha256": "0b1a4379e317ef59289df3c1218c291d6047d5b3a3b9196600e8c182d8bd9147",
+      "match": true,
+      "activated": true
+    },
+    {
+      "version": "v2",
+      "source": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/v2/search.sqlite",
+      "installed": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fallback-1/cache/v2/search.sqlite",
+      "bytes": 3313811456,
+      "sourceSha256": "431c3d7f06fb52fbc6e60ee1ce29af3290cd27f71f57afc95693a71cc7619bc6",
+      "installedSha256": "431c3d7f06fb52fbc6e60ee1ce29af3290cd27f71f57afc95693a71cc7619bc6",
+      "match": true,
+      "activated": false
+    }
+  ],
+  "units": {
+    "dr-million-reader-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\nSubState=failed\n",
+    "dr-million-minio-20261116": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\nSubState=dead\n"
+  },
+  "remainingListeners": [],
+  "lastObservedPids": [
+    1637,
+    2237,
+    2257,
+    2258
+  ],
+  "remainingObservedPids": [],
+  "note": "Next SIGTERM exit143 is controller cleanup, not load failure. V2 byte hash matches but failed ready and never activated. No sustained post-update-failure recovery test."
+}

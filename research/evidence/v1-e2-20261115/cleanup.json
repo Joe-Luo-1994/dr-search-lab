@@ -1,0 +1,13 @@
+{
+  "producerRestored": "/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\producer",
+  "at": "2026-11-15T14:15:00.5435900Z",
+  "beforeStop": {
+    "at": "2026-11-15T14:15:00.3152986Z",
+    "freshCache": "/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\caches\\fresh",
+    "command": "\"C:\\Program Files\\nodejs\\node.exe\" scripts/v1-e2-20261115/serve.mjs v2 3161 fresh",
+    "workingSetBytes": 76853248,
+    "producerAbsent": true,
+    "pid": 43300
+  },
+  "remainingListeners": []
+}

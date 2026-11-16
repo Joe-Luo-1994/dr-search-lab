@@ -1,0 +1,27 @@
+{
+  "at": "2026-11-15T14:07:09.784Z",
+  "elapsedMs": 8846.8552,
+  "checks": [
+    {
+      "id": "G1-v1",
+      "passed": true
+    },
+    {
+      "id": "G2-mixed-rejected",
+      "passed": true
+    },
+    {
+      "id": "G3-v2-client-web-recovery",
+      "passed": true
+    }
+  ],
+  "requests": 37,
+  "pageErrors": [],
+  "passed": true,
+  "scope": "G1-G3 only; G4 independent operator pending",
+  "childPids": [
+    43004,
+    34208,
+    37928
+  ]
+}

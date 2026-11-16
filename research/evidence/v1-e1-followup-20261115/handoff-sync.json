@@ -1,0 +1,48 @@
+{
+  "verified": [
+    {
+      "path": "docs/DR_E1_FOLLOWUP_CARD_20261115.md",
+      "sha256": "656c2d75cbbccb82fb2debc7c9d5ed1e9d86d688482672b1a874a803063c00a8"
+    },
+    {
+      "path": "docs/DR_E1_UI_CONTINUATION_CARD_20261115.md",
+      "sha256": "f1a0cdf5c7628caaac8c8e4906220551cbd5449345918ab10fdcf25477d7d86c"
+    },
+    {
+      "path": "docs/DR_E1_FOLLOWUP_RESULT_20261115.md",
+      "sha256": "eb1ed8067e40ee08ce8cb0da9ad8ef240df5d0e5a23e473d6b0fe3afffd8aa53"
+    },
+    {
+      "path": "docs/DR_E1_FOLLOWUP_REVIEW_20261115.md",
+      "sha256": "92b22fb49e0ce5697d30aebc9f2b3ce65e4adae37d0e47b5c9d32706f0873bcc"
+    },
+    {
+      "path": "docs/DR_EXPERIMENT_PLAN_V1.md",
+      "sha256": "789f728719c83c80e8e9cb0dacee134ff4c84f53dc8e16a87e2063e1398cd9ad"
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "95e57280c9e84e4b6a7487f062c9ca828afeb4473226a1dd523bac382f3f39c5"
+    },
+    {
+      "path": "docs/DR_E1_RESULT_20261115.md",
+      "sha256": "89166913a49e5f5e4895c6fcc634d803ec5110bacbe8894bd418d5b9e0d08ee8"
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "9b1963b7a108238a913012b01bfddfe6c5b86dd39d650c02fb058012c041d174"
+    },
+    {
+      "path": "scripts/v1-e1-followup-20261115",
+      "files": 5,
+      "hashReadback": true
+    },
+    {
+      "path": "evidence/v1-e1-followup-20261115",
+      "files": 25,
+      "hashReadback": true
+    }
+  ],
+  "runtimeRemains": "Windows",
+  "newExecutions": 0
+}

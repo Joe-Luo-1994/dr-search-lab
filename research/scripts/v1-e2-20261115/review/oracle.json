@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "status": "DESIGN_ORACLE_NOT_YET_EXECUTABLE",
+  "scope": "E2 small C version/adapter operation; A and B retained; no comparative cost winner",
+  "baseSource": {
+    "path": "scripts/v1-e1-20261115/fixture/source.json",
+    "sha256": "0c70c490dd2798054063f56685f83c1783a030ea312cae4656894b977484cada",
+    "mustRemainUnchanged": true
+  },
+  "snapshotIds": {
+    "v1": "v1-e2-20261115-v1",
+    "v2": "v1-e2-20261115-v2"
+  },
+  "capturedAt": {
+    "v1": "2026-11-15T08:00:00.000Z",
+    "v2": "2026-11-15T12:00:00.000Z",
+    "meaning": "synthetic capture labels only; no RPO or four-hour scheduling validation"
+  },
+  "sourceRecipe": {
+    "v1": {
+      "copyBase": true,
+      "setSnapshotFrom": "v1",
+      "appendParagraph": {
+        "a-pdf": "e2packet identifies this deployment attachment."
+      },
+      "expectedPageCount": 37,
+      "expectedMediaIds": [
+        "pdf-checklist",
+        "pdf-ledger"
+      ]
+    },
+    "v2": {
+      "copy": "E2-v1",
+      "setSnapshotFrom": "v2",
+      "replacePages": {
+        "a-tag-both": {
+          "tagIds": [
+            "runbook",
+            "contact"
+          ]
+        },
+        "a-pdf": {
+          "paragraphs": [
+            "部署前請依新版檢查表完成校驗程序。",
+            "e2packet identifies the revised deployment attachment."
+          ],
+          "mediaIds": [
+            "pdf-checklist-v2"
+          ]
+        },
+        "a-move": {
+          "spaceId": "space-b"
+        }
+      },
+      "addPages": [
+        {
+          "pageId": "a-v2-only",
+          "spaceId": "space-a",
+          "title": "Harbor Ledger Update",
+          "tagIds": [
+            "contact"
+          ],
+          "paragraphs": [
+            "harborledger confirms the newly published checklist."
+          ],
+          "mediaIds": []
+        }
+      ],
+      "removeMediaIds": [
+        "pdf-checklist"
+      ],
+      "addMedia": [
+        {
+          "mediaId": "pdf-checklist-v2",
+          "fileName": "deployment-checklist-v2.pdf",
+          "mimeType": "application/pdf",
+          "extractedText": "saffron attestation verify the remote cabinet\nMatch seal number 9652 before approval.",
+          "bytes": 678,
+          "sha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae"
+        }
+      ],
+      "expectedPageCount": 38,
+      "expectedMediaIds": [
+        "pdf-checklist-v2",
+        "pdf-ledger"
+      ],
+      "unchangedFields": "all fields not listed inherit E2-v1; source Space and Tag registries unchanged"
+    }
+  },
+  "queryExpectations": [
+    {
+      "id": "stable-recovery-anchor",
+      "identity": "a",
+      "q": "e2packet",
+      "v1": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-pdf"
+        ]
+      },
+      "v2": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-pdf"
+        ]
+      }
+    },
+    {
+      "id": "old-tags",
+      "identity": "a",
+      "q": "dispatch",
+      "tagIds": [
+        "runbook",
+        "validated"
+      ],
+      "v1": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-tag-both"
+        ]
+      },
+      "v2": {
+        "total": 0,
+        "requiredPageIds": []
+      }
+    },
+    {
+      "id": "new-tags",
+      "identity": "a",
+      "q": "dispatch",
+      "tagIds": [
+        "runbook",
+        "contact"
+      ],
+      "v1": {
+        "total": 0,
+        "requiredPageIds": []
+      },
+      "v2": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-tag-both"
+        ]
+      }
+    },
+    {
+      "id": "old-pdf-extraction",
+      "identity": "a",
+      "q": "7324",
+      "v1": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-pdf"
+        ]
+      },
+      "v2": {
+        "total": 0,
+        "requiredPageIds": []
+      }
+    },
+    {
+      "id": "new-pdf-extraction",
+      "identity": "a",
+      "q": "saffron attestation",
+      "v1": {
+        "total": 0,
+        "requiredPageIds": []
+      },
+      "v2": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-pdf"
+        ]
+      }
+    },
+    {
+      "id": "moved-page-a",
+      "identity": "a",
+      "q": "Orchid",
+      "v1": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-move"
+        ]
+      },
+      "v2": {
+        "total": 0,
+        "requiredPageIds": []
+      }
+    },
+    {
+      "id": "moved-page-b",
+      "identity": "b",
+      "q": "Orchid",
+      "v1": {
+        "total": 0,
+        "requiredPageIds": []
+      },
+      "v2": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-move"
+        ]
+      }
+    },
+    {
+      "id": "new-page",
+      "identity": "a",
+      "q": "harborledger",
+      "v1": {
+        "total": 0,
+        "requiredPageIds": []
+      },
+      "v2": {
+        "total": 1,
+        "requiredPageIds": [
+          "a-v2-only"
+        ]
+      }
+    }
+  ],
+  "contentExpectations": {
+    "a-pdf": {
+      "identity": "a",
+      "v1": {
+        "bodyRule": "E1 a-pdf paragraphs plus frozen anchor joined by LF",
+        "mediaIds": [
+          "pdf-checklist"
+        ],
+        "mediaSha256": "f396877a93e9980d03a314270f6d566ced0784e0661e9517abacc89d9f41a6ef",
+        "mediaBytes": 677
+      },
+      "v2": {
+        "body": "部署前請依新版檢查表完成校驗程序。\ne2packet identifies the revised deployment attachment.",
+        "mediaIds": [
+          "pdf-checklist-v2"
+        ],
+        "mediaSha256": "22b32411322dc3cfaed1e2ee15b4eb173c1708d2771c536f9a4a15478b366dae",
+        "mediaBytes": 678,
+        "oldMediaIdUnderCurrentVersion": {
+          "status": 404,
+          "errorCode": "NOT_FOUND"
+        }
+      }
+    },
+    "a-move": {
+      "v1": {
+        "spaceId": "space-a",
+        "aPageStatus": 200,
+        "bPageStatus": 404
+      },
+      "v2": {
+        "spaceId": "space-b",
+        "aPageStatus": 404,
+        "bPageStatus": 200
+      },
+      "bodyUnchanged": true
+    }
+  },
+  "gates": [
+    {
+      "id": "G1-v1-baseline",
+      "expect": "Version-pinned stable anchor search/page/media/download chain matches E2-v1; browser and synthetic client retain real returned V1 links."
+    },
+    {
+      "id": "G2-mixed-candidate-rejected",
+      "candidate": "V2 manifest/metadata paired with V1 SQLite. Every file's declared byte hash matches actual bytes, but DB snapshot/source identity disagrees with target manifest.",
+      "expect": "Reject with SQLITE_IDENTITY_MISMATCH before publishing a validated release. traffic.json, V1 manifest bytes/hash and last-success.json remain unchanged; last-attempt.json records the failed attempt. Existing V1 complete chain still succeeds. Install success and manual traffic activation are distinct events. No claim of continuous availability."
+    },
+    {
+      "id": "G3-valid-v2-and-stale-link-recovery",
+      "expect": "Valid V2 installs only after closure/identity checks; starting its reader and changing traffic.json are separate recorded operations. Query and content expectations match V2. Old V1 version-pinned requests to new reader return 409 VERSION_MISMATCH with no content. The original browser session can explicitly re-search e2packet, open same page and download V2 PDF; synthetic client independently rebuilds this chain without silently stripping version."
+    },
+    {
+      "id": "G4-source-unavailable-fresh-reader-handoff",
+      "expect": "Preserve but make new E2 producer input tree unavailable. Independent DR artifact remains available. Non-author uses only frozen runbook to install into absent/new cache and start a new reader, then completes V2 search/page/PDF chain. Record actual source paths/PID/hashes and all intervention."
+    }
+  ],
+  "versionContract": {
+    "expiredStatus": 409,
+    "expiredCode": "VERSION_MISMATCH",
+    "contentOnExpiredRequest": false,
+    "requestVersionBinding": "?version=<snapshotId> is required on page, media-list and download requests; use the search response snapshotId without transparent token removal",
+    "missingVersionBehavior": {"status": 400, "errorCode": "VERSION_REQUIRED"},
+    "unknownIdentityPrecedence": {"status": 503, "errorCode": "AUTHORIZATION_UNKNOWN", "beforeVersionValidation": true},
+    "automaticTransparentFallback": false
+  },
+  "sourceLossBoundary": "Single synthetic producer-source role isolation in local filesystem, not actual fz1/fz2/network/cluster failure isolation. Code, independent DR artifact and mock Role service remain available.",
+  "handoff": {
+    "operator": "new non-author; initially read frozen runbook only",
+    "record": [
+      "start/end with one observer monotonic clock",
+      "commands and steps",
+      "help requests and responses",
+      "manual decisions",
+      "active version and health verification",
+      "fresh cache/PID/source path",
+      "failures and stop reason"
+    ],
+    "noUnrecordedAuthorRepairs": true,
+    "claim": "agent runbook operability only; not human on-call acceptance"
+  },
+  "freezePending": [
+    "exact V1/V2 source files and hashes verified against this recipe",
+    "E2 HTTP route/response schema and recorded contract hash; version binding/error decisions above are fixed",
+    "specific mixed candidate manifest/DB hash inventory",
+    "producer/DR/cache canonical paths and isolation action",
+    "build-input receipt and artifact hashes",
+    "role/profile baseline and source-loss dependency inventory",
+    "all deadlines/resource guards/stop rules",
+    "runbook/oracle/implementation review and operator ownership"
+  ],
+  "exclusions": [
+    "no E1 or clock rerun",
+    "no second engine matrix or A/B/C performance ranking",
+    "no million-row build/download",
+    "no full MR1/MR2 failure replay",
+    "no real MinIO/HA claim",
+    "no extra rollback matrix or automatic zero-downtime promise"
+  ]
+}

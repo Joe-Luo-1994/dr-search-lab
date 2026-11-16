@@ -1,0 +1,21 @@
+{
+  "case": "bad-empty",
+  "cacheWasEmpty": true,
+  "versionExpected": "v2",
+  "negative": true,
+  "beforeActiveSha256": null,
+  "beforeFiles": {},
+  "status": 503,
+  "payload": {
+    "error": {
+      "code": "MANIFEST_PIN_MISMATCH"
+    }
+  },
+  "startedToResponseSeconds": 0.272392525000015,
+  "activeUnchanged": true,
+  "cacheUnchanged": true,
+  "ready": false,
+  "qualified": true,
+  "unitAfterStop": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+  "completedAt": 1794791079.641605
+}

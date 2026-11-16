@@ -1,0 +1,4 @@
+{"at":"2026-11-15T13:20:21.330Z","engine":"b","bad":false,"pid":29908,"args":["/PUBLIC/WINDOWS_WORKSPACE\\scripts\\v1-e1-20261115\\serve.mjs","b"]}
+{"at":"2026-11-15T13:20:22.619Z","engine":"b","bad":true,"pid":15840,"args":["/PUBLIC/WINDOWS_WORKSPACE\\scripts\\v1-e1-20261115\\serve.mjs","b","--es-url","http://127.0.0.1:19390"]}
+{"at":"2026-11-15T13:20:23.320Z","engine":"b","bad":false,"pid":42824,"args":["/PUBLIC/WINDOWS_WORKSPACE\\scripts\\v1-e1-20261115\\serve.mjs","b"]}
+{"at":"2026-11-15T13:20:47.264Z","engine":"c","bad":false,"pid":30100,"args":["/PUBLIC/WINDOWS_WORKSPACE\\scripts\\v1-e1-20261115\\serve.mjs","c"]}

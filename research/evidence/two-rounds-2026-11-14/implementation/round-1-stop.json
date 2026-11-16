@@ -1,0 +1,6 @@
+{
+  "pid": 4619,
+  "cmdline": "/workspace/toolchains/node-v22.21.1-linux-x64/bin/node scripts/product-api-lab/serve.mjs .lab/product-api-lab/round-1 ",
+  "signal": "SIGTERM",
+  "reason": "Independent round1 review complete; rebuilding isolated Next dist for round2."
+}

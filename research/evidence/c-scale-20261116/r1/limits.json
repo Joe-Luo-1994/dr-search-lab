@@ -1,0 +1,16 @@
+{
+  "readerCgroup": {
+    "cpu.max": "400000 100000",
+    "memory.max": "8589934592",
+    "memory.swap.max": "0",
+    "cgroup.procs": "1448",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+  },
+  "minioCgroup": {
+    "cpu.max": "400000 100000",
+    "memory.max": "4294967296",
+    "memory.swap.max": "0",
+    "cgroup.procs": "1446",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+  }
+}

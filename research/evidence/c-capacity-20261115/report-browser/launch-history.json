@@ -1,0 +1,5 @@
+{
+  "firstAttempt": "Windows sandbox Edge launch denied (CoCreateInstance 80070005); no report page loaded",
+  "secondAttempt": "isolated headless profile outside sandbox passed",
+  "scope": "report UI only; does not change or rerun frozen capacity experiment"
+}

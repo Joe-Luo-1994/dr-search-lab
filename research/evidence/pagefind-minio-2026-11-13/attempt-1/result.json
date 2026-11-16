@@ -1,0 +1,1210 @@
+{
+  "at": "2026-11-13T10:12:39.394Z",
+  "pagefind": "1.6.0",
+  "sdk": "8.0.7",
+  "synthetic": true,
+  "scope": "Native MinIO + fresh Node web processes + Chromium; not Kubernetes/Next integration or production auth",
+  "checks": [
+    {
+      "name": "real MinIO ready",
+      "passed": true
+    },
+    {
+      "name": "all MinIO object bytes match generated bundle",
+      "passed": true
+    },
+    {
+      "name": "original local serving path no longer exists",
+      "passed": true
+    },
+    {
+      "name": "direct-cross-origin: Chinese retrieves p01/p02/p07",
+      "passed": true
+    },
+    {
+      "name": "direct-cross-origin: tags AND returns 17 and p01",
+      "passed": true
+    },
+    {
+      "name": "direct-cross-origin: code and extracted attachment",
+      "passed": true
+    },
+    {
+      "name": "direct-cross-origin: all bundle requests use expected origin",
+      "passed": true
+    },
+    {
+      "name": "direct-cross-origin: web working directory remains empty",
+      "passed": true
+    },
+    {
+      "name": "direct-cross-origin: result URLs stay on web origin",
+      "passed": true
+    },
+    {
+      "name": "direct-cross-origin: no page errors",
+      "passed": true
+    },
+    {
+      "name": "web local bundle route is absent",
+      "passed": true
+    },
+    {
+      "name": "web was replaced by a new process",
+      "passed": true
+    },
+    {
+      "name": "after-web-restart-fresh-browser: Chinese retrieves p01/p02/p07",
+      "passed": true
+    },
+    {
+      "name": "after-web-restart-fresh-browser: tags AND returns 17 and p01",
+      "passed": true
+    },
+    {
+      "name": "after-web-restart-fresh-browser: code and extracted attachment",
+      "passed": true
+    },
+    {
+      "name": "after-web-restart-fresh-browser: all bundle requests use expected origin",
+      "passed": true
+    },
+    {
+      "name": "after-web-restart-fresh-browser: web working directory remains empty",
+      "passed": true
+    },
+    {
+      "name": "after-web-restart-fresh-browser: result URLs stay on web origin",
+      "passed": true
+    },
+    {
+      "name": "after-web-restart-fresh-browser: no page errors",
+      "passed": true
+    },
+    {
+      "name": "private MinIO rejects direct unauthenticated GET",
+      "passed": true
+    },
+    {
+      "name": "private-bucket-streaming-proxy: Chinese retrieves p01/p02/p07",
+      "passed": true
+    },
+    {
+      "name": "private-bucket-streaming-proxy: tags AND returns 17 and p01",
+      "passed": true
+    },
+    {
+      "name": "private-bucket-streaming-proxy: code and extracted attachment",
+      "passed": true
+    },
+    {
+      "name": "private-bucket-streaming-proxy: all bundle requests use expected origin",
+      "passed": true
+    },
+    {
+      "name": "private-bucket-streaming-proxy: web working directory remains empty",
+      "passed": true
+    },
+    {
+      "name": "private-bucket-streaming-proxy: result URLs stay on web origin",
+      "passed": true
+    },
+    {
+      "name": "private-bucket-streaming-proxy: no page errors",
+      "passed": true
+    },
+    {
+      "name": "private proxy reads real objects",
+      "passed": true
+    }
+  ],
+  "phases": [
+    {
+      "name": "direct-cross-origin",
+      "pid": 9247,
+      "mode": "direct",
+      "queries": [
+        {
+          "name": "chinese",
+          "ok": true,
+          "total": 3,
+          "ids": [
+            "p07",
+            "p02",
+            "p01"
+          ],
+          "urls": [
+            "http://127.0.0.1:44625/synthetic/p07",
+            "http://127.0.0.1:44625/synthetic/p02",
+            "http://127.0.0.1:44625/synthetic/p01"
+          ]
+        },
+        {
+          "name": "tags",
+          "ok": true,
+          "total": 17,
+          "ids": [
+            "p10",
+            "p01",
+            "p30",
+            "p48",
+            "p66",
+            "p84",
+            "p24",
+            "p42",
+            "p60",
+            "p78",
+            "p96",
+            "p18",
+            "p36",
+            "p54",
+            "p72",
+            "p90",
+            "p12"
+          ],
+          "urls": [
+            "http://127.0.0.1:44625/synthetic/p10",
+            "http://127.0.0.1:44625/synthetic/p01",
+            "http://127.0.0.1:44625/synthetic/p30",
+            "http://127.0.0.1:44625/synthetic/p48",
+            "http://127.0.0.1:44625/synthetic/p66",
+            "http://127.0.0.1:44625/synthetic/p84",
+            "http://127.0.0.1:44625/synthetic/p24",
+            "http://127.0.0.1:44625/synthetic/p42",
+            "http://127.0.0.1:44625/synthetic/p60",
+            "http://127.0.0.1:44625/synthetic/p78",
+            "http://127.0.0.1:44625/synthetic/p96",
+            "http://127.0.0.1:44625/synthetic/p18",
+            "http://127.0.0.1:44625/synthetic/p36",
+            "http://127.0.0.1:44625/synthetic/p54",
+            "http://127.0.0.1:44625/synthetic/p72",
+            "http://127.0.0.1:44625/synthetic/p90",
+            "http://127.0.0.1:44625/synthetic/p12"
+          ]
+        },
+        {
+          "name": "code",
+          "ok": true,
+          "total": 1,
+          "ids": [
+            "p05"
+          ],
+          "urls": [
+            "http://127.0.0.1:44625/synthetic/p05"
+          ]
+        },
+        {
+          "name": "attachment",
+          "ok": true,
+          "total": 1,
+          "ids": [
+            "p06"
+          ],
+          "urls": [
+            "http://127.0.0.1:44625/synthetic/p06"
+          ]
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:44625/",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/pagefind.js",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/pagefind-entry.json?ts=1794564762692",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/pagefind.zh_e73f6be4d2.pf_meta",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/wasm.unknown.pagefind",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/index/zh_ba44e9d.pf_index",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/filter/zh_9ebfeaa.pf_filter",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_c83bae8.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_a1d872e.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_54ecfe7.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/filter/zh_1f7cd04.pf_filter",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_6bc922b.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_5de3f0d.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_6b71f3f.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_731649f.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_bdd8aab.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_f967c36.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_cf45768.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_5182a99.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_3833a84.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_4c64b39.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_804373c.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_96f11c8.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_5bc0e13.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_4c6828e.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_5019522.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_1783edd.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_67d89b8.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_36b1b14.pf_fragment"
+      ],
+      "errors": [],
+      "webDirectory": [],
+      "metrics": {
+        "assetRequests": 0,
+        "objectsRead": 0,
+        "filesystemIndexReads": 0,
+        "filesystemIndexWrites": 0
+      }
+    },
+    {
+      "name": "after-web-restart-fresh-browser",
+      "pid": 9278,
+      "mode": "direct",
+      "queries": [
+        {
+          "name": "chinese",
+          "ok": true,
+          "total": 3,
+          "ids": [
+            "p07",
+            "p02",
+            "p01"
+          ],
+          "urls": [
+            "http://127.0.0.1:44625/synthetic/p07",
+            "http://127.0.0.1:44625/synthetic/p02",
+            "http://127.0.0.1:44625/synthetic/p01"
+          ]
+        },
+        {
+          "name": "tags",
+          "ok": true,
+          "total": 17,
+          "ids": [
+            "p10",
+            "p01",
+            "p30",
+            "p48",
+            "p66",
+            "p84",
+            "p24",
+            "p42",
+            "p60",
+            "p78",
+            "p96",
+            "p18",
+            "p36",
+            "p54",
+            "p72",
+            "p90",
+            "p12"
+          ],
+          "urls": [
+            "http://127.0.0.1:44625/synthetic/p10",
+            "http://127.0.0.1:44625/synthetic/p01",
+            "http://127.0.0.1:44625/synthetic/p30",
+            "http://127.0.0.1:44625/synthetic/p48",
+            "http://127.0.0.1:44625/synthetic/p66",
+            "http://127.0.0.1:44625/synthetic/p84",
+            "http://127.0.0.1:44625/synthetic/p24",
+            "http://127.0.0.1:44625/synthetic/p42",
+            "http://127.0.0.1:44625/synthetic/p60",
+            "http://127.0.0.1:44625/synthetic/p78",
+            "http://127.0.0.1:44625/synthetic/p96",
+            "http://127.0.0.1:44625/synthetic/p18",
+            "http://127.0.0.1:44625/synthetic/p36",
+            "http://127.0.0.1:44625/synthetic/p54",
+            "http://127.0.0.1:44625/synthetic/p72",
+            "http://127.0.0.1:44625/synthetic/p90",
+            "http://127.0.0.1:44625/synthetic/p12"
+          ]
+        },
+        {
+          "name": "code",
+          "ok": true,
+          "total": 1,
+          "ids": [
+            "p05"
+          ],
+          "urls": [
+            "http://127.0.0.1:44625/synthetic/p05"
+          ]
+        },
+        {
+          "name": "attachment",
+          "ok": true,
+          "total": 1,
+          "ids": [
+            "p06"
+          ],
+          "urls": [
+            "http://127.0.0.1:44625/synthetic/p06"
+          ]
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:44625/",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/pagefind.js",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/pagefind-entry.json?ts=1794564763165",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/pagefind.zh_e73f6be4d2.pf_meta",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/wasm.unknown.pagefind",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/index/zh_ba44e9d.pf_index",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/filter/zh_9ebfeaa.pf_filter",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_c83bae8.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_a1d872e.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_54ecfe7.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/filter/zh_1f7cd04.pf_filter",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_6bc922b.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_5de3f0d.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_6b71f3f.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_731649f.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_bdd8aab.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_f967c36.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_cf45768.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_5182a99.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_3833a84.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_4c64b39.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_804373c.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_96f11c8.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_5bc0e13.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_4c6828e.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_5019522.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_1783edd.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_67d89b8.pf_fragment",
+        "http://127.0.0.1:40769/pagefind-synthetic/releases/r1/pagefind/fragment/zh_36b1b14.pf_fragment"
+      ],
+      "errors": [],
+      "webDirectory": [],
+      "metrics": {
+        "assetRequests": 0,
+        "objectsRead": 0,
+        "filesystemIndexReads": 0,
+        "filesystemIndexWrites": 0
+      }
+    },
+    {
+      "name": "private-bucket-streaming-proxy",
+      "pid": 9297,
+      "mode": "proxy",
+      "queries": [
+        {
+          "name": "chinese",
+          "ok": true,
+          "total": 3,
+          "ids": [
+            "p07",
+            "p02",
+            "p01"
+          ],
+          "urls": [
+            "http://127.0.0.1:37209/synthetic/p07",
+            "http://127.0.0.1:37209/synthetic/p02",
+            "http://127.0.0.1:37209/synthetic/p01"
+          ]
+        },
+        {
+          "name": "tags",
+          "ok": true,
+          "total": 17,
+          "ids": [
+            "p10",
+            "p01",
+            "p30",
+            "p48",
+            "p66",
+            "p84",
+            "p24",
+            "p42",
+            "p60",
+            "p78",
+            "p96",
+            "p18",
+            "p36",
+            "p54",
+            "p72",
+            "p90",
+            "p12"
+          ],
+          "urls": [
+            "http://127.0.0.1:37209/synthetic/p10",
+            "http://127.0.0.1:37209/synthetic/p01",
+            "http://127.0.0.1:37209/synthetic/p30",
+            "http://127.0.0.1:37209/synthetic/p48",
+            "http://127.0.0.1:37209/synthetic/p66",
+            "http://127.0.0.1:37209/synthetic/p84",
+            "http://127.0.0.1:37209/synthetic/p24",
+            "http://127.0.0.1:37209/synthetic/p42",
+            "http://127.0.0.1:37209/synthetic/p60",
+            "http://127.0.0.1:37209/synthetic/p78",
+            "http://127.0.0.1:37209/synthetic/p96",
+            "http://127.0.0.1:37209/synthetic/p18",
+            "http://127.0.0.1:37209/synthetic/p36",
+            "http://127.0.0.1:37209/synthetic/p54",
+            "http://127.0.0.1:37209/synthetic/p72",
+            "http://127.0.0.1:37209/synthetic/p90",
+            "http://127.0.0.1:37209/synthetic/p12"
+          ]
+        },
+        {
+          "name": "code",
+          "ok": true,
+          "total": 1,
+          "ids": [
+            "p05"
+          ],
+          "urls": [
+            "http://127.0.0.1:37209/synthetic/p05"
+          ]
+        },
+        {
+          "name": "attachment",
+          "ok": true,
+          "total": 1,
+          "ids": [
+            "p06"
+          ],
+          "urls": [
+            "http://127.0.0.1:37209/synthetic/p06"
+          ]
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:37209/",
+        "http://127.0.0.1:37209/assets/pagefind.js",
+        "http://127.0.0.1:37209/assets/pagefind-worker.js",
+        "http://127.0.0.1:37209/assets/pagefind-entry.json?ts=1794564763605",
+        "http://127.0.0.1:37209/assets/pagefind.zh_e73f6be4d2.pf_meta",
+        "http://127.0.0.1:37209/assets/wasm.unknown.pagefind",
+        "http://127.0.0.1:37209/assets/index/zh_ba44e9d.pf_index",
+        "http://127.0.0.1:37209/assets/filter/zh_9ebfeaa.pf_filter",
+        "http://127.0.0.1:37209/assets/fragment/zh_c83bae8.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_a1d872e.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_54ecfe7.pf_fragment",
+        "http://127.0.0.1:37209/assets/filter/zh_1f7cd04.pf_filter",
+        "http://127.0.0.1:37209/assets/fragment/zh_6bc922b.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_5de3f0d.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_6b71f3f.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_731649f.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_bdd8aab.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_f967c36.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_cf45768.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_5182a99.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_3833a84.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_4c64b39.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_804373c.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_96f11c8.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_5bc0e13.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_4c6828e.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_5019522.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_1783edd.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_67d89b8.pf_fragment",
+        "http://127.0.0.1:37209/assets/fragment/zh_36b1b14.pf_fragment"
+      ],
+      "errors": [],
+      "webDirectory": [],
+      "metrics": {
+        "assetRequests": 29,
+        "objectsRead": 29,
+        "filesystemIndexReads": 0,
+        "filesystemIndexWrites": 0
+      }
+    }
+  ],
+  "objects": [
+    {
+      "key": "releases/r1/pagefind/filter/zh_1f7cd04.pf_filter",
+      "bytes": 232,
+      "sha256": "2130829c36bb4d38bea087a9c3cec9174b0bdaf7a810a1d243e64c7ea834c3e3",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/filter/zh_9ebfeaa.pf_filter",
+      "bytes": 201,
+      "sha256": "a4af88471b231535dfb35072792e305bdf2500a97cab034cd949dde0344fcf43",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_10aaa5c.pf_fragment",
+      "bytes": 288,
+      "sha256": "98dff0b868b153adc331cff68b0c46baa3568bb2d9b6c35abc1040788d965fb5",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_15be4c0.pf_fragment",
+      "bytes": 290,
+      "sha256": "be28d4521a5eb36482d8faf2624fad7351918eb46e0b65fe149fcde54593db46",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_1783edd.pf_fragment",
+      "bytes": 204,
+      "sha256": "ccb97e3f91ab233bd3a67c32551ac4f6ce0adcd62c664aea2f858ccdf1ab181b",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_1ae9e1a.pf_fragment",
+      "bytes": 268,
+      "sha256": "1c41fca3775175c11f7dfd62326b7a7246eb5b4a18ffd114402ba51992946106",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_1b5a5e8.pf_fragment",
+      "bytes": 284,
+      "sha256": "0d43a53bf503ffcd532828dcc51ed9b64c54f309a39d5b4e952d0fb0ffaec5e4",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_1c51719.pf_fragment",
+      "bytes": 285,
+      "sha256": "5a0238a7d4b6b8e7d3535be30eaf190ce1e636b38206073d930eecdcb4a74296",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_1e91c95.pf_fragment",
+      "bytes": 290,
+      "sha256": "e946f0b330e703fd88aee1d6ca2b526ae896e3fceedd1bd439eb072c327c4070",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_218ce4a.pf_fragment",
+      "bytes": 263,
+      "sha256": "ee9175d0ee9c3a4d26b7cdf279cf5af32f6199aa6d6f37323f79061e02d16c99",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_21f1614.pf_fragment",
+      "bytes": 284,
+      "sha256": "f3e23a3b198de657a2690cf5a8e339a1f6e76a405c3823207971771b717979b8",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_25f4447.pf_fragment",
+      "bytes": 293,
+      "sha256": "686429625dd71fb2d2acc18b4aadca25d2b68bb198ea2f10765a4b0b00cf9b37",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_2d4a109.pf_fragment",
+      "bytes": 289,
+      "sha256": "21fa1807bc3e496c41bac27381c15f0bfc57b53e8cd487fa7eb65b3d0efb0b3a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_2df55cd.pf_fragment",
+      "bytes": 288,
+      "sha256": "a9b016924780e0e29cbecd344768119f59dfba558c50574735afb0f6a8a8b65c",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_3316ffa.pf_fragment",
+      "bytes": 294,
+      "sha256": "203bc32182d39faa6ceb14a7f2a77c7268cca057be48e2755c8dc29fd9f25207",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_36b1b14.pf_fragment",
+      "bytes": 297,
+      "sha256": "af32de6a8907e32cf3cebcfd70c5e72eb8b5779f307560bed0bc327d32f34180",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_36cfd42.pf_fragment",
+      "bytes": 288,
+      "sha256": "532a060dd09f18b2efee61cf1e6943d1ca4d412594fa73fd874c79057a8a0fcc",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_37ee641.pf_fragment",
+      "bytes": 283,
+      "sha256": "4c6b918030dbfd219057d93e14e37f6801ed653c26b78e76ef0834422a8d4ea3",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_3833a84.pf_fragment",
+      "bytes": 289,
+      "sha256": "0bb7fcdaf167520bcd49cbc7630950ae0dde2c496b468d0091e2a871070a63e2",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_38b2873.pf_fragment",
+      "bytes": 286,
+      "sha256": "a47461a0f286e3fbd7229266397d5fc27bbc3afbe7c8c491cdc1ee62d751110e",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_392c9f8.pf_fragment",
+      "bytes": 289,
+      "sha256": "c18641cf5b2debdf073f015c90b1fe39a55fe3113fd2080c1f36c385b67f9a1c",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_3995892.pf_fragment",
+      "bytes": 289,
+      "sha256": "de0b2f4e62c94f2c3f10ebe8c9a4297a81217ab9329f5d21e9b40c4f689f59e1",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_39f23be.pf_fragment",
+      "bytes": 262,
+      "sha256": "2d0a882ffeda7a8b5232a8400346345ad8d94b3ba81fbded86957605413113e8",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_3d96f74.pf_fragment",
+      "bytes": 284,
+      "sha256": "45859d105d248b3587f26fc26436ef2e95da78cbb64182f09317bb9d2496cb04",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_3da744c.pf_fragment",
+      "bytes": 294,
+      "sha256": "6986cbbbb8265528cdb7363f35a341972ba6ae958adbc5dbd69167955b9bda85",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_42b9f27.pf_fragment",
+      "bytes": 293,
+      "sha256": "04b146c4ec912af99c451a13bee25616a9a11184205dcfd0fffdd885534c4804",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_45e4a22.pf_fragment",
+      "bytes": 267,
+      "sha256": "a3491f6b566fee9377ffe8d955d03a34d1707524e04a23591de9860d920a858b",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_48c83be.pf_fragment",
+      "bytes": 288,
+      "sha256": "d459b2e802fd977fa261f77ed9148b59ecf3cd01c7ff64e0833e560827837405",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_4ac5efc.pf_fragment",
+      "bytes": 278,
+      "sha256": "e4b0d182cd9764671baec5e825ef2045d7edc73dfb099a4f021ca8e16cf659f6",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_4b38c96.pf_fragment",
+      "bytes": 294,
+      "sha256": "7b39fc76c5f1c52a481f1440bc18085ee6601c2abeeb63a65945c01dfc6ce887",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_4c5750f.pf_fragment",
+      "bytes": 268,
+      "sha256": "c7a241d6333f1929ed9d307afc9051fd8d7039d114be27b3b214778a6047cdbd",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_4c64b39.pf_fragment",
+      "bytes": 289,
+      "sha256": "6e7d9e1a9980c888c59ce4bc35b35eed3388eb48547e17981cf22e98f7ba2581",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_4c6828e.pf_fragment",
+      "bytes": 290,
+      "sha256": "f248621fefb8f0f3b9e877bb7481c1ad59ef594821906ebed31bdfd5ee3a684f",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_4f4f2ec.pf_fragment",
+      "bytes": 284,
+      "sha256": "a8367851ecbd264b6f7e408b16fa32c69da8f436636cd7725c4bb7d3dba2480a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_5019522.pf_fragment",
+      "bytes": 290,
+      "sha256": "5f0a03abf47f7003b1c8567d8ea13fbed11627fa44218f6e9d176afd35174da6",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_5182a99.pf_fragment",
+      "bytes": 289,
+      "sha256": "a8ada46d33970b416af13f4646b1276b8be30e968b124d5c8ec597d6545d41fa",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_51e3c12.pf_fragment",
+      "bytes": 284,
+      "sha256": "f6bf1f87f7d57e098c0ac8c00aadd999d7d343f443ddceb8f278d0632b6c02b4",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_54ecfe7.pf_fragment",
+      "bytes": 257,
+      "sha256": "03c313258abe5b96d08ac6e02c5f58a3cd462961e5c2384b06d48c049b4effc1",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_56865f8.pf_fragment",
+      "bytes": 284,
+      "sha256": "07f186d9cdab07584049840457550703d8fc4e58417bf796f390ad16e9bdfe0c",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_5bc0e13.pf_fragment",
+      "bytes": 290,
+      "sha256": "eca89090bfa038d7791a28c2f37ed15a12113924912c4e1ee951493f0f9c33f3",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_5de3f0d.pf_fragment",
+      "bytes": 287,
+      "sha256": "da6e0016dbb2cfb6955d7f627f22eb77e48d96742ad09f3b6f03d694ccc2de79",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_67d89b8.pf_fragment",
+      "bytes": 223,
+      "sha256": "89f22005e922d16677e78a8eb914acc03cb823475fc40fefe1675d79cbfe17b7",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_6a5e7fa.pf_fragment",
+      "bytes": 284,
+      "sha256": "a92b6ce4da0167ef3108b6b8cf8132343f05ba8d722b3f7c810c8f0d18c4f436",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_6b6bc7c.pf_fragment",
+      "bytes": 263,
+      "sha256": "c04d101c83a3888230c89b45d2dfbad551a23a6840bee920d00e2fda168f5b0b",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_6b71f3f.pf_fragment",
+      "bytes": 288,
+      "sha256": "e9c1cab010c77fe163a8b682c0193b37cb8e88fdb76e09854079aeb1c950a7fa",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_6bc922b.pf_fragment",
+      "bytes": 205,
+      "sha256": "7a52b0637ffd36454ad5a480873671250e852f34fb7d40ffd5c318d27e7e5ab0",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_7176701.pf_fragment",
+      "bytes": 285,
+      "sha256": "6d2facffd346c98127134c5682accb38caf40e24b1d5f005be4d43e6aa9d65a6",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_731649f.pf_fragment",
+      "bytes": 287,
+      "sha256": "86d944eef8a210ba0acf39473d23d3b6cff7adf12e3a6ee03b7d7b71af5d898a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_74c98f7.pf_fragment",
+      "bytes": 293,
+      "sha256": "a7085879f626bb776a489674c30da8039dfb6d394c0c3357b50325fe83373a76",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_7640979.pf_fragment",
+      "bytes": 287,
+      "sha256": "4cbef5d8f9302bd2df035b936b8ec617907f2214322a384cb159a1cf8d4f1ecd",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_76e828b.pf_fragment",
+      "bytes": 241,
+      "sha256": "3f1ef2845ddea52fb75b26a60c743b09611a4a641d23aea2571794a29ac3a05f",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_7772405.pf_fragment",
+      "bytes": 206,
+      "sha256": "a3b04ebfa0dfebc8ee7db742697ddd33198d56c9bc47bbb308960ba8df255c3f",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_789a667.pf_fragment",
+      "bytes": 287,
+      "sha256": "64c7517530ea3133f3dfb3549ef500fb135e855272761b9bbc46a30b83810c65",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_78a25a6.pf_fragment",
+      "bytes": 288,
+      "sha256": "7cf61cd4ae8222ca1e04345ba4c0321c2921f75b6b3545d193541edf1e372fa7",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_7ca4d9c.pf_fragment",
+      "bytes": 282,
+      "sha256": "0773aaec6c8f50015fe2842b23cc674546318fe36996da1c5f53c4f008899373",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_804373c.pf_fragment",
+      "bytes": 290,
+      "sha256": "2f16873592ece2f3d08aa40232b5ee75874960d1e22075e2976a96d9cd2af475",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_951ce95.pf_fragment",
+      "bytes": 290,
+      "sha256": "7db257088489a3bd6206679f1d1881c369fcd6bae71f86a8287babb878d3d948",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_96f11c8.pf_fragment",
+      "bytes": 290,
+      "sha256": "1c2b49a186a1475bc2d6b30a1577f2d79899a135411490123abedf2629c180f0",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_9708f8e.pf_fragment",
+      "bytes": 221,
+      "sha256": "83ab729e8cfa822d87819b98a1041d4da9808ffd9016ba9aa95b7bce6369122d",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_980c736.pf_fragment",
+      "bytes": 282,
+      "sha256": "126a59ee287bd6ca2590cd036820a0c626d1a2c67e6927948d3cc139bcf6d7b0",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_98e8de1.pf_fragment",
+      "bytes": 211,
+      "sha256": "f5be01d189e90c306bd70fd333d0b7f26593a7ced6208d96d1d323162150bf7f",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_98e9040.pf_fragment",
+      "bytes": 214,
+      "sha256": "0e56755b0892eb62f09a12e5c8e4fcd952493dd88cb3af10f97b6747c031899c",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_9c5ef69.pf_fragment",
+      "bytes": 278,
+      "sha256": "61f60fc051c83d1192232fc8898a433cf834db50e3f8dbcefedc308f96bd055e",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_a1d872e.pf_fragment",
+      "bytes": 242,
+      "sha256": "c0eefeeccb77045ef3a289a0cfec05627c1bd38131ffbf657fa0cf132e087326",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_a758f35.pf_fragment",
+      "bytes": 283,
+      "sha256": "e441fc56cf8eb7cd28b8b8f014dc3bfec3bafb4135ef8370fb9a2623e35d6f71",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_aaabbd9.pf_fragment",
+      "bytes": 282,
+      "sha256": "ff607c26f708e8cf0c139c6d5a032d3f75c9aa2d7c0b2480b0db53030dbbc258",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_abd989b.pf_fragment",
+      "bytes": 290,
+      "sha256": "e72c6f1a6c8525f38958ae10f038e7a0f839bde3da534d6b55ebe07b2b2e58be",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_ac169e8.pf_fragment",
+      "bytes": 289,
+      "sha256": "45a802bb61f53f7ccb653b02ae18a8a71d58e2ab13a4f4397dd559f44266a885",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_b274b61.pf_fragment",
+      "bytes": 284,
+      "sha256": "18d9c97221c8af7d21759c3e677085dd6f13d6b297614fc2d7638b609449f0f4",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_b63e24b.pf_fragment",
+      "bytes": 292,
+      "sha256": "d71b4b458c6808174a7eb39b9d73f0e0ce8cc9c353613478071f95efc6aea0b1",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_b7bb5b5.pf_fragment",
+      "bytes": 284,
+      "sha256": "4fd7929ba2ad52c5bdf54fba21d753ef8b9812785f566c6d2ea5285d50d96e19",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_baff732.pf_fragment",
+      "bytes": 285,
+      "sha256": "5e708a95cf5bd487ba55b6ff27041dc2a44be4ce27c64942828002bcf6929d20",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_bdd8aab.pf_fragment",
+      "bytes": 288,
+      "sha256": "1554e4e95a6a17e5d50f0396f9b779ce6769c58a4ced980fa1d3d998ff4d2dfd",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_be5c175.pf_fragment",
+      "bytes": 283,
+      "sha256": "494258aeea6b8316de8fee6aa8be85c398e57e6c58d1758977b5d73c4a27af93",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_c060b47.pf_fragment",
+      "bytes": 284,
+      "sha256": "0f7a2be999c32512a5c17b25712ee878388b2da7611bd84ecf1a9ef09643d322",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_c13667a.pf_fragment",
+      "bytes": 286,
+      "sha256": "de6e7e7e180f2e75e06d6182740266f150716e94145888135b596f84f224ba02",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_c2c7b98.pf_fragment",
+      "bytes": 294,
+      "sha256": "86efce2cbda6b342ed4eab7e7ad0a54eec7fefd6eb94166ce5910a26a6045187",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_c5afc6c.pf_fragment",
+      "bytes": 278,
+      "sha256": "f812cab0631372610f8d2f887bc23a5bfba159b883bc1a9f341c67784ffd904d",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_c77d869.pf_fragment",
+      "bytes": 294,
+      "sha256": "196835d12df19a104c4eca8da0335e1f1f6d8b80eda006639025e4b77126d664",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_c83bae8.pf_fragment",
+      "bytes": 222,
+      "sha256": "233c1db10907f735e6fe8a064017547fbe5bfad841de4afa78cd87548b2ebc0b",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_ccde81b.pf_fragment",
+      "bytes": 283,
+      "sha256": "97cf670e3d0ca8fce2e2fa06395543933ea9d438d99ce11f561e8ce16ecde1de",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_ce6aa07.pf_fragment",
+      "bytes": 268,
+      "sha256": "8c865ceb6d1e7e21769f3f47a719b66aa8b01feaabef07cf896cc70726ca92db",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_cf45768.pf_fragment",
+      "bytes": 288,
+      "sha256": "a980e27a9277383a0fcb6feba6abeadc857526a906302441f288bf1d837a8b7a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_d07bdc4.pf_fragment",
+      "bytes": 282,
+      "sha256": "757b3c7afa746effebd926534ed645be5caff086f5eae097c40e98739a4be6bd",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_d1319cb.pf_fragment",
+      "bytes": 262,
+      "sha256": "0af1d32b852a4622f1ef194bb289c897c3874eb4f333e0bbf4183f1338d1d170",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_d3d2c2a.pf_fragment",
+      "bytes": 285,
+      "sha256": "f5c0c90e845cbf41ecf08a31993aa9665aee7d47f1568a3610db8b52c7025dc5",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_e05985e.pf_fragment",
+      "bytes": 282,
+      "sha256": "8139f6098dbe6310442655d463c4197d95255e8d931e137fb6bdc4796f38c525",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_e0774aa.pf_fragment",
+      "bytes": 283,
+      "sha256": "b5f345388d49009458043174b4ee0bf3515514f0f53ac38ea679a14e7c8a37fb",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_e5ff920.pf_fragment",
+      "bytes": 294,
+      "sha256": "767811eca766ae5807c1adab7e7ccc2b7268297ca2cf3fa711b8b053c9c95f37",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_e814c35.pf_fragment",
+      "bytes": 284,
+      "sha256": "3d8d9ab0f543caa61d294e218a50e68b12ecc1f3036f04c553fe02f8ecf5d068",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_e9ca26e.pf_fragment",
+      "bytes": 277,
+      "sha256": "f0e0b4917e138225df2aa168c1cd37de90e69e4ca44ff0a5d9ffd9968bdae469",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_eac93bd.pf_fragment",
+      "bytes": 263,
+      "sha256": "2de490223c542e2b3f214b373fe861a73c74955af85dc6de53a57867ef4cec05",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_ee99165.pf_fragment",
+      "bytes": 283,
+      "sha256": "f206b29334053a57d32da8abd145edb6425db0b610839444fccaaa6dea5298fb",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_eeb7b39.pf_fragment",
+      "bytes": 284,
+      "sha256": "008c2f874d765f32c136b8a6c97ea19e12cd78093a077d4083a9cda249f4073a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_ef4657d.pf_fragment",
+      "bytes": 283,
+      "sha256": "94262f8a197e7b66946454c749aa248ab58097b6651d5b51acfda3afa42722d8",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_efe336a.pf_fragment",
+      "bytes": 282,
+      "sha256": "84704d3c6ab88d15ebe2f3a989d038c44f9d89a0c2e0004b26ddae6ba65119fe",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_f1f295a.pf_fragment",
+      "bytes": 289,
+      "sha256": "88f6273586fdeb3737f1246a3aa9c82ba6a1951e704ae39460ee430056df80b2",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_f358f25.pf_fragment",
+      "bytes": 283,
+      "sha256": "cd50535c6bec925a786d6ec20999a0ddaa7a386e94c20a54b1befb50904c0f60",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_f3a2885.pf_fragment",
+      "bytes": 267,
+      "sha256": "9b25a4058bc42f68641de09b5994be547e6d40f4d8bd2ccb377128ee8426e0f8",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_f967c36.pf_fragment",
+      "bytes": 288,
+      "sha256": "e719049fe551062afd7fabd323e2724dd04e6fc97e3640941b68ed7aad17da7b",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_fa2a63e.pf_fragment",
+      "bytes": 287,
+      "sha256": "285f01e4b5f179e542bf88f79effbe54df58aeff35d01ed6d1dd0a669f50694e",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/fragment/zh_fe2af7e.pf_fragment",
+      "bytes": 289,
+      "sha256": "84558bb381cdb428eb27575c7bda2f6a4765f00c23b3f36db92b5fb990fa6741",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/index/zh_ba44e9d.pf_index",
+      "bytes": 2434,
+      "sha256": "479922316e4fce8354516c031842403b761ec540c8217bee3fc9c3ebfe09acac",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-component-ui.css",
+      "bytes": 42081,
+      "sha256": "12a3ae7abdba2f00a7617b861f7e0f915ce54c17c47d568e1108103ecb228325",
+      "contentType": "text/css"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-component-ui.js",
+      "bytes": 184026,
+      "sha256": "f7a4ba1403c0dfb23e84e18b4480f95785035d21e5b45a05a08191bd87c84944",
+      "contentType": "text/javascript"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-entry.json",
+      "bytes": 173,
+      "sha256": "1065d253e2c08547ab744723fc532a4c2c9cd8f6722889c9cafaa9a25ace8c8c",
+      "contentType": "application/json"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-highlight.js",
+      "bytes": 44404,
+      "sha256": "7aab88a3c64047708f6ecabe1f094ecc48fb76b0895e64d56593f335c5d2ea0a",
+      "contentType": "text/javascript"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-modular-ui.css",
+      "bytes": 7336,
+      "sha256": "653ab29e4de5629f6ddf5f6fcdf5d2b3eb539a8c07fff8a56b8ce2156a570788",
+      "contentType": "text/css"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-modular-ui.js",
+      "bytes": 14634,
+      "sha256": "f3efa0f74b305ccab0bc9edc7c09ab69867180b4c43093d84bb9b508ac4ec32c",
+      "contentType": "text/javascript"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-ui.css",
+      "bytes": 14482,
+      "sha256": "e113b816110ed07b017613e901addfe635350f2a5b84990aa76c91a74b158084",
+      "contentType": "text/css"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-ui.js",
+      "bytes": 126634,
+      "sha256": "07b2a55750c180546523435461fd44f0612531bcdc0e8a069fe00eef7741d1f7",
+      "contentType": "text/javascript"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind-worker.js",
+      "bytes": 42928,
+      "sha256": "78115e3651f11d29f03a1f3eb2776a7901c22532bdfa23b7ae73c693c0867bda",
+      "contentType": "text/javascript"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind.js",
+      "bytes": 47228,
+      "sha256": "02746cc529f88f853275720dcb1c2b6a18b0c7a92b73fae82ca2738e64500bcd",
+      "contentType": "text/javascript"
+    },
+    {
+      "key": "releases/r1/pagefind/pagefind.zh_e73f6be4d2.pf_meta",
+      "bytes": 715,
+      "sha256": "046b6a744e114b8fbb8c5155dbb8ed9d3f2326960dc77319b4bb145b57b68a93",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "key": "releases/r1/pagefind/wasm.unknown.pagefind",
+      "bytes": 55386,
+      "sha256": "7add525659192e7baf940ef743cc052098e5fc45c94462179a59376d5d1bdc74",
+      "contentType": "application/octet-stream"
+    }
+  ],
+  "attempts": [],
+  "limitations": [
+    "Loopback HTTP; production TLS/CSP not exercised",
+    "Browser corpus disclosure and real ReBAC not solved",
+    "No release promotion, MinIO failure recovery, scale or consumer API acceptance"
+  ],
+  "minioVersion": "minio version DEVELOPMENT.GOGET (commit-id=DEVELOPMENT.GOGET)\nRuntime: go1.24.2 linux/amd64\nLicense: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html\nCopyright: 2015-0000 MinIO, Inc.",
+  "directHeaders": {
+    "status": 200,
+    "contentType": "text/javascript",
+    "allowOrigin": "http://127.0.0.1:44625"
+  },
+  "privateDirectStatus": 403,
+  "passed": true,
+  "finishedAt": "2026-11-13T10:12:43.794Z",
+  "cleanedUpOwnProcesses": true
+}

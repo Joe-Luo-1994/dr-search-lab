@@ -1,0 +1,17 @@
+{
+  "phase": "before-round-1-delivery",
+  "scope": "C1; V1/V2 synthetic Next HTTP consumer tasks; no full DR acceptance",
+  "reviewer": "standards_review subagent",
+  "implementer": "design_implementation subagent",
+  "rounds": 2,
+  "frozenInputs": {
+    "docs/reviews/two-rounds-2026-11-14/standard-v1.md": "0c8b76267c1e4f8fe79a7128e0f6aa0737f7529e05048fbab0b8ee51eef7c5b0",
+    "scripts/product-review/fixture.json": "03c5f859e7fe87c8ac1951158cd1dfae3843f84e930de5b620eb5de2af251dde"
+  },
+  "contract": "18 mandatory B tasks per candidate; optional H separately; same standards for both iterations",
+  "limitations": [
+    "Mock scope only, not actual GM",
+    "No capacity SLO or real MinIO integration requirement this round",
+    "No stakeholder approval implied by independent subagent review"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "probe": "one successful monitor invocation; process rows are not sample count",
+  "version": "PowerShell 7.6.9",
+  "systemPolicyChanged": false,
+  "executable": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-611-0_26.1112.611.0_x64__3k8sg7r9htsxt\\dependencies\\native\\powershell\\pwsh.exe"
+}

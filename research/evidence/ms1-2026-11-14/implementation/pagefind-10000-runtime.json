@@ -1,0 +1,231 @@
+{
+  "command": [
+    "/workspace/toolchains/node-v22.21.1-linux-x64/bin/node",
+    "--max-old-space-size=4096",
+    "scripts/ms1-api-lab/serve.mjs",
+    ".lab/ms1/pagefind-10000"
+  ],
+  "pid": 7629,
+  "exitCode": 0,
+  "stopReason": null,
+  "elapsedSeconds": 3.04925205699692,
+  "peakSampledTreeRssBytes": 155320320,
+  "peakSampledTreeCpuSeconds": 2.84,
+  "artifactBytes": 26069408,
+  "peakArtifactBytes": 26069408,
+  "maxRssSampleGapSeconds": 0.2561328779993346,
+  "kernelReapedMaxRssKiB": 153120,
+  "limits": {
+    "seconds": 600.0,
+    "treeRssMiB": 6144,
+    "artifactGiB": 10
+  },
+  "cpuAccountedSeconds": 2.915366,
+  "sampling": "RSS/process tree every250ms; directory scan background every5s plus scan duration; sampled soft-stop may overshoot; OS cache excluded RSS, full cgroup memory.current separately; directory walk monitoring overhead not in target RSS",
+  "samples": [
+    {
+      "elapsedSeconds": 0.001,
+      "rssBytes": 3538944,
+      "cpuSeconds": 0.0,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 0,
+      "diskScanSeconds": 0,
+      "freeBytes": 27310374912,
+      "cgroupMemoryCurrent": 470740992,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 3538944,
+          "cpu": 0.0
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.254,
+      "rssBytes": 60370944,
+      "cpuSeconds": 0.29,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310370816,
+      "cgroupMemoryCurrent": 508428288,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 60370944,
+          "cpu": 0.29
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.51,
+      "rssBytes": 70316032,
+      "cpuSeconds": 0.41,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310366720,
+      "cgroupMemoryCurrent": 528789504,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 70316032,
+          "cpu": 0.41
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.761,
+      "rssBytes": 100343808,
+      "cpuSeconds": 0.75,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310362624,
+      "cgroupMemoryCurrent": 562335744,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 100343808,
+          "cpu": 0.75
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.012,
+      "rssBytes": 117309440,
+      "cpuSeconds": 1.01,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310272512,
+      "cgroupMemoryCurrent": 593330176,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 117309440,
+          "cpu": 1.01
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.264,
+      "rssBytes": 146169856,
+      "cpuSeconds": 1.29,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310211072,
+      "cgroupMemoryCurrent": 625491968,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 146169856,
+          "cpu": 1.29
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.515,
+      "rssBytes": 152207360,
+      "cpuSeconds": 1.57,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310108672,
+      "cgroupMemoryCurrent": 631083008,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 152207360,
+          "cpu": 1.57
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.766,
+      "rssBytes": 153780224,
+      "cpuSeconds": 1.82,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310075904,
+      "cgroupMemoryCurrent": 636780544,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 153780224,
+          "cpu": 1.82
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.017,
+      "rssBytes": 154664960,
+      "cpuSeconds": 2.07,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310022656,
+      "cgroupMemoryCurrent": 639381504,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 154664960,
+          "cpu": 2.07
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.269,
+      "rssBytes": 154796032,
+      "cpuSeconds": 2.32,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310022656,
+      "cgroupMemoryCurrent": 638996480,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 154796032,
+          "cpu": 2.32
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.52,
+      "rssBytes": 155320320,
+      "cpuSeconds": 2.58,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310022656,
+      "cgroupMemoryCurrent": 640016384,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 155320320,
+          "cpu": 2.58
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.771,
+      "rssBytes": 155320320,
+      "cpuSeconds": 2.84,
+      "artifactBytesLastSample": 26069408,
+      "allMs1ArtifactBytesLastSample": 49807472,
+      "diskScanSeconds": 0.05444648200136726,
+      "freeBytes": 27310022656,
+      "cgroupMemoryCurrent": 641552384,
+      "processes": {
+        "7629": {
+          "ppid": 7628,
+          "rss": 155320320,
+          "cpu": 2.84
+        }
+      }
+    }
+  ]
+}

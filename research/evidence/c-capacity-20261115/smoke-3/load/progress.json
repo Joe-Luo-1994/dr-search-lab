@@ -1,0 +1,121 @@
+{
+  "fatal": null,
+  "stages": [
+    {
+      "name": "smoke-mixed",
+      "kind": "mixed",
+      "rate": 2,
+      "seconds": 5,
+      "scheduled": 10,
+      "startedMs": 2245.4807589999996,
+      "endedMs": 7251.502479000001,
+      "elapsedIncludingDrainMs": 5005.998388,
+      "generatorValid": true,
+      "qualifies": true,
+      "fatal": null,
+      "offered": 10,
+      "sent": 10,
+      "completed": 10,
+      "successful": 10,
+      "refused": 0,
+      "timeouts": 0,
+      "expectedStale": 0,
+      "generatorMissed": 0,
+      "generatorLate": 0,
+      "abortedAfterFatal": 0,
+      "abortedInflight": 0,
+      "correctnessOrTransportFailures": 0,
+      "sentPerSecond": 2,
+      "successfulPerSecond": 2,
+      "bytes": 82271,
+      "sampleCount": 10,
+      "successfulP95Ms": 23.18996100000004,
+      "allSentP95Ms": 23.18996100000004,
+      "scheduledToDoneP95Ms": 24.115718000000015,
+      "offeredFailureFraction": 0,
+      "statuses": {
+        "200": 10
+      },
+      "elapsedSentPerSecond": 1.9976035198036104,
+      "elapsedSuccessfulPerSecond": 1.9976035198036104,
+      "byType": {
+        "search": {
+          "offered": 6,
+          "sent": 6,
+          "completed": 6,
+          "successful": 6,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "abortedAfterFatal": 0,
+          "abortedInflight": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 1.2,
+          "successfulPerSecond": 1.2,
+          "bytes": 13516,
+          "sampleCount": 6,
+          "successfulP95Ms": 23.18996100000004,
+          "allSentP95Ms": 23.18996100000004,
+          "scheduledToDoneP95Ms": 24.115718000000015,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 6
+          }
+        },
+        "page": {
+          "offered": 3,
+          "sent": 3,
+          "completed": 3,
+          "successful": 3,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "abortedAfterFatal": 0,
+          "abortedInflight": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 0.6,
+          "successfulPerSecond": 0.6,
+          "bytes": 3219,
+          "sampleCount": 3,
+          "successfulP95Ms": 12.372934999999416,
+          "allSentP95Ms": 12.372934999999416,
+          "scheduledToDoneP95Ms": 12.752438999999868,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 3
+          }
+        },
+        "media": {
+          "offered": 1,
+          "sent": 1,
+          "completed": 1,
+          "successful": 1,
+          "refused": 0,
+          "timeouts": 0,
+          "expectedStale": 0,
+          "generatorMissed": 0,
+          "generatorLate": 0,
+          "abortedAfterFatal": 0,
+          "abortedInflight": 0,
+          "correctnessOrTransportFailures": 0,
+          "sentPerSecond": 0.2,
+          "successfulPerSecond": 0.2,
+          "bytes": 65536,
+          "sampleCount": 1,
+          "successfulP95Ms": 12.92480500000056,
+          "allSentP95Ms": 12.92480500000056,
+          "scheduledToDoneP95Ms": 13.670246000000589,
+          "offeredFailureFraction": 0,
+          "statuses": {
+            "200": 1
+          }
+        }
+      }
+    }
+  ],
+  "updates": []
+}

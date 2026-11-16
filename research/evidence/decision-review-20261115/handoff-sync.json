@@ -1,0 +1,27 @@
+{
+  "documents": [
+    {
+      "path": "docs/DR_REMOTE_CONTENT_REUSE_REVIEW_20261115.md",
+      "sha256": "b8cb57190817a6fd96e6feb82bcadf94ae92701d5983648247cd3a98b9037b76"
+    },
+    {
+      "path": "docs/PAGEFIND_DECISION_REVIEW_20261115.md",
+      "sha256": "3a8298ae37449edb656c9c946f64878a4224f12cd9d46e5a25958daac47e161a"
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "0bc25eb4de54f163998dc628c5502a5ec416a116033e77543a0018ec7f5e266c"
+    },
+    {
+      "path": "docs/DR_EXPERIMENT_PLAN_V1.md",
+      "sha256": "7d2d9201ba04800ba4af6de14b4e4d4541dcc6d101a8cf259550ee30df0ecffe"
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "8670ff3b604b128937a439d5f151cbbb4535cb6e5d5160f92ede278cffa9ba9a"
+    }
+  ],
+  "evidenceMirrorReadback": true,
+  "newExperiments": 0,
+  "runtime": "Windows unchanged"
+}

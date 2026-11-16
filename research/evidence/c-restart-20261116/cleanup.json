@@ -1,0 +1,12 @@
+{
+  "listeners": [],
+  "units": {
+    "dr-restart-minio-20261116": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\n",
+    "dr-restart-initial-v1-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+    "dr-restart-upgrade-v2-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+    "dr-restart-fresh-v2-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+    "dr-restart-reuse-v2-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+    "dr-restart-bad-cached-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+    "dr-restart-bad-empty-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n"
+  }
+}

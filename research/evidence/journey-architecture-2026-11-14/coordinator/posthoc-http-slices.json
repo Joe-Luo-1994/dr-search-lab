@@ -1,0 +1,68 @@
+{
+  "scope": "post-hoc descriptive slicing of original mixed window; no API calls, no functional replay, no new SLO acceptance",
+  "percentile": "nearest rank ceil(.95*n)",
+  "limitations": [
+    "64 search/16 body per candidate, short closed-loop window, four clients",
+    "synthetic mostly1.1KB pure text, not production Lexical distribution",
+    "shared host, warm cache and different run times; no causal cost proof",
+    "does not establish user-visible browser completion or production search-only SLO"
+  ],
+  "candidates": {
+    "ES": {
+      "source": "evidence/s1-capacity-2026-11-14/reviewer/http-1000000.json",
+      "sha256": "599d50c28e564535df2e87fa459c9c6fb302c65af59230293aa30ddc172c349e",
+      "originalMixedWindowMs": 980.1407299999998,
+      "groups": {
+        "all_http": {
+          "n": 80,
+          "p95Ms": 111.0754260000001,
+          "maxMs": 126.52622699999984,
+          "over2s": 0,
+          "non200": 0
+        },
+        "search": {
+          "n": 64,
+          "p95Ms": 115.42688899999985,
+          "maxMs": 126.52622699999984,
+          "over2s": 0,
+          "non200": 0
+        },
+        "body": {
+          "n": 16,
+          "p95Ms": 7.944686999999703,
+          "maxMs": 7.944686999999703,
+          "over2s": 0,
+          "non200": 0
+        }
+      }
+    },
+    "SQLite_scope": {
+      "source": "evidence/s1-scope-2026-11-14/reviewer/http-1000000.json",
+      "sha256": "e882f8cc13a13de61bedff585fac27ac957cb7e30743cbf1b4eb3589bf976a9e",
+      "originalMixedWindowMs": 23734.704458,
+      "groups": {
+        "all_http": {
+          "n": 80,
+          "p95Ms": 2435.9034150000043,
+          "maxMs": 2499.0056210000002,
+          "over2s": 8,
+          "non200": 0
+        },
+        "search": {
+          "n": 64,
+          "p95Ms": 2445.5354340000013,
+          "maxMs": 2499.0056210000002,
+          "over2s": 8,
+          "non200": 0
+        },
+        "body": {
+          "n": 16,
+          "p95Ms": 8.153207999999722,
+          "maxMs": 8.153207999999722,
+          "over2s": 0,
+          "non200": 0
+        }
+      }
+    }
+  }
+}

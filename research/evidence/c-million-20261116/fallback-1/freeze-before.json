@@ -1,0 +1,277 @@
+{
+  "at": 1794762010.120819,
+  "files": {
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/environment.py": {
+      "sha256": "52f204316c44e007df23e9afc6abcbd6c0e297c8e06043d65ae05fca37ad9506",
+      "bytes": 12575
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/fixture-contract.md": {
+      "sha256": "7feb2f040bebd6039ce99503787a7390054bb6dce376d90390e8ce185a29368b",
+      "bytes": 5469
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/fixture.mjs": {
+      "sha256": "6431ea3dbee63430117c1770c666c55f3cd898e440dddbcc20c115c84bb6024c",
+      "bytes": 11256
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/load.mjs": {
+      "sha256": "c7596e756be6e555665270bb85cedf6bedb246affa3a17ac349c88bdf376b029",
+      "bytes": 32688
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/next.config.mjs": {
+      "sha256": "afb60bf87607fc1d451ab06c79dca4f7e19babbf84db7113f584572b700c45d8",
+      "bytes": 168
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/pool.mjs": {
+      "sha256": "3de17fd0d5ba2f2dfe5e4afe6f5311f6d68a161d52d2ec03d22851409c241a2a",
+      "bytes": 3739
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/publish.mjs": {
+      "sha256": "6038de846f3c9e0317ff9914057f368fce61ba05bbc9fc9d9e7b7be74f6a9150",
+      "bytes": 1745
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/service.mjs": {
+      "sha256": "2f1ef7c5813adaf8d9557ab5dccbc42fddc66ec602fbb0102982c6299f573f3f",
+      "bytes": 8001
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/source.mjs": {
+      "sha256": "ae35a9c1dc23ad9789d986c3168b1d59e0d05dcabc2b700f91eaf00ea4fd60b7",
+      "bytes": 3917
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/storage.mjs": {
+      "sha256": "78643b3b5b89ef80f7b43b90d8fdda6c52dd2bc3ec200f3e85545bbfe7be2125",
+      "bytes": 3564
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/worker.mjs": {
+      "sha256": "d33b75f0c3394205c7a51344ca5d380dfde7996270a70371aa64e372127550d5",
+      "bytes": 2430
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/pages/index.js": {
+      "sha256": "9bec318e58860cbcb801a3ca8d251fb962bc8aa17f3acc6c68edba415ddfcf48",
+      "bytes": 141
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/pages/docs/[id].js": {
+      "sha256": "3e65beea34c217ab6142391f28975a1bb0aa3621acac17093dca3a9bcb0b8150",
+      "bytes": 2006
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/pages/api/capi/[op].js": {
+      "sha256": "51444c4a49d4bebdbe54e939a9d94c00c13e7f24404896eca11a17f54bd55dfa",
+      "bytes": 248
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/environment.py": {
+      "sha256": "52f204316c44e007df23e9afc6abcbd6c0e297c8e06043d65ae05fca37ad9506",
+      "bytes": 12575
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/fixture-contract.md": {
+      "sha256": "7feb2f040bebd6039ce99503787a7390054bb6dce376d90390e8ce185a29368b",
+      "bytes": 5469
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/fixture.mjs": {
+      "sha256": "6431ea3dbee63430117c1770c666c55f3cd898e440dddbcc20c115c84bb6024c",
+      "bytes": 11256
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/load.mjs": {
+      "sha256": "c7596e756be6e555665270bb85cedf6bedb246affa3a17ac349c88bdf376b029",
+      "bytes": 32688
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/next.config.mjs": {
+      "sha256": "afb60bf87607fc1d451ab06c79dca4f7e19babbf84db7113f584572b700c45d8",
+      "bytes": 168
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/pool.mjs": {
+      "sha256": "3de17fd0d5ba2f2dfe5e4afe6f5311f6d68a161d52d2ec03d22851409c241a2a",
+      "bytes": 3739
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/publish.mjs": {
+      "sha256": "6038de846f3c9e0317ff9914057f368fce61ba05bbc9fc9d9e7b7be74f6a9150",
+      "bytes": 1745
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/service.mjs": {
+      "sha256": "2f1ef7c5813adaf8d9557ab5dccbc42fddc66ec602fbb0102982c6299f573f3f",
+      "bytes": 8001
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/source.mjs": {
+      "sha256": "ae35a9c1dc23ad9789d986c3168b1d59e0d05dcabc2b700f91eaf00ea4fd60b7",
+      "bytes": 3917
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/storage.mjs": {
+      "sha256": "78643b3b5b89ef80f7b43b90d8fdda6c52dd2bc3ec200f3e85545bbfe7be2125",
+      "bytes": 3564
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/worker.mjs": {
+      "sha256": "d33b75f0c3394205c7a51344ca5d380dfde7996270a70371aa64e372127550d5",
+      "bytes": 2430
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/pages/index.js": {
+      "sha256": "9bec318e58860cbcb801a3ca8d251fb962bc8aa17f3acc6c68edba415ddfcf48",
+      "bytes": 141
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/pages/docs/[id].js": {
+      "sha256": "3e65beea34c217ab6142391f28975a1bb0aa3621acac17093dca3a9bcb0b8150",
+      "bytes": 2006
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/pages/api/capi/[op].js": {
+      "sha256": "51444c4a49d4bebdbe54e939a9d94c00c13e7f24404896eca11a17f54bd55dfa",
+      "bytes": 248
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fallback-1/config-public.json": {
+      "sha256": "b1e20adf509b4c0cb78497aa6e078c7e43a98f9ed38dac2d48338f434db643e0",
+      "bytes": 1674
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fallback-1/limits.json": {
+      "sha256": "54c33d17926b5ba729f34eb7478b0aba261a234a014510a8e4b0c8e11a6d0e85",
+      "bytes": 457
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/docs/C_MILLION_PLAN_20261116.md": {
+      "sha256": "113d99133f2277ca4af6105b6e51556326d8c11b643a60abeee76f03bcf3bfc4",
+      "bytes": 6617
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/package-lock.json": {
+      "sha256": "4c801956b808122c4a0610b98881bede76853f4f69f30d479470fdce8e8a3ca8",
+      "bytes": 30875
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/node_modules/next/package.json": {
+      "sha256": "76f5b7ef447577c2855eee017ae8a47aeefc1e4c95e71387b66c2671283682c8",
+      "bytes": 3188
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/node_modules/react/package.json": {
+      "sha256": "9cc9c3de5441a2eea7f41f52f3f2a15a4fc51f90c0b72741f0d7638643a85e67",
+      "bytes": 1242
+    },
+    "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node": {
+      "sha256": "ccacb2d6d87ba6d118b2bffc1ae33747a05cc5fc6b1f1ec4fc1d420b687e952d",
+      "bytes": 121613584
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/interception-route-rewrite-manifest.js": {
+      "sha256": "fc5133e40acf09e6517b073ddd7b5c0c218d09938848902210f2cc13f08e1c81",
+      "bytes": 48
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/webpack-api-runtime.js": {
+      "sha256": "94dd0db09ffcb086c43b80e82cafed2bedea169614fef4f52fcaa1b703a6fb71",
+      "bytes": 927
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages-manifest.json": {
+      "sha256": "abf84dd9413bad98b1bed13c3c6c4f9a414242d6978daa32706e9c55d0ac0a73",
+      "bytes": 239
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/dynamic-css-manifest.js": {
+      "sha256": "552e8e00b2a9b3bb878bf5706a310b912dd0943c8841663006a94933ea6c10fb",
+      "bytes": 33
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/middleware-react-loadable-manifest.js": {
+      "sha256": "ad2e79ec91e2a5440840da3d8bd222c279b3b4c47e89a968327a66f6cb12eb82",
+      "bytes": 36
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/preview-props.json": {
+      "sha256": "ab4da90b8a9618f624fdd90e2fccb43af58eedb3a0df3da15f8ca94cc0594660",
+      "bytes": 250
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/next-font-manifest.json": {
+      "sha256": "926e772d34a53f2a4d9b16071dd6ea77b051b2b7acc49d9165723debe3fbbe0f",
+      "bytes": 77
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/webpack-runtime.js": {
+      "sha256": "ff0d3c0d490ef6cf8cd012615507b9934e9d5dcce54a5b9fd01b08e796185c28",
+      "bytes": 1008
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/middleware-build-manifest.js": {
+      "sha256": "500435d1a8d1c4ece99214c058d37cc065e46ec68d077ec3e56ef3c8d3b88b51",
+      "bytes": 1028
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/next-font-manifest.js": {
+      "sha256": "2c0f5bbb79d07dfea405146a62d7e15a7a9e890d29e38b7db2631fcf6e480da8",
+      "bytes": 106
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/middleware-manifest.json": {
+      "sha256": "0a8520bc7e076f7ae717c2d62713990c83e8a3d74626f327a3844bc0504e210c",
+      "bytes": 83
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/functions-config-manifest.json": {
+      "sha256": "e7d9c7de4b1a0e8ed521c8ca071261fb4a0de053afc0040538c0a50e5e4c1ee4",
+      "bytes": 37
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/index.js.nft.json": {
+      "sha256": "2402924352f949eea96821a995251fff5d8205dbf13b217c488e20ccb0fe7531",
+      "bytes": 154
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/_document.js": {
+      "sha256": "85f9116f8717b945874d7bf399c15cb0eba3708f03870c60a982520d78712879",
+      "bytes": 368
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/index.html": {
+      "sha256": "c84d360d73dcc7ed7c1ff04b2c28b25ba52e2a9a251ec2270932502db44232f2",
+      "bytes": 1215
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/_app.js.nft.json": {
+      "sha256": "524a9d086867b0956314600b9ba81ed890d5439786bd7fcfefc567e02f056535",
+      "bytes": 174
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/404.html": {
+      "sha256": "9307a432dda601515227dbe794f2e1a447d83afed474c9f4bd67497854aa1964",
+      "bytes": 2021
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/_app.js": {
+      "sha256": "dda7d86b31aa23b844fb9f1d2f497e72f0eef85bd55bec946ced0300f1b18647",
+      "bytes": 3241
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/_error.js": {
+      "sha256": "06ee4bdeedc3eb5c2d964f3f00e8633e4411453dca6fde5c90692bbe98a00566",
+      "bytes": 6158
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/_document.js.nft.json": {
+      "sha256": "f5b61613573453285e84285a1e005b47f456daabbdee130ff6db9f8f1ad65d6a",
+      "bytes": 198
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/_error.js.nft.json": {
+      "sha256": "6a43469670bbc77669e703e83114fc52af43dab0d43650990a18a698a0e5ec12",
+      "bytes": 130
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/500.html": {
+      "sha256": "16a6e953436714441d1d219be315a652f91e525bec1d9bbfa836cb042bf42208",
+      "bytes": 2007
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/chunks/760.js": {
+      "sha256": "605a6f0f33ca5d4eaa0d720b12263b1cd2e80ea4067f3b02b402f4a57f19477b",
+      "bytes": 82508
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/chunks/360.js": {
+      "sha256": "e815a2eed6c48f15ad70c212f8aaf546b0ab97020c5a9fc3b61d306cbbda1d8f",
+      "bytes": 70871
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/docs/[id].js.nft.json": {
+      "sha256": "b35416bb3a392f68abfb39e73f7e4f70060f4a736230f43986d0fec027963876",
+      "bytes": 172
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/docs/[id].js": {
+      "sha256": "bebddd477ff389da2833bf76c4c5052abe419b296b1507af9ea69fe085379375",
+      "bytes": 3612
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/api/capi/[op].js.nft.json": {
+      "sha256": "5d853c4bc2b926b81b67d5bb4977d9b68abac3918a2ce99560cc190b0eb269a8",
+      "bytes": 144
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/.next/server/pages/api/capi/[op].js": {
+      "sha256": "bb2530c86b8bec34a950c9298034cfd71762f64553f2c209c1403dd10d24c858",
+      "bytes": 54149
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/v1/search.sqlite": {
+      "sha256": "0b1a4379e317ef59289df3c1218c291d6047d5b3a3b9196600e8c182d8bd9147",
+      "bytes": 3312799744
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/v1/manifest.json": {
+      "sha256": "f30ee717be966485bc0d42892e0ccf0b64c021507c479ac51ca540f048d545b9",
+      "bytes": 68456
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/v2/search.sqlite": {
+      "sha256": "431c3d7f06fb52fbc6e60ee1ce29af3290cd27f71f57afc95693a71cc7619bc6",
+      "bytes": 3313811456
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/v2/manifest.json": {
+      "sha256": "34f0c1c596d9524866fb4e32469be51b710c769fa2a9bbbcd240c5b47e184999",
+      "bytes": 68715
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/oracle.json": {
+      "sha256": "7b49c20b7ef7d4290cb770c0caf63e9fb148da974e67a5588f92f6b99f3be26a",
+      "bytes": 160100
+    }
+  }
+}

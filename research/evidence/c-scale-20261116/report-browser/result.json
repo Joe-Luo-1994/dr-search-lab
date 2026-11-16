@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "width-320",
+    "width-390",
+    "width-1280",
+    "all-details",
+    "expanded-mobile",
+    "evidence-links",
+    "no-page-errors"
+  ],
+  "errors": [],
+  "scope": "agent report inspection, not user acceptance or load"
+}

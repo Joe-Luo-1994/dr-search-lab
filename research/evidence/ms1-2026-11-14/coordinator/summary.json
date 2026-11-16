@@ -1,0 +1,143 @@
+{
+  "sourceCommit": "c558a51f7c76a62e657310fc3f3554ef99baad8d",
+  "status": "Completed bounded MS1; no candidate passes complete million-page work set",
+  "independentGroups": {
+    "standards": "ms1_review",
+    "implementation": "ms1_implementation"
+  },
+  "semantic": [
+    {
+      "engine": "sqlite",
+      "N": 60,
+      "passed": 18,
+      "tasks": 18,
+      "requests": 32
+    },
+    {
+      "engine": "pagefind",
+      "N": 60,
+      "passed": 18,
+      "tasks": 18,
+      "requests": 32
+    }
+  ],
+  "stages": [
+    {
+      "engine": "sqlite",
+      "N": 10000,
+      "buildSeconds": 1.006345458998112,
+      "buildTreePeakSampledRssBytes": 81436672,
+      "buildStop": null,
+      "artifactLogicalBytes": 22741504,
+      "capacity": {
+        "stagePassed": true,
+        "tasksPassed": 20,
+        "tasksExecuted": 20,
+        "requests": 102,
+        "mixedExecuted": true,
+        "mixedFailedOperations": 0,
+        "stopped": false
+      }
+    },
+    {
+      "engine": "pagefind",
+      "N": 10000,
+      "buildSeconds": 12.347625261998473,
+      "buildTreePeakSampledRssBytes": 1004523520,
+      "buildStop": null,
+      "artifactLogicalBytes": 26069408,
+      "capacity": {
+        "stagePassed": true,
+        "tasksPassed": 20,
+        "tasksExecuted": 20,
+        "requests": 102,
+        "mixedExecuted": true,
+        "mixedFailedOperations": 0,
+        "stopped": false
+      }
+    },
+    {
+      "engine": "sqlite",
+      "N": 100000,
+      "buildSeconds": 9.793842945000506,
+      "buildTreePeakSampledRssBytes": 116477952,
+      "buildStop": null,
+      "artifactLogicalBytes": 215602670,
+      "capacity": {
+        "stagePassed": true,
+        "tasksPassed": 20,
+        "tasksExecuted": 20,
+        "requests": 102,
+        "mixedExecuted": true,
+        "mixedFailedOperations": 0,
+        "stopped": false
+      }
+    },
+    {
+      "engine": "pagefind",
+      "N": 100000,
+      "buildSeconds": 102.85452584800078,
+      "buildTreePeakSampledRssBytes": 6505082880,
+      "buildStop": "TREE_RSS_LIMIT",
+      "artifactLogicalBytes": 147398656,
+      "capacity": null
+    },
+    {
+      "engine": "sqlite",
+      "N": 1000000,
+      "buildSeconds": 105.22909611399882,
+      "buildTreePeakSampledRssBytes": 139288576,
+      "buildStop": null,
+      "artifactLogicalBytes": 2133084634,
+      "capacity": {
+        "stagePassed": false,
+        "tasksPassed": 13,
+        "tasksExecuted": 14,
+        "requests": 14,
+        "mixedExecuted": false,
+        "mixedFailedOperations": null,
+        "stopped": true
+      }
+    }
+  ],
+  "criticalFindings": [
+    "SQLite actual million pages and FTS rows independently audited; 13 large tasks correct, deep OFFSET page100000 exceeded5s.",
+    "HTTP abort did not stop synchronous query; bounded cleanup used KILL.",
+    "Pagefind100k builder exceeded predeclared6GiB sampled treeRSS budget; no valid bundle or reader test at100k/1M.",
+    "SQLite EXPLAIN includes body in sort record; proposed ID-first pagination untested."
+  ],
+  "limitations": [
+    "Synthetic fixed corpus/Space distribution",
+    "Fresh process not OS cold cache",
+    "RSS excludes OS cache; artifact bytes exclude unlinked temp peak",
+    "Short mixed windows not sustained capacity/SLA",
+    "No production identity/GM, MinIO integration, real consumer acceptance or same-corpus ES total-resource comparison",
+    "PF build failure does not imply reader infeasibility"
+  ],
+  "preservedProtectedFiles": {
+    ".lab/data/manifest.json": true,
+    ".lab/data/v1-attachments.mini.json": true,
+    ".lab/data/v1-attachments.orama.json": true,
+    ".lab/data/v1-attachments.sqlite": true,
+    ".lab/data/v1-body.mini.json": true,
+    ".lab/data/v1-body.orama.json": true,
+    ".lab/data/v1-body.sqlite": true,
+    ".lab/data/v1.json": true,
+    ".lab/data/v2-attachments.mini.json": true,
+    ".lab/data/v2-attachments.orama.json": true,
+    ".lab/data/v2-attachments.sqlite": true,
+    ".lab/data/v2-body.mini.json": true,
+    ".lab/data/v2-body.orama.json": true,
+    ".lab/data/v2-body.sqlite": true,
+    ".lab/data/v2.json": true,
+    ".next/BUILD_ID": true,
+    ".lab/reports/es-experiment-latest.json": true
+  },
+  "cleanupEvidence": [
+    "implementation/runtime-cleanup.json",
+    "implementation/ports-cleanup.json",
+    "implementation/pagefind-100000-cleanup.json"
+  ],
+  "committed": false,
+  "pushed": false
+}

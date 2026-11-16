@@ -1,0 +1,266 @@
+{
+  "stages": [
+    {
+      "name": "web-only-baseline",
+      "qualifies": true,
+      "lanes": {
+        "web": {
+          "terminal": 30,
+          "fulfilled": 30,
+          "canceled": 0,
+          "p95Successful": 22.78342100000009
+        }
+      },
+      "resource": {
+        "reader": {
+          "samples": 60,
+          "sampledPeakBytes": 3550105600,
+          "sampledWindowMs": 29527.521878000003,
+          "averageCpuCores": 0.02545269471326543,
+          "throttledMs": 0,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        },
+        "minio": {
+          "samples": 15,
+          "sampledPeakBytes": 3635597312,
+          "sampledWindowMs": 28026.063104,
+          "averageCpuCores": 0.0033974447158941212,
+          "throttledMs": 0,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        }
+      }
+    },
+    {
+      "name": "consumer-1",
+      "qualifies": true,
+      "lanes": {
+        "web": {
+          "terminal": 30,
+          "fulfilled": 30,
+          "canceled": 0,
+          "p95Successful": 19.154790000000503
+        },
+        "consumer": {
+          "terminal": 30,
+          "fulfilled": 30,
+          "canceled": 0,
+          "p95Successful": 1078.9829539999992
+        }
+      },
+      "resource": {
+        "reader": {
+          "samples": 60,
+          "sampledPeakBytes": 3545276416,
+          "sampledWindowMs": 29518.747712000004,
+          "averageCpuCores": 0.5013761472673681,
+          "throttledMs": 0,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        },
+        "minio": {
+          "samples": 15,
+          "sampledPeakBytes": 3635785728,
+          "sampledWindowMs": 28017.581361999997,
+          "averageCpuCores": 0.002919809491869729,
+          "throttledMs": 0,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        }
+      }
+    },
+    {
+      "name": "consumer-2",
+      "qualifies": true,
+      "lanes": {
+        "web": {
+          "terminal": 30,
+          "fulfilled": 30,
+          "canceled": 0,
+          "p95Successful": 439.156210000001
+        },
+        "consumer": {
+          "terminal": 60,
+          "fulfilled": 60,
+          "canceled": 0,
+          "p95Successful": 1082.6002459999872
+        }
+      },
+      "resource": {
+        "reader": {
+          "samples": 60,
+          "sampledPeakBytes": 3547541504,
+          "sampledWindowMs": 29514.450485,
+          "averageCpuCores": 1.0110197719983063,
+          "throttledMs": 38.883,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        },
+        "minio": {
+          "samples": 15,
+          "sampledPeakBytes": 3636023296,
+          "sampledWindowMs": 28014.411632999996,
+          "averageCpuCores": 0.002023708394904058,
+          "throttledMs": 0,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        }
+      }
+    },
+    {
+      "name": "consumer-4",
+      "qualifies": false,
+      "lanes": {
+        "web": {
+          "terminal": 30,
+          "fulfilled": 30,
+          "canceled": 0,
+          "p95Successful": 2978.2227730000013
+        },
+        "consumer": {
+          "terminal": 120,
+          "fulfilled": 120,
+          "canceled": 0,
+          "p95Successful": 1806.0072900000087
+        }
+      },
+      "resource": {
+        "reader": {
+          "samples": 62,
+          "sampledPeakBytes": 3565219840,
+          "sampledWindowMs": 30508.531332,
+          "averageCpuCores": 1.975358739631905,
+          "throttledMs": 439.09,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        },
+        "minio": {
+          "samples": 15,
+          "sampledPeakBytes": 3644092416,
+          "sampledWindowMs": 28007.718643,
+          "averageCpuCores": 0.0032625292036357165,
+          "throttledMs": 0,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        }
+      }
+    },
+    {
+      "name": "consumer-plus-bulk",
+      "qualifies": true,
+      "lanes": {
+        "web": {
+          "terminal": 30,
+          "fulfilled": 30,
+          "canceled": 0,
+          "p95Successful": 444.4613539999991
+        },
+        "consumer": {
+          "terminal": 60,
+          "fulfilled": 60,
+          "canceled": 0,
+          "p95Successful": 1077.059797999973
+        },
+        "bulk": {
+          "terminal": 60,
+          "fulfilled": 60,
+          "canceled": 0,
+          "p95Successful": 431.83013299999584
+        }
+      },
+      "resource": {
+        "reader": {
+          "samples": 60,
+          "sampledPeakBytes": 3606179840,
+          "sampledWindowMs": 29508.220468999993,
+          "averageCpuCores": 1.024950014582325,
+          "throttledMs": 22.622,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        },
+        "minio": {
+          "samples": 15,
+          "sampledPeakBytes": 3664510976,
+          "sampledWindowMs": 28008.91599499999,
+          "averageCpuCores": 0.005966171630127739,
+          "throttledMs": 0,
+          "memoryMaxEvents": 0,
+          "oom": 0,
+          "ioAvailable": false
+        }
+      }
+    },
+    {
+      "name": "consumer-bulk-update",
+      "qualifies": false,
+      "lanes": {
+        "web": {
+          "terminal": 180,
+          "fulfilled": 85,
+          "canceled": 95,
+          "p95Successful": 553.1475600000122
+        },
+        "consumer": {
+          "terminal": 360,
+          "fulfilled": 169,
+          "canceled": 191,
+          "p95Successful": 1111.7817860000068
+        },
+        "bulk": {
+          "terminal": 360,
+          "fulfilled": 169,
+          "canceled": 191,
+          "p95Successful": 459.28431499999715
+        }
+      },
+      "resource": {
+        "reader": {
+          "samples": 169,
+          "sampledPeakBytes": 4294967296,
+          "sampledWindowMs": 84027.442495,
+          "averageCpuCores": 1.2639913205298372,
+          "throttledMs": 3403.395,
+          "memoryMaxEvents": 28778,
+          "oom": 0,
+          "ioAvailable": false
+        },
+        "minio": {
+          "samples": 43,
+          "sampledPeakBytes": 4294365184,
+          "sampledWindowMs": 84027.442495,
+          "averageCpuCores": 0.03522077921360161,
+          "throttledMs": 0,
+          "memoryMaxEvents": 1334,
+          "oom": 0,
+          "ioAvailable": false
+        }
+      }
+    }
+  ],
+  "stop": {
+    "category": "capacity",
+    "reason": "WORKER_START_TIMEOUT",
+    "at": "2026-11-15T17:04:21.342Z",
+    "ms": 240508.704453
+  },
+  "unexecuted": [
+    {
+      "name": "consumer-8",
+      "reason": "capacity:WORKER_START_TIMEOUT"
+    },
+    {
+      "name": "consumer-16",
+      "reason": "capacity:WORKER_START_TIMEOUT"
+    }
+  ]
+}

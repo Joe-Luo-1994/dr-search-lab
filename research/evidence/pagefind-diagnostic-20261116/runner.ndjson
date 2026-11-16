@@ -1,0 +1,5 @@
+{"atMs":1794799677351,"stage":"source.verified","files":10586}
+{"atMs":1794799708109,"stage":"artifact.verified","files":101571}
+{"atMs":1794799708334,"stage":"server.ready","pid":1461}
+{"atMs":1794799708337,"stage":"query.begin"}
+{"atMs":1794799713347,"stage":"query.end","elapsedMs":5005.050858000002,"validator":{"passed":false,"issues":["TimeoutError","QUERY_DEADLINE_EXCEEDED"]}}

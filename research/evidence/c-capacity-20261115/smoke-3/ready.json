@@ -1,0 +1,39 @@
+{
+  "snapshotId": "v1",
+  "pid": 1597,
+  "workers": [
+    1616,
+    1617
+  ],
+  "queue": 0,
+  "contentInFlight": 0,
+  "updating": false,
+  "testHooks": true,
+  "fatal": null,
+  "events": [
+    {
+      "type": "download-start",
+      "at": 1794759134045,
+      "version": "v1",
+      "badHash": false
+    },
+    {
+      "type": "download-end",
+      "at": 1794759134134,
+      "version": "v1",
+      "downloadStartedMs": 1794759134054,
+      "downloadEndedMs": 1794759134134,
+      "bytes": 33538048,
+      "elapsedMs": 79.75955299999987
+    },
+    {
+      "type": "ready",
+      "at": 1794759134208,
+      "snapshotId": "v1",
+      "downloadStartedMs": 1794759134054,
+      "downloadEndedMs": 1794759134134,
+      "bytes": 33538048,
+      "elapsedMs": 79.75955299999987
+    }
+  ]
+}

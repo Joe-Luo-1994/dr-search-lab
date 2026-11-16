@@ -1,0 +1,102 @@
+{
+  "snapshotId": "v1",
+  "pid": 13286,
+  "workers": [
+    13335,
+    13336,
+    13337,
+    13343,
+    13349,
+    13355,
+    13361,
+    13367
+  ],
+  "queue": 0,
+  "contentInFlight": 0,
+  "updating": false,
+  "testHooks": false,
+  "fatal": null,
+  "metrics": {
+    "eventLoop": {
+      "p95Ms": 20.332543,
+      "maxMs": 20.889599,
+      "meanMs": 20.0840089837587,
+      "utilization": 0.21543452077454003
+    },
+    "pool": {
+      "jobs": 1,
+      "queued": 0,
+      "busy": 0,
+      "timings": [
+        {
+          "op": "check",
+          "lane": "internal",
+          "queueMs": 0.03708799999913026,
+          "workerMs": 8183.256663,
+          "totalMs": 8184.502311
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "type": "download-start",
+      "at": 1794789054935,
+      "version": "v1",
+      "badHash": false
+    },
+    {
+      "type": "download-end",
+      "at": 1794789064036,
+      "version": "v1",
+      "downloadStartedMs": 1794789054947,
+      "downloadEndedMs": 1794789064036,
+      "bytes": 3312799744,
+      "elapsedMs": 9089.757126
+    },
+    {
+      "type": "ready",
+      "at": 1794789072256,
+      "snapshotId": "v1",
+      "downloadStartedMs": 1794789054947,
+      "downloadEndedMs": 1794789064036,
+      "bytes": 3312799744,
+      "elapsedMs": 9089.757126
+    }
+  ],
+  "observedReadySeconds": 17.35584257100004,
+  "workerProcesses": {
+    "13335": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/cache/v1/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-scale-r2-reader-20261116.service\n"
+    },
+    "13336": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/cache/v1/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-scale-r2-reader-20261116.service\n"
+    },
+    "13337": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/cache/v1/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-scale-r2-reader-20261116.service\n"
+    },
+    "13343": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/cache/v1/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-scale-r2-reader-20261116.service\n"
+    },
+    "13349": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/cache/v1/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-scale-r2-reader-20261116.service\n"
+    },
+    "13355": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/cache/v1/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-scale-r2-reader-20261116.service\n"
+    },
+    "13361": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/cache/v1/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-scale-r2-reader-20261116.service\n"
+    },
+    "13367": {
+      "cmdline": "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/runtime/worker.mjs /PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-scale-20261116/r2/cache/v1/search.sqlite ",
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/dr-scale-r2-reader-20261116.service\n"
+    }
+  }
+}

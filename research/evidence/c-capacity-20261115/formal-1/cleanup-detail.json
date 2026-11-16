@@ -1,0 +1,11 @@
+{
+  "readerUnit": "Result=exit-code\nExecMainCode=1\nExecMainStatus=143\nActiveState=failed\n",
+  "readerPidsExist": {
+    "1749": false,
+    "1769": false,
+    "1770": false,
+    "1870": false,
+    "1871": false
+  },
+  "note": "Recorded after controller finally invoked systemctl stop; formal load already complete. Preserve exit 143 rather than hiding failed unit state."
+}

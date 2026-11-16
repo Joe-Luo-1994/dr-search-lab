@@ -1,0 +1,61 @@
+{
+  "snapshotId": "v1",
+  "pid": 2237,
+  "workers": [
+    2257,
+    2258
+  ],
+  "queue": 0,
+  "contentInFlight": 0,
+  "updating": false,
+  "testHooks": false,
+  "fatal": null,
+  "metrics": {
+    "eventLoop": {
+      "p95Ms": 20.283391,
+      "maxMs": 21.053439,
+      "meanMs": 20.077960045714285,
+      "utilization": 0.29544598055333215
+    },
+    "pool": {
+      "jobs": 1,
+      "queued": 0,
+      "busy": 0,
+      "timings": [
+        {
+          "op": "check",
+          "lane": "internal",
+          "queueMs": 0.052947000000131084,
+          "workerMs": 5031.264010999999,
+          "totalMs": 5032.672447000001
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "type": "download-start",
+      "at": 1794761985501,
+      "version": "v1",
+      "badHash": false
+    },
+    {
+      "type": "download-end",
+      "at": 1794761994512,
+      "version": "v1",
+      "downloadStartedMs": 1794761985511,
+      "downloadEndedMs": 1794761994512,
+      "bytes": 3312799744,
+      "elapsedMs": 9000.445988
+    },
+    {
+      "type": "ready",
+      "at": 1794761999572,
+      "snapshotId": "v1",
+      "downloadStartedMs": 1794761985511,
+      "downloadEndedMs": 1794761994512,
+      "bytes": 3312799744,
+      "elapsedMs": 9000.445988
+    }
+  ]
+}

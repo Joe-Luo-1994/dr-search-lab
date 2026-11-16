@@ -1,0 +1,1 @@
+Initial PF60 launch was attempted from isolated app working directory with root-relative monitor path, causing Python file-not-found before any build started. Recorded as command setup error; rerun once from repo root.

@@ -1,0 +1,2 @@
+✓ Running next.config.mjs took 20ms
+{"event":"remote_content_ready","cache":"main","pid":45556,"url":"http://127.0.0.1:3162","snapshotId":"v1-remote-content-20261115-v1","sourceSha256":"9ff1fd75af006e540fcf4b774538eb3c184ef04750a1cd49627f11e14b44eb99","manifestSha256":"bf6298ee2fd46c603438256ae9bb6ecb179004065d931d609308c74260533165","installedAt":"2026-11-15T15:08:01.876Z","directory":"/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-remote-content-20261115\\caches\\main\\v1"}

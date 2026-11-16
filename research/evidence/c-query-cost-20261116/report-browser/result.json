@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "width-320",
+    "width-390",
+    "width-1280",
+    "nine-query-cards",
+    "plan-disclosure",
+    "local-evidence-links",
+    "no-page-errors"
+  ],
+  "errors": [],
+  "scope": "agent layout/evidence inspection, not user acceptance or benchmark"
+}

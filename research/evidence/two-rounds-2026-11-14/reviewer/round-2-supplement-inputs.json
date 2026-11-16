@@ -1,0 +1,15 @@
+{
+  "sourceRoot": ".lab/product-api-lab/round-2",
+  "noPagefindRoot": ".lab/product-review/round-2-no-pagefind",
+  "noPagefindFiles": [
+    "fixture.json",
+    "search.sqlite"
+  ],
+  "corruptRoot": ".lab/product-review/round-2-corrupt-map",
+  "mutation": "delete one mapping entry; keep manifest unchanged",
+  "removedKey": "zh_2412337",
+  "removedPageId": "p07",
+  "mapBeforeSha256": "6b0a406a86eea8ac0d95160eece8fb06d040cb7b2e3a25e1a9a72b48f126f84c",
+  "mapAfterSha256": "8b192da80396b9c88e2c3c3b2100b3b202a689b63d35492424726c99fde2f632",
+  "fixtureSha256": "03c5f859e7fe87c8ac1951158cd1dfae3843f84e930de5b620eb5de2af251dde"
+}

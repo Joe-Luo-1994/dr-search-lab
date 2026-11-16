@@ -1,0 +1,1 @@
+{"name":"dr-product-api-lab","private":true,"type":"module","scripts":{"build":"next build --webpack"}}

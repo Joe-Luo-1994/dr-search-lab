@@ -1,0 +1,116 @@
+{
+  "allMatch": true,
+  "files": [
+    {
+      "path": "docs/DR_TEAM_DECISION_20261116.html",
+      "sha256": "2c43156473631995d446bb40e1cc00e5714296d685f1431c755fd19abd612f38",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_TEAM_DECISION_20261116.md",
+      "sha256": "030b873ad17e61f2164bafc80c69e9b60ce8bc7ec0526e20ba5a61b7901a26d0",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_TEAM_DECISION_REVIEW_20261116.md",
+      "sha256": "e4cb76da5bf8977048f10898f774ce339178fbf6a70908b0144bbcc3e001d4d5",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_LANDING_SCOPE_20261116.md",
+      "sha256": "f5ec924f05ab4532d062d71c8059f581ef275093160d5520dd94e33f79b9cd2b",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "sha256": "7a8c4355834bde1075e8a30f90da91b8ead5891c28acddd411f88aa1c791dfdb",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "335511696e06cafd1d02e10774970b7c515f0e5a43cc86a6557d35ef3cf61e61",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "d889d0ab20d94bf1ff9d5c693c8120f037f283c8f8b0a2fe23305db2ec8b3f8c",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_OPERATIONS_PRIORITY_20261116.md",
+      "sha256": "e3353472bd11b9d9aa0b9b31f27587d90bf7a372daa18678720e3d4386b06d16",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/team-decision-20261116/build.mjs",
+      "sha256": "1d787d3627b49610ebbbc1ec9398fce02eccd8e0743d94a05d19a8ff809b320a",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/team-decision-20261116/check-report.mjs",
+      "sha256": "a7fb0886d6c868468f41bb7710ce186d650bb0d5b7a76191488f30903cdad4ce",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/team-decision-20261116/deliver.py",
+      "sha256": "7dd40ee656a5764fabe9927632477e793f4a2304252772e0ad066c23aed2d86a",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/work-packages.json",
+      "sha256": "cc556cb21042a8f7bcf9097d897a4bd1fbba52bac7fbd2c24c0634429658b968",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/PUBLIC-HOST.png",
+      "sha256": "a3b74d99f5070d3d8294578a09e35cc05d862edb599a938649f1d50d4804ecb4",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/mobile-architecture.png",
+      "sha256": "8e7c99739ffc8393960ab9c715601e8bd587db56d9f0f17ffbc93d7db2f8469f",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/mobile-c-architecture.png",
+      "sha256": "c22e3ff20e978ccaed3b5f049a847a1d8ae9f1f564ecc97c7fed29ebf02f3eff",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/mobile-decision.png",
+      "sha256": "8f0e7fb48ea682c054894a040ade6533a5d16d4e47e9eb67bba75132b3239355",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/mobile-es-update.png",
+      "sha256": "bf46ca509255138b71b9777feb3aa87784c5899df23bc52ad7feb5a0b593c4a6",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/mobile-opening.png",
+      "sha256": "7b7d114c2d2f698f1be2cf16b31e1e447a06650c014aa7a45468562b03d80fee",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/mobile-work-expanded.png",
+      "sha256": "5a63750a5c2da479bce3eff3567959167cff1dfd422c308521af037d75d8ce68",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/mobile-work.png",
+      "sha256": "39e5722b2efc806073be24d686a471f1ece6d08361ae9729f18da2ec016a6983",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/result-before-review-file.json",
+      "sha256": "67e2e089d477b10ce01a9a389727e0d527111296eee4c830243227bd6c8c26ab",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/team-decision-20261116/browser/result.json",
+      "sha256": "7443fb3db1e095371c9a72cba48cc88e6391600ccff6e29a2bcccc67ac073a33",
+      "readBackMatch": true
+    }
+  ],
+  "scope": "report, reviewer, UI evidence and handoff; no credentials/DB/commit/push/new load"
+}

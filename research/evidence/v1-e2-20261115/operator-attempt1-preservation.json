@@ -1,0 +1,25 @@
+{
+  "reviewerApprovedSingleRecorderRepair": true,
+  "interventionCount": 1,
+  "reason": "Operator-added transcript writer conflict before install",
+  "preservedAt": "/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\operator-attempt1",
+  "files": [
+    {
+      "sha256": "1168ED136BF963AB09F85DA4F39C285651DCD39E604DC340B048CDD96B96DF61",
+      "bytes": 226,
+      "name": "failure.txt"
+    },
+    {
+      "sha256": "7713B5488A9B1EEDA9238930EB25E951A0C2D6405FBAAC226DBF628990D67395",
+      "bytes": 5775,
+      "name": "operator-run.ps1"
+    },
+    {
+      "sha256": "B3FEB3D4CA6F154225804C865A75A89F79CF58EC22FB3D85D6F5266C48B7FF30",
+      "bytes": 1458,
+      "name": "operator-transcript.txt"
+    }
+  ],
+  "attempt": 1,
+  "productInstallStarted": false
+}

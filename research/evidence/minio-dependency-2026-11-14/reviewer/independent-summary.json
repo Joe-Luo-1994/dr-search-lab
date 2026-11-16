@@ -1,0 +1,190 @@
+{
+  "http": {
+    "total": 405,
+    "perPhase": {
+      "baseline": 30,
+      "outage": 34,
+      "empty": 4,
+      "recovered": 19,
+      "paced": 300,
+      "retained": 9,
+      "million": 9
+    },
+    "statusCounts": {
+      "200": 391,
+      "503": 7,
+      "404": 4,
+      "409": 1,
+      "400": 2
+    },
+    "allPassed": true
+  },
+  "trueMinioOutage": {
+    "unreachableAt": "2026-11-14T11:17:53.185Z",
+    "restartedReadyAt": "2026-11-14T11:18:03.222Z",
+    "observedIntervalMs": 10037.0,
+    "oldPid": 18877,
+    "newPid": 18993,
+    "allOutageAndEmptyRequestsWithinInterval": true
+  },
+  "paced": {
+    "configuredBytesPerSecond": 20971520,
+    "bytes": 2133065728,
+    "minimumPayloadMs": 101712.5,
+    "actualObjectMs": 101713.821723,
+    "getStartedAt": "2026-11-14T11:18:18.579Z",
+    "getEndedAt": "2026-11-14T11:20:00.293Z",
+    "tickStartsOverlapping": 100,
+    "fullChainsOverlapping": 100,
+    "ticks": 100
+  },
+  "latency": {
+    "baseline": {
+      "search": {
+        "samples": 10,
+        "minMs": 4.39186300000074,
+        "medianMs": 7.256667000001471,
+        "p95Ms": 108.05861700000001,
+        "maxMs": 108.05861700000001
+      },
+      "body": {
+        "samples": 10,
+        "minMs": 1.7289190000001327,
+        "medianMs": 2.673431000000164,
+        "p95Ms": 7.732223000000005,
+        "maxMs": 7.732223000000005
+      },
+      "media": {
+        "samples": 10,
+        "minMs": 1.8757489999998143,
+        "medianMs": 2.494996000001265,
+        "p95Ms": 8.48179399999998,
+        "maxMs": 8.48179399999998
+      },
+      "all": {
+        "samples": 30,
+        "minMs": 1.7289190000001327,
+        "medianMs": 4.849431999999979,
+        "p95Ms": 14.274092999999993,
+        "maxMs": 108.05861700000001
+      },
+      "ticks": {
+        "count": 10,
+        "maxLagMs": 1.4188120000000026,
+        "observedFirstStartToLastEndMs": 9013
+      }
+    },
+    "outage": {
+      "search": {
+        "samples": 10,
+        "minMs": 4.634073000000171,
+        "medianMs": 6.600070000000414,
+        "p95Ms": 9.034528000000137,
+        "maxMs": 9.034528000000137
+      },
+      "body": {
+        "samples": 10,
+        "minMs": 1.6302930000001652,
+        "medianMs": 2.3797649999996793,
+        "p95Ms": 3.2461710000002313,
+        "maxMs": 3.2461710000002313
+      },
+      "media": {
+        "samples": 10,
+        "minMs": 1.761199000000488,
+        "medianMs": 2.5993020000000797,
+        "p95Ms": 3.4750440000002527,
+        "maxMs": 3.4750440000002527
+      },
+      "all": {
+        "samples": 30,
+        "minMs": 1.6302930000001652,
+        "medianMs": 2.776821000000382,
+        "p95Ms": 7.303226999999879,
+        "maxMs": 9.034528000000137
+      },
+      "ticks": {
+        "count": 10,
+        "maxLagMs": 1.0101210000000265,
+        "observedFirstStartToLastEndMs": 9012
+      }
+    },
+    "paced": {
+      "search": {
+        "samples": 100,
+        "minMs": 3.753242999999202,
+        "medianMs": 5.019668999999908,
+        "p95Ms": 17.485737999995763,
+        "maxMs": 32.126667000000005
+      },
+      "body": {
+        "samples": 100,
+        "minMs": 1.4834000000118976,
+        "medianMs": 1.959077999999863,
+        "p95Ms": 3.0102399999886984,
+        "maxMs": 4.729153000000224
+      },
+      "media": {
+        "samples": 100,
+        "minMs": 1.5132140000059735,
+        "medianMs": 1.9129059999977471,
+        "p95Ms": 3.4082219999982044,
+        "maxMs": 8.119219000000157
+      },
+      "all": {
+        "samples": 300,
+        "minMs": 1.4834000000118976,
+        "medianMs": 2.246406999998726,
+        "p95Ms": 9.895692999998573,
+        "maxMs": 32.126667000000005
+      },
+      "ticks": {
+        "count": 100,
+        "maxLagMs": 1.3280759999906877,
+        "observedFirstStartToLastEndMs": 99009
+      }
+    }
+  },
+  "frozenInputs": [
+    {
+      "path": "scripts/minio-dependency-review/http-review.mjs",
+      "matches": true
+    },
+    {
+      "path": "scripts/minio-dependency-review/million-review.mjs",
+      "matches": true
+    },
+    {
+      "path": "scripts/ms1-review/corpus.mjs",
+      "matches": true
+    },
+    {
+      "path": "evidence/minio-release-2026-11-14/reviewer/synthetic-oracle.json",
+      "matches": true
+    },
+    {
+      "path": "docs/reviews/minio-dependency-2026-11-14/standard-v1.md",
+      "matches": true
+    },
+    {
+      "path": "evidence/minio-dependency-2026-11-14/reviewer/large-attachment-preflight.json",
+      "matches": true
+    },
+    {
+      "path": ".lab/minio-release/reviewer/v1/manifest.json",
+      "matches": true
+    },
+    {
+      "path": ".lab/minio-release/reviewer/v2/manifest.json",
+      "matches": true
+    }
+  ],
+  "limitations": [
+    "descriptive small-reader 3-request chain per second, not steady-state capacity or million-old-reader load",
+    "client receive pacing, not kernel network shaping",
+    "full local body/media copy, not remote JSON production layout",
+    "recovery timing begins after MinIO ready, restart separate",
+    "baseline/outage only 10 ticks; no causal latency claim from short samples",
+    "implementation freeze occurred after build but before driver due preserved cwd prelude error"
+  ]
+}

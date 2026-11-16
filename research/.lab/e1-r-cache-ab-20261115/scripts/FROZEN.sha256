@@ -1,0 +1,17 @@
+697693da61d4e1612075e81a458f016b7838bc786d1cb742ce96e3cd5ae55ba2  evidence/e1-r-cache-ab-20261115/CARD.md
+d44386fa67e2e6430c3d9094735465b6af068f8a797b9bb9bde7727e274cb02e  scripts/e1-r-cache-ab-20261115/run.mjs
+1e8081a90582f4786f4140a887b847e3ddd42c10a2101502a155ad614196e841  scripts/e1-r-cache-ab-20261115/reader.mjs
+01f594417c57bd664cca05f72b49a9caa80a226987c5ef7ba1983e10de16818b  scripts/e1-vfs/local-smoke-20261115.mjs
+1338df3e52d6bac6793bca83c40a5f7c35806691e81e7ea348c1cd5cbfa20d2c  scripts/e1-vfs/local-smoke-20261115-oracle.mjs
+9728a24a36ca2965c40bb5805b010e56e0bacaba87bcc2ae1a650a0896aa19e9  scripts/e1-vfs/reader.mjs
+f52b518b3076125652d8cb3d69f0436a5024db62b1066ad9c20255ed545da7ae  scripts/s1-scope-api/queries.mjs
+01f9a0ef9fb24ac2c30c14788e99db9f90a5c47808ef8544c6ef4f631f9b2f0f  scripts/s1-scope-api/highlight.mjs
+553436c3b6eda6713f45fb00e754d831f52f02f9375027c28541a00c40345e8d  scripts/ms1-api-lab/text.mjs
+790f7818fab462e8d7883d328941777fd6bd67cb32433300b0172e7aca46e2ad  scripts/ms1-review/corpus.mjs
+cec05ed1be325c9479c2c1f15e209d38892a1df6330253b1eb647f259578e9c2  scripts/ms1-experiment/prepare.mjs
+70905a85dc7bfd5499eebd1253fb2e889b81aff1d5223d220f1bb8ec881d0cfa  .lab/e1-source-local-smoke-20261115/data.sqlite
+1ed85d9d91384d7dab981d5d6398d496ee286c96fe63a89dff0c83fe74c150a9  evidence/e1-local-smoke-20261115/oracle.json
+d931c649850ffa7155b8ceffb400dc916ef325866e509cc52ae36e33e8fbb9a9  ../toolchains/node-v26.13.1-linux-x64/bin/node
+f2d452c1527be81f06d5f135655b81b0e8d9a338cb4c2825cf2243134bc2dbd6  work/e0-vfs-tools/litestream-0.5.18-linux-x86_64/litestream
+af69c29052d3ebdcdb6b26744542af3b0d591b48136d434f33a43548a2b0b134  work/e0-vfs-tools/litestream-vfs-v0.5.18-linux-amd64/litestream.so
+086a31b97f28ee6ed16e938e449f1c07baa6f8f39549ac314251e543af95c50d  work/minio-official-build/bin/minio

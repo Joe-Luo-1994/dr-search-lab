@@ -1,0 +1,23 @@
+{
+  "checkpoint": "before-semantic-and-capacity-execution",
+  "standard": "MS1-v1",
+  "frozenInputs": {
+    "docs/reviews/ms1-2026-11-14/standard-v1.md": "b937e286e8e2a087cb817a821313797c80cabc7fc3f763e622818b11b486e067",
+    "scripts/ms1-review/corpus.mjs": "790f7818fab462e8d7883d328941777fd6bd67cb32433300b0172e7aca46e2ad"
+  },
+  "scale": [
+    60,
+    10000,
+    100000,
+    1000000
+  ],
+  "claimBoundary": "Bounded functional and capacity envelope; not full RP0 SLA, formal GM, MinIO or real consumer acceptance",
+  "resourceLimits": {
+    "buildSecondsPerStage": 600,
+    "requestSeconds": 5,
+    "treeRssSoftStopGiB": 6,
+    "singleStageArtifactGiB": 10,
+    "totalRetainedArtifactsGiB": 18,
+    "diskFreeStopGiB": 4
+  }
+}

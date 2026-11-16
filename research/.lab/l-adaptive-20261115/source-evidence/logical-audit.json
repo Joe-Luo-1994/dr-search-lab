@@ -1,0 +1,34 @@
+{
+  "count": 1000000,
+  "invalidRowid": 0,
+  "spaceCount": 1000,
+  "ftsCount": 1000000,
+  "quick": [
+    {
+      "quick_check": "ok"
+    }
+  ],
+  "checkpoint": {
+    "busy": 0,
+    "log": 0,
+    "checkpointed": 0
+  },
+  "sampleIds": [
+    0,
+    1,
+    17,
+    19,
+    100,
+    997,
+    499999,
+    500000,
+    500001,
+    500998,
+    501000,
+    777777,
+    999998,
+    999999
+  ],
+  "node": "v26.13.1",
+  "scopeDigest": "5d0646e1855108f955b0b6b243ce8c0b4ef3999fb87e3a46851422465e08af18"
+}

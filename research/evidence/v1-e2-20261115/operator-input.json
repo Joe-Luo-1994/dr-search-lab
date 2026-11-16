@@ -1,0 +1,7 @@
+{
+  "v2ManifestSha256": "cb2093c17d8e9abdff516fc0659fb1930b4da3f430582ea4024cba77053538e7",
+  "artifactVersion": "v2",
+  "cache": "fresh",
+  "port": 3161,
+  "expectedSnapshotId": "v1-e2-20261115-v2"
+}

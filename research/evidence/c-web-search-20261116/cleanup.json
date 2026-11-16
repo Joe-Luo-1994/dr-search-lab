@@ -1,0 +1,10 @@
+{
+  "at": 1794785562.660678,
+  "listeners": [],
+  "units": {
+    "dr-web-reader-20261116": "MainPID=0\nResult=exit-code\nExecMainStatus=143\nActiveState=failed\n",
+    "dr-web-minio-20261116": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\n"
+  },
+  "installedV1HashMatches": true,
+  "sha256": "0b1a4379e317ef59289df3c1218c291d6047d5b3a3b9196600e8c182d8bd9147"
+}

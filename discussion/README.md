@@ -1,22 +1,24 @@
-# DR選型討論材料 — 版2
+# DR 選型討論材料與研究來源
 
-下載整個 discussion 資料夾後，以瀏覽器開啟 **index.html**。不需Node、服務或GitHub Pages；GitHub顯示HTML原始碼是正常的。
+下載 repo 後開啟 `discussion/index.html`。不需 Node、服務或 GitHub Pages；GitHub 顯示 HTML 原始碼是正常的。
 
-- index.html：使用目標 → 推薦調整 → 架構與職責 → 容量證據 → C責任盤點 → 成本差額 → 會議決策。
-- pagefind.html：歷史成功、100k建置通過、同步WASM搜尋逾時，以及暫停深入理由。
-- evidence.html：可追溯的精簡摘要，保留失敗與未驗限制。
-- manifest.json：本包hash與原始來源識別；不等於完整可重播封存。
+- [研究來源入口](../research/README.md)：設計、結果、review、成功與失敗紀錄、程式和來源限制。
+- [離線研究導覽](../research/index.html)：八條證據鏈與完整檔案目錄。
+- `index.html`：使用目標 → 架構與職責 → 容量 → 維運差額 → 決策。
+- `pagefind.html`：能力、100k 建置成功、單題逾時與暫停深入的理由。
+- `evidence.html`：精簡證據摘要。
 
-## 最新方向
+目前優先核對 A 的異地增量工作；C／Pagefind 是有條件備案，並未證明 A 成本勝出。SQLite 6 search/s 是已測混合工作點，不是最大容量；Pagefind 單題 5 秒研究截止不是 RPS 測試。B 不當 A。
 
-優先核對沿用 A（既有Backend／ES／必要MariaDB與可用Gateway）的異地新增工作。C與Pagefind保留有條件備案，暫停引擎優化、擴容矩陣及C全面產品化。A尚未證成本勝出，也未完成本研究的完整異地驗收。
+本次擴充 `research/`，保留研究設計與紀錄的公開副本；不是正式環境或一鍵重跑驗收。個人路徑替換與來源雜湊有記帳，未包含私密設定、node_modules、完整 DB／索引。要連同來源閱讀，請下載整個 repo，單獨複製 discussion 五檔會缺研究連結。
 
-SQLite的6搜尋API/s是8CPU／12GiB下的已測混合工作點，不是最大RPS；Pagefind的高命中單題5秒截止不是吞吐測試。不能宣稱兩者只要開API就一定不可用。移除Backend與換搜尋引擎的成本應分開，Gateway若能DR沿用不必一律重寫。
+分支：`codex/cloud-migration`。正式資料、consumer、ReBAC、RTO、真人品質與公司維運人時仍未知。
 
-## 取得
 
-從repo的 codex/cloud-migration 分支下載ZIP，或在保留本地修改後正常git pull，再開 discussion/index.html。Repo：https://github.com/Joe-Luo-1994/dr-search-lab
+## 最新研究方向補充
 
-## 發布範圍
+完整原始研究材料見 [research](../research/README.md)。以下新增討論沒有改寫歷史實驗結果：
 
-本次只更新這五個討論檔案；未包含原始研究logs、索引、fixture、憑證與完整實驗程式。沒有新增壓測，歷史commit保留舊版材料。正式資料／consumer／ReBAC／RTO／真人體驗與公司維運工時仍未知。
+- [DR_ENGINE_ISOLATION_API_REVIEW_20261116.md](updates/DR_ENGINE_ISOLATION_API_REVIEW_20261116.md)
+- [DR_RELATED_WORK_20261116.md](updates/DR_RELATED_WORK_20261116.md)
+- [DR_EXTERNAL_FEEDBACK_REVIEW_20261116.md](updates/DR_EXTERNAL_FEEDBACK_REVIEW_20261116.md)

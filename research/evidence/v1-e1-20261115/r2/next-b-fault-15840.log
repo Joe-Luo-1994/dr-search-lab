@@ -1,0 +1,3 @@
+✓ Running next.config.mjs took 18ms
+{"event":"e1_ready","mode":"b","pid":15840,"url":"http://127.0.0.1:3157","node":"v22.21.1","snapshotId":"v1-e1-20261115-snapshot1","sourceSha256":"0c70c490dd2798054063f56685f83c1783a030ea312cae4656894b977484cada","esEndpoint":"http://127.0.0.1:19390/drlab-v1-e1-20261115-r1","faultEs":true}
+{"event":"e1_api_error","code":"SEARCH_UNAVAILABLE","detail":"fetch failed"}

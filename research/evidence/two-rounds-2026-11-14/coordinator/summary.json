@@ -1,0 +1,100 @@
+{
+  "sourceCommit": "c558a51f7c76a62e657310fc3f3554ef99baad8d",
+  "scope": "C1 V1/V2 synthetic basic API acceptance; two independent subagent groups and exactly two implementation/review iterations",
+  "reviewer": "standards_review",
+  "implementer": "design_implementation",
+  "rounds": [
+    {
+      "round": 1,
+      "basicPassed": true,
+      "requestsCount": 52,
+      "engines": {
+        "sqlite": {
+          "passed": 18,
+          "total": 18
+        },
+        "pagefind": {
+          "passed": 18,
+          "total": 18
+        }
+      }
+    },
+    {
+      "round": 2,
+      "basicPassed": true,
+      "requestsCount": 52,
+      "engines": {
+        "sqlite": {
+          "passed": 18,
+          "total": 18
+        },
+        "pagefind": {
+          "passed": 18,
+          "total": 18
+        }
+      }
+    }
+  ],
+  "unchangedFrozenInputs": {
+    "docs/reviews/two-rounds-2026-11-14/standard-v1.md": "0c8b76267c1e4f8fe79a7128e0f6aa0737f7529e05048fbab0b8ee51eef7c5b0",
+    "scripts/product-review/fixture.json": "03c5f859e7fe87c8ac1951158cd1dfae3843f84e930de5b620eb5de2af251dde",
+    "scripts/product-review/review.mjs": "e0490649b87561fb2f7b1bc87983c7bc5fc85cf253b6bc31dab5e918203952ae",
+    "docs/reviews/two-rounds-2026-11-14/supplement-cost-v1.md": "46f776d38ba48481aa9dca20148e63e874856029071fa793f9d91636af78add6"
+  },
+  "supplement": {
+    "coldPagefindFragmentGets": [
+      5,
+      0
+    ],
+    "coldPagefindTotalAssetGets": [
+      10,
+      5
+    ],
+    "coldPagefindAssetBytes": [
+      57935,
+      56892
+    ],
+    "missingPagefind": {
+      "before": "SQLite, page and attachment all 503",
+      "after": "SQLite, page and attachment 200; Pagefind explicit 503"
+    },
+    "corruptMapping": "explicit 503, no silent partial results"
+  },
+  "newCosts": {
+    "mappingBytes": 1032,
+    "mappingEntries": 12,
+    "mappingBuildFragmentGets": 12,
+    "mappingBuildMsObserved": 105.057255
+  },
+  "limitations": [
+    "12-page synthetic fixture",
+    "Highlight explicitly not provided in basic tier; consumer acceptance unknown",
+    "Mock scope header only; no production authorization",
+    "No real MinIO integration in C1",
+    "No full RP0 capacity or formal RTO/RPO/SLA claim",
+    "No equivalent-corpus ES total resource comparison",
+    "Reduced query I/O does not prove lower lifecycle cost"
+  ],
+  "protectedOriginalFiles": {
+    ".lab/data/manifest.json": true,
+    ".lab/data/v1-attachments.mini.json": true,
+    ".lab/data/v1-attachments.orama.json": true,
+    ".lab/data/v1-attachments.sqlite": true,
+    ".lab/data/v1-body.mini.json": true,
+    ".lab/data/v1-body.orama.json": true,
+    ".lab/data/v1-body.sqlite": true,
+    ".lab/data/v1.json": true,
+    ".lab/data/v2-attachments.mini.json": true,
+    ".lab/data/v2-attachments.orama.json": true,
+    ".lab/data/v2-attachments.sqlite": true,
+    ".lab/data/v2-body.mini.json": true,
+    ".lab/data/v2-body.orama.json": true,
+    ".lab/data/v2-body.sqlite": true,
+    ".lab/data/v2.json": true,
+    ".next/BUILD_ID": true,
+    ".lab/reports/es-experiment-latest.json": true
+  },
+  "cleanupEvidence": "implementation/final-cleanup.json",
+  "committed": false,
+  "pushed": false
+}

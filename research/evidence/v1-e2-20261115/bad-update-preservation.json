@@ -1,0 +1,26 @@
+{
+  "stable": {
+    ".lab/v1-e2-20261115/traffic.json": "f364fe9cde070fa953704eacea06f31d2b72091b3beeb26a1985514f91a13895",
+    ".lab/v1-e2-20261115/caches/main/last-success.json": "afeadf58d992c0f7f5426261a26c41ab8a5e34eb8b95706342669794dac01c21",
+    ".lab/v1-e2-20261115/caches/main/v1/manifest.json": "c1ed1c71b6c4e17308b95eea16fed7f423d524431c1c1cd917e622d4cc114638"
+  },
+  "status": {
+    "snapshotId": "v1-e2-20261115-v1",
+    "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+    "installedAt": "2026-11-15T14:07:01.865Z",
+    "latestAttempt": {
+      "variant": "mixed-v2",
+      "snapshotId": "v1-e2-20261115-v2",
+      "startedAt": "2026-11-15T14:07:05.364Z",
+      "state": "failed",
+      "finishedAt": "2026-11-15T14:07:05.374Z",
+      "code": "SQLITE_IDENTITY_MISMATCH"
+    },
+    "lastSuccessfulInstallation": {
+      "version": "v1",
+      "snapshotId": "v1-e2-20261115-v1",
+      "manifestSha256": "c1ed1c71b6c4e17308b95eea16fed7f423d524431c1c1cd917e622d4cc114638",
+      "installedAt": "2026-11-15T14:07:01.865Z"
+    }
+  }
+}

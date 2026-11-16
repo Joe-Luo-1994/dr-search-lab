@@ -1,0 +1,25 @@
+{
+  "checkpoint": "round-1-reviewed-before-round-2",
+  "round1_basic": {
+    "sqlite": "18/18",
+    "pagefind": "18/18",
+    "http_requests": 52
+  },
+  "round2_scope": [
+    "Preserve same mandatory basic contract",
+    "Reduce Pagefind query-time fragment hydration",
+    "Isolate page and attachment reads plus SQLite from Pagefind failure",
+    "Explicitly reject invalid result mapping if introduced"
+  ],
+  "standards_changed": false,
+  "supplement_is_additional": true,
+  "sha256": {
+    "docs/reviews/two-rounds-2026-11-14/standard-v1.md": "0c8b76267c1e4f8fe79a7128e0f6aa0737f7529e05048fbab0b8ee51eef7c5b0",
+    "scripts/product-review/fixture.json": "03c5f859e7fe87c8ac1951158cd1dfae3843f84e930de5b620eb5de2af251dde",
+    "docs/reviews/two-rounds-2026-11-14/round-1-review.md": "f9e1953daa0f04dd9efdfd2a67447873e2f8d242e34fee9b7bbab7c9aa78e5bc",
+    "docs/reviews/two-rounds-2026-11-14/supplement-cost-v1.md": "46f776d38ba48481aa9dca20148e63e874856029071fa793f9d91636af78add6",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1/result.json": "fb536cfef8ac9ccd9f0b559e08b9cf35b0bdd4b9f664280c86215cad57043841",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1-assets.json": "f5d874125cb71e5eea140c937120fa56b15a842deb017b76613a9d2a0e2f024c",
+    "evidence/two-rounds-2026-11-14/reviewer/round-1-missing-pagefind.json": "d9609fb8714806b883020b19608c5bcb9ba088014c5981b91f01742be95fe382"
+  }
+}

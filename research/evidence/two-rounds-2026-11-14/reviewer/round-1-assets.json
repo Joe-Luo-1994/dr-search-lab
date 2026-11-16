@@ -1,0 +1,100 @@
+{
+  "mode": "assets",
+  "startedAt": "2026-11-14T07:31:12.424Z",
+  "traces": [
+    {
+      "path": "/api/research/search?engine=pagefind&q=runbook&page=1&pageSize=2",
+      "status": 200,
+      "elapsedMs": 137.522762,
+      "bytes": 506,
+      "sha256": "d9a00ebac61b02e4dd104b8ea6e2383a7ea463e9c8a402c2d3269d91cb53c4ae",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p07",
+            "title": "Application runbook",
+            "content": "Application runbook with deployment steps.",
+            "url": "/api/research/pages/p07?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p08",
+            "title": "Storage runbook",
+            "content": "Storage runbook with capacity checks.",
+            "url": "/api/research/pages/p08?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    }
+  ],
+  "assetRequests": [
+    {
+      "path": "/pagefind/pagefind-entry.json",
+      "status": 200,
+      "bytes": 172
+    },
+    {
+      "path": "/pagefind/pagefind.zh_4c70d5fbd8.pf_meta",
+      "status": 200,
+      "bytes": 191
+    },
+    {
+      "path": "/pagefind/wasm.unknown.pagefind",
+      "status": 200,
+      "bytes": 55386
+    },
+    {
+      "path": "/pagefind/index/zh_416790a.pf_index",
+      "status": 200,
+      "bytes": 1069
+    },
+    {
+      "path": "/pagefind/filter/zh_17c4836.pf_filter",
+      "status": 200,
+      "bytes": 74
+    },
+    {
+      "path": "/pagefind/fragment/zh_2412337.pf_fragment",
+      "status": 200,
+      "bytes": 195
+    },
+    {
+      "path": "/pagefind/fragment/zh_35701cf.pf_fragment",
+      "status": 200,
+      "bytes": 194
+    },
+    {
+      "path": "/pagefind/fragment/zh_22f1af9.pf_fragment",
+      "status": 200,
+      "bytes": 196
+    },
+    {
+      "path": "/pagefind/fragment/zh_fe333bd.pf_fragment",
+      "status": 200,
+      "bytes": 192
+    },
+    {
+      "path": "/pagefind/fragment/zh_464a359.pf_fragment",
+      "status": 200,
+      "bytes": 266
+    }
+  ],
+  "fragmentGets": 5,
+  "fragmentBytes": 1043,
+  "totalAssetGets": 10,
+  "totalAssetBytes": 57935,
+  "basicResponsePreserved": true,
+  "finishedAt": "2026-11-14T07:31:12.617Z"
+}

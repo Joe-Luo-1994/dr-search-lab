@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "viewport-320",
+    "viewport-390",
+    "viewport-1280",
+    "all-15-stages-expand",
+    "local-evidence-links",
+    "keyboard",
+    "no-errors-or-external-network"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "agent browser QA, not human comprehension or DR load"
+}

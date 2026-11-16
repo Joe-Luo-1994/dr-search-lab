@@ -1,0 +1,32 @@
+{
+  "basicPassed": true,
+  "requestsCount": 52,
+  "engines": [
+    {
+      "engine": "sqlite",
+      "passedTasks": 18,
+      "basicPassed": true,
+      "failures": [],
+      "extras": [
+        {
+          "id": "H01",
+          "status": "not-provided",
+          "note": "Optional: safe nonempty source-grounded marks in English and Chinese. Basic-level pass does not require H01."
+        }
+      ]
+    },
+    {
+      "engine": "pagefind",
+      "passedTasks": 18,
+      "basicPassed": true,
+      "failures": [],
+      "extras": [
+        {
+          "id": "H01",
+          "status": "not-provided",
+          "note": "Optional: safe nonempty source-grounded marks in English and Chinese. Basic-level pass does not require H01."
+        }
+      ]
+    }
+  ]
+}

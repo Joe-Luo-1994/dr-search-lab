@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-15T15:23:30.376Z",
+  "arithmeticChecks": {
+    "passed": true,
+    "count": 15,
+    "command": "node scripts/cost-review-20261115/check-model.mjs"
+  },
+  "priorFrozenFilesVerified": 460,
+  "newDrExperiments": 0,
+  "uxGuidance": "Existing project task order and responsive native controls; skill search returned unrelated typography, so no claimed source support for progressive disclosure. Agent inspection only; no human study.",
+  "files": {
+    "docs/DR_COST_DECISION_20261115.html": "ec5c74f137b30645b228d861906a54ff72d6e86eaa80e79a9d9b2b4e7f62591e",
+    "scripts/cost-review-20261115/build.mjs": "3f593a71fa922ffeb9e32c177d2df10f20cefaa33eed61a4106853efc9e98019",
+    "scripts/cost-review-20261115/check-browser.mjs": "a8f86065a1c71ff0491e0746256c989499a2d6ee209312bca86ca74f1b46974a",
+    "scripts/cost-review-20261115/check-model.mjs": "d4fc7a96ab9ac3b59e1bcd2a22d862c2f22f3cfa282e4c2fe6f013cf2007c71d",
+    "scripts/cost-review-20261115/model.mjs": "816a0d5e90dfdf3af380fa2d9975a38e2b265aa353101b44938b37b63e9939ac",
+    "scripts/cost-review-20261115/template.html": "9f4c910631ad82ee266a94ca586c19af237a170ae7222dfa1ef96cb066b4916e"
+  }
+}

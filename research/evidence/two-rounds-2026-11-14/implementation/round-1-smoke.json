@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/api/research/search?engine=sqlite&q=backup",
+    "status": 200,
+    "elapsedMs": 94.077935,
+    "body": "{\"schemaVersion\":\"c1-v1\",\"release\":\"review-v1\",\"engine\":\"sqlite\",\"page\":1,\"pageSize\":10,\"total\":1,\"totalRelation\":\"exact\",\"capabilities\":{\"highlight\":\"none\"},\"synthetic\":true,\"hits\":[{\"id\":\"p01\",\"title\":\"Database backup runbook\",\"content\":\"Daily backup and disaster recovery. 資料庫備份流程與還原。\",\"url\":\"/api/research/pages/p01?release=review-v1\",\"highlight\":null}]}"
+  },
+  {
+    "path": "/api/research/search?engine=pagefind&q=backup",
+    "status": 200,
+    "elapsedMs": 83.07375199999998,
+    "body": "{\"schemaVersion\":\"c1-v1\",\"release\":\"review-v1\",\"engine\":\"pagefind\",\"page\":1,\"pageSize\":10,\"total\":1,\"totalRelation\":\"exact\",\"capabilities\":{\"highlight\":\"none\"},\"synthetic\":true,\"hits\":[{\"id\":\"p01\",\"title\":\"Database backup runbook\",\"content\":\"Daily backup and disaster recovery. 資料庫備份流程與還原。\",\"url\":\"/api/research/pages/p01?release=review-v1\",\"highlight\":null}]}"
+  },
+  {
+    "path": "/api/research/pages/p01?release=review-v1",
+    "status": 200,
+    "elapsedMs": 7.038744000000008,
+    "body": "{\"schemaVersion\":\"c1-v1\",\"release\":\"review-v1\",\"id\":\"p01\",\"title\":\"Database backup runbook\",\"content\":\"Daily backup and disaster recovery. 資料庫備份流程與還原。\",\"attachments\":[],\"synthetic\":true}"
+  },
+  {
+    "path": "/api/research/attachments/a05?release=review-v1",
+    "status": 200,
+    "elapsedMs": 5.160376000000014,
+    "body": "Synthetic recovery checklist\n1. Verify the recovery site.\n2. Record the result.\n"
+  }
+]

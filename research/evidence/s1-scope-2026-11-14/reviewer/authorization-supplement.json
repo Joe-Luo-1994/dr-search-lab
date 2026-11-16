@@ -1,0 +1,114 @@
+{
+  "kind": "independent small SQL authorization supplement; actual candidate query module",
+  "passed": true,
+  "sqlite": "3.50.4",
+  "sourceRows": 1209,
+  "cases": [
+    {
+      "name": "authorized count excludes outside Spaces",
+      "passed": true,
+      "ms": 0.3796379999999999,
+      "evidence": {
+        "count": 3,
+        "rows": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "name": "unauthorized early-ranked rows do not consume page1",
+      "passed": true,
+      "ms": 0.5854870000000005,
+      "evidence": {
+        "count": 3,
+        "rows": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "name": "page2 remains complete and disjoint",
+      "passed": true,
+      "ms": 0.15578399999999704,
+      "evidence": {
+        "count": 3,
+        "rows": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "another narrow Space has own count and first page",
+      "passed": true,
+      "ms": 0.13664400000000398,
+      "evidence": {
+        "count": 5,
+        "rows": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "1000-entry allowset still excludes unlisted Space",
+      "passed": true,
+      "ms": 3.306241,
+      "evidence": {
+        "count": 8,
+        "rows": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "name": "Space SQL metacharacters remain bound data",
+      "passed": true,
+      "ms": 0.16984499999999514,
+      "evidence": {
+        "count": 0,
+        "rows": []
+      }
+    },
+    {
+      "name": "missing Space yields zero authorized hits",
+      "passed": true,
+      "ms": 0.3909660000000059,
+      "evidence": {
+        "count": 0,
+        "rows": []
+      }
+    },
+    {
+      "name": "count caps scan at1001, retaining gte discriminator",
+      "passed": true,
+      "ms": 1.0661769999999962,
+      "evidence": {
+        "count": 1001,
+        "rows": 50
+      }
+    },
+    {
+      "name": "invalid empty scope cannot accidentally mean all in SQL module",
+      "passed": true,
+      "ms": 0.287469999999999,
+      "evidence": {
+        "moduleRejects": true,
+        "apiEmptyScope": "unchanged API behavior checked by original HTTP harness"
+      }
+    }
+  ],
+  "limitations": [
+    "in-memory synthetic SQL only, not HTTP identity service",
+    "ES did not run this extra supplement",
+    "original 105-request capacity harness remains unchanged"
+  ]
+}

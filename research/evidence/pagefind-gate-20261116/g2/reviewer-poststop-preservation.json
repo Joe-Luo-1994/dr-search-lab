@@ -1,0 +1,13 @@
+{
+  "scope": "independent post-stop preservation only; no G2 success claim",
+  "atEpoch": 1794798792.1542363,
+  "freezeFiles": 10469,
+  "freezeMismatches": [],
+  "inventoryPinMatches": true,
+  "artifactFiles": 101571,
+  "artifactMismatches": [],
+  "extraFiles": [],
+  "missingFiles": [],
+  "specialFiles": [],
+  "runnerResultsExists": false
+}

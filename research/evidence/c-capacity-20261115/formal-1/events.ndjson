@@ -1,0 +1,7 @@
+{"type":"download-start","at":1794759339745,"version":"v1","badHash":false}
+{"type":"download-end","at":1794759340337,"version":"v1","downloadStartedMs":1794759339757,"downloadEndedMs":1794759340337,"bytes":333697024,"elapsedMs":579.7774910000007}
+{"type":"ready","at":1794759340809,"snapshotId":"v1","downloadStartedMs":1794759339757,"downloadEndedMs":1794759340337,"bytes":333697024,"elapsedMs":579.7774910000007}
+{"type":"download-start","at":1794759637548,"version":"v2","badHash":false}
+{"type":"download-end","at":1794759657466,"version":"v2","downloadStartedMs":1794759637552,"downloadEndedMs":1794759657466,"bytes":333807616,"elapsedMs":19914.358141000033}
+{"type":"activated","at":1794759657938,"previousVersion":"v1","snapshotId":"v2","activatedMs":1794759657938}
+{"type":"retired-drained","at":1794759657940,"version":"v1"}

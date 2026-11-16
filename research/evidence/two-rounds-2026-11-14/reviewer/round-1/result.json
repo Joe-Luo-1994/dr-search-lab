@@ -1,0 +1,1700 @@
+{
+  "schema": "c1-review-v1",
+  "startedAt": "2026-11-14T07:27:50.180Z",
+  "source": "independent reviewer client; no candidate implementation imports",
+  "base": "http://127.0.0.1:43149",
+  "standardSha256": "0c8b76267c1e4f8fe79a7128e0f6aa0737f7529e05048fbab0b8ee51eef7c5b0",
+  "fixtureSha256": "03c5f859e7fe87c8ac1951158cd1dfae3843f84e930de5b620eb5de2af251dde",
+  "engines": [
+    {
+      "engine": "sqlite",
+      "tasks": [
+        {
+          "id": "T01",
+          "label": "English recovery document",
+          "status": "pass",
+          "elapsedMs": 48.00841200000001,
+          "detail": {
+            "ids": [
+              "p01"
+            ]
+          }
+        },
+        {
+          "id": "T02",
+          "label": "Contiguous Chinese",
+          "status": "pass",
+          "elapsedMs": 6.519307000000012,
+          "detail": {
+            "ids": [
+              "p03",
+              "p02",
+              "p01"
+            ]
+          }
+        },
+        {
+          "id": "T03",
+          "label": "Two-character Chinese",
+          "status": "pass",
+          "elapsedMs": 3.711838,
+          "detail": {
+            "ids": [
+              "p03",
+              "p02",
+              "p01"
+            ]
+          }
+        },
+        {
+          "id": "T04",
+          "label": "Technical error code",
+          "status": "pass",
+          "elapsedMs": 5.543009999999995
+        },
+        {
+          "id": "T05",
+          "label": "Title search",
+          "status": "pass",
+          "elapsedMs": 6.558475999999999
+        },
+        {
+          "id": "T06",
+          "label": "Honest zero results",
+          "status": "pass",
+          "elapsedMs": 3.9687020000000075
+        },
+        {
+          "id": "T07",
+          "label": "No cross-scope search disclosure",
+          "status": "pass",
+          "elapsedMs": 2.9792850000000044
+        },
+        {
+          "id": "T08",
+          "label": "Restricted user can do own task",
+          "status": "pass",
+          "elapsedMs": 7.1468929999999915
+        },
+        {
+          "id": "T09",
+          "label": "Complete stable pagination",
+          "status": "pass",
+          "elapsedMs": 10.274570000000011,
+          "detail": {
+            "pages": [
+              [
+                "p07",
+                "p08"
+              ],
+              [
+                "p09",
+                "p10"
+              ],
+              [
+                "p01"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T10",
+          "label": "Page beyond end",
+          "status": "pass",
+          "elapsedMs": 3.391871000000009
+        },
+        {
+          "id": "T11",
+          "label": "Search to original page",
+          "status": "pass",
+          "elapsedMs": 3.6657500000000027
+        },
+        {
+          "id": "T12",
+          "label": "Search to page to exact attachment bytes",
+          "status": "pass",
+          "elapsedMs": 5.92200600000001,
+          "detail": {
+            "bytes": 80,
+            "sha256": "893472abd9f7ff21f36a1e7cdfffc44517cd4f2a4dfb133c07436b75c40a3f80"
+          }
+        },
+        {
+          "id": "T13",
+          "label": "Direct restricted page rejected",
+          "status": "pass",
+          "elapsedMs": 1.6837830000000054
+        },
+        {
+          "id": "T14",
+          "label": "Missing identity rejected",
+          "status": "pass",
+          "elapsedMs": 1.524864999999977
+        },
+        {
+          "id": "T15",
+          "label": "Unknown identity rejected",
+          "status": "pass",
+          "elapsedMs": 1.5834230000000105
+        },
+        {
+          "id": "T16",
+          "label": "Invalid client input",
+          "status": "pass",
+          "elapsedMs": 3.157841999999988
+        },
+        {
+          "id": "T17",
+          "label": "Unknown release rejected",
+          "status": "pass",
+          "elapsedMs": 1.4768039999999871
+        },
+        {
+          "id": "T18",
+          "label": "Literal source text and honest highlight capability",
+          "status": "pass",
+          "elapsedMs": 1.5530880000000025,
+          "detail": {
+            "capability": "none"
+          }
+        }
+      ],
+      "extras": [
+        {
+          "id": "H01",
+          "status": "not-provided",
+          "note": "Optional: safe nonempty source-grounded marks in English and Chinese. Basic-level pass does not require H01."
+        }
+      ],
+      "basicPassed": true,
+      "passedTasks": 18
+    },
+    {
+      "engine": "pagefind",
+      "tasks": [
+        {
+          "id": "T01",
+          "label": "English recovery document",
+          "status": "pass",
+          "elapsedMs": 2.3165460000000166,
+          "detail": {
+            "ids": [
+              "p01"
+            ]
+          }
+        },
+        {
+          "id": "T02",
+          "label": "Contiguous Chinese",
+          "status": "pass",
+          "elapsedMs": 7.193142999999992,
+          "detail": {
+            "ids": [
+              "p02",
+              "p03",
+              "p01"
+            ]
+          }
+        },
+        {
+          "id": "T03",
+          "label": "Two-character Chinese",
+          "status": "pass",
+          "elapsedMs": 1.993805000000009,
+          "detail": {
+            "ids": [
+              "p03",
+              "p02",
+              "p01"
+            ]
+          }
+        },
+        {
+          "id": "T04",
+          "label": "Technical error code",
+          "status": "pass",
+          "elapsedMs": 5.871961999999996
+        },
+        {
+          "id": "T05",
+          "label": "Title search",
+          "status": "pass",
+          "elapsedMs": 3.350498999999985
+        },
+        {
+          "id": "T06",
+          "label": "Honest zero results",
+          "status": "pass",
+          "elapsedMs": 2.608361000000002
+        },
+        {
+          "id": "T07",
+          "label": "No cross-scope search disclosure",
+          "status": "pass",
+          "elapsedMs": 1.9727440000000058
+        },
+        {
+          "id": "T08",
+          "label": "Restricted user can do own task",
+          "status": "pass",
+          "elapsedMs": 5.541909000000004
+        },
+        {
+          "id": "T09",
+          "label": "Complete stable pagination",
+          "status": "pass",
+          "elapsedMs": 25.96252800000002,
+          "detail": {
+            "pages": [
+              [
+                "p07",
+                "p08"
+              ],
+              [
+                "p09",
+                "p10"
+              ],
+              [
+                "p01"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "T10",
+          "label": "Page beyond end",
+          "status": "pass",
+          "elapsedMs": 1.6099819999999738
+        },
+        {
+          "id": "T11",
+          "label": "Search to original page",
+          "status": "pass",
+          "elapsedMs": 3.1157090000000096
+        },
+        {
+          "id": "T12",
+          "label": "Search to page to exact attachment bytes",
+          "status": "pass",
+          "elapsedMs": 8.480514,
+          "detail": {
+            "bytes": 80,
+            "sha256": "893472abd9f7ff21f36a1e7cdfffc44517cd4f2a4dfb133c07436b75c40a3f80"
+          }
+        },
+        {
+          "id": "T13",
+          "label": "Direct restricted page rejected",
+          "status": "pass",
+          "elapsedMs": 1.52069800000001
+        },
+        {
+          "id": "T14",
+          "label": "Missing identity rejected",
+          "status": "pass",
+          "elapsedMs": 2.2298270000000002
+        },
+        {
+          "id": "T15",
+          "label": "Unknown identity rejected",
+          "status": "pass",
+          "elapsedMs": 2.152101000000016
+        },
+        {
+          "id": "T16",
+          "label": "Invalid client input",
+          "status": "pass",
+          "elapsedMs": 4.008870999999999
+        },
+        {
+          "id": "T17",
+          "label": "Unknown release rejected",
+          "status": "pass",
+          "elapsedMs": 1.3859779999999944
+        },
+        {
+          "id": "T18",
+          "label": "Literal source text and honest highlight capability",
+          "status": "pass",
+          "elapsedMs": 4.022271999999987,
+          "detail": {
+            "capability": "none"
+          }
+        }
+      ],
+      "extras": [
+        {
+          "id": "H01",
+          "status": "not-provided",
+          "note": "Optional: safe nonempty source-grounded marks in English and Chinese. Basic-level pass does not require H01."
+        }
+      ],
+      "basicPassed": true,
+      "passedTasks": 18
+    }
+  ],
+  "requests": [
+    {
+      "url": "/api/research/search?engine=sqlite&q=backup&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.183Z",
+      "status": 200,
+      "elapsedMs": 47.348006,
+      "bytes": 380,
+      "sha256": "a17e44888602e65ff501e56c62c70cdd5b1776224fd329b836b21586f60eac59",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=%E8%B3%87%E6%96%99%E5%BA%AB%E5%82%99%E4%BB%BD&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.230Z",
+      "status": 200,
+      "elapsedMs": 6.311627000000001,
+      "bytes": 709,
+      "sha256": "3ae2c19b4c672d522a8077151e117e5344db4e5d53313c886dcbad19336c98d5",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 3,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p03",
+            "title": "資料庫備份",
+            "content": "異地還原與每日備份驗證。",
+            "url": "/api/research/pages/p03?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p02",
+            "title": "資料庫維護",
+            "content": "資料庫每日執行備份。Maintenance instructions.",
+            "url": "/api/research/pages/p02?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=%E5%82%99%E4%BB%BD&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.237Z",
+      "status": 200,
+      "elapsedMs": 3.4832080000000047,
+      "bytes": 709,
+      "sha256": "3ae2c19b4c672d522a8077151e117e5344db4e5d53313c886dcbad19336c98d5",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 3,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p03",
+            "title": "資料庫備份",
+            "content": "異地還原與每日備份驗證。",
+            "url": "/api/research/pages/p03?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p02",
+            "title": "資料庫維護",
+            "content": "資料庫每日執行備份。Maintenance instructions.",
+            "url": "/api/research/pages/p02?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=ERR_CONN_RESET&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.241Z",
+      "status": 200,
+      "elapsedMs": 5.394048999999995,
+      "bytes": 386,
+      "sha256": "e1c927fb60019faabc901610cdf5152b6fbaf9690b9d13440c7dcdc82cafc3dc",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p04",
+            "title": "Network error guide",
+            "content": "ERR_CONN_RESET means the connection was reset. Check the proxy before retrying.",
+            "url": "/api/research/pages/p04?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=Evacuation&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.246Z",
+      "status": 200,
+      "elapsedMs": 6.337965999999994,
+      "bytes": 376,
+      "sha256": "607ea7737bca12bb5f0c013bc6fdd223cc3ef9a4989287f9933d5f61c8c48f29",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p12",
+            "title": "Evacuation contact directory",
+            "content": "Contact the local coordination team for the synthetic drill.",
+            "url": "/api/research/pages/p12?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=absentquartz&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.253Z",
+      "status": 200,
+      "elapsedMs": 3.220335999999989,
+      "bytes": 185,
+      "sha256": "b3e3c8e31994d63758e91c69fe82c9eca30fb8cd776973246219d60b6d5ec130",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 0,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": []
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=secretcobalt&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.257Z",
+      "status": 200,
+      "elapsedMs": 2.784084000000007,
+      "bytes": 185,
+      "sha256": "b3e3c8e31994d63758e91c69fe82c9eca30fb8cd776973246219d60b6d5ec130",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 0,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": []
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=secretcobalt&page=1&pageSize=10",
+      "user": "restricted",
+      "startedAt": "2026-11-14T07:27:50.260Z",
+      "status": 200,
+      "elapsedMs": 2.1170390000000054,
+      "bytes": 359,
+      "sha256": "bf31971e7edac8eafdd3ef2381929add2b708ac784effa374b79777d283f6e52",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p06",
+            "title": "Restricted planning",
+            "content": "secretcobalt restricted synthetic planning material.",
+            "url": "/api/research/pages/p06?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/pages/p06?release=review-v1",
+      "user": "restricted",
+      "startedAt": "2026-11-14T07:27:50.262Z",
+      "status": 200,
+      "elapsedMs": 4.6004039999999975,
+      "bytes": 187,
+      "sha256": "c2b5d4ab91cd983040bb8a1054b2936ba3723f6163e73558fcdbf2278eabcdbf",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "id": "p06",
+        "title": "Restricted planning",
+        "content": "secretcobalt restricted synthetic planning material.",
+        "attachments": [],
+        "synthetic": true
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=runbook&page=1&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.267Z",
+      "status": 200,
+      "elapsedMs": 2.667349999999999,
+      "bytes": 504,
+      "sha256": "04f0269b72a62959cda4fdc66f3074f19ba4eb5d52b94d0821fb657318ec3c9a",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p07",
+            "title": "Application runbook",
+            "content": "Application runbook with deployment steps.",
+            "url": "/api/research/pages/p07?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p08",
+            "title": "Storage runbook",
+            "content": "Storage runbook with capacity checks.",
+            "url": "/api/research/pages/p08?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=runbook&page=2&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.270Z",
+      "status": 200,
+      "elapsedMs": 3.1192450000000065,
+      "bytes": 499,
+      "sha256": "1140b65921e0db76feab7b9b6d526e585a0d5c3ac0fb9771a8acbfd6f887ef5f",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 2,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p09",
+            "title": "Networking runbook",
+            "content": "Networking runbook with routing checks.",
+            "url": "/api/research/pages/p09?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p10",
+            "title": "Identity runbook",
+            "content": "Identity runbook with login checks.",
+            "url": "/api/research/pages/p10?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=runbook&page=3&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.273Z",
+      "status": 200,
+      "elapsedMs": 2.066564000000028,
+      "bytes": 379,
+      "sha256": "786c190ec21a56ad34a6af90c58785cd16784f470f90b0dd0aee2488b895d368",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 3,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=runbook&page=1&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.275Z",
+      "status": 200,
+      "elapsedMs": 1.717443000000003,
+      "bytes": 504,
+      "sha256": "04f0269b72a62959cda4fdc66f3074f19ba4eb5d52b94d0821fb657318ec3c9a",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p07",
+            "title": "Application runbook",
+            "content": "Application runbook with deployment steps.",
+            "url": "/api/research/pages/p07?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p08",
+            "title": "Storage runbook",
+            "content": "Storage runbook with capacity checks.",
+            "url": "/api/research/pages/p08?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=runbook&page=4&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.277Z",
+      "status": 200,
+      "elapsedMs": 3.287996000000021,
+      "bytes": 184,
+      "sha256": "1bf4137ce757caaf8e5aab1ba2287348c411b21a47c13d238bdcc34e92f91752",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 4,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": []
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=backup&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.280Z",
+      "status": 200,
+      "elapsedMs": 1.6923850000000016,
+      "bytes": 380,
+      "sha256": "a17e44888602e65ff501e56c62c70cdd5b1776224fd329b836b21586f60eac59",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/pages/p01?release=review-v1",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.282Z",
+      "status": 200,
+      "elapsedMs": 1.7676569999999856,
+      "bytes": 208,
+      "sha256": "ef4f1a89eb3b14f53a990818b2b4edf41d12652b933812daf5de54d447d2ad0c",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "id": "p01",
+        "title": "Database backup runbook",
+        "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+        "attachments": [],
+        "synthetic": true
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=amberchecklist&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.284Z",
+      "status": 200,
+      "elapsedMs": 1.756670999999983,
+      "bytes": 384,
+      "sha256": "c46e6cca1acec03fcabbb9949bdfb5b14813a00368c42fb045bc267609005918",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p05",
+            "title": "Recovery checklist",
+            "content": "Use the attached checklist during recovery. amberchecklist is its lookup code.",
+            "url": "/api/research/pages/p05?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/pages/p05?release=review-v1",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.286Z",
+      "status": 200,
+      "elapsedMs": 1.8385430000000156,
+      "bytes": 280,
+      "sha256": "1e85776bcb2a5bb2ab36027c3cbf91917ae1b5a024b20b3250231e9f7d132e47",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "id": "p05",
+        "title": "Recovery checklist",
+        "content": "Use the attached checklist during recovery. amberchecklist is its lookup code.",
+        "attachments": [
+          {
+            "id": "a05",
+            "url": "/api/research/attachments/a05?release=review-v1"
+          }
+        ],
+        "synthetic": true
+      }
+    },
+    {
+      "url": "/api/research/attachments/a05?release=review-v1",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.288Z",
+      "status": 200,
+      "elapsedMs": 1.8992040000000259,
+      "bytes": 80,
+      "sha256": "893472abd9f7ff21f36a1e7cdfffc44517cd4f2a4dfb133c07436b75c40a3f80"
+    },
+    {
+      "url": "/api/research/pages/p06?release=review-v1",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.290Z",
+      "status": 403,
+      "elapsedMs": 1.5819299999999998,
+      "bytes": 48,
+      "sha256": "c0d35dc52d67fbb091a93ee1d4f01485fb38f3fabe36c79f6fb234aa98e18db8",
+      "body": {
+        "error": {
+          "code": "FORBIDDEN",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=backup&page=1&pageSize=10",
+      "user": "missing",
+      "startedAt": "2026-11-14T07:27:50.292Z",
+      "status": 401,
+      "elapsedMs": 1.4383159999999862,
+      "bytes": 54,
+      "sha256": "bf05b97fd3b80853f28e376f40f120667c95c07cec736865684fcafb114d4453",
+      "body": {
+        "error": {
+          "code": "UNAUTHENTICATED",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=backup&page=1&pageSize=10",
+      "user": "unknown",
+      "startedAt": "2026-11-14T07:27:50.293Z",
+      "status": 403,
+      "elapsedMs": 1.513307999999995,
+      "bytes": 48,
+      "sha256": "c0d35dc52d67fbb091a93ee1d4f01485fb38f3fabe36c79f6fb234aa98e18db8",
+      "body": {
+        "error": {
+          "code": "FORBIDDEN",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=backup&page=0&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.295Z",
+      "status": 400,
+      "elapsedMs": 1.5322669999999903,
+      "bytes": 54,
+      "sha256": "a77d199844754d76b0df3bd278594c3acab2c0487a27913f5d11fe0d2289f709",
+      "body": {
+        "error": {
+          "code": "INVALID_REQUEST",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=unsupported&q=backup&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.296Z",
+      "status": 400,
+      "elapsedMs": 1.5177339999999901,
+      "bytes": 54,
+      "sha256": "a77d199844754d76b0df3bd278594c3acab2c0487a27913f5d11fe0d2289f709",
+      "body": {
+        "error": {
+          "code": "INVALID_REQUEST",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/pages/p01?release=other",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.298Z",
+      "status": 409,
+      "elapsedMs": 1.4191979999999944,
+      "bytes": 58,
+      "sha256": "a511655cf05f264188a953fe0b82311c719394d9a83163beb30f5fbcd42a7e68",
+      "body": {
+        "error": {
+          "code": "VERSION_UNAVAILABLE",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=sqlite&q=markertest&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.300Z",
+      "status": 200,
+      "elapsedMs": 1.411957000000001,
+      "bytes": 424,
+      "sha256": "4ae87b17c27ad391cda96c4b4a64cf34d667f084e47956edb9f90855645b2257",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "sqlite",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p11",
+            "title": "Literal markup example",
+            "content": "markertest literal <script>alert(\"synthetic\")</script> & <mark> text; content is plain text, never trusted HTML.",
+            "url": "/api/research/pages/p11?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=backup&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.301Z",
+      "status": 200,
+      "elapsedMs": 2.23315199999999,
+      "bytes": 382,
+      "sha256": "450903e9df85af68540a584729232247759248094ddd0fe1fbba2ea19bae4e6c",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=%E8%B3%87%E6%96%99%E5%BA%AB%E5%82%99%E4%BB%BD&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.303Z",
+      "status": 200,
+      "elapsedMs": 7.073523999999992,
+      "bytes": 711,
+      "sha256": "26c41772798aae1202f4fd32ba43e96b9ee5b34e25ad3db7518e83a8342a3fed",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 3,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p02",
+            "title": "資料庫維護",
+            "content": "資料庫每日執行備份。Maintenance instructions.",
+            "url": "/api/research/pages/p02?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p03",
+            "title": "資料庫備份",
+            "content": "異地還原與每日備份驗證。",
+            "url": "/api/research/pages/p03?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=%E5%82%99%E4%BB%BD&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.311Z",
+      "status": 200,
+      "elapsedMs": 1.886464000000018,
+      "bytes": 711,
+      "sha256": "37a1834b67f2e84d737c40ba0dd0b758757aa65582e599b5e9f0831f882f4fbd",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 3,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p03",
+            "title": "資料庫備份",
+            "content": "異地還原與每日備份驗證。",
+            "url": "/api/research/pages/p03?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p02",
+            "title": "資料庫維護",
+            "content": "資料庫每日執行備份。Maintenance instructions.",
+            "url": "/api/research/pages/p02?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=ERR_CONN_RESET&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.313Z",
+      "status": 200,
+      "elapsedMs": 5.773054000000002,
+      "bytes": 388,
+      "sha256": "69bee35dbe60695ea4c68bfa5e6c383301cd28007961fd441a9e34632202e877",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p04",
+            "title": "Network error guide",
+            "content": "ERR_CONN_RESET means the connection was reset. Check the proxy before retrying.",
+            "url": "/api/research/pages/p04?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=Evacuation&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.318Z",
+      "status": 200,
+      "elapsedMs": 3.2494689999999764,
+      "bytes": 378,
+      "sha256": "e624f56d7986347c4f9702e13693dd0364556e1cf8b35cf61d4d5097be160d76",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p12",
+            "title": "Evacuation contact directory",
+            "content": "Contact the local coordination team for the synthetic drill.",
+            "url": "/api/research/pages/p12?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=absentquartz&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.322Z",
+      "status": 200,
+      "elapsedMs": 2.5341909999999928,
+      "bytes": 187,
+      "sha256": "c870ca87c6b1596aac0445fece946321bc1dd0b6e827263a7f3f295989675ab5",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 0,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": []
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=secretcobalt&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.324Z",
+      "status": 200,
+      "elapsedMs": 1.8926539999999932,
+      "bytes": 187,
+      "sha256": "c870ca87c6b1596aac0445fece946321bc1dd0b6e827263a7f3f295989675ab5",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 0,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": []
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=secretcobalt&page=1&pageSize=10",
+      "user": "restricted",
+      "startedAt": "2026-11-14T07:27:50.326Z",
+      "status": 200,
+      "elapsedMs": 3.1331849999999974,
+      "bytes": 361,
+      "sha256": "61f23e524083eee3770e61c577efc243ad267635917e090711146f85fbe839dd",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p06",
+            "title": "Restricted planning",
+            "content": "secretcobalt restricted synthetic planning material.",
+            "url": "/api/research/pages/p06?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/pages/p06?release=review-v1",
+      "user": "restricted",
+      "startedAt": "2026-11-14T07:27:50.330Z",
+      "status": 200,
+      "elapsedMs": 2.2494669999999815,
+      "bytes": 187,
+      "sha256": "c2b5d4ab91cd983040bb8a1054b2936ba3723f6163e73558fcdbf2278eabcdbf",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "id": "p06",
+        "title": "Restricted planning",
+        "content": "secretcobalt restricted synthetic planning material.",
+        "attachments": [],
+        "synthetic": true
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=runbook&page=1&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.332Z",
+      "status": 200,
+      "elapsedMs": 10.824910999999986,
+      "bytes": 506,
+      "sha256": "d9a00ebac61b02e4dd104b8ea6e2383a7ea463e9c8a402c2d3269d91cb53c4ae",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p07",
+            "title": "Application runbook",
+            "content": "Application runbook with deployment steps.",
+            "url": "/api/research/pages/p07?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p08",
+            "title": "Storage runbook",
+            "content": "Storage runbook with capacity checks.",
+            "url": "/api/research/pages/p08?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=runbook&page=2&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.343Z",
+      "status": 200,
+      "elapsedMs": 2.178680000000014,
+      "bytes": 501,
+      "sha256": "b0c122ce73771da1e36711efe4443f7792af747ef68f3c1d82aa41f14ca0bf53",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 2,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p09",
+            "title": "Networking runbook",
+            "content": "Networking runbook with routing checks.",
+            "url": "/api/research/pages/p09?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p10",
+            "title": "Identity runbook",
+            "content": "Identity runbook with login checks.",
+            "url": "/api/research/pages/p10?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=runbook&page=3&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.345Z",
+      "status": 200,
+      "elapsedMs": 6.651604999999989,
+      "bytes": 381,
+      "sha256": "44c7558cf861f3a0983422a48f47fe98b7e4f559a2297c95548cb6846c281d8a",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 3,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=runbook&page=1&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.352Z",
+      "status": 200,
+      "elapsedMs": 5.908175,
+      "bytes": 506,
+      "sha256": "d9a00ebac61b02e4dd104b8ea6e2383a7ea463e9c8a402c2d3269d91cb53c4ae",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p07",
+            "title": "Application runbook",
+            "content": "Application runbook with deployment steps.",
+            "url": "/api/research/pages/p07?release=review-v1",
+            "highlight": null
+          },
+          {
+            "id": "p08",
+            "title": "Storage runbook",
+            "content": "Storage runbook with capacity checks.",
+            "url": "/api/research/pages/p08?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=runbook&page=4&pageSize=2",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.358Z",
+      "status": 200,
+      "elapsedMs": 1.5683799999999906,
+      "bytes": 186,
+      "sha256": "f98da9fc6aa21b830f519a21d940446e2d6df8e567e09189b935ff8160341a81",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 4,
+        "pageSize": 2,
+        "total": 5,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": []
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=backup&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.359Z",
+      "status": 200,
+      "elapsedMs": 1.462963000000002,
+      "bytes": 382,
+      "sha256": "450903e9df85af68540a584729232247759248094ddd0fe1fbba2ea19bae4e6c",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p01",
+            "title": "Database backup runbook",
+            "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+            "url": "/api/research/pages/p01?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/pages/p01?release=review-v1",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.361Z",
+      "status": 200,
+      "elapsedMs": 1.5639740000000018,
+      "bytes": 208,
+      "sha256": "ef4f1a89eb3b14f53a990818b2b4edf41d12652b933812daf5de54d447d2ad0c",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "id": "p01",
+        "title": "Database backup runbook",
+        "content": "Daily backup and disaster recovery. 資料庫備份流程與還原。",
+        "attachments": [],
+        "synthetic": true
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=amberchecklist&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.363Z",
+      "status": 200,
+      "elapsedMs": 5.013019999999983,
+      "bytes": 386,
+      "sha256": "9ef1f09fe1f2c34ccf8f1ff7c317e384abd8bf1787e259bfc16a93692cbb98d0",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p05",
+            "title": "Recovery checklist",
+            "content": "Use the attached checklist during recovery. amberchecklist is its lookup code.",
+            "url": "/api/research/pages/p05?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    },
+    {
+      "url": "/api/research/pages/p05?release=review-v1",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.368Z",
+      "status": 200,
+      "elapsedMs": 1.8639520000000118,
+      "bytes": 280,
+      "sha256": "1e85776bcb2a5bb2ab36027c3cbf91917ae1b5a024b20b3250231e9f7d132e47",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "id": "p05",
+        "title": "Recovery checklist",
+        "content": "Use the attached checklist during recovery. amberchecklist is its lookup code.",
+        "attachments": [
+          {
+            "id": "a05",
+            "url": "/api/research/attachments/a05?release=review-v1"
+          }
+        ],
+        "synthetic": true
+      }
+    },
+    {
+      "url": "/api/research/attachments/a05?release=review-v1",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.370Z",
+      "status": 200,
+      "elapsedMs": 1.4471690000000024,
+      "bytes": 80,
+      "sha256": "893472abd9f7ff21f36a1e7cdfffc44517cd4f2a4dfb133c07436b75c40a3f80"
+    },
+    {
+      "url": "/api/research/pages/p06?release=review-v1",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.371Z",
+      "status": 403,
+      "elapsedMs": 1.4873790000000042,
+      "bytes": 48,
+      "sha256": "c0d35dc52d67fbb091a93ee1d4f01485fb38f3fabe36c79f6fb234aa98e18db8",
+      "body": {
+        "error": {
+          "code": "FORBIDDEN",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=backup&page=1&pageSize=10",
+      "user": "missing",
+      "startedAt": "2026-11-14T07:27:50.373Z",
+      "status": 401,
+      "elapsedMs": 2.188184000000007,
+      "bytes": 54,
+      "sha256": "bf05b97fd3b80853f28e376f40f120667c95c07cec736865684fcafb114d4453",
+      "body": {
+        "error": {
+          "code": "UNAUTHENTICATED",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=backup&page=1&pageSize=10",
+      "user": "unknown",
+      "startedAt": "2026-11-14T07:27:50.375Z",
+      "status": 403,
+      "elapsedMs": 2.026303000000013,
+      "bytes": 48,
+      "sha256": "c0d35dc52d67fbb091a93ee1d4f01485fb38f3fabe36c79f6fb234aa98e18db8",
+      "body": {
+        "error": {
+          "code": "FORBIDDEN",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=backup&page=0&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.377Z",
+      "status": 400,
+      "elapsedMs": 2.08640299999999,
+      "bytes": 54,
+      "sha256": "a77d199844754d76b0df3bd278594c3acab2c0487a27913f5d11fe0d2289f709",
+      "body": {
+        "error": {
+          "code": "INVALID_REQUEST",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=unsupported&q=backup&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.379Z",
+      "status": 400,
+      "elapsedMs": 1.8397349999999904,
+      "bytes": 54,
+      "sha256": "a77d199844754d76b0df3bd278594c3acab2c0487a27913f5d11fe0d2289f709",
+      "body": {
+        "error": {
+          "code": "INVALID_REQUEST",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/pages/p01?release=other",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.381Z",
+      "status": 409,
+      "elapsedMs": 1.3575150000000065,
+      "bytes": 58,
+      "sha256": "a511655cf05f264188a953fe0b82311c719394d9a83163beb30f5fbcd42a7e68",
+      "body": {
+        "error": {
+          "code": "VERSION_UNAVAILABLE",
+          "retryable": false
+        }
+      }
+    },
+    {
+      "url": "/api/research/search?engine=pagefind&q=markertest&page=1&pageSize=10",
+      "user": "ops",
+      "startedAt": "2026-11-14T07:27:50.382Z",
+      "status": 200,
+      "elapsedMs": 3.953277999999983,
+      "bytes": 426,
+      "sha256": "e16520571059f012098237ea4b8d6a814f83b571cce6aa943b3cbd6906bf8a1c",
+      "body": {
+        "schemaVersion": "c1-v1",
+        "release": "review-v1",
+        "engine": "pagefind",
+        "page": 1,
+        "pageSize": 10,
+        "total": 1,
+        "totalRelation": "exact",
+        "capabilities": {
+          "highlight": "none"
+        },
+        "synthetic": true,
+        "hits": [
+          {
+            "id": "p11",
+            "title": "Literal markup example",
+            "content": "markertest literal <script>alert(\"synthetic\")</script> & <mark> text; content is plain text, never trusted HTML.",
+            "url": "/api/research/pages/p11?release=review-v1",
+            "highlight": null
+          }
+        ]
+      }
+    }
+  ],
+  "finishedAt": "2026-11-14T07:27:50.386Z",
+  "requestsCount": 52,
+  "basicPassed": true,
+  "claim": "C1 synthetic Next HTTP contract only; no production authorization, MinIO, capacity, full DR or consumer acceptance claim"
+}

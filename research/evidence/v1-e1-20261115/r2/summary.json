@@ -1,0 +1,667 @@
+{
+  "round": "r2",
+  "startedAt": "2026-11-15T13:20:20.449Z",
+  "finishedAt": "2026-11-15T13:21:12.239Z",
+  "durationMs": 51790,
+  "fatal": null,
+  "caseCount": 46,
+  "requestCount": 86,
+  "results": [
+    {
+      "engine": "b",
+      "id": "R01",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 95,
+      "requests": 2
+    },
+    {
+      "engine": "b",
+      "id": "R02",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 18,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "R03",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 15,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "R04",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 15,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "R05",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 14,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "R06",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 11,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "R07",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 15,
+      "requests": 2
+    },
+    {
+      "engine": "b",
+      "id": "R08",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 10,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "R09",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 22,
+      "requests": 4
+    },
+    {
+      "engine": "b",
+      "id": "R10",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 14,
+      "requests": 3
+    },
+    {
+      "engine": "b",
+      "id": "R11",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 8,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "R12",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 10,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "N01",
+      "kind": "negative",
+      "passed": true,
+      "durationMs": 4,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "N02",
+      "kind": "negative",
+      "passed": false,
+      "durationMs": 10,
+      "requests": 4
+    },
+    {
+      "engine": "b",
+      "id": "N03",
+      "kind": "negative",
+      "passed": false,
+      "durationMs": 6,
+      "requests": 2
+    },
+    {
+      "engine": "b",
+      "id": "N04",
+      "kind": "negative",
+      "passed": true,
+      "durationMs": 10,
+      "requests": 4
+    },
+    {
+      "engine": "b",
+      "id": "N05",
+      "kind": "negative",
+      "passed": false,
+      "durationMs": 8,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "N06",
+      "kind": "negative",
+      "passed": true,
+      "durationMs": 4,
+      "requests": 1
+    },
+    {
+      "engine": "b",
+      "id": "N07",
+      "kind": "negative",
+      "passed": false,
+      "durationMs": 1376,
+      "requests": 2
+    },
+    {
+      "engine": "b",
+      "id": "D01",
+      "kind": "diagnostic",
+      "passed": false,
+      "durationMs": 40,
+      "requests": 2,
+      "policyExpected": {
+        "pageSpaceId": "space-a",
+        "identity": "a",
+        "allowed": true
+      },
+      "currentRelations": {
+        "pageId": "a-move",
+        "spaceId": "space-b",
+        "identity": "a",
+        "allowed": false
+      },
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "exposure": {
+        "fields": [
+          "title",
+          "spaceId",
+          "tagIds",
+          "snippet",
+          "body"
+        ],
+        "expectedAtObservation": true,
+        "realDurationSeconds": null,
+        "simulatedElapsedSeconds": 97200,
+        "claim": "僅固定時間模型及本輪請求觀察，不是27小時實際持續暴露證據"
+      },
+      "interpretation": "synthetic-policy-observation-not-security-acceptance"
+    },
+    {
+      "engine": "b",
+      "id": "D02",
+      "kind": "diagnostic",
+      "passed": false,
+      "durationMs": 31,
+      "requests": 5,
+      "policyExpected": {
+        "identity": "b",
+        "allowedSpaceIds": []
+      },
+      "currentRelations": {
+        "identity": "b",
+        "allowedSpaceIds": []
+      },
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "exposure": {
+        "expectedAtObservation": false,
+        "realRevocationLatencySeconds": null,
+        "claim": "只驗profile切換後受測請求；不是公司ReBAC撤權時限"
+      },
+      "interpretation": "synthetic-policy-observation-not-security-acceptance"
+    },
+    {
+      "engine": "b",
+      "id": "D03",
+      "kind": "diagnostic",
+      "passed": true,
+      "durationMs": 6,
+      "requests": 1,
+      "policyExpected": {
+        "pageId": "a-pdf",
+        "mediaIds": [
+          "pdf-checklist"
+        ],
+        "allowed": true
+      },
+      "currentRelations": {
+        "pageId": "a-pdf",
+        "mediaIds": [],
+        "allowed": false
+      },
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "exposure": {
+        "fields": [
+          "mediaBytes"
+        ],
+        "expectedAtObservation": true,
+        "realDurationSeconds": null,
+        "simulatedElapsedSeconds": 97200,
+        "claim": "合成27小時時差；實際只驗本輪交付，未作長時演練"
+      },
+      "interpretation": "synthetic-policy-observation-not-security-acceptance"
+    },
+    {
+      "engine": "b",
+      "id": "D04",
+      "kind": "diagnostic",
+      "passed": false,
+      "durationMs": 7,
+      "requests": 1,
+      "policyExpected": {
+        "serveCapturedSnapshot": true,
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z"
+      },
+      "currentRelations": {
+        "sourceContent": "unknown",
+        "newSnapshotObtained": false
+      },
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "exposure": {
+        "snapshotAgeSeconds": 100800,
+        "actualContentDifference": "unknown",
+        "realOutageDurationSeconds": null,
+        "claim": "28小時為固定時間標籤的計算；無真同步故障或28小時連續運行證據"
+      },
+      "interpretation": "synthetic-policy-observation-not-security-acceptance"
+    },
+    {
+      "engine": "c",
+      "id": "R01",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 88,
+      "requests": 2
+    },
+    {
+      "engine": "c",
+      "id": "R02",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 67,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "R03",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 68,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "R04",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 67,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "R05",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 66,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "R06",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 67,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "R07",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 69,
+      "requests": 2
+    },
+    {
+      "engine": "c",
+      "id": "R08",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 65,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "R09",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 75,
+      "requests": 4
+    },
+    {
+      "engine": "c",
+      "id": "R10",
+      "kind": "required",
+      "passed": false,
+      "durationMs": 70,
+      "requests": 3
+    },
+    {
+      "engine": "c",
+      "id": "R11",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 65,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "R12",
+      "kind": "required",
+      "passed": true,
+      "durationMs": 64,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "N01",
+      "kind": "negative",
+      "passed": true,
+      "durationMs": 7,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "N02",
+      "kind": "negative",
+      "passed": false,
+      "durationMs": 12,
+      "requests": 4
+    },
+    {
+      "engine": "c",
+      "id": "N03",
+      "kind": "negative",
+      "passed": false,
+      "durationMs": 7,
+      "requests": 2
+    },
+    {
+      "engine": "c",
+      "id": "N04",
+      "kind": "negative",
+      "passed": true,
+      "durationMs": 10,
+      "requests": 4
+    },
+    {
+      "engine": "c",
+      "id": "N05",
+      "kind": "negative",
+      "passed": true,
+      "durationMs": 68,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "N06",
+      "kind": "negative",
+      "passed": true,
+      "durationMs": 5,
+      "requests": 1
+    },
+    {
+      "engine": "c",
+      "id": "N07",
+      "kind": "negative",
+      "passed": false,
+      "durationMs": 66,
+      "requests": 2
+    },
+    {
+      "engine": "c",
+      "id": "D01",
+      "kind": "diagnostic",
+      "passed": false,
+      "durationMs": 67,
+      "requests": 2,
+      "policyExpected": {
+        "pageSpaceId": "space-a",
+        "identity": "a",
+        "allowed": true
+      },
+      "currentRelations": {
+        "pageId": "a-move",
+        "spaceId": "space-b",
+        "identity": "a",
+        "allowed": false
+      },
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "exposure": {
+        "fields": [
+          "title",
+          "spaceId",
+          "tagIds",
+          "snippet",
+          "body"
+        ],
+        "expectedAtObservation": true,
+        "realDurationSeconds": null,
+        "simulatedElapsedSeconds": 97200,
+        "claim": "僅固定時間模型及本輪請求觀察，不是27小時實際持續暴露證據"
+      },
+      "interpretation": "synthetic-policy-observation-not-security-acceptance"
+    },
+    {
+      "engine": "c",
+      "id": "D02",
+      "kind": "diagnostic",
+      "passed": false,
+      "durationMs": 73,
+      "requests": 5,
+      "policyExpected": {
+        "identity": "b",
+        "allowedSpaceIds": []
+      },
+      "currentRelations": {
+        "identity": "b",
+        "allowedSpaceIds": []
+      },
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "exposure": {
+        "expectedAtObservation": false,
+        "realRevocationLatencySeconds": null,
+        "claim": "只驗profile切換後受測請求；不是公司ReBAC撤權時限"
+      },
+      "interpretation": "synthetic-policy-observation-not-security-acceptance"
+    },
+    {
+      "engine": "c",
+      "id": "D03",
+      "kind": "diagnostic",
+      "passed": true,
+      "durationMs": 6,
+      "requests": 1,
+      "policyExpected": {
+        "pageId": "a-pdf",
+        "mediaIds": [
+          "pdf-checklist"
+        ],
+        "allowed": true
+      },
+      "currentRelations": {
+        "pageId": "a-pdf",
+        "mediaIds": [],
+        "allowed": false
+      },
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "exposure": {
+        "fields": [
+          "mediaBytes"
+        ],
+        "expectedAtObservation": true,
+        "realDurationSeconds": null,
+        "simulatedElapsedSeconds": 97200,
+        "claim": "合成27小時時差；實際只驗本輪交付，未作長時演練"
+      },
+      "interpretation": "synthetic-policy-observation-not-security-acceptance"
+    },
+    {
+      "engine": "c",
+      "id": "D04",
+      "kind": "diagnostic",
+      "passed": false,
+      "durationMs": 5,
+      "requests": 1,
+      "policyExpected": {
+        "serveCapturedSnapshot": true,
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z"
+      },
+      "currentRelations": {
+        "sourceContent": "unknown",
+        "newSnapshotObtained": false
+      },
+      "timeline": {
+        "snapshotCapturedAt": "2026-11-15T08:00:00.000Z",
+        "simulatedChangeAt": "2026-11-15T09:00:00.000Z",
+        "simulatedNow": "2026-11-16T12:00:00.000Z",
+        "snapshotAgeSeconds": 100800,
+        "elapsedSinceSimulatedChangeSeconds": 97200,
+        "clockKind": "fixed-synthetic-labels-not-wallclock"
+      },
+      "exposure": {
+        "snapshotAgeSeconds": 100800,
+        "actualContentDifference": "unknown",
+        "realOutageDurationSeconds": null,
+        "claim": "28小時為固定時間標籤的計算；無真同步故障或28小時連續運行證據"
+      },
+      "interpretation": "synthetic-policy-observation-not-security-acceptance"
+    }
+  ],
+  "uiResults": [
+    {
+      "engine": "b",
+      "passed": false,
+      "checks": [
+        {
+          "id": "pdf-search-read-download",
+          "passed": true,
+          "durationMs": 1634
+        },
+        {
+          "id": "tags-and",
+          "passed": true,
+          "durationMs": 178
+        },
+        {
+          "id": "empty-and-unknown",
+          "passed": false,
+          "error": "locator.selectOption: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('研究身份', { exact: true })\u001b[22m\n",
+          "durationMs": 10127
+        },
+        {
+          "id": "PUBLIC-HOST-and-identity-clear",
+          "passed": false,
+          "error": "locator.selectOption: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('研究身份', { exact: true })\u001b[22m\n",
+          "durationMs": 10014
+        }
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "browser": "157.0.4341.46",
+      "durationMs": 22962,
+      "pdfViewer": "iframe and blob popup observed; screenshot visual inspection required; not company editor acceptance"
+    },
+    {
+      "engine": "c",
+      "passed": false,
+      "checks": [
+        {
+          "id": "pdf-search-read-download",
+          "passed": true,
+          "durationMs": 1614
+        },
+        {
+          "id": "tags-and",
+          "passed": true,
+          "durationMs": 206
+        },
+        {
+          "id": "empty-and-unknown",
+          "passed": false,
+          "error": "locator.selectOption: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('研究身份', { exact: true })\u001b[22m\n",
+          "durationMs": 10161
+        },
+        {
+          "id": "PUBLIC-HOST-and-identity-clear",
+          "passed": false,
+          "error": "locator.selectOption: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('研究身份', { exact: true })\u001b[22m\n",
+          "durationMs": 10016
+        }
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "browser": "157.0.4341.46",
+      "durationMs": 22940,
+      "pdfViewer": "iframe and blob popup observed; screenshot visual inspection required; not company editor acceptance"
+    }
+  ],
+  "resourceSamples": 26,
+  "totalRssMax": 2151305216,
+  "formalPassed": false,
+  "scope": "small synthetic Windows function test, no capacity or production acceptance"
+}

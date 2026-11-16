@@ -1,0 +1,7 @@
+{
+  "at": 1794786312.7067814,
+  "elapsedSeconds": 27.436231307000014,
+  "samples": 109,
+  "unitBeforeStop": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\n",
+  "unitAfterStop": "MainPID=0\nResult=success\nExecMainStatus=0\nActiveState=inactive\n"
+}

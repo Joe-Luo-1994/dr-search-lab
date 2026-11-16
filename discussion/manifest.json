@@ -1,27 +1,27 @@
 {
-  "version": "2026-11-16-discussion-v2",
+  "version": "2026-11-16-discussion-v3-sources",
   "previousPublishedCommit": "da456da93064f2c9d1cffa0863afb0d1f48a02a6",
-  "scope": "curated decision material only; prioritize verifying reuse of A, conditional alternatives; not a reproducible raw experiment archive",
+  "scope": "Discussion with linked auditable synthetic research copies; not a certified replay environment",
   "files": [
     {
       "path": "index.html",
-      "bytes": 33269,
-      "sha256": "3a1be91c77937693fd89bf0293935a94a58dcc951d3ec8fe8c3ed1bf3a8d5b21"
+      "bytes": 33674,
+      "sha256": "7190fe5f7cb4003f98d657c2d278dda5659747576fc9fdab9bbc1050068442c7"
     },
     {
       "path": "pagefind.html",
-      "bytes": 11408,
-      "sha256": "4f3819edb800ade544341ee3e6b5cdb8a60513961a16e8af1f6c65a002bd0abf"
+      "bytes": 11773,
+      "sha256": "7e41d4f1f359c2b62291bcb1b919c2cd454a988495f8899aeeaa7d617a70870a"
     },
     {
       "path": "evidence.html",
-      "bytes": 11304,
-      "sha256": "436407679b4ddc6f250a5fb2f737643fd650f03d49e55cf688e2980e18e146a3"
+      "bytes": 11730,
+      "sha256": "bc5a0d6fc71d1927b535080a02a92c04e7aa75f2bbe112daf7dcbf4c9f7c0a4b"
     },
     {
       "path": "README.md",
-      "bytes": 1624,
-      "sha256": "55eb8c5224b22f92bc88d598bc6ad7ac1c81d9022a4cfa72e084fc528eeec07f"
+      "bytes": 1292,
+      "sha256": "1dc14b74014236d485cfa91bb03de8455fe4a9f7e8b89be7d7be8f8bfb0a2729"
     }
   ],
   "sources": [

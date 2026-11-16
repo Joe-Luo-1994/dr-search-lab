@@ -1,0 +1,63 @@
+{
+  "at": 1794786220.8112605,
+  "k2ReusedMismatches": [],
+  "cacheNote": "Pre-run full DB SHA validation may warm host cache; not cold-cache latency. Reference and profile use distinct SQLite connections.",
+  "files": {
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-query-cost-20261116/environment.py": {
+      "sha256": "08c776e63f9f27bc54d8e9844f35f05f0d42123ea0bc825e1d5bd84c4ca348f9",
+      "bytes": 6100
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/scripts/c-query-cost-20261116/environment.py": {
+      "sha256": "08c776e63f9f27bc54d8e9844f35f05f0d42123ea0bc825e1d5bd84c4ca348f9",
+      "bytes": 6100
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-query-cost-20261116/run.mjs": {
+      "sha256": "82b381ae904d9630f96524f4bba503487bb7dae2d56086f282ad86b9c5832129",
+      "bytes": 14902
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/scripts/c-query-cost-20261116/run.mjs": {
+      "sha256": "82b381ae904d9630f96524f4bba503487bb7dae2d56086f282ad86b9c5832129",
+      "bytes": 14902
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-query-cost-20261116/worker.mjs": {
+      "sha256": "cb997b0ae9e749b9fb4ea5380f4039b8402c232fbd35cf8dab56c3541259ec65",
+      "bytes": 4870
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/scripts/c-query-cost-20261116/worker.mjs": {
+      "sha256": "cb997b0ae9e749b9fb4ea5380f4039b8402c232fbd35cf8dab56c3541259ec65",
+      "bytes": 4870
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/project/worker.mjs": {
+      "sha256": "d33b75f0c3394205c7a51344ca5d380dfde7996270a70371aa64e372127550d5",
+      "bytes": 2430
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/v1/search.sqlite": {
+      "sha256": "0b1a4379e317ef59289df3c1218c291d6047d5b3a3b9196600e8c182d8bd9147",
+      "bytes": 3312799744
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-million-20261116/fixture-1000000/oracle.json": {
+      "sha256": "7b49c20b7ef7d4290cb770c0caf63e9fb148da974e67a5588f92f6b99f3be26a",
+      "bytes": 160100
+    },
+    "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node": {
+      "sha256": "ccacb2d6d87ba6d118b2bffc1ae33747a05cc5fc6b1f1ec4fc1d420b687e952d",
+      "bytes": 121613584
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/scripts/c-million-20261116/environment.py": {
+      "sha256": "52f204316c44e007df23e9afc6abcbd6c0e297c8e06043d65ae05fca37ad9506",
+      "bytes": 12575
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/scripts/c-million-20261116/source.mjs": {
+      "sha256": "ae35a9c1dc23ad9789d986c3168b1d59e0d05dcabc2b700f91eaf00ea4fd60b7",
+      "bytes": 3917
+    },
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/c-query-cost-20261116/limits.json": {
+      "sha256": "dcae1e9056730d7740bdf31f6230df2d1efe6e9a9a4256e5321cf1d96d5cc536",
+      "bytes": 230
+    },
+    "/PUBLIC/WINDOWS_WORKSPACE/docs/C_QUERY_COST_DESIGN_REVIEW_20261116.md": {
+      "sha256": "c4e59b3e78c50d79f3a306bcddde62328e7154cb8f59639d7e4b8d566503d9b1",
+      "bytes": 5689
+    }
+  }
+}

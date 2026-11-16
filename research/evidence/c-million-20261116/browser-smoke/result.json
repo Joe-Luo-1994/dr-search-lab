@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "SSR document displayed",
+    "search -> returned hit -> SSR page content",
+    "no browser JS errors"
+  ],
+  "errors": [],
+  "scope": "isolated author browser preflight with explicit synthetic identity, outside formal load; not company editor or human usability"
+}

@@ -1,0 +1,71 @@
+{
+  "status": "proposed scope and roles, not production completion or accepted owners",
+  "packages": [
+    {
+      "n": "01",
+      "title": "正式資料匯出",
+      "owner": "應用團隊／資料 owner",
+      "reuse": "既有 PDF 抽取文字與 page metadata 可作來源；沿用研究 builder 的輸入契約。",
+      "adapt": "把 MariaDB 真實 schema、正文格式、Space、Tags、page→media 關係映射成一致的輸入。",
+      "add": "一致資料切點、缺件／異常資料處理、匯出排程與來源版本追溯。",
+      "accept": "同一批來源中的指定文件、標籤與附件可追溯；缺必要關係時明確拒絕發布。",
+      "cost": "中央共用：來源 schema 變動、匯出失敗與資料修復。",
+      "unknown": "正式 schema、資料量分布與可用匯出方式未取得。"
+    },
+    {
+      "n": "02",
+      "title": "搜尋與 consumer API",
+      "owner": "應用團隊／consumer 對口",
+      "reuse": "SQLite FTS、Space／Tags AND、查詢 worker／queue 的研究機制；K5 容量子證據。",
+      "adapt": "正式 request／response、分頁與錯誤行為；中英文、技術碼、title／content 的必要命中案例。",
+      "add": "雙方同意的回歸案例與可接受差異清單；需要的摘要／highlight 行為。",
+      "accept": "預先約定的必要文件找得到，必要篩選與 consumer 任務成立；排名差異與省略功能經對口明確接受，未接受差異不算通過。",
+      "cost": "中央共用：搜尋前處理、查詢與相容層的持續維護。",
+      "unknown": "正式 golden cases／API 未提供；不能承諾同關鍵字與 ES 完全同結果。"
+    },
+    {
+      "n": "03",
+      "title": "閱讀、下載與授權",
+      "owner": "應用團隊／身份與 ReBAC 對口",
+      "reuse": "現有 pageId→頁面／editor 的產品路徑；研究的 canonical page→Space→media membership。",
+      "adapt": "正式正文格式、身份憑證與 ReBAC；PDF page 的 mediaId 解析、必要的大檔／Range 行為。",
+      "add": "明確的授權未知與版本錯誤處理；正式整合驗收。",
+      "accept": "搜尋點擊後進入既有閱讀路徑；有權限可讀可下載，無權限或關係不符不可取得。",
+      "cost": "中央共用：身份／資料格式與附件交付契約；每站仍需網路與 secret。",
+      "unknown": "正式 ReBAC／consumer 未接；大檔及 PDF-only 真實格式未驗。"
+    },
+    {
+      "n": "04",
+      "title": "集中建置與發布",
+      "owner": "應用團隊／CI 或排程平台 owner",
+      "reuse": "SQLite builder、hash 驗證、publisher 原型；一次產製供多站使用的方向。",
+      "adapt": "正式匯出→建置→異地物件位置與版本描述；認證與權限分工。",
+      "add": "排程、跨站完成判斷、失敗告警、保留規則與可追溯的發布紀錄。",
+      "accept": "正常一次更新可自動產出並發布完整可用版本；失敗不讓未完整版本被選中，訊息能定位到步驟。",
+      "cost": "中央共用：build／發布工具維護；各站傳輸與物件保留另計。",
+      "unknown": "公司 pipeline 重用量、正式建置成本及跨站一致性待核。"
+    },
+    {
+      "n": "05",
+      "title": "Web Pod 的版本生命週期",
+      "owner": "應用團隊／平台",
+      "reuse": "K5 新舊 pool 切換／排空；O1 核准版本發現、下載與快取驗證，各有獨立證據。",
+      "adapt": "把啟動與熱更新接成同一契約，完成正式 readiness 與部署參數。",
+      "add": "有限重試／告警、磁碟水位與舊版本清理、worker 異常的可操作復原。",
+      "accept": "空 Pod 與既有 Pod 都能取得應用版本；更新期間任務符合門檻；失敗有可定位與恢復流程。",
+      "cost": "中央程式維護＋每 reader 儲存、下載、更新與診斷；不是只有 MinIO。",
+      "unknown": "兩套原型未整合；GC／fatal 復原、Kubernetes 故障與長期運作未驗。"
+    },
+    {
+      "n": "06",
+      "title": "部署、監控與交接",
+      "owner": "平台／維運／應用 on-call",
+      "reuse": "公司現有 Next、MinIO、監控與部署平台，能重用多少待核；本機實驗配置僅作參照。",
+      "adapt": "hostname、網路、secret、CPU/RAM、ephemeral-storage、探針與告警面板。",
+      "add": "操作 runbook、版本／新鮮度健康判斷，以及非作者驗收。",
+      "accept": "非作者能照流程部署、辨識失敗與恢復；正常排程不需每天人工搬檔。",
+      "cost": "中央模板與訓練；每站例外、修補與演練。",
+      "unknown": "正式 owner、頻率、主動工時與服務等級尚未確認。"
+    }
+  ]
+}

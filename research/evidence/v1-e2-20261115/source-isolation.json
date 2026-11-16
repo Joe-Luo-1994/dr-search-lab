@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-15T14:08:01.4828476Z",
+  "source": "/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\producer",
+  "freshCacheAbsent": true,
+  "model": "Local path isolation only; no cluster/network failure",
+  "preservedAt": "/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\producer-isolated",
+  "absentFz2": true,
+  "drArtifact": "/PUBLIC/WINDOWS_WORKSPACE\\.lab\\v1-e2-20261115\\artifacts\\v2",
+  "absentFz1": true
+}

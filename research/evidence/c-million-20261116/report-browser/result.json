@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "viewport-320",
+    "viewport-390",
+    "viewport-1280",
+    "six-measured-stages",
+    "query-details-open",
+    "failure-and-cancellation-visible",
+    "evidence-links",
+    "keyboard",
+    "no-js-errors-or-network"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "agent browser inspection, not human comprehension or product load"
+}

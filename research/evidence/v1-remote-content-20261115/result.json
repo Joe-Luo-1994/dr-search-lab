@@ -1,0 +1,141 @@
+{
+  "at": "2026-11-15T15:08:12.594Z",
+  "elapsedMs": 11979.6353,
+  "passed": true,
+  "checks": [
+    {
+      "id": "R1-01",
+      "passed": true,
+      "elapsedMs": 173.8394000000003,
+      "ioStart": 3,
+      "ioEnd": 5
+    },
+    {
+      "id": "R1-02",
+      "passed": true,
+      "elapsedMs": 798.6286,
+      "ioStart": 5,
+      "ioEnd": 9
+    },
+    {
+      "id": "R1-04",
+      "passed": true,
+      "elapsedMs": 968.6120999999998,
+      "ioStart": 9,
+      "ioEnd": 14
+    },
+    {
+      "id": "R1-05",
+      "passed": true,
+      "elapsedMs": 22.380999999999403,
+      "ioStart": 14,
+      "ioEnd": 14
+    },
+    {
+      "id": "R1-06",
+      "passed": true,
+      "elapsedMs": 39.8117000000002,
+      "ioStart": 14,
+      "ioEnd": 16
+    },
+    {
+      "id": "R1-07",
+      "passed": true,
+      "elapsedMs": 529.4892,
+      "ioStart": 16,
+      "ioEnd": 18
+    },
+    {
+      "id": "R2-01",
+      "passed": true,
+      "elapsedMs": 108.60390000000007,
+      "ioStart": 18,
+      "ioEnd": 20
+    },
+    {
+      "id": "R2-02",
+      "passed": true,
+      "elapsedMs": 5.089899999999943,
+      "ioStart": 20,
+      "ioEnd": 20
+    },
+    {
+      "id": "R2-03",
+      "passed": true,
+      "elapsedMs": 9.772799999999734,
+      "ioStart": 20,
+      "ioEnd": 20
+    },
+    {
+      "id": "R2-04",
+      "passed": true,
+      "elapsedMs": 119.4970000000003,
+      "ioStart": 20,
+      "ioEnd": 22
+    },
+    {
+      "id": "R2-05",
+      "passed": true,
+      "elapsedMs": 7.905099999999948,
+      "ioStart": 22,
+      "ioEnd": 22
+    },
+    {
+      "id": "R2-06",
+      "passed": true,
+      "elapsedMs": 20.95179999999982,
+      "ioStart": 22,
+      "ioEnd": 24
+    },
+    {
+      "id": "R3-01",
+      "passed": true,
+      "elapsedMs": 163.41020000000026,
+      "ioStart": 24,
+      "ioEnd": 24
+    },
+    {
+      "id": "R3-02",
+      "passed": true,
+      "elapsedMs": 16.760400000001027,
+      "ioStart": 24,
+      "ioEnd": 26
+    },
+    {
+      "id": "R3-03",
+      "passed": true,
+      "elapsedMs": 262.7942000000003,
+      "ioStart": 26,
+      "ioEnd": 27
+    },
+    {
+      "id": "R3-04",
+      "passed": true,
+      "elapsedMs": 1464.4515999999985,
+      "ioStart": 27,
+      "ioEnd": 30
+    },
+    {
+      "id": "R3-05",
+      "passed": true,
+      "elapsedMs": 146.04589999999916,
+      "ioStart": 30,
+      "ioEnd": 32
+    }
+  ],
+  "requests": 40,
+  "pageErrors": [],
+  "minioWasDownAtFinally": false,
+  "cleanup": {
+    "action": "stopped",
+    "pid": 1492,
+    "live": false,
+    "rss": 0
+  },
+  "childPids": [
+    46996,
+    46840,
+    32960,
+    45556
+  ]
+}

@@ -1,0 +1,1067 @@
+{
+  "command": [
+    "/workspace/toolchains/node-v22.21.1-linux-x64/bin/node",
+    "--max-old-space-size=4096",
+    "scripts/ms1-experiment/prepare.mjs",
+    ".lab/ms1/pagefind-10000",
+    "pagefind",
+    "10000"
+  ],
+  "pid": 7093,
+  "exitCode": 0,
+  "stopReason": null,
+  "elapsedSeconds": 12.347625261998473,
+  "peakSampledTreeRssBytes": 1004523520,
+  "peakSampledTreeCpuSeconds": 11.53,
+  "artifactBytes": 26069408,
+  "peakArtifactBytes": 26069408,
+  "maxRssSampleGapSeconds": 0.25514398199811694,
+  "kernelReapedMaxRssKiB": 901948,
+  "limits": {
+    "seconds": 600.0,
+    "treeRssMiB": 6144,
+    "artifactGiB": 10
+  },
+  "cpuAccountedSeconds": 13.564004,
+  "sampling": "RSS/process tree every250ms; directory scan background every5s plus scan duration; sampled soft-stop may overshoot; OS cache excluded RSS, full cgroup memory.current separately; directory walk monitoring overhead not in target RSS",
+  "samples": [
+    {
+      "elapsedSeconds": 0.001,
+      "rssBytes": 2883584,
+      "cpuSeconds": 0.0,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27372449792,
+      "cgroupMemoryCurrent": 381489152,
+      "processes": {
+        "7093": {
+          "ppid": 7092,
+          "rss": 2883584,
+          "cpu": 0.0
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.253,
+      "rssBytes": 57536512,
+      "cpuSeconds": 0.24,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27372404736,
+      "cgroupMemoryCurrent": 410738688,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 15167488,
+          "cpu": 0.1
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 42369024,
+          "cpu": 0.14
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.504,
+      "rssBytes": 71868416,
+      "cpuSeconds": 0.49,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27372404736,
+      "cgroupMemoryCurrent": 425304064,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 24866816,
+          "cpu": 0.26
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 47001600,
+          "cpu": 0.23
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 0.755,
+      "rssBytes": 86421504,
+      "cpuSeconds": 0.75,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27370934272,
+      "cgroupMemoryCurrent": 441393152,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 34959360,
+          "cpu": 0.42
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 51462144,
+          "cpu": 0.33
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.006,
+      "rssBytes": 98648064,
+      "cpuSeconds": 0.99,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27369459712,
+      "cgroupMemoryCurrent": 455114752,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 45445120,
+          "cpu": 0.59
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 53202944,
+          "cpu": 0.4
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.258,
+      "rssBytes": 111362048,
+      "cpuSeconds": 1.22,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27369459712,
+      "cgroupMemoryCurrent": 467742720,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 56061952,
+          "cpu": 0.75
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 55300096,
+          "cpu": 0.47
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.509,
+      "rssBytes": 125173760,
+      "cpuSeconds": 1.5,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27367989248,
+      "cgroupMemoryCurrent": 483049472,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 65630208,
+          "cpu": 0.92
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 59543552,
+          "cpu": 0.58
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 1.76,
+      "rssBytes": 140247040,
+      "cpuSeconds": 1.75,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27367989248,
+      "cgroupMemoryCurrent": 497963008,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 74936320,
+          "cpu": 1.09
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 65310720,
+          "cpu": 0.66
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.011,
+      "rssBytes": 149815296,
+      "cpuSeconds": 1.98,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27366514688,
+      "cgroupMemoryCurrent": 509145088,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 83849216,
+          "cpu": 1.26
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 65966080,
+          "cpu": 0.72
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.262,
+      "rssBytes": 161087488,
+      "cpuSeconds": 2.22,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27366514688,
+      "cgroupMemoryCurrent": 520310784,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 93941760,
+          "cpu": 1.45
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 67145728,
+          "cpu": 0.77
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.514,
+      "rssBytes": 172744704,
+      "cpuSeconds": 2.46,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27365044224,
+      "cgroupMemoryCurrent": 534171648,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 104034304,
+          "cpu": 1.62
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 68710400,
+          "cpu": 0.84
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 2.765,
+      "rssBytes": 184016896,
+      "cpuSeconds": 2.7,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27363573760,
+      "cgroupMemoryCurrent": 546541568,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 113995776,
+          "cpu": 1.81
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 70021120,
+          "cpu": 0.89
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 3.016,
+      "rssBytes": 195289088,
+      "cpuSeconds": 2.93,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27363573760,
+      "cgroupMemoryCurrent": 557453312,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 124088320,
+          "cpu": 1.99
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 71200768,
+          "cpu": 0.94
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 3.267,
+      "rssBytes": 206168064,
+      "cpuSeconds": 3.17,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27362103296,
+      "cgroupMemoryCurrent": 570466304,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 133787648,
+          "cpu": 2.18
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 72380416,
+          "cpu": 0.99
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 3.518,
+      "rssBytes": 217047040,
+      "cpuSeconds": 3.41,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27362103296,
+      "cgroupMemoryCurrent": 581136384,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 143486976,
+          "cpu": 2.37
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 73560064,
+          "cpu": 1.04
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 3.769,
+      "rssBytes": 229105664,
+      "cpuSeconds": 3.65,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27360628736,
+      "cgroupMemoryCurrent": 594685952,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 154497024,
+          "cpu": 2.56
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 74608640,
+          "cpu": 1.09
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 4.02,
+      "rssBytes": 238018560,
+      "cpuSeconds": 3.87,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27360628736,
+      "cgroupMemoryCurrent": 604286976,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 161705984,
+          "cpu": 2.74
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 76312576,
+          "cpu": 1.13
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 4.271,
+      "rssBytes": 254140416,
+      "cpuSeconds": 4.13,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27359158272,
+      "cgroupMemoryCurrent": 621776896,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 169963520,
+          "cpu": 2.92
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 84176896,
+          "cpu": 1.21
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 4.522,
+      "rssBytes": 269869056,
+      "cpuSeconds": 4.36,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27359158272,
+      "cgroupMemoryCurrent": 637657088,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 177958912,
+          "cpu": 3.09
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 91910144,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 4.774,
+      "rssBytes": 337240064,
+      "cpuSeconds": 4.59,
+      "artifactBytesLastSample": 0,
+      "allMs1ArtifactBytesLastSample": 23738064,
+      "diskScanSeconds": 0.0015199230001599062,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 706584576,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 245198848,
+          "cpu": 3.32
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 5.025,
+      "rssBytes": 426172416,
+      "cpuSeconds": 4.83,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 795815936,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 334131200,
+          "cpu": 3.56
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 5.278,
+      "rssBytes": 920776704,
+      "cpuSeconds": 5.52,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 1291620352,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 828735488,
+          "cpu": 4.25
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 5.529,
+      "rssBytes": 921501696,
+      "cpuSeconds": 5.77,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 1292365824,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 829460480,
+          "cpu": 4.5
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 5.78,
+      "rssBytes": 928620544,
+      "cpuSeconds": 6.03,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 1299435520,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 836579328,
+          "cpu": 4.76
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 6.031,
+      "rssBytes": 931201024,
+      "cpuSeconds": 6.43,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 1301774336,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 839159808,
+          "cpu": 5.16
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 6.282,
+      "rssBytes": 1003724800,
+      "cpuSeconds": 6.9,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 1374351360,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 911683584,
+          "cpu": 5.63
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 6.534,
+      "rssBytes": 1001832448,
+      "cpuSeconds": 7.16,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 1372643328,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 909791232,
+          "cpu": 5.89
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 6.785,
+      "rssBytes": 998727680,
+      "cpuSeconds": 7.48,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27357687808,
+      "cgroupMemoryCurrent": 1369321472,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 906686464,
+          "cpu": 6.21
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 7.036,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 7.92,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27356954624,
+      "cgroupMemoryCurrent": 1400922112,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 6.65
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 7.287,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 8.4,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27344732160,
+      "cgroupMemoryCurrent": 1428156416,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 7.13
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 7.54,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 8.7,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27342139392,
+      "cgroupMemoryCurrent": 1434972160,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 7.43
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 7.793,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 8.95,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27341783040,
+      "cgroupMemoryCurrent": 1434972160,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 7.68
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 8.044,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 9.2,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27341361152,
+      "cgroupMemoryCurrent": 1435758592,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 7.93
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 8.295,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 9.47,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27334320128,
+      "cgroupMemoryCurrent": 1442836480,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 8.2
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 8.546,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 9.76,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27315200000,
+      "cgroupMemoryCurrent": 1461420032,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 8.49
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 8.797,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 10.01,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27314819072,
+      "cgroupMemoryCurrent": 1461420032,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 8.74
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 9.049,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 10.26,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27314417664,
+      "cgroupMemoryCurrent": 1462206464,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 8.99
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 9.3,
+      "rssBytes": 1004523520,
+      "cpuSeconds": 10.51,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27314032640,
+      "cgroupMemoryCurrent": 1462468608,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 912482304,
+          "cpu": 9.24
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 9.551,
+      "rssBytes": 990908416,
+      "cpuSeconds": 10.77,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27313647616,
+      "cgroupMemoryCurrent": 1449283584,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 898867200,
+          "cpu": 9.5
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 9.803,
+      "rssBytes": 990908416,
+      "cpuSeconds": 11.02,
+      "artifactBytesLastSample": 14753792,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27313274880,
+      "cgroupMemoryCurrent": 1449545728,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 898867200,
+          "cpu": 9.75
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 10.058,
+      "rssBytes": 990908416,
+      "cpuSeconds": 11.27,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 38491856,
+      "diskScanSeconds": 0.0004738610005006194,
+      "freeBytes": 27312865280,
+      "cgroupMemoryCurrent": 1450786816,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 898867200,
+          "cpu": 10.0
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 10.311,
+      "rssBytes": 969084928,
+      "cpuSeconds": 11.53,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 47839992,
+      "diskScanSeconds": 0.0583011409980827,
+      "freeBytes": 27312492544,
+      "cgroupMemoryCurrent": 1429118976,
+      "processes": {
+        "7105": {
+          "ppid": 7093,
+          "rss": 877043712,
+          "cpu": 10.26
+        },
+        "7093": {
+          "ppid": 7092,
+          "rss": 92041216,
+          "cpu": 1.27
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 10.562,
+      "rssBytes": 97153024,
+      "cpuSeconds": 1.35,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 47839992,
+      "diskScanSeconds": 0.0583011409980827,
+      "freeBytes": 27311144960,
+      "cgroupMemoryCurrent": 544886784,
+      "processes": {
+        "7093": {
+          "ppid": 7092,
+          "rss": 97153024,
+          "cpu": 1.35
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 10.813,
+      "rssBytes": 97730560,
+      "cpuSeconds": 1.62,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 47839992,
+      "diskScanSeconds": 0.0583011409980827,
+      "freeBytes": 27311075328,
+      "cgroupMemoryCurrent": 545570816,
+      "processes": {
+        "7093": {
+          "ppid": 7092,
+          "rss": 97730560,
+          "cpu": 1.62
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 11.064,
+      "rssBytes": 102154240,
+      "cpuSeconds": 1.91,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 47839992,
+      "diskScanSeconds": 0.0583011409980827,
+      "freeBytes": 27310940160,
+      "cgroupMemoryCurrent": 550187008,
+      "processes": {
+        "7093": {
+          "ppid": 7092,
+          "rss": 102154240,
+          "cpu": 1.91
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 11.315,
+      "rssBytes": 102010880,
+      "cpuSeconds": 2.17,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 47839992,
+      "diskScanSeconds": 0.0583011409980827,
+      "freeBytes": 27310800896,
+      "cgroupMemoryCurrent": 550662144,
+      "processes": {
+        "7093": {
+          "ppid": 7092,
+          "rss": 102010880,
+          "cpu": 2.17
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 11.566,
+      "rssBytes": 103280640,
+      "cpuSeconds": 2.44,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 47839992,
+      "diskScanSeconds": 0.0583011409980827,
+      "freeBytes": 27310731264,
+      "cgroupMemoryCurrent": 551780352,
+      "processes": {
+        "7093": {
+          "ppid": 7092,
+          "rss": 103280640,
+          "cpu": 2.44
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 11.818,
+      "rssBytes": 103026688,
+      "cpuSeconds": 2.68,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 47839992,
+      "diskScanSeconds": 0.0583011409980827,
+      "freeBytes": 27310596096,
+      "cgroupMemoryCurrent": 551456768,
+      "processes": {
+        "7093": {
+          "ppid": 7092,
+          "rss": 103026688,
+          "cpu": 2.68
+        }
+      }
+    },
+    {
+      "elapsedSeconds": 12.069,
+      "rssBytes": 102912000,
+      "cpuSeconds": 2.94,
+      "artifactBytesLastSample": 24048580,
+      "allMs1ArtifactBytesLastSample": 47839992,
+      "diskScanSeconds": 0.0583011409980827,
+      "freeBytes": 27310456832,
+      "cgroupMemoryCurrent": 551645184,
+      "processes": {
+        "7093": {
+          "ppid": 7092,
+          "rss": 102912000,
+          "cpu": 2.94
+        }
+      }
+    }
+  ]
+}

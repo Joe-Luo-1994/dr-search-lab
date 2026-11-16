@@ -1,0 +1,58 @@
+{
+  "mode": "missing-pagefind",
+  "startedAt": "2026-11-14T07:31:12.206Z",
+  "traces": [
+    {
+      "path": "/api/research/search?engine=sqlite&q=backup&page=1&pageSize=10",
+      "status": 503,
+      "elapsedMs": 80.75659300000001,
+      "bytes": 56,
+      "sha256": "532d1cd08bd84c510419c1bfe78e6751f3e729caaa6199ccb71642ce69b8fab8",
+      "body": {
+        "error": {
+          "code": "SEARCH_UNAVAILABLE",
+          "retryable": true
+        }
+      }
+    },
+    {
+      "path": "/api/research/pages/p01?release=review-v1",
+      "status": 503,
+      "elapsedMs": 9.07851500000001,
+      "bytes": 56,
+      "sha256": "532d1cd08bd84c510419c1bfe78e6751f3e729caaa6199ccb71642ce69b8fab8",
+      "body": {
+        "error": {
+          "code": "SEARCH_UNAVAILABLE",
+          "retryable": true
+        }
+      }
+    },
+    {
+      "path": "/api/research/attachments/a05?release=review-v1",
+      "status": 503,
+      "elapsedMs": 6.452566000000019,
+      "bytes": 56,
+      "sha256": "532d1cd08bd84c510419c1bfe78e6751f3e729caaa6199ccb71642ce69b8fab8"
+    },
+    {
+      "path": "/api/research/search?engine=pagefind&q=backup&page=1&pageSize=10",
+      "status": 503,
+      "elapsedMs": 6.661666999999994,
+      "bytes": 56,
+      "sha256": "532d1cd08bd84c510419c1bfe78e6751f3e729caaa6199ccb71642ce69b8fab8",
+      "body": {
+        "error": {
+          "code": "SEARCH_UNAVAILABLE",
+          "retryable": true
+        }
+      }
+    }
+  ],
+  "sqliteAvailable": false,
+  "pageAvailable": false,
+  "attachmentAvailable": false,
+  "pagefindExplicitFailure": true,
+  "meetsSupplement": false,
+  "finishedAt": "2026-11-14T07:31:12.312Z"
+}

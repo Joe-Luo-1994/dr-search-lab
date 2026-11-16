@@ -1,0 +1,255 @@
+{
+  "cells": [
+    {
+      "cell": "control-L-16384",
+      "cacheKiB": 16384,
+      "state": "validated",
+      "targetMs": 10.390522000000146,
+      "phases": {
+        "body-fetch": {
+          "completedCalls": 6,
+          "startedCalls": 6,
+          "elapsedMs": 0.04344000000000392
+        },
+        "count": {
+          "completedCalls": 1,
+          "startedCalls": 1,
+          "elapsedMs": 7.293415000000003
+        },
+        "highlight": {
+          "completedCalls": 6,
+          "startedCalls": 6,
+          "elapsedMs": 1.1611989999999963
+        },
+        "rank": {
+          "completedCalls": 1,
+          "startedCalls": 1,
+          "elapsedMs": 1.2846200000000039
+        }
+      },
+      "targetRequests": 0,
+      "targetBytes": 0,
+      "uniqueRanges": 0,
+      "repeatedRanges": 0,
+      "countRankIntersection": 0,
+      "responseStatus": {},
+      "incompleteResponses": 0,
+      "readerPeakRss": 120508416,
+      "readerSampleCount": 2,
+      "cellTotalPeakRss": 643059712
+    },
+    {
+      "cell": "p1-A-R-16384",
+      "cacheKiB": 16384,
+      "state": "deadline",
+      "targetMs": 4800.363002,
+      "phases": {
+        "count": {
+          "completedCalls": 1,
+          "startedCalls": 1,
+          "elapsedMs": 3483.902892
+        },
+        "rank": {
+          "completedCalls": 0,
+          "startedCalls": 1,
+          "elapsedMs": null
+        }
+      },
+      "targetRequests": 4612,
+      "targetBytes": 10861098,
+      "uniqueRanges": 3329,
+      "repeatedRanges": 1275,
+      "countRankIntersection": 1275,
+      "responseStatus": {
+        "206": 4604,
+        "200": 8
+      },
+      "incompleteResponses": 0,
+      "readerPeakRss": 347545600,
+      "readerSampleCount": 12,
+      "cellTotalPeakRss": 1157804032
+    },
+    {
+      "cell": "p1-B-R-65536",
+      "cacheKiB": 65536,
+      "state": "deadline",
+      "targetMs": 4799.727253,
+      "phases": {
+        "count": {
+          "completedCalls": 1,
+          "startedCalls": 1,
+          "elapsedMs": 3345.7013549999997
+        },
+        "rank": {
+          "completedCalls": 0,
+          "startedCalls": 1,
+          "elapsedMs": null
+        }
+      },
+      "targetRequests": 4757,
+      "targetBytes": 11193684,
+      "uniqueRanges": 3331,
+      "repeatedRanges": 1418,
+      "countRankIntersection": 1418,
+      "responseStatus": {
+        "206": 4749,
+        "200": 8
+      },
+      "incompleteResponses": 0,
+      "readerPeakRss": 355340288,
+      "readerSampleCount": 12,
+      "cellTotalPeakRss": 1201156096
+    },
+    {
+      "cell": "p2-B-R-65536",
+      "cacheKiB": 65536,
+      "state": "deadline",
+      "targetMs": 4800.325756,
+      "phases": {
+        "count": {
+          "completedCalls": 1,
+          "startedCalls": 1,
+          "elapsedMs": 3316.069763
+        },
+        "rank": {
+          "completedCalls": 0,
+          "startedCalls": 1,
+          "elapsedMs": null
+        }
+      },
+      "targetRequests": 4788,
+      "targetBytes": 11261491,
+      "uniqueRanges": 3331,
+      "repeatedRanges": 1449,
+      "countRankIntersection": 1449,
+      "responseStatus": {
+        "206": 4780,
+        "200": 8
+      },
+      "incompleteResponses": 0,
+      "readerPeakRss": 354811904,
+      "readerSampleCount": 12,
+      "cellTotalPeakRss": 1190834176
+    },
+    {
+      "cell": "p2-A-R-16384",
+      "cacheKiB": 16384,
+      "state": "deadline",
+      "targetMs": 4800.064105000001,
+      "phases": {
+        "count": {
+          "completedCalls": 1,
+          "startedCalls": 1,
+          "elapsedMs": 3323.722621
+        },
+        "rank": {
+          "completedCalls": 0,
+          "startedCalls": 1,
+          "elapsedMs": null
+        }
+      },
+      "targetRequests": 4754,
+      "targetBytes": 11187701,
+      "uniqueRanges": 3331,
+      "repeatedRanges": 1415,
+      "countRankIntersection": 1415,
+      "responseStatus": {
+        "206": 4746,
+        "200": 8
+      },
+      "incompleteResponses": 0,
+      "readerPeakRss": 371261440,
+      "readerSampleCount": 12,
+      "cellTotalPeakRss": 1216954368
+    },
+    {
+      "cell": "p3-A-R-16384",
+      "cacheKiB": 16384,
+      "state": "deadline",
+      "targetMs": 4800.368144,
+      "phases": {
+        "count": {
+          "completedCalls": 1,
+          "startedCalls": 1,
+          "elapsedMs": 3297.8903609999998
+        },
+        "rank": {
+          "completedCalls": 0,
+          "startedCalls": 1,
+          "elapsedMs": null
+        }
+      },
+      "targetRequests": 4789,
+      "targetBytes": 11264282,
+      "uniqueRanges": 3331,
+      "repeatedRanges": 1450,
+      "countRankIntersection": 1450,
+      "responseStatus": {
+        "206": 4781,
+        "200": 8
+      },
+      "incompleteResponses": 0,
+      "readerPeakRss": 387555328,
+      "readerSampleCount": 13,
+      "cellTotalPeakRss": 1235513344
+    },
+    {
+      "cell": "p3-B-R-65536",
+      "cacheKiB": 65536,
+      "state": "deadline",
+      "targetMs": 4800.218661999999,
+      "phases": {
+        "count": {
+          "completedCalls": 1,
+          "startedCalls": 1,
+          "elapsedMs": 3292.7328620000003
+        },
+        "rank": {
+          "completedCalls": 0,
+          "startedCalls": 1,
+          "elapsedMs": null
+        }
+      },
+      "targetRequests": 4803,
+      "targetBytes": 11302576,
+      "uniqueRanges": 3331,
+      "repeatedRanges": 1464,
+      "countRankIntersection": 1464,
+      "responseStatus": {
+        "206": 4795,
+        "200": 8
+      },
+      "incompleteResponses": 0,
+      "readerPeakRss": 384622592,
+      "readerSampleCount": 12,
+      "cellTotalPeakRss": 1240289280
+    }
+  ],
+  "pairs": [
+    {
+      "pair": 1,
+      "rangeIntersectionReduction": -0.11215686274509795,
+      "fullElapsedReduction": null,
+      "AElapsedRightCensored": true,
+      "strongSupport": false
+    },
+    {
+      "pair": 2,
+      "rangeIntersectionReduction": -0.024028268551236742,
+      "fullElapsedReduction": null,
+      "AElapsedRightCensored": true,
+      "strongSupport": false
+    },
+    {
+      "pair": 3,
+      "rangeIntersectionReduction": -0.009655172413793212,
+      "fullElapsedReduction": null,
+      "AElapsedRightCensored": true,
+      "strongSupport": false
+    }
+  ],
+  "strongLocalSupport": false,
+  "elapsedMs": 31702.369236,
+  "peakRss": 1240289280,
+  "peakBytes": 162381824
+}

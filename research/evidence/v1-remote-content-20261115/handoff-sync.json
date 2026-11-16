@@ -1,0 +1,48 @@
+{
+  "verified": [
+    {
+      "path": "docs/DR_REMOTE_CONTENT_CARD_20261115.md",
+      "sha256": "d335e49d76921cc8e000d014af7314855434f452e097df3666ac17d2685b1e4c"
+    },
+    {
+      "path": "docs/DR_REMOTE_CONTENT_RUNBOOK_20261115.md",
+      "sha256": "9d9f89c5c6c4b8a1ad6da48ade2bcade18149174e969340310d269c5c2687192"
+    },
+    {
+      "path": "docs/DR_REMOTE_CONTENT_PREFLIGHT_REVIEW_20261115.md",
+      "sha256": "5dcac41835772febed40f407b2f0069be3948d845b7e2d3ad40e9df6c41560d2"
+    },
+    {
+      "path": "docs/DR_REMOTE_CONTENT_POSTRUN_REVIEW_20261115.md",
+      "sha256": "354daafc9d87decda28152216378c10fe0e6e8e10a357ca5d4339f97c2a54a93"
+    },
+    {
+      "path": "docs/DR_REMOTE_CONTENT_RESULT_20261115.md",
+      "sha256": "405ab7e007b394f6037e32416e791096a6cf68504f556a3d7f9d1cea0ba662af"
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "3a6972b5074894929b4be3304933dd868bf17ae886e3e8b8a3b17f4a94527de8"
+    },
+    {
+      "path": "docs/DR_EXPERIMENT_PLAN_V1.md",
+      "sha256": "219ab3ff446e4dc54b31202e6542aa9af8b93f3671dd960e92504c138024cb5b"
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "3f4c38f651e3960a51b083c90533d0a5766bca60c1f57f38cc489c89b9143b53"
+    },
+    {
+      "path": "scripts/v1-remote-content-20261115",
+      "files": 25,
+      "hashReadback": true
+    },
+    {
+      "path": "evidence/v1-remote-content-20261115",
+      "files": 45,
+      "hashReadback": true
+    }
+  ],
+  "runtimeMirrored": false,
+  "secretsMirrored": false
+}

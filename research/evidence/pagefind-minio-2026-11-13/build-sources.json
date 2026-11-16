@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://go.dev/dl/go1.24.2.linux-amd64.tar.gz",
+    "file": "go.tar.gz",
+    "sha256": "68097bd680839cbc9d464a0edce4f7c333975e27a90246890e9f1078c7e702ad",
+    "expectedSha256": "68097bd680839cbc9d464a0edce4f7c333975e27a90246890e9f1078c7e702ad",
+    "bytes": 78516109
+  },
+  {
+    "url": "https://codeload.github.com/minio/minio/tar.gz/refs/tags/RELEASE.2025-04-22T22-12-26Z",
+    "file": "minio-source.tar.gz",
+    "sha256": "1a63209927b9d1fb239b2a776b7b01d1902eff19379a108f4bc7005edcc0968c",
+    "expectedSha256": null,
+    "bytes": 23956546
+  }
+]

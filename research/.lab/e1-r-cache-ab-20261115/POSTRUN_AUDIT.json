@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "reviewType": "Parent raw-record self-review, not independent acceptance",
+  "at": "2026-11-15T09:13:43.840395+00:00",
+  "jobs": 56,
+  "proxyPairs": 28944,
+  "incompleteResponses": 0,
+  "sourceAndObjectsUnchanged": true,
+  "frozenInputs": {
+    "e1-r-diagnostic-20261115": 17,
+    "e1-r-cache-ab-20261115": 17
+  },
+  "portsFree": [
+    19440,
+    19441,
+    19442
+  ]
+}

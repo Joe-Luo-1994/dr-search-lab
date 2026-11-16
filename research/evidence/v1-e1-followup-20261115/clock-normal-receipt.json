@@ -1,0 +1,7 @@
+{
+  "script": "clock-normal.mjs",
+  "permissions": "normal local process; sandbox_permissions=require_escalated",
+  "sha256": "D136C396EF074E70C70B195DD3162FF01260042A85E5C767B41CB4AAE5362418",
+  "originalSha256": "CB1BD34AE8723681E5092034B3D1C0E2C050F327FA66527311C9029602C19AC3",
+  "node": "C:/Program Files/nodejs/node.exe"
+}

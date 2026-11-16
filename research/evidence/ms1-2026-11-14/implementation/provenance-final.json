@@ -1,0 +1,31 @@
+{
+  "sourceFiles": {
+    "scripts/ms1-api-lab/next.config.mjs": "83b6a87c6a8a9f0993f47b0e6e4ef599d008565e8b9bc90cf29f4adcb3cbdb57",
+    "scripts/ms1-api-lab/core.mjs": "acdd40957b3d308e60b2a0f1fd313ef7ab7b0a0d5711fe696d4c4c227454b36b",
+    "scripts/ms1-api-lab/.gitignore": "995a93aeb3d153ea8cd40ebf611f0bbe44fb1fd2e733015ade2feb272e639064",
+    "scripts/ms1-api-lab/serve.mjs": "279205ab224a756b0e718fffa94fcb4f9cd308e09a20367d384dc4b5e7a056a4",
+    "scripts/ms1-api-lab/package.json": "9e5d22db180cc99c0b7c9b643b049b6f98d6773e6979afda52c76f687d402c68",
+    "scripts/ms1-api-lab/text.mjs": "553436c3b6eda6713f45fb00e754d831f52f02f9375027c28541a00c40345e8d",
+    "scripts/ms1-api-lab/app/layout.js": "550c726098e2232520204b66410fd8c6ea46b9f700b7d5bcc1f288bdb118c267",
+    "scripts/ms1-api-lab/app/page.js": "f209e1fca4349444ec2d582d8baf72813582bfd671e61fe4eafb7ebb3625cc5b",
+    "scripts/ms1-api-lab/app/api/research/search/route.js": "50b647e01c78e473fdaacf822782279676a92d4eecc15cd1433c8f5c7b7b40a6",
+    "scripts/ms1-api-lab/app/api/research/attachments/[id]/route.js": "e29523ca25c79f2fe06e1b349220d6fa4e77822f0a78cc0cf407c910aaeaff46",
+    "scripts/ms1-api-lab/app/api/research/pages/[id]/route.js": "e31079b7154f1b41cb6467807af42c74ff64bc0fbbf46cc0d1bc1e40440bd67b",
+    "scripts/ms1-experiment/prepare.mjs": "cec05ed1be325c9479c2c1f15e209d38892a1df6330253b1eb647f259578e9c2",
+    "scripts/ms1-experiment/monitor.py": "0e8f10ee005c85c84ec805f932670d9d514b5fe4a3538c478157943dd556277a",
+    "scripts/ms1-experiment/stage.py": "b4076e83f2e8319d40f0297486dfae09abcdbe81e93ec9daad842ac7bc69717e",
+    "scripts/ms1-review/corpus.mjs": "790f7818fab462e8d7883d328941777fd6bd67cb32433300b0172e7aca46e2ad",
+    "scripts/ms1-review/review.mjs": "e04a388c7f2f33f5f3c71cfc0a3736e0cddc49b8cf2abd3c89e142fea9fdb8e2",
+    "docs/reviews/ms1-2026-11-14/standard-v1.md": "b937e286e8e2a087cb817a821313797c80cabc7fc3f763e622818b11b486e067",
+    "package-lock.json": "cf721195043bb0c8a93fa7614e0b5d9474d2693a3683411c4bedb9a881778890"
+  },
+  "node": "v22.21.1",
+  "next": "16.4.5",
+  "pagefind": "1.6.0",
+  "sqlite": "3.50.4",
+  "icu": "77.1",
+  "nextBuildId": "wX2Vl01dL1NNCcH2qYvFd",
+  "cgroupCpuMax": "400000 100000",
+  "cgroupMemoryMax": "17179869184",
+  "sourceSnapshotNotes": "source-v1 captures early small-stage implementation. source-capacity captures 10k+ runner/core. source-final same executed core with final runner/monitor. No candidate code was changed after failed stages."
+}

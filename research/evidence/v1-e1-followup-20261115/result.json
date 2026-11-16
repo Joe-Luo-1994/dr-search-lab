@@ -1,0 +1,81 @@
+{
+  "started": {
+    "now": 1794749941551,
+    "iso": "2026-11-15T13:39:01.551Z",
+    "monotonic": 254.7542,
+    "hrtime": "191040228853000"
+  },
+  "ended": {
+    "now": 1794749943894,
+    "iso": "2026-11-15T13:39:03.894Z",
+    "monotonic": 2597.2782,
+    "hrtime": "191042571375000"
+  },
+  "node": "v22.21.1",
+  "checks": [
+    {
+      "id": "baseline-page",
+      "passed": true
+    },
+    {
+      "id": "baseline-search",
+      "passed": true
+    },
+    {
+      "id": "revoked-b-page",
+      "passed": true
+    },
+    {
+      "id": "revoked-b-search",
+      "passed": true
+    },
+    {
+      "id": "restored-page",
+      "passed": true
+    },
+    {
+      "id": "restored-search",
+      "passed": true
+    },
+    {
+      "id": "identity-clears-open-page-and-results",
+      "passed": true
+    },
+    {
+      "id": "none-empty",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "uiResponses": [
+    {
+      "url": "http://127.0.0.1:3157/api/search?q=relay",
+      "status": 200,
+      "identity": "a"
+    },
+    {
+      "url": "http://127.0.0.1:3157/api/pages/a-relay",
+      "status": 200,
+      "identity": "a"
+    },
+    {
+      "url": "http://127.0.0.1:3157/api/pages/a-relay/media",
+      "status": 200,
+      "identity": "a"
+    },
+    {
+      "url": "http://127.0.0.1:3157/api/search?q=relay",
+      "status": 200,
+      "identity": "none"
+    }
+  ],
+  "failure": {
+    "message": "The expression evaluated to a falsy value:\n\n  assert((await page.getByRole('alert').textContent()).includes('無法確認存取權限'))\n",
+    "stack": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert((await page.getByRole('alert').textContent()).includes('無法確認存取權限'))\n\n    at file:////PUBLIC/WINDOWS_HOME/Documents/ChatGPT/Search%20Playground/scripts/v1-e1-followup-20261115/run.mjs:62:2"
+  },
+  "preservation": {
+    "originalFilesVerified": 120,
+    "role": "baseline\n"
+  },
+  "passed": false
+}

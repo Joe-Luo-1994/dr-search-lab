@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "/PUBLIC/LINUX_HOME/.nvm/versions/node/v22.18.0/bin/node",
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/pagefind-gate-20261116/src/gate/build-and-audit.mjs",
+    "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/pagefind-gate-20261116"
+  ],
+  "cwd": "/PUBLIC/LINUX_HOME/dr-search-lab-e1-20261115/repo/.lab/pagefind-gate-20261116"
+}

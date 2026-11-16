@@ -1,0 +1,24 @@
+{
+  "changed": [
+    {
+      "file": "scripts/v1-e1-20261115/freeze.mjs",
+      "before": "942f86f530513b87a1667eb6fa54df597c0e637fe8bc1097c317b81d4469312d",
+      "after": "d45cfae50ee401486de3c418d3fbf1bc9702ec0e68225f2d5a36344b47a18642",
+      "originalReconstructedAndHashVerified": true
+    },
+    {
+      "file": "scripts/v1-e1-20261115/run.mjs",
+      "before": "c3f290aca87a262ca87ae2de0e255c5d220b8dc6a8c50def69986f1ea25f84ab",
+      "after": "54f1c0b1a8710e6c1ab0ac0ce01f8d20dea09cabf3a4a87c23e1340f4bac7b04",
+      "originalReconstructedAndHashVerified": true
+    },
+    {
+      "file": "docs/DR_E1_CARD_20261115.md",
+      "before": "31deb3493dd8ea3c516bf50eab33680a25eb409ca0eecc431a023a373627256f",
+      "after": "e7e59ec3718dacf6d046fcefd80c27bdd32d2f0cfac075757e77289b09bd71ca",
+      "originalReconstructedAndHashVerified": true
+    }
+  ],
+  "unchangedCount": 117,
+  "caseCountBeforeRepair": 0
+}

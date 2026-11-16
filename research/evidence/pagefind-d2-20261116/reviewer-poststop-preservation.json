@@ -1,0 +1,73 @@
+{
+  "scope": "independent offline post-stop preservation and raw sample audit; no capability pass",
+  "atEpoch": 1794801181.647364,
+  "freezeFiles": 10707,
+  "freezeMismatches": [],
+  "originalInventoryPinMatches": true,
+  "modifiedInventoryPinMatches": true,
+  "diagnosticArtifact": {
+    "files": 101571,
+    "mismatches": [],
+    "extra": [],
+    "missing": [],
+    "special": []
+  },
+  "originalG1Artifact": {
+    "files": 101571,
+    "mismatches": [],
+    "extra": [],
+    "missing": [],
+    "special": []
+  },
+  "allowedChanges": [
+    {
+      "path": "pagefind/pagefind.js",
+      "oldSha256": "02746cc529f88f853275720dcb1c2b6a18b0c7a92b73fae82ca2738e64500bcd",
+      "newSha256": "3f640a92e7563294bf360bf77462a5ce237c5770c552cb92e3bce07905db9d9c",
+      "oldBytes": 47228,
+      "newBytes": 49540
+    }
+  ],
+  "runnerResultExists": false,
+  "traceAudit": {
+    "count": 82,
+    "contiguousSequence": true,
+    "lastEvent": "d2.wasm-search.start",
+    "lastEventAfterRequestMs": 219.677948,
+    "lastObserver": {
+      "completedEvents": 81,
+      "cumulativeSyncIoMs": 110.1847069999999,
+      "lastSyncIoMs": 2.621422999999993,
+      "cumulativeTraceMs": 111.68788900000013,
+      "accounting": "completed previous events; current/final event cost appears only in a later row"
+    },
+    "hasWasmEnd": false,
+    "hasMappingStart": false
+  },
+  "queryWindow": {
+    "samples": 5,
+    "firstOffsetMs": 215.896484375,
+    "lastOffsetMs": 4234.79736328125,
+    "coveredSeconds": 4.0189008712768555,
+    "cpuSeconds": 4.041201,
+    "averageCores": 1.005548812831519,
+    "throttleEventsDelta": 0,
+    "throttleUsecDelta": 0,
+    "maxObservedMemoryCurrent": 1744322560,
+    "memoryEventDeltas": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "reclaimDeltas": {
+      "pgscan": 0,
+      "pgsteal": 0,
+      "workingset_refault_file": 0,
+      "workingset_refault_anon": 0,
+      "pgmajfault": 0
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "allMatch": true,
+  "files": [
+    {
+      "path": "docs/DR_ENGINE_COMPARISON_20261116.html",
+      "sha256": "d07eef4152ac81ca78e7da1546fd8f2202c93cb83b38c72cfe89f7f0e4e7dbe8",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_ENGINE_COMPARISON_REVIEW_20261116.md",
+      "sha256": "70efd16c651582bc8a73f321ba70966428f952d6db540b1a281e21bec0e21706",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "sha256": "631a21eb3993595fca0e6240b9cf957d3425a49c5ac1d19e8f8b55e55de2e4d0",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/LOCAL_E1_HANDOFF.md",
+      "sha256": "d729be0d9cdf9c09ca8d5213538da8bd141dd88fe6f2ae96f62a55d6d6d2925e",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_DISCUSSION_REGISTER.md",
+      "sha256": "26bf15a38e9db766deb50c202c42b79b95fa4df8f90830300a36da2d687de622",
+      "readBackMatch": true
+    },
+    {
+      "path": "docs/DR_OPERATIONS_PRIORITY_20261116.md",
+      "sha256": "216d70589850da04924d057c76665ab13e3cd3519094d7b629b00bc8c7662c08",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/engine-comparison-20261116/check-report.mjs",
+      "sha256": "9f16f54e9cb802f13b331b1140b8be1ac3e3d570569a8eba82d4ece007a80c57",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/engine-comparison-20261116/deliver.py",
+      "sha256": "047161ce60ea8e8ed021cbbfe43c3ccddcf5c2896b69589a8b1f7bd5f485bc5e",
+      "readBackMatch": true
+    },
+    {
+      "path": "scripts/engine-comparison-20261116/report.mjs",
+      "sha256": "085445fdd22d96415502c92da98750f0fb05c7975799a3e4afe153602d52f4f3",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/engine-comparison-20261116/mobile.png",
+      "sha256": "1271dafb4981e2ced752fb46e93f869d920bb3fa1919667df1996626447093fb",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/engine-comparison-20261116/report-check.json",
+      "sha256": "9a8023ee86b9e1ba84a74bccb2448c6b6449ec3098e0b65663fd64536f7dab7b",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/engine-comparison-20261116/operations-priority/mobile.png",
+      "sha256": "118202f15ae1d9ac55eb726e17dc2b93c517b80826eb5e566bbe7e71e4c803b3",
+      "readBackMatch": true
+    },
+    {
+      "path": "evidence/engine-comparison-20261116/operations-priority/report-check.json",
+      "sha256": "9a8023ee86b9e1ba84a74bccb2448c6b6449ec3098e0b65663fd64536f7dab7b",
+      "readBackMatch": true
+    }
+  ],
+  "scope": "plan, reviewer, handoff and report QA only; no benchmark or database changes"
+}

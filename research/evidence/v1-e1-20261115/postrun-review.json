@@ -1,0 +1,1341 @@
+{
+  "reviewVersion": 1,
+  "reviewedAt": "2026-11-15",
+  "verdict": "E1_NOT_CLOSED; preserve r1 instrumentation failure and r2 formalPassed=false",
+  "noServicesOrQueriesExecutedDuringReview": true,
+  "originalResults": {
+    "r1": "instrumentation failure before any case/request",
+    "r2": {
+      "formalPassed": false,
+      "cases": 46,
+      "originalCasesPassed": 18,
+      "originalCasesFailed": 28,
+      "requests": 86,
+      "originalRequestsPassed": 51,
+      "originalRequestsFailed": 35,
+      "originalFailureCodes": [
+        "AUTH_TIMESTAMP"
+      ]
+    }
+  },
+  "method": "offline read-back of immutable raw responses against frozen source/oracle; timestamp verdict retained separately; not a rerun or revision of r2",
+  "byEngine": [
+    {
+      "engine": "b",
+      "requests": 43,
+      "originalPass": 20,
+      "originalFail": 23,
+      "timestampViolations": 23,
+      "payloadViolations": 0
+    },
+    {
+      "engine": "c",
+      "requests": 43,
+      "originalPass": 31,
+      "originalFail": 12,
+      "timestampViolations": 12,
+      "payloadViolations": 0
+    }
+  ],
+  "originalFailedErrors": [
+    "AUTH_TIMESTAMP"
+  ],
+  "requestCoverageIssues": [],
+  "payloadViolations": [],
+  "timestampIssues": [
+    {
+      "engine": "b",
+      "caseId": "R01",
+      "path": "/api/pages/a-restore",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -17,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R03",
+      "path": "/api/search?q=zephyr",
+      "deltaAfterEndMs": 2,
+      "deltaBeforeStartMs": -15,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R04",
+      "path": "/api/search?q=zephyr%20primary",
+      "deltaAfterEndMs": 2,
+      "deltaBeforeStartMs": -15,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R05",
+      "path": "/api/search?q=%E5%82%99%E6%8F%B4%20Edge",
+      "deltaAfterEndMs": 4,
+      "deltaBeforeStartMs": -14,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R06",
+      "path": "/api/search?q=GTX-412",
+      "deltaAfterEndMs": 4,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R07",
+      "path": "/api/search?q=Control%20Plane",
+      "deltaAfterEndMs": 4,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R07",
+      "path": "/api/pages/a-restore",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -14,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R08",
+      "path": "/api/search?q=disaster%20recovery",
+      "deltaAfterEndMs": 6,
+      "deltaBeforeStartMs": -14,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R09",
+      "path": "/api/search?q=silverline%20certificate",
+      "deltaAfterEndMs": 4,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf/media",
+      "deltaAfterEndMs": 11,
+      "deltaBeforeStartMs": -14,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R10",
+      "path": "/api/search?q=zephyr&spaceId=space-b",
+      "deltaAfterEndMs": 5,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R10",
+      "path": "/api/pages/b-relay",
+      "deltaAfterEndMs": 11,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R10",
+      "path": "/api/pages/b-relay/media",
+      "deltaAfterEndMs": 11,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R11",
+      "path": "/api/search?q=dispatch&tagId=runbook&tagId=validated",
+      "deltaAfterEndMs": 6,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "R12",
+      "path": "/api/search?q=relay",
+      "deltaAfterEndMs": 5,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "N02",
+      "path": "/api/search?q=Falcon&spaceId=space-b",
+      "deltaAfterEndMs": 11,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "N03",
+      "path": "/api/search?q=relay",
+      "deltaAfterEndMs": 11,
+      "deltaBeforeStartMs": -12,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "N05",
+      "path": "/api/search?q=azimuthunlisted",
+      "deltaAfterEndMs": 6,
+      "deltaBeforeStartMs": -12,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "N07",
+      "path": "/api/pages/a-relay",
+      "deltaAfterEndMs": 6,
+      "deltaBeforeStartMs": -14,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "D01",
+      "path": "/api/pages/a-move",
+      "deltaAfterEndMs": 6,
+      "deltaBeforeStartMs": -12,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "D02",
+      "path": "/api/search?q=Quartz",
+      "deltaAfterEndMs": 6,
+      "deltaBeforeStartMs": -11,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "b",
+      "caseId": "D04",
+      "path": "/api/pages/a-sync",
+      "deltaAfterEndMs": 5,
+      "deltaBeforeStartMs": -9,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "R01",
+      "path": "/api/pages/a-restore",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -16,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "R07",
+      "path": "/api/pages/a-restore",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -14,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf/media",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -14,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "R10",
+      "path": "/api/pages/b-relay",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -12,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "R10",
+      "path": "/api/pages/b-relay/media",
+      "deltaAfterEndMs": 11,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "N02",
+      "path": "/api/search?q=Falcon&spaceId=space-b",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "N03",
+      "path": "/api/search?q=relay",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -12,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "N07",
+      "path": "/api/pages/a-relay",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -12,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "D01",
+      "path": "/api/pages/a-move",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "D02",
+      "path": "/api/search?q=Quartz",
+      "deltaAfterEndMs": 11,
+      "deltaBeforeStartMs": -14,
+      "originalError": "AUTH_TIMESTAMP"
+    },
+    {
+      "engine": "c",
+      "caseId": "D04",
+      "path": "/api/pages/a-sync",
+      "deltaAfterEndMs": 10,
+      "deltaBeforeStartMs": -13,
+      "originalError": "AUTH_TIMESTAMP"
+    }
+  ],
+  "timestampAfterEndRangeMs": [
+    2,
+    11
+  ],
+  "semanticDifferences": [
+    {
+      "caseId": "R06",
+      "engines": [
+        {
+          "engine": "b",
+          "total": 2,
+          "ids": [
+            "a-code-near",
+            "a-code"
+          ]
+        },
+        {
+          "engine": "c",
+          "total": 2,
+          "ids": [
+            "a-code-near",
+            "a-code"
+          ]
+        }
+      ]
+    },
+    {
+      "caseId": "R09",
+      "engines": [
+        {
+          "engine": "b",
+          "total": 2,
+          "ids": [
+            "a-pdf-near",
+            "a-pdf"
+          ]
+        },
+        {
+          "engine": "c",
+          "total": 2,
+          "ids": [
+            "a-pdf-near",
+            "a-pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "caseId": "R12",
+      "engines": [
+        {
+          "engine": "b",
+          "total": 15,
+          "ids": [
+            "a-relay",
+            "a-noise-01",
+            "a-noise-04",
+            "a-noise-06",
+            "a-noise-02",
+            "a-noise-03",
+            "a-noise-05",
+            "a-noise-08",
+            "a-noise-09",
+            "a-noise-14"
+          ]
+        },
+        {
+          "engine": "c",
+          "total": 15,
+          "ids": [
+            "a-relay",
+            "a-noise-01",
+            "a-noise-04",
+            "a-noise-03",
+            "a-noise-05",
+            "a-noise-06",
+            "a-noise-02",
+            "a-noise-08",
+            "a-noise-09",
+            "a-noise-14"
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "record": 1,
+      "engine": "b",
+      "caseId": "R01",
+      "path": "/api/search?q=%E9%82%84%E5%8E%9F",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 2,
+      "engine": "b",
+      "caseId": "R01",
+      "path": "/api/pages/a-restore",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 3,
+      "engine": "b",
+      "caseId": "R02",
+      "path": "/api/search?q=%E6%95%85%E9%9A%9C%E5%BE%A9%E5%8E%9F%E6%89%8B%E5%86%8A",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 4,
+      "engine": "b",
+      "caseId": "R03",
+      "path": "/api/search?q=zephyr",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 5,
+      "engine": "b",
+      "caseId": "R04",
+      "path": "/api/search?q=zephyr%20primary",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 6,
+      "engine": "b",
+      "caseId": "R05",
+      "path": "/api/search?q=%E5%82%99%E6%8F%B4%20Edge",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 7,
+      "engine": "b",
+      "caseId": "R06",
+      "path": "/api/search?q=GTX-412",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 8,
+      "engine": "b",
+      "caseId": "R07",
+      "path": "/api/search?q=Control%20Plane",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 9,
+      "engine": "b",
+      "caseId": "R07",
+      "path": "/api/pages/a-restore",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 10,
+      "engine": "b",
+      "caseId": "R08",
+      "path": "/api/search?q=disaster%20recovery",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 11,
+      "engine": "b",
+      "caseId": "R09",
+      "path": "/api/search?q=silverline%20certificate",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 12,
+      "engine": "b",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 13,
+      "engine": "b",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf/media",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 14,
+      "engine": "b",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf/media/pdf-checklist",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 15,
+      "engine": "b",
+      "caseId": "R10",
+      "path": "/api/search?q=zephyr&spaceId=space-b",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 16,
+      "engine": "b",
+      "caseId": "R10",
+      "path": "/api/pages/b-relay",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 17,
+      "engine": "b",
+      "caseId": "R10",
+      "path": "/api/pages/b-relay/media",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 18,
+      "engine": "b",
+      "caseId": "R11",
+      "path": "/api/search?q=dispatch&tagId=runbook&tagId=validated",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 19,
+      "engine": "b",
+      "caseId": "R12",
+      "path": "/api/search?q=relay",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 20,
+      "engine": "b",
+      "caseId": "N01",
+      "path": "/api/pages/a-relay/media/pdf-checklist",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 21,
+      "engine": "b",
+      "caseId": "N02",
+      "path": "/api/search?q=Falcon&spaceId=space-b",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 22,
+      "engine": "b",
+      "caseId": "N02",
+      "path": "/api/pages/b-export",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 23,
+      "engine": "b",
+      "caseId": "N02",
+      "path": "/api/pages/b-export/media",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 24,
+      "engine": "b",
+      "caseId": "N02",
+      "path": "/api/pages/b-export/media/pdf-ledger",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 25,
+      "engine": "b",
+      "caseId": "N03",
+      "path": "/api/search?q=relay",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 26,
+      "engine": "b",
+      "caseId": "N03",
+      "path": "/api/pages/a-relay",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 27,
+      "engine": "b",
+      "caseId": "N04",
+      "path": "/api/search?q=relay",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 28,
+      "engine": "b",
+      "caseId": "N04",
+      "path": "/api/pages/a-pdf",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 29,
+      "engine": "b",
+      "caseId": "N04",
+      "path": "/api/pages/a-pdf/media",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 30,
+      "engine": "b",
+      "caseId": "N04",
+      "path": "/api/pages/a-pdf/media/pdf-checklist",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 31,
+      "engine": "b",
+      "caseId": "N05",
+      "path": "/api/search?q=azimuthunlisted",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 32,
+      "engine": "b",
+      "caseId": "N06",
+      "path": "/api/search?q=dispatch&tagId=unregistered",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 33,
+      "engine": "b",
+      "caseId": "N07",
+      "path": "/api/search?q=zephyr",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 34,
+      "engine": "b",
+      "caseId": "N07",
+      "path": "/api/pages/a-relay",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 35,
+      "engine": "b",
+      "caseId": "D01",
+      "path": "/api/search?q=Orchid",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 36,
+      "engine": "b",
+      "caseId": "D01",
+      "path": "/api/pages/a-move",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 37,
+      "engine": "b",
+      "caseId": "D02-baseline",
+      "path": "/api/search?q=Quartz",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 38,
+      "engine": "b",
+      "caseId": "D02",
+      "path": "/api/search?q=Quartz",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 39,
+      "engine": "b",
+      "caseId": "D02",
+      "path": "/api/pages/b-roles",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 40,
+      "engine": "b",
+      "caseId": "D02",
+      "path": "/api/pages/b-export/media",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 41,
+      "engine": "b",
+      "caseId": "D02",
+      "path": "/api/pages/b-export/media/pdf-ledger",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 42,
+      "engine": "b",
+      "caseId": "D03",
+      "path": "/api/pages/a-pdf/media/pdf-checklist",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 43,
+      "engine": "b",
+      "caseId": "D04",
+      "path": "/api/pages/a-sync",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 44,
+      "engine": "c",
+      "caseId": "R01",
+      "path": "/api/search?q=%E9%82%84%E5%8E%9F",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 45,
+      "engine": "c",
+      "caseId": "R01",
+      "path": "/api/pages/a-restore",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 46,
+      "engine": "c",
+      "caseId": "R02",
+      "path": "/api/search?q=%E6%95%85%E9%9A%9C%E5%BE%A9%E5%8E%9F%E6%89%8B%E5%86%8A",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 47,
+      "engine": "c",
+      "caseId": "R03",
+      "path": "/api/search?q=zephyr",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 48,
+      "engine": "c",
+      "caseId": "R04",
+      "path": "/api/search?q=zephyr%20primary",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 49,
+      "engine": "c",
+      "caseId": "R05",
+      "path": "/api/search?q=%E5%82%99%E6%8F%B4%20Edge",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 50,
+      "engine": "c",
+      "caseId": "R06",
+      "path": "/api/search?q=GTX-412",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 51,
+      "engine": "c",
+      "caseId": "R07",
+      "path": "/api/search?q=Control%20Plane",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 52,
+      "engine": "c",
+      "caseId": "R07",
+      "path": "/api/pages/a-restore",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 53,
+      "engine": "c",
+      "caseId": "R08",
+      "path": "/api/search?q=disaster%20recovery",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 54,
+      "engine": "c",
+      "caseId": "R09",
+      "path": "/api/search?q=silverline%20certificate",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 55,
+      "engine": "c",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 56,
+      "engine": "c",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf/media",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 57,
+      "engine": "c",
+      "caseId": "R09",
+      "path": "/api/pages/a-pdf/media/pdf-checklist",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 58,
+      "engine": "c",
+      "caseId": "R10",
+      "path": "/api/search?q=zephyr&spaceId=space-b",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 59,
+      "engine": "c",
+      "caseId": "R10",
+      "path": "/api/pages/b-relay",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 60,
+      "engine": "c",
+      "caseId": "R10",
+      "path": "/api/pages/b-relay/media",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 61,
+      "engine": "c",
+      "caseId": "R11",
+      "path": "/api/search?q=dispatch&tagId=runbook&tagId=validated",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 62,
+      "engine": "c",
+      "caseId": "R12",
+      "path": "/api/search?q=relay",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 63,
+      "engine": "c",
+      "caseId": "N01",
+      "path": "/api/pages/a-relay/media/pdf-checklist",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 64,
+      "engine": "c",
+      "caseId": "N02",
+      "path": "/api/search?q=Falcon&spaceId=space-b",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 65,
+      "engine": "c",
+      "caseId": "N02",
+      "path": "/api/pages/b-export",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 66,
+      "engine": "c",
+      "caseId": "N02",
+      "path": "/api/pages/b-export/media",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 67,
+      "engine": "c",
+      "caseId": "N02",
+      "path": "/api/pages/b-export/media/pdf-ledger",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 68,
+      "engine": "c",
+      "caseId": "N03",
+      "path": "/api/search?q=relay",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 69,
+      "engine": "c",
+      "caseId": "N03",
+      "path": "/api/pages/a-relay",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 70,
+      "engine": "c",
+      "caseId": "N04",
+      "path": "/api/search?q=relay",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 71,
+      "engine": "c",
+      "caseId": "N04",
+      "path": "/api/pages/a-pdf",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 72,
+      "engine": "c",
+      "caseId": "N04",
+      "path": "/api/pages/a-pdf/media",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 73,
+      "engine": "c",
+      "caseId": "N04",
+      "path": "/api/pages/a-pdf/media/pdf-checklist",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 74,
+      "engine": "c",
+      "caseId": "N05",
+      "path": "/api/search?q=azimuthunlisted",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 75,
+      "engine": "c",
+      "caseId": "N06",
+      "path": "/api/search?q=dispatch&tagId=unregistered",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 76,
+      "engine": "c",
+      "caseId": "N07",
+      "path": "/api/search?q=zephyr",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 77,
+      "engine": "c",
+      "caseId": "N07",
+      "path": "/api/pages/a-relay",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 78,
+      "engine": "c",
+      "caseId": "D01",
+      "path": "/api/search?q=Orchid",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 79,
+      "engine": "c",
+      "caseId": "D01",
+      "path": "/api/pages/a-move",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 80,
+      "engine": "c",
+      "caseId": "D02-baseline",
+      "path": "/api/search?q=Quartz",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 81,
+      "engine": "c",
+      "caseId": "D02",
+      "path": "/api/search?q=Quartz",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 82,
+      "engine": "c",
+      "caseId": "D02",
+      "path": "/api/pages/b-roles",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 83,
+      "engine": "c",
+      "caseId": "D02",
+      "path": "/api/pages/b-export/media",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 84,
+      "engine": "c",
+      "caseId": "D02",
+      "path": "/api/pages/b-export/media/pdf-ledger",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 85,
+      "engine": "c",
+      "caseId": "D03",
+      "path": "/api/pages/a-pdf/media/pdf-checklist",
+      "originalPassed": true,
+      "originalError": null,
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    },
+    {
+      "record": 86,
+      "engine": "c",
+      "caseId": "D04",
+      "path": "/api/pages/a-sync",
+      "originalPassed": false,
+      "originalError": "AUTH_TIMESTAMP",
+      "offlinePayloadChecksSatisfied": true,
+      "violations": []
+    }
+  ],
+  "resourceObservations": {
+    "samples": 26,
+    "maxTotalRss": 2151305216,
+    "minFreeMemoryBytes": 18257186816,
+    "minFreeDiskBytes": 420487938048,
+    "maxLogicalBytes": 135549785,
+    "guardViolations": 0
+  },
+  "evidenceHashes": [
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\r1\\summary.json",
+      "Hash": "91C6D59CD7526B219AFE6C6C204F52BE36FB51D08744FEA494A054EA50D3A2FA"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\r2\\summary.json",
+      "Hash": "3D5F07E34E424E48080F29C778C919F434E3B1822C76357E2DD8AA2EDC38E7BF"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\r2\\requests.jsonl",
+      "Hash": "0ADC39340E6D4830F3C85BF623D30C6E7471017BD9AE096BD24019BDF2E7A30E"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\r2\\cases.jsonl",
+      "Hash": "970B4EF1D0BA751AE47CDC51CD804F6EBF09A16837433A38F28F557990238173"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\r2\\ui-b.json",
+      "Hash": "767A057BE015C6A1E29D24235F75067F13637D2F73B39C10050828735F20C31C"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\r2\\ui-c.json",
+      "Hash": "3ED61E99D33B71CAA06E04C689027344E33CF00FFE85C7A2DA93B05FE4D23EB8"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\r2\\resources.jsonl",
+      "Hash": "DDF69E75BBF2CD57410B856A1637D9105DAF106BA8129005CEDBA6B63B7C533A"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\es-after.json",
+      "Hash": "78C49B176F3F1B916D60BB039F0033D44B233EB6AA556BD7F00FCC1893692F65"
+    },
+    {
+      "Path": "/PUBLIC/WINDOWS_WORKSPACE\\evidence\\v1-e1-20261115\\freeze-r2.json",
+      "Hash": "7D51462B76ED8939F5776EFD9A614D7CC06D5E85DC598AE35361C45AB7C96E71"
+    }
+  ],
+  "preservation": {
+    "independentlyRehashedFrozenInputs": 120,
+    "currentMismatches": [],
+    "oldIndexAudit": "8 existing indices UUID/doc count/write-block unchanged per es-after; not a full content digest",
+    "serviceStop": "service-stop.json reports no listeners on 3157/19300; reviewer did not restart/probe services"
+  },
+  "limits": [
+    "Timestamp violations remain failures; cause unknown; no tolerance added.",
+    "82 JSON responses are retained and checked offline; 4 PDF payloads are represented by original recorded byte count/hash/headers, not retained raw download bytes.",
+    "No result is rewritten; offline payload corroboration does not imply previously skipped live assertions executed.",
+    "UI locator timeout leaves identity switching, unknown error UI and desktop task incomplete.",
+    "Main-agent screenshot inspection is separately attributed; reviewer has not personally re-opened these images.",
+    "Synthetic 27/28-hour drift labels are not measured exposure or outage durations.",
+    "No performance ranking, formal authorization acceptance, real consumer compatibility or cost advantage is established."
+  ],
+  "decision": {
+    "eliminateC": false,
+    "enterE2Execution": false,
+    "reason": "Required payloads are corroborated for both candidates; unresolved shared timestamp/identity-UI validation prevents E1 closure, without an observed C-specific required-search counterexample.",
+    "nextMinimumValidation": "New reviewed, bounded diagnostic card for client/server clock/timestamp provenance and the failed shared identity-selector UI path. Use representative read/search/identity transitions; do not automatically rerun the full matrix or modify search algorithms."
+  }
+}

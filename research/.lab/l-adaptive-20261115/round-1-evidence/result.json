@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "cell": {
+    "label": "L-full",
+    "mode": "L",
+    "state": "validated",
+    "readerPid": 1429,
+    "publishMs": 7262.690951999999,
+    "downloadAndHashMs": 4138.635082000001,
+    "reader": {
+      "type": "ready",
+      "sqlite": "3.54.1",
+      "cacheSize": -16384,
+      "node": "v26.13.1",
+      "icu": "78.3"
+    },
+    "readyMs": 4162.892774,
+    "firstChainMs": 4185.877691,
+    "firstChainWithin120s": true
+  },
+  "requests": 39,
+  "auditErrors": [],
+  "peakRss": 705941504,
+  "peakBytes": 4267184128,
+  "minFree": 968585580544,
+  "remainingChildren": [],
+  "lifecycle": [
+    {
+      "name": "reader",
+      "pid": 1429,
+      "code": null,
+      "signal": "SIGTERM",
+      "wallMs": 1794734717130,
+      "monoNs": "45041006850"
+    },
+    {
+      "name": "minio",
+      "pid": 1393,
+      "code": 0,
+      "signal": null,
+      "wallMs": 1794734718889,
+      "monoNs": "46800055619"
+    }
+  ],
+  "elapsedMs": 29198.098736
+}

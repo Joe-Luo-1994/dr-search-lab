@@ -1,0 +1,13 @@
+{
+  "oldLinks": {
+    "pageUrl": "/api/pages/a-pdf?version=v1-e2-20261115-v1",
+    "mediaUrl": "/api/pages/a-pdf/media?version=v1-e2-20261115-v1",
+    "downloadUrl": "/api/pages/a-pdf/media/pdf-checklist?version=v1-e2-20261115-v1"
+  },
+  "newLinks": {
+    "pageUrl": "/api/pages/a-pdf?version=v1-e2-20261115-v2",
+    "mediaUrl": "/api/pages/a-pdf/media?version=v1-e2-20261115-v2",
+    "downloadUrl": "/api/pages/a-pdf/media/pdf-checklist-v2?version=v1-e2-20261115-v2"
+  },
+  "method": "409 then explicit new search and returned URLs; no silent token stripping"
+}

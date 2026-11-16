@@ -1,0 +1,427 @@
+[
+  {
+    "attempt": "r1",
+    "allTargetPhasesQualified": false,
+    "stop": null,
+    "thresholdStop": {
+      "phase": "web4-consumer2-bulk2-update",
+      "failedLanes": [
+        "reading",
+        "web-search"
+      ],
+      "updateEvidenceIncomplete": false
+    },
+    "stages": [
+      {
+        "name": "reading-only-baseline",
+        "qualifies": true,
+        "p95": {
+          "reading": 14.241087999998854
+        },
+        "resources": {
+          "reader": {
+            "samples": 60,
+            "averageCpuCores": 0.017899432388152905,
+            "peakObservedBytes": 3670867968,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.0026668567475570493,
+            "peakObservedBytes": 3718578176,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web-search-2",
+        "qualifies": true,
+        "p95": {
+          "reading": 14.012268999998923,
+          "web-search": 1063.8461220000027
+        },
+        "resources": {
+          "reader": {
+            "samples": 60,
+            "averageCpuCores": 0.9968064995924832,
+            "peakObservedBytes": 3686760448,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.003466072469335839,
+            "peakObservedBytes": 3726360576,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web-search-4",
+        "qualifies": true,
+        "p95": {
+          "reading": 7.704337999995914,
+          "web-search": 1127.8137149999966
+        },
+        "resources": {
+          "reader": {
+            "samples": 60,
+            "averageCpuCores": 2.1451219945287128,
+            "peakObservedBytes": 3724410880,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.004143219487678744,
+            "peakObservedBytes": 3737260032,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web4-consumer1",
+        "qualifies": true,
+        "p95": {
+          "reading": 25.48202599999786,
+          "web-search": 1159.7829210000054,
+          "consumer": 1265.9823610000021
+        },
+        "resources": {
+          "reader": {
+            "samples": 61,
+            "averageCpuCores": 2.7694900757803285,
+            "peakObservedBytes": 3727433728,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 114808
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.011301051074476025,
+            "peakObservedBytes": 3755716608,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web4-consumer2",
+        "qualifies": true,
+        "p95": {
+          "reading": 152.30835499998648,
+          "web-search": 1296.5436580000096,
+          "consumer": 1238.9725019999896
+        },
+        "resources": {
+          "reader": {
+            "samples": 60,
+            "averageCpuCores": 3.411496504958728,
+            "peakObservedBytes": 3729666048,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 249962
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.003997790814661685,
+            "peakObservedBytes": 3762503680,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web4-consumer2-bulk2",
+        "qualifies": true,
+        "p95": {
+          "reading": 133.47125699999742,
+          "web-search": 1276.4202069999883,
+          "consumer": 1275.6666489999916,
+          "bulk": 289.498311000003
+        },
+        "resources": {
+          "reader": {
+            "samples": 61,
+            "averageCpuCores": 3.401053023100729,
+            "peakObservedBytes": 3743780864,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 422365
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.007805303141016738,
+            "peakObservedBytes": 3789971456,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web4-consumer2-bulk2-update",
+        "qualifies": false,
+        "p95": {
+          "reading": 862.5333229999815,
+          "web-search": 2074.0674639999925,
+          "consumer": 1671.9212649999827,
+          "bulk": 834.8373670000001
+        },
+        "resources": {
+          "reader": {
+            "samples": 362,
+            "averageCpuCores": 3.7323420701798904,
+            "peakObservedBytes": 7148716032,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 40751027
+          },
+          "minio": {
+            "samples": 91,
+            "averageCpuCores": 0.024986765142504953,
+            "peakObservedBytes": 4293136384,
+            "maxEventsDelta": 1040,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "attempt": "r2",
+    "allTargetPhasesQualified": true,
+    "stop": null,
+    "thresholdStop": null,
+    "stages": [
+      {
+        "name": "reading-only-baseline",
+        "qualifies": true,
+        "p95": {
+          "reading": 13.996744000000035
+        },
+        "resources": {
+          "reader": {
+            "samples": 60,
+            "averageCpuCores": 0.01788753769422276,
+            "peakObservedBytes": 3578040320,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.005155812294517959,
+            "peakObservedBytes": 373280768,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web-search-2",
+        "qualifies": true,
+        "p95": {
+          "reading": 12.473879999997735,
+          "web-search": 1119.8037069999991
+        },
+        "resources": {
+          "reader": {
+            "samples": 60,
+            "averageCpuCores": 1.041685467319208,
+            "peakObservedBytes": 3577843712,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.002669020062763984,
+            "peakObservedBytes": 242585600,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web-search-4",
+        "qualifies": true,
+        "p95": {
+          "reading": 7.820633000010275,
+          "web-search": 1096.8328270000056
+        },
+        "resources": {
+          "reader": {
+            "samples": 60,
+            "averageCpuCores": 2.075516822302255,
+            "peakObservedBytes": 3342430208,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.0043930715147132825,
+            "peakObservedBytes": 255143936,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web4-consumer1",
+        "qualifies": true,
+        "p95": {
+          "reading": 8.99189999999362,
+          "web-search": 1143.1523480000033,
+          "consumer": 1252.3361449999938
+        },
+        "resources": {
+          "reader": {
+            "samples": 61,
+            "averageCpuCores": 2.774482635311175,
+            "peakObservedBytes": 3364110336,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.0045548841769619455,
+            "peakObservedBytes": 267231232,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web4-consumer2",
+        "qualifies": true,
+        "p95": {
+          "reading": 8.25278100000287,
+          "web-search": 1193.4801060000027,
+          "consumer": 1262.9026310000045
+        },
+        "resources": {
+          "reader": {
+            "samples": 60,
+            "averageCpuCores": 3.454745721069436,
+            "peakObservedBytes": 3368091648,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.006219643740874336,
+            "peakObservedBytes": 274231296,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web4-consumer2-bulk2",
+        "qualifies": true,
+        "p95": {
+          "reading": 13.828750000015134,
+          "web-search": 1215.1117880000093,
+          "consumer": 1333.3834340000176,
+          "bulk": 26.376183000014862
+        },
+        "resources": {
+          "reader": {
+            "samples": 61,
+            "averageCpuCores": 3.514534133630184,
+            "peakObservedBytes": 3381161984,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 15,
+            "averageCpuCores": 0.007971110094369762,
+            "peakObservedBytes": 311894016,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      },
+      {
+        "name": "web4-consumer2-bulk2-update",
+        "qualifies": true,
+        "p95": {
+          "reading": 12.870541999989655,
+          "web-search": 1205.819148999988,
+          "consumer": 1271.558806999994,
+          "bulk": 26.18784900000901
+        },
+        "resources": {
+          "reader": {
+            "samples": 361,
+            "averageCpuCores": 3.654975760766523,
+            "peakObservedBytes": 6924996608,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          },
+          "minio": {
+            "samples": 90,
+            "averageCpuCores": 0.024583635723955076,
+            "peakObservedBytes": 3789914112,
+            "maxEventsDelta": 0,
+            "oomDelta": 0,
+            "oomKillDelta": 0,
+            "throttledUsecDelta": 0
+          }
+        }
+      }
+    ]
+  }
+]

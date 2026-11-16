@@ -1,0 +1,677 @@
+{
+  "scope": "D2 partial observations, not throughput/capacity or original runtime equivalence",
+  "reason": "QUERY_TIMEOUT",
+  "controllerStatus": "stopped",
+  "cleanupErrors": [],
+  "remainingPids": [],
+  "queryWindow": {
+    "sampleCount": 5,
+    "queryBeginWallMs": 1794800995598,
+    "queryEndWallMs": 1794801000605,
+    "coverage": "only observed in-query samples; no extrapolation to missed endpoints",
+    "firstOffsetMs": 215.896484375,
+    "lastOffsetMs": 4234.79736328125,
+    "coveredSeconds": 4.0189008712768555,
+    "cpuSeconds": 4.041201,
+    "averageCores": 1.005548812831519,
+    "throttleEvents": 0,
+    "throttledUsec": 0,
+    "maxSampledMemoryCurrent": 1744322560,
+    "memoryEventsDelta": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "reclaimDeltas": {
+      "pgscan": 0,
+      "pgsteal": 0,
+      "workingset_refault_file": 0,
+      "workingset_refault_anon": 0,
+      "pgmajfault": 0
+    }
+  },
+  "traceCount": 82,
+  "traceBytes": 32304,
+  "events": [
+    {
+      "event": "trace.open",
+      "relativeToRequestMs": -208.07495799999998,
+      "details": {
+        "maxEvents": 1000,
+        "maxBytes": 1048576,
+        "scope": "D1 phase boundaries only; no payload contents"
+      }
+    },
+    {
+      "event": "next.prepare.start",
+      "relativeToRequestMs": -168.88350499999999,
+      "details": {}
+    },
+    {
+      "event": "next.prepare.end",
+      "relativeToRequestMs": -72.20380999999998,
+      "details": {}
+    },
+    {
+      "event": "server.ready",
+      "relativeToRequestMs": -20.237111999999996,
+      "details": {}
+    },
+    {
+      "event": "next.request",
+      "relativeToRequestMs": 0.0,
+      "details": {
+        "id": 1,
+        "method": "GET",
+        "path": "/api/research/search?engine=pagefind&q=commonterm&page=1&pageSize=10"
+      }
+    },
+    {
+      "event": "search.arrive",
+      "relativeToRequestMs": 24.529740000000032,
+      "details": {}
+    },
+    {
+      "event": "search.scope",
+      "relativeToRequestMs": 26.13411400000004,
+      "details": {
+        "allowedSpaceCount": 1,
+        "page": 1,
+        "pageSize": 10
+      }
+    },
+    {
+      "event": "state.start",
+      "relativeToRequestMs": 27.573262000000028,
+      "details": {}
+    },
+    {
+      "event": "state.manifest.start",
+      "relativeToRequestMs": 28.895651000000015,
+      "details": {}
+    },
+    {
+      "event": "state.manifest.end",
+      "relativeToRequestMs": 30.93366800000004,
+      "details": {}
+    },
+    {
+      "event": "db.open.start",
+      "relativeToRequestMs": 32.32952500000002,
+      "details": {}
+    },
+    {
+      "event": "db.open.end",
+      "relativeToRequestMs": 33.72055500000002,
+      "details": {}
+    },
+    {
+      "event": "db.configure.start",
+      "relativeToRequestMs": 35.155587,
+      "details": {}
+    },
+    {
+      "event": "db.configure.end",
+      "relativeToRequestMs": 36.64596700000001,
+      "details": {}
+    },
+    {
+      "event": "state.ready",
+      "relativeToRequestMs": 37.905832000000004,
+      "details": {}
+    },
+    {
+      "event": "pf.import.start",
+      "relativeToRequestMs": 39.292789,
+      "details": {}
+    },
+    {
+      "event": "pf.import.end",
+      "relativeToRequestMs": 44.88118399999999,
+      "details": {}
+    },
+    {
+      "event": "pf.options.start",
+      "relativeToRequestMs": 46.21659500000001,
+      "details": {}
+    },
+    {
+      "event": "pf.options.end",
+      "relativeToRequestMs": 47.51148600000002,
+      "details": {}
+    },
+    {
+      "event": "pf.search.start",
+      "relativeToRequestMs": 48.66875999999999,
+      "details": {}
+    },
+    {
+      "event": "d2.fetch.start",
+      "relativeToRequestMs": 50.408837000000034,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/pagefind-entry.json?ts=1794800995663"
+      }
+    },
+    {
+      "event": "asset.request",
+      "relativeToRequestMs": 57.34922500000002,
+      "details": {
+        "id": 1,
+        "path": "/pagefind/pagefind-entry.json?ts=1794800995663"
+      }
+    },
+    {
+      "event": "asset.read.start",
+      "relativeToRequestMs": 58.80915300000001,
+      "details": {
+        "id": 1,
+        "path": "/pagefind/pagefind-entry.json"
+      }
+    },
+    {
+      "event": "asset.read.end",
+      "relativeToRequestMs": 60.38483500000004,
+      "details": {
+        "id": 1,
+        "path": "/pagefind/pagefind-entry.json",
+        "bytes": 176,
+        "elapsedMs": 0.26077100000003384
+      }
+    },
+    {
+      "event": "asset.finish",
+      "relativeToRequestMs": 62.60477599999999,
+      "details": {
+        "id": 1,
+        "path": "/pagefind/pagefind-entry.json?ts=1794800995663",
+        "status": 200,
+        "bytes": 176,
+        "elapsedMs": 5.255560000000003
+      }
+    },
+    {
+      "event": "d2.fetch.headers",
+      "relativeToRequestMs": 67.13711800000002,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/pagefind-entry.json?ts=1794800995663",
+        "status": 200
+      }
+    },
+    {
+      "event": "d2.entry-json.start",
+      "relativeToRequestMs": 68.50788100000003,
+      "details": {}
+    },
+    {
+      "event": "d2.entry-json.end",
+      "relativeToRequestMs": 70.71922600000002,
+      "details": {}
+    },
+    {
+      "event": "d2.fetch.start",
+      "relativeToRequestMs": 72.06739200000001,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/pagefind.zh_e5283423f8.pf_meta"
+      }
+    },
+    {
+      "event": "d2.fetch.start",
+      "relativeToRequestMs": 73.87398400000004,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/wasm.unknown.pagefind"
+      }
+    },
+    {
+      "event": "asset.request",
+      "relativeToRequestMs": 76.54372800000002,
+      "details": {
+        "id": 2,
+        "path": "/pagefind/pagefind.zh_e5283423f8.pf_meta"
+      }
+    },
+    {
+      "event": "asset.read.start",
+      "relativeToRequestMs": 77.89648300000002,
+      "details": {
+        "id": 2,
+        "path": "/pagefind/pagefind.zh_e5283423f8.pf_meta"
+      }
+    },
+    {
+      "event": "asset.request",
+      "relativeToRequestMs": 79.29171,
+      "details": {
+        "id": 3,
+        "path": "/pagefind/wasm.unknown.pagefind"
+      }
+    },
+    {
+      "event": "asset.read.start",
+      "relativeToRequestMs": 80.57552000000001,
+      "details": {
+        "id": 3,
+        "path": "/pagefind/wasm.unknown.pagefind"
+      }
+    },
+    {
+      "event": "asset.read.end",
+      "relativeToRequestMs": 82.20134200000004,
+      "details": {
+        "id": 3,
+        "path": "/pagefind/wasm.unknown.pagefind",
+        "bytes": 55386,
+        "elapsedMs": 0.28175499999997555
+      }
+    },
+    {
+      "event": "asset.finish",
+      "relativeToRequestMs": 83.575252,
+      "details": {
+        "id": 3,
+        "path": "/pagefind/wasm.unknown.pagefind",
+        "status": 200,
+        "bytes": 55386,
+        "elapsedMs": 4.284224999999992
+      }
+    },
+    {
+      "event": "d2.fetch.headers",
+      "relativeToRequestMs": 85.428214,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/wasm.unknown.pagefind",
+        "status": 200
+      }
+    },
+    {
+      "event": "d2.wasm-body.start",
+      "relativeToRequestMs": 86.63435000000001,
+      "details": {}
+    },
+    {
+      "event": "d2.wasm-body.end",
+      "relativeToRequestMs": 88.12176500000001,
+      "details": {
+        "bytes": 55386
+      }
+    },
+    {
+      "event": "d2.decompress.start",
+      "relativeToRequestMs": 89.36665000000002,
+      "details": {
+        "file": "Pagefind WebAssembly",
+        "inputBytes": 55386
+      }
+    },
+    {
+      "event": "d2.decompress.end",
+      "relativeToRequestMs": 95.14364500000002,
+      "details": {
+        "file": "Pagefind WebAssembly",
+        "outputBytes": 126915,
+        "compressed": true,
+        "signature": true
+      }
+    },
+    {
+      "event": "d2.wasm-instantiate.start",
+      "relativeToRequestMs": 96.45523,
+      "details": {
+        "bytes": 126915
+      }
+    },
+    {
+      "event": "asset.read.end",
+      "relativeToRequestMs": 98.15003800000002,
+      "details": {
+        "id": 2,
+        "path": "/pagefind/pagefind.zh_e5283423f8.pf_meta",
+        "bytes": 546316,
+        "elapsedMs": 19.01697999999999
+      }
+    },
+    {
+      "event": "asset.finish",
+      "relativeToRequestMs": 99.64810400000002,
+      "details": {
+        "id": 2,
+        "path": "/pagefind/pagefind.zh_e5283423f8.pf_meta",
+        "status": 200,
+        "bytes": 546316,
+        "elapsedMs": 23.105458999999996
+      }
+    },
+    {
+      "event": "d2.wasm-instantiate.end",
+      "relativeToRequestMs": 101.25784999999999,
+      "details": {}
+    },
+    {
+      "event": "d2.fetch.headers",
+      "relativeToRequestMs": 102.930081,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/pagefind.zh_e5283423f8.pf_meta",
+        "status": 200
+      }
+    },
+    {
+      "event": "d2.metadata-body.start",
+      "relativeToRequestMs": 104.17705700000002,
+      "details": {}
+    },
+    {
+      "event": "d2.metadata-body.end",
+      "relativeToRequestMs": 108.90766900000003,
+      "details": {
+        "bytes": 546316
+      }
+    },
+    {
+      "event": "d2.decompress.start",
+      "relativeToRequestMs": 110.18811000000002,
+      "details": {
+        "file": "Pagefind metadata",
+        "inputBytes": 546316
+      }
+    },
+    {
+      "event": "d2.decompress.end",
+      "relativeToRequestMs": 129.005885,
+      "details": {
+        "file": "Pagefind metadata",
+        "outputBytes": 1553082,
+        "compressed": true,
+        "signature": true
+      }
+    },
+    {
+      "event": "d2.wasm-init.start",
+      "relativeToRequestMs": 130.907162,
+      "details": {
+        "metadataBytes": 1553082
+      }
+    },
+    {
+      "event": "d2.wasm-init.end",
+      "relativeToRequestMs": 144.67595100000003,
+      "details": {}
+    },
+    {
+      "event": "d2.chunk-plan.start",
+      "relativeToRequestMs": 157.26765500000002,
+      "details": {}
+    },
+    {
+      "event": "d2.chunk-plan.end",
+      "relativeToRequestMs": 159.44697400000004,
+      "details": {
+        "indexEntries": 1,
+        "filterEntries": 1
+      }
+    },
+    {
+      "event": "d2.chunks.start",
+      "relativeToRequestMs": 160.972675,
+      "details": {}
+    },
+    {
+      "event": "d2.fetch.start",
+      "relativeToRequestMs": 162.456331,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/index/zh_a414126.pf_index"
+      }
+    },
+    {
+      "event": "d2.fetch.start",
+      "relativeToRequestMs": 164.366113,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/filter/zh_acd7951.pf_filter"
+      }
+    },
+    {
+      "event": "asset.request",
+      "relativeToRequestMs": 166.17169900000002,
+      "details": {
+        "id": 4,
+        "path": "/pagefind/index/zh_a414126.pf_index"
+      }
+    },
+    {
+      "event": "asset.read.start",
+      "relativeToRequestMs": 167.510933,
+      "details": {
+        "id": 4,
+        "path": "/pagefind/index/zh_a414126.pf_index"
+      }
+    },
+    {
+      "event": "asset.request",
+      "relativeToRequestMs": 168.96629200000004,
+      "details": {
+        "id": 5,
+        "path": "/pagefind/filter/zh_acd7951.pf_filter"
+      }
+    },
+    {
+      "event": "asset.read.start",
+      "relativeToRequestMs": 170.298759,
+      "details": {
+        "id": 5,
+        "path": "/pagefind/filter/zh_acd7951.pf_filter"
+      }
+    },
+    {
+      "event": "asset.read.end",
+      "relativeToRequestMs": 171.938074,
+      "details": {
+        "id": 4,
+        "path": "/pagefind/index/zh_a414126.pf_index",
+        "bytes": 1097,
+        "elapsedMs": 3.1324970000000008
+      }
+    },
+    {
+      "event": "asset.finish",
+      "relativeToRequestMs": 173.50047500000002,
+      "details": {
+        "id": 4,
+        "path": "/pagefind/index/zh_a414126.pf_index",
+        "status": 200,
+        "bytes": 1097,
+        "elapsedMs": 7.330235000000016
+      }
+    },
+    {
+      "event": "d2.fetch.headers",
+      "relativeToRequestMs": 175.421073,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/index/zh_a414126.pf_index",
+        "status": 200
+      }
+    },
+    {
+      "event": "d2.chunk-body.start",
+      "relativeToRequestMs": 176.905184,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/index/zh_a414126.pf_index",
+        "method": "load_index_chunk"
+      }
+    },
+    {
+      "event": "d2.chunk-body.end",
+      "relativeToRequestMs": 178.542246,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/index/zh_a414126.pf_index",
+        "method": "load_index_chunk",
+        "bytes": 1097
+      }
+    },
+    {
+      "event": "d2.decompress.start",
+      "relativeToRequestMs": 179.884604,
+      "details": {
+        "file": "http://127.0.0.1:36515/pagefind/index/zh_a414126.pf_index",
+        "inputBytes": 1097
+      }
+    },
+    {
+      "event": "d2.decompress.end",
+      "relativeToRequestMs": 182.42766400000002,
+      "details": {
+        "file": "http://127.0.0.1:36515/pagefind/index/zh_a414126.pf_index",
+        "outputBytes": 700020,
+        "compressed": true,
+        "signature": true
+      }
+    },
+    {
+      "event": "d2.wasm-load-chunk.start",
+      "relativeToRequestMs": 183.82490400000003,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/index/zh_a414126.pf_index",
+        "method": "load_index_chunk",
+        "bytes": 700020
+      }
+    },
+    {
+      "event": "d2.wasm-load-chunk.end",
+      "relativeToRequestMs": 193.97133500000004,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/index/zh_a414126.pf_index",
+        "method": "load_index_chunk"
+      }
+    },
+    {
+      "event": "asset.read.end",
+      "relativeToRequestMs": 195.51772300000002,
+      "details": {
+        "id": 5,
+        "path": "/pagefind/filter/zh_acd7951.pf_filter",
+        "bytes": 240765,
+        "elapsedMs": 23.91816799999998
+      }
+    },
+    {
+      "event": "asset.finish",
+      "relativeToRequestMs": 197.16903,
+      "details": {
+        "id": 5,
+        "path": "/pagefind/filter/zh_acd7951.pf_filter",
+        "status": 200,
+        "bytes": 240765,
+        "elapsedMs": 28.203460000000007
+      }
+    },
+    {
+      "event": "d2.fetch.headers",
+      "relativeToRequestMs": 199.31347000000002,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/filter/zh_acd7951.pf_filter",
+        "status": 200
+      }
+    },
+    {
+      "event": "d2.chunk-body.start",
+      "relativeToRequestMs": 200.71016900000004,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/filter/zh_acd7951.pf_filter",
+        "method": "load_filter_chunk"
+      }
+    },
+    {
+      "event": "d2.chunk-body.end",
+      "relativeToRequestMs": 203.28854800000002,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/filter/zh_acd7951.pf_filter",
+        "method": "load_filter_chunk",
+        "bytes": 240765
+      }
+    },
+    {
+      "event": "d2.decompress.start",
+      "relativeToRequestMs": 204.87164300000003,
+      "details": {
+        "file": "http://127.0.0.1:36515/pagefind/filter/zh_acd7951.pf_filter",
+        "inputBytes": 240765
+      }
+    },
+    {
+      "event": "d2.decompress.end",
+      "relativeToRequestMs": 208.88265000000004,
+      "details": {
+        "file": "http://127.0.0.1:36515/pagefind/filter/zh_acd7951.pf_filter",
+        "outputBytes": 377659,
+        "compressed": true,
+        "signature": true
+      }
+    },
+    {
+      "event": "d2.wasm-load-chunk.start",
+      "relativeToRequestMs": 210.794816,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/filter/zh_acd7951.pf_filter",
+        "method": "load_filter_chunk",
+        "bytes": 377659
+      }
+    },
+    {
+      "event": "d2.wasm-load-chunk.end",
+      "relativeToRequestMs": 214.233123,
+      "details": {
+        "url": "http://127.0.0.1:36515/pagefind/filter/zh_acd7951.pf_filter",
+        "method": "load_filter_chunk"
+      }
+    },
+    {
+      "event": "d2.chunks.end",
+      "relativeToRequestMs": 215.687576,
+      "details": {}
+    },
+    {
+      "event": "d2.backend-search.start",
+      "relativeToRequestMs": 216.95082700000003,
+      "details": {}
+    },
+    {
+      "event": "d2.wasm-search.start",
+      "relativeToRequestMs": 219.677948,
+      "details": {}
+    }
+  ],
+  "lastObservedObserverCost": {
+    "completedEvents": 81,
+    "cumulativeSyncIoMs": 110.1847069999999,
+    "lastSyncIoMs": 2.621422999999993,
+    "cumulativeTraceMs": 111.68788900000013,
+    "accounting": "completed previous events; current/final event cost appears only in a later row"
+  },
+  "lastEventOwnCost": "unknown unless a later event records it",
+  "case": {
+    "id": "ms1-common-huge-page1",
+    "request": {
+      "url": "http://127.0.0.1:37505/api/research/search?engine=pagefind&q=commonterm&page=1&pageSize=10",
+      "headers": {
+        "x-lab-user": "huge"
+      }
+    },
+    "expected": {
+      "status": 200,
+      "total": 50000,
+      "hitCount": 10
+    },
+    "error": {
+      "name": "TimeoutError",
+      "message": "The operation was aborted due to timeout"
+    },
+    "validator": {
+      "passed": false,
+      "issues": [
+        "TimeoutError",
+        "QUERY_DEADLINE_EXCEEDED"
+      ]
+    },
+    "elapsedMs": 5004.821412999998
+  }
+}

@@ -1,0 +1,1084 @@
+{
+  "driverSeconds": 142.07299995422363,
+  "monitorSeconds": 424.46844221799984,
+  "driverSampleCount": 559,
+  "candidatePeakBytes": 923049984,
+  "cgroupPeakBytes": 11239493632,
+  "minimumFreeBytes": 11821481984,
+  "newArtifactPeakBytes": 4331054936,
+  "minioProcessPeakBytes": 310833152,
+  "newArtifactFinalBytes": 4331054988,
+  "largeSource": {
+    "path": "/workspace/dr-search-lab/.lab/ms1/sqlite-1000000/data.sqlite",
+    "bytes": 2133065728,
+    "sha256": "bdd4a22ca136ee7112540c6a6a4c670d2871b55517ae5cdf811c0f713d21eaa0",
+    "attachment": {
+      "path": "media/a000000000.txt",
+      "bytes": 68,
+      "sha256": "01a16802c89b38533692532b207dbefa75f187346eac5dedfda06cc9fe658256"
+    }
+  },
+  "largeUploads": [
+    {
+      "key": "large/data.sqlite",
+      "bytes": 2133065728,
+      "elapsedMs": 10868.588321
+    }
+  ],
+  "largeInstalls": [
+    {
+      "prefix": "large",
+      "pid": 19102,
+      "rateBytesPerSecond": 20971520,
+      "before": "39e761cd124760c0b6b01172ecd5fff0adae7bd9371f918ef2094f1f25018c75",
+      "after": "878842f4436d1a0eecb3148ff3c09a123b4101ec5468b6588414b2dd6ae4f5c2",
+      "code": 0,
+      "signal": null,
+      "elapsedMs": 102002.588965,
+      "events": [
+        {
+          "event": "staging_created",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:18.577Z",
+          "release": "minio-large-v1",
+          "staging": "/workspace/dr-search-lab/.lab/minio-dependency/cache-small/staging/minio-large-v1-19102-7482c364"
+        },
+        {
+          "event": "object_started",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:18.579Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "expectedBytes": 2133065728,
+          "rateBytesPerSecond": 20971520
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:19.581Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 21011456,
+          "elapsedMs": 1001.9936670000001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:20.583Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 42048512,
+          "elapsedMs": 2004.425332
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:21.584Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 63020032,
+          "elapsedMs": 3004.699259
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:22.584Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 83991552,
+          "elapsedMs": 4004.8965430000003
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:23.587Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 105028608,
+          "elapsedMs": 5008.208946
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:24.590Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 126065664,
+          "elapsedMs": 6010.894426
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:25.590Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 147037184,
+          "elapsedMs": 7011.155936
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:26.593Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 168074240,
+          "elapsedMs": 8014.222828
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:27.596Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 189111296,
+          "elapsedMs": 9017.003282000001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:28.597Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 210082816,
+          "elapsedMs": 10017.369294
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:29.599Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 231119872,
+          "elapsedMs": 11019.872398000001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:30.603Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 252156928,
+          "elapsedMs": 12023.856058000001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:31.605Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 273193984,
+          "elapsedMs": 13026.50338
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:32.606Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 294165504,
+          "elapsedMs": 14026.730173
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:33.608Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 315202560,
+          "elapsedMs": 15029.399625
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:34.609Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 336174080,
+          "elapsedMs": 16029.74723
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:35.612Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 357211136,
+          "elapsedMs": 17033.18913
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:36.615Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 378248192,
+          "elapsedMs": 18036.288794
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:37.618Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 399285248,
+          "elapsedMs": 19039.276529
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:38.621Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 420322304,
+          "elapsedMs": 20041.945928999998
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:39.621Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 441293824,
+          "elapsedMs": 21042.450424
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:40.624Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 462330880,
+          "elapsedMs": 22045.201575
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:41.627Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 483367936,
+          "elapsedMs": 23048.068703999998
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:42.628Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 504339456,
+          "elapsedMs": 24048.737359
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:43.631Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 525376512,
+          "elapsedMs": 25051.635707999998
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:44.633Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 546413568,
+          "elapsedMs": 26054.308274
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:45.634Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 567385088,
+          "elapsedMs": 27054.738286
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:46.637Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 588422144,
+          "elapsedMs": 28057.749687
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:47.637Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 609393664,
+          "elapsedMs": 29058.120241
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:48.638Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 630430720,
+          "elapsedMs": 30059.611887
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:49.640Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 651402240,
+          "elapsedMs": 31061.069004999998
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:50.643Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 672439296,
+          "elapsedMs": 32064.18667
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:51.643Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 693410816,
+          "elapsedMs": 33064.494196
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:52.646Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 714447872,
+          "elapsedMs": 34067.566609
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:53.649Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 735484928,
+          "elapsedMs": 35070.11682
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:54.652Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 756521984,
+          "elapsedMs": 36073.022576
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:55.652Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 777493504,
+          "elapsedMs": 37073.536032
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:56.653Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 798465024,
+          "elapsedMs": 38073.716984000006
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:57.653Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 819436544,
+          "elapsedMs": 39073.886098
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:58.655Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 840473600,
+          "elapsedMs": 40076.186050000004
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:18:59.655Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 861445120,
+          "elapsedMs": 41076.210927
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:00.655Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 882416640,
+          "elapsedMs": 42076.567767
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:01.656Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 903388160,
+          "elapsedMs": 43076.762858
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:02.656Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 924359680,
+          "elapsedMs": 44076.822185000005
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:03.657Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 945396736,
+          "elapsedMs": 45078.604706000006
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:04.658Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 966368256,
+          "elapsedMs": 46079.355145
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:05.658Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 987339776,
+          "elapsedMs": 47079.537919
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:06.659Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1008311296,
+          "elapsedMs": 48080.032744000004
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:07.662Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1029348352,
+          "elapsedMs": 49083.018172000004
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:08.662Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1050319872,
+          "elapsedMs": 50083.077635
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:09.665Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1071356928,
+          "elapsedMs": 51085.676197
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:10.665Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1092328448,
+          "elapsedMs": 52086.078005
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:11.665Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1113299968,
+          "elapsedMs": 53086.079953
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:12.665Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1134271488,
+          "elapsedMs": 54086.219935
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:13.668Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1155308544,
+          "elapsedMs": 55088.774278000004
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:14.668Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1176280064,
+          "elapsedMs": 56089.395902000004
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:15.671Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1197317120,
+          "elapsedMs": 57092.116886
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:16.671Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1218288640,
+          "elapsedMs": 58092.151173000006
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:17.671Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1239260160,
+          "elapsedMs": 59092.323041
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:18.674Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1260297216,
+          "elapsedMs": 60095.488103
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:19.677Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1281334272,
+          "elapsedMs": 61097.771504000004
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:20.677Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1302305792,
+          "elapsedMs": 62098.179741
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:21.681Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1323342848,
+          "elapsedMs": 63101.787912
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:22.683Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1344379904,
+          "elapsedMs": 64104.327599000004
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:23.684Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1365351424,
+          "elapsedMs": 65104.7945
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:24.687Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1386388480,
+          "elapsedMs": 66107.90064200001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:25.690Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1407425536,
+          "elapsedMs": 67110.819591
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:26.690Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1428397056,
+          "elapsedMs": 68111.00232700001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:27.690Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1449368576,
+          "elapsedMs": 69111.26012
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:28.693Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1470405632,
+          "elapsedMs": 70114.085923
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:29.693Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1491377152,
+          "elapsedMs": 71114.358649
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:30.696Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1512414208,
+          "elapsedMs": 72117.356055
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:31.699Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1533451264,
+          "elapsedMs": 73120.506882
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:32.703Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1554488320,
+          "elapsedMs": 74123.789682
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:33.705Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1575525376,
+          "elapsedMs": 75125.661612
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:34.706Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1596496896,
+          "elapsedMs": 76126.639708
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:35.709Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1617533952,
+          "elapsedMs": 77129.749416
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:36.711Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1638571008,
+          "elapsedMs": 78131.624881
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:37.712Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1659542528,
+          "elapsedMs": 79133.15868000001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:38.714Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1680579584,
+          "elapsedMs": 80135.47655400001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:39.715Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1701551104,
+          "elapsedMs": 81135.832549
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:40.715Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1722522624,
+          "elapsedMs": 82135.996345
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:41.718Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1743559680,
+          "elapsedMs": 83138.865688
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:42.718Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1764531200,
+          "elapsedMs": 84139.555041
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:43.721Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1785568256,
+          "elapsedMs": 85141.672662
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:44.721Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1806539776,
+          "elapsedMs": 86142.185453
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:45.724Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1827576832,
+          "elapsedMs": 87145.225458
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:46.727Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1848613888,
+          "elapsedMs": 88148.359652
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:47.730Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1869650944,
+          "elapsedMs": 89151.171993
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:48.730Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1890622464,
+          "elapsedMs": 90151.32679400001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:49.733Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1911659520,
+          "elapsedMs": 91154.441554
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:50.736Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1932696576,
+          "elapsedMs": 92157.541242
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:51.737Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1953668096,
+          "elapsedMs": 93157.770302
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:52.737Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1974639616,
+          "elapsedMs": 94157.900912
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:53.740Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 1995676672,
+          "elapsedMs": 95161.102166
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:54.740Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2016648192,
+          "elapsedMs": 96161.297147
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:55.743Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2037685248,
+          "elapsedMs": 97164.155384
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:56.743Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2058656768,
+          "elapsedMs": 98164.30801200001
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:57.746Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2079693824,
+          "elapsedMs": 99167.330665
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:58.749Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2100730880,
+          "elapsedMs": 100170.340301
+        },
+        {
+          "event": "object_progress",
+          "pid": 19102,
+          "at": "2026-11-14T11:19:59.752Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2121767936,
+          "elapsedMs": 101173.12543700001
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 19102,
+          "at": "2026-11-14T11:20:00.293Z",
+          "release": "minio-large-v1",
+          "path": "data.sqlite",
+          "bytes": 2133065728,
+          "sha256": "bdd4a22ca136ee7112540c6a6a4c670d2871b55517ae5cdf811c0f713d21eaa0",
+          "expectedBytes": 2133065728,
+          "elapsedMs": 101713.821723,
+          "rateBytesPerSecond": 20971520
+        },
+        {
+          "event": "object_started",
+          "pid": 19102,
+          "at": "2026-11-14T11:20:00.470Z",
+          "release": "minio-large-v1",
+          "path": "media/a000000000.txt",
+          "expectedBytes": 68,
+          "rateBytesPerSecond": 0
+        },
+        {
+          "event": "object_downloaded",
+          "pid": 19102,
+          "at": "2026-11-14T11:20:00.473Z",
+          "release": "minio-large-v1",
+          "path": "media/a000000000.txt",
+          "bytes": 68,
+          "sha256": "01a16802c89b38533692532b207dbefa75f187346eac5dedfda06cc9fe658256",
+          "expectedBytes": 68,
+          "elapsedMs": 3.228934999991907,
+          "rateBytesPerSecond": 0
+        },
+        {
+          "event": "activated",
+          "pid": 19102,
+          "at": "2026-11-14T11:20:00.477Z",
+          "release": "minio-large-v1",
+          "manifestSha256": "7a35b1b4d718fed0e5ba1e0c92574c7bd93f01242e8242fb96cb3fc56d0517bb",
+          "bytes": 2133065796,
+          "elapsedMs": 101914.119603,
+          "root": "/workspace/dr-search-lab/.lab/minio-dependency/cache-small/releases/minio-large-v1"
+        }
+      ]
+    }
+  ],
+  "caseTiming": [
+    {
+      "case": "baseline",
+      "elapsedMs": 9042.823982999998,
+      "passed": true
+    },
+    {
+      "case": "outage",
+      "elapsedMs": 9092.444152,
+      "passed": true
+    },
+    {
+      "case": "empty",
+      "elapsedMs": 544.9422870000017,
+      "passed": true
+    },
+    {
+      "case": "outage-and-recovery",
+      "outageStart": "2026-11-14T11:17:53.174Z",
+      "recoveredAt": "2026-11-14T11:18:04.113Z",
+      "recoveryThroughTaskMs": 891.2370530000007
+    },
+    {
+      "case": "recovered",
+      "elapsedMs": 1307.2331159999994,
+      "passed": true
+    },
+    {
+      "case": "paced-overlap",
+      "elapsedMs": 102003.826366,
+      "objectStart": {
+        "event": "object_started",
+        "pid": 19102,
+        "at": "2026-11-14T11:18:18.579Z",
+        "release": "minio-large-v1",
+        "path": "data.sqlite",
+        "expectedBytes": 2133065728,
+        "rateBytesPerSecond": 20971520
+      },
+      "objectEnd": {
+        "event": "object_downloaded",
+        "pid": 19102,
+        "at": "2026-11-14T11:20:00.293Z",
+        "release": "minio-large-v1",
+        "path": "data.sqlite",
+        "bytes": 2133065728,
+        "sha256": "bdd4a22ca136ee7112540c6a6a4c670d2871b55517ae5cdf811c0f713d21eaa0",
+        "expectedBytes": 2133065728,
+        "elapsedMs": 101713.821723,
+        "rateBytesPerSecond": 20971520
+      },
+      "flowOutput": "http-paced.json",
+      "requestCount": 300,
+      "ticksWithinDownload": 100,
+      "expectedTicks": 100
+    },
+    {
+      "case": "paced-through-large-task",
+      "elapsedMs": 105945.342614,
+      "reference120s": true
+    },
+    {
+      "case": "paced",
+      "elapsedMs": 105960.168275,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "candidate RSS includes test/orchestrator processes, excludes page cache, shared pages may be counted twice",
+    "cgroup includes existing ES/other processes/OS cache, not attributable to candidate",
+    "monitor includes setup idle and is not service availability duration",
+    "small old reader workload with million artifact download, not million-page old-reader concurrency",
+    "new artifacts mostly one MinIO copy plus one complete local copy; existing previous round artifacts excluded"
+  ]
+}

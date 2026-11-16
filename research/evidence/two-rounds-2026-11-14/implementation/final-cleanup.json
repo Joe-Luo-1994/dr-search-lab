@@ -1,0 +1,24 @@
+{
+  "implementationPids": {
+    "4619": {
+      "exists": false
+    },
+    "5163": {
+      "exists": false
+    }
+  },
+  "ports": {
+    "43149": {
+      "listening": false
+    },
+    "32891": {
+      "listening": false
+    },
+    "32955": {
+      "listening": false
+    },
+    "37139": {
+      "listening": false
+    }
+  }
+}

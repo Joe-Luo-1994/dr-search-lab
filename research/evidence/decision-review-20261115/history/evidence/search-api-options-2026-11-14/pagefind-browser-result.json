@@ -1,0 +1,74 @@
+{
+  "scope": "Same existing 100-document bundle as native Node probe; browser zh context",
+  "queries": [
+    {
+      "term": "資料庫備份",
+      "total": 3,
+      "hits": [
+        {
+          "id": "p07",
+          "excerpt": "<mark>資料庫</mark><mark>備份 </mark>異地還原與每日<mark>備份</mark>驗證。",
+          "url": "/synthetic/p07"
+        },
+        {
+          "id": "p02",
+          "excerpt": "Database maintenance Perform backup before maintenance. <mark>資料庫</mark>每日執行<mark>備份</mark>。",
+          "url": "/synthetic/p02"
+        },
+        {
+          "id": "p01",
+          "excerpt": "Database backup runbook Daily backup and disaster recovery. <mark>資料庫</mark><mark>備份</mark>流程與還原。",
+          "url": "/synthetic/p01"
+        }
+      ]
+    },
+    {
+      "term": "ERR_CONN_RESET",
+      "total": 1,
+      "hits": [
+        {
+          "id": "p05",
+          "excerpt": "<mark>ERR_CONN_RESET </mark>troubleshooting Network error <mark>ERR_CONN_RESET</mark>. Retry after checking the proxy.",
+          "url": "/synthetic/p05"
+        }
+      ]
+    },
+    {
+      "term": "backup",
+      "total": 34,
+      "hits": [
+        {
+          "id": "p10",
+          "excerpt": "<mark>Backup </mark>compatibility notes <mark>backup </mark><mark>backups </mark>backed up. API compatibility.",
+          "url": "/synthetic/p10"
+        },
+        {
+          "id": "p01",
+          "excerpt": "Database <mark>backup </mark>runbook Daily <mark>backup </mark>and disaster recovery. 資料庫備份流程與還原。",
+          "url": "/synthetic/p01"
+        },
+        {
+          "id": "p84",
+          "excerpt": "ops <mark>backup </mark>reference 84 Synthetic document 84. Database <mark>backup </mark>disaster recovery. 系統備份與復原。 Read-only operations. Read-only operations.",
+          "url": "/synthetic/p84"
+        },
+        {
+          "id": "p21",
+          "excerpt": "ops <mark>backup </mark>reference 21 Synthetic document 21. Database <mark>backup </mark>disaster recovery. 系統備份與復原。 Read-only operations. Read-only operations.",
+          "url": "/synthetic/p21"
+        },
+        {
+          "id": "p30",
+          "excerpt": "ops <mark>backup </mark>reference 30 Synthetic document 30. Database <mark>backup </mark>disaster recovery. 系統備份與復原。 Read-only operations. Read-only operations.",
+          "url": "/synthetic/p30"
+        }
+      ]
+    },
+    {
+      "term": "bakcup",
+      "total": 0,
+      "hits": []
+    }
+  ],
+  "completed": true
+}

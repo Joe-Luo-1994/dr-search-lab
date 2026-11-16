@@ -1,0 +1,22 @@
+{
+  "engine": "sqlite",
+  "N": 100000,
+  "startedAt": 1794643154.2031672,
+  "stages": {
+    "buildExitCode": 0,
+    "independentHarnessExitCode": 0
+  },
+  "completed": true,
+  "readyElapsedSeconds": 0.5006987039996602,
+  "ready": {
+    "ready": true,
+    "pid": 7701,
+    "next": "16.4.5",
+    "node": "v22.21.1",
+    "mode": "production custom Next server",
+    "url": "http://127.0.0.1:46817",
+    "assetOrigin": "http://127.0.0.1:43561",
+    "dataRoot": "/workspace/dr-search-lab/.lab/ms1/sqlite-100000"
+  },
+  "finishedAt": 1794643167.90976
+}

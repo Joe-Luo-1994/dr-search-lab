@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "queryId": "common",
+      "total": 1000000,
+      "visibleHits": 10,
+      "passed": true
+    },
+    {
+      "queryId": "rare",
+      "total": 1,
+      "visibleHits": 1,
+      "passed": true
+    },
+    {
+      "queryId": "chinese",
+      "total": 200000,
+      "visibleHits": 10,
+      "passed": true
+    },
+    {
+      "queryId": "absent",
+      "total": 0,
+      "visibleHits": 0,
+      "passed": true
+    },
+    {
+      "queryId": "pdf",
+      "total": 256,
+      "visibleHits": 10,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Five text queries via existing form on 1M corpus before formal load. Filters/identity controls absent; no load/browser-latency or human UX claim; warms cache."
+}

@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-11-15T09:34:36Z",
+  "kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "machine": "x86_64",
+  "logicalCpus": 28,
+  "meminfo": [
+    "MemTotal:       20478028 kB",
+    "MemAvailable:   18831100 kB",
+    "Cached:          8773168 kB",
+    "SwapTotal:       5242880 kB"
+  ],
+  "environment": "WSL Ubuntu, same-host loopback object store and reader, no OS cache clearing or cgroup cap"
+}

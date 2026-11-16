@@ -1,0 +1,131 @@
+{
+  "schema": "minio-release-review-v1",
+  "scenario": "old-link",
+  "passed": true,
+  "requests": 11,
+  "expectedRequests": 11,
+  "failure": null,
+  "rows": [
+    {
+      "task": "minio-small-v1:all:chain",
+      "url": "/api/search?q=commonterm&pageSize=50",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 7292,
+      "sha256": "54f60bfa87985577f20dad901bced228fa23984ecd76a34a050d8b21361d809e",
+      "elapsedMs": 31.941754999999997,
+      "release": null
+    },
+    {
+      "task": "minio-small-v1:all:chain",
+      "url": "/api/pages/p000000000?release=minio-small-v1",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 283,
+      "sha256": "ae874b0b878cd9c26c760c2bbe62ef9cb04f9d8f6aef6ecaacfe019d032669c9",
+      "elapsedMs": 3.736288000000002,
+      "release": "minio-small-v1"
+    },
+    {
+      "task": "minio-small-v1:all:chain",
+      "url": "/api/attachments/a000000000?release=minio-small-v1",
+      "identity": "all",
+      "expected": 200,
+      "status": 200,
+      "bytes": 88,
+      "sha256": "64fe9f4f52e8e3bc52ac86187989fbb8a427fb28b944c6791a443030aae99bf6",
+      "elapsedMs": 3.553385999999996,
+      "release": "minio-small-v1"
+    },
+    {
+      "task": "minio-small-v1:small:chain",
+      "url": "/api/search?q=commonterm&pageSize=50",
+      "identity": "small",
+      "expected": 200,
+      "status": 200,
+      "bytes": 2515,
+      "sha256": "2bb83a6155c0f80b29ebaf3a10e4fa8da9ac0b8ea320789aa592cc871ad4ecb1",
+      "elapsedMs": 3.341571999999992,
+      "release": null
+    },
+    {
+      "task": "minio-small-v1:small:chain",
+      "url": "/api/pages/p000000008?release=minio-small-v1",
+      "identity": "small",
+      "expected": 200,
+      "status": 200,
+      "bytes": 283,
+      "sha256": "28661f0516d69d77b8a21a620729ea031e35a7e1e1a2ef617de8e73cc2fc1625",
+      "elapsedMs": 2.3200140000000005,
+      "release": "minio-small-v1"
+    },
+    {
+      "task": "minio-small-v1:small:chain",
+      "url": "/api/attachments/a000000001?release=minio-small-v1",
+      "identity": "small",
+      "expected": 200,
+      "status": 200,
+      "bytes": 88,
+      "sha256": "0d675cd2bd4131201d28a28fdbb64a3d791acbba3d1bdaf3d681e7ca0db5f78b",
+      "elapsedMs": 2.436107000000007,
+      "release": "minio-small-v1"
+    },
+    {
+      "task": "minio-small-v1:huge:chain",
+      "url": "/api/search?q=commonterm&pageSize=50",
+      "identity": "huge",
+      "expected": 200,
+      "status": 200,
+      "bytes": 2509,
+      "sha256": "3bea7049031f50c106a6c6a84d0a4af4ef9d3ad32ba04bde89b928f5e68f0850",
+      "elapsedMs": 2.9930629999999923,
+      "release": null
+    },
+    {
+      "task": "minio-small-v1:huge:chain",
+      "url": "/api/pages/p000000000?release=minio-small-v1",
+      "identity": "huge",
+      "expected": 200,
+      "status": 200,
+      "bytes": 283,
+      "sha256": "ae874b0b878cd9c26c760c2bbe62ef9cb04f9d8f6aef6ecaacfe019d032669c9",
+      "elapsedMs": 2.205044000000001,
+      "release": "minio-small-v1"
+    },
+    {
+      "task": "minio-small-v1:huge:chain",
+      "url": "/api/attachments/a000000000?release=minio-small-v1",
+      "identity": "huge",
+      "expected": 200,
+      "status": 200,
+      "bytes": 88,
+      "sha256": "64fe9f4f52e8e3bc52ac86187989fbb8a427fb28b944c6791a443030aae99bf6",
+      "elapsedMs": 3.152320000000003,
+      "release": "minio-small-v1"
+    },
+    {
+      "task": "old link on new reader",
+      "url": "/api/pages/p000000000?release=minio-small-v1",
+      "identity": "all",
+      "expected": 409,
+      "status": 409,
+      "bytes": 40,
+      "sha256": "9cb0d6f915fdab555ace76940f70081f99a19331329547caf3337589a04f6f64",
+      "elapsedMs": 3.985948999999991,
+      "release": null
+    },
+    {
+      "task": "old link on new reader",
+      "url": "/api/attachments/a000000000?release=minio-small-v1",
+      "identity": "all",
+      "expected": 409,
+      "status": 409,
+      "bytes": 40,
+      "sha256": "9cb0d6f915fdab555ace76940f70081f99a19331329547caf3337589a04f6f64",
+      "elapsedMs": 3.975824000000003,
+      "release": null
+    }
+  ]
+}
