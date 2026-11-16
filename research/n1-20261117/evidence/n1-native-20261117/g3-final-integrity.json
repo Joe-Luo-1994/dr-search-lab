@@ -1,0 +1,322 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "attempt": "sqlite-attempt3",
+      "file": "search.sqlite",
+      "bytes": 3312799744,
+      "passed": true
+    },
+    {
+      "attempt": "sqlite-attempt3",
+      "file": "manifest.json",
+      "bytes": 68456,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "search.sqlite",
+      "bytes": 3312799744,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "manifest.json",
+      "bytes": 68456,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "n1-tantivy-reader",
+      "bytes": 7986048,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": ".managed.json",
+      "bytes": 1478,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": ".tantivy-meta.lock",
+      "bytes": 0,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": ".tantivy-writer.lock",
+      "bytes": 0,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "27a106a414ac44c3930c7e40efa8d087.fast",
+      "bytes": 3388,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "27a106a414ac44c3930c7e40efa8d087.fieldnorm",
+      "bytes": 733921,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "27a106a414ac44c3930c7e40efa8d087.idx",
+      "bytes": 2127447,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "27a106a414ac44c3930c7e40efa8d087.pos",
+      "bytes": 8557760,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "27a106a414ac44c3930c7e40efa8d087.store",
+      "bytes": 5284920,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "27a106a414ac44c3930c7e40efa8d087.term",
+      "bytes": 1065052,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "338b7d6417d4414ab71757d78ea4ab15.fast",
+      "bytes": 3451,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "338b7d6417d4414ab71757d78ea4ab15.fieldnorm",
+      "bytes": 734085,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "338b7d6417d4414ab71757d78ea4ab15.idx",
+      "bytes": 2065766,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "338b7d6417d4414ab71757d78ea4ab15.pos",
+      "bytes": 8559642,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "338b7d6417d4414ab71757d78ea4ab15.store",
+      "bytes": 4636322,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "338b7d6417d4414ab71757d78ea4ab15.term",
+      "bytes": 1065466,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "740e4414b5674c149442e2971c0611b8.fast",
+      "bytes": 3389,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "740e4414b5674c149442e2971c0611b8.fieldnorm",
+      "bytes": 733925,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "740e4414b5674c149442e2971c0611b8.idx",
+      "bytes": 2225863,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "740e4414b5674c149442e2971c0611b8.pos",
+      "bytes": 8557736,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "740e4414b5674c149442e2971c0611b8.store",
+      "bytes": 6995154,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "740e4414b5674c149442e2971c0611b8.term",
+      "bytes": 1065362,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "7b0e6f608b464c52a91a03176070c02c.fast",
+      "bytes": 3389,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "7b0e6f608b464c52a91a03176070c02c.fieldnorm",
+      "bytes": 733925,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "7b0e6f608b464c52a91a03176070c02c.idx",
+      "bytes": 2225854,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "7b0e6f608b464c52a91a03176070c02c.pos",
+      "bytes": 8557770,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "7b0e6f608b464c52a91a03176070c02c.store",
+      "bytes": 6999911,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "7b0e6f608b464c52a91a03176070c02c.term",
+      "bytes": 1065199,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "f70ca2c84732421c84cff4e965f054ed.fast",
+      "bytes": 2263,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "f70ca2c84732421c84cff4e965f054ed.fieldnorm",
+      "bytes": 330833,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "f70ca2c84732421c84cff4e965f054ed.idx",
+      "bytes": 986575,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "f70ca2c84732421c84cff4e965f054ed.pos",
+      "bytes": 3857407,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "f70ca2c84732421c84cff4e965f054ed.store",
+      "bytes": 3153298,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "f70ca2c84732421c84cff4e965f054ed.term",
+      "bytes": 480238,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "ffc0c3ab110f4fb09b4cd152e8835c16.fast",
+      "bytes": 3388,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "ffc0c3ab110f4fb09b4cd152e8835c16.fieldnorm",
+      "bytes": 734085,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "ffc0c3ab110f4fb09b4cd152e8835c16.idx",
+      "bytes": 2065752,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "ffc0c3ab110f4fb09b4cd152e8835c16.pos",
+      "bytes": 8559874,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "ffc0c3ab110f4fb09b4cd152e8835c16.store",
+      "bytes": 4640238,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "ffc0c3ab110f4fb09b4cd152e8835c16.term",
+      "bytes": 1065380,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "meta.json",
+      "bytes": 2226,
+      "passed": true
+    },
+    {
+      "attempt": "tantivy-attempt1",
+      "file": "n1-manifest.json",
+      "bytes": 650,
+      "passed": true
+    },
+    {
+      "attempt": "loader-freeze",
+      "file": "freeze-before-io-portability.json",
+      "passed": true
+    },
+    {
+      "attempt": "loader-freeze",
+      "file": "load.mjs",
+      "passed": true
+    },
+    {
+      "attempt": "loader-freeze",
+      "file": "oracle.mjs",
+      "passed": true
+    },
+    {
+      "attempt": "loader-freeze",
+      "file": "PLAN.md",
+      "passed": true
+    },
+    {
+      "attempt": "loader-freeze",
+      "file": "README.md",
+      "passed": true
+    },
+    {
+      "attempt": "loader-freeze",
+      "file": "schedule.mjs",
+      "passed": true
+    },
+    {
+      "attempt": "loader-freeze",
+      "file": "selftest.mjs",
+      "passed": true
+    },
+    {
+      "attempt": "loader-freeze",
+      "file": "transport.mjs",
+      "passed": true
+    }
+  ],
+  "scope": "after shutdown; hashing is outside all timing windows"
+}

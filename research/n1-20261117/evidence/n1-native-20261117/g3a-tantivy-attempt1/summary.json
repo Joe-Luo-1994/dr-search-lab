@@ -1,0 +1,645 @@
+{
+  "name": "tantivy-attempt1",
+  "scope": "synthetic G3a preloaded workload; no production capacity or recovery claim",
+  "stages": [
+    {
+      "stage": "baseline",
+      "rep": 1,
+      "status": "passed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 300,
+          "completed": 300,
+          "failedOrUncompleted": 0,
+          "p95Ms": 11.23338399999193,
+          "successfulLatencySamples": 300,
+          "outcomes": {
+            "ok": 300
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 361,
+            "maxMemoryCurrentBytes": 244166656,
+            "cgroupLifetimeMemoryPeakBytes": 245833728,
+            "cpuCounterDelta": {
+              "usage_usec": 3991808,
+              "user_usec": 3534949,
+              "system_usec": 456858,
+              "nr_periods": 2505,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 91,
+            "maxMemoryCurrentBytes": 388800512,
+            "cgroupLifetimeMemoryPeakBytes": 388800512,
+            "cpuCounterDelta": {
+              "usage_usec": 1160924,
+              "user_usec": 747038,
+              "system_usec": 413885,
+              "nr_periods": 897,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": null,
+      "controller": {
+        "stage": "baseline",
+        "rep": 1,
+        "exitCode": 0,
+        "passed": true,
+        "stopReason": null,
+        "elapsedSeconds": 370.442229837,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    },
+    {
+      "stage": "W",
+      "rep": 1,
+      "status": "passed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 300,
+          "completed": 300,
+          "failedOrUncompleted": 0,
+          "p95Ms": 12.543740000008256,
+          "successfulLatencySamples": 300,
+          "outcomes": {
+            "ok": 300
+          }
+        },
+        "web-search": {
+          "planned": 1200,
+          "terminal": 1200,
+          "sent": 1200,
+          "completed": 1200,
+          "failedOrUncompleted": 0,
+          "p95Ms": 23.256442999991123,
+          "successfulLatencySamples": 1200,
+          "outcomes": {
+            "ok": 1200
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 361,
+            "maxMemoryCurrentBytes": 240558080,
+            "cgroupLifetimeMemoryPeakBytes": 245833728,
+            "cpuCounterDelta": {
+              "usage_usec": 19630466,
+              "user_usec": 18069415,
+              "system_usec": 1561052,
+              "nr_periods": 3156,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 91,
+            "maxMemoryCurrentBytes": 359682048,
+            "cgroupLifetimeMemoryPeakBytes": 388800512,
+            "cpuCounterDelta": {
+              "usage_usec": 3469214,
+              "user_usec": 2228653,
+              "system_usec": 1240560,
+              "nr_periods": 2729,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": null,
+      "controller": {
+        "stage": "W",
+        "rep": 1,
+        "exitCode": 0,
+        "passed": true,
+        "stopReason": null,
+        "elapsedSeconds": 370.06508186300016,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    },
+    {
+      "stage": "W",
+      "rep": 2,
+      "status": "passed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 300,
+          "completed": 300,
+          "failedOrUncompleted": 0,
+          "p95Ms": 11.824320999992779,
+          "successfulLatencySamples": 300,
+          "outcomes": {
+            "ok": 300
+          }
+        },
+        "web-search": {
+          "planned": 1200,
+          "terminal": 1200,
+          "sent": 1200,
+          "completed": 1200,
+          "failedOrUncompleted": 0,
+          "p95Ms": 23.102687999999034,
+          "successfulLatencySamples": 1200,
+          "outcomes": {
+            "ok": 1200
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 361,
+            "maxMemoryCurrentBytes": 249520128,
+            "cgroupLifetimeMemoryPeakBytes": 249520128,
+            "cpuCounterDelta": {
+              "usage_usec": 18199162,
+              "user_usec": 16778292,
+              "system_usec": 1420869,
+              "nr_periods": 3426,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 91,
+            "maxMemoryCurrentBytes": 379617280,
+            "cgroupLifetimeMemoryPeakBytes": 388800512,
+            "cpuCounterDelta": {
+              "usage_usec": 3663921,
+              "user_usec": 2445348,
+              "system_usec": 1218573,
+              "nr_periods": 2625,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": null,
+      "controller": {
+        "stage": "W",
+        "rep": 2,
+        "exitCode": 0,
+        "passed": true,
+        "stopReason": null,
+        "elapsedSeconds": 370.0580687630004,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    },
+    {
+      "stage": "W",
+      "rep": 3,
+      "status": "passed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 300,
+          "completed": 300,
+          "failedOrUncompleted": 0,
+          "p95Ms": 12.869825999994646,
+          "successfulLatencySamples": 300,
+          "outcomes": {
+            "ok": 300
+          }
+        },
+        "web-search": {
+          "planned": 1200,
+          "terminal": 1200,
+          "sent": 1200,
+          "completed": 1200,
+          "failedOrUncompleted": 0,
+          "p95Ms": 23.172867999994196,
+          "successfulLatencySamples": 1200,
+          "outcomes": {
+            "ok": 1200
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 361,
+            "maxMemoryCurrentBytes": 252469248,
+            "cgroupLifetimeMemoryPeakBytes": 252469248,
+            "cpuCounterDelta": {
+              "usage_usec": 18081699,
+              "user_usec": 16543262,
+              "system_usec": 1538437,
+              "nr_periods": 3283,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 91,
+            "maxMemoryCurrentBytes": 381198336,
+            "cgroupLifetimeMemoryPeakBytes": 388800512,
+            "cpuCounterDelta": {
+              "usage_usec": 3548308,
+              "user_usec": 2489574,
+              "system_usec": 1058735,
+              "nr_periods": 2606,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": null,
+      "controller": {
+        "stage": "W",
+        "rep": 3,
+        "exitCode": 0,
+        "passed": true,
+        "stopReason": null,
+        "elapsedSeconds": 370.1076126849998,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    },
+    {
+      "stage": "M",
+      "rep": 1,
+      "status": "passed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 300,
+          "completed": 300,
+          "failedOrUncompleted": 0,
+          "p95Ms": 16.124631999991834,
+          "successfulLatencySamples": 300,
+          "outcomes": {
+            "ok": 300
+          }
+        },
+        "web-search": {
+          "planned": 1200,
+          "terminal": 1200,
+          "sent": 1200,
+          "completed": 1200,
+          "failedOrUncompleted": 0,
+          "p95Ms": 25.25605799999903,
+          "successfulLatencySamples": 1200,
+          "outcomes": {
+            "ok": 1200
+          }
+        },
+        "consumer": {
+          "planned": 600,
+          "terminal": 600,
+          "sent": 600,
+          "completed": 600,
+          "failedOrUncompleted": 0,
+          "p95Ms": 20.749861999996938,
+          "successfulLatencySamples": 600,
+          "outcomes": {
+            "ok": 600
+          }
+        },
+        "media": {
+          "planned": 600,
+          "terminal": 600,
+          "sent": 600,
+          "completed": 600,
+          "failedOrUncompleted": 0,
+          "p95Ms": 23.754931000003126,
+          "successfulLatencySamples": 600,
+          "outcomes": {
+            "ok": 600
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 361,
+            "maxMemoryCurrentBytes": 275529728,
+            "cgroupLifetimeMemoryPeakBytes": 279445504,
+            "cpuCounterDelta": {
+              "usage_usec": 28750924,
+              "user_usec": 26575360,
+              "system_usec": 2175563,
+              "nr_periods": 3122,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 91,
+            "maxMemoryCurrentBytes": 531976192,
+            "cgroupLifetimeMemoryPeakBytes": 536559616,
+            "cpuCounterDelta": {
+              "usage_usec": 4386574,
+              "user_usec": 2679409,
+              "system_usec": 1707165,
+              "nr_periods": 2686,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": null,
+      "controller": {
+        "stage": "M",
+        "rep": 1,
+        "exitCode": 0,
+        "passed": true,
+        "stopReason": null,
+        "elapsedSeconds": 370.2477705430001,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    },
+    {
+      "stage": "M",
+      "rep": 2,
+      "status": "passed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 300,
+          "completed": 300,
+          "failedOrUncompleted": 0,
+          "p95Ms": 15.895684999995865,
+          "successfulLatencySamples": 300,
+          "outcomes": {
+            "ok": 300
+          }
+        },
+        "web-search": {
+          "planned": 1200,
+          "terminal": 1200,
+          "sent": 1200,
+          "completed": 1200,
+          "failedOrUncompleted": 0,
+          "p95Ms": 25.312635999987833,
+          "successfulLatencySamples": 1200,
+          "outcomes": {
+            "ok": 1200
+          }
+        },
+        "consumer": {
+          "planned": 600,
+          "terminal": 600,
+          "sent": 600,
+          "completed": 600,
+          "failedOrUncompleted": 0,
+          "p95Ms": 21.029196999996202,
+          "successfulLatencySamples": 600,
+          "outcomes": {
+            "ok": 600
+          }
+        },
+        "media": {
+          "planned": 600,
+          "terminal": 600,
+          "sent": 600,
+          "completed": 600,
+          "failedOrUncompleted": 0,
+          "p95Ms": 24.305967000007513,
+          "successfulLatencySamples": 600,
+          "outcomes": {
+            "ok": 600
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 361,
+            "maxMemoryCurrentBytes": 259182592,
+            "cgroupLifetimeMemoryPeakBytes": 279445504,
+            "cpuCounterDelta": {
+              "usage_usec": 29607161,
+              "user_usec": 27111976,
+              "system_usec": 2495184,
+              "nr_periods": 3280,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 91,
+            "maxMemoryCurrentBytes": 527982592,
+            "cgroupLifetimeMemoryPeakBytes": 536559616,
+            "cpuCounterDelta": {
+              "usage_usec": 5085700,
+              "user_usec": 3410005,
+              "system_usec": 1675695,
+              "nr_periods": 2920,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": null,
+      "controller": {
+        "stage": "M",
+        "rep": 2,
+        "exitCode": 0,
+        "passed": true,
+        "stopReason": null,
+        "elapsedSeconds": 370.260543119,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    },
+    {
+      "stage": "M",
+      "rep": 3,
+      "status": "passed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 300,
+          "completed": 300,
+          "failedOrUncompleted": 0,
+          "p95Ms": 16.151102000003448,
+          "successfulLatencySamples": 300,
+          "outcomes": {
+            "ok": 300
+          }
+        },
+        "web-search": {
+          "planned": 1200,
+          "terminal": 1200,
+          "sent": 1200,
+          "completed": 1200,
+          "failedOrUncompleted": 0,
+          "p95Ms": 24.959682999993674,
+          "successfulLatencySamples": 1200,
+          "outcomes": {
+            "ok": 1200
+          }
+        },
+        "consumer": {
+          "planned": 600,
+          "terminal": 600,
+          "sent": 600,
+          "completed": 600,
+          "failedOrUncompleted": 0,
+          "p95Ms": 21.15333999998984,
+          "successfulLatencySamples": 600,
+          "outcomes": {
+            "ok": 600
+          }
+        },
+        "media": {
+          "planned": 600,
+          "terminal": 600,
+          "sent": 600,
+          "completed": 600,
+          "failedOrUncompleted": 0,
+          "p95Ms": 22.355901999981143,
+          "successfulLatencySamples": 600,
+          "outcomes": {
+            "ok": 600
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 361,
+            "maxMemoryCurrentBytes": 259002368,
+            "cgroupLifetimeMemoryPeakBytes": 279445504,
+            "cpuCounterDelta": {
+              "usage_usec": 29214942,
+              "user_usec": 26884014,
+              "system_usec": 2330927,
+              "nr_periods": 3278,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 91,
+            "maxMemoryCurrentBytes": 524820480,
+            "cgroupLifetimeMemoryPeakBytes": 536559616,
+            "cpuCounterDelta": {
+              "usage_usec": 4481886,
+              "user_usec": 2822769,
+              "system_usec": 1659116,
+              "nr_periods": 2781,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": null,
+      "controller": {
+        "stage": "M",
+        "rep": 3,
+        "exitCode": 0,
+        "passed": true,
+        "stopReason": null,
+        "elapsedSeconds": 370.0835816460003,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    }
+  ],
+  "collection": {
+    "files": 74,
+    "excluded": "config, project, runtime, cache, env, arbitrary logs; no recursive wildcard copying"
+  },
+  "sequence": {
+    "passed": true,
+    "elapsedSeconds": 2598.749375429,
+    "failure": null,
+    "cleanup": {
+      "passed": true
+    },
+    "completedStages": [
+      "passed-baseline1",
+      "passed-W1",
+      "passed-W2",
+      "passed-W3",
+      "passed-M1",
+      "passed-M2",
+      "passed-M3"
+    ],
+    "bootIds": [
+      "d041acd9-123e-4d19-b5f8-ae719360a51c"
+    ],
+    "environmentFix": "one persistent WSL Python process; previous stop cause remains hypothesis"
+  },
+  "overallStatus": "passed"
+}

@@ -1,0 +1,240 @@
+{
+  "name": "sqlite-attempt3",
+  "scope": "synthetic G3a preloaded workload; no production capacity or recovery claim",
+  "stages": [
+    {
+      "stage": "baseline",
+      "rep": 1,
+      "status": "passed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 300,
+          "completed": 300,
+          "failedOrUncompleted": 0,
+          "p95Ms": 13.443411000014748,
+          "successfulLatencySamples": 300,
+          "outcomes": {
+            "ok": 300
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 361,
+            "maxMemoryCurrentBytes": 256811008,
+            "cgroupLifetimeMemoryPeakBytes": 259211264,
+            "cpuCounterDelta": {
+              "usage_usec": 3741251,
+              "user_usec": 3167163,
+              "system_usec": 574087,
+              "nr_periods": 2093,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 91,
+            "maxMemoryCurrentBytes": 391557120,
+            "cgroupLifetimeMemoryPeakBytes": 391557120,
+            "cpuCounterDelta": {
+              "usage_usec": 1390935,
+              "user_usec": 787448,
+              "system_usec": 603487,
+              "nr_periods": 811,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": null,
+      "controller": {
+        "stage": "baseline",
+        "rep": 1,
+        "exitCode": 0,
+        "passed": true,
+        "stopReason": null,
+        "elapsedSeconds": 370.3243765550001,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    },
+    {
+      "stage": "W",
+      "rep": 1,
+      "status": "failed",
+      "lanes": {
+        "reading": {
+          "planned": 300,
+          "terminal": 300,
+          "sent": 0,
+          "completed": 0,
+          "failedOrUncompleted": 300,
+          "p95Ms": null,
+          "successfulLatencySamples": 0,
+          "outcomes": {
+            "canceled-after-stop": 300
+          }
+        },
+        "web-search": {
+          "planned": 1200,
+          "terminal": 1200,
+          "sent": 0,
+          "completed": 0,
+          "failedOrUncompleted": 1200,
+          "p95Ms": null,
+          "successfulLatencySamples": 0,
+          "outcomes": {
+            "canceled-after-stop": 1200
+          }
+        }
+      },
+      "resources": {
+        "groups": {
+          "reader": {
+            "samples": 6,
+            "maxMemoryCurrentBytes": 2563686400,
+            "cgroupLifetimeMemoryPeakBytes": 2563702784,
+            "cpuCounterDelta": {
+              "usage_usec": 3529051,
+              "user_usec": 1555503,
+              "system_usec": 1973547,
+              "nr_periods": 46,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          },
+          "minio": {
+            "samples": 2,
+            "maxMemoryCurrentBytes": 328048640,
+            "cgroupLifetimeMemoryPeakBytes": 391557120,
+            "cpuCounterDelta": {
+              "usage_usec": 5527,
+              "user_usec": 3184,
+              "system_usec": 2342,
+              "nr_periods": 7,
+              "nr_throttled": 0,
+              "throttled_usec": 0
+            }
+          }
+        },
+        "warnings": [],
+        "scope": "first-to-last sampled counters; memory.peak is cgroup lifetime, not isolated stage peak"
+      },
+      "instrumentInvalid": false,
+      "stop": {
+        "category": "service-failure",
+        "reason": "POOL_CLOSED",
+        "at": "2026-11-16T16:56:22.335Z",
+        "monotonicAt": 6015.9038
+      },
+      "controller": {
+        "stage": "W",
+        "rep": 1,
+        "exitCode": 1,
+        "passed": false,
+        "stopReason": "LOADER_OR_GATE_FAILED",
+        "elapsedSeconds": 14.549141740000096,
+        "scheduleDeadlineSeconds": 398,
+        "preparationDeadlineSeconds": 30,
+        "deadlineOrigin": "loader process start",
+        "hostAvailableGuardBytes": 1610612736,
+        "diskFreeGuardBytes": 32212254720,
+        "runBytesGuard": 64424509440
+      }
+    },
+    {
+      "stage": "W",
+      "rep": 2,
+      "status": "not-tested",
+      "lanes": {},
+      "resources": {
+        "groups": {},
+        "warnings": [
+          "resource evidence missing"
+        ]
+      }
+    },
+    {
+      "stage": "W",
+      "rep": 3,
+      "status": "not-tested",
+      "lanes": {},
+      "resources": {
+        "groups": {},
+        "warnings": [
+          "resource evidence missing"
+        ]
+      }
+    },
+    {
+      "stage": "M",
+      "rep": 1,
+      "status": "not-tested",
+      "lanes": {},
+      "resources": {
+        "groups": {},
+        "warnings": [
+          "resource evidence missing"
+        ]
+      }
+    },
+    {
+      "stage": "M",
+      "rep": 2,
+      "status": "not-tested",
+      "lanes": {},
+      "resources": {
+        "groups": {},
+        "warnings": [
+          "resource evidence missing"
+        ]
+      }
+    },
+    {
+      "stage": "M",
+      "rep": 3,
+      "status": "not-tested",
+      "lanes": {},
+      "resources": {
+        "groups": {},
+        "warnings": [
+          "resource evidence missing"
+        ]
+      }
+    }
+  ],
+  "collection": {
+    "files": 30,
+    "excluded": "config, project, runtime, cache, env, arbitrary logs; no recursive wildcard copying"
+  },
+  "sequence": {
+    "passed": false,
+    "elapsedSeconds": 392.04699096700006,
+    "failure": {
+      "type": "RuntimeError",
+      "message": "LOAD_STOPPED"
+    },
+    "cleanup": {
+      "passed": true
+    },
+    "completedStages": [
+      "passed-baseline1"
+    ],
+    "bootIds": [
+      "d041acd9-123e-4d19-b5f8-ae719360a51c"
+    ],
+    "environmentFix": "one persistent WSL Python process; previous stop cause remains hypothesis"
+  },
+  "overallStatus": "failed"
+}
