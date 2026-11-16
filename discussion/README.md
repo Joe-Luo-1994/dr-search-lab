@@ -1,20 +1,22 @@
-# DR 搜尋選型：團隊討論材料
+# DR選型討論材料 — 版2
 
-下載本資料夾後，以瀏覽器開啟 **index.html**。不需安裝 Node、不需啟動服務，也不需 GitHub Pages。GitHub 網站顯示 HTML 原始碼是正常行為。
+下載整個 discussion 資料夾後，以瀏覽器開啟 **index.html**。不需Node、服務或GitHub Pages；GitHub顯示HTML原始碼是正常的。
 
-- index.html：主報告（使用目標、架構、容量、C六工作包、維運與決策）。
-- pagefind.html：Pagefind 已證能力、真實限制、對照公平性與有界下一步。
-- evidence.html：保留失敗與限制的精簡證據摘要。
-- manifest.json：本包檔案hash與原始來源識別；原始來源不全附入。
+- index.html：使用目標 → 推薦調整 → 架構與職責 → 容量證據 → C責任盤點 → 成本差額 → 會議決策。
+- pagefind.html：歷史成功、100k建置通過、同步WASM搜尋逾時，以及暫停深入理由。
+- evidence.html：可追溯的精簡摘要，保留失敗與未驗限制。
+- manifest.json：本包hash與原始來源識別；不等於完整可重播封存。
 
-## 從另一台電腦取得
+## 最新方向
 
-既有 clone：切到 codex/cloud-migration 後 git pull，再開 discussion/index.html（若有本地修改，先保留，不要直接覆蓋）。新電腦可 clone https://github.com/Joe-Luo-1994/dr-search-lab.git，或使用 GitHub Code → Download ZIP。
+優先核對沿用 A（既有Backend／ES／必要MariaDB與可用Gateway）的異地新增工作。C與Pagefind保留有條件備案，暫停引擎優化、擴容矩陣及C全面產品化。A尚未證成本勝出，也未完成本研究的完整異地驗收。
 
-## 討論結論
+SQLite的6搜尋API/s是8CPU／12GiB下的已測混合工作點，不是最大RPS；Pagefind的高命中單題5秒截止不是吞吐測試。不能宣稱兩者只要開API就一定不可用。移除Backend與換搜尋引擎的成本應分開，Gateway若能DR沿用不必一律重寫。
 
-A 是完整架構可行基準；C 有受控合成可行證據，尚未證成本勝出。Pagefind 未永久排除：100k／6GiB 是當時 builder 預算失敗，不是 reader 上限；SQLite後續改善與擴容使研究投入不對等。應先確認必要任務、可接受差異與維護owner，再選最可能翻轉選型的一項未知。
+## 取得
 
-## 範圍
+從repo的 codex/cloud-migration 分支下載ZIP，或在保留本地修改後正常git pull，再開 discussion/index.html。Repo：https://github.com/Joe-Luo-1994/dr-search-lab
 
-本次只新增本資料夾，不新增壓測。未包含正式資料、索引DB、fixture、執行log、環境設定、憑證或完整測試程式。既有repo歷史保留。精簡材料可支持討論，不等於可獨立重播的完整實驗套件。正式資料／API／ReBAC／跨區RTO／公司工時仍未知。
+## 發布範圍
+
+本次只更新這五個討論檔案；未包含原始研究logs、索引、fixture、憑證與完整實驗程式。沒有新增壓測，歷史commit保留舊版材料。正式資料／consumer／ReBAC／RTO／真人體驗與公司維運工時仍未知。

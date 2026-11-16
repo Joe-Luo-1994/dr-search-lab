@@ -1,26 +1,27 @@
 {
-  "version": "2026-11-16-discussion-v1.1",
-  "scope": "curated discussion only; source hashes identify locally retained evidence, not included raw logs",
+  "version": "2026-11-16-discussion-v2",
+  "previousPublishedCommit": "da456da93064f2c9d1cffa0863afb0d1f48a02a6",
+  "scope": "curated decision material only; prioritize verifying reuse of A, conditional alternatives; not a reproducible raw experiment archive",
   "files": [
     {
       "path": "index.html",
-      "bytes": 30123,
-      "sha256": "467706370b54fc5fddd983f7785fa7aa8955f07dcc39159e0d97cbc8997d8143"
+      "bytes": 33269,
+      "sha256": "3a1be91c77937693fd89bf0293935a94a58dcc951d3ec8fe8c3ed1bf3a8d5b21"
     },
     {
       "path": "pagefind.html",
-      "bytes": 13113,
-      "sha256": "506e1209a965e181add9c4d2977ddee97baf024770b7979fe587960c145d15bf"
+      "bytes": 11408,
+      "sha256": "4f3819edb800ade544341ee3e6b5cdb8a60513961a16e8af1f6c65a002bd0abf"
     },
     {
       "path": "evidence.html",
-      "bytes": 9193,
-      "sha256": "e05f7928ad7b5700d39264d81bdcf45fa4032d20bbe2300673b06d48cd187b29"
+      "bytes": 11304,
+      "sha256": "436407679b4ddc6f250a5fb2f737643fd650f03d49e55cf688e2980e18e146a3"
     },
     {
       "path": "README.md",
-      "bytes": 1543,
-      "sha256": "235814be5a834249b3461f0a25e113f0b542e26fb366cbc7cb94a34ba9f85a1b"
+      "bytes": 1624,
+      "sha256": "55eb8c5224b22f92bc88d598bc6ad7ac1c81d9022a4cfa72e084fc528eeec07f"
     }
   ],
   "sources": [
@@ -128,6 +129,36 @@
       "source": "docs/DR_TEAM_DECISION_REVIEW_20261116.md",
       "sha256": "e4cb76da5bf8977048f10898f774ce339178fbf6a70908b0144bbcc3e001d4d5",
       "bytes": 4813
+    },
+    {
+      "source": "docs/PAGEFIND_GATE_RESULT_20261116.md",
+      "sha256": "ac60ca2667bbd896087c65e9a9e4f5534ac0c6d7abe2ef43a2029b33d3a2fbc9",
+      "bytes": 8111
+    },
+    {
+      "source": "docs/PAGEFIND_GATE_POSTREVIEW_20261116.md",
+      "sha256": "b6eccd286f1dec2d8322312f538995339cb14025999deba3899a63e79bf85d6f",
+      "bytes": 4965
+    },
+    {
+      "source": "docs/PAGEFIND_D1_RESULT_20261116.md",
+      "sha256": "6cb2445322d320ef1796bba180e17982bb97b04399c8f7cd63e91f2c787bae02",
+      "bytes": 5554
+    },
+    {
+      "source": "docs/PAGEFIND_D1_POSTREVIEW_20261116.md",
+      "sha256": "7b50462a69f3951c1ac7e20f4f224be16b182f1a08fbfb20d37605c5a039d7b1",
+      "bytes": 4278
+    },
+    {
+      "source": "docs/PAGEFIND_D2_RESULT_20261116.md",
+      "sha256": "db74fb61328e4eece8ddb2a82f810e574772773dd69857737f1de9a92caeaf59",
+      "bytes": 5740
+    },
+    {
+      "source": "docs/PAGEFIND_D2_POSTREVIEW_20261116.md",
+      "sha256": "e8dd42832ec9df8687c2884f1e41052ff8e91eda39c735e8a5b47a5d85381bfc",
+      "bytes": 5097
     }
   ]
 }
