@@ -1,0 +1,544 @@
+{
+  "controller": {
+    "passed": true,
+    "nativeRun": "/PUBLIC/LINUX_HOME/dr-r0-work/runs/20261117-101241",
+    "stage": "recreate-high",
+    "pipelineExit": 0
+  },
+  "pipeline": {
+    "passed": true,
+    "stage": "recreate-high",
+    "formal": {
+      "passed": true,
+      "mode": "Recreate",
+      "scope": "synthetic release mechanism and measured interruption, not transparent availability or capacity",
+      "phases": {
+        "P1": {
+          "seconds": 60.051339951,
+          "load": {
+            "complete": true,
+            "error": null,
+            "lanes": {
+              "search": {
+                "planned": 61,
+                "completed": 61,
+                "successful": 61,
+                "outage": 0,
+                "versionMismatch": 0,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 61,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 0,
+                "firstOutageScheduled": null,
+                "lastOutageCompleted": null
+              },
+              "page": {
+                "planned": 61,
+                "completed": 61,
+                "successful": 61,
+                "outage": 0,
+                "versionMismatch": 0,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 61,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 0,
+                "firstOutageScheduled": null,
+                "lastOutageCompleted": null
+              },
+              "media": {
+                "planned": 61,
+                "completed": 61,
+                "successful": 61,
+                "outage": 0,
+                "versionMismatch": 0,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 61,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 0,
+                "firstOutageScheduled": null,
+                "lastOutageCompleted": null
+              }
+            },
+            "outageMeaning": "sampled 1/s failed requests; not exact continuous availability duration",
+            "passed": true
+          },
+          "error": null
+        },
+        "P2": {
+          "seconds": 97.02849401399999,
+          "load": {
+            "complete": true,
+            "error": null,
+            "lanes": {
+              "search": {
+                "planned": 98,
+                "completed": 98,
+                "successful": 82,
+                "outage": 16,
+                "versionMismatch": 0,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 75,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 14,
+                "firstOutageScheduled": 14,
+                "lastOutageCompleted": 30.001234845
+              },
+              "page": {
+                "planned": 98,
+                "completed": 98,
+                "successful": 75,
+                "outage": 15,
+                "versionMismatch": 8,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 75,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 15,
+                "firstOutageScheduled": 14,
+                "lastOutageCompleted": 28.001411991999987
+              },
+              "media": {
+                "planned": 98,
+                "completed": 98,
+                "successful": 75,
+                "outage": 14,
+                "versionMismatch": 9,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 75,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 14,
+                "firstOutageScheduled": 14,
+                "lastOutageCompleted": 31.00459126299998
+              }
+            },
+            "outageMeaning": "sampled 1/s failed requests; not exact continuous availability duration",
+            "passed": true
+          },
+          "error": null
+        },
+        "P3": {
+          "seconds": 214.011826318,
+          "load": {
+            "complete": true,
+            "error": null,
+            "lanes": {
+              "search": {
+                "planned": 215,
+                "completed": 215,
+                "successful": 78,
+                "outage": 137,
+                "versionMismatch": 0,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 70,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 137,
+                "firstOutageScheduled": 10,
+                "lastOutageCompleted": 147.001751217
+              },
+              "page": {
+                "planned": 215,
+                "completed": 215,
+                "successful": 78,
+                "outage": 137,
+                "versionMismatch": 0,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 70,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 137,
+                "firstOutageScheduled": 10,
+                "lastOutageCompleted": 146.002080294
+              },
+              "media": {
+                "planned": 215,
+                "completed": 215,
+                "successful": 78,
+                "outage": 137,
+                "versionMismatch": 0,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 70,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 136,
+                "firstOutageScheduled": 10,
+                "lastOutageCompleted": 148.00160230300003
+              }
+            },
+            "outageMeaning": "sampled 1/s failed requests; not exact continuous availability duration",
+            "passed": true
+          },
+          "error": null
+        },
+        "P4": {
+          "seconds": 84.68976026799999,
+          "load": {
+            "complete": true,
+            "error": null,
+            "lanes": {
+              "search": {
+                "planned": 85,
+                "completed": 85,
+                "successful": 68,
+                "outage": 17,
+                "versionMismatch": 0,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 61,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 16,
+                "firstOutageScheduled": 1,
+                "lastOutageCompleted": 19.003464950999955
+              },
+              "page": {
+                "planned": 85,
+                "completed": 85,
+                "successful": 61,
+                "outage": 18,
+                "versionMismatch": 6,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 60,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 18,
+                "firstOutageScheduled": 1,
+                "lastOutageCompleted": 18.00136492499996
+              },
+              "media": {
+                "planned": 85,
+                "completed": 85,
+                "successful": 61,
+                "outage": 16,
+                "versionMismatch": 8,
+                "missed": 0,
+                "invalid": 0,
+                "steadySamples": 60,
+                "steadyErrors": 0,
+                "longestConsecutiveOutageSampleSpanSeconds": 16,
+                "firstOutageScheduled": 1,
+                "lastOutageCompleted": 20.005159683999977
+              }
+            },
+            "outageMeaning": "sampled 1/s failed requests; not exact continuous availability duration",
+            "passed": true
+          },
+          "error": null
+        }
+      },
+      "elapsedSeconds": 455.97984262800003
+    },
+    "elapsedSeconds": 498.94711657,
+    "scope": "single-reader Recreate synthetic release lifecycle; transition outage is measured, not transparent availability"
+  },
+  "startup": {
+    "seconds": 23.397260193999998
+  },
+  "phases": {
+    "P1": {
+      "summary": {
+        "complete": true,
+        "error": null,
+        "lanes": {
+          "search": {
+            "planned": 61,
+            "completed": 61,
+            "successful": 61,
+            "outage": 0,
+            "versionMismatch": 0,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 61,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 0,
+            "firstOutageScheduled": null,
+            "lastOutageCompleted": null
+          },
+          "page": {
+            "planned": 61,
+            "completed": 61,
+            "successful": 61,
+            "outage": 0,
+            "versionMismatch": 0,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 61,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 0,
+            "firstOutageScheduled": null,
+            "lastOutageCompleted": null
+          },
+          "media": {
+            "planned": 61,
+            "completed": 61,
+            "successful": 61,
+            "outage": 0,
+            "versionMismatch": 0,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 61,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 0,
+            "firstOutageScheduled": null,
+            "lastOutageCompleted": null
+          }
+        },
+        "outageMeaning": "sampled 1/s failed requests; not exact continuous availability duration",
+        "passed": true
+      },
+      "outcomes": {
+        "ok": 183
+      },
+      "scheduled": 183
+    },
+    "P2": {
+      "summary": {
+        "complete": true,
+        "error": null,
+        "lanes": {
+          "search": {
+            "planned": 98,
+            "completed": 98,
+            "successful": 82,
+            "outage": 16,
+            "versionMismatch": 0,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 75,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 14,
+            "firstOutageScheduled": 14,
+            "lastOutageCompleted": 30.001234845
+          },
+          "page": {
+            "planned": 98,
+            "completed": 98,
+            "successful": 75,
+            "outage": 15,
+            "versionMismatch": 8,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 75,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 15,
+            "firstOutageScheduled": 14,
+            "lastOutageCompleted": 28.001411991999987
+          },
+          "media": {
+            "planned": 98,
+            "completed": 98,
+            "successful": 75,
+            "outage": 14,
+            "versionMismatch": 9,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 75,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 14,
+            "firstOutageScheduled": 14,
+            "lastOutageCompleted": 31.00459126299998
+          }
+        },
+        "outageMeaning": "sampled 1/s failed requests; not exact continuous availability duration",
+        "passed": true
+      },
+      "outcomes": {
+        "ok": 232,
+        "outage": 45,
+        "version-mismatch": 17
+      },
+      "scheduled": 294
+    },
+    "P3": {
+      "summary": {
+        "complete": true,
+        "error": null,
+        "lanes": {
+          "search": {
+            "planned": 215,
+            "completed": 215,
+            "successful": 78,
+            "outage": 137,
+            "versionMismatch": 0,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 70,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 137,
+            "firstOutageScheduled": 10,
+            "lastOutageCompleted": 147.001751217
+          },
+          "page": {
+            "planned": 215,
+            "completed": 215,
+            "successful": 78,
+            "outage": 137,
+            "versionMismatch": 0,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 70,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 137,
+            "firstOutageScheduled": 10,
+            "lastOutageCompleted": 146.002080294
+          },
+          "media": {
+            "planned": 215,
+            "completed": 215,
+            "successful": 78,
+            "outage": 137,
+            "versionMismatch": 0,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 70,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 136,
+            "firstOutageScheduled": 10,
+            "lastOutageCompleted": 148.00160230300003
+          }
+        },
+        "outageMeaning": "sampled 1/s failed requests; not exact continuous availability duration",
+        "passed": true
+      },
+      "outcomes": {
+        "ok": 234,
+        "outage": 411
+      },
+      "scheduled": 645
+    },
+    "P4": {
+      "summary": {
+        "complete": true,
+        "error": null,
+        "lanes": {
+          "search": {
+            "planned": 85,
+            "completed": 85,
+            "successful": 68,
+            "outage": 17,
+            "versionMismatch": 0,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 61,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 16,
+            "firstOutageScheduled": 1,
+            "lastOutageCompleted": 19.003464950999955
+          },
+          "page": {
+            "planned": 85,
+            "completed": 85,
+            "successful": 61,
+            "outage": 18,
+            "versionMismatch": 6,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 60,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 18,
+            "firstOutageScheduled": 1,
+            "lastOutageCompleted": 18.00136492499996
+          },
+          "media": {
+            "planned": 85,
+            "completed": 85,
+            "successful": 61,
+            "outage": 16,
+            "versionMismatch": 8,
+            "missed": 0,
+            "invalid": 0,
+            "steadySamples": 60,
+            "steadyErrors": 0,
+            "longestConsecutiveOutageSampleSpanSeconds": 16,
+            "firstOutageScheduled": 1,
+            "lastOutageCompleted": 20.005159683999977
+          }
+        },
+        "outageMeaning": "sampled 1/s failed requests; not exact continuous availability duration",
+        "passed": true
+      },
+      "outcomes": {
+        "ok": 190,
+        "outage": 51,
+        "version-mismatch": 14
+      },
+      "scheduled": 255
+    }
+  },
+  "installations": [
+    {
+      "version": "v2",
+      "pod": "reader-5f58cf9d96-5fcb8",
+      "uid": "9042d609-bc98-4ab2-b217-86494fa9b2e0",
+      "installedBytes": 3413769060,
+      "installMs": 6961.8441060000005,
+      "manifestSha256": "79ee2cca33ea964b27dc21e44bbb6c1f2a82246ef7b8679b0255882f9f0b5444"
+    },
+    {
+      "version": "v2",
+      "pod": "reader-5f58cf9d96-9cffr",
+      "uid": "9c2b6307-7d32-4c44-8827-dea2d175fdfa",
+      "installedBytes": 3413769060,
+      "installMs": 7911.702823,
+      "manifestSha256": "79ee2cca33ea964b27dc21e44bbb6c1f2a82246ef7b8679b0255882f9f0b5444"
+    },
+    {
+      "version": "v1",
+      "pod": "reader-f95db87d-7tzpx",
+      "uid": "950e760c-f83d-4bd6-a353-13041aa96143",
+      "installedBytes": 3412756582,
+      "installMs": 8607.140105,
+      "manifestSha256": "4d5f859c41fad99d9581b1d3fc6cec22b9276a912d8478379e6947eb466fecce"
+    },
+    {
+      "version": "v1",
+      "pod": "reader-f95db87d-tqnww",
+      "uid": "69197811-7a01-43f1-a2a0-f35b084debb3",
+      "installedBytes": 3412756582,
+      "installMs": 9860.746449,
+      "manifestSha256": "4d5f859c41fad99d9581b1d3fc6cec22b9276a912d8478379e6947eb466fecce"
+    }
+  ],
+  "resources": {
+    "hostMinGiB": 7.066143035888672,
+    "clusterMaxSampleGiB": 6.000579833984375,
+    "highEventsMax": 17782,
+    "outerMaxEventsMax": 0,
+    "hierarchicalMaxEventsMax": 18487,
+    "oomMax": 0,
+    "lastPSIsome": "avg10=0.00 avg60=0.00 avg300=0.00 total=180608",
+    "lastPSIfull": "avg10=0.00 avg60=0.00 avg300=0.00 total=180393"
+  },
+  "cleanup": {
+    "clusterStopped": true
+  },
+  "unitCleanup": {
+    "state": {
+      "MainPID": "0",
+      "ControlGroup": "",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "cgroupStatus": "no-cgroup-reference",
+    "remainingPids": []
+  },
+  "v2-recreate-ready.json": {
+    "seconds": 23.774885936000018
+  },
+  "bad-v3-rejection.json": {
+    "artifactHashRejected": true,
+    "progressDeadlineExceeded": true,
+    "seconds": 122.603171121
+  },
+  "restore-v2.json": {
+    "seconds": 22.547947674
+  },
+  "rollback-v1.json": {
+    "seconds": 24.642149981999978
+  }
+}

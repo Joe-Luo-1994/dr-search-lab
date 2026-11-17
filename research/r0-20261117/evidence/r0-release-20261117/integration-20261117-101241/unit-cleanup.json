@@ -1,0 +1,11 @@
+{
+  "state": {
+    "MainPID": "0",
+    "ControlGroup": "",
+    "LoadState": "not-found",
+    "ActiveState": "inactive",
+    "SubState": "dead"
+  },
+  "cgroupStatus": "no-cgroup-reference",
+  "remainingPids": []
+}
