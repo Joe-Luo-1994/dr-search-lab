@@ -1,3 +1,11 @@
+# 最新決策入口（2026-11-17）
+
+先讀 [架構決策摘要](DR_ARCHITECTURE_DECISION.md)，再按需查看 [證據與未知矩陣](DR_EVIDENCE_MATRIX.md) 與 [30分鐘團隊決策指南](DR_TEAM_DECISION_GUIDE.md)。
+
+本包更正歷史材料的產品解讀：Recreate 是本機實驗限制；目標 RollingUpdate 與雙 Pod 共存尚未驗證。C1 原始資料仍在本機，公開摘要不等於獨立原始證據。以下 HTML 與舊材料保留為歷史參考，最新選型敘述以上述三份 Markdown 為準。
+
+---
+
 # DR 選型討論材料與研究來源
 
 下載 repo 後開啟 `discussion/index.html`。不需 Node、服務或 GitHub Pages；GitHub 顯示 HTML 原始碼是正常的。
