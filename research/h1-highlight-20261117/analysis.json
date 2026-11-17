@@ -1,0 +1,406 @@
+{
+  "caseCount": 20,
+  "passedCases": 16,
+  "cases": [
+    {
+      "id": "english",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "case",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "punctuation",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "zh-word",
+      "passed": false,
+      "failures": [
+        "body:missing 備份"
+      ],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "zh-title",
+      "passed": false,
+      "failures": [
+        "title:missing 備份"
+      ],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "zh-mixed",
+      "passed": false,
+      "failures": [
+        "body:missing 備份"
+      ],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "english-title",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "middle",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "end",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "multi",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "phrase-caveat",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "pdf-lines",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "pdf-hyphen",
+      "passed": true,
+      "failures": [],
+      "hit": false,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "html",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "emoji",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "accent",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "combining",
+      "passed": false,
+      "failures": [
+        "body:missing café"
+      ],
+      "hit": true,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "missing",
+      "passed": true,
+      "failures": [],
+      "hit": false,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "denied",
+      "passed": true,
+      "failures": [],
+      "hit": false,
+      "safetyChecksPassed": true
+    },
+    {
+      "id": "repeated",
+      "passed": true,
+      "failures": [],
+      "hit": true,
+      "safetyChecksPassed": true
+    }
+  ],
+  "candidateHighlightQualified": false,
+  "searchMembershipPassed": true,
+  "utf8OriginalTextHtmlSafetyPassed": true,
+  "benchMeasuredBatches": 1200,
+  "benchWarmBatches": 120,
+  "bench": [
+    {
+      "block": 0,
+      "docBytes": 1032,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.002383,
+      "p95Ms": 0.003087,
+      "maxMs": 0.004737
+    },
+    {
+      "block": 0,
+      "docBytes": 1032,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.042515,
+      "p95Ms": 0.046842,
+      "maxMs": 0.056222
+    },
+    {
+      "block": 0,
+      "docBytes": 10248,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.002507,
+      "p95Ms": 0.003211,
+      "maxMs": 0.003866
+    },
+    {
+      "block": 0,
+      "docBytes": 10248,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.338084,
+      "p95Ms": 0.361939,
+      "maxMs": 0.365616
+    },
+    {
+      "block": 0,
+      "docBytes": 102408,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.003094,
+      "p95Ms": 0.005031,
+      "maxMs": 0.005455
+    },
+    {
+      "block": 0,
+      "docBytes": 102408,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 3.325984,
+      "p95Ms": 3.623116,
+      "maxMs": 4.529485
+    },
+    {
+      "block": 0,
+      "docBytes": 1048584,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.004579,
+      "p95Ms": 0.006503,
+      "maxMs": 0.02678
+    },
+    {
+      "block": 0,
+      "docBytes": 1048584,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 34.198829,
+      "p95Ms": 35.099049,
+      "maxMs": 35.415618
+    },
+    {
+      "block": 1,
+      "docBytes": 1032,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.002362,
+      "p95Ms": 0.002769,
+      "maxMs": 0.008425
+    },
+    {
+      "block": 1,
+      "docBytes": 1032,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.042249,
+      "p95Ms": 0.045247,
+      "maxMs": 0.2528
+    },
+    {
+      "block": 1,
+      "docBytes": 10248,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.00227,
+      "p95Ms": 0.002857,
+      "maxMs": 0.002937
+    },
+    {
+      "block": 1,
+      "docBytes": 10248,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.335328,
+      "p95Ms": 0.358709,
+      "maxMs": 0.430496
+    },
+    {
+      "block": 1,
+      "docBytes": 102408,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.002912,
+      "p95Ms": 0.003728,
+      "maxMs": 0.008025
+    },
+    {
+      "block": 1,
+      "docBytes": 102408,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 3.311237,
+      "p95Ms": 3.398776,
+      "maxMs": 3.505445
+    },
+    {
+      "block": 1,
+      "docBytes": 1048584,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.004366,
+      "p95Ms": 0.007714,
+      "maxMs": 0.0095
+    },
+    {
+      "block": 1,
+      "docBytes": 1048584,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 34.233201,
+      "p95Ms": 36.120451,
+      "maxMs": 45.359054
+    },
+    {
+      "block": 2,
+      "docBytes": 1032,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.002569,
+      "p95Ms": 0.002787,
+      "maxMs": 0.003138
+    },
+    {
+      "block": 2,
+      "docBytes": 1032,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.042226,
+      "p95Ms": 0.043631,
+      "maxMs": 0.043844
+    },
+    {
+      "block": 2,
+      "docBytes": 10248,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.002258,
+      "p95Ms": 0.002779,
+      "maxMs": 0.00288
+    },
+    {
+      "block": 2,
+      "docBytes": 10248,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.333406,
+      "p95Ms": 0.348807,
+      "maxMs": 0.364038
+    },
+    {
+      "block": 2,
+      "docBytes": 102408,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.002761,
+      "p95Ms": 0.003142,
+      "maxMs": 0.003327
+    },
+    {
+      "block": 2,
+      "docBytes": 102408,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 3.301436,
+      "p95Ms": 3.435818,
+      "maxMs": 3.840812
+    },
+    {
+      "block": 2,
+      "docBytes": 1048584,
+      "mode": "baseline",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 0.005643,
+      "p95Ms": 0.007916,
+      "maxMs": 0.016366
+    },
+    {
+      "block": 2,
+      "docBytes": 1048584,
+      "mode": "highlight",
+      "batch": 10,
+      "n": 50,
+      "p50Ms": 34.28266,
+      "p95Ms": 35.095282,
+      "maxMs": 36.814329
+    }
+  ],
+  "diagnosticBudgetMs": 100,
+  "diagnosticBudgetAllPassed": true,
+  "sampledMemoryPeakBytes": 16207872,
+  "windowsMinSampledAvailableBytes": 15487172608,
+  "scope": "native resident English batch snippet cost; no HTTP/full search/storage/real auth capacity"
+}

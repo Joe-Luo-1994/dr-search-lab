@@ -30,7 +30,7 @@
 | 稀有／常見詞，BM25／Top-K | N1 `formal-summary.json`；E精確total＋pageId tie | S1常見詞P95約825–850ms、長詞組1659–1682ms；T約7.86–8.08／12.62–12.68ms。原生串行基準含IPC／分詞位置差異，非HTTP旅程；不能算純引擎倍率 | 已證（此配置）；降級候選（total/tie）；無tie Top-K屬選配研究 | API owner先回答是否需要exact total／穩定tie。BM25是詞項相關性計分，不是「品質已好」證明；不同分析／字段設定可改排序 |
 | title／body與PDF抽文 | N1 G1；使用者確認MariaDB可供PDF抽文 | title/body合成檢查成立；名稱含pdf的query不是PDF抽取鏈驗證 | 已證（合成）；試點門檻（來源） | Backend核對export欄位／抽文成功與缺漏；以一個PDF實例追來源，不新增效能矩陣 |
 | Space、Tags AND | N1 G1/G2、R0 runtime query與metadata | 合成篩選通過；tags是page metadata；未證公司索引與權限欄位契約 | 已證（合成）；試點門檻 | Backend提供schema與篩選範例，核對空tag、多tag與跨Space案例 |
-| highlight／沿用ES體驗 | 候選adapter；N1未證與現有ES一致 | highlight是希望有；現有ES analyzer/query尚無正式輸入 | 影響決策的未知；降級候選 | Product/API列必保留的行為；若完全相同是硬需求，A優勢提高，不承諾替代引擎零差異 |
+| highlight／沿用ES體驗 | [H1公開程式與案例](../research/h1-highlight-20261117/README.md)，Tantivy0.27官方SnippetGenerator | 20題搜尋判斷全符、highlight整體16通過／4失敗：中文3、組合音標1搜到卻摘要空白。現行預切詞與snippet analyzer不一致；英文resident batch10成本已測，但未接API，不代表正式延遲。ES analyzer仍未知 | 已證（限定案例及失敗）；highlight為選配，若升為必需則需先修正語意一致性 | Product先看案例確認價值；若值得，才有界驗同語意原文offset接合。不能以title-only直接解決中文，也不以另換分詞器繞過失敗 |
 | 正文、附件全部可達 | R0 installer／service／storage；N1與C1 hotset | V1正文256／V2 257、8附件；百萬index不代表完整body。PoC manifest≤1MiB、remoteObjects≤10,000、檔案buffer≤8MiB | 試點／採用門檻 | Backend／資料owner給實際數量／大小與coverage清單；先做匯出契約盤點。這些是自製PoC限制，不是Tantivy/MinIO上限 |
 | Web流程與API consumer | N1 G3a loader、R0 service；C1本機HTTP | SSR→search與API已測；沒有完整browser/editor體感、正式API相容／gateway驗收 | 已證（HTTP）；試點門檻 | Web／API owner各給一個真實旅程與request/response；確認錯誤、pagination、驗證與速率治理，不能只看endpoint可呼叫 |
 
