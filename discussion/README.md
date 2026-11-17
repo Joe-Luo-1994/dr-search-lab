@@ -2,7 +2,7 @@
 
 先讀 [架構決策摘要](DR_ARCHITECTURE_DECISION.md)，再按需查看 [證據與未知矩陣](DR_EVIDENCE_MATRIX.md) 與 [30分鐘團隊決策指南](DR_TEAM_DECISION_GUIDE.md)。
 
-本包更正歷史材料的產品解讀：Recreate 是本機實驗限制；目標 RollingUpdate 與雙 Pod 共存尚未驗證。C1 原始資料仍在本機，公開摘要不等於獨立原始證據。以下 HTML 與舊材料保留為歷史參考，最新選型敘述以上述三份 Markdown 為準。
+最新工作假設待團隊確認：待命時更新快照，DR Active凍結良版，驗證主站並切回後才恢復更新。Recreate是本機實驗選擇，也可能足以供待命刷新；RollingUpdate不再是例行資料更新的必要門檻。核心剩餘風險是待命更新中遇災難時，能否從異地良版復原並符合RTO。C1 原始資料仍在本機，公開摘要不等於獨立原始證據。以下 HTML 與舊材料保留為歷史參考，最新選型敘述以上述三份 Markdown 為準。
 
 ---
 
