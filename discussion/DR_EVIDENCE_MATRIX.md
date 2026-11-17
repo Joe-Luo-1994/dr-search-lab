@@ -30,7 +30,7 @@
 | 稀有／常見詞，BM25／Top-K | N1 `formal-summary.json`；E精確total＋pageId tie | S1常見詞P95約825–850ms、長詞組1659–1682ms；T約7.86–8.08／12.62–12.68ms。原生串行基準含IPC／分詞位置差異，非HTTP旅程；不能算純引擎倍率 | 已證（此配置）；降級候選（total/tie）；無tie Top-K屬選配研究 | API owner先回答是否需要exact total／穩定tie。BM25是詞項相關性計分，不是「品質已好」證明；不同分析／字段設定可改排序 |
 | title／body與PDF抽文 | N1 G1；使用者確認MariaDB可供PDF抽文 | title/body合成檢查成立；名稱含pdf的query不是PDF抽取鏈驗證 | 已證（合成）；試點門檻（來源） | Backend核對export欄位／抽文成功與缺漏；以一個PDF實例追來源，不新增效能矩陣 |
 | Space、Tags AND | N1 G1/G2、R0 runtime query與metadata | 合成篩選通過；tags是page metadata；未證公司索引與權限欄位契約 | 已證（合成）；試點門檻 | Backend提供schema與篩選範例，核對空tag、多tag與跨Space案例 |
-| highlight／沿用ES體驗 | 候選adapter；N1未證與現有ES一致 | highlight是希望有；現有ES analyzer/query尚無正式輸入 | 影響決策的未知；降級候選 | Product/API列必保留的行為；若完全相同是硬需求，A優勢提高，不承諾替代引擎零差異 |
+| 結果卡片contextual snippet／highlight | [H2研究與來源](../research/h2-snippet-20261117/README.md)，沿用H1反例與凍結N1 binary | Node同語意原文位置adapter通過34項合成檢查，含H1四反例與約第5000字命中；第一輪保留prefix安全缺口及修正證據。Top10長中文增量P95約54–58ms，不含HTTP／真實授權；PDF來源／metadata瘦身／worker接合未知 | 已證（隔離可行性）；Should-have非Tantivy採用阻擋；產品fallback待確認 | 若有Node/token規則與本地同版原文owner可保留候選；不要為加分項另建全文儲存／分詞系統。不涉及文件內或PDF viewer，原開啟行為不變 |
 | 正文、附件全部可達 | R0 installer／service／storage；N1與C1 hotset | V1正文256／V2 257、8附件；百萬index不代表完整body。PoC manifest≤1MiB、remoteObjects≤10,000、檔案buffer≤8MiB | 試點／採用門檻 | Backend／資料owner給實際數量／大小與coverage清單；先做匯出契約盤點。這些是自製PoC限制，不是Tantivy/MinIO上限 |
 | Web流程與API consumer | N1 G3a loader、R0 service；C1本機HTTP | SSR→search與API已測；沒有完整browser/editor體感、正式API相容／gateway驗收 | 已證（HTTP）；試點門檻 | Web／API owner各給一個真實旅程與request/response；確認錯誤、pagination、驗證與速率治理，不能只看endpoint可呼叫 |
 
